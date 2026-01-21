@@ -2,6 +2,7 @@
   <section class="cfg-root">
     <header class="cfg-header">
       <h2 class="cfg-title">Exiledbot2 Pickit Configurator - Still work in progress!</h2>
+      <h3 class="cfg-title">Repo here: <a href="https://github.com/l0westbob/exiledbot2-pickit-configurator">https://github.com/l0westbob/exiledbot2-pickit-configurator</a></h3>
 
       <div class="cfg-actions">
         <button type="button" class="btn" @click="addRow">Add row</button>

@@ -1,6 +1,6 @@
 # exiledbot2-pickit-configurator
 
-https://l0westbob.github.io/exiledbot2-pickit-configurator/
+Usable configurator here: https://l0westbob.github.io/exiledbot2-pickit-configurator/
 
 This is a small tool for creating valid pickit configuration
 rules via a configurable graphical user interface instead of
