@@ -4,7 +4,7 @@
       <div class="row-config-head">
         <h3 class="row-title">Row {{ rowIndex + 1 }}</h3>
         <button type="button" class="btn-remove" @click="$emit('remove', rowId)">
-          Remove
+          Remove row
         </button>
       </div>
 
@@ -14,46 +14,84 @@
         <select
             v-model="selectedItemSlug"
             class="field-select"
-            :disabled="!itemsSafe.length || loadingItem"
+            :disabled="!availableItems.length || isLoadingAffixes"
         >
           <option value="" disabled>Select item…</option>
-          <option v-for="item in itemsSafe" :key="item.slug" :value="item.slug">
+          <option v-for="item in availableItems" :key="item.slug" :value="item.slug">
             {{ item.category }} – {{ item.label }}
           </option>
         </select>
       </label>
 
-      <!-- Affix dropdown -->
-      <label v-if="affixes.length" class="field">
-        <span class="field-label">Affix</span>
-        <select v-model="selectedAffixKey" class="field-select">
-          <option :value="null" disabled>Select affix…</option>
+      <p v-if="visibleAffixFamilies.length" class="field-hint">
+        Prefixes: {{ prefixCount }}/{{ MAX_PREFIXES }}, Suffixes: {{ suffixCount }}/{{ MAX_SUFFIXES }}
+      </p>
 
-          <optgroup v-for="group in affixGroups" :key="group.label" :label="group.label">
-            <option
-                v-for="affix in group.items"
-                :key="affixKey(affix)"
-                :value="affixKey(affix)"
+      <!-- Affix slots -->
+      <div v-for="(slot, idx) in affixSlots" :key="slot.id" class="slot-root">
+        <div class="slot-head">
+          <span class="slot-title">Affix {{ idx + 1 }}</span>
+          <button
+              v-if="affixSlots.length > 1"
+              type="button"
+              class="btn-remove-slot"
+              @click="removeAffixSlot(idx)"
+          >
+            Remove
+          </button>
+        </div>
+
+        <!-- Affix dropdown -->
+        <label v-if="visibleAffixFamilies.length" class="field">
+          <span class="field-label">Affix</span>
+          <select v-model="slot.selectedAffixKey" class="field-select">
+            <option :value="null" disabled>Select affix…</option>
+
+            <optgroup
+                v-for="group in affixGroupsForSlot(idx)"
+                :key="group.label"
+                :label="group.label"
             >
-              {{ affix.template }}
+              <option
+                  v-for="affix in group.items"
+                  :key="affixKey(affix)"
+                  :value="affixKey(affix)"
+              >
+                {{ affix.template }}
+              </option>
+            </optgroup>
+          </select>
+        </label>
+
+        <!-- Tier dropdown -->
+        <label v-if="availableTiersForSlot(idx).length" class="field">
+          <span class="field-label">Tier</span>
+          <select v-model.number="slot.selectedTierLevel" class="field-select">
+            <option :value="null" disabled>Select tier…</option>
+            <option
+                v-for="tier in availableTiersForSlot(idx)"
+                :key="tier.level"
+                :value="tier.level"
+            >
+              T{{ tierIndexFromBottom(availableTiersForSlot(idx), tier.level) }}
+              (lvl {{ tier.level }}) – {{ tier.name || "unnamed" }}
             </option>
-          </optgroup>
-        </select>
-      </label>
+          </select>
+        </label>
+      </div>
 
-      <!-- Tier dropdown -->
-      <label v-if="availableTiers.length" class="field">
-        <span class="field-label">Tier</span>
-        <select v-model.number="selectedTierLevel" class="field-select">
-          <option :value="null" disabled>Select tier…</option>
-          <option v-for="tier in availableTiers" :key="tier.level" :value="tier.level">
-            T{{ tierIndexFromBottom(tier.level) }} (lvl {{ tier.level }}) – {{ tier.name || "unnamed" }}
-          </option>
-        </select>
-      </label>
+      <button
+          type="button"
+          class="btn-add-affix"
+          :disabled="affixSlots.length >= MAX_AFFIX_SLOTS || !canAddAffixSlot"
+          @click="addAffixSlot"
+          :title="!canAddAffixSlot ? addAffixDisabledReason : ''"
+      >
+        Add affix ({{ affixSlots.length }}/{{ MAX_AFFIX_SLOTS }})
+      </button>
 
-      <p v-if="itemError" class="field-error">
-        {{ itemError }}
+      <p v-if="affixLoadErrorMessage" class="field-error">
+        {{ affixLoadErrorMessage }}
       </p>
 
       <button type="button" class="btn-generate" @click="onGenerate">
@@ -72,108 +110,185 @@
 </template>
 
 <script setup>
-import {computed, ref, watch} from "vue"
+import {computed, inject, ref, watch, watchEffect} from "vue"
+import {useAffixSlots} from "../../composables/useAffixSlots"
+import {shouldHideAffix} from "../../helpers/affixFilters"
+import {ItemsStoreKey} from "../../stores/itemsStoreKey"
+import {generateRowPreviewLines} from "../../helpers/generateRowPreviewLines"
+import {tierIndexFromBottom} from "../../helpers/tiers"
 
 /**
- * @typedef {{ level:number, name?:string, text?:string }} Tier
- * @typedef {{
- *   kind: string,
- *   domain: string,
- *   family_key: string,
- *   template: string,
- *   identifier: string,
- *   tiers: Tier[]
- * }} AffixFamily
+ * Row component state + orchestration.
+ *
+ * Responsibilities:
+ * - Let the user pick an item type (slug) and then load its affix catalog (JSON)
+ * - Manage up to 6 affix slots with:
+ *   - uniqueness across slots
+ *   - max 3 prefixes and max 3 suffixes
+ * - Continuously emit the computed config lines to the parent (Configurator)
+ *   so "Generate final" works even if the user never clicks "Generate row".
+ * - Maintain a local previewText shown in the Row UI (only updated when user clicks Generate row)
  */
 
 const props = defineProps({
+  /** Stable identifier used by parent to store/retrieve this row's generated lines */
   rowId: {type: String, required: true},
+  /** Visual index for "Row X" title */
   rowIndex: {type: Number, required: true},
-  items: {type: Array, required: true},
 })
 
+/**
+ * Events:
+ * - update-lines: payload { rowId: string, lines: string[] }
+ * - remove: emitted via template button (not used directly in this script block)
+ */
 const emit = defineEmits(["update-lines", "remove"])
 
-const itemsSafe = computed(() => (Array.isArray(props.items) ? props.items : []))
+/**
+ * Inject shared store providing:
+ * - items: Ref<Item[]>
+ * - getAffixesForSlug(slug): Promise<AffixFamily[]>
+ */
+const itemsStore = inject(ItemsStoreKey)
+if (!itemsStore) throw new Error("ItemsStore not provided")
 
+/** Defensive: always expose an array to templates */
+const availableItems = computed(() => itemsStore.items?.value || [])
+
+/** Currently selected item slug (drives affix JSON loading) */
 const selectedItemSlug = ref("")
-/** @type {import("vue").Ref<AffixFamily[] | null>} */
-const itemData = ref(null)
 
-const loadingItem = ref(false)
-const itemError = ref("")
+/**
+ * Raw affix families loaded for the current item (unfiltered).
+ * @type {import("vue").Ref<any[]>} // keep loose unless you add TS/JSDoc typedefs project-wide
+ */
+const loadedAffixFamilies = ref([])
 
-const selectedAffixKey = ref(null)
-const selectedTierLevel = ref(null)
+const isLoadingAffixes = ref(false)
+const affixLoadErrorMessage = ref("")
 
+/**
+ * Preview text shown on the right side in the Row.
+ * Updated only when the user clicks "Generate row".
+ */
 const previewText = ref("")
 
-const baseUrl = import.meta.env.BASE_URL
-
+/** Convenience: currently selected item object from items.json */
 const selectedItem = computed(() => {
-  return itemsSafe.value.find((i) => i.slug === selectedItemSlug.value) || null
+  return availableItems.value.find((item) => item.slug === selectedItemSlug.value) || null
 })
 
-const affixGroups = computed(() => {
-  const list = affixes.value || []
-
-  const byTemplate = (a, b) => {
-    const ta = typeof a.template === "string" ? a.template : ""
-    const tb = typeof b.template === "string" ? b.template : ""
-    return ta.localeCompare(tb)
-  }
-
-  const prefixes = list.filter((a) => a.kind === "prefix").sort(byTemplate)
-  const suffixes = list.filter((a) => a.kind === "suffix").sort(byTemplate)
-  const other = list.filter((a) => a.kind !== "prefix" && a.kind !== "suffix").sort(byTemplate)
-
-  const groups = []
-  if (prefixes.length) groups.push({label: "-- Prefixes --", items: prefixes})
-  if (suffixes.length) groups.push({label: "-- Suffixes --", items: suffixes})
-  if (other.length) groups.push({label: "-- Other --", items: other})
-
-  return groups
+/**
+ * Filter affixes based on UI/business rules:
+ * - hide desecrated domain
+ * - hide unique/corrupted kinds when domain=item
+ */
+const visibleAffixFamilies = computed(() => {
+  const allFamilies = loadedAffixFamilies.value || []
+  return allFamilies.filter((affixFamily) => !shouldHideAffix(affixFamily))
 })
 
-async function loadItemData(slug) {
+/**
+ * Slot selection logic is delegated to a composable to keep Row readable.
+ * This includes:
+ * - max slots
+ * - uniqueness
+ * - prefix/suffix caps
+ * - per-slot grouped dropdown options
+ */
+const {
+  MAX_SLOTS: MAX_AFFIX_SLOTS,
+  MAX_PREFIXES,
+  MAX_SUFFIXES,
+
+  slots: affixSlots,
+  prefixCount,
+  suffixCount,
+
+  canAddSlot: canAddAffixSlot,
+  addDisabledReason: addAffixDisabledReason,
+
+  addSlot: addAffixSlot,
+  removeSlot: removeAffixSlot,
+  resetSlots,
+
+  affixKey,
+  findAffixByKey,
+  groupsForSlot: affixGroupsForSlot,
+  availableTiersForSlot,
+} = useAffixSlots({
+  affixesRef: visibleAffixFamilies,
+  maxSlots: 6,
+  maxPrefixes: 3,
+  maxSuffixes: 3,
+})
+
+/**
+ * Centralized line generation for this row.
+ * - We compute lines from current selection state.
+ * - The helper encapsulates how lines are formatted (for now it's POC formatting).
+ *
+ * @returns {string[]}
+ */
+function computeCurrentRowLines() {
+  return generateRowPreviewLines({
+    selectedItemSlug: selectedItemSlug.value,
+    selectedItem: selectedItem.value,
+    affixSlots: affixSlots.value,
+    findAffixByKey,
+    availableTiersForSlot,
+
+    // Not strictly required if generateRowPreviewLines doesn't need it,
+    // but useful if you want tier labels inside helper in the future.
+    tierIndexFromBottom,
+  })
+}
+
+/**
+ * Loads affix catalog for the given item slug.
+ * Resets slots + preview, and informs parent that current row lines are empty
+ * until new selections are made.
+ *
+ * @param {string} slug
+ */
+async function loadAffixesForSelectedItem(slug) {
   if (!slug) {
-    itemData.value = null
-    selectedAffixKey.value = null
-    selectedTierLevel.value = null
+    loadedAffixFamilies.value = []
+    resetSlots()
+    previewText.value = ""
+    emit("update-lines", {rowId: props.rowId, lines: []})
     return
   }
 
-  loadingItem.value = true
-  itemError.value = ""
+  isLoadingAffixes.value = true
+  affixLoadErrorMessage.value = ""
 
   try {
-    const url = baseUrl + `data/affixes/${slug}.json`
-    const res = await fetch(url)
-    if (!res.ok) {
-      throw new Error(`Failed to load item data for ${slug}: ${res.status}`)
-    }
+    loadedAffixFamilies.value = await itemsStore.getAffixesForSlug(slug)
 
-    const raw = await res.json()
+    // When item changes, any prior affix choices are invalid.
+    resetSlots()
+    previewText.value = ""
 
-    // IMPORTANT: your schema is { affixes: [...] }, not a JSON array
-    if (!raw || typeof raw !== "object" || !Array.isArray(raw.affixes)) {
-      throw new Error(`Invalid schema for ${slug}.json: expected { affixes: [...] }`)
-    }
+    // Also clear parent lines until the user reselects.
+    emit("update-lines", {rowId: props.rowId, lines: []})
+  } catch (error) {
+    console.error(error)
+    affixLoadErrorMessage.value = String(error)
 
-    itemData.value = raw.affixes
-    selectedAffixKey.value = null
-    selectedTierLevel.value = null
-  } catch (e) {
-    console.error(e)
-    itemError.value = String(e)
-    itemData.value = null
+    loadedAffixFamilies.value = []
+    resetSlots()
   } finally {
-    loadingItem.value = false
+    isLoadingAffixes.value = false
   }
 }
 
+/**
+ * Initialize first item as soon as items.json is loaded.
+ * Only auto-select if the user hasn't picked something already.
+ */
 watch(
-    () => itemsSafe.value,
+    () => availableItems.value,
     (items) => {
       if (items && items.length && !selectedItemSlug.value) {
         selectedItemSlug.value = items[0].slug
@@ -182,97 +297,38 @@ watch(
     {immediate: true}
 )
 
+/** When item selection changes, load the affix JSON */
 watch(selectedItemSlug, (slug) => {
-  loadItemData(slug)
+  loadAffixesForSelectedItem(slug)
 })
 
-function shouldHideAffix(affix) {
-  if (!affix || typeof affix !== "object") return true
+/**
+ * Continuously emit the current computed lines to the parent.
+ * This is what makes "Generate final" work even if the user doesn't click
+ * "Generate row" in every row.
+ *
+ * We avoid emitting while loading to prevent transient/partial state.
+ */
+watchEffect(() => {
+  if (isLoadingAffixes.value) return
 
-  const modDomain = typeof affix.domain === "string" ? affix.domain : ""
-  const kind = typeof affix.kind === "string" ? affix.kind : ""
-
-  if (modDomain === "item" && (kind === "unique" || kind === "corrupted")) return true
-  if (modDomain === "desecrated") return true
-
-  return false
-}
-
-const affixes = computed(() => {
-  const all = itemData.value || []
-  return all.filter((a) => !shouldHideAffix(a))
+  emit("update-lines", {
+    rowId: props.rowId,
+    lines: computeCurrentRowLines(),
+  })
 })
 
-function affixKey(affix) {
-  if (!affix || typeof affix !== "object") return "||||"
-
-  const kind = typeof affix.kind === "string" ? affix.kind : ""
-  const modDomain = typeof affix.domain === "string" ? affix.domain : ""
-  const family = typeof affix.family_key === "string" ? affix.family_key : ""
-  const identifier = typeof affix.identifier === "string" ? affix.identifier : ""
-  const template = typeof affix.template === "string" ? affix.template : ""
-
-  return `${kind}|${modDomain}|${family}|${identifier}|${template}`
-}
-
-const selectedAffix = computed(() => {
-  if (!selectedAffixKey.value) return null
-  return affixes.value.find((a) => affixKey(a) === selectedAffixKey.value) || null
-})
-
-const availableTiers = computed(() => {
-  if (!selectedAffix.value || !Array.isArray(selectedAffix.value.tiers)) return []
-  return selectedAffix.value.tiers
-})
-
-function tierIndexFromBottom(level) {
-  if (!availableTiers.value.length) return "?"
-  const sorted = [...availableTiers.value].map((t) => t.level).sort((a, b) => a - b)
-  const idx = sorted.indexOf(level)
-  if (idx === -1) return "?"
-  return sorted.length - idx
-}
-
+/**
+ * Updates only the local preview UI. Parent already has the lines via watchEffect.
+ */
 function onGenerate() {
   if (!selectedItemSlug.value) {
     previewText.value = "Select an item type first."
-    emit("update-lines", {rowId: props.rowId, lines: []})
-    return
-  }
-  if (!selectedAffix.value) {
-    previewText.value = "Select an affix."
-    emit("update-lines", {rowId: props.rowId, lines: []})
-    return
-  }
-  if (!selectedTierLevel.value) {
-    previewText.value = "Select a tier."
-    emit("update-lines", {rowId: props.rowId, lines: []})
     return
   }
 
-  const itemLabel = (selectedItem.value && selectedItem.value.label) || selectedItemSlug.value
-  const aff = selectedAffix.value
-  const tier = availableTiers.value.find((t) => t.level === selectedTierLevel.value)
-
-  if (!tier) {
-    previewText.value = "Selected tier not found."
-    emit("update-lines", {rowId: props.rowId, lines: []})
-    return
-  }
-
-  const tIndex = tierIndexFromBottom(tier.level)
-  const tierName = tier.name || `T${tIndex}`
-  const tierText = tier.text || ""
-
-  const modDomain = typeof aff.domain === "string" ? aff.domain : ""
-  const domainPart = modDomain ? ` | ${modDomain}` : ""
-
-  const line = `[${itemLabel}] ${aff.kind}${domainPart} | ${aff.template} | T${tIndex} (lvl ${tier.level}) ${tierName} -> ${tierText}`
-
-  previewText.value = line
-
-  // For now: exactly one line per row. Later this can become multiple lines.
-  emit("update-lines", {rowId: props.rowId, lines: [line]})
+  const lines = computeCurrentRowLines()
+  previewText.value = lines.length ? lines.join("\n") : "Nothing selected."
 }
 </script>
 
@@ -351,7 +407,71 @@ function onGenerate() {
 .field-error {
   font-size: 0.8rem;
   color: #f97373;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.field-hint {
+  font-size: 0.8rem;
+  color: #9ca3af;
   margin: 0 0 0.5rem;
+}
+
+.slot-root {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1f2937;
+  background: rgba(17, 24, 39, 0.35);
+  margin-bottom: 0.5rem;
+}
+
+.slot-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.slot-title {
+  font-size: 0.85rem;
+  color: #e5e7eb;
+}
+
+.btn-remove-slot {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-remove-slot:hover {
+  border-color: #9ca3af;
+  background: #1f2937;
+}
+
+.btn-add-affix {
+  align-self: flex-start;
+  margin: 0.25rem 0 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-add-affix:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-add-affix:hover:enabled {
+  border-color: #9ca3af;
+  background: #1f2937;
 }
 
 .btn-generate {

@@ -1,7 +1,7 @@
 <template>
   <section class="cfg-root">
     <header class="cfg-header">
-      <h2 class="cfg-title">Exiledbot2 Pickit Configurator</h2>
+      <h2 class="cfg-title">Exiledbot2 Pickit Configurator - Still work in progress!</h2>
 
       <div class="cfg-actions">
         <button type="button" class="btn" @click="addRow">Add row</button>
@@ -17,7 +17,6 @@
           :key="row.id"
           :row-id="row.id"
           :row-index="idx"
-          :items="items"
           @update-lines="onRowUpdateLines"
           @remove="removeRow"
       />
@@ -35,56 +34,117 @@
 </template>
 
 <script setup>
-import {computed, ref} from "vue"
+import {ref} from "vue"
 import Row from "./Row.vue"
 
-const props = defineProps({
-  items: {
-    type: Array,
-    required: true,
-  },
-})
+/**
+ * Configurator-level state management.
+ *
+ * Responsibilities:
+ * - Manage an ordered list of Row instances (add/remove)
+ * - Collect generated config lines from each Row (via @update-lines event)
+ * - On "Generate final", concatenate all row lines in the same order as the rows are rendered
+ *
+ * Important UX detail:
+ * - Row components emit their current computed lines continuously (watchEffect in Row),
+ *   so clicking "Generate final" does not depend on the user pressing "Generate row"
+ *   inside each row.
+ */
 
-function uid() {
-  // good enough for UI keys
-  return crypto.randomUUID()
+/**
+ * Generates a unique identifier for row objects.
+ * Used for:
+ * - Vue v-for key stability
+ * - Mapping rowId -> generated lines
+ *
+ * Uses crypto.randomUUID() with a safe fallback for older environments.
+ *
+ * @returns {string}
+ */
+function createRowId() {
+  if (crypto?.randomUUID) return crypto.randomUUID()
+  return `${Date.now()}-${Math.random()}`
 }
 
-const rows = ref([
-  {id: uid()}
-])
+/**
+ * Ordered list of rows.
+ * Each row is a lightweight object with a stable id.
+ *
+ * @type {import("vue").Ref<Array<{id: string}>>}
+ */
+const rows = ref([{id: createRowId()}])
 
-// rowId -> string[] (config lines)
-const rowLines = ref(new Map())
+/**
+ * Map of rowId -> array of generated config lines.
+ *
+ * We use a Map because:
+ * - row ids are arbitrary strings
+ * - lookups/updates are O(1)
+ * - it avoids accidental key collisions with plain objects
+ *
+ * @type {import("vue").Ref<Map<string, string[]>>}
+ */
+const rowLinesById = ref(new Map())
 
 function addRow() {
-  rows.value.push({id: uid()})
+  rows.value.push({id: createRowId()})
 }
 
+/**
+ * Removes a row and drops its stored lines.
+ *
+ * @param {string} rowId
+ */
 function removeRow(rowId) {
-  const idx = rows.value.findIndex((r) => r.id === rowId)
-  if (idx !== -1) rows.value.splice(idx, 1)
-  rowLines.value.delete(rowId)
+  const rowIndex = rows.value.findIndex((row) => row.id === rowId)
+  if (rowIndex !== -1) rows.value.splice(rowIndex, 1)
+  rowLinesById.value.delete(rowId)
 }
 
-function onRowUpdateLines({rowId, lines}) {
-  rowLines.value.set(rowId, Array.isArray(lines) ? lines : [])
+/**
+ * Receives line updates from a Row component.
+ *
+ * Contract:
+ * - payload.rowId: string
+ * - payload.lines: string[] (can be empty)
+ *
+ * Row emits this whenever its internal selection changes, so the configurator
+ * always has the latest lines.
+ *
+ * @param {{rowId: string, lines: unknown}} payload
+ */
+function onRowUpdateLines(payload) {
+  const {rowId, lines} = payload || {}
+  const normalizedLines = Array.isArray(lines) ? lines : []
+  rowLinesById.value.set(rowId, normalizedLines)
 }
 
+/**
+ * "Final config lines" output rendered in the Configurator.
+ *
+ * @type {import("vue").Ref<string>}
+ */
 const finalText = ref("")
 
+/**
+ * Builds the final output by concatenating all row lines in render order.
+ * Filters out empty/whitespace-only lines for robustness.
+ */
 function generateFinal() {
-  const out = []
+  /** @type {string[]} */
+  const combinedLines = []
 
-  // keep the row order as rendered
+  // Keep the row order as rendered in the UI
   for (const row of rows.value) {
-    const lines = rowLines.value.get(row.id) || []
-    for (const line of lines) {
-      if (typeof line === "string" && line.trim()) out.push(line)
+    const linesForRow = rowLinesById.value.get(row.id) || []
+    for (const configLine of linesForRow) {
+      if (typeof configLine === "string" && configLine.trim()) {
+        combinedLines.push(configLine)
+      }
     }
   }
 
-  finalText.value = out.join("\n")
+  finalText.value = combinedLines.join("\n")
 }
 </script>
 
