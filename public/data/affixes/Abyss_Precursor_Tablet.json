@@ -1,0 +1,322 @@
+{
+  "affixes": [
+    {
+      "family_key": "MapExperienceGainIncrease",
+      "id": 547,
+      "identifier": "map_experience_gain",
+      "kind": "prefix",
+      "template": "#% increased Experience gain in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Elevated",
+          "text": "(10—20)% increased Experience gain in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedGoldIncrease",
+      "id": 546,
+      "identifier": "map_extra_gold_piles_chance",
+      "kind": "prefix",
+      "template": "#% increased Gold found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Bountiful",
+          "text": "(25—40)% increased Gold found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapPackSizeIncrease",
+      "id": 543,
+      "identifier": "map_pack_size",
+      "kind": "prefix",
+      "template": "#% increased Pack Size in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Breeding",
+          "text": "(6—10)% increased Pack Size in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedItemRarityIncrease",
+      "id": 542,
+      "identifier": "map_item_drop_rarity",
+      "kind": "prefix",
+      "template": "#% increased Rarity of Items found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Collector's",
+          "text": "(18—30)% increased Rarity of Items found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalAzmeriWisp",
+      "id": 550,
+      "identifier": "map_spawn_extra_torment_spirits / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap contains # additional Azmeri Spirit",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Azmeri's",
+          "text": "% increased Quantity of Waystones found in MapMap contains 1 additional Azmeri Spirit"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalExile",
+      "id": 551,
+      "identifier": "map_spawn_extra_exiles / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap is inhabited by # additional Rogue Exile",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Exiled",
+          "text": "% increased Quantity of Waystones found in MapMap is inhabited by 1 additional Rogue Exile"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalChests",
+      "id": 548,
+      "identifier": "map_addtional_rare_chest_amount",
+      "kind": "prefix",
+      "template": "Map contains # additional Rare Chests",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Treasurer's",
+          "text": "Map contains (2—3) additional Rare Chests"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "id": 549,
+      "identifier": "map_extra_monoliths / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "Map contains an additional Essence% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Crystallised",
+          "text": "Map contains an additional Essence% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStoneCircle",
+      "id": 552,
+      "identifier": "map_num_extra_stone_circles",
+      "kind": "prefix",
+      "template": "Map contains an additional Summoning Circle",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Summoner's",
+          "text": "Map contains an additional Summoning Circle"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMagicPackIncrease",
+      "id": 544,
+      "identifier": "map_number_of_magic_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased Magic Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Teeming",
+          "text": "Map has (50—70)% increased Magic Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapRarePackIncrease",
+      "id": 545,
+      "identifier": "map_number_of_rare_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased number of Rare Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Brimming",
+          "text": "Map has (25—40)% increased number of Rare Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterEffectiveness",
+      "id": 541,
+      "identifier": "map_monster_potency",
+      "kind": "prefix",
+      "template": "Monsters have #% increased Effectiveness",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Challenger's",
+          "text": "Monsters have (7—11)% increased Effectiveness"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssRareMonsterIncrease",
+      "id": 610,
+      "identifier": "map_abyss_num_additional_rare_monsters",
+      "kind": "suffix",
+      "template": "# additional Rare Monsters are spawned from Abysses in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Champions",
+          "text": "(1—2) additional Rare Monsters are spawned from Abysses in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssExtraModifiers",
+      "id": 616,
+      "identifier": "map_abyss_monster_abyssal_modifier_chance",
+      "kind": "suffix",
+      "template": "#% increased chance for Abyssal monsters in Map to have Abyssal Modifiers",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Dark Power",
+          "text": "(20—30)% increased chance for Abyssal monsters in Map to have Abyssal Modifiers"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssExtraTickets",
+      "id": 617,
+      "identifier": "map_abyss_ticket_chance",
+      "kind": "suffix",
+      "template": "#% increased chance for Desecrated Currency from Abysses in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Ossification",
+          "text": "(20—30)% increased chance for Desecrated Currency from Abysses in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssIncreasedRewards",
+      "id": 614,
+      "identifier": "map_abyss_no_reward_chance",
+      "kind": "suffix",
+      "template": "Abyss Pits in Map are twice as likely to have Rewards",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Treasures",
+          "text": "Abyss Pits in Map are twice as likely to have Rewards"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssEnhancedMonstersPerChasm",
+      "id": 611,
+      "identifier": "map_abyss_monsters_enhanced_per_chasm_closed",
+      "kind": "suffix",
+      "template": "Abyssal Monsters in Map have increased Difficulty and Reward for each closed Pit",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Escalation",
+          "text": "Abyssal Monsters in Map have increased Difficulty and Reward for each closed Pit"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssDepthsChance",
+      "id": 612,
+      "identifier": "map_abyss_depths_chance",
+      "kind": "suffix",
+      "template": "Abysses in Map have #% increased chance to lead to an Abyssal Depths",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Depths",
+          "text": "Abysses in Map have (10—20)% increased chance to lead to an Abyssal Depths"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssMonsterIncrease",
+      "id": 609,
+      "identifier": "map_abyss_monster_spawn_amount",
+      "kind": "suffix",
+      "template": "Abysses in Map spawn #% increased Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Horde",
+          "text": "Abysses in Map spawn (20—30)% increased Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "AbyssAdditionalChance",
+      "id": 613,
+      "identifier": "map_num_extra_abysses",
+      "kind": "suffix",
+      "template": "Map contains an additional Abyss",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Hollows",
+          "text": "Map contains an additional Abyss"
+        }
+      ]
+    },
+    {
+      "family_key": "Abyss4AdditionalChance",
+      "id": 615,
+      "identifier": "map_chance_for_4_additional_abysses",
+      "kind": "suffix",
+      "template": "Map has #% chance to contain four additional Abysses",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Schisms",
+          "text": "Map has (20—40)% chance to contain four additional Abysses"
+        }
+      ]
+    }
+  ],
+  "category": "Tablet",
+  "label": "Abyss Precursor Tablet",
+  "slug": "Abyss_Precursor_Tablet"
+}

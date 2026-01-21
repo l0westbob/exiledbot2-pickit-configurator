@@ -1,0 +1,305 @@
+{
+  "affixes": [
+    {
+      "family_key": "MapExperienceGainIncrease",
+      "id": 547,
+      "identifier": "map_experience_gain",
+      "kind": "prefix",
+      "template": "#% increased Experience gain in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Elevated",
+          "text": "(10—20)% increased Experience gain in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedGoldIncrease",
+      "id": 546,
+      "identifier": "map_extra_gold_piles_chance",
+      "kind": "prefix",
+      "template": "#% increased Gold found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Bountiful",
+          "text": "(25—40)% increased Gold found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapPackSizeIncrease",
+      "id": 543,
+      "identifier": "map_pack_size",
+      "kind": "prefix",
+      "template": "#% increased Pack Size in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Breeding",
+          "text": "(6—10)% increased Pack Size in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedItemRarityIncrease",
+      "id": 542,
+      "identifier": "map_item_drop_rarity",
+      "kind": "prefix",
+      "template": "#% increased Rarity of Items found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Collector's",
+          "text": "(18—30)% increased Rarity of Items found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalAzmeriWisp",
+      "id": 550,
+      "identifier": "map_spawn_extra_torment_spirits / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap contains # additional Azmeri Spirit",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Azmeri's",
+          "text": "% increased Quantity of Waystones found in MapMap contains 1 additional Azmeri Spirit"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalExile",
+      "id": 551,
+      "identifier": "map_spawn_extra_exiles / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap is inhabited by # additional Rogue Exile",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Exiled",
+          "text": "% increased Quantity of Waystones found in MapMap is inhabited by 1 additional Rogue Exile"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalChests",
+      "id": 548,
+      "identifier": "map_addtional_rare_chest_amount",
+      "kind": "prefix",
+      "template": "Map contains # additional Rare Chests",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Treasurer's",
+          "text": "Map contains (2—3) additional Rare Chests"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "id": 549,
+      "identifier": "map_extra_monoliths / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "Map contains an additional Essence% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Crystallised",
+          "text": "Map contains an additional Essence% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStoneCircle",
+      "id": 552,
+      "identifier": "map_num_extra_stone_circles",
+      "kind": "prefix",
+      "template": "Map contains an additional Summoning Circle",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Summoner's",
+          "text": "Map contains an additional Summoning Circle"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMagicPackIncrease",
+      "id": 544,
+      "identifier": "map_number_of_magic_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased Magic Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Teeming",
+          "text": "Map has (50—70)% increased Magic Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapRarePackIncrease",
+      "id": 545,
+      "identifier": "map_number_of_rare_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased number of Rare Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Brimming",
+          "text": "Map has (25—40)% increased number of Rare Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterEffectiveness",
+      "id": 541,
+      "identifier": "map_monster_potency",
+      "kind": "prefix",
+      "template": "Monsters have #% increased Effectiveness",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Challenger's",
+          "text": "Monsters have (7—11)% increased Effectiveness"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossQuantity",
+      "id": 608,
+      "identifier": "map_boss_dropped_item_quantity",
+      "kind": "suffix",
+      "template": "#% increased Quantity of Items dropped by Map Bosses",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Hoards",
+          "text": "(13—20)% increased Quantity of Items dropped by Map Bosses"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossWaystoneChance",
+      "id": 605,
+      "identifier": "map_map_boss_bonus_map_drop_chance",
+      "kind": "suffix",
+      "template": "#% increased Quantity of Waystones dropped by Map Bosses",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Pathways",
+          "text": "(18—30)% increased Quantity of Waystones dropped by Map Bosses"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossRarity",
+      "id": 607,
+      "identifier": "map_boss_item_rarity",
+      "kind": "suffix",
+      "template": "#% increased Rarity of Items dropped by Map Bosses",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Treasure",
+          "text": "(35—60)% increased Rarity of Items dropped by Map Bosses"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossExperience",
+      "id": 606,
+      "identifier": "map_boss_experience_+%_final",
+      "kind": "suffix",
+      "template": "Map Bosses grant #% increased Experience",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Conquering",
+          "text": "Map Bosses grant (40—80)% increased Experience"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossAdditionalSpirit",
+      "id": 604,
+      "kind": "suffix",
+      "template": "Map contains an additional Azmeri Spirit",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Wisps",
+          "text": "Map contains an additional Azmeri Spirit"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossAdditionalEssence",
+      "id": 603,
+      "kind": "suffix",
+      "template": "Map contains an additional Essence",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Crystals",
+          "text": "Map contains an additional Essence"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossAdditionalShrine",
+      "id": 602,
+      "identifier": "map_num_extra_shrines",
+      "kind": "suffix",
+      "template": "Map contains an additional Shrine",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Worship",
+          "text": "Map contains an additional Shrine"
+        }
+      ]
+    },
+    {
+      "family_key": "MapBossAdditionalStrongbox",
+      "id": 601,
+      "identifier": "map_num_extra_strongboxes",
+      "kind": "suffix",
+      "template": "Map contains an additional Strongbox",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Compartments",
+          "text": "Map contains an additional Strongbox"
+        }
+      ]
+    }
+  ],
+  "category": "Tablet",
+  "label": "Overseer Precursor Tablet",
+  "slug": "Overseer_Precursor_Tablet"
+}

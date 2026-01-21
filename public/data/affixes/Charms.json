@@ -1,0 +1,394 @@
+{
+  "affixes": [
+    {
+      "family_key": "FlaskRecoverySpeed",
+      "id": 501,
+      "identifier": "local_charm_duration",
+      "kind": "prefix",
+      "template": "#% increased Duration",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Investigator's",
+          "text": "(16—20)% increased Duration"
+        },
+        {
+          "drop_chance": 0,
+          "level": 20,
+          "name": "Analyst's",
+          "text": "(21—25)% increased Duration"
+        },
+        {
+          "drop_chance": 0,
+          "level": 42,
+          "name": "Examiner's",
+          "text": "(26—30)% increased Duration"
+        },
+        {
+          "drop_chance": 0,
+          "level": 61,
+          "name": "Clinician's",
+          "text": "(31—35)% increased Duration"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "Experimenter's",
+          "text": "(36—40)% increased Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRecoveryAmount",
+      "id": 500,
+      "identifier": "charm_gain_X_guard_for_duration",
+      "kind": "prefix",
+      "template": "Also grants # Guard",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 10,
+          "name": "Sunny",
+          "text": "Also grants (44—66) Guard"
+        },
+        {
+          "drop_chance": 0,
+          "level": 21,
+          "name": "Dawnlit",
+          "text": "Also grants (85—128) Guard"
+        },
+        {
+          "drop_chance": 0,
+          "level": 36,
+          "name": "Bright",
+          "text": "Also grants (148—200) Guard"
+        },
+        {
+          "drop_chance": 0,
+          "level": 48,
+          "name": "Vibrant",
+          "text": "Also grants (205—260) Guard"
+        },
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "Lustrous",
+          "text": "Also grants (265—350) Guard"
+        },
+        {
+          "drop_chance": 0,
+          "level": 75,
+          "name": "Sunburst",
+          "text": "Also grants (355—500) Guard"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRecoveryAmount",
+      "id": 498,
+      "identifier": "charm_recover_X_life_when_used",
+      "kind": "prefix",
+      "template": "Recover # Life when Used",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Herbal",
+          "text": "Recover (8—12) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 14,
+          "name": "Floral",
+          "text": "Recover (35—52) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 26,
+          "name": "Blooming",
+          "text": "Recover (63—92) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 36,
+          "name": "Sprouting",
+          "text": "Recover (96—130) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 47,
+          "name": "Petaled",
+          "text": "Recover (134—180) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 58,
+          "name": "Botanic",
+          "text": "Recover (185—230) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "Natural",
+          "text": "Recover (235—280) Life when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "Evergreen",
+          "text": "Recover (285—350) Life when Used"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRecoveryAmount",
+      "id": 499,
+      "identifier": "charm_recover_X_mana_when_used",
+      "kind": "prefix",
+      "template": "Recover # Mana when Used",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Drizzling",
+          "text": "Recover (16—24) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 14,
+          "name": "Soaked",
+          "text": "Recover (33—50) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 26,
+          "name": "Mistbound",
+          "text": "Recover (55—75) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 36,
+          "name": "Tidebound",
+          "text": "Recover (80—110) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 47,
+          "name": "Aqueous",
+          "text": "Recover (115—145) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 58,
+          "name": "Flooded",
+          "text": "Recover (150—180) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "Oceanic",
+          "text": "Recover (185—225) Mana when Used"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "Raindancer's",
+          "text": "Recover (230—300) Mana when Used"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRechargeRate",
+      "id": 484,
+      "identifier": "local_%_chance_to_gain_flask_charge_on_kill",
+      "kind": "suffix",
+      "template": "#% Chance to gain a Charge when you kill an enemy",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 8,
+          "name": "of the Medic",
+          "text": "(21—25)% Chance to gain a Charge when you kill an enemy"
+        },
+        {
+          "drop_chance": 0,
+          "level": 26,
+          "name": "of the Doctor",
+          "text": "(26—30)% Chance to gain a Charge when you kill an enemy"
+        },
+        {
+          "drop_chance": 0,
+          "level": 45,
+          "name": "of the Surgeon",
+          "text": "(31—35)% Chance to gain a Charge when you kill an enemy"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskNumCharges",
+      "id": 487,
+      "identifier": "local_max_charges",
+      "kind": "suffix",
+      "template": "#% increased Charges",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Wide",
+          "text": "(23—30)% increased Charges"
+        },
+        {
+          "drop_chance": 0,
+          "level": 12,
+          "name": "of the Copious",
+          "text": "(31—38)% increased Charges"
+        },
+        {
+          "drop_chance": 0,
+          "level": 32,
+          "name": "of the Plentiful",
+          "text": "(39—46)% increased Charges"
+        },
+        {
+          "drop_chance": 0,
+          "level": 47,
+          "name": "of the Bountiful",
+          "text": "(47—54)% increased Charges"
+        },
+        {
+          "drop_chance": 0,
+          "level": 62,
+          "name": "of the Abundant",
+          "text": "(55—62)% increased Charges"
+        },
+        {
+          "drop_chance": 0,
+          "level": 81,
+          "name": "of the Ample",
+          "text": "(63—70)% increased Charges"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRechargeRate",
+      "id": 485,
+      "identifier": "local_charges_added",
+      "kind": "suffix",
+      "template": "#% increased Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Constant",
+          "text": "(23—30)% increased Charges gained"
+        },
+        {
+          "drop_chance": 0,
+          "level": 13,
+          "name": "of the Continuous",
+          "text": "(31—38)% increased Charges gained"
+        },
+        {
+          "drop_chance": 0,
+          "level": 33,
+          "name": "of the Endless",
+          "text": "(39—46)% increased Charges gained"
+        },
+        {
+          "drop_chance": 0,
+          "level": 48,
+          "name": "of the Bottomless",
+          "text": "(47—54)% increased Charges gained"
+        },
+        {
+          "drop_chance": 0,
+          "level": 63,
+          "name": "of the Perpetual",
+          "text": "(55—62)% increased Charges gained"
+        },
+        {
+          "drop_chance": 0,
+          "level": 82,
+          "name": "of the Eternal",
+          "text": "(63—70)% increased Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskChargesUsed",
+      "id": 486,
+      "identifier": "local_charges_used",
+      "kind": "suffix",
+      "template": "#% reduced Charges per use",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Apprentice",
+          "text": "(15—17)% reduced Charges per use"
+        },
+        {
+          "drop_chance": 0,
+          "level": 14,
+          "name": "of the Practitioner",
+          "text": "(18—20)% reduced Charges per use"
+        },
+        {
+          "drop_chance": 0,
+          "level": 34,
+          "name": "of the Mixologist",
+          "text": "(21—23)% reduced Charges per use"
+        },
+        {
+          "drop_chance": 0,
+          "level": 49,
+          "name": "of the Distiller",
+          "text": "(24—26)% reduced Charges per use"
+        },
+        {
+          "drop_chance": 0,
+          "level": 64,
+          "name": "of the Brewer",
+          "text": "(27—29)% reduced Charges per use"
+        },
+        {
+          "drop_chance": 0,
+          "level": 83,
+          "name": "of the Chemist",
+          "text": "(30—32)% reduced Charges per use"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskGainCharge",
+      "id": 489,
+      "identifier": "local_flask_gain_X_charges_every_minute",
+      "kind": "suffix",
+      "template": "Gains # Charges per Second",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 8,
+          "name": "of the Foliage",
+          "text": "Gains 0.15 Charges per Second"
+        },
+        {
+          "drop_chance": 0,
+          "level": 26,
+          "name": "of the Verdant",
+          "text": "Gains 0.2 Charges per Second"
+        },
+        {
+          "drop_chance": 0,
+          "level": 45,
+          "name": "of the Sylvan",
+          "text": "Gains 0.25 Charges per Second"
+        }
+      ]
+    }
+  ],
+  "category": "Flasks",
+  "label": "Charms",
+  "slug": "Charms"
+}

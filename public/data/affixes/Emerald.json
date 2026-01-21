@@ -1,0 +1,1117 @@
+{
+  "affixes": [
+    {
+      "family_key": "IncreasedAccuracyPercent",
+      "id": 234,
+      "identifier": "accuracy_rating",
+      "kind": "prefix",
+      "template": "#% increased Accuracy Rating",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Accurate",
+          "text": "(5—10)% increased Accuracy Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponAccuracy",
+      "id": 241,
+      "identifier": "bow_accuracy_rating",
+      "kind": "prefix",
+      "template": "#% increased Accuracy Rating with Bows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Precise",
+          "text": "(5—15)% increased Accuracy Rating with Bows"
+        }
+      ]
+    },
+    {
+      "family_key": "AttackDamage",
+      "id": 191,
+      "identifier": "attack_damage",
+      "kind": "prefix",
+      "template": "#% increased Attack Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Combat",
+          "text": "(5—15)% increased Attack Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "BlindEffect",
+      "id": 238,
+      "identifier": "blind_effect",
+      "kind": "prefix",
+      "template": "#% increased Blind Effect",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Stifling",
+          "text": "(5—10)% increased Blind Effect"
+        }
+      ]
+    },
+    {
+      "family_key": "CharmDamageWhileUsing",
+      "id": 247,
+      "identifier": "damage_+%_while_using_charm",
+      "kind": "prefix",
+      "template": "#% increased Damage while you have an active Charm",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Verdant",
+          "text": "(10—20)% increased Damage while you have an active Charm"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "id": 242,
+      "identifier": "bow_damage",
+      "kind": "prefix",
+      "template": "#% increased Damage with Bows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Perforating",
+          "text": "(6—16)% increased Damage with Bows"
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowDamage",
+      "id": 250,
+      "identifier": "crossbow_damage",
+      "kind": "prefix",
+      "template": "#% increased Damage with Crossbows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Bolting",
+          "text": "(6—16)% increased Damage with Crossbows"
+        }
+      ]
+    },
+    {
+      "family_key": "DamageVsRareOrUnique",
+      "id": 240,
+      "identifier": "damage_+%_to_rare_and_unique_enemies",
+      "kind": "prefix",
+      "template": "#% increased Damage with Hits against Rare and Unique Enemies",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Slaying",
+          "text": "(10—20)% increased Damage with Hits against Rare and Unique Enemies"
+        }
+      ]
+    },
+    {
+      "family_key": "DamageForm",
+      "id": 233,
+      "identifier": "plant_skill_damage",
+      "kind": "prefix",
+      "template": "#% increased Damage with Plant Skills",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Overgrown",
+          "text": "(5—15)% increased Damage with Plant Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "id": 276,
+      "identifier": "quarterstaff_damage",
+      "kind": "prefix",
+      "template": "#% increased Damage with Quarterstaves",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Monk's",
+          "text": "(6—16)% increased Damage with Quarterstaves"
+        }
+      ]
+    },
+    {
+      "family_key": "SpearDamage",
+      "id": 285,
+      "identifier": "spear_damage",
+      "kind": "prefix",
+      "template": "#% increased Damage with Spears",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Spearheaded",
+          "text": "(6—16)% increased Damage with Spears"
+        }
+      ]
+    },
+    {
+      "family_key": "CurseEffectiveness",
+      "id": 269,
+      "identifier": "mark_effect",
+      "kind": "prefix",
+      "template": "#% increased Effect of your Mark Skills",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Marking",
+          "text": "(4—8)% increased Effect of your Mark Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "ElementalDamagePercent",
+      "id": 196,
+      "identifier": "elemental_damage",
+      "kind": "prefix",
+      "template": "#% increased Elemental Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Prismatic",
+          "text": "(5—15)% increased Elemental Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "EvasionRatingPercent",
+      "id": 95,
+      "identifier": "evasion_rating",
+      "kind": "prefix",
+      "template": "#% increased Evasion Rating",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Evasive",
+          "text": "(10—20)% increased Evasion Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "HazardDamage",
+      "id": 294,
+      "identifier": "hazard_damage",
+      "kind": "prefix",
+      "template": "#% increased Hazard Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Hazardous",
+          "text": "(10—20)% increased Hazard Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningDamagePercentage",
+      "id": 115,
+      "identifier": "lightning_damage",
+      "kind": "prefix",
+      "template": "#% increased Lightning Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Humming",
+          "text": "(5—15)% increased Lightning Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentEffect",
+      "id": 236,
+      "identifier": "ailment_effect",
+      "kind": "prefix",
+      "template": "#% increased Magnitude of Ailments you inflict",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Acrimonious",
+          "text": "(5—15)% increased Magnitude of Ailments you inflict"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalAilmentEffect",
+      "id": 249,
+      "identifier": "critical_hit_damaging_ailment_effect",
+      "kind": "prefix",
+      "template": "#% increased Magnitude of Damaging Ailments you inflict with Critical Hits",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Rancorous",
+          "text": "(10—20)% increased Magnitude of Damaging Ailments you inflict with Critical Hits"
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonEffect",
+      "id": 273,
+      "identifier": "base_poison_effect",
+      "kind": "prefix",
+      "template": "#% increased Magnitude of Poison you inflict",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Venomous",
+          "text": "(5—15)% increased Magnitude of Poison you inflict"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockEffect",
+      "id": 281,
+      "identifier": "shock_effect",
+      "kind": "prefix",
+      "template": "#% increased Magnitude of Shock you inflict",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Jolting",
+          "text": "(10—15)% increased Magnitude of Shock you inflict"
+        }
+      ]
+    },
+    {
+      "family_key": "MeleeDamageIfProjectileHitRecently",
+      "id": 288,
+      "identifier": "melee_damage_+%_if_youve_dealt_projectile_attack_hit_recently",
+      "kind": "prefix",
+      "template": "#% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Engaging",
+          "text": "(10—20)% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds"
+        }
+      ]
+    },
+    {
+      "family_key": "AllDamage",
+      "id": 289,
+      "identifier": "parry_damage",
+      "kind": "prefix",
+      "template": "#% increased Parry Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Parrying",
+          "text": "(15—25)% increased Parry Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileDamage",
+      "id": 275,
+      "identifier": "projectile_damage",
+      "kind": "prefix",
+      "template": "#% increased Projectile Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Archer's",
+          "text": "(5—15)% increased Projectile Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileDamageIfMeleeHitRecently",
+      "id": 287,
+      "identifier": "projectile_damage_+%_if_youve_dealt_melee_hit_recently",
+      "kind": "prefix",
+      "template": "#% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Retreating",
+          "text": "(10—20)% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileSpeed",
+      "id": 178,
+      "identifier": "base_projectile_speed",
+      "kind": "prefix",
+      "template": "#% increased Projectile Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Soaring",
+          "text": "(4—8)% increased Projectile Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "EquipmentModifierEffect",
+      "id": 279,
+      "identifier": "quiver_mod_effect",
+      "kind": "prefix",
+      "template": "#% increased bonuses gained from Equipped Quiver",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Fletching",
+          "text": "(4—6)% increased bonuses gained from Equipped Quiver"
+        }
+      ]
+    },
+    {
+      "family_key": "CompanionDamage",
+      "id": 292,
+      "identifier": "companion_damage",
+      "kind": "prefix",
+      "template": "Companions deal #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Kinship",
+          "text": "Companions deal (10—20)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "CompanionLife",
+      "id": 293,
+      "identifier": "companion_maximum_life",
+      "kind": "prefix",
+      "template": "Companions have #% increased maximum Life",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Kindred",
+          "text": "Companions have (10—20)% increased maximum Life"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningResistancePenetration",
+      "id": 263,
+      "identifier": "base_reduce_enemy_lightning_resistance",
+      "kind": "prefix",
+      "template": "Damage Penetrates #% Lightning Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Surging",
+          "text": "Damage Penetrates (5—10)% Lightning Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "HeraldDamage",
+      "id": 260,
+      "identifier": "damage_+%_with_herald_skills",
+      "kind": "prefix",
+      "template": "Herald Skills deal #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Heralding",
+          "text": "Herald Skills deal (15—25)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "MaximumLightningResistance",
+      "id": 184,
+      "identifier": "base_maximum_lightning_damage_resistance_%",
+      "kind": "suffix",
+      "template": "# to Maximum Lightning Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Leviathan",
+          "text": "+1% to Maximum Lightning Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "BlindOnHit",
+      "id": 239,
+      "identifier": "attacks_chance_to_blind_on_hit",
+      "kind": "suffix",
+      "template": "#% chance to Blind Enemies on Hit with Attacks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Blinding",
+          "text": "(3—7)% chance to Blind Enemies on Hit with Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "DazeBuildup",
+      "id": 254,
+      "identifier": "base_chance_to_daze",
+      "kind": "suffix",
+      "template": "#% chance to Daze on Hit",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Dazing",
+          "text": "(5—10)% chance to Daze on Hit"
+        }
+      ]
+    },
+    {
+      "family_key": "ChanceToPierce",
+      "id": 177,
+      "identifier": "base_chance_to_pierce",
+      "kind": "suffix",
+      "template": "#% chance to Pierce an Enemy",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Piercing",
+          "text": "(10—20)% chance to Pierce an Enemy"
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonChanceIncrease",
+      "id": 272,
+      "identifier": "base_chance_to_poison_on_hit",
+      "kind": "suffix",
+      "template": "#% chance to Poison on Hit",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Poisoning",
+          "text": "(5—10)% chance to Poison on Hit"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAttackSpeed",
+      "id": 15,
+      "identifier": "attack_speed",
+      "kind": "suffix",
+      "template": "#% increased Attack Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Alacrity",
+          "text": "(2—4)% increased Attack Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "id": 243,
+      "identifier": "bow_attack_speed",
+      "kind": "suffix",
+      "template": "#% increased Attack Speed with Bows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Nocking",
+          "text": "(2—4)% increased Attack Speed with Bows"
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowSpeed",
+      "id": 252,
+      "identifier": "crossbow_attack_speed",
+      "kind": "suffix",
+      "template": "#% increased Attack Speed with Crossbows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Rapidity",
+          "text": "(2—4)% increased Attack Speed with Crossbows"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "id": 278,
+      "identifier": "quarterstaff_attack_speed",
+      "kind": "suffix",
+      "template": "#% increased Attack Speed with Quarterstaves",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Sequencing",
+          "text": "(2—4)% increased Attack Speed with Quarterstaves"
+        }
+      ]
+    },
+    {
+      "family_key": "SpearAttackSpeed",
+      "id": 283,
+      "identifier": "spear_attack_speed",
+      "kind": "suffix",
+      "template": "#% increased Attack Speed with Spears",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Spearing",
+          "text": "(2—4)% increased Attack Speed with Spears"
+        }
+      ]
+    },
+    {
+      "family_key": "CharmChargesGained",
+      "id": 246,
+      "identifier": "charm_charges_gained",
+      "kind": "suffix",
+      "template": "#% increased Charm Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Thicker",
+          "text": "(5—15)% increased Charm Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "CharmDuration",
+      "id": 245,
+      "identifier": "charm_duration",
+      "kind": "suffix",
+      "template": "#% increased Charm Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Woodland",
+          "text": "(5—15)% increased Charm Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "CooldownRecovery",
+      "id": 248,
+      "identifier": "base_cooldown_speed",
+      "kind": "suffix",
+      "template": "#% increased Cooldown Recovery Rate",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Chronomancy",
+          "text": "(3—5)% increased Cooldown Recovery Rate"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "id": 176,
+      "identifier": "attack_critical_strike_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Critical Damage Bonus for Attack Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Demolishing",
+          "text": "(10—20)% increased Critical Damage Bonus for Attack Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SpearCriticalDamage",
+      "id": 284,
+      "identifier": "spear_critical_strike_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Critical Damage Bonus with Spears",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Hunting",
+          "text": "(10—20)% increased Critical Damage Bonus with Spears"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "id": 175,
+      "identifier": "attack_critical_strike_chance",
+      "kind": "suffix",
+      "template": "#% increased Critical Hit Chance for Attacks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Deadliness",
+          "text": "(6—16)% increased Critical Hit Chance for Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowReloadSpeed",
+      "id": 251,
+      "identifier": "reload_speed",
+      "kind": "suffix",
+      "template": "#% increased Crossbow Reload Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Reloading",
+          "text": "(10—15)% increased Crossbow Reload Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "DamagingAilmentDuration",
+      "id": 253,
+      "identifier": "damaging_ailment_duration",
+      "kind": "suffix",
+      "template": "#% increased Duration of Damaging Ailments on Enemies",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Suffusion",
+          "text": "(5—10)% increased Duration of Damaging Ailments on Enemies"
+        }
+      ]
+    },
+    {
+      "family_key": "ElementalAilmentDuration",
+      "id": 256,
+      "identifier": "ignite_shock_chill_duration",
+      "kind": "suffix",
+      "template": "#% increased Duration of Ignite, Shock and Chill on Enemies",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Suffering",
+          "text": "(5—10)% increased Duration of Ignite, Shock and Chill on Enemies"
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentThreshold",
+      "id": 237,
+      "identifier": "ailment_threshold",
+      "kind": "suffix",
+      "template": "#% increased Elemental Ailment Threshold",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Enduring",
+          "text": "(10—20)% increased Elemental Ailment Threshold"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskChargesGained",
+      "id": 123,
+      "identifier": "flask_charges_gained",
+      "kind": "suffix",
+      "template": "#% increased Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Gathering",
+          "text": "(5—10)% increased Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskDuration",
+      "id": 258,
+      "identifier": "flask_duration",
+      "kind": "suffix",
+      "template": "#% increased Flask Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Prolonging",
+          "text": "(5—10)% increased Flask Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "QuarterstaffFreezeBuildup",
+      "id": 277,
+      "identifier": "quarterstaff_hit_damage_freeze_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Freeze Buildup with Quarterstaves",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Glaciers",
+          "text": "(10—20)% increased Freeze Buildup with Quarterstaves"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskChargeGenerationPercent",
+      "id": 262,
+      "identifier": "life_flask_charges_gained",
+      "kind": "suffix",
+      "template": "#% increased Life Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Pathfinding",
+          "text": "(10—20)% increased Life Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskLifeRecovery",
+      "id": 261,
+      "identifier": "flask_life_to_recover",
+      "kind": "suffix",
+      "template": "#% increased Life Recovery from Flasks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Recovery",
+          "text": "(5—15)% increased Life Recovery from Flasks"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskChargeGenerationPercent",
+      "id": 265,
+      "identifier": "mana_flask_charges_gained",
+      "kind": "suffix",
+      "template": "#% increased Mana Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Fountains",
+          "text": "(10—20)% increased Mana Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskManaRecovery",
+      "id": 264,
+      "identifier": "flask_mana_to_recover",
+      "kind": "suffix",
+      "template": "#% increased Mana Recovery from Flasks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Quenching",
+          "text": "(5—15)% increased Mana Recovery from Flasks"
+        }
+      ]
+    },
+    {
+      "family_key": "MovementVelocity",
+      "id": 270,
+      "identifier": "base_movement_velocity",
+      "kind": "suffix",
+      "template": "#% increased Movement Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Speed",
+          "text": "(1—2)% increased Movement Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "ParriedDebuff",
+      "id": 290,
+      "identifier": "parry_skill_effect_duration",
+      "kind": "suffix",
+      "template": "#% increased Parried Debuff Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Unsettling",
+          "text": "(10—15)% increased Parried Debuff Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "PinBuildup",
+      "id": 271,
+      "identifier": "hit_damage_pin_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Pin Buildup",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Pinning",
+          "text": "(10—20)% increased Pin Buildup"
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonDuration",
+      "id": 274,
+      "identifier": "base_poison_duration",
+      "kind": "suffix",
+      "template": "#% increased Poison Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Infection",
+          "text": "(5—10)% increased Poison Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockDuration",
+      "id": 280,
+      "identifier": "shock_duration",
+      "kind": "suffix",
+      "template": "#% increased Shock Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Paralyzing",
+          "text": "(15—25)% increased Shock Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedStunThresholdIfNoRecentStun",
+      "id": 286,
+      "identifier": "stun_threshold_+%_when_not_stunned_recently",
+      "kind": "suffix",
+      "template": "#% increased Stun Threshold if you haven't been Stunned Recently",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Stoutness",
+          "text": "(15—25)% increased Stun Threshold if you haven't been Stunned Recently"
+        }
+      ]
+    },
+    {
+      "family_key": "StunThresholdDuringParry",
+      "id": 291,
+      "identifier": "parry_stun_threshold_+%_during_parry",
+      "kind": "suffix",
+      "template": "#% increased Stun Threshold while Parrying",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Biding",
+          "text": "(15—25)% increased Stun Threshold while Parrying"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaLeechAmount",
+      "id": 266,
+      "identifier": "base_mana_leech_amount",
+      "kind": "suffix",
+      "template": "#% increased amount of Mana Leeched",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Thirsting",
+          "text": "(5—15)% increased amount of Mana Leeched"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "id": 45,
+      "identifier": "shock_chance",
+      "kind": "suffix",
+      "template": "#% increased chance to Shock",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Shocking",
+          "text": "(10—20)% increased chance to Shock"
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentChance",
+      "id": 235,
+      "identifier": "ailment_chance",
+      "kind": "suffix",
+      "template": "#% increased chance to inflict Ailments",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Ailing",
+          "text": "(5—15)% increased chance to inflict Ailments"
+        }
+      ]
+    },
+    {
+      "family_key": "SlowPotency",
+      "id": 282,
+      "identifier": "base_slow_potency",
+      "kind": "suffix",
+      "template": "#% reduced Slowing Potency of Debuffs on You",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Hastening",
+          "text": "(5—10)% reduced Slowing Potency of Debuffs on You"
+        }
+      ]
+    },
+    {
+      "family_key": "FasterAilmentDamage",
+      "id": 257,
+      "identifier": "damaging_ailments_deal_damage_+%_faster",
+      "kind": "suffix",
+      "template": "Damaging Ailments deal damage #% faster",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Decrepifying",
+          "text": "Damaging Ailments deal damage (3—7)% faster"
+        }
+      ]
+    },
+    {
+      "family_key": "DebuffTime",
+      "id": 255,
+      "identifier": "debuff_time_passed",
+      "kind": "suffix",
+      "template": "Debuffs on you expire #% faster",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Diminishing",
+          "text": "Debuffs on you expire (5—10)% faster"
+        }
+      ]
+    },
+    {
+      "family_key": "MarkDuration",
+      "id": 268,
+      "identifier": "mark_skill_duration",
+      "kind": "suffix",
+      "template": "Mark Skills have #% increased Skill Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Tracking",
+          "text": "Mark Skills have (18—32)% increased Skill Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "CurseCastSpeed",
+      "id": 267,
+      "identifier": "mark_use_speed",
+      "kind": "suffix",
+      "template": "Mark Skills have #% increased Use Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Targeting",
+          "text": "Mark Skills have (5—15)% increased Use Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "ForkingProjectiles",
+      "id": 259,
+      "identifier": "chance_to_fork_extra_projectile",
+      "kind": "suffix",
+      "template": "Projectiles have #% chance for an additional Projectile when Forking",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Forking",
+          "text": "Projectiles have (10—15)% chance for an additional Projectile when Forking"
+        }
+      ]
+    },
+    {
+      "family_key": "ChainFromTerrain",
+      "id": 244,
+      "identifier": "projectile_chance_to_chain_1_extra_time_from_terrain",
+      "kind": "suffix",
+      "template": "Projectiles have #% chance to Chain an additional time from terrain",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Chaining",
+          "text": "Projectiles have (3—5)% chance to Chain an additional time from terrain"
+        }
+      ]
+    }
+  ],
+  "category": "Jewels",
+  "label": "Emerald",
+  "slug": "Emerald"
+}

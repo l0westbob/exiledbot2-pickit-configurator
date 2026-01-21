@@ -1,0 +1,979 @@
+{
+  "affixes": [
+    {
+      "family_key": "Thorns",
+      "id": 119,
+      "identifier": "thorns_minimum_base_physical_damage",
+      "kind": "prefix",
+      "template": "# to # Physical Thorns damage",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Thorny",
+          "text": "(1—2) to (3—4) Physical Thorns damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 10,
+          "name": "Spiny",
+          "text": "(5—7) to (7—10) Physical Thorns damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 19,
+          "name": "Barbed",
+          "text": "(11—16) to (15—23) Physical Thorns damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Pointed",
+          "text": "(24—35) to (35—53) Physical Thorns damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "Spiked",
+          "text": "(40—60) to (61—92) Physical Thorns damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 63,
+          "name": "Edged",
+          "text": "(64—97) to (97—145) Physical Thorns damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 74,
+          "name": "Jagged",
+          "text": "(101—151) to (146—220) Physical Thorns damage"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltCharmDuration",
+      "id": 122,
+      "identifier": "charm_duration",
+      "kind": "prefix",
+      "template": "#% increased Charm Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 8,
+          "name": "Conservative",
+          "text": "(4—9)% increased Charm Effect Duration"
+        },
+        {
+          "drop_chance": 800,
+          "level": 33,
+          "name": "Transformative",
+          "text": "(10—15)% increased Charm Effect Duration"
+        },
+        {
+          "drop_chance": 800,
+          "level": 46,
+          "name": "Progressive",
+          "text": "(16—21)% increased Charm Effect Duration"
+        },
+        {
+          "drop_chance": 800,
+          "level": 60,
+          "name": "Innovative",
+          "text": "(22—27)% increased Charm Effect Duration"
+        },
+        {
+          "drop_chance": 800,
+          "level": 75,
+          "name": "Revolutionary",
+          "text": "(28—33)% increased Charm Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskRecoveryRate",
+      "id": 120,
+      "identifier": "flask_life_recovery_rate",
+      "kind": "prefix",
+      "template": "#% increased Flask Life Recovery rate",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 1,
+          "name": "Restoring",
+          "text": "(5—10)% increased Flask Life Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 16,
+          "name": "Recovering",
+          "text": "(11—16)% increased Flask Life Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 33,
+          "name": "Renewing",
+          "text": "(17—22)% increased Flask Life Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 46,
+          "name": "Refreshing",
+          "text": "(23—28)% increased Flask Life Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 60,
+          "name": "Rejuvenating",
+          "text": "(29—34)% increased Flask Life Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 75,
+          "name": "Regenerating",
+          "text": "(35—40)% increased Flask Life Recovery rate"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskRecoveryRate",
+      "id": 121,
+      "identifier": "flask_mana_recovery_rate",
+      "kind": "prefix",
+      "template": "#% increased Flask Mana Recovery rate",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 5,
+          "name": "Affecting",
+          "text": "(5—10)% increased Flask Mana Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 11,
+          "name": "Stirring",
+          "text": "(11—16)% increased Flask Mana Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 26,
+          "name": "Heartening",
+          "text": "(17—22)% increased Flask Mana Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 36,
+          "name": "Exciting",
+          "text": "(23—28)% increased Flask Mana Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 54,
+          "name": "Galvanizing",
+          "text": "(29—34)% increased Flask Mana Recovery rate"
+        },
+        {
+          "drop_chance": 800,
+          "level": 63,
+          "name": "Inspiring",
+          "text": "(35—40)% increased Flask Mana Recovery rate"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedPhysicalDamageReductionRating",
+      "id": 117,
+      "identifier": "base_physical_damage_reduction_rating",
+      "kind": "prefix",
+      "template": "+# to Armour",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Lacquered",
+          "text": "+(12—22) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "Studded",
+          "text": "+(23—42) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Ribbed",
+          "text": "+(43—54) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Fortified",
+          "text": "+(55—81) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Plated",
+          "text": "+(82—106) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Carapaced",
+          "text": "+(107—138) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Encased",
+          "text": "+(139—168) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Enveloped",
+          "text": "+(169—195) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 70,
+          "name": "Abating",
+          "text": "+(196—224) to Armour"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 80,
+          "name": "Unmoving",
+          "text": "+(225—255) to Armour"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedLife",
+      "id": 90,
+      "identifier": "base_maximum_life",
+      "kind": "prefix",
+      "template": "+# to maximum Life",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Hale",
+          "text": "+(10—19) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "Healthy",
+          "text": "+(20—29) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Sanguine",
+          "text": "+(30—39) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "Stalwart",
+          "text": "+(40—59) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Stout",
+          "text": "+(60—69) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Robust",
+          "text": "+(70—84) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Rotund",
+          "text": "+(85—99) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Virile",
+          "text": "+(100—119) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Athlete's",
+          "text": "+(120—149) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Fecund",
+          "text": "+(150—174) to maximum Life"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedMana",
+      "id": 24,
+      "identifier": "base_maximum_mana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(10—14) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(15—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Azure",
+          "text": "+(25—34) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Teal",
+          "text": "+(35—54) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(55—64) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(65—79) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(80—89) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(90—104) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(105—124) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "LifeRegeneration",
+      "id": 97,
+      "identifier": "base_life_regeneration_rate_per_minute",
+      "kind": "suffix",
+      "template": "# Life Regeneration per second",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Newt",
+          "text": "(1—2) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 5,
+          "name": "of the Lizard",
+          "text": "(2.1—3) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Flatworm",
+          "text": "(3.1—4) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 17,
+          "name": "of the Starfish",
+          "text": "(4.1—6) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "of the Hydra",
+          "text": "(6.1—9) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 35,
+          "name": "of the Troll",
+          "text": "(9.1—13) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 47,
+          "name": "of Convalescence",
+          "text": "(13.1—18) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 58,
+          "name": "of Recuperation",
+          "text": "(18.1—23) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 68,
+          "name": "of Resurgence",
+          "text": "(23.1—29) Life Regeneration per second"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltCharmChargesGained",
+      "id": 125,
+      "identifier": "charm_charges_gained",
+      "kind": "suffix",
+      "template": "#% increased Charm Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 2,
+          "name": "of Plenty",
+          "text": "(5—10)% increased Charm Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 16,
+          "name": "of Surplus",
+          "text": "(11—16)% increased Charm Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 32,
+          "name": "of Fertility",
+          "text": "(17—22)% increased Charm Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 48,
+          "name": "of Bounty",
+          "text": "(23—28)% increased Charm Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 70,
+          "name": "of the Harvest",
+          "text": "(29—34)% increased Charm Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 81,
+          "name": "of Abundance",
+          "text": "(35—40)% increased Charm Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskChargesGained",
+      "id": 123,
+      "identifier": "flask_charges_gained",
+      "kind": "suffix",
+      "template": "#% increased Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 2,
+          "name": "of Refilling",
+          "text": "(5—10)% increased Flask Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 16,
+          "name": "of Restocking",
+          "text": "(11—16)% increased Flask Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 32,
+          "name": "of Replenishing",
+          "text": "(17—22)% increased Flask Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 48,
+          "name": "of Pouring",
+          "text": "(23—28)% increased Flask Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 70,
+          "name": "of Brimming",
+          "text": "(29—34)% increased Flask Charges gained"
+        },
+        {
+          "drop_chance": 800,
+          "level": 81,
+          "name": "of Overflowing",
+          "text": "(35—40)% increased Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltCharmChargesUsed",
+      "id": 126,
+      "identifier": "charm_charges_used",
+      "kind": "suffix",
+      "template": "#% reduced Charm Charges used",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 3,
+          "name": "of Austerity",
+          "text": "(8—10)% reduced Charm Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 18,
+          "name": "of Frugality",
+          "text": "(11—13)% reduced Charm Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 33,
+          "name": "of Temperance",
+          "text": "(14—16)% reduced Charm Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 50,
+          "name": "of Restraint",
+          "text": "(17—19)% reduced Charm Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 72,
+          "name": "of Economy",
+          "text": "(20—22)% reduced Charm Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 81,
+          "name": "of Scarcity",
+          "text": "(23—25)% reduced Charm Charges used"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskChargesUsed",
+      "id": 124,
+      "identifier": "flask_charges_used",
+      "kind": "suffix",
+      "template": "#% reduced Flask Charges used",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 3,
+          "name": "of Sipping",
+          "text": "(8—10)% reduced Flask Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 18,
+          "name": "of Imbibing",
+          "text": "(11—13)% reduced Flask Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 33,
+          "name": "of Relishing",
+          "text": "(14—16)% reduced Flask Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 50,
+          "name": "of Savouring",
+          "text": "(17—19)% reduced Flask Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 72,
+          "name": "of Reveling",
+          "text": "(20—22)% reduced Flask Charges used"
+        },
+        {
+          "drop_chance": 800,
+          "level": 81,
+          "name": "of Nourishing",
+          "text": "(23—25)% reduced Flask Charges used"
+        }
+      ]
+    },
+    {
+      "family_key": "Strength",
+      "id": 49,
+      "identifier": "additional_strength",
+      "kind": "suffix",
+      "template": "+# to Strength",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Brute",
+          "text": "+(5—8) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Wrestler",
+          "text": "+(9—12) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 22,
+          "name": "of the Bear",
+          "text": "+(13—16) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "of the Lion",
+          "text": "+(17—20) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 44,
+          "name": "of the Gorilla",
+          "text": "+(21—24) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of the Goliath",
+          "text": "+(25—27) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of the Leviathan",
+          "text": "+(28—30) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 74,
+          "name": "of the Titan",
+          "text": "+(31—33) to Strength"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 81,
+          "name": "of the Gods",
+          "text": "+(34—36) to Strength"
+        }
+      ]
+    },
+    {
+      "family_key": "StunThreshold",
+      "id": 118,
+      "identifier": "stun_threshold",
+      "kind": "suffix",
+      "template": "+# to Stun Threshold",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 1,
+          "name": "of Thick Skin",
+          "text": "+(6—11) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 8,
+          "name": "of Reinforced Skin",
+          "text": "+(12—29) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 15,
+          "name": "of Stone Skin",
+          "text": "+(30—49) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 22,
+          "name": "of Iron Skin",
+          "text": "+(50—72) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 29,
+          "name": "of Steel Skin",
+          "text": "+(73—97) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 36,
+          "name": "of Granite Skin",
+          "text": "+(98—124) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 45,
+          "name": "of Platinum Skin",
+          "text": "+(125—163) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 54,
+          "name": "of Adamantite Skin",
+          "text": "+(164—206) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 63,
+          "name": "of Corundum Skin",
+          "text": "+(207—253) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 72,
+          "name": "of Obsidian Skin",
+          "text": "+(254—304) to Stun Threshold"
+        }
+      ]
+    },
+    {
+      "family_key": "ChaosResistance",
+      "id": 89,
+      "identifier": "base_chaos_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Chaos Resistance",
+      "tiers": [
+        {
+          "drop_chance": 250,
+          "level": 16,
+          "name": "of the Lost",
+          "text": "+(4—7)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 30,
+          "name": "of Banishment",
+          "text": "+(8—11)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 44,
+          "name": "of Eviction",
+          "text": "+(12—15)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 56,
+          "name": "of Expulsion",
+          "text": "+(16—19)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 68,
+          "name": "of Exile",
+          "text": "+(20—23)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 81,
+          "name": "of Bameth",
+          "text": "+(24—27)% to Chaos Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "ColdResistance",
+      "id": 86,
+      "identifier": "base_cold_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Cold Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Seal",
+          "text": "+(6—10)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 14,
+          "name": "of the Penguin",
+          "text": "+(11—15)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "of the Narwhal",
+          "text": "+(16—20)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "of the Yeti",
+          "text": "+(21—25)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 50,
+          "name": "of the Walrus",
+          "text": "+(26—30)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Polar Bear",
+          "text": "+(31—35)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of the Ice",
+          "text": "+(36—40)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Haast",
+          "text": "+(41—45)% to Cold Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "FireResistance",
+      "id": 85,
+      "identifier": "base_fire_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Fire Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Whelpling",
+          "text": "+(6—10)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 12,
+          "name": "of the Salamander",
+          "text": "+(11—15)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "of the Drake",
+          "text": "+(16—20)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of the Kiln",
+          "text": "+(21—25)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of the Furnace",
+          "text": "+(26—30)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Volcano",
+          "text": "+(31—35)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of Magma",
+          "text": "+(36—40)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Tzteosh",
+          "text": "+(41—45)% to Fire Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningResistance",
+      "id": 87,
+      "identifier": "base_lightning_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Lightning Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Cloud",
+          "text": "+(6—10)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 13,
+          "name": "of the Squall",
+          "text": "+(11—15)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "of the Storm",
+          "text": "+(16—20)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 37,
+          "name": "of the Thunderhead",
+          "text": "+(21—25)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 49,
+          "name": "of the Tempest",
+          "text": "+(26—30)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Maelstrom",
+          "text": "+(31—35)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of the Lightning",
+          "text": "+(36—40)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Ephij",
+          "text": "+(41—45)% to Lightning Resistance"
+        }
+      ]
+    }
+  ],
+  "category": "Jewellery",
+  "label": "Belts",
+  "slug": "Belts"
+}

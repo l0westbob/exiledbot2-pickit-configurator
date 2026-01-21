@@ -1,0 +1,1090 @@
+{
+  "affixes": [
+    {
+      "family_key": "BlindEffect",
+      "id": 383,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Blind Effect",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Stifling",
+          "text": "Notable Passive Skills in Radius also grant (3—5)% increased Blind Effect"
+        }
+      ]
+    },
+    {
+      "family_key": "CurseEffectiveness",
+      "id": 417,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Effect of your Mark Skills",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Marking",
+          "text": "Notable Passive Skills in Radius also grant (2—3)% increased Effect of your Mark Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentEffect",
+      "id": 378,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Magnitude of Ailments you inflict",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Acrimonious",
+          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Magnitude of Ailments you inflict"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalAilmentEffect",
+      "id": 394,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Magnitude of Damaging Ailments you inflict with Critical Hits",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Rancorous",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Magnitude of Damaging Ailments you inflict with Critical Hits"
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonEffect",
+      "id": 422,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Magnitude of Poison you inflict",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Venomous",
+          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Magnitude of Poison you inflict"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockEffect",
+      "id": 432,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Magnitude of Shock you inflict",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Jolting",
+          "text": "Notable Passive Skills in Radius also grant (5—7)% increased Magnitude of Shock you inflict"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileSpeed",
+      "id": 425,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Projectile Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Soaring",
+          "text": "Notable Passive Skills in Radius also grant (2—3)% increased Projectile Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "EquipmentModifierEffect",
+      "id": 429,
+      "kind": "prefix",
+      "template": "Notable Passive Skills in Radius also grant #% increased bonuses gained from Equipped Quiver",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Fletching",
+          "text": "Notable Passive Skills in Radius also grant (2—3)% increased bonuses gained from Equipped Quiver"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAccuracyPercent",
+      "id": 376,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Accuracy Rating",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Accurate",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Accuracy Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponAccuracy",
+      "id": 386,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Accuracy Rating with Bows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Precise",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Accuracy Rating with Bows"
+        }
+      ]
+    },
+    {
+      "family_key": "AttackDamage",
+      "id": 331,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Attack Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Combat",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Attack Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "CharmDamageWhileUsing",
+      "id": 392,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage while you have an active Charm",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Verdant",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Damage while you have an active Charm"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "id": 387,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage with Bows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Perforating",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Damage with Bows"
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowDamage",
+      "id": 395,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage with Crossbows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Bolting",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Damage with Crossbows"
+        }
+      ]
+    },
+    {
+      "family_key": "DamageVsRareOrUnique",
+      "id": 385,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage with Hits against Rare and Unique Enemies",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Slaying",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Damage with Hits against Rare and Unique Enemies"
+        }
+      ]
+    },
+    {
+      "family_key": "DamageForm",
+      "id": 375,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage with Plant Skills",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Overgrown",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Damage with Plant Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "id": 426,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage with Quarterstaves",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Monk's",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Damage with Quarterstaves"
+        }
+      ]
+    },
+    {
+      "family_key": "SpearDamage",
+      "id": 436,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Damage with Spears",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Spearheaded",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Damage with Spears"
+        }
+      ]
+    },
+    {
+      "family_key": "ElementalDamagePercent",
+      "id": 336,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Elemental Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Prismatic",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Elemental Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "EvasionRatingPercent",
+      "id": 402,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Evasion Rating",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Evasive",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Evasion Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "HazardDamage",
+      "id": 445,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Hazard Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Hazardous",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Hazard Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningDamagePercentage",
+      "id": 410,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Lightning Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Humming",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Lightning Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "MeleeDamageIfProjectileHitRecently",
+      "id": 439,
+      "identifier": "melee_damage_+%_if_youve_dealt_projectile_attack_hit_recently",
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Engaging",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds"
+        }
+      ]
+    },
+    {
+      "family_key": "AllDamage",
+      "id": 440,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Parry Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Parrying",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Parry Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileDamage",
+      "id": 424,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Projectile Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Archer's",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Projectile Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileDamageIfMeleeHitRecently",
+      "id": 438,
+      "identifier": "projectile_damage_+%_if_youve_dealt_melee_hit_recently",
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant #% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Retreating",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds"
+        }
+      ]
+    },
+    {
+      "family_key": "CompanionDamage",
+      "id": 443,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant Companions deal #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Kinship",
+          "text": "Small Passive Skills in Radius also grant Companions deal (2—3)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "CompanionLife",
+      "id": 444,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant Companions have #% increased maximum Life",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Kindred",
+          "text": "Small Passive Skills in Radius also grant Companions have (2—3)% increased maximum Life"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningResistancePenetration",
+      "id": 411,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant Damage Penetrates #% Lightning Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Surging",
+          "text": "Small Passive Skills in Radius also grant Damage Penetrates (1—2)% Lightning Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "HeraldDamage",
+      "id": 407,
+      "kind": "prefix",
+      "template": "Small Passive Skills in Radius also grant Herald Skills deal #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Heralding",
+          "text": "Small Passive Skills in Radius also grant Herald Skills deal (2—4)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "JewelRadiusLargerRadius",
+      "id": 324,
+      "kind": "prefix",
+      "template": "Upgrades Radius to Largelocal jewel effect base radius [#]",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Grand",
+          "text": "Upgrades Radius to Largelocal jewel effect base radius [300]"
+        }
+      ]
+    },
+    {
+      "family_key": "JewelRadiusLargerRadius",
+      "id": 323,
+      "kind": "prefix",
+      "template": "Upgrades Radius to Mediumlocal jewel effect base radius [#]",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Greater",
+          "text": "Upgrades Radius to Mediumlocal jewel effect base radius [150]"
+        }
+      ]
+    },
+    {
+      "family_key": "JewelRadiusNotableEffect",
+      "id": 326,
+      "identifier": "local_jewel_notable_passive_in_radius_effect",
+      "kind": "suffix",
+      "template": "#% increased Effect of Notable Passive Skills in Radius",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Supremacy",
+          "text": "(15—25)% increased Effect of Notable Passive Skills in Radius"
+        }
+      ]
+    },
+    {
+      "family_key": "JewelRadiusSmallNodeEffect",
+      "id": 325,
+      "identifier": "local_jewel_small_passive_in_radius_effect",
+      "kind": "suffix",
+      "template": "#% increased Effect of Small Passive Skills in Radius",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Potency",
+          "text": "(15—25)% increased Effect of Small Passive Skills in Radius"
+        }
+      ]
+    },
+    {
+      "family_key": "MovementVelocity",
+      "id": 418,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant # increased Movement Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Speed",
+          "text": "Notable Passive Skills in Radius also grant 1% increased Movement Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "ChanceToPierce",
+      "id": 419,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% chance to Pierce an Enemy",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Piercing",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% chance to Pierce an Enemy"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAttackSpeed",
+      "id": 382,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Attack Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Alacrity",
+          "text": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "id": 388,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Attack Speed with Bows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Nocking",
+          "text": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed with Bows"
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowSpeed",
+      "id": 397,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Attack Speed with Crossbows",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Rapidity",
+          "text": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed with Crossbows"
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "id": 428,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Attack Speed with Quarterstaves",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Sequencing",
+          "text": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed with Quarterstaves"
+        }
+      ]
+    },
+    {
+      "family_key": "SpearAttackSpeed",
+      "id": 434,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Attack Speed with Spears",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Spearing",
+          "text": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed with Spears"
+        }
+      ]
+    },
+    {
+      "family_key": "CharmChargesGained",
+      "id": 391,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Charm Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Thicker",
+          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Charm Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "CooldownRecovery",
+      "id": 393,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Cooldown Recovery Rate",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Chronomancy",
+          "text": "Notable Passive Skills in Radius also grant (1—3)% increased Cooldown Recovery Rate"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "id": 381,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Critical Damage Bonus for Attack Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Demolishing",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Critical Damage Bonus for Attack Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SpearCriticalDamage",
+      "id": 435,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Critical Damage Bonus with Spears",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Hunting",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Critical Damage Bonus with Spears"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "id": 380,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Critical Hit Chance for Attacks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Deadliness",
+          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Critical Hit Chance for Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowReloadSpeed",
+      "id": 396,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Crossbow Reload Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Reloading",
+          "text": "Notable Passive Skills in Radius also grant (5—7)% increased Crossbow Reload Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "DamagingAilmentDuration",
+      "id": 398,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Duration of Damaging Ailments on Enemies",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Suffusion",
+          "text": "Notable Passive Skills in Radius also grant (3—5)% increased Duration of Damaging Ailments on Enemies"
+        }
+      ]
+    },
+    {
+      "family_key": "ElementalAilmentDuration",
+      "id": 401,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Duration of Ignite, Shock and Chill on Enemies",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Suffering",
+          "text": "Notable Passive Skills in Radius also grant (3—5)% increased Duration of Ignite, Shock and Chill on Enemies"
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskChargesGained",
+      "id": 404,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Gathering",
+          "text": "Notable Passive Skills in Radius also grant (3—5)% increased Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "QuarterstaffFreezeBuildup",
+      "id": 427,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Freeze Buildup with Quarterstaves",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Glaciers",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Freeze Buildup with Quarterstaves"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskChargeGenerationPercent",
+      "id": 409,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Life Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Pathfinding",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Life Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskChargeGenerationPercent",
+      "id": 413,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Mana Flask Charges gained",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Fountains",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Mana Flask Charges gained"
+        }
+      ]
+    },
+    {
+      "family_key": "ParriedDebuff",
+      "id": 441,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Parried Debuff Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Unsettling",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Parried Debuff Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "PinBuildup",
+      "id": 420,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Pin Buildup",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Pinning",
+          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Pin Buildup"
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonDuration",
+      "id": 423,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Poison Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Infection",
+          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Poison Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "StunThresholdDuringParry",
+      "id": 442,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased Stun Threshold while Parrying",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Biding",
+          "text": "Notable Passive Skills in Radius also grant (8—12)% increased Stun Threshold while Parrying"
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentChance",
+      "id": 377,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% increased chance to inflict Ailments",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Ailing",
+          "text": "Notable Passive Skills in Radius also grant (3—7)% increased chance to inflict Ailments"
+        }
+      ]
+    },
+    {
+      "family_key": "SlowPotency",
+      "id": 433,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant #% reduced Slowing Potency of Debuffs on You",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Hastening",
+          "text": "Notable Passive Skills in Radius also grant (2—5)% reduced Slowing Potency of Debuffs on You"
+        }
+      ]
+    },
+    {
+      "family_key": "FasterAilmentDamage",
+      "id": 403,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant Damaging Ailments deal damage #% faster",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Decrepifying",
+          "text": "Notable Passive Skills in Radius also grant Damaging Ailments deal damage (2—3)% faster"
+        }
+      ]
+    },
+    {
+      "family_key": "DebuffTime",
+      "id": 400,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant Debuffs on you expire #% faster",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Diminishing",
+          "text": "Notable Passive Skills in Radius also grant Debuffs on you expire (3—5)% faster"
+        }
+      ]
+    },
+    {
+      "family_key": "ForkingProjectiles",
+      "id": 406,
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant Projectiles have #% chance for an additional Projectile when Forking",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Forking",
+          "text": "Notable Passive Skills in Radius also grant Projectiles have (5—7)% chance for an additional Projectile when Forking"
+        }
+      ]
+    },
+    {
+      "family_key": "ChainFromTerrain",
+      "id": 389,
+      "identifier": "projectile_chance_to_chain_1_extra_time_from_terrain_%",
+      "kind": "suffix",
+      "template": "Notable Passive Skills in Radius also grant Projectiles have #% chance to Chain an additional time from terrain",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Chaining",
+          "text": "Notable Passive Skills in Radius also grant Projectiles have (1—2)% chance to Chain an additional time from terrain"
+        }
+      ]
+    },
+    {
+      "family_key": "BlindOnHit",
+      "id": 384,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant # chance to Blind Enemies on Hit with Attacks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Blinding",
+          "text": "Small Passive Skills in Radius also grant 1% chance to Blind Enemies on Hit with Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "DazeBuildup",
+      "id": 399,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant # chance to Daze on Hit",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Dazing",
+          "text": "Small Passive Skills in Radius also grant 1% chance to Daze on Hit"
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonChanceIncrease",
+      "id": 421,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant # chance to Poison on Hit",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Poisoning",
+          "text": "Small Passive Skills in Radius also grant 1% chance to Poison on Hit"
+        }
+      ]
+    },
+    {
+      "family_key": "CharmDuration",
+      "id": 390,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Charm Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Woodland",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Charm Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentThreshold",
+      "id": 379,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Elemental Ailment Threshold",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Enduring",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Elemental Ailment Threshold"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskDuration",
+      "id": 405,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Flask Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Prolonging",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Flask Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskLifeRecovery",
+      "id": 408,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Life Recovery from Flasks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Recovery",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Life Recovery from Flasks"
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskManaRecovery",
+      "id": 412,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Mana Recovery from Flasks",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Quenching",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased Mana Recovery from Flasks"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockDuration",
+      "id": 431,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Shock Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Paralyzing",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Shock Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedStunThresholdIfNoRecentStun",
+      "id": 437,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased Stun Threshold if you haven't been Stunned Recently",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Stoutness",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased Stun Threshold if you haven't been Stunned Recently"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaLeechAmount",
+      "id": 414,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased amount of Mana Leeched",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Thirsting",
+          "text": "Small Passive Skills in Radius also grant (1—2)% increased amount of Mana Leeched"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "id": 430,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant #% increased chance to Shock",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Shocking",
+          "text": "Small Passive Skills in Radius also grant (2—3)% increased chance to Shock"
+        }
+      ]
+    },
+    {
+      "family_key": "MarkDuration",
+      "id": 416,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant Mark Skills have #% increased Skill Effect Duration",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Tracking",
+          "text": "Small Passive Skills in Radius also grant Mark Skills have (3—4)% increased Skill Effect Duration"
+        }
+      ]
+    },
+    {
+      "family_key": "CurseCastSpeed",
+      "id": 415,
+      "kind": "suffix",
+      "template": "Small Passive Skills in Radius also grant Mark Skills have #% increased Use Speed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Targeting",
+          "text": "Small Passive Skills in Radius also grant Mark Skills have (2—3)% increased Use Speed"
+        }
+      ]
+    }
+  ],
+  "category": "Jewels",
+  "label": "Time-Lost Emerald",
+  "slug": "Time-Lost_Emerald"
+}

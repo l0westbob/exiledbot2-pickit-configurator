@@ -1,0 +1,364 @@
+{
+  "affixes": [
+    {
+      "family_key": "MapExperienceGainIncrease",
+      "id": 547,
+      "identifier": "map_experience_gain",
+      "kind": "prefix",
+      "template": "#% increased Experience gain in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Elevated",
+          "text": "(10—20)% increased Experience gain in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedGoldIncrease",
+      "id": 546,
+      "identifier": "map_extra_gold_piles_chance",
+      "kind": "prefix",
+      "template": "#% increased Gold found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Bountiful",
+          "text": "(25—40)% increased Gold found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapPackSizeIncrease",
+      "id": 543,
+      "identifier": "map_pack_size",
+      "kind": "prefix",
+      "template": "#% increased Pack Size in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Breeding",
+          "text": "(6—10)% increased Pack Size in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedItemRarityIncrease",
+      "id": 542,
+      "identifier": "map_item_drop_rarity",
+      "kind": "prefix",
+      "template": "#% increased Rarity of Items found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Collector's",
+          "text": "(18—30)% increased Rarity of Items found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalAzmeriWisp",
+      "id": 550,
+      "identifier": "map_spawn_extra_torment_spirits / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap contains # additional Azmeri Spirit",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Azmeri's",
+          "text": "% increased Quantity of Waystones found in MapMap contains 1 additional Azmeri Spirit"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalExile",
+      "id": 551,
+      "identifier": "map_spawn_extra_exiles / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap is inhabited by # additional Rogue Exile",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Exiled",
+          "text": "% increased Quantity of Waystones found in MapMap is inhabited by 1 additional Rogue Exile"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalChests",
+      "id": 548,
+      "identifier": "map_addtional_rare_chest_amount",
+      "kind": "prefix",
+      "template": "Map contains # additional Rare Chests",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Treasurer's",
+          "text": "Map contains (2—3) additional Rare Chests"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "id": 549,
+      "identifier": "map_extra_monoliths / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "Map contains an additional Essence% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Crystallised",
+          "text": "Map contains an additional Essence% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStoneCircle",
+      "id": 552,
+      "identifier": "map_num_extra_stone_circles",
+      "kind": "prefix",
+      "template": "Map contains an additional Summoning Circle",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Summoner's",
+          "text": "Map contains an additional Summoning Circle"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMagicPackIncrease",
+      "id": 544,
+      "identifier": "map_number_of_magic_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased Magic Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Teeming",
+          "text": "Map has (50—70)% increased Magic Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapRarePackIncrease",
+      "id": 545,
+      "identifier": "map_number_of_rare_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased number of Rare Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Brimming",
+          "text": "Map has (25—40)% increased number of Rare Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterEffectiveness",
+      "id": 541,
+      "identifier": "map_monster_potency",
+      "kind": "prefix",
+      "template": "Monsters have #% increased Effectiveness",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Challenger's",
+          "text": "Monsters have (7—11)% increased Effectiveness"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedMapsIncrease",
+      "id": 589,
+      "identifier": "map_map_item_drop_chance",
+      "kind": "suffix",
+      "template": "#% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Cartographer",
+          "text": "(30—50)% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalShrine",
+      "id": 592,
+      "kind": "suffix",
+      "template": "% reduced Pack Size in MapMap contains an additional Shrine% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Devoted",
+          "text": "% reduced Pack Size in MapMap contains an additional Shrine% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStrongbox",
+      "id": 594,
+      "kind": "suffix",
+      "template": "% reduced Pack Size in MapMap contains an additional Strongbox% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Antiquarian",
+          "text": "% reduced Pack Size in MapMap contains an additional Strongbox% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalModifier",
+      "id": 599,
+      "kind": "suffix",
+      "template": "Map has # additional random Modifier",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Undertaking",
+          "text": "Map has (1—2) additional random Modifier"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalSpirit",
+      "id": 596,
+      "identifier": "map_tormented_spirit_chance",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain Azmeri Spirits",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Spirits",
+          "text": "Map has (70—100)% increased chance to contain Azmeri Spirits"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "id": 595,
+      "identifier": "map_monolith_chance",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain Essences",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Essence",
+          "text": "Map has (70—100)% increased chance to contain Essences"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalExile",
+      "id": 597,
+      "identifier": "map_rogue_exile_chance",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain Rogue Exiles",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Exile",
+          "text": "Map has (35—50)% increased chance to contain Rogue Exiles"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalShrine",
+      "id": 591,
+      "identifier": "map_shrine_chance",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain Shrines",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Shrines",
+          "text": "Map has (70—100)% increased chance to contain Shrines"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStrongbox",
+      "id": 593,
+      "identifier": "map_strongbox_chance",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain Strongboxes",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Strongboxes",
+          "text": "Map has (70—100)% increased chance to contain Strongboxes"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStoneCircle",
+      "id": 598,
+      "identifier": "map_stone_circle_chance",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain a Summoning Circle",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Summoning",
+          "text": "Map has (35—50)% increased chance to contain a Summoning Circle"
+        }
+      ]
+    },
+    {
+      "family_key": "MapRareMonstersAdditionalModifier",
+      "id": 590,
+      "identifier": "map_rare_monster_additional_modifier_chance_%_with_rollover",
+      "kind": "suffix",
+      "template": "Rare Monsters in Map have a #% chance to have an additional Modifier",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Nemesis",
+          "text": "Rare Monsters in Map have a (50—80)% chance to have an additional Modifier"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalUniqueMonsterModifier",
+      "id": 600,
+      "identifier": "map_unique_monster_num_additional_modifiers",
+      "kind": "suffix",
+      "template": "Unique Monsters have # additional Rare Modifier",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Contest",
+          "text": "Unique Monsters have 1 additional Rare Modifier"
+        }
+      ]
+    }
+  ],
+  "category": "Tablet",
+  "label": "Precursor Tablet",
+  "slug": "Precursor_Tablet"
+}

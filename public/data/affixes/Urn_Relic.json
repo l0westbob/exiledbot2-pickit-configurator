@@ -1,0 +1,451 @@
+{
+  "affixes": [
+    {
+      "family_key": "SanctumDefences",
+      "id": 509,
+      "identifier": "map_player_defences",
+      "kind": "prefix",
+      "template": "#% increased Defences",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Reinforced",
+          "text": "(20—29)% increased Defences"
+        },
+        {
+          "drop_chance": 0,
+          "level": 50,
+          "name": "Layered",
+          "text": "(30—39)% increased Defences"
+        },
+        {
+          "drop_chance": 0,
+          "level": 65,
+          "name": "Thickened",
+          "text": "(40—49)% increased Defences"
+        },
+        {
+          "drop_chance": 0,
+          "level": 75,
+          "name": "Girded",
+          "text": "(50—70)% increased Defences"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumResolveRecovery",
+      "id": 504,
+      "identifier": "sanctum_honour_restored",
+      "kind": "prefix",
+      "template": "#% increased Honour restored",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Revitalising",
+          "text": "(6—10)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 50,
+          "name": "Galvanising",
+          "text": "(11—15)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 70,
+          "name": "Enlivening",
+          "text": "(16—20)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 75,
+          "name": "Emboldening",
+          "text": "(21—24)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 80,
+          "name": "Brightening",
+          "text": "(25—29)% increased Honour restored"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMovementSpeed",
+      "id": 510,
+      "identifier": "map_players_movement_speed",
+      "kind": "prefix",
+      "template": "#% increased Movement Speed",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Nimble",
+          "text": "(3—4)% increased Movement Speed"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "Swift",
+          "text": "(5—6)% increased Movement Speed"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "Hasted",
+          "text": "(7—10)% increased Movement Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumHonour",
+      "id": 503,
+      "identifier": "sanctum_max_honour",
+      "kind": "prefix",
+      "template": "#% increased maximum Honour",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Honourable",
+          "text": "(9—12)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 40,
+          "name": "Moral",
+          "text": "(13—16)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "Principled",
+          "text": "(17—20)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "Respected",
+          "text": "(21—24)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "Venerable",
+          "text": "(25—30)% increased maximum Honour"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumLife",
+      "id": 502,
+      "identifier": "map_player_maximum_life",
+      "kind": "prefix",
+      "template": "#% increased maximum Life",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Steadfast",
+          "text": "(5—8)% increased maximum Life"
+        },
+        {
+          "drop_chance": 0,
+          "level": 40,
+          "name": "Enduring",
+          "text": "(9—12)% increased maximum Life"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "Adamant",
+          "text": "(13—16)% increased maximum Life"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "Ardent",
+          "text": "(17—20)% increased maximum Life"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "Resolute",
+          "text": "(21—25)% increased maximum Life"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumStartingGold",
+      "id": 507,
+      "identifier": "sanctum_starting_gold",
+      "kind": "prefix",
+      "template": "Gain # Sacred Water at the start of the Trial",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Commoner's",
+          "text": "Gain (30—39) Sacred Water at the start of the Trial"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "Djinn's",
+          "text": "Gain (50—59) Sacred Water at the start of the Trial"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "Sekhema's",
+          "text": "Gain (40—49) Sacred Water at the start of the Trial"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumKeyDropChance",
+      "id": 515,
+      "identifier": "map_sanctum_key_drop_chance",
+      "kind": "suffix",
+      "template": "#% increased quantity of Keys dropped by Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Access",
+          "text": "(6—10)% increased quantity of Keys dropped by Monsters"
+        },
+        {
+          "drop_chance": 0,
+          "level": 50,
+          "name": "of Admission",
+          "text": "(11—15)% increased quantity of Keys dropped by Monsters"
+        },
+        {
+          "drop_chance": 0,
+          "level": 65,
+          "name": "of Entry",
+          "text": "(16—20)% increased quantity of Keys dropped by Monsters"
+        },
+        {
+          "drop_chance": 0,
+          "level": 75,
+          "name": "of Entrance",
+          "text": "(21—25)% increased quantity of Keys dropped by Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRelicQuantity",
+      "id": 508,
+      "identifier": "map_sanctum_relic_drop_chance",
+      "kind": "suffix",
+      "template": "#% increased quantity of Relics dropped by Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Discovery",
+          "text": "(6—10)% increased quantity of Relics dropped by Monsters"
+        },
+        {
+          "drop_chance": 0,
+          "level": 50,
+          "name": "of Learning",
+          "text": "(11—15)% increased quantity of Relics dropped by Monsters"
+        },
+        {
+          "drop_chance": 0,
+          "level": 80,
+          "name": "of Investigation",
+          "text": "(16—20)% increased quantity of Relics dropped by Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumSlowResistance",
+      "id": 512,
+      "identifier": "map_player_base_slow_potency",
+      "kind": "suffix",
+      "template": "#% reduced Slowing Potency of Debuffs on You",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Unyielding",
+          "text": "(8—11)% reduced Slowing Potency of Debuffs on You"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "of Unrelenting",
+          "text": "(12—15)% reduced Slowing Potency of Debuffs on You"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "of the Pathfinder",
+          "text": "(16—20)% reduced Slowing Potency of Debuffs on You"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumDodgeRollDistance",
+      "id": 511,
+      "identifier": "map_player_dodge_roll_base_travel_distance",
+      "kind": "suffix",
+      "template": "+# metres to Dodge Roll distance",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Lunging",
+          "text": "+(0.3—0.4) metres to Dodge Roll distance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 70,
+          "name": "of Eluding",
+          "text": "+(0.5—0.7) metres to Dodge Roll distance"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumHonourResistance",
+      "id": 514,
+      "identifier": "sanctum_honour_resistance",
+      "kind": "suffix",
+      "template": "+#% to Honour Resistance",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Worth",
+          "text": "+(8—10)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 40,
+          "name": "of Deserving",
+          "text": "+(11—13)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "of Justification",
+          "text": "+(14—16)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "of Entitlement",
+          "text": "+(17—19)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "of Merit",
+          "text": "+(20—22)% to Honour Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumFountainDoubleGoldChance",
+      "id": 506,
+      "identifier": "sanctum_fountain_double_gold",
+      "kind": "suffix",
+      "template": "Fountains have #% chance to grant double Sacred Water",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Flowing",
+          "text": "Fountains have (5—6)% chance to grant double Sacred Water"
+        },
+        {
+          "drop_chance": 0,
+          "level": 35,
+          "name": "of Brimming",
+          "text": "Fountains have (7—8)% chance to grant double Sacred Water"
+        },
+        {
+          "drop_chance": 0,
+          "level": 54,
+          "name": "of Overflowing",
+          "text": "Fountains have (9—10)% chance to grant double Sacred Water"
+        },
+        {
+          "drop_chance": 0,
+          "level": 70,
+          "name": "of Abundance",
+          "text": "Fountains have (11—15)% chance to grant double Sacred Water"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumReducedCritDamage",
+      "id": 513,
+      "identifier": "map_player_base_self_critical_strike_multiplier_-%",
+      "kind": "suffix",
+      "template": "Hits against you have #% reduced Critical Damage Bonus",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Stoutness",
+          "text": "Hits against you have (12—15)% reduced Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "of Tenacity",
+          "text": "Hits against you have (16—19)% reduced Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "of Unwavering",
+          "text": "Hits against you have (20—25)% reduced Critical Damage Bonus"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonstersDoubleGoldChance",
+      "id": 505,
+      "identifier": "sanctum_monster_double_gold",
+      "kind": "suffix",
+      "template": "Monsters have #% chance to drop double Sacred Water",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Dampening",
+          "text": "Monsters have (5—6)% chance to drop double Sacred Water"
+        },
+        {
+          "drop_chance": 0,
+          "level": 35,
+          "name": "of Soaking",
+          "text": "Monsters have (7—8)% chance to drop double Sacred Water"
+        },
+        {
+          "drop_chance": 0,
+          "level": 54,
+          "name": "of Drenching",
+          "text": "Monsters have (9—10)% chance to drop double Sacred Water"
+        },
+        {
+          "drop_chance": 0,
+          "level": 70,
+          "name": "of Saturating",
+          "text": "Monsters have (11—15)% chance to drop double Sacred Water"
+        }
+      ]
+    }
+  ],
+  "category": "Relics",
+  "label": "Urn Relic",
+  "slug": "Urn_Relic"
+}

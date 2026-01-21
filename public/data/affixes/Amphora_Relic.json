@@ -1,0 +1,394 @@
+{
+  "affixes": [
+    {
+      "family_key": "SanctumResolveRecovery",
+      "id": 504,
+      "identifier": "sanctum_honour_restored",
+      "kind": "prefix",
+      "template": "#% increased Honour restored",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Revitalising",
+          "text": "(16—20)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 50,
+          "name": "Galvanising",
+          "text": "(21—24)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 70,
+          "name": "Enlivening",
+          "text": "(25—29)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 75,
+          "name": "Emboldening",
+          "text": "(30—34)% increased Honour restored"
+        },
+        {
+          "drop_chance": 0,
+          "level": 80,
+          "name": "Brightening",
+          "text": "(35—45)% increased Honour restored"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumHonour",
+      "id": 503,
+      "identifier": "sanctum_max_honour",
+      "kind": "prefix",
+      "template": "#% increased maximum Honour",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Honourable",
+          "text": "(17—20)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 40,
+          "name": "Moral",
+          "text": "(21—24)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "Principled",
+          "text": "(25—30)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "Respected",
+          "text": "(31—35)% increased maximum Honour"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "Venerable",
+          "text": "(36—45)% increased maximum Honour"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumBossReducedDamage",
+      "id": 526,
+      "identifier": "map_sanctum_boss_sanctum_damage_+%",
+      "kind": "prefix",
+      "template": "Bosses deal # reduced Damage",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Aegis",
+          "text": "Bosses deal 5% reduced Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumBossReducedDamage",
+      "id": 527,
+      "identifier": "map_sanctum_boss_sanctum_damage",
+      "kind": "prefix",
+      "template": "Bosses deal #% reduced Damage",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "Vanguard",
+          "text": "Bosses deal (6—7)% reduced Damage"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "Phalanx",
+          "text": "Bosses deal (8—10)% reduced Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumBossIncreasedDamageTaken",
+      "id": 522,
+      "identifier": "map_sanctum_boss_damage_taken",
+      "kind": "prefix",
+      "template": "Bosses take #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Challenger's",
+          "text": "Bosses take (11—15)% increased Damage"
+        },
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "Usurper's",
+          "text": "Bosses take (16—20)% increased Damage"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "Regicidal",
+          "text": "Bosses take (21—30)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGuardsReducedDamage",
+      "id": 524,
+      "identifier": "map_sanctum_guard_sanctum_damage_+%",
+      "kind": "prefix",
+      "template": "Rare Monsters deal # reduced Damage",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Bulwark",
+          "text": "Rare Monsters deal 5% reduced Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGuardsReducedDamage",
+      "id": 525,
+      "identifier": "map_sanctum_guard_sanctum_damage",
+      "kind": "prefix",
+      "template": "Rare Monsters deal #% reduced Damage",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "Bastion",
+          "text": "Rare Monsters deal (6—7)% reduced Damage"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "Citadel",
+          "text": "Rare Monsters deal (8—10)% reduced Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumGuardsIncreasedDamageTaken",
+      "id": 521,
+      "identifier": "map_sanctum_guard_damage_taken",
+      "kind": "prefix",
+      "template": "Rare Monsters take #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Transgressor's",
+          "text": "Rare Monsters take (11—15)% increased Damage"
+        },
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "Violator's",
+          "text": "Rare Monsters take (16—20)% increased Damage"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "Disgrace's",
+          "text": "Rare Monsters take (21—30)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMerchantExtraOptions",
+      "id": 523,
+      "identifier": "sanctum_merchant_additional_options",
+      "kind": "prefix",
+      "template": "The Merchant has an additional Choice",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "Plentiful",
+          "text": "The Merchant has an additional Choice"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRevealExtraRoomEachFloor",
+      "id": 520,
+      "identifier": "sanctum_map_reveal_extra_room_each_floor",
+      "kind": "suffix",
+      "template": "# additional Rooms are revealed on the Trial Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "of Clairvoyance",
+          "text": "2 additional Rooms are revealed on the Trial Map"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMerchantReducedCosts",
+      "id": 516,
+      "identifier": "sanctum_merchant_gold_cost",
+      "kind": "suffix",
+      "template": "#% reduced Merchant Prices",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Charity",
+          "text": "(6—7)% reduced Merchant Prices"
+        },
+        {
+          "drop_chance": 0,
+          "level": 74,
+          "name": "of Diplomacy",
+          "text": "(8—10)% reduced Merchant Prices"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumHonourResistance",
+      "id": 514,
+      "identifier": "sanctum_honour_resistance",
+      "kind": "suffix",
+      "template": "+#% to Honour Resistance",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Worth",
+          "text": "+(15—20)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 40,
+          "name": "of Deserving",
+          "text": "+(21—25)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 55,
+          "name": "of Justification",
+          "text": "+(26—30)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 67,
+          "name": "of Entitlement",
+          "text": "+(31—35)% to Honour Resistance"
+        },
+        {
+          "drop_chance": 0,
+          "level": 76,
+          "name": "of Merit",
+          "text": "+(36—40)% to Honour Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRevealExtraRoomEachFloor",
+      "id": 519,
+      "identifier": "sanctum_map_reveal_extra_room_each_floor",
+      "kind": "suffix",
+      "template": "An additional Room is revealed on the Trial Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Illumination",
+          "text": "An additional Room is revealed on the Trial Map"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumResolveOnBossKill",
+      "id": 517,
+      "identifier": "sanctum_restore_honour_on_boss_kill",
+      "kind": "suffix",
+      "template": "Restore # Honour on killing a Boss",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Empowerment",
+          "text": "Restore (40—59) Honour on killing a Boss"
+        },
+        {
+          "drop_chance": 0,
+          "level": 45,
+          "name": "of Championship",
+          "text": "Restore (60—79) Honour on killing a Boss"
+        },
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "of Victory",
+          "text": "Restore (80—99) Honour on killing a Boss"
+        },
+        {
+          "drop_chance": 0,
+          "level": 72,
+          "name": "of Conquest",
+          "text": "Restore (100—119) Honour on killing a Boss"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "of Triumph",
+          "text": "Restore (120—150) Honour on killing a Boss"
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMaximumResolveOnFountainUse",
+      "id": 518,
+      "identifier": "sanctum_restore_honour_on_fountain_use",
+      "kind": "suffix",
+      "template": "Restore # Honour on venerating a Maraketh Shrine",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Refreshment",
+          "text": "Restore (25—35) Honour on venerating a Maraketh Shrine"
+        },
+        {
+          "drop_chance": 0,
+          "level": 45,
+          "name": "of Convalescence",
+          "text": "Restore (30—39) Honour on venerating a Maraketh Shrine"
+        },
+        {
+          "drop_chance": 0,
+          "level": 60,
+          "name": "of Youth",
+          "text": "Restore (40—49) Honour on venerating a Maraketh Shrine"
+        },
+        {
+          "drop_chance": 0,
+          "level": 72,
+          "name": "of Freshness",
+          "text": "Restore (50—59) Honour on venerating a Maraketh Shrine"
+        },
+        {
+          "drop_chance": 0,
+          "level": 78,
+          "name": "of Bloom",
+          "text": "Restore (60—75) Honour on venerating a Maraketh Shrine"
+        }
+      ]
+    }
+  ],
+  "category": "Relics",
+  "label": "Amphora Relic",
+  "slug": "Amphora_Relic"
+}

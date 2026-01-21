@@ -1,0 +1,736 @@
+{
+  "affixes": [
+    {
+      "family_key": "DamageWithWeaponTypeSkill",
+      "id": 179,
+      "identifier": "damage_+%_with_bow_skills",
+      "kind": "prefix",
+      "template": "#% increased Damage with Bow Skills",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Acute",
+          "text": "(11—20)% increased Damage with Bow Skills"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Trenchant",
+          "text": "(21—30)% increased Damage with Bow Skills"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Perforating",
+          "text": "(31—36)% increased Damage with Bow Skills"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Incisive",
+          "text": "(37—42)% increased Damage with Bow Skills"
+        },
+        {
+          "drop_chance": 500,
+          "level": 60,
+          "name": "Lacerating",
+          "text": "(43—50)% increased Damage with Bow Skills"
+        },
+        {
+          "drop_chance": 500,
+          "level": 81,
+          "name": "Impaling",
+          "text": "(51—59)% increased Damage with Bow Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileSpeed",
+      "id": 178,
+      "identifier": "base_projectile_speed",
+      "kind": "prefix",
+      "template": "#% increased Projectile Speed",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 14,
+          "name": "Darting",
+          "text": "(10—17)% increased Projectile Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 27,
+          "name": "Brisk",
+          "text": "(18—25)% increased Projectile Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 41,
+          "name": "Quick",
+          "text": "(26—33)% increased Projectile Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "Rapid",
+          "text": "(34—41)% increased Projectile Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "Nimble",
+          "text": "(42—46)% increased Projectile Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAccuracy",
+      "id": 16,
+      "identifier": "accuracy_rating",
+      "kind": "prefix",
+      "template": "+# to Accuracy Rating",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 1,
+          "name": "Precise",
+          "text": "+(11—32) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 800,
+          "level": 11,
+          "name": "Reliable",
+          "text": "+(33—60) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 800,
+          "level": 18,
+          "name": "Focused",
+          "text": "+(61—84) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 800,
+          "level": 26,
+          "name": "Deliberate",
+          "text": "+(85—123) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 800,
+          "level": 36,
+          "name": "Consistent",
+          "text": "+(124—167) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 800,
+          "level": 48,
+          "name": "Steady",
+          "text": "+(168—236) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 800,
+          "level": 58,
+          "name": "Hunter's",
+          "text": "+(237—346) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 400,
+          "level": 67,
+          "name": "Ranger's",
+          "text": "+(347—450) to Accuracy Rating"
+        },
+        {
+          "drop_chance": 200,
+          "level": 76,
+          "name": "Amazon's",
+          "text": "+(451—550) to Accuracy Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "ColdDamage",
+      "id": 109,
+      "identifier": "attack_minimum_added_cold_damage",
+      "kind": "prefix",
+      "template": "Adds # to # Cold damage to Attacks",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Frosted",
+          "text": "Adds 1 to (2—3) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Chilled",
+          "text": "Adds (3—4) to (5—8) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Icy",
+          "text": "Adds (5—6) to (9—11) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Frigid",
+          "text": "Adds (7—8) to (12—14) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Freezing",
+          "text": "Adds (9—10) to (15—17) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Frozen",
+          "text": "Adds (11—13) to (18—21) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Glaciated",
+          "text": "Adds (14—15) to (22—24) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Polar",
+          "text": "Adds (16—20) to (25—31) Cold damage to Attacks"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Entombing",
+          "text": "Adds (21—24) to (32—37) Cold damage to Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "FireDamage",
+      "id": 108,
+      "identifier": "attack_minimum_added_fire_damage",
+      "kind": "prefix",
+      "template": "Adds # to # Fire damage to Attacks",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Heated",
+          "text": "Adds (1—2) to 3 Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Smouldering",
+          "text": "Adds (3—5) to (6—9) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Smoking",
+          "text": "Adds (6—8) to (10—13) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Burning",
+          "text": "Adds (9—11) to (14—17) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Flaming",
+          "text": "Adds (12—13) to (18—20) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Scorching",
+          "text": "Adds (11—16) to (21—26) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Incinerating",
+          "text": "Adds (13—19) to (27—32) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Blasting",
+          "text": "Adds (20—24) to (33—36) Fire damage to Attacks"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Cremating",
+          "text": "Adds (25—29) to (37—45) Fire damage to Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningDamage",
+      "id": 110,
+      "identifier": "attack_minimum_added_lightning_damage",
+      "kind": "prefix",
+      "template": "Adds # to # Lightning damage to Attacks",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Humming",
+          "text": "Adds 1 to (4—6) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Buzzing",
+          "text": "Adds 1 to (10—15) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Snapping",
+          "text": "Adds 1 to (16—22) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Crackling",
+          "text": "Adds 1 to (23—27) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Sparking",
+          "text": "Adds 1 to (28—32) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Arcing",
+          "text": "Adds (1—2) to (33—40) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Shocking",
+          "text": "Adds (1—2) to (41—47) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Discharging",
+          "text": "Adds (1—3) to (48—59) Lightning damage to Attacks"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Electrocuting",
+          "text": "Adds (1—4) to (60—71) Lightning damage to Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "PhysicalDamage",
+      "id": 107,
+      "identifier": "attack_minimum_added_physical_damage",
+      "kind": "prefix",
+      "template": "Adds # to # Physical Damage to Attacks",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Glinting",
+          "text": "Adds (1—2) to 3 Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Burnished",
+          "text": "Adds (2—3) to (4—6) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Polished",
+          "text": "Adds (2—4) to (5—8) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Honed",
+          "text": "Adds (4—6) to (8—11) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Gleaming",
+          "text": "Adds (5—7) to (9—13) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Annealed",
+          "text": "Adds (6—10) to (12—17) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 800,
+          "level": 60,
+          "name": "Razor-sharp",
+          "text": "Adds (7—11) to (14—20) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 600,
+          "level": 65,
+          "name": "Tempered",
+          "text": "Adds (10—15) to (18—26) Physical Damage to Attacks"
+        },
+        {
+          "drop_chance": 400,
+          "level": 75,
+          "name": "Flaring",
+          "text": "Adds (12—19) to (22—32) Physical Damage to Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "id": 66,
+      "identifier": "projectile_skill_gem_level_+",
+      "kind": "suffix",
+      "template": "# to Level of all Projectile Skills",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 5,
+          "name": "of the Archer",
+          "text": "+1 to Level of all Projectile Skills"
+        },
+        {
+          "drop_chance": 250,
+          "level": 41,
+          "name": "of the Fletcher",
+          "text": "+2 to Level of all Projectile Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "ChanceToPierce",
+      "id": 177,
+      "identifier": "base_chance_to_pierce",
+      "kind": "suffix",
+      "template": "#% chance to Pierce an Enemy",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 11,
+          "name": "of Piercing",
+          "text": "(12—14)% chance to Pierce an Enemy"
+        },
+        {
+          "drop_chance": 500,
+          "level": 26,
+          "name": "of Drilling",
+          "text": "(15—17)% chance to Pierce an Enemy"
+        },
+        {
+          "drop_chance": 500,
+          "level": 44,
+          "name": "of Puncturing",
+          "text": "(18—20)% chance to Pierce an Enemy"
+        },
+        {
+          "drop_chance": 500,
+          "level": 61,
+          "name": "of Skewering",
+          "text": "(21—23)% chance to Pierce an Enemy"
+        },
+        {
+          "drop_chance": 500,
+          "level": 77,
+          "name": "of Penetrating",
+          "text": "(24—26)% chance to Pierce an Enemy"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAttackSpeed",
+      "id": 15,
+      "identifier": "attack_speed",
+      "kind": "suffix",
+      "template": "#% increased Attack Speed",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "of Skill",
+          "text": "(5—7)% increased Attack Speed"
+        },
+        {
+          "drop_chance": 500,
+          "level": 22,
+          "name": "of Ease",
+          "text": "(8—10)% increased Attack Speed"
+        },
+        {
+          "drop_chance": 500,
+          "level": 37,
+          "name": "of Mastery",
+          "text": "(11—13)% increased Attack Speed"
+        },
+        {
+          "drop_chance": 500,
+          "level": 60,
+          "name": "of Renown",
+          "text": "(14—16)% increased Attack Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "id": 176,
+      "identifier": "attack_critical_strike_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Critical Damage Bonus for Attack Damage",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "of Ire",
+          "text": "(10—14)% increased Critical Damage Bonus for Attack Damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 21,
+          "name": "of Anger",
+          "text": "(15—19)% increased Critical Damage Bonus for Attack Damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 31,
+          "name": "of Rage",
+          "text": "(20—24)% increased Critical Damage Bonus for Attack Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 45,
+          "name": "of Fury",
+          "text": "(25—29)% increased Critical Damage Bonus for Attack Damage"
+        },
+        {
+          "drop_chance": 250,
+          "level": 59,
+          "name": "of Ferocity",
+          "text": "(30—34)% increased Critical Damage Bonus for Attack Damage"
+        },
+        {
+          "drop_chance": 125,
+          "level": 74,
+          "name": "of Destruction",
+          "text": "(35—39)% increased Critical Damage Bonus for Attack Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "id": 175,
+      "identifier": "attack_critical_strike_chance",
+      "kind": "suffix",
+      "template": "#% increased Critical Hit Chance for Attacks",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 5,
+          "name": "of Menace",
+          "text": "(10—14)% increased Critical Hit Chance for Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 20,
+          "name": "of Havoc",
+          "text": "(15—19)% increased Critical Hit Chance for Attacks"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 30,
+          "name": "of Disaster",
+          "text": "(20—24)% increased Critical Hit Chance for Attacks"
+        },
+        {
+          "drop_chance": 500,
+          "level": 44,
+          "name": "of Calamity",
+          "text": "(25—29)% increased Critical Hit Chance for Attacks"
+        },
+        {
+          "drop_chance": 250,
+          "level": 58,
+          "name": "of Ruin",
+          "text": "(30—34)% increased Critical Hit Chance for Attacks"
+        },
+        {
+          "drop_chance": 125,
+          "level": 72,
+          "name": "of Unmaking",
+          "text": "(35—38)% increased Critical Hit Chance for Attacks"
+        }
+      ]
+    },
+    {
+      "family_key": "Dexterity",
+      "id": 1,
+      "identifier": "additional_dexterity",
+      "kind": "suffix",
+      "template": "+# to Dexterity",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Mongoose",
+          "text": "+(5—8) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Lynx",
+          "text": "+(9—12) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 22,
+          "name": "of the Fox",
+          "text": "+(13—16) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "of the Falcon",
+          "text": "+(17—20) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 44,
+          "name": "of the Panther",
+          "text": "+(21—24) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of the Leopard",
+          "text": "+(25—27) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of the Jaguar",
+          "text": "+(28—30) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 74,
+          "name": "of the Phantom",
+          "text": "+(31—33) to Dexterity"
+        }
+      ]
+    },
+    {
+      "family_key": "LifeGainedFromEnemyDeath",
+      "id": 12,
+      "identifier": "base_life_gained_on_enemy_death",
+      "kind": "suffix",
+      "template": "Gain # Life per enemy killed",
+      "tiers": [
+        {
+          "drop_chance": 750,
+          "level": 1,
+          "name": "of Success",
+          "text": "Gain (4—6) Life per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 11,
+          "name": "of Victory",
+          "text": "Gain (7—9) Life per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 22,
+          "name": "of Triumph",
+          "text": "Gain (10—18) Life per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 33,
+          "name": "of Conquest",
+          "text": "Gain (19—28) Life per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 44,
+          "name": "of Vanquishing",
+          "text": "Gain (29—40) Life per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 55,
+          "name": "of Valour",
+          "text": "Gain (41—53) Life per enemy killed"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaGainedFromEnemyDeath",
+      "id": 13,
+      "identifier": "base_mana_gained_on_enemy_death",
+      "kind": "suffix",
+      "template": "Gain # Mana per enemy killed",
+      "tiers": [
+        {
+          "drop_chance": 750,
+          "level": 1,
+          "name": "of Absorption",
+          "text": "Gain (2—3) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 12,
+          "name": "of Osmosis",
+          "text": "Gain (4—5) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 23,
+          "name": "of Infusion",
+          "text": "Gain (6—9) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 34,
+          "name": "of Enveloping",
+          "text": "Gain (10—14) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 45,
+          "name": "of Consumption",
+          "text": "Gain (15—20) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 750,
+          "level": 56,
+          "name": "of Siphoning",
+          "text": "Gain (21—27) Mana per enemy killed"
+        }
+      ]
+    }
+  ],
+  "category": "Off-hand",
+  "label": "Quivers",
+  "slug": "Quivers"
+}

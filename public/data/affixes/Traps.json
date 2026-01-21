@@ -1,0 +1,1045 @@
+{
+  "affixes": [
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 30,
+      "identifier": "chaos_damage",
+      "kind": "prefix",
+      "template": "#% increased Chaos Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Impure",
+          "text": "(25—34)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "Tainted",
+          "text": "(35—44)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Clouded",
+          "text": "(45—54)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Darkened",
+          "text": "(55—64)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Malignant",
+          "text": "(65—74)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Vile",
+          "text": "(75—89)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Twisted",
+          "text": "(90—104)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "Malevolent",
+          "text": "(105—119)% increased Chaos Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 28,
+      "identifier": "cold_damage",
+      "kind": "prefix",
+      "template": "#% increased Cold Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Bitter",
+          "text": "(25—34)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "Biting",
+          "text": "(35—44)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Alpine",
+          "text": "(45—54)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Snowy",
+          "text": "(55—64)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Hailing",
+          "text": "(65—74)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Arctic",
+          "text": "(75—89)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Crystalline",
+          "text": "(90—104)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "Cryomancer's",
+          "text": "(105—119)% increased Cold Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 27,
+      "identifier": "fire_damage",
+      "kind": "prefix",
+      "template": "#% increased Fire Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Searing",
+          "text": "(25—34)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "Sizzling",
+          "text": "(35—44)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Blistering",
+          "text": "(45—54)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Cauterising",
+          "text": "(55—64)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Smoldering",
+          "text": "(65—74)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Magmatic",
+          "text": "(75—89)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Volcanic",
+          "text": "(90—104)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "Pyromancer's",
+          "text": "(105—119)% increased Fire Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 29,
+      "identifier": "lightning_damage",
+      "kind": "prefix",
+      "template": "#% increased Lightning Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Charged",
+          "text": "(25—34)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "Hissing",
+          "text": "(35—44)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Bolting",
+          "text": "(45—54)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Coursing",
+          "text": "(55—64)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Striking",
+          "text": "(65—74)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Smiting",
+          "text": "(75—89)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Ionising",
+          "text": "(90—104)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "Electromancer's",
+          "text": "(105—119)% increased Lightning Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 31,
+      "identifier": "spell_physical_damage",
+      "kind": "prefix",
+      "template": "#% increased Spell Physical Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Punishing",
+          "text": "(25—34)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "Unforgiving",
+          "text": "(35—44)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Vengeful",
+          "text": "(45—54)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Sadistic",
+          "text": "(55—64)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Pitiless",
+          "text": "(65—74)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Agonising",
+          "text": "(75—89)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Oppressor's",
+          "text": "(90—104)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "Torturer's",
+          "text": "(105—119)% increased Spell Physical Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponCasterDamagePrefix",
+      "id": 78,
+      "identifier": "trap_damage",
+      "kind": "prefix",
+      "template": "#% increased Trap Damage",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Explosive",
+          "text": "(25—34)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "Eviscerating",
+          "text": "(35—44)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Crippling",
+          "text": "(45—54)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Disabling",
+          "text": "(55—64)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Decimating",
+          "text": "(65—74)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Demolishing",
+          "text": "(75—89)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Obliterating",
+          "text": "(90—104)% increased Trap Damage"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "Shattering",
+          "text": "(105—119)% increased Trap Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "TrapDamageAndMana",
+      "id": 79,
+      "identifier": "trap_damage_+% / base_maximum_mana",
+      "kind": "prefix",
+      "template": "#% increased Trap Damage+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "Sapper's",
+          "text": "(15—19)% increased Trap Damage+(17—20) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 11,
+          "name": "Saboteur's",
+          "text": "(20—24)% increased Trap Damage+(21—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 23,
+          "name": "Tinkerer's",
+          "text": "(25—29)% increased Trap Damage+(25—28) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 35,
+          "name": "Mechanic's",
+          "text": "(30—34)% increased Trap Damage+(29—33) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 48,
+          "name": "Engineer's",
+          "text": "(35—39)% increased Trap Damage+(34—37) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 63,
+          "name": "Inventor's",
+          "text": "(40—44)% increased Trap Damage+(38—41) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 78,
+          "name": "Artificer's",
+          "text": "(45—49)% increased Trap Damage+(42—45) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedMana",
+      "id": 24,
+      "identifier": "base_maximum_mana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(10—14) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(15—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 16,
+          "name": "Azure",
+          "text": "+(25—34) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 25,
+          "name": "Teal",
+          "text": "+(35—54) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(55—64) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(65—79) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(80—89) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(90—104) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(105—124) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 65,
+          "name": "Mazarine",
+          "text": "+(125—149) to maximum Mana"
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "Blue",
+          "text": "+(150—164) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "id": 80,
+      "identifier": "trap_skill_gem_level_+",
+      "kind": "suffix",
+      "template": "# to Level of all Trap Skill Gems",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 2,
+          "name": "of Explosives",
+          "text": "+1 to Level of all Trap Skill Gems"
+        },
+        {
+          "drop_chance": 1,
+          "level": 18,
+          "name": "of Shrapnel",
+          "text": "+2 to Level of all Trap Skill Gems"
+        },
+        {
+          "drop_chance": 1,
+          "level": 36,
+          "name": "of Sabotage",
+          "text": "+3 to Level of all Trap Skill Gems"
+        },
+        {
+          "drop_chance": 1,
+          "level": 55,
+          "name": "of Detonation",
+          "text": "+4 to Level of all Trap Skill Gems"
+        },
+        {
+          "drop_chance": 1,
+          "level": 81,
+          "name": "of Pyrotechnics",
+          "text": "+5 to Level of all Trap Skill Gems"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "id": 82,
+      "identifier": "trap_critical_strike_chance",
+      "kind": "suffix",
+      "template": "#% increased Critical Hit Chance with Traps",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 11,
+          "name": "of Menace",
+          "text": "(10—19)% increased Critical Hit Chance with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 21,
+          "name": "of Havoc",
+          "text": "(20—39)% increased Critical Hit Chance with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 28,
+          "name": "of Disaster",
+          "text": "(40—59)% increased Critical Hit Chance with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 41,
+          "name": "of Calamity",
+          "text": "(60—79)% increased Critical Hit Chance with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 59,
+          "name": "of Ruin",
+          "text": "(80—99)% increased Critical Hit Chance with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 76,
+          "name": "of Unmaking",
+          "text": "(100—109)% increased Critical Hit Chance with Traps"
+        }
+      ]
+    },
+    {
+      "family_key": "IgniteChanceIncrease",
+      "id": 43,
+      "identifier": "ignite_chance",
+      "kind": "suffix",
+      "template": "#% increased Flammability Magnitude",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 15,
+          "name": "of Ignition",
+          "text": "(51—60)% increased Flammability Magnitude"
+        },
+        {
+          "drop_chance": 1,
+          "level": 30,
+          "name": "of Scorching",
+          "text": "(61—70)% increased Flammability Magnitude"
+        },
+        {
+          "drop_chance": 1,
+          "level": 45,
+          "name": "of Incineration",
+          "text": "(71—80)% increased Flammability Magnitude"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "of Combustion",
+          "text": "(81—90)% increased Flammability Magnitude"
+        },
+        {
+          "drop_chance": 1,
+          "level": 75,
+          "name": "of Conflagration",
+          "text": "(91—100)% increased Flammability Magnitude"
+        }
+      ]
+    },
+    {
+      "family_key": "FreezeDamageIncrease",
+      "id": 44,
+      "identifier": "hit_damage_freeze_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Freeze Buildup",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 15,
+          "name": "of Freezing",
+          "text": "(31—40)% increased Freeze Buildup"
+        },
+        {
+          "drop_chance": 1,
+          "level": 30,
+          "name": "of Bleakness",
+          "text": "(41—50)% increased Freeze Buildup"
+        },
+        {
+          "drop_chance": 1,
+          "level": 45,
+          "name": "of the Glacier",
+          "text": "(51—60)% increased Freeze Buildup"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "of the Hyperboreal",
+          "text": "(61—70)% increased Freeze Buildup"
+        },
+        {
+          "drop_chance": 1,
+          "level": 75,
+          "name": "of the Arctic",
+          "text": "(71—80)% increased Freeze Buildup"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaRegeneration",
+      "id": 38,
+      "identifier": "mana_regeneration_rate",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Excitement",
+          "text": "(10—19)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1,
+          "level": 18,
+          "name": "of Joy",
+          "text": "(20—29)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1,
+          "level": 29,
+          "name": "of Elation",
+          "text": "(30—39)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1,
+          "level": 42,
+          "name": "of Bliss",
+          "text": "(40—49)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1,
+          "level": 55,
+          "name": "of Euphoria",
+          "text": "(50—59)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1,
+          "level": 79,
+          "name": "of Nirvana",
+          "text": "(60—69)% increased Mana Regeneration Rate"
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "id": 45,
+      "identifier": "shock_chance",
+      "kind": "suffix",
+      "template": "#% increased chance to Shock",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 15,
+          "name": "of Shocking",
+          "text": "(51—60)% increased chance to Shock"
+        },
+        {
+          "drop_chance": 1,
+          "level": 30,
+          "name": "of Zapping",
+          "text": "(61—70)% increased chance to Shock"
+        },
+        {
+          "drop_chance": 1,
+          "level": 45,
+          "name": "of Electrocution",
+          "text": "(71—80)% increased chance to Shock"
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "of Voltages",
+          "text": "(81—90)% increased chance to Shock"
+        },
+        {
+          "drop_chance": 1,
+          "level": 75,
+          "name": "of the Thunderbolt",
+          "text": "(91—100)% increased chance to Shock"
+        }
+      ]
+    },
+    {
+      "family_key": "Dexterity",
+      "id": 1,
+      "identifier": "additional_dexterity",
+      "kind": "suffix",
+      "template": "+# to Dexterity",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Mongoose",
+          "text": "+(5—8) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 11,
+          "name": "of the Lynx",
+          "text": "+(9—12) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 22,
+          "name": "of the Fox",
+          "text": "+(13—16) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "of the Falcon",
+          "text": "+(17—20) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 44,
+          "name": "of the Panther",
+          "text": "+(21—24) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 55,
+          "name": "of the Leopard",
+          "text": "+(25—27) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 66,
+          "name": "of the Jaguar",
+          "text": "+(28—30) to Dexterity"
+        },
+        {
+          "drop_chance": 1,
+          "level": 74,
+          "name": "of the Phantom",
+          "text": "+(31—33) to Dexterity"
+        }
+      ]
+    },
+    {
+      "family_key": "Intelligence",
+      "id": 23,
+      "identifier": "additional_intelligence",
+      "kind": "suffix",
+      "template": "+# to Intelligence",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of the Pupil",
+          "text": "+(5—8) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 11,
+          "name": "of the Student",
+          "text": "+(9—12) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 22,
+          "name": "of the Prodigy",
+          "text": "+(13—16) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "of the Augur",
+          "text": "+(17—20) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 44,
+          "name": "of the Philosopher",
+          "text": "+(21—24) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 55,
+          "name": "of the Sage",
+          "text": "+(25—27) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 66,
+          "name": "of the Savant",
+          "text": "+(28—30) to Intelligence"
+        },
+        {
+          "drop_chance": 1,
+          "level": 74,
+          "name": "of the Virtuoso",
+          "text": "+(31—33) to Intelligence"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "id": 83,
+      "identifier": "trap_critical_strike_multiplier",
+      "kind": "suffix",
+      "template": "+#% to Critical Damage Bonus with Traps",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 8,
+          "name": "of Ire",
+          "text": "+(10—14)% to Critical Damage Bonus with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 21,
+          "name": "of Anger",
+          "text": "+(15—19)% to Critical Damage Bonus with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 30,
+          "name": "of Rage",
+          "text": "+(20—24)% to Critical Damage Bonus with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 44,
+          "name": "of Fury",
+          "text": "+(25—29)% to Critical Damage Bonus with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 59,
+          "name": "of Ferocity",
+          "text": "+(30—34)% to Critical Damage Bonus with Traps"
+        },
+        {
+          "drop_chance": 1,
+          "level": 73,
+          "name": "of Destruction",
+          "text": "+(35—39)% to Critical Damage Bonus with Traps"
+        }
+      ]
+    },
+    {
+      "family_key": "LifeGainedFromEnemyDeath",
+      "id": 12,
+      "identifier": "base_life_gained_on_enemy_death",
+      "kind": "suffix",
+      "template": "Gain # Life per enemy killed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Success",
+          "text": "Gain (4—6) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 11,
+          "name": "of Victory",
+          "text": "Gain (7—9) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 22,
+          "name": "of Triumph",
+          "text": "Gain (10—18) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 33,
+          "name": "of Conquest",
+          "text": "Gain (19—28) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 44,
+          "name": "of Vanquishing",
+          "text": "Gain (29—40) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 55,
+          "name": "of Valour",
+          "text": "Gain (41—53) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 66,
+          "name": "of Glory",
+          "text": "Gain (54—68) Life per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 77,
+          "name": "of Legend",
+          "text": "Gain (69—84) Life per enemy killed"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaGainedFromEnemyDeath",
+      "id": 13,
+      "identifier": "base_mana_gained_on_enemy_death",
+      "kind": "suffix",
+      "template": "Gain # Mana per enemy killed",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "of Absorption",
+          "text": "Gain (2—3) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 12,
+          "name": "of Osmosis",
+          "text": "Gain (4—5) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 23,
+          "name": "of Infusion",
+          "text": "Gain (6—9) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 34,
+          "name": "of Enveloping",
+          "text": "Gain (10—14) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 45,
+          "name": "of Consumption",
+          "text": "Gain (15—20) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 56,
+          "name": "of Siphoning",
+          "text": "Gain (21—27) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 67,
+          "name": "of Devouring",
+          "text": "Gain (28—35) Mana per enemy killed"
+        },
+        {
+          "drop_chance": 1,
+          "level": 78,
+          "name": "of Assimilation",
+          "text": "Gain (36—45) Mana per enemy killed"
+        }
+      ]
+    },
+    {
+      "family_key": "TrapAndMineThrowSpeed",
+      "id": 81,
+      "identifier": null,
+      "kind": "suffix",
+      "template": "TBD",
+      "tiers": [
+        {
+          "drop_chance": 1,
+          "level": 1,
+          "name": "TBD",
+          "text": null
+        },
+        {
+          "drop_chance": 1,
+          "level": 15,
+          "name": "TBD",
+          "text": null
+        },
+        {
+          "drop_chance": 1,
+          "level": 30,
+          "name": "TBD",
+          "text": null
+        },
+        {
+          "drop_chance": 1,
+          "level": 45,
+          "name": "TBD",
+          "text": null
+        },
+        {
+          "drop_chance": 1,
+          "level": 60,
+          "name": "TBD",
+          "text": null
+        },
+        {
+          "drop_chance": 1,
+          "level": 70,
+          "name": "TBD",
+          "text": null
+        },
+        {
+          "drop_chance": 1,
+          "level": 80,
+          "name": "TBD",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "category": "Two Handed Weapons",
+  "label": "Traps",
+  "slug": "Traps"
+}

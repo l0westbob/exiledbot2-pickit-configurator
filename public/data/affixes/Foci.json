@@ -1,0 +1,1108 @@
+{
+  "affixes": [
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 30,
+      "identifier": "chaos_damage",
+      "kind": "prefix",
+      "template": "#% increased Chaos Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 2,
+          "name": "Impure",
+          "text": "(25—34)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Tainted",
+          "text": "(35—44)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Clouded",
+          "text": "(45—54)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 33,
+          "name": "Darkened",
+          "text": "(55—64)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 46,
+          "name": "Malignant",
+          "text": "(65—74)% increased Chaos Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Vile",
+          "text": "(75—89)% increased Chaos Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 28,
+      "identifier": "cold_damage",
+      "kind": "prefix",
+      "template": "#% increased Cold Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 2,
+          "name": "Bitter",
+          "text": "(25—34)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Biting",
+          "text": "(35—44)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Alpine",
+          "text": "(45—54)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 33,
+          "name": "Snowy",
+          "text": "(55—64)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 46,
+          "name": "Hailing",
+          "text": "(65—74)% increased Cold Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Arctic",
+          "text": "(75—89)% increased Cold Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "DefencesPercent",
+      "id": 137,
+      "identifier": "local_energy_shield",
+      "kind": "prefix",
+      "template": "#% increased Energy Shield",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 2,
+          "name": "Protective",
+          "text": "(15—26)% increased Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Strong-Willed",
+          "text": "(27—42)% increased Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Resolute",
+          "text": "(43—55)% increased Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Fearless",
+          "text": "(56—67)% increased Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Dauntless",
+          "text": "(68—79)% increased Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Indomitable",
+          "text": "(80—91)% increased Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Unassailable",
+          "text": "(92—100)% increased Energy Shield"
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefencesAndMana",
+      "id": 171,
+      "identifier": "local_energy_shield_+% / base_maximum_mana",
+      "kind": "prefix",
+      "template": "#% increased Energy Shield+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Imbued",
+          "text": "(6—13)% increased Energy Shield+(6—8) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Serene",
+          "text": "(14—20)% increased Energy Shield+(9—16) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Sacred",
+          "text": "(21—26)% increased Energy Shield+(17—20) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Celestial",
+          "text": "(27—32)% increased Energy Shield+(21—26) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Heavenly",
+          "text": "(33—38)% increased Energy Shield+(27—32) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 78,
+          "name": "Angel's",
+          "text": "(39—42)% increased Energy Shield+(33—39) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 27,
+      "identifier": "fire_damage",
+      "kind": "prefix",
+      "template": "#% increased Fire Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 2,
+          "name": "Searing",
+          "text": "(25—34)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Sizzling",
+          "text": "(35—44)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Blistering",
+          "text": "(45—54)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 33,
+          "name": "Cauterising",
+          "text": "(55—64)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 46,
+          "name": "Smoldering",
+          "text": "(65—74)% increased Fire Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Magmatic",
+          "text": "(75—89)% increased Fire Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 29,
+      "identifier": "lightning_damage",
+      "kind": "prefix",
+      "template": "#% increased Lightning Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 2,
+          "name": "Charged",
+          "text": "(25—34)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Hissing",
+          "text": "(35—44)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Bolting",
+          "text": "(45—54)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 33,
+          "name": "Coursing",
+          "text": "(55—64)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 46,
+          "name": "Striking",
+          "text": "(65—74)% increased Lightning Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Smiting",
+          "text": "(75—89)% increased Lightning Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponCasterDamagePrefix",
+      "id": 25,
+      "identifier": "spell_damage",
+      "kind": "prefix",
+      "template": "#% increased Spell Damage",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Apprentice's",
+          "text": "(25—34)% increased Spell Damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Adept's",
+          "text": "(35—44)% increased Spell Damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Scholar's",
+          "text": "(45—54)% increased Spell Damage"
+        },
+        {
+          "drop_chance": 600,
+          "level": 33,
+          "name": "Professor's",
+          "text": "(55—64)% increased Spell Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 46,
+          "name": "Occultist's",
+          "text": "(65—74)% increased Spell Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Incanter's",
+          "text": "(75—89)% increased Spell Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "WeaponDamageTypePrefix",
+      "id": 31,
+      "identifier": "spell_physical_damage",
+      "kind": "prefix",
+      "template": "#% increased Spell Physical Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 2,
+          "name": "Punishing",
+          "text": "(25—34)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Unforgiving",
+          "text": "(35—44)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Vengeful",
+          "text": "(45—54)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 33,
+          "name": "Sadistic",
+          "text": "(55—64)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 46,
+          "name": "Pitiless",
+          "text": "(65—74)% increased Spell Physical Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Agonising",
+          "text": "(75—89)% increased Spell Physical Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "id": 136,
+      "identifier": "local_energy_shield",
+      "kind": "prefix",
+      "template": "+# to maximum Energy Shield",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Shining",
+          "text": "+(10—17) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Glimmering",
+          "text": "+(18—24) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Glittering",
+          "text": "+(25—30) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Glowing",
+          "text": "+(31—35) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Radiating",
+          "text": "+(36—41) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Pulsing",
+          "text": "+(42—47) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Blazing",
+          "text": "+(48—60) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Dazzling",
+          "text": "+(61—73) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Scintillating",
+          "text": "+(74—80) to maximum Energy Shield"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 70,
+          "name": "Incandescent",
+          "text": "+(81—90) to maximum Energy Shield"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedMana",
+      "id": 24,
+      "identifier": "base_maximum_mana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(10—14) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(15—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Azure",
+          "text": "+(25—34) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Teal",
+          "text": "+(35—54) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(55—64) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(65—79) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(80—89) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(90—104) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(105—124) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Mazarine",
+          "text": "+(125—149) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 70,
+          "name": "Blue",
+          "text": "+(150—164) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "LocalAttributeRequirements",
+      "id": 2,
+      "identifier": "global_item_attribute_requirements_+%",
+      "kind": "suffix",
+      "template": "# reduced Attribute Requirements",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 24,
+          "name": "of the Worthy",
+          "text": "15% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 800,
+          "level": 32,
+          "name": "of the Apt",
+          "text": "20% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 800,
+          "level": 40,
+          "name": "of the Talented",
+          "text": "25% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 800,
+          "level": 52,
+          "name": "of the Skilled",
+          "text": "30% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 800,
+          "level": 60,
+          "name": "of the Proficient",
+          "text": "35% reduced Attribute Requirements"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "id": 32,
+      "identifier": "spell_skill_gem_level_+",
+      "kind": "suffix",
+      "template": "# to Level of all Spell Skills",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 10,
+          "name": "of the Mage",
+          "text": "+1 to Level of all Spell Skills"
+        },
+        {
+          "drop_chance": 250,
+          "level": 41,
+          "name": "of the Enchanter",
+          "text": "+2 to Level of all Spell Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "EnergyShieldDelay",
+      "id": 165,
+      "identifier": "energy_shield_delay_-%",
+      "kind": "suffix",
+      "template": "#% faster start of Energy Shield Recharge",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of Impatience",
+          "text": "(26—30)% faster start of Energy Shield Recharge"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "of Restlessness",
+          "text": "(31—35)% faster start of Energy Shield Recharge"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of Fretfulness",
+          "text": "(36—40)% faster start of Energy Shield Recharge"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of Motivation",
+          "text": "(41—45)% faster start of Energy Shield Recharge"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of Excitement",
+          "text": "(46—50)% faster start of Energy Shield Recharge"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 81,
+          "name": "of Anticipation",
+          "text": "(51—55)% faster start of Energy Shield Recharge"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedCastSpeed",
+      "id": 39,
+      "identifier": "base_cast_speed",
+      "kind": "suffix",
+      "template": "#% increased Cast Speed",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of Talent",
+          "text": "(9—12)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 15,
+          "name": "of Nimbleness",
+          "text": "(13—16)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 30,
+          "name": "of Expertise",
+          "text": "(17—20)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 45,
+          "name": "of Sortilege",
+          "text": "(21—24)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of Legerdemain",
+          "text": "(25—28)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 500,
+          "level": 70,
+          "name": "of Prestidigitation",
+          "text": "(29—32)% increased Cast Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "SpellCriticalStrikeChanceIncrease",
+      "id": 40,
+      "identifier": "spell_critical_strike_chance",
+      "kind": "suffix",
+      "template": "#% increased Critical Hit Chance for Spells",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of Menace",
+          "text": "(27—33)% increased Critical Hit Chance for Spells"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 21,
+          "name": "of Havoc",
+          "text": "(34—39)% increased Critical Hit Chance for Spells"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 28,
+          "name": "of Disaster",
+          "text": "(40—46)% increased Critical Hit Chance for Spells"
+        },
+        {
+          "drop_chance": 500,
+          "level": 41,
+          "name": "of Calamity",
+          "text": "(47—53)% increased Critical Hit Chance for Spells"
+        },
+        {
+          "drop_chance": 250,
+          "level": 59,
+          "name": "of Ruin",
+          "text": "(54—59)% increased Critical Hit Chance for Spells"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "id": 41,
+      "identifier": "base_spell_critical_strike_multiplier",
+      "kind": "suffix",
+      "template": "#% increased Critical Spell Damage Bonus",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "of Ire",
+          "text": "(10—14)% increased Critical Spell Damage Bonus"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 21,
+          "name": "of Anger",
+          "text": "(15—19)% increased Critical Spell Damage Bonus"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 30,
+          "name": "of Rage",
+          "text": "(20—24)% increased Critical Spell Damage Bonus"
+        },
+        {
+          "drop_chance": 500,
+          "level": 44,
+          "name": "of Fury",
+          "text": "(25—29)% increased Critical Spell Damage Bonus"
+        },
+        {
+          "drop_chance": 250,
+          "level": 59,
+          "name": "of Ferocity",
+          "text": "(30—34)% increased Critical Spell Damage Bonus"
+        }
+      ]
+    },
+    {
+      "family_key": "EnergyShieldRegeneration",
+      "id": 139,
+      "identifier": "energy_shield_recharge_rate",
+      "kind": "suffix",
+      "template": "#% increased Energy Shield Recharge Rate",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of Enlivening",
+          "text": "(26—30)% increased Energy Shield Recharge Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "of Diffusion",
+          "text": "(31—35)% increased Energy Shield Recharge Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of Dispersal",
+          "text": "(36—40)% increased Energy Shield Recharge Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of Buffering",
+          "text": "(41—45)% increased Energy Shield Recharge Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of Ardour",
+          "text": "(46—50)% increased Energy Shield Recharge Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 81,
+          "name": "of Suffusion",
+          "text": "(51—55)% increased Energy Shield Recharge Rate"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaRegeneration",
+      "id": 38,
+      "identifier": "mana_regeneration_rate",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of Excitement",
+          "text": "(10—19)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 18,
+          "name": "of Joy",
+          "text": "(20—29)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 29,
+          "name": "of Elation",
+          "text": "(30—39)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 42,
+          "name": "of Bliss",
+          "text": "(40—49)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of Euphoria",
+          "text": "(50—59)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 79,
+          "name": "of Nirvana",
+          "text": "(60—69)% increased Mana Regeneration Rate"
+        }
+      ]
+    },
+    {
+      "family_key": "Intelligence",
+      "id": 23,
+      "identifier": "additional_intelligence",
+      "kind": "suffix",
+      "template": "+# to Intelligence",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Pupil",
+          "text": "+(5—8) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Student",
+          "text": "+(9—12) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 22,
+          "name": "of the Prodigy",
+          "text": "+(13—16) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "of the Augur",
+          "text": "+(17—20) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 44,
+          "name": "of the Philosopher",
+          "text": "+(21—24) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of the Sage",
+          "text": "+(25—27) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of the Savant",
+          "text": "+(28—30) to Intelligence"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 74,
+          "name": "of the Virtuoso",
+          "text": "+(31—33) to Intelligence"
+        }
+      ]
+    },
+    {
+      "family_key": "ChaosResistance",
+      "id": 89,
+      "identifier": "base_chaos_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Chaos Resistance",
+      "tiers": [
+        {
+          "drop_chance": 250,
+          "level": 16,
+          "name": "of the Lost",
+          "text": "+(4—7)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 30,
+          "name": "of Banishment",
+          "text": "+(8—11)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 44,
+          "name": "of Eviction",
+          "text": "+(12—15)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 56,
+          "name": "of Expulsion",
+          "text": "+(16—19)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 68,
+          "name": "of Exile",
+          "text": "+(20—23)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 81,
+          "name": "of Bameth",
+          "text": "+(24—27)% to Chaos Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "ColdResistance",
+      "id": 86,
+      "identifier": "base_cold_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Cold Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Seal",
+          "text": "+(6—10)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 14,
+          "name": "of the Penguin",
+          "text": "+(11—15)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "of the Narwhal",
+          "text": "+(16—20)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "of the Yeti",
+          "text": "+(21—25)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 50,
+          "name": "of the Walrus",
+          "text": "+(26—30)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Polar Bear",
+          "text": "+(31—35)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of the Ice",
+          "text": "+(36—40)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Haast",
+          "text": "+(41—45)% to Cold Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "FireResistance",
+      "id": 85,
+      "identifier": "base_fire_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Fire Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Whelpling",
+          "text": "+(6—10)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 12,
+          "name": "of the Salamander",
+          "text": "+(11—15)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "of the Drake",
+          "text": "+(16—20)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of the Kiln",
+          "text": "+(21—25)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of the Furnace",
+          "text": "+(26—30)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Volcano",
+          "text": "+(31—35)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of Magma",
+          "text": "+(36—40)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Tzteosh",
+          "text": "+(41—45)% to Fire Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningResistance",
+      "id": 87,
+      "identifier": "base_lightning_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Lightning Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Cloud",
+          "text": "+(6—10)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 13,
+          "name": "of the Squall",
+          "text": "+(11—15)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "of the Storm",
+          "text": "+(16—20)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 37,
+          "name": "of the Thunderhead",
+          "text": "+(21—25)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 49,
+          "name": "of the Tempest",
+          "text": "+(26—30)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Maelstrom",
+          "text": "+(31—35)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of the Lightning",
+          "text": "+(36—40)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Ephij",
+          "text": "+(41—45)% to Lightning Resistance"
+        }
+      ]
+    }
+  ],
+  "category": "Off-hand",
+  "label": "Foci",
+  "slug": "Foci"
+}

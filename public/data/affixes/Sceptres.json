@@ -1,0 +1,1105 @@
+{
+  "affixes": [
+    {
+      "family_key": "LocalIncreasedSpiritPercent",
+      "id": 62,
+      "identifier": "local_spirit",
+      "kind": "prefix",
+      "template": "#% increased Spirit",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Lord's",
+          "text": "(30—36)% increased Spirit"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Baron's",
+          "text": "(27—32)% increased Spirit"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Viscount's",
+          "text": "(33—38)% increased Spirit"
+        },
+        {
+          "drop_chance": 600,
+          "level": 33,
+          "name": "Marquess'",
+          "text": "(39—44)% increased Spirit"
+        },
+        {
+          "drop_chance": 400,
+          "level": 46,
+          "name": "Count's",
+          "text": "(45—50)% increased Spirit"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Duke's",
+          "text": "(51—55)% increased Spirit"
+        },
+        {
+          "drop_chance": 100,
+          "level": 75,
+          "name": "Prince's",
+          "text": "(56—60)% increased Spirit"
+        },
+        {
+          "drop_chance": 50,
+          "level": 82,
+          "name": "King's",
+          "text": "(61—65)% increased Spirit"
+        }
+      ]
+    },
+    {
+      "family_key": "LocalIncreasedSpiritAndMana",
+      "id": 63,
+      "identifier": "local_spirit_+% / base_maximum_mana",
+      "kind": "prefix",
+      "template": "#% increased Spirit+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 2,
+          "name": "Advisor's",
+          "text": "(10—14)% increased Spirit+(17—20) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "Counselor's",
+          "text": "(15—18)% increased Spirit+(21—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "Emissary's",
+          "text": "(19—22)% increased Spirit+(25—28) to maximum Mana"
+        },
+        {
+          "drop_chance": 600,
+          "level": 36,
+          "name": "Minister's",
+          "text": "(23—26)% increased Spirit+(29—33) to maximum Mana"
+        },
+        {
+          "drop_chance": 400,
+          "level": 48,
+          "name": "Envoy's",
+          "text": "(27—30)% increased Spirit+(34—37) to maximum Mana"
+        },
+        {
+          "drop_chance": 200,
+          "level": 58,
+          "name": "Diplomat's",
+          "text": "(31—34)% increased Spirit+(38—41) to maximum Mana"
+        },
+        {
+          "drop_chance": 100,
+          "level": 70,
+          "name": "Chancellor's",
+          "text": "(35—38)% increased Spirit+(42—45) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedMana",
+      "id": 24,
+      "identifier": "base_maximum_mana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(10—14) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(15—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Azure",
+          "text": "+(25—34) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Teal",
+          "text": "+(35—54) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(55—64) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(65—79) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(80—89) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(90—104) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(105—124) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Mazarine",
+          "text": "+(125—149) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 70,
+          "name": "Blue",
+          "text": "+(150—164) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "ColdDamage",
+      "id": 53,
+      "identifier": "allies_in_presence_attack_minimum_added_cold_damage",
+      "kind": "prefix",
+      "template": "Allies in your Presence deal # to # added Attack Cold Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Frosted",
+          "text": "Allies in your Presence deal (1—2) to (3—4) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Chilled",
+          "text": "Allies in your Presence deal (3—4) to (5—8) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Icy",
+          "text": "Allies in your Presence deal (5—6) to (9—11) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Frigid",
+          "text": "Allies in your Presence deal (7—8) to (12—14) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Freezing",
+          "text": "Allies in your Presence deal (9—10) to (15—17) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Frozen",
+          "text": "Allies in your Presence deal (11—13) to (18—21) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Glaciated",
+          "text": "Allies in your Presence deal (14—15) to (22—24) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Polar",
+          "text": "Allies in your Presence deal (16—20) to (25—31) added Attack Cold Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Entombing",
+          "text": "Allies in your Presence deal (21—24) to (32—37) added Attack Cold Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "FireDamage",
+      "id": 52,
+      "identifier": "allies_in_presence_attack_minimum_added_fire_damage",
+      "kind": "prefix",
+      "template": "Allies in your Presence deal # to # added Attack Fire Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Heated",
+          "text": "Allies in your Presence deal (1—2) to (3—4) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Smouldering",
+          "text": "Allies in your Presence deal (3—5) to (6—9) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Smoking",
+          "text": "Allies in your Presence deal (6—8) to (10—13) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Burning",
+          "text": "Allies in your Presence deal (9—11) to (14—17) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Flaming",
+          "text": "Allies in your Presence deal (12—13) to (18—20) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Scorching",
+          "text": "Allies in your Presence deal (14—16) to (21—26) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Incinerating",
+          "text": "Allies in your Presence deal (17—19) to (27—30) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Blasting",
+          "text": "Allies in your Presence deal (20—24) to (31—38) added Attack Fire Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Cremating",
+          "text": "Allies in your Presence deal (25—29) to (39—45) added Attack Fire Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningDamage",
+      "id": 54,
+      "identifier": "allies_in_presence_attack_minimum_added_lightning_damage",
+      "kind": "prefix",
+      "template": "Allies in your Presence deal # to # added Attack Lightning Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Humming",
+          "text": "Allies in your Presence deal 1 to (5—7) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Buzzing",
+          "text": "Allies in your Presence deal 1 to (10—15) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Snapping",
+          "text": "Allies in your Presence deal 1 to (16—22) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Crackling",
+          "text": "Allies in your Presence deal 1 to (23—27) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Sparking",
+          "text": "Allies in your Presence deal 1 to (28—32) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Arcing",
+          "text": "Allies in your Presence deal (1—2) to (33—40) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Shocking",
+          "text": "Allies in your Presence deal (1—2) to (41—47) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Discharging",
+          "text": "Allies in your Presence deal (1—3) to (48—59) added Attack Lightning Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Electrocuting",
+          "text": "Allies in your Presence deal (1—4) to (60—71) added Attack Lightning Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "PhysicalDamage",
+      "id": 51,
+      "identifier": "allies_in_presence_attack_minimum_added_physical_damage",
+      "kind": "prefix",
+      "template": "Allies in your Presence deal # to # added Attack Physical Damage",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 1,
+          "name": "Glinting",
+          "text": "Allies in your Presence deal (1—2) to (3—4) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 8,
+          "name": "Burnished",
+          "text": "Allies in your Presence deal (2—3) to (4—6) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 16,
+          "name": "Polished",
+          "text": "Allies in your Presence deal (2—4) to (5—8) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 33,
+          "name": "Honed",
+          "text": "Allies in your Presence deal (4—6) to (8—11) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 46,
+          "name": "Gleaming",
+          "text": "Allies in your Presence deal (5—7) to (9—13) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 500,
+          "level": 54,
+          "name": "Annealed",
+          "text": "Allies in your Presence deal (6—10) to (12—17) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 60,
+          "name": "Razor-sharp",
+          "text": "Allies in your Presence deal (7—11) to (14—20) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 300,
+          "level": 65,
+          "name": "Tempered",
+          "text": "Allies in your Presence deal (10—15) to (18—26) added Attack Physical Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 75,
+          "name": "Flaring",
+          "text": "Allies in your Presence deal (12—19) to (22—32) added Attack Physical Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "AllDamage",
+      "id": 55,
+      "identifier": "allies_in_presence_damage",
+      "kind": "prefix",
+      "template": "Allies in your Presence deal #% increased Damage",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Coercive",
+          "text": "Allies in your Presence deal (25—34)% increased Damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Agitative",
+          "text": "Allies in your Presence deal (35—44)% increased Damage"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Instigative",
+          "text": "Allies in your Presence deal (45—54)% increased Damage"
+        },
+        {
+          "drop_chance": 600,
+          "level": 33,
+          "name": "Provocative",
+          "text": "Allies in your Presence deal (55—64)% increased Damage"
+        },
+        {
+          "drop_chance": 400,
+          "level": 46,
+          "name": "Persuasive",
+          "text": "Allies in your Presence deal (65—74)% increased Damage"
+        },
+        {
+          "drop_chance": 200,
+          "level": 60,
+          "name": "Motivating",
+          "text": "Allies in your Presence deal (75—89)% increased Damage"
+        },
+        {
+          "drop_chance": 100,
+          "level": 70,
+          "name": "Inspirational",
+          "text": "Allies in your Presence deal (90—104)% increased Damage"
+        },
+        {
+          "drop_chance": 50,
+          "level": 82,
+          "name": "Empowering",
+          "text": "Allies in your Presence deal (105—119)% increased Damage"
+        }
+      ]
+    },
+    {
+      "family_key": "LocalAttributeRequirements",
+      "id": 2,
+      "identifier": "global_item_attribute_requirements_+%",
+      "kind": "suffix",
+      "template": "# reduced Attribute Requirements",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "of the Worthy",
+          "text": "15% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 32,
+          "name": "of the Apt",
+          "text": "20% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 40,
+          "name": "of the Talented",
+          "text": "25% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 52,
+          "name": "of the Skilled",
+          "text": "30% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Proficient",
+          "text": "35% reduced Attribute Requirements"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreaseSocketedGemLevel",
+      "id": 56,
+      "identifier": "minion_skill_gem_level_+",
+      "kind": "suffix",
+      "template": "# to Level of all Minion Skills",
+      "tiers": [
+        {
+          "drop_chance": 750,
+          "level": 2,
+          "name": "of the Taskmaster",
+          "text": "+1 to Level of all Minion Skills"
+        },
+        {
+          "drop_chance": 500,
+          "level": 25,
+          "name": "of the Despot",
+          "text": "+2 to Level of all Minion Skills"
+        },
+        {
+          "drop_chance": 250,
+          "level": 55,
+          "name": "of the Overseer",
+          "text": "+3 to Level of all Minion Skills"
+        },
+        {
+          "drop_chance": 100,
+          "level": 78,
+          "name": "of the Slavedriver",
+          "text": "+4 to Level of all Minion Skills"
+        }
+      ]
+    },
+    {
+      "family_key": "ManaRegeneration",
+      "id": 38,
+      "identifier": "mana_regeneration_rate",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of Excitement",
+          "text": "(10—19)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 18,
+          "name": "of Joy",
+          "text": "(20—29)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 29,
+          "name": "of Elation",
+          "text": "(30—39)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 42,
+          "name": "of Bliss",
+          "text": "(40—49)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of Euphoria",
+          "text": "(50—59)% increased Mana Regeneration Rate"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 79,
+          "name": "of Nirvana",
+          "text": "(60—69)% increased Mana Regeneration Rate"
+        }
+      ]
+    },
+    {
+      "family_key": "LightRadiusAndManaRegeneration",
+      "id": 42,
+      "identifier": "light_radius_+% / mana_regeneration_rate_+%",
+      "kind": "suffix",
+      "template": "#% increased Mana Regeneration Rate# increased Light Radius",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "of Warmth",
+          "text": "(8—12)% increased Mana Regeneration Rate5% increased Light Radius"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 15,
+          "name": "of Kindling",
+          "text": "(13—17)% increased Mana Regeneration Rate10% increased Light Radius"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 30,
+          "name": "of the Hearth",
+          "text": "(18—22)% increased Mana Regeneration Rate15% increased Light Radius"
+        }
+      ]
+    },
+    {
+      "family_key": "PresenceRadius",
+      "id": 64,
+      "identifier": "presence_area",
+      "kind": "suffix",
+      "template": "#% increased Presence Area of Effect",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 23,
+          "name": "of Direction",
+          "text": "(36—45)% increased Presence Area of Effect"
+        },
+        {
+          "drop_chance": 500,
+          "level": 40,
+          "name": "of Outreach",
+          "text": "(46—55)% increased Presence Area of Effect"
+        },
+        {
+          "drop_chance": 500,
+          "level": 56,
+          "name": "of Guidance",
+          "text": "(56—65)% increased Presence Area of Effect"
+        },
+        {
+          "drop_chance": 500,
+          "level": 72,
+          "name": "of Influence",
+          "text": "(66—80)% increased Presence Area of Effect"
+        }
+      ]
+    },
+    {
+      "family_key": "Intelligence",
+      "id": 23,
+      "identifier": "additional_intelligence",
+      "kind": "suffix",
+      "template": "+# to Intelligence",
+      "tiers": [
+        {
+          "drop_chance": 750,
+          "level": 1,
+          "name": "of the Pupil",
+          "text": "+(5—8) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 11,
+          "name": "of the Student",
+          "text": "+(9—12) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 22,
+          "name": "of the Prodigy",
+          "text": "+(13—16) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 33,
+          "name": "of the Augur",
+          "text": "+(17—20) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 44,
+          "name": "of the Philosopher",
+          "text": "+(21—24) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 55,
+          "name": "of the Sage",
+          "text": "+(25—27) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 66,
+          "name": "of the Savant",
+          "text": "+(28—30) to Intelligence"
+        },
+        {
+          "drop_chance": 750,
+          "level": 74,
+          "name": "of the Virtuoso",
+          "text": "+(31—33) to Intelligence"
+        }
+      ]
+    },
+    {
+      "family_key": "Strength",
+      "id": 49,
+      "identifier": "additional_strength",
+      "kind": "suffix",
+      "template": "+# to Strength",
+      "tiers": [
+        {
+          "drop_chance": 250,
+          "level": 1,
+          "name": "of the Brute",
+          "text": "+(5—8) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 11,
+          "name": "of the Wrestler",
+          "text": "+(9—12) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 22,
+          "name": "of the Bear",
+          "text": "+(13—16) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 33,
+          "name": "of the Lion",
+          "text": "+(17—20) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 44,
+          "name": "of the Gorilla",
+          "text": "+(21—24) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 55,
+          "name": "of the Goliath",
+          "text": "+(25—27) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 66,
+          "name": "of the Leviathan",
+          "text": "+(28—30) to Strength"
+        },
+        {
+          "drop_chance": 250,
+          "level": 74,
+          "name": "of the Titan",
+          "text": "+(31—33) to Strength"
+        }
+      ]
+    },
+    {
+      "family_key": "LifeRegeneration",
+      "id": 57,
+      "identifier": "allies_in_presence_life_regeneration_rate_per_minute",
+      "kind": "suffix",
+      "template": "Allies in your Presence Regenerate # Life per second",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Newt",
+          "text": "Allies in your Presence Regenerate (1—2) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 5,
+          "name": "of the Lizard",
+          "text": "Allies in your Presence Regenerate (2.1—3) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Flatworm",
+          "text": "Allies in your Presence Regenerate (3.1—4) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 17,
+          "name": "of the Starfish",
+          "text": "Allies in your Presence Regenerate (4.1—6) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "of the Hydra",
+          "text": "Allies in your Presence Regenerate (6.1—9) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 35,
+          "name": "of the Troll",
+          "text": "Allies in your Presence Regenerate (9.1—13) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 47,
+          "name": "of Convalescence",
+          "text": "Allies in your Presence Regenerate (13.1—18) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 58,
+          "name": "of Recuperation",
+          "text": "Allies in your Presence Regenerate (18.1—23) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 68,
+          "name": "of Resurgence",
+          "text": "Allies in your Presence Regenerate (23.1—29) Life per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 75,
+          "name": "of Immortality",
+          "text": "Allies in your Presence Regenerate (29.1—33) Life per second"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAttackSpeed",
+      "id": 58,
+      "identifier": "allies_in_presence_attack_speed",
+      "kind": "suffix",
+      "template": "Allies in your Presence have #% increased Attack Speed",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 5,
+          "name": "of Skill",
+          "text": "Allies in your Presence have (5—7)% increased Attack Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 20,
+          "name": "of Ease",
+          "text": "Allies in your Presence have (8—10)% increased Attack Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 35,
+          "name": "of Mastery",
+          "text": "Allies in your Presence have (11—13)% increased Attack Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of Renown",
+          "text": "Allies in your Presence have (14—16)% increased Attack Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedCastSpeed",
+      "id": 59,
+      "identifier": "allies_in_presence_cast_speed",
+      "kind": "suffix",
+      "template": "Allies in your Presence have #% increased Cast Speed",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "of Talent",
+          "text": "Allies in your Presence have (5—8)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 21,
+          "name": "of Nimbleness",
+          "text": "Allies in your Presence have (9—12)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of Expertise",
+          "text": "Allies in your Presence have (13—16)% increased Cast Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 56,
+          "name": "of Sortilege",
+          "text": "Allies in your Presence have (17—20)% increased Cast Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "id": 61,
+      "identifier": "allies_in_presence_critical_strike_multiplier",
+      "kind": "suffix",
+      "template": "Allies in your Presence have #% increased Critical Damage Bonus",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "of Ire",
+          "text": "Allies in your Presence have (10—14)% increased Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 21,
+          "name": "of Anger",
+          "text": "Allies in your Presence have (15—19)% increased Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 30,
+          "name": "of Rage",
+          "text": "Allies in your Presence have (20—24)% increased Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 500,
+          "level": 44,
+          "name": "of Fury",
+          "text": "Allies in your Presence have (25—29)% increased Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 250,
+          "level": 59,
+          "name": "of Ferocity",
+          "text": "Allies in your Presence have (30—34)% increased Critical Damage Bonus"
+        },
+        {
+          "drop_chance": 125,
+          "level": 73,
+          "name": "of Destruction",
+          "text": "Allies in your Presence have (35—39)% increased Critical Damage Bonus"
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeChanceIncrease",
+      "id": 60,
+      "identifier": "allies_in_presence_critical_strike_chance",
+      "kind": "suffix",
+      "template": "Allies in your Presence have #% increased Critical Hit Chance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of Menace",
+          "text": "Allies in your Presence have (10—14)% increased Critical Hit Chance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 21,
+          "name": "of Havoc",
+          "text": "Allies in your Presence have (15—19)% increased Critical Hit Chance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 28,
+          "name": "of Disaster",
+          "text": "Allies in your Presence have (20—24)% increased Critical Hit Chance"
+        },
+        {
+          "drop_chance": 500,
+          "level": 41,
+          "name": "of Calamity",
+          "text": "Allies in your Presence have (25—29)% increased Critical Hit Chance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 59,
+          "name": "of Ruin",
+          "text": "Allies in your Presence have (30—34)% increased Critical Hit Chance"
+        },
+        {
+          "drop_chance": 125,
+          "level": 76,
+          "name": "of Unmaking",
+          "text": "Allies in your Presence have (35—38)% increased Critical Hit Chance"
+        }
+      ]
+    },
+    {
+      "family_key": "AllResistances",
+      "id": 50,
+      "identifier": "allies_in_presence_resist_all_elements",
+      "kind": "suffix",
+      "template": "Allies in your Presence have +#% to all Elemental Resistances",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 12,
+          "name": "of Adjustment",
+          "text": "Allies in your Presence have +(3—5)% to all Elemental Resistances"
+        },
+        {
+          "drop_chance": 800,
+          "level": 26,
+          "name": "of Acclimatisation",
+          "text": "Allies in your Presence have +(6—8)% to all Elemental Resistances"
+        },
+        {
+          "drop_chance": 800,
+          "level": 40,
+          "name": "of Adaptation",
+          "text": "Allies in your Presence have +(9—11)% to all Elemental Resistances"
+        },
+        {
+          "drop_chance": 800,
+          "level": 54,
+          "name": "of Evolution",
+          "text": "Allies in your Presence have +(12—14)% to all Elemental Resistances"
+        },
+        {
+          "drop_chance": 800,
+          "level": 68,
+          "name": "of Progression",
+          "text": "Allies in your Presence have +(15—16)% to all Elemental Resistances"
+        },
+        {
+          "drop_chance": 800,
+          "level": 80,
+          "name": "of Metamorphosis",
+          "text": "Allies in your Presence have +(17—18)% to all Elemental Resistances"
+        }
+      ]
+    },
+    {
+      "family_key": "MinionLife",
+      "id": 65,
+      "identifier": "minion_maximum_life",
+      "kind": "suffix",
+      "template": "Minions have #% increased maximum Life",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 2,
+          "name": "of the Mentor",
+          "text": "Minions have (21—25)% increased maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "of the Tutor",
+          "text": "Minions have (26—30)% increased maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 32,
+          "name": "of the Director",
+          "text": "Minions have (31—35)% increased maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of the Headmaster",
+          "text": "Minions have (36—40)% increased maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 64,
+          "name": "of the Administrator",
+          "text": "Minions have (41—45)% increased maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 80,
+          "name": "of the Rector",
+          "text": "Minions have (46—50)% increased maximum Life"
+        }
+      ]
+    }
+  ],
+  "category": "One Handed Weapons",
+  "label": "Sceptres",
+  "slug": "Sceptres"
+}

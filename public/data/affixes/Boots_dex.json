@@ -1,0 +1,952 @@
+{
+  "affixes": [
+    {
+      "family_key": "MovementVelocity",
+      "id": 150,
+      "identifier": "base_movement_velocity_+%",
+      "kind": "prefix",
+      "template": "# increased Movement Speed",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Runner's",
+          "text": "10% increased Movement Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Sprinter's",
+          "text": "15% increased Movement Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Stallion's",
+          "text": "20% increased Movement Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Gazelle's",
+          "text": "25% increased Movement Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Cheetah's",
+          "text": "30% increased Movement Speed"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "Hellion's",
+          "text": "35% increased Movement Speed"
+        }
+      ]
+    },
+    {
+      "family_key": "DefencesPercent",
+      "id": 133,
+      "identifier": "local_evasion_rating",
+      "kind": "prefix",
+      "template": "#% increased Evasion Rating",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 2,
+          "name": "Shade's",
+          "text": "(15—26)% increased Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Ghost's",
+          "text": "(27—42)% increased Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Spectre's",
+          "text": "(43—55)% increased Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Wraith's",
+          "text": "(56—67)% increased Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Phantasm's",
+          "text": "(68—79)% increased Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Nightmare's",
+          "text": "(80—91)% increased Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 65,
+          "name": "Mirage's",
+          "text": "(92—100)% increased Evasion Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "DefencesPercentAndStunThreshold",
+      "id": 154,
+      "identifier": "local_evasion_rating_+% / stun_threshold_+",
+      "kind": "prefix",
+      "template": "#% increased Evasion Rating+# to Stun Threshold",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 10,
+          "name": "Mosquito's",
+          "text": "(6—13)% increased Evasion Rating+(8—13) to Stun Threshold"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 19,
+          "name": "Moth's",
+          "text": "(14—20)% increased Evasion Rating+(14—24) to Stun Threshold"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Butterfly's",
+          "text": "(21—26)% increased Evasion Rating+(25—40) to Stun Threshold"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "Wasp's",
+          "text": "(27—32)% increased Evasion Rating+(41—63) to Stun Threshold"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 63,
+          "name": "Dragonfly's",
+          "text": "(33—38)% increased Evasion Rating+(64—94) to Stun Threshold"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 74,
+          "name": "Hummingbird's",
+          "text": "(39—42)% increased Evasion Rating+(95—136) to Stun Threshold"
+        }
+      ]
+    },
+    {
+      "family_key": "BaseLocalDefences",
+      "id": 132,
+      "identifier": "local_base_evasion_rating",
+      "kind": "prefix",
+      "template": "+# to Evasion Rating",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Agile",
+          "text": "+(11—18) to Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 8,
+          "name": "Dancer's",
+          "text": "+(19—39) to Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Acrobat's",
+          "text": "+(40—56) to Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Fleet",
+          "text": "+(57—70) to Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Blurred",
+          "text": "+(71—88) to Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Phased",
+          "text": "+(89—107) to Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Vaporous",
+          "text": "+(108—142) to Evasion Rating"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedLife",
+      "id": 90,
+      "identifier": "base_maximum_life",
+      "kind": "prefix",
+      "template": "+# to maximum Life",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Hale",
+          "text": "+(10—19) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "Healthy",
+          "text": "+(20—29) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Sanguine",
+          "text": "+(30—39) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "Stalwart",
+          "text": "+(40—59) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Stout",
+          "text": "+(60—69) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Robust",
+          "text": "+(70—84) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Rotund",
+          "text": "+(85—99) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Virile",
+          "text": "+(100—119) to maximum Life"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Athlete's",
+          "text": "+(120—149) to maximum Life"
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedMana",
+      "id": 24,
+      "identifier": "base_maximum_mana",
+      "kind": "prefix",
+      "template": "+# to maximum Mana",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "Beryl",
+          "text": "+(10—14) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 6,
+          "name": "Cobalt",
+          "text": "+(15—24) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "Azure",
+          "text": "+(25—34) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "Teal",
+          "text": "+(35—54) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "Cerulean",
+          "text": "+(55—64) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "Aqua",
+          "text": "+(65—79) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 46,
+          "name": "Opalescent",
+          "text": "+(80—89) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 54,
+          "name": "Gentian",
+          "text": "+(90—104) to maximum Mana"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "Chalybeous",
+          "text": "+(105—124) to maximum Mana"
+        }
+      ]
+    },
+    {
+      "family_key": "LifeRegeneration",
+      "id": 97,
+      "identifier": "base_life_regeneration_rate_per_minute",
+      "kind": "suffix",
+      "template": "# Life Regeneration per second",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Newt",
+          "text": "(1—2) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 5,
+          "name": "of the Lizard",
+          "text": "(2.1—3) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Flatworm",
+          "text": "(3.1—4) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 17,
+          "name": "of the Starfish",
+          "text": "(4.1—6) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "of the Hydra",
+          "text": "(6.1—9) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 35,
+          "name": "of the Troll",
+          "text": "(9.1—13) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 47,
+          "name": "of Convalescence",
+          "text": "(13.1—18) Life Regeneration per second"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 58,
+          "name": "of Recuperation",
+          "text": "(18.1—23) Life Regeneration per second"
+        }
+      ]
+    },
+    {
+      "family_key": "LocalAttributeRequirements",
+      "id": 2,
+      "identifier": "global_item_attribute_requirements_+%",
+      "kind": "suffix",
+      "template": "# reduced Attribute Requirements",
+      "tiers": [
+        {
+          "drop_chance": 750,
+          "level": 24,
+          "name": "of the Worthy",
+          "text": "15% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 750,
+          "level": 32,
+          "name": "of the Apt",
+          "text": "20% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 750,
+          "level": 40,
+          "name": "of the Talented",
+          "text": "25% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 750,
+          "level": 52,
+          "name": "of the Skilled",
+          "text": "30% reduced Attribute Requirements"
+        },
+        {
+          "drop_chance": 750,
+          "level": 60,
+          "name": "of the Proficient",
+          "text": "35% reduced Attribute Requirements"
+        }
+      ]
+    },
+    {
+      "family_key": "ItemFoundRarityIncrease",
+      "id": 100,
+      "identifier": "base_item_found_rarity",
+      "kind": "suffix",
+      "template": "#% increased Rarity of Items found",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 3,
+          "name": "of Plunder",
+          "text": "(6—10)% increased Rarity of Items found"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "of Raiding",
+          "text": "(11—14)% increased Rarity of Items found"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 40,
+          "name": "of Archaeology",
+          "text": "(15—18)% increased Rarity of Items found"
+        }
+      ]
+    },
+    {
+      "family_key": "ReducedAilmentDuration",
+      "id": 152,
+      "identifier": "base_self_chill_duration_-%",
+      "kind": "suffix",
+      "template": "#% reduced Chill Duration on you",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 20,
+          "name": "of Convection",
+          "text": "(36—40)% reduced Chill Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 36,
+          "name": "of Fluidity",
+          "text": "(41—45)% reduced Chill Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 49,
+          "name": "of Entropy",
+          "text": "(46—50)% reduced Chill Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 63,
+          "name": "of Dissipation",
+          "text": "(51—55)% reduced Chill Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 75,
+          "name": "of the Reversal",
+          "text": "(56—60)% reduced Chill Duration on you"
+        }
+      ]
+    },
+    {
+      "family_key": "ReducedAilmentDuration",
+      "id": 153,
+      "identifier": "base_self_freeze_duration_-%",
+      "kind": "suffix",
+      "template": "#% reduced Freeze Duration on you",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 20,
+          "name": "of Heating",
+          "text": "(36—40)% reduced Freeze Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 36,
+          "name": "of Unfreezing",
+          "text": "(41—45)% reduced Freeze Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 49,
+          "name": "of Defrosting",
+          "text": "(46—50)% reduced Freeze Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 63,
+          "name": "of the Temperate",
+          "text": "(51—55)% reduced Freeze Duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 75,
+          "name": "of Thawing",
+          "text": "(56—60)% reduced Freeze Duration on you"
+        }
+      ]
+    },
+    {
+      "family_key": "ReducedAilmentDuration",
+      "id": 151,
+      "identifier": "base_self_shock_duration_-%",
+      "kind": "suffix",
+      "template": "#% reduced Shock duration on you",
+      "tiers": [
+        {
+          "drop_chance": 500,
+          "level": 20,
+          "name": "of Earthing",
+          "text": "(36—40)% reduced Shock duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 36,
+          "name": "of Insulation",
+          "text": "(41—45)% reduced Shock duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 49,
+          "name": "of the Impedance",
+          "text": "(46—50)% reduced Shock duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 63,
+          "name": "of the Dielectric",
+          "text": "(51—55)% reduced Shock duration on you"
+        },
+        {
+          "drop_chance": 500,
+          "level": 75,
+          "name": "of Grounding",
+          "text": "(56—60)% reduced Shock duration on you"
+        }
+      ]
+    },
+    {
+      "family_key": "Dexterity",
+      "id": 1,
+      "identifier": "additional_dexterity",
+      "kind": "suffix",
+      "template": "+# to Dexterity",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Mongoose",
+          "text": "+(5—8) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 11,
+          "name": "of the Lynx",
+          "text": "+(9—12) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 22,
+          "name": "of the Fox",
+          "text": "+(13—16) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 33,
+          "name": "of the Falcon",
+          "text": "+(17—20) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 44,
+          "name": "of the Panther",
+          "text": "+(21—24) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 55,
+          "name": "of the Leopard",
+          "text": "+(25—27) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of the Jaguar",
+          "text": "+(28—30) to Dexterity"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 74,
+          "name": "of the Phantom",
+          "text": "+(31—33) to Dexterity"
+        }
+      ]
+    },
+    {
+      "family_key": "StunThreshold",
+      "id": 118,
+      "identifier": "stun_threshold",
+      "kind": "suffix",
+      "template": "+# to Stun Threshold",
+      "tiers": [
+        {
+          "drop_chance": 800,
+          "level": 1,
+          "name": "of Thick Skin",
+          "text": "+(6—11) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 8,
+          "name": "of Reinforced Skin",
+          "text": "+(12—29) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 15,
+          "name": "of Stone Skin",
+          "text": "+(30—49) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 22,
+          "name": "of Iron Skin",
+          "text": "+(50—72) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 29,
+          "name": "of Steel Skin",
+          "text": "+(73—97) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 36,
+          "name": "of Granite Skin",
+          "text": "+(98—124) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 45,
+          "name": "of Platinum Skin",
+          "text": "+(125—163) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 54,
+          "name": "of Adamantite Skin",
+          "text": "+(164—206) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 63,
+          "name": "of Corundum Skin",
+          "text": "+(207—253) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 72,
+          "name": "of Obsidian Skin",
+          "text": "+(254—304) to Stun Threshold"
+        },
+        {
+          "drop_chance": 800,
+          "level": 80,
+          "name": "of Titanium Skin",
+          "text": "+(305—352) to Stun Threshold"
+        }
+      ]
+    },
+    {
+      "family_key": "ChaosResistance",
+      "id": 89,
+      "identifier": "base_chaos_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Chaos Resistance",
+      "tiers": [
+        {
+          "drop_chance": 250,
+          "level": 16,
+          "name": "of the Lost",
+          "text": "+(4—7)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 30,
+          "name": "of Banishment",
+          "text": "+(8—11)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 44,
+          "name": "of Eviction",
+          "text": "+(12—15)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 56,
+          "name": "of Expulsion",
+          "text": "+(16—19)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 68,
+          "name": "of Exile",
+          "text": "+(20—23)% to Chaos Resistance"
+        },
+        {
+          "drop_chance": 250,
+          "level": 81,
+          "name": "of Bameth",
+          "text": "+(24—27)% to Chaos Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "ColdResistance",
+      "id": 86,
+      "identifier": "base_cold_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Cold Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Seal",
+          "text": "+(6—10)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 14,
+          "name": "of the Penguin",
+          "text": "+(11—15)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 26,
+          "name": "of the Narwhal",
+          "text": "+(16—20)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 38,
+          "name": "of the Yeti",
+          "text": "+(21—25)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 50,
+          "name": "of the Walrus",
+          "text": "+(26—30)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Polar Bear",
+          "text": "+(31—35)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of the Ice",
+          "text": "+(36—40)% to Cold Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Haast",
+          "text": "+(41—45)% to Cold Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "FireResistance",
+      "id": 85,
+      "identifier": "base_fire_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Fire Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Whelpling",
+          "text": "+(6—10)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 12,
+          "name": "of the Salamander",
+          "text": "+(11—15)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 24,
+          "name": "of the Drake",
+          "text": "+(16—20)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of the Kiln",
+          "text": "+(21—25)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of the Furnace",
+          "text": "+(26—30)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Volcano",
+          "text": "+(31—35)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of Magma",
+          "text": "+(36—40)% to Fire Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Tzteosh",
+          "text": "+(41—45)% to Fire Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "LightningResistance",
+      "id": 87,
+      "identifier": "base_lightning_damage_resistance",
+      "kind": "suffix",
+      "template": "+#% to Lightning Resistance",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of the Cloud",
+          "text": "+(6—10)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 13,
+          "name": "of the Squall",
+          "text": "+(11—15)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 25,
+          "name": "of the Storm",
+          "text": "+(16—20)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 37,
+          "name": "of the Thunderhead",
+          "text": "+(21—25)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 49,
+          "name": "of the Tempest",
+          "text": "+(26—30)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 60,
+          "name": "of the Maelstrom",
+          "text": "+(31—35)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 71,
+          "name": "of the Lightning",
+          "text": "+(36—40)% to Lightning Resistance"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 82,
+          "name": "of Ephij",
+          "text": "+(41—45)% to Lightning Resistance"
+        }
+      ]
+    },
+    {
+      "family_key": "EvasionAppliesToDeflection",
+      "id": 135,
+      "identifier": "base_deflection_rating_%_of_evasion_rating",
+      "kind": "suffix",
+      "template": "Gain Deflection Rating equal to #% of Evasion Rating",
+      "tiers": [
+        {
+          "drop_chance": 1000,
+          "level": 1,
+          "name": "of Deflecting",
+          "text": "Gain Deflection Rating equal to (8—11)% of Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 16,
+          "name": "of Bending",
+          "text": "Gain Deflection Rating equal to (12—14)% of Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 36,
+          "name": "of Curvation",
+          "text": "Gain Deflection Rating equal to (15—17)% of Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 48,
+          "name": "of Diversion",
+          "text": "Gain Deflection Rating equal to (18—20)% of Evasion Rating"
+        },
+        {
+          "drop_chance": 1000,
+          "level": 66,
+          "name": "of Flexure",
+          "text": "Gain Deflection Rating equal to (21—23)% of Evasion Rating"
+        }
+      ]
+    }
+  ],
+  "category": "Boots",
+  "label": "Boots(dex)",
+  "slug": "Boots_dex"
+}

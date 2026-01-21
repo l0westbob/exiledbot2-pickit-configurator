@@ -1,0 +1,349 @@
+{
+  "affixes": [
+    {
+      "family_key": "MapExperienceGainIncrease",
+      "id": 547,
+      "identifier": "map_experience_gain",
+      "kind": "prefix",
+      "template": "#% increased Experience gain in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Elevated",
+          "text": "(10—20)% increased Experience gain in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedGoldIncrease",
+      "id": 546,
+      "identifier": "map_extra_gold_piles_chance",
+      "kind": "prefix",
+      "template": "#% increased Gold found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Bountiful",
+          "text": "(25—40)% increased Gold found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapPackSizeIncrease",
+      "id": 543,
+      "identifier": "map_pack_size",
+      "kind": "prefix",
+      "template": "#% increased Pack Size in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Breeding",
+          "text": "(6—10)% increased Pack Size in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedItemRarityIncrease",
+      "id": 542,
+      "identifier": "map_item_drop_rarity",
+      "kind": "prefix",
+      "template": "#% increased Rarity of Items found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Collector's",
+          "text": "(18—30)% increased Rarity of Items found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalAzmeriWisp",
+      "id": 550,
+      "identifier": "map_spawn_extra_torment_spirits / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap contains # additional Azmeri Spirit",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Azmeri's",
+          "text": "% increased Quantity of Waystones found in MapMap contains 1 additional Azmeri Spirit"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalExile",
+      "id": 551,
+      "identifier": "map_spawn_extra_exiles / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "% increased Quantity of Waystones found in MapMap is inhabited by # additional Rogue Exile",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Exiled",
+          "text": "% increased Quantity of Waystones found in MapMap is inhabited by 1 additional Rogue Exile"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalChests",
+      "id": 548,
+      "identifier": "map_addtional_rare_chest_amount",
+      "kind": "prefix",
+      "template": "Map contains # additional Rare Chests",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Treasurer's",
+          "text": "Map contains (2—3) additional Rare Chests"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "id": 549,
+      "identifier": "map_extra_monoliths / map_map_item_drop_chance_+% / map_item_drop_rarity_+%",
+      "kind": "prefix",
+      "template": "Map contains an additional Essence% increased Quantity of Waystones found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Crystallised",
+          "text": "Map contains an additional Essence% increased Quantity of Waystones found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStoneCircle",
+      "id": 552,
+      "identifier": "map_num_extra_stone_circles",
+      "kind": "prefix",
+      "template": "Map contains an additional Summoning Circle",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Summoner's",
+          "text": "Map contains an additional Summoning Circle"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMagicPackIncrease",
+      "id": 544,
+      "identifier": "map_number_of_magic_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased Magic Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Teeming",
+          "text": "Map has (50—70)% increased Magic Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapRarePackIncrease",
+      "id": 545,
+      "identifier": "map_number_of_rare_packs",
+      "kind": "prefix",
+      "template": "Map has #% increased number of Rare Monsters",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Brimming",
+          "text": "Map has (25—40)% increased number of Rare Monsters"
+        }
+      ]
+    },
+    {
+      "family_key": "MapMonsterEffectiveness",
+      "id": 541,
+      "identifier": "map_monster_potency",
+      "kind": "prefix",
+      "template": "Monsters have #% increased Effectiveness",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "Challenger's",
+          "text": "Monsters have (7—11)% increased Effectiveness"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumMonsterSplinterIncrease",
+      "id": 569,
+      "identifier": "map_delirium_splinter_stack_size",
+      "kind": "suffix",
+      "template": "#% increased Stack size of Simulacrum Splinters found in Map",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Simulacrum",
+          "text": "(15—30)% increased Stack size of Simulacrum Splinters found in Map"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumBossChance",
+      "id": 578,
+      "identifier": "map_affliction_encounter_boss_chance",
+      "kind": "suffix",
+      "template": "Delirium Encounters in Map are #% more likely to spawn Unique Bosses",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Phobia",
+          "text": "Delirium Encounters in Map are (15—30)% more likely to spawn Unique Bosses"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumFogPersistence",
+      "id": 573,
+      "identifier": "map_affliction_secondary_wave_acceleration",
+      "kind": "suffix",
+      "template": "Delirium Fog in Map dissipates #% slower",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Unending",
+          "text": "Delirium Fog in Map dissipates (20—30)% slower"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumFogDissipationDelay",
+      "id": 572,
+      "identifier": "map_affliction_secondary_wave_delay_seconds",
+      "kind": "suffix",
+      "template": "Delirium Fog in Map lasts # additional seconds before dissipating",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Eternity",
+          "text": "Delirium Fog in Map lasts (6—12) additional seconds before dissipating"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumDoodadsIncrease",
+      "id": 576,
+      "identifier": "map_delirium_doodads_+%_final",
+      "kind": "suffix",
+      "template": "Delirium Fog in Map spawns #% increased Fracturing Mirrors",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Mirrors",
+          "text": "Delirium Fog in Map spawns (15—30)% increased Fracturing Mirrors"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumPackSizeIncrease",
+      "id": 575,
+      "identifier": "map_affliction_pack_size",
+      "kind": "suffix",
+      "template": "Delirium Monsters in Map have #% increased Pack Size",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Persecution",
+          "text": "Delirium Monsters in Map have (15—30)% increased Pack Size"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumDifficultyIncrease",
+      "id": 574,
+      "identifier": "map_affliction_encounter_monster_depth",
+      "kind": "suffix",
+      "template": "Delirium in Map increases #% faster with distance from the mirror",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Madness",
+          "text": "Delirium in Map increases (15—30)% faster with distance from the mirror"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumRareMonsterPause",
+      "id": 577,
+      "identifier": "map_killing_rare_monsters_pauses_delirium_mirror_timer_for_x_seconds",
+      "kind": "suffix",
+      "template": "Slaying Rare Monsters in Map pauses the Delirium Mirror Timer for # seconds",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Freeze Time",
+          "text": "Slaying Rare Monsters in Map pauses the Delirium Mirror Timer for (3—5) seconds"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumRewardProgressIncrease",
+      "id": 570,
+      "kind": "gen3",
+      "template": "Delirious Monsters Killed in Map provide #% increased Reward Progress",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of the Pursuit",
+          "text": "Delirious Monsters Killed in Map provide (15—30)% increased Reward Progress"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumAdditionalRewardType",
+      "id": 579,
+      "kind": "gen3",
+      "template": "Delirium Encounters in affected Map have #% chance to generate an additional Reward",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Envy",
+          "text": "Delirium Encounters in affected Map have (8—24)% chance to generate an additional Reward"
+        }
+      ]
+    },
+    {
+      "family_key": "DeliriumFogDissipationDelay",
+      "id": 571,
+      "kind": "gen3",
+      "template": "Delirium Fog in Map lasts # additional seconds before dissipating",
+      "tiers": [
+        {
+          "drop_chance": 0,
+          "level": 1,
+          "name": "of Eternity",
+          "text": "Delirium Fog in Map lasts (3—6) additional seconds before dissipating"
+        }
+      ]
+    }
+  ],
+  "category": "Tablet",
+  "label": "Delirium Precursor Tablet",
+  "slug": "Delirium_Precursor_Tablet"
+}
