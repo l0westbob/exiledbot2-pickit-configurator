@@ -170,7 +170,7 @@ Currently, the plan is to cover all categories first.
 ```
 
 The way I've planned to do this is by fetching each
-category from poe2db->Modifiers to get all possible
+category from https://poe2db.tw ->Modifiers to get all possible
 affixes (I just focussed on prefix and suffix
 because desecrated, essence, corrupted affixes
 usually don't drop. I will add them all when I see
