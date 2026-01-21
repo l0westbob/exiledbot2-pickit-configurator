@@ -200,8 +200,8 @@ const {
   MAX_SLOTS: MAX_AFFIX_SLOTS,
   MAX_PREFIXES,
   MAX_SUFFIXES,
-
   slots: affixSlots,
+
   prefixCount,
   suffixCount,
 
@@ -210,8 +210,8 @@ const {
 
   addSlot: addAffixSlot,
   removeSlot: removeAffixSlot,
-  resetSlots,
 
+  resetSlots,
   affixKey,
   findAffixByKey,
   groupsForSlot: affixGroupsForSlot,
