@@ -198,3 +198,10 @@ combinations of these affixes, so there is at least
 one specific rule for each affix combination for
 very precise filtering/selecting.
 
+## Current issues
+
+- `identifiers for Time-Lost* jewels are missing in mods.json`
+- `identifiers for waystones are not mapped yet fully`
+- `identifiers for some tablets are also missing`
+
+- `the app does not generate any correct config-line yet because it is still work in progress`
