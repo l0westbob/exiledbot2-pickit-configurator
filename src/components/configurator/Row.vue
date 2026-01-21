@@ -1,7 +1,12 @@
 <template>
   <div class="row-root">
     <div class="row-config">
-      <h3 class="row-title">Config</h3>
+      <div class="row-config-head">
+        <h3 class="row-title">Row {{ rowIndex + 1 }}</h3>
+        <button type="button" class="btn-remove" @click="$emit('remove', rowId)">
+          Remove
+        </button>
+      </div>
 
       <!-- Item type dropdown -->
       <label class="field">
@@ -9,10 +14,10 @@
         <select
             v-model="selectedItemSlug"
             class="field-select"
-            :disabled="!items.length || loadingItem"
+            :disabled="!itemsSafe.length || loadingItem"
         >
           <option value="" disabled>Select item…</option>
-          <option v-for="item in items" :key="item.slug" :value="item.slug">
+          <option v-for="item in itemsSafe" :key="item.slug" :value="item.slug">
             {{ item.category }} – {{ item.label }}
           </option>
         </select>
@@ -42,7 +47,7 @@
         <select v-model.number="selectedTierLevel" class="field-select">
           <option :value="null" disabled>Select tier…</option>
           <option v-for="tier in availableTiers" :key="tier.level" :value="tier.level">
-            T{{ tierIndexFromBottom(tier.level) }} (ilvl {{ tier.level }}) – {{ tier.text || "unnamed" }}
+            T{{ tierIndexFromBottom(tier.level) }} (lvl {{ tier.level }}) – {{ tier.name || "unnamed" }}
           </option>
         </select>
       </label>
@@ -52,7 +57,7 @@
       </p>
 
       <button type="button" class="btn-generate" @click="onGenerate">
-        Generate
+        Generate row
       </button>
     </div>
 
@@ -70,34 +75,26 @@
 import {computed, ref, watch} from "vue"
 
 /**
- * Your real file shape:
- * {
- *   affixes: AffixFamily[],
- *   category: string,
- *   label: string,
- *   slug: string
- * }
- */
-
-/**
- * @typedef {{ level:number, name?:string, text?:string, drop_chance?:number }} Tier
+ * @typedef {{ level:number, name?:string, text?:string }} Tier
  * @typedef {{
- *   id?: number,
- *   kind?: string,
- *   domain?: string,
- *   family_key?: string,
- *   template?: string,
- *   identifier?: (string|null),
- *   tiers?: Tier[]
+ *   kind: string,
+ *   domain: string,
+ *   family_key: string,
+ *   template: string,
+ *   identifier: string,
+ *   tiers: Tier[]
  * }} AffixFamily
  */
 
 const props = defineProps({
-  items: {
-    type: Array,
-    required: true,
-  },
+  rowId: {type: String, required: true},
+  rowIndex: {type: Number, required: true},
+  items: {type: Array, required: true},
 })
+
+const emit = defineEmits(["update-lines", "remove"])
+
+const itemsSafe = computed(() => (Array.isArray(props.items) ? props.items : []))
 
 const selectedItemSlug = ref("")
 /** @type {import("vue").Ref<AffixFamily[] | null>} */
@@ -114,106 +111,8 @@ const previewText = ref("")
 const baseUrl = import.meta.env.BASE_URL
 
 const selectedItem = computed(() => {
-  return props.items.find((i) => i.slug === selectedItemSlug.value) || null
+  return itemsSafe.value.find((i) => i.slug === selectedItemSlug.value) || null
 })
-
-function asAffixArray(raw) {
-  // Accept either:
-  // 1) { affixes: [...] }  (your current files)
-  // 2) [...]              (older/alternate)
-  if (Array.isArray(raw)) return raw
-  if (raw && typeof raw === "object" && Array.isArray(raw.affixes)) return raw.affixes
-  return null
-}
-
-function isPlainObject(x) {
-  return !!x && typeof x === "object" && !Array.isArray(x)
-}
-
-async function loadItemData(slug) {
-  if (!slug) {
-    itemData.value = null
-    selectedAffixKey.value = null
-    selectedTierLevel.value = null
-    return
-  }
-
-  loadingItem.value = true
-  itemError.value = ""
-
-  try {
-    const url = new URL(`data/affixes/${slug}.json`, document.baseURI).toString()
-
-    const res = await fetch(url)
-    if (!res.ok) {
-      throw new Error(`Failed to load item data for ${slug}: ${res.status}`)
-    }
-
-    const raw = await res.json()
-
-    // Your files look like: { affixes: [...], category, label, slug }
-    if (!raw || typeof raw !== "object" || !Array.isArray(raw.affixes)) {
-      throw new Error(`Invalid schema for ${slug}.json: expected { affixes: [...] }`)
-    }
-
-    itemData.value = raw.affixes
-    selectedAffixKey.value = null
-    selectedTierLevel.value = null
-  } catch (e) {
-    console.error(e)
-    itemError.value = String(e)
-    itemData.value = null
-  } finally {
-    loadingItem.value = false
-  }
-}
-
-watch(
-    () => props.items,
-    (items) => {
-      if (items && items.length && !selectedItemSlug.value) {
-        selectedItemSlug.value = items[0].slug
-      }
-    },
-    {immediate: true}
-)
-
-watch(selectedItemSlug, (slug) => {
-  loadItemData(slug)
-})
-
-function shouldHideAffix(affix) {
-  if (!affix || typeof affix !== "object") return true
-
-  const modDomain = typeof affix.domain === "string" ? affix.domain : ""
-  const kind = typeof affix.kind === "string" ? affix.kind : ""
-
-  // Hide: domain=item with kind unique or corrupted
-  if (modDomain === "item" && (kind === "unique" || kind === "corrupted")) return true
-
-  // Hide: any desecrated domain (all kinds)
-  if (modDomain === "desecrated") return true
-
-  return false
-}
-
-/** @type {import("vue").ComputedRef<AffixFamily[]>} */
-const affixes = computed(() => {
-  const all = itemData.value || []
-  return all.filter((a) => !shouldHideAffix(a))
-})
-
-function affixKey(affix) {
-  if (!affix || typeof affix !== "object") return "||||"
-
-  const kind = typeof affix.kind === "string" ? affix.kind : ""
-  const modDomain = typeof affix.domain === "string" ? affix.domain : ""
-  const family = typeof affix.family_key === "string" ? affix.family_key : ""
-  const template = typeof affix.template === "string" ? affix.template : ""
-
-  // Keep selection stable without depending on identifier (which you changed/filled)
-  return `${kind}|${modDomain}|${family}|${template}`
-}
 
 const affixGroups = computed(() => {
   const list = affixes.value || []
@@ -236,6 +135,86 @@ const affixGroups = computed(() => {
   return groups
 })
 
+async function loadItemData(slug) {
+  if (!slug) {
+    itemData.value = null
+    selectedAffixKey.value = null
+    selectedTierLevel.value = null
+    return
+  }
+
+  loadingItem.value = true
+  itemError.value = ""
+
+  try {
+    const url = baseUrl + `data/affixes/${slug}.json`
+    const res = await fetch(url)
+    if (!res.ok) {
+      throw new Error(`Failed to load item data for ${slug}: ${res.status}`)
+    }
+
+    const raw = await res.json()
+
+    // IMPORTANT: your schema is { affixes: [...] }, not a JSON array
+    if (!raw || typeof raw !== "object" || !Array.isArray(raw.affixes)) {
+      throw new Error(`Invalid schema for ${slug}.json: expected { affixes: [...] }`)
+    }
+
+    itemData.value = raw.affixes
+    selectedAffixKey.value = null
+    selectedTierLevel.value = null
+  } catch (e) {
+    console.error(e)
+    itemError.value = String(e)
+    itemData.value = null
+  } finally {
+    loadingItem.value = false
+  }
+}
+
+watch(
+    () => itemsSafe.value,
+    (items) => {
+      if (items && items.length && !selectedItemSlug.value) {
+        selectedItemSlug.value = items[0].slug
+      }
+    },
+    {immediate: true}
+)
+
+watch(selectedItemSlug, (slug) => {
+  loadItemData(slug)
+})
+
+function shouldHideAffix(affix) {
+  if (!affix || typeof affix !== "object") return true
+
+  const modDomain = typeof affix.domain === "string" ? affix.domain : ""
+  const kind = typeof affix.kind === "string" ? affix.kind : ""
+
+  if (modDomain === "item" && (kind === "unique" || kind === "corrupted")) return true
+  if (modDomain === "desecrated") return true
+
+  return false
+}
+
+const affixes = computed(() => {
+  const all = itemData.value || []
+  return all.filter((a) => !shouldHideAffix(a))
+})
+
+function affixKey(affix) {
+  if (!affix || typeof affix !== "object") return "||||"
+
+  const kind = typeof affix.kind === "string" ? affix.kind : ""
+  const modDomain = typeof affix.domain === "string" ? affix.domain : ""
+  const family = typeof affix.family_key === "string" ? affix.family_key : ""
+  const identifier = typeof affix.identifier === "string" ? affix.identifier : ""
+  const template = typeof affix.template === "string" ? affix.template : ""
+
+  return `${kind}|${modDomain}|${family}|${identifier}|${template}`
+}
+
 const selectedAffix = computed(() => {
   if (!selectedAffixKey.value) return null
   return affixes.value.find((a) => affixKey(a) === selectedAffixKey.value) || null
@@ -246,7 +225,6 @@ const availableTiers = computed(() => {
   return selectedAffix.value.tiers
 })
 
-// Helper: compute T# from bottom (so highest level = T1)
 function tierIndexFromBottom(level) {
   if (!availableTiers.value.length) return "?"
   const sorted = [...availableTiers.value].map((t) => t.level).sort((a, b) => a - b)
@@ -258,14 +236,17 @@ function tierIndexFromBottom(level) {
 function onGenerate() {
   if (!selectedItemSlug.value) {
     previewText.value = "Select an item type first."
+    emit("update-lines", {rowId: props.rowId, lines: []})
     return
   }
   if (!selectedAffix.value) {
     previewText.value = "Select an affix."
+    emit("update-lines", {rowId: props.rowId, lines: []})
     return
   }
   if (!selectedTierLevel.value) {
     previewText.value = "Select a tier."
+    emit("update-lines", {rowId: props.rowId, lines: []})
     return
   }
 
@@ -275,6 +256,7 @@ function onGenerate() {
 
   if (!tier) {
     previewText.value = "Selected tier not found."
+    emit("update-lines", {rowId: props.rowId, lines: []})
     return
   }
 
@@ -285,14 +267,12 @@ function onGenerate() {
   const modDomain = typeof aff.domain === "string" ? aff.domain : ""
   const domainPart = modDomain ? ` | ${modDomain}` : ""
 
-  const ident = typeof aff.identifier === "string" && aff.identifier.trim() ? aff.identifier.trim() : null
-  const identPart = ident ? ` | id: ${ident}` : ""
+  const line = `[${itemLabel}] ${aff.kind}${domainPart} | ${aff.template} | T${tIndex} (lvl ${tier.level}) ${tierName} -> ${tierText}`
 
-  const template = typeof aff.template === "string" ? aff.template : ""
+  previewText.value = line
 
-  previewText.value =
-      `[${itemLabel}] ${aff.kind || ""}${domainPart} | ${template}${identPart} | ` +
-      `T${tIndex} (lvl ${tier.level}) ${tierName} -> ${tierText}`
+  // For now: exactly one line per row. Later this can become multiple lines.
+  emit("update-lines", {rowId: props.rowId, lines: [line]})
 }
 </script>
 
@@ -314,10 +294,32 @@ function onGenerate() {
   flex-direction: column;
 }
 
+.row-config-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
 .row-title {
   margin: 0 0 0.5rem;
   font-size: 0.95rem;
   color: #e5e7eb;
+}
+
+.btn-remove {
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  border-color: #9ca3af;
+  background: #1f2937;
 }
 
 .field {
@@ -367,10 +369,6 @@ function onGenerate() {
 .btn-generate:hover {
   border-color: #9ca3af;
   background: #1f2937;
-}
-
-.row-preview {
-  min-height: 100%;
 }
 
 .preview-box {

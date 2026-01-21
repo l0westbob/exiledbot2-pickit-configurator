@@ -1,150 +1,179 @@
 <template>
-  <div class="configurator-root">
-    <div class="configurator-header">
-      <h2 class="configurator-title">Pickit Configurator</h2>
+  <section class="cfg-root">
+    <header class="cfg-header">
+      <h2 class="cfg-title">Exiledbot2 Pickit Configurator</h2>
 
-      <div class="toolbar">
-        <button
-            type="button"
-            class="btn-add-row"
-            @click="addRow"
-        >
-          +
+      <div class="cfg-actions">
+        <button type="button" class="btn" @click="addRow">Add row</button>
+        <button type="button" class="btn btn-primary" @click="generateFinal">
+          Generate final
         </button>
       </div>
-    </div>
+    </header>
 
-    <p class="configurator-hint">
-      Click "+" to add configuration rows. Each row lets you select an item type, an affix, and a tier, then generates a
-      preview line.
-    </p>
-
-    <p
-        v-if="loading"
-        class="status"
-    >
-      Loading item index…
-    </p>
-    <p
-        v-else-if="error"
-        class="status status-error"
-    >
-      {{ error }}
-    </p>
-
-    <div class="rows-container">
+    <div class="cfg-rows">
       <Row
-          v-for="row in rows"
+          v-for="(row, idx) in rows"
           :key="row.id"
+          :row-id="row.id"
+          :row-index="idx"
           :items="items"
+          @update-lines="onRowUpdateLines"
+          @remove="removeRow"
       />
     </div>
-  </div>
+
+    <div class="cfg-final">
+      <h3 class="cfg-subtitle">Final Config-lines</h3>
+
+      <div class="final-box">
+        <pre v-if="finalText" class="final-pre">{{ finalText }}</pre>
+        <span v-else class="final-placeholder">Nothing generated yet.</span>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue"
+import {computed, ref} from "vue"
 import Row from "./Row.vue"
 
-const rows = ref([])
-let nextId = 1
+const props = defineProps({
+  items: {
+    type: Array,
+    required: true,
+  },
+})
 
-const items = ref([]) // from items.json
-const loading = ref(false)
-const error = ref("")
+function uid() {
+  // good enough for UI keys
+  return crypto.randomUUID()
+}
+
+const rows = ref([
+  {id: uid()}
+])
+
+// rowId -> string[] (config lines)
+const rowLines = ref(new Map())
 
 function addRow() {
-  rows.value.push({id: nextId++})
+  rows.value.push({id: uid()})
 }
 
-async function loadItemsIndex() {
-  loading.value = true
-  error.value = ""
-  try {
-    const res = await fetch(import.meta.env.BASE_URL + "data/items.json")
-    if (!res.ok) {
-      throw new Error(`Failed to load items index: ${res.status}`)
+function removeRow(rowId) {
+  const idx = rows.value.findIndex((r) => r.id === rowId)
+  if (idx !== -1) rows.value.splice(idx, 1)
+  rowLines.value.delete(rowId)
+}
+
+function onRowUpdateLines({rowId, lines}) {
+  rowLines.value.set(rowId, Array.isArray(lines) ? lines : [])
+}
+
+const finalText = ref("")
+
+function generateFinal() {
+  const out = []
+
+  // keep the row order as rendered
+  for (const row of rows.value) {
+    const lines = rowLines.value.get(row.id) || []
+    for (const line of lines) {
+      if (typeof line === "string" && line.trim()) out.push(line)
     }
-    const json = await res.json()
-    items.value = json.items || []
-  } catch (e) {
-    console.error(e)
-    error.value = String(e)
-  } finally {
-    loading.value = false
   }
-}
 
-onMounted(() => {
-  loadItemsIndex()
-})
+  finalText.value = out.join("\n")
+}
 </script>
 
 <style scoped>
-.configurator-root {
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  background: #030712;
-  border: 1px solid #1f2937;
+.cfg-root {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.configurator-header {
+.cfg-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  background: #020617;
 }
 
-.configurator-title {
+.cfg-title {
   margin: 0;
-  font-size: 1.25rem;
+  color: #e5e7eb;
+  font-size: 1rem;
 }
 
-.toolbar {
+.cfg-actions {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
 
-.btn-add-row {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 999px;
+.btn {
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
   border: 1px solid #4b5563;
   background: #111827;
   color: #e5e7eb;
-  font-size: 1.25rem;
-  line-height: 1;
-  padding: 0;
+  font-size: 0.85rem;
   cursor: pointer;
 }
 
-.btn-add-row:hover {
+.btn:hover {
   border-color: #9ca3af;
   background: #1f2937;
 }
 
-.configurator-hint {
-  margin: 0 0 0.5rem;
-  font-size: 0.85rem;
-  color: #9ca3af;
+.btn-primary {
+  border-color: #6b7280;
 }
 
-.status {
-  margin: 0 0 0.25rem;
-  font-size: 0.8rem;
-  color: #9ca3af;
-}
-
-.status-error {
-  color: #f97373;
-}
-
-.rows-container {
-  margin-top: 0.75rem;
+.cfg-rows {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cfg-final {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  background: #020617;
+}
+
+.cfg-subtitle {
+  margin: 0 0 0.5rem;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.final-box {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: #020617;
+  border: 1px dashed #374151;
+  min-height: 4.5rem;
+}
+
+.final-pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #e5e7eb;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+  font-size: 0.85rem;
+}
+
+.final-placeholder {
+  color: #6b7280;
 }
 </style>
