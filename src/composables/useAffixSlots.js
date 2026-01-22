@@ -104,15 +104,14 @@ export function useAffixSlots(options) {
      * @returns {string}
      */
     function affixKey(affixFamily) {
-        if (!affixFamily || typeof affixFamily !== "object") return "||||"
+        if (!affixFamily || typeof affixFamily !== "object") return "|||"
 
-        const kind = typeof affixFamily.kind === "string" ? affixFamily.kind : ""
-        const modifierDomain = typeof affixFamily.domain === "string" ? affixFamily.domain : ""
         const familyKey = typeof affixFamily.family_key === "string" ? affixFamily.family_key : ""
-        const identifier = typeof affixFamily.identifier === "string" ? affixFamily.identifier : ""
+        const kind = typeof affixFamily.kind === "string" ? affixFamily.kind : ""
         const template = typeof affixFamily.template === "string" ? affixFamily.template : ""
 
-        return `${kind}|${modifierDomain}|${familyKey}|${identifier}|${template}`
+        // family_key should be stable across data enrichment and is what you group by anyway
+        return `${familyKey}|${kind}|${template}`
     }
 
     /**

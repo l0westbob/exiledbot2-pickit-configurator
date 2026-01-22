@@ -8,95 +8,121 @@
         </button>
       </div>
 
-      <!-- Item type dropdown -->
+      <!-- Config type dropdown -->
       <label class="field">
-        <span class="field-label">Item type</span>
-        <select
-            v-model="selectedItemSlug"
-            class="field-select"
-            :disabled="!availableItems.length || isLoadingAffixes"
-        >
-          <option value="" disabled>Select item…</option>
-          <option v-for="item in availableItems" :key="item.slug" :value="item.slug">
-            {{ item.category }} – {{ item.label }}
+        <span class="field-label">Config type</span>
+        <select v-model="selectedConfigType" class="field-select">
+          <option
+              v-for="configTypeOption in CONFIG_TYPE_OPTIONS"
+              :key="configTypeOption.value"
+              :value="configTypeOption.value"
+          >
+            {{ configTypeOption.label }}
           </option>
         </select>
       </label>
 
-      <p v-if="visibleAffixFamilies.length" class="field-hint">
-        Prefixes: {{ prefixCount }}/{{ MAX_PREFIXES }}, Suffixes: {{ suffixCount }}/{{ MAX_SUFFIXES }}
-      </p>
-
-      <!-- Affix slots -->
-      <div v-for="(slot, idx) in affixSlots" :key="slot.id" class="slot-root">
-        <div class="slot-head">
-          <span class="slot-title">Affix {{ idx + 1 }}</span>
-          <button
-              v-if="affixSlots.length > 1"
-              type="button"
-              class="btn-remove-slot"
-              @click="removeAffixSlot(idx)"
+      <!-- Items config UI -->
+      <template v-if="selectedConfigType === 'items'">
+        <!-- Item type dropdown -->
+        <label class="field">
+          <span class="field-label">Item type</span>
+          <select
+              v-model="selectedItemSlug"
+              class="field-select"
+              :disabled="!availableItems.length || isLoadingAffixes"
           >
-            Remove
-          </button>
-        </div>
-
-        <!-- Affix dropdown -->
-        <label v-if="visibleAffixFamilies.length" class="field">
-          <span class="field-label">Affix</span>
-          <select v-model="slot.selectedAffixKey" class="field-select">
-            <option :value="null" disabled>Select affix…</option>
-
-            <optgroup
-                v-for="group in affixGroupsForSlot(idx)"
-                :key="group.label"
-                :label="group.label"
-            >
-              <option
-                  v-for="affix in group.items"
-                  :key="affixKey(affix)"
-                  :value="affixKey(affix)"
-              >
-                {{ affix.template }}
-              </option>
-            </optgroup>
-          </select>
-        </label>
-
-        <!-- Tier dropdown -->
-        <label v-if="availableTiersForSlot(idx).length" class="field">
-          <span class="field-label">Tier</span>
-          <select v-model.number="slot.selectedTierLevel" class="field-select">
-            <option :value="null" disabled>Select tier…</option>
-            <option
-                v-for="tier in availableTiersForSlot(idx)"
-                :key="tier.level"
-                :value="tier.level"
-            >
-              T{{ tierIndexFromBottom(availableTiersForSlot(idx), tier.level) }}
-              (lvl {{ tier.level }}) – {{ tier.name || "unnamed" }}
+            <option value="" disabled>Select item…</option>
+            <option v-for="item in availableItems" :key="item.slug" :value="item.slug">
+              {{ item.category }} – {{ item.label }}
             </option>
           </select>
         </label>
-      </div>
 
-      <button
-          type="button"
-          class="btn-add-affix"
-          :disabled="affixSlots.length >= MAX_AFFIX_SLOTS || !canAddAffixSlot"
-          @click="addAffixSlot"
-          :title="!canAddAffixSlot ? addAffixDisabledReason : ''"
-      >
-        Add affix ({{ affixSlots.length }}/{{ MAX_AFFIX_SLOTS }})
-      </button>
+        <p v-if="visibleAffixFamilies.length" class="field-hint">
+          Prefixes: {{ prefixCount }}/{{ MAX_PREFIXES }}, Suffixes: {{ suffixCount }}/{{ MAX_SUFFIXES }}
+        </p>
 
-      <p v-if="affixLoadErrorMessage" class="field-error">
-        {{ affixLoadErrorMessage }}
-      </p>
+        <!-- Affix slots -->
+        <div v-for="(slot, idx) in affixSlots" :key="slot.id" class="slot-root">
+          <div class="slot-head">
+            <span class="slot-title">Affix {{ idx + 1 }}</span>
+            <button
+                v-if="affixSlots.length > 1"
+                type="button"
+                class="btn-remove-slot"
+                @click="removeAffixSlot(idx)"
+            >
+              Remove
+            </button>
+          </div>
 
-      <button type="button" class="btn-generate" @click="onGenerate">
-        Generate row
-      </button>
+          <!-- Affix dropdown -->
+          <label v-if="visibleAffixFamilies.length" class="field">
+            <span class="field-label">Affix</span>
+            <select v-model="slot.selectedAffixKey" class="field-select">
+              <option :value="null" disabled>Select affix…</option>
+
+              <optgroup
+                  v-for="group in affixGroupsForSlot(idx)"
+                  :key="group.label"
+                  :label="group.label"
+              >
+                <option
+                    v-for="affix in group.items"
+                    :key="affixKey(affix)"
+                    :value="affixKey(affix)"
+                >
+                  {{ affix.template }}
+                </option>
+              </optgroup>
+            </select>
+          </label>
+
+          <!-- Tier dropdown -->
+          <label v-if="availableTiersForSlot(idx).length" class="field">
+            <span class="field-label">Tier</span>
+            <select v-model.number="slot.selectedTierLevel" class="field-select">
+              <option :value="null" disabled>Select tier…</option>
+              <option
+                  v-for="tier in availableTiersForSlot(idx)"
+                  :key="tier.level"
+                  :value="tier.level"
+              >
+                T{{ tierIndexFromBottom(availableTiersForSlot(idx), tier.level) }}
+                (lvl {{ tier.level }}) – {{ tier.name || "unnamed" }}
+              </option>
+            </select>
+          </label>
+        </div>
+
+        <button
+            type="button"
+            class="btn-add-affix"
+            :disabled="affixSlots.length >= MAX_AFFIX_SLOTS || !canAddAffixSlot"
+            @click="addAffixSlot"
+            :title="!canAddAffixSlot ? addAffixDisabledReason : ''"
+        >
+          Add affix ({{ affixSlots.length }}/{{ MAX_AFFIX_SLOTS }})
+        </button>
+
+        <p v-if="affixLoadErrorMessage" class="field-error">
+          {{ affixLoadErrorMessage }}
+        </p>
+
+        <button type="button" class="btn-generate" @click="onGenerate">
+          Generate row
+        </button>
+      </template>
+
+      <!-- Placeholder for other config types -->
+      <template v-else>
+        <p class="field-hint">This config type is not implemented yet.</p>
+
+        <button type="button" class="btn-generate" @click="onGenerate">
+          Generate row
+        </button>
+      </template>
     </div>
 
     <div class="row-preview">
@@ -121,7 +147,8 @@ import {tierIndexFromBottom} from "../../helpers/tiers"
  * Row component state + orchestration.
  *
  * Responsibilities:
- * - Let the user pick an item type (slug) and then load its affix catalog (JSON)
+ * - Let the user pick a config type (items, etc.)
+ * - For config type "items": let the user pick an item type (slug) and then load its affix catalog (JSON)
  * - Manage up to 6 affix slots with:
  *   - uniqueness across slots
  *   - max 3 prefixes and max 3 suffixes
@@ -143,6 +170,19 @@ const props = defineProps({
  * - remove: emitted via template button (not used directly in this script block)
  */
 const emit = defineEmits(["update-lines", "remove"])
+
+/**
+ * Config types offered by the Row.
+ * One of them must be "items" to show the item + affix UI.
+ */
+const CONFIG_TYPE_OPTIONS = [
+  {value: "items", label: "Items"},
+  {value: "currency", label: "Currency (todo)"},
+  {value: "gems", label: "Gems (todo)"},
+]
+
+/** Current selection for the config type dropdown */
+const selectedConfigType = ref("items")
 
 /**
  * Inject shared store providing:
@@ -225,12 +265,14 @@ const {
 
 /**
  * Centralized line generation for this row.
- * - We compute lines from current selection state.
- * - The helper encapsulates how lines are formatted (for now it's POC formatting).
+ *
+ * If config type is not "items", the row produces no lines (yet).
  *
  * @returns {string[]}
  */
 function computeCurrentRowLines() {
+  if (selectedConfigType.value !== "items") return []
+
   return generateRowPreviewLines({
     selectedItemSlug: selectedItemSlug.value,
     selectedItem: selectedItem.value,
@@ -284,12 +326,32 @@ async function loadAffixesForSelectedItem(slug) {
 }
 
 /**
+ * When config type changes away from "items", wipe item-specific state and ensure
+ * the parent doesn't keep stale lines for this row.
+ */
+watch(selectedConfigType, (newConfigType) => {
+  if (newConfigType === "items") return
+
+  selectedItemSlug.value = ""
+  loadedAffixFamilies.value = []
+  resetSlots()
+
+  affixLoadErrorMessage.value = ""
+  previewText.value = ""
+
+  emit("update-lines", {rowId: props.rowId, lines: []})
+})
+
+/**
  * Initialize first item as soon as items.json is loaded.
- * Only auto-select if the user hasn't picked something already.
+ * Only auto-select if:
+ * - config type is "items"
+ * - user hasn't picked something already
  */
 watch(
     () => availableItems.value,
     (items) => {
+      if (selectedConfigType.value !== "items") return
       if (items && items.length && !selectedItemSlug.value) {
         selectedItemSlug.value = items[0].slug
       }
@@ -297,8 +359,9 @@ watch(
     {immediate: true}
 )
 
-/** When item selection changes, load the affix JSON */
+/** When item selection changes, load the affix JSON (items mode only) */
 watch(selectedItemSlug, (slug) => {
+  if (selectedConfigType.value !== "items") return
   loadAffixesForSelectedItem(slug)
 })
 
@@ -322,6 +385,11 @@ watchEffect(() => {
  * Updates only the local preview UI. Parent already has the lines via watchEffect.
  */
 function onGenerate() {
+  if (selectedConfigType.value !== "items") {
+    previewText.value = "This config type is not implemented yet."
+    return
+  }
+
   if (!selectedItemSlug.value) {
     previewText.value = "Select an item type first."
     return

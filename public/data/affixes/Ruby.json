@@ -2,750 +2,951 @@
   "affixes": [
     {
       "family_key": "MaximumRage",
-      "id": 207,
       "kind": "prefix",
-      "template": "# to Maximum Rage",
+      "template": "+# to Maximum [Rage]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Angry",
-          "text": "+1 to Maximum Rage"
+          "text": "+1 to Maximum [Rage]",
+          "stats": [
+            {
+              "id": "maximum_rage",
+              "max": 1,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncisionChance",
-      "id": 226,
-      "identifier": "chance_to_inflict_incision_on_attack_hit",
       "kind": "prefix",
-      "template": "#% chance for Attack Hits to apply Incision",
+      "template": "#% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Incise",
-          "text": "(15—25)% chance for Attack Hits to apply Incision"
+          "text": "(15-25)% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+          "stats": [
+            {
+              "id": "chance_to_inflict_incision_on_attack_hit_%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BleedChanceIncrease",
-      "id": 192,
-      "identifier": "base_chance_to_inflict_bleeding",
       "kind": "prefix",
-      "template": "#% chance to inflict Bleeding on Hit",
+      "template": "#% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Bleeding",
-          "text": "(3—7)% chance to inflict Bleeding on Hit"
+          "text": "(3-7)% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "base_chance_to_inflict_bleeding_%",
+              "max": 7,
+              "min": 3
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "AreaOfEffect",
-      "id": 188,
-      "identifier": "base_skill_area_of_effect",
       "kind": "prefix",
       "template": "#% increased Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Blasting",
-          "text": "(4—6)% increased Area of Effect"
+          "text": "(4-6)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "base_skill_area_of_effect_+%",
+              "max": 6,
+              "min": 4
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedPhysicalDamageReductionRatingPercent",
-      "id": 94,
-      "identifier": "physical_damage_reduction_rating",
       "kind": "prefix",
-      "template": "#% increased Armour",
+      "template": "#% increased [Armour]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Armoured",
-          "text": "(10—20)% increased Armour"
+          "text": "(10-20)% increased [Armour]",
+          "stats": [
+            {
+              "id": "physical_damage_reduction_rating_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "AttackDamage",
-      "id": 191,
-      "identifier": "attack_damage",
       "kind": "prefix",
-      "template": "#% increased Attack Damage",
+      "template": "#% increased [Attack] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Combat",
-          "text": "(5—15)% increased Attack Damage"
+          "text": "(5-15)% increased [Attack] Damage",
+          "stats": [
+            {
+              "id": "attack_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedBlockChance",
-      "id": 194,
-      "identifier": "block_chance",
       "kind": "prefix",
-      "template": "#% increased Block chance",
+      "template": "#% increased [Block] chance",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Protecting",
-          "text": "(3—7)% increased Block chance"
+          "text": "(3-7)% increased [Block] chance",
+          "stats": [
+            {
+              "id": "block_chance_+%",
+              "max": 7,
+              "min": 3
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "DamagevsArmourBrokenEnemies",
-      "id": 195,
-      "identifier": "damage_+%_against_enemies_with_fully_broken_armour",
       "kind": "prefix",
-      "template": "#% increased Damage against Enemies with Fully Broken Armour",
+      "template": "#% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Exploiting",
-          "text": "(15—25)% increased Damage against Enemies with Fully Broken Armour"
+          "text": "(15-25)% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
+          "stats": [
+            {
+              "id": "damage_+%_against_enemies_with_fully_broken_armour",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "DamageForm",
-      "id": 232,
-      "identifier": "damage_+%_while_shapeshifted",
       "kind": "prefix",
-      "template": "#% increased Damage while Shapeshifted",
+      "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Bestial",
-          "text": "(5—15)% increased Damage while Shapeshifted"
+          "text": "(1-2)% increased Damage while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "damage_+%_while_shapeshifted",
+              "max": 2,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SpecificWeaponDamage",
-      "id": 205,
-      "identifier": "mace_damage",
       "kind": "prefix",
-      "template": "#% increased Damage with Maces",
+      "template": "#% increased Damage with [Mace|Maces]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Beating",
-          "text": "(6—16)% increased Damage with Maces"
+          "text": "(6-16)% increased Damage with [Mace|Maces]",
+          "stats": [
+            {
+              "id": "mace_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "DamageForm",
-      "id": 233,
-      "identifier": "plant_skill_damage",
       "kind": "prefix",
-      "template": "#% increased Damage with Plant Skills",
+      "template": "#% increased Damage with [Plant|Plant] Skills",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Overgrown",
-          "text": "(5—15)% increased Damage with Plant Skills"
+          "text": "(1-2)% increased Damage with [Plant|Plant] Skills",
+          "stats": [
+            {
+              "id": "plant_skill_damage_+%",
+              "max": 2,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "WarcryDamage",
-      "id": 224,
-      "identifier": "warcry_damage",
       "kind": "prefix",
-      "template": "#% increased Damage with Warcries",
+      "template": "#% increased Damage with [Warcry|Warcries]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Yelling",
-          "text": "(10—20)% increased Damage with Warcries"
+          "text": "(10-20)% increased Damage with [Warcry|Warcries]",
+          "stats": [
+            {
+              "id": "warcry_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ShieldArmourIncrease",
-      "id": 215,
-      "identifier": "shield_defences",
       "kind": "prefix",
-      "template": "#% increased Defences from Equipped Shield",
+      "template": "#% increased [Defences] from Equipped [Shield]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Shielding",
-          "text": "(18—32)% increased Defences from Equipped Shield"
+          "text": "(18-32)% increased [Defences] from Equipped [Shield]",
+          "stats": [
+            {
+              "id": "shield_defences_+%",
+              "max": 32,
+              "min": 18
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ElementalDamagePercent",
-      "id": 196,
-      "identifier": "elemental_damage",
       "kind": "prefix",
-      "template": "#% increased Elemental Damage",
+      "template": "#% increased [ElementalDamage|Elemental Damage]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Prismatic",
-          "text": "(5—15)% increased Elemental Damage"
+          "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "elemental_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "FireDamagePercentage",
-      "id": 113,
-      "identifier": "fire_damage",
       "kind": "prefix",
-      "template": "#% increased Fire Damage",
+      "template": "#% increased [Fire] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Flaming",
-          "text": "(5—15)% increased Fire Damage"
+          "text": "(5-15)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "PhysicalDamagePercent",
-      "id": 212,
-      "identifier": "physical_damage",
       "kind": "prefix",
-      "template": "#% increased Global Physical Damage",
+      "template": "#% increased Global [Physical] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Sharpened",
-          "text": "(5—15)% increased Global Physical Damage"
+          "text": "(5-15)% increased Global [Physical] Damage",
+          "stats": [
+            {
+              "id": "physical_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IgniteEffect",
-      "id": 199,
-      "identifier": "base_ignite_effect",
       "kind": "prefix",
-      "template": "#% increased Ignite Magnitude",
+      "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Burning",
-          "text": "(5—15)% increased Ignite Magnitude"
+          "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "base_ignite_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BleedingDamage",
-      "id": 218,
-      "identifier": "base_bleeding_effect",
       "kind": "prefix",
-      "template": "#% increased Magnitude of Bleeding you inflict",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Haemorrhaging",
-          "text": "(5—15)% increased Magnitude of Bleeding you inflict"
+          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
+          "stats": [
+            {
+              "id": "base_bleeding_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MeleeDamage",
-      "id": 208,
-      "identifier": "melee_damage",
       "kind": "prefix",
-      "template": "#% increased Melee Damage",
+      "template": "#% increased [Melee] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Clashing",
-          "text": "(5—15)% increased Melee Damage"
+          "text": "(5-15)% increased [Melee] Damage",
+          "stats": [
+            {
+              "id": "melee_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "PresenceRadius",
-      "id": 230,
-      "identifier": "presence_area",
       "kind": "prefix",
-      "template": "#% increased Presence Area of Effect",
+      "template": "#% increased [Presence|Presence] Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Iconic",
-          "text": "(15—25)% increased Presence Area of Effect"
+          "text": "(15-25)% increased [Presence|Presence] Area of Effect",
+          "stats": [
+            {
+              "id": "presence_area_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "Thorns",
-      "id": 219,
-      "identifier": "thorns_damage",
       "kind": "prefix",
-      "template": "#% increased Thorns damage",
+      "template": "#% increased [Thorns|Thorns] damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Retaliating",
-          "text": "(10—20)% increased Thorns damage"
+          "text": "(10-20)% increased [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "TotemDamage",
-      "id": 220,
-      "identifier": "totem_damage",
       "kind": "prefix",
-      "template": "#% increased Totem Damage",
+      "template": "#% increased [Totem|Totem] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Shaman's",
-          "text": "(10—18)% increased Totem Damage"
+          "text": "(10-18)% increased [Totem|Totem] Damage",
+          "stats": [
+            {
+              "id": "totem_damage_+%",
+              "max": 18,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedTotemLife",
-      "id": 221,
-      "identifier": "totem_life",
       "kind": "prefix",
-      "template": "#% increased Totem Life",
+      "template": "#% increased [Totem] Life",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Carved",
-          "text": "(10—20)% increased Totem Life"
+          "text": "(10-20)% increased [Totem] Life",
+          "stats": [
+            {
+              "id": "totem_life_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BannerArea",
-      "id": 228,
-      "identifier": "banner_area_of_effect",
       "kind": "prefix",
-      "template": "Banner Skills have #% increased Area of Effect",
+      "template": "[Banner] Skills have #% increased Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Rallying",
-          "text": "Banner Skills have (10—20)% increased Area of Effect"
+          "text": "[Banner] Skills have (10-20)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "banner_area_of_effect_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ArmourBreak",
-      "id": 189,
-      "identifier": "armour_break_amount",
       "kind": "prefix",
-      "template": "Break #% increased Armour",
+      "template": "[ArmourBreak|Break] #% increased [Armour|Armour]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Shattering",
-          "text": "Break (5—15)% increased Armour"
+          "text": "[ArmourBreak|Break] (5-15)% increased [Armour|Armour]",
+          "stats": [
+            {
+              "id": "armour_break_amount_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "FireResistancePenetration",
-      "id": 198,
-      "identifier": "base_reduce_enemy_fire_resistance",
       "kind": "prefix",
-      "template": "Damage Penetrates #% Fire Resistance",
+      "template": "Damage [Penetration|Penetrates] #% [Resistances|Fire Resistance]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Searing",
-          "text": "Damage Penetrates (5—10)% Fire Resistance"
+          "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_reduce_enemy_fire_resistance_%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ExertedAttackDamage",
-      "id": 197,
-      "identifier": "empowered_attack_damage",
       "kind": "prefix",
-      "template": "Empowered Attacks deal #% increased Damage",
+      "template": "[Empowered|Empowered Attacks] deal #% increased Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Empowering",
-          "text": "Empowered Attacks deal (10—20)% increased Damage"
+          "text": "[Empowered|Empowered Attacks] deal (10-20)% increased Damage",
+          "stats": [
+            {
+              "id": "empowered_attack_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MinionAreaOfEffect",
-      "id": 209,
-      "identifier": "minion_skill_area_of_effect",
       "kind": "prefix",
-      "template": "Minions have #% increased Area of Effect",
+      "template": "[Minion|Minions] have #% increased Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Companion",
-          "text": "Minions have (5—8)% increased Area of Effect"
+          "text": "[Minion|Minions] have (5-8)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "minion_skill_area_of_effect_+%",
+              "max": 8,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MinionLife",
-      "id": 210,
-      "identifier": "minion_maximum_life",
       "kind": "prefix",
-      "template": "Minions have #% increased maximum Life",
+      "template": "[Minion|Minions] have #% increased maximum Life",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Fortuitous",
-          "text": "Minions have (5—15)% increased maximum Life"
+          "text": "[Minion|Minions] have (5-15)% increased maximum Life",
+          "stats": [
+            {
+              "id": "minion_maximum_life_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MaximumFireResist",
-      "id": 182,
-      "identifier": "base_maximum_fire_damage_resistance_%",
       "kind": "suffix",
-      "template": "# to Maximum Fire Resistance",
+      "template": "+#% to [MaximumResistances|Maximum Fire Resistance]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of the Phoenix",
-          "text": "+1% to Maximum Fire Resistance"
+          "text": "+1% to [MaximumResistances|Maximum Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_maximum_fire_damage_resistance_%",
+              "max": 1,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ArmourBreakDuration",
-      "id": 190,
-      "identifier": "armour_break_and_sundered_armour_duration",
       "kind": "suffix",
-      "template": "#% increased Armour Break Duration",
+      "template": "#% increased [ArmourBreak|Armour Break] Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Resonating",
-          "text": "(10—20)% increased Armour Break Duration"
+          "text": "(10-20)% increased [ArmourBreak|Armour Break] Duration",
+          "stats": [
+            {
+              "id": "armour_break_and_sundered_armour_duration_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BleedDuration",
-      "id": 193,
-      "identifier": "base_bleed_duration",
       "kind": "suffix",
       "template": "#% increased Bleeding Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Haemophilia",
-          "text": "(5—10)% increased Bleeding Duration"
+          "text": "(5-10)% increased Bleeding Duration",
+          "stats": [
+            {
+              "id": "base_bleed_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IgniteChanceIncrease",
-      "id": 43,
-      "identifier": "ignite_chance",
       "kind": "suffix",
-      "template": "#% increased Flammability Magnitude",
+      "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Ignition",
-          "text": "(10—20)% increased Flammability Magnitude"
+          "text": "(10-20)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BannerValourGained",
-      "id": 227,
-      "identifier": "glory_generation_+%_for_banners",
       "kind": "suffix",
-      "template": "#% increased Glory generation for Banner Skills",
+      "template": "#% increased [Glory] generation for [Banner] Skills",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Valour",
-          "text": "(15—20)% increased Glory generation for Banner Skills"
+          "text": "(15-20)% increased [Glory] generation for [Banner] Skills",
+          "stats": [
+            {
+              "id": "glory_generation_+%_for_banners",
+              "max": 20,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "Knockback",
-      "id": 201,
-      "identifier": "knockback_distance",
       "kind": "suffix",
-      "template": "#% increased Knockback Distance",
+      "template": "#% increased [Knockback] Distance",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Fending",
-          "text": "(5—15)% increased Knockback Distance"
+          "text": "(5-15)% increased [Knockback] Distance",
+          "stats": [
+            {
+              "id": "knockback_distance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "LifeRegenerationRate",
-      "id": 204,
-      "identifier": "life_regeneration_rate",
       "kind": "suffix",
       "template": "#% increased Life Regeneration rate",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Regeneration",
-          "text": "(5—10)% increased Life Regeneration rate"
+          "text": "(5-10)% increased Life Regeneration rate",
+          "stats": [
+            {
+              "id": "life_regeneration_rate_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SkillEffectDuration",
-      "id": 200,
-      "identifier": "skill_effect_duration",
       "kind": "suffix",
       "template": "#% increased Skill Effect Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Lengthening",
-          "text": "(5—10)% increased Skill Effect Duration"
+          "text": "(5-10)% increased Skill Effect Duration",
+          "stats": [
+            {
+              "id": "skill_effect_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SpecificWeaponSpeed",
-      "id": 231,
-      "identifier": "skill_speed_+%_while_shapeshifted",
       "kind": "suffix",
-      "template": "#% increased Skill Speed while Shapeshifted",
+      "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of the Wild",
-          "text": "(2—4)% increased Skill Speed while Shapeshifted"
+          "text": "(1-2)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "skill_speed_+%_while_shapeshifted",
+              "max": 2,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "StunDamageIncrease",
-      "id": 216,
-      "identifier": "hit_damage_stun_multiplier",
       "kind": "suffix",
-      "template": "#% increased Stun Buildup",
+      "template": "#% increased [Stun] Buildup",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Stunning",
-          "text": "(10—20)% increased Stun Buildup"
+          "text": "(10-20)% increased [Stun] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_stun_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MaceStun",
-      "id": 206,
-      "identifier": "mace_hit_damage_stun_multiplier",
       "kind": "suffix",
-      "template": "#% increased Stun Buildup with Maces",
+      "template": "#% increased [Stun|Stun Buildup] with [Mace|Maces]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Thumping",
-          "text": "(15—25)% increased Stun Buildup with Maces"
+          "text": "(15-25)% increased [Stun|Stun Buildup] with [Mace|Maces]",
+          "stats": [
+            {
+              "id": "mace_hit_damage_stun_multiplier_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedStunThreshold",
-      "id": 217,
-      "identifier": "stun_threshold",
       "kind": "suffix",
-      "template": "#% increased Stun Threshold",
+      "template": "#% increased [StunThreshold|Stun Threshold]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Withstanding",
-          "text": "(6—16)% increased Stun Threshold"
+          "text": "(6-16)% increased [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SummonTotemCastSpeed",
-      "id": 222,
-      "identifier": "summon_totem_cast_speed",
       "kind": "suffix",
-      "template": "#% increased Totem Placement speed",
+      "template": "#% increased [Totem|Totem] Placement speed",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Ancestry",
-          "text": "(10—20)% increased Totem Placement speed"
+          "text": "(10-20)% increased [Totem|Totem] Placement speed",
+          "stats": [
+            {
+              "id": "summon_totem_cast_speed_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "WarcryCooldownSpeed",
-      "id": 223,
-      "identifier": "warcry_cooldown_speed",
       "kind": "suffix",
-      "template": "#% increased Warcry Cooldown Recovery Rate",
+      "template": "#% increased [Warcry|Warcry] Cooldown Recovery Rate",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Rallying",
-          "text": "(5—15)% increased Warcry Cooldown Recovery Rate"
+          "text": "(5-15)% increased [Warcry|Warcry] Cooldown Recovery Rate",
+          "stats": [
+            {
+              "id": "warcry_cooldown_speed_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "WarcrySpeed",
-      "id": 225,
-      "identifier": "warcry_speed",
       "kind": "suffix",
-      "template": "#% increased Warcry Speed",
+      "template": "#% increased [Warcry|Warcry] Speed",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Lungs",
-          "text": "(10—20)% increased Warcry Speed"
+          "text": "(10-20)% increased [Warcry|Warcry] Speed",
+          "stats": [
+            {
+              "id": "warcry_speed_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "LifeLeech",
-      "id": 203,
-      "identifier": "base_life_leech_amount",
       "kind": "suffix",
-      "template": "#% increased amount of Life Leeched",
+      "template": "#% increased amount of Life [LifeLeech|Leeched]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Frenzy",
-          "text": "(5—15)% increased amount of Life Leeched"
+          "text": "(5-15)% increased amount of Life [LifeLeech|Leeched]",
+          "stats": [
+            {
+              "id": "base_life_leech_amount_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "LifeCost",
-      "id": 202,
-      "identifier": "base_skill_cost_life_instead_of_mana",
       "kind": "suffix",
-      "template": "#% of Skill Mana Costs Converted to Life Costs",
+      "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Sacrifice",
-          "text": "(4—6)% of Skill Mana Costs Converted to Life Costs"
+          "text": "(4-6)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+          "stats": [
+            {
+              "id": "base_skill_cost_life_instead_of_mana_%",
+              "max": 6,
+              "min": 4
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BannerDuration",
-      "id": 229,
-      "identifier": "banner_duration",
       "kind": "suffix",
-      "template": "Banner Skills have #% increased Duration",
+      "template": "[Banner] Skills have #% increased Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Inspiring",
-          "text": "Banner Skills have (15—25)% increased Duration"
+          "text": "[Banner] Skills have (15-25)% increased Duration",
+          "stats": [
+            {
+              "id": "banner_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "RageOnHit",
-      "id": 213,
-      "identifier": "gain_x_rage_on_melee_hit",
       "kind": "suffix",
-      "template": "Gain # Rage on Melee Hit",
+      "template": "Gain # [Rage|Rage] on [Melee] [HitDamage|Hit]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Raging",
-          "text": "Gain 1 Rage on Melee Hit"
+          "text": "Gain 1 [Rage|Rage] on [Melee] [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "gain_x_rage_on_melee_hit",
+              "max": 1,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "GainRage",
-      "id": 214,
-      "identifier": "gain_x_rage_when_hit",
       "kind": "suffix",
-      "template": "Gain # Rage when Hit by an Enemy",
+      "template": "Gain # [Rage] when [HitDamage|Hit] by an Enemy",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Retribution",
-          "text": "Gain (1—3) Rage when Hit by an Enemy"
+          "text": "Gain (1-3) [Rage] when [HitDamage|Hit] by an Enemy",
+          "stats": [
+            {
+              "id": "gain_x_rage_when_hit",
+              "max": 3,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MinionPhysicalDamageReduction",
-      "id": 211,
-      "identifier": "minion_additional_physical_damage_reduction",
       "kind": "suffix",
-      "template": "Minions have #% additional Physical Damage Reduction",
+      "template": "[Minion|Minions] have #% additional [Physical] Damage Reduction",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Confidence",
-          "text": "Minions have (6—16)% additional Physical Damage Reduction"
+          "text": "[Minion|Minions] have (6-16)% additional [Physical] Damage Reduction",
+          "stats": [
+            {
+              "id": "minion_additional_physical_damage_reduction_%",
+              "max": 16,
+              "min": 6
+            }
+          ]
         }
       ]
     }

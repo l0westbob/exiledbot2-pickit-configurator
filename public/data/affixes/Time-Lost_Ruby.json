@@ -2,745 +2,1018 @@
   "affixes": [
     {
       "family_key": "MaximumRage",
-      "id": 349,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant # to Maximum Rage",
+      "template": "+# to Maximum [Rage]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Angry",
-          "text": "Notable Passive Skills in Radius also grant +1 to Maximum Rage"
+          "text": "+1 to Maximum [Rage]",
+          "stats": [
+            {
+              "id": "maximum_rage",
+              "max": 1,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "AreaOfEffect",
-      "id": 327,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Area of Effect",
+      "template": "#% increased Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Blasting",
-          "text": "Notable Passive Skills in Radius also grant (2—3)% increased Area of Effect"
+          "text": "(4-6)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "base_skill_area_of_effect_+%",
+              "max": 6,
+              "min": 4
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedBlockChance",
-      "id": 334,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Block chance",
+      "template": "#% increased [Block] chance",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Protecting",
-          "text": "Notable Passive Skills in Radius also grant (1—3)% increased Block chance"
+          "text": "(3-7)% increased [Block] chance",
+          "stats": [
+            {
+              "id": "block_chance_+%",
+              "max": 7,
+              "min": 3
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ShieldArmourIncrease",
-      "id": 357,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Defences from Equipped Shield",
+      "template": "#% increased [Defences] from Equipped [Shield]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Shielding",
-          "text": "Notable Passive Skills in Radius also grant (8—15)% increased Defences from Equipped Shield"
+          "text": "(18-32)% increased [Defences] from Equipped [Shield]",
+          "stats": [
+            {
+              "id": "shield_defences_+%",
+              "max": 32,
+              "min": 18
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IgniteEffect",
-      "id": 341,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Ignite Magnitude",
+      "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Burning",
-          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Ignite Magnitude"
+          "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "base_ignite_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BleedingDamage",
-      "id": 360,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Magnitude of Bleeding you inflict",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Haemorrhaging",
-          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Magnitude of Bleeding you inflict"
+          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
+          "stats": [
+            {
+              "id": "base_bleeding_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "PresenceRadius",
-      "id": 372,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Presence Area of Effect",
+      "template": "#% increased [Presence|Presence] Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Iconic",
-          "text": "Notable Passive Skills in Radius also grant (8—12)% increased Presence Area of Effect"
+          "text": "(15-25)% increased [Presence|Presence] Area of Effect",
+          "stats": [
+            {
+              "id": "presence_area_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MinionAreaOfEffect",
-      "id": 351,
       "kind": "prefix",
-      "template": "Notable Passive Skills in Radius also grant Minions have #% increased Area of Effect",
+      "template": "[Minion|Minions] have #% increased Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Companion",
-          "text": "Notable Passive Skills in Radius also grant Minions have (3—5)% increased Area of Effect"
+          "text": "[Minion|Minions] have (5-8)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "minion_skill_area_of_effect_+%",
+              "max": 8,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BleedChanceIncrease",
-      "id": 332,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant # chance to inflict Bleeding on Hit",
+      "template": "#% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Bleeding",
-          "text": "Small Passive Skills in Radius also grant 1% chance to inflict Bleeding on Hit"
+          "text": "(3-7)% chance to inflict [Bleeding|Bleeding] on [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "base_chance_to_inflict_bleeding_%",
+              "max": 7,
+              "min": 3
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncisionChance",
-      "id": 368,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% chance for Attack Hits to apply Incision",
+      "template": "#% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Incise",
-          "text": "Small Passive Skills in Radius also grant (3—5)% chance for Attack Hits to apply Incision"
+          "text": "(15-25)% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+          "stats": [
+            {
+              "id": "chance_to_inflict_incision_on_attack_hit_%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedPhysicalDamageReductionRatingPercent",
-      "id": 328,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Armour",
+      "template": "#% increased [Armour]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Armoured",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Armour"
+          "text": "(10-20)% increased [Armour]",
+          "stats": [
+            {
+              "id": "physical_damage_reduction_rating_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "AttackDamage",
-      "id": 331,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Attack Damage",
+      "template": "#% increased [Attack] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Combat",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Attack Damage"
+          "text": "(5-15)% increased [Attack] Damage",
+          "stats": [
+            {
+              "id": "attack_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "DamagevsArmourBrokenEnemies",
-      "id": 335,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Damage against Enemies with Fully Broken Armour",
+      "template": "#% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Exploiting",
-          "text": "Small Passive Skills in Radius also grant (2—4)% increased Damage against Enemies with Fully Broken Armour"
+          "text": "(15-25)% increased Damage against Enemies with [ArmourBreak|Fully Broken Armour]",
+          "stats": [
+            {
+              "id": "damage_+%_against_enemies_with_fully_broken_armour",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "DamageForm",
-      "id": 374,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Damage while Shapeshifted",
+      "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Bestial",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Damage while Shapeshifted"
+          "text": "(1-2)% increased Damage while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "damage_+%_while_shapeshifted",
+              "max": 2,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SpecificWeaponDamage",
-      "id": 347,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Damage with Maces",
+      "template": "#% increased Damage with [Mace|Maces]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Beating",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Damage with Maces"
+          "text": "(6-16)% increased Damage with [Mace|Maces]",
+          "stats": [
+            {
+              "id": "mace_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "DamageForm",
-      "id": 375,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Damage with Plant Skills",
+      "template": "#% increased Damage with [Plant|Plant] Skills",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Overgrown",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Damage with Plant Skills"
+          "text": "(1-2)% increased Damage with [Plant|Plant] Skills",
+          "stats": [
+            {
+              "id": "plant_skill_damage_+%",
+              "max": 2,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "WarcryDamage",
-      "id": 366,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Damage with Warcries",
+      "template": "#% increased Damage with [Warcry|Warcries]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Yelling",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Damage with Warcries"
+          "text": "(10-20)% increased Damage with [Warcry|Warcries]",
+          "stats": [
+            {
+              "id": "warcry_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ElementalDamagePercent",
-      "id": 336,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Elemental Damage",
+      "template": "#% increased [ElementalDamage|Elemental Damage]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Prismatic",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Elemental Damage"
+          "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "elemental_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "FireDamagePercentage",
-      "id": 338,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Fire Damage",
+      "template": "#% increased [Fire] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Flaming",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Fire Damage"
+          "text": "(5-15)% increased [Fire] Damage",
+          "stats": [
+            {
+              "id": "fire_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "PhysicalDamagePercent",
-      "id": 354,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Global Physical Damage",
+      "template": "#% increased Global [Physical] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Sharpened",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Global Physical Damage"
+          "text": "(5-15)% increased Global [Physical] Damage",
+          "stats": [
+            {
+              "id": "physical_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MeleeDamage",
-      "id": 350,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Melee Damage",
+      "template": "#% increased [Melee] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Clashing",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Melee Damage"
+          "text": "(5-15)% increased [Melee] Damage",
+          "stats": [
+            {
+              "id": "melee_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "Thorns",
-      "id": 361,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Thorns damage",
+      "template": "#% increased [Thorns|Thorns] damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Retaliating",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Thorns damage"
+          "text": "(10-20)% increased [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "TotemDamage",
-      "id": 362,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Totem Damage",
+      "template": "#% increased [Totem|Totem] Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Shaman's",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Totem Damage"
+          "text": "(10-18)% increased [Totem|Totem] Damage",
+          "stats": [
+            {
+              "id": "totem_damage_+%",
+              "max": 18,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedTotemLife",
-      "id": 363,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant #% increased Totem Life",
+      "template": "#% increased [Totem] Life",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Carved",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Totem Life"
+          "text": "(10-20)% increased [Totem] Life",
+          "stats": [
+            {
+              "id": "totem_life_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BannerArea",
-      "id": 370,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant Banner Skills have #% increased Area of Effect",
+      "template": "[Banner] Skills have #% increased Area of Effect",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Rallying",
-          "text": "Small Passive Skills in Radius also grant Banner Skills have (2—3)% increased Area of Effect"
+          "text": "[Banner] Skills have (10-20)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "banner_area_of_effect_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ArmourBreak",
-      "id": 329,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant Break #% increased Armour",
+      "template": "[ArmourBreak|Break] #% increased [Armour|Armour]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Shattering",
-          "text": "Small Passive Skills in Radius also grant Break (1—2)% increased Armour"
+          "text": "[ArmourBreak|Break] (5-15)% increased [Armour|Armour]",
+          "stats": [
+            {
+              "id": "armour_break_amount_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "FireResistancePenetration",
-      "id": 339,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant Damage Penetrates #% Fire Resistance",
+      "template": "Damage [Penetration|Penetrates] #% [Resistances|Fire Resistance]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Searing",
-          "text": "Small Passive Skills in Radius also grant Damage Penetrates (1—2)% Fire Resistance"
+          "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Fire Resistance]",
+          "stats": [
+            {
+              "id": "base_reduce_enemy_fire_resistance_%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ExertedAttackDamage",
-      "id": 337,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant Empowered Attacks deal #% increased Damage",
+      "template": "[Empowered|Empowered Attacks] deal #% increased Damage",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Empowering",
-          "text": "Small Passive Skills in Radius also grant Empowered Attacks deal (2—3)% increased Damage"
+          "text": "[Empowered|Empowered Attacks] deal (10-20)% increased Damage",
+          "stats": [
+            {
+              "id": "empowered_attack_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MinionLife",
-      "id": 352,
       "kind": "prefix",
-      "template": "Small Passive Skills in Radius also grant Minions have #% increased maximum Life",
+      "template": "[Minion|Minions] have #% increased maximum Life",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Fortuitous",
-          "text": "Small Passive Skills in Radius also grant Minions have (1—2)% increased maximum Life"
+          "text": "[Minion|Minions] have (5-15)% increased maximum Life",
+          "stats": [
+            {
+              "id": "minion_maximum_life_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "JewelRadiusLargerRadius",
-      "id": 324,
       "kind": "prefix",
-      "template": "Upgrades Radius to Largelocal jewel effect base radius [#]",
+      "template": "Upgrades Radius to Large",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Grand",
-          "text": "Upgrades Radius to Largelocal jewel effect base radius [300]"
+          "text": "Upgrades Radius to Large",
+          "stats": [
+            {
+              "id": "local_jewel_effect_base_radius",
+              "max": 300,
+              "min": 300
+            },
+            {
+              "id": "local_jewel_display_radius_change",
+              "max": 2,
+              "min": 2
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "JewelRadiusLargerRadius",
-      "id": 323,
       "kind": "prefix",
-      "template": "Upgrades Radius to Mediumlocal jewel effect base radius [#]",
+      "template": "Upgrades Radius to Medium",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Greater",
-          "text": "Upgrades Radius to Mediumlocal jewel effect base radius [150]"
+          "text": "Upgrades Radius to Medium",
+          "stats": [
+            {
+              "id": "local_jewel_effect_base_radius",
+              "max": 150,
+              "min": 150
+            },
+            {
+              "id": "local_jewel_display_radius_change",
+              "max": 1,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "JewelRadiusNotableEffect",
-      "id": 326,
-      "identifier": "local_jewel_notable_passive_in_radius_effect",
       "kind": "suffix",
       "template": "#% increased Effect of Notable Passive Skills in Radius",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Supremacy",
-          "text": "(15—25)% increased Effect of Notable Passive Skills in Radius"
+          "text": "(15-25)% increased Effect of Notable Passive Skills in Radius",
+          "stats": [
+            {
+              "id": "local_jewel_notable_passive_in_radius_effect_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "JewelRadiusSmallNodeEffect",
-      "id": 325,
-      "identifier": "local_jewel_small_passive_in_radius_effect",
       "kind": "suffix",
-      "template": "#% increased Effect of Small Passive Skills in Radius",
+      "template": "#% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Potency",
-          "text": "(15—25)% increased Effect of Small Passive Skills in Radius"
+          "text": "(15-25)% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+          "stats": [
+            {
+              "id": "local_jewel_small_passive_in_radius_effect_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "ArmourBreakDuration",
-      "id": 330,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Armour Break Duration",
+      "template": "#% increased [ArmourBreak|Armour Break] Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "Resonating",
-          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Armour Break Duration"
+          "text": "(10-20)% increased [ArmourBreak|Armour Break] Duration",
+          "stats": [
+            {
+              "id": "armour_break_and_sundered_armour_duration_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BleedDuration",
-      "id": 333,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Bleeding Duration",
+      "template": "#% increased Bleeding Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Haemophilia",
-          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Bleeding Duration"
+          "text": "(5-10)% increased Bleeding Duration",
+          "stats": [
+            {
+              "id": "base_bleed_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BannerValourGained",
-      "id": 369,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Glory generation for Banner Skills",
+      "template": "#% increased [Glory] generation for [Banner] Skills",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Valour",
-          "text": "Notable Passive Skills in Radius also grant (8—12)% increased Glory generation for Banner Skills"
+          "text": "(15-20)% increased [Glory] generation for [Banner] Skills",
+          "stats": [
+            {
+              "id": "glory_generation_+%_for_banners",
+              "max": 20,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "Knockback",
-      "id": 343,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Knockback Distance",
+      "template": "#% increased [Knockback] Distance",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Fending",
-          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Knockback Distance"
+          "text": "(5-15)% increased [Knockback] Distance",
+          "stats": [
+            {
+              "id": "knockback_distance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "LifeRegenerationRate",
-      "id": 346,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Life Regeneration rate",
+      "template": "#% increased Life Regeneration rate",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Regeneration",
-          "text": "Notable Passive Skills in Radius also grant (3—5)% increased Life Regeneration rate"
+          "text": "(5-10)% increased Life Regeneration rate",
+          "stats": [
+            {
+              "id": "life_regeneration_rate_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SkillEffectDuration",
-      "id": 342,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Skill Effect Duration",
+      "template": "#% increased Skill Effect Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Lengthening",
-          "text": "Notable Passive Skills in Radius also grant (3—5)% increased Skill Effect Duration"
+          "text": "(5-10)% increased Skill Effect Duration",
+          "stats": [
+            {
+              "id": "skill_effect_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SpecificWeaponSpeed",
-      "id": 373,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Skill Speed while Shapeshifted",
+      "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of the Wild",
-          "text": "Notable Passive Skills in Radius also grant (1—2)% increased Skill Speed while Shapeshifted"
+          "text": "(1-2)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "skill_speed_+%_while_shapeshifted",
+              "max": 2,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "StunDamageIncrease",
-      "id": 358,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Stun Buildup",
+      "template": "#% increased [Stun] Buildup",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Stunning",
-          "text": "Notable Passive Skills in Radius also grant (5—10)% increased Stun Buildup"
+          "text": "(10-20)% increased [Stun] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_stun_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MaceStun",
-      "id": 348,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Stun Buildup with Maces",
+      "template": "#% increased [Stun|Stun Buildup] with [Mace|Maces]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Thumping",
-          "text": "Notable Passive Skills in Radius also grant (6—12)% increased Stun Buildup with Maces"
+          "text": "(15-25)% increased [Stun|Stun Buildup] with [Mace|Maces]",
+          "stats": [
+            {
+              "id": "mace_hit_damage_stun_multiplier_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "WarcryCooldownSpeed",
-      "id": 365,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% increased Warcry Cooldown Recovery Rate",
+      "template": "#% increased [Warcry|Warcry] Cooldown Recovery Rate",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Rallying",
-          "text": "Notable Passive Skills in Radius also grant (3—7)% increased Warcry Cooldown Recovery Rate"
+          "text": "(5-15)% increased [Warcry|Warcry] Cooldown Recovery Rate",
+          "stats": [
+            {
+              "id": "warcry_cooldown_speed_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "LifeCost",
-      "id": 344,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant #% of Skill Mana Costs Converted to Life Costs",
+      "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Sacrifice",
-          "text": "Notable Passive Skills in Radius also grant (2—3)% of Skill Mana Costs Converted to Life Costs"
+          "text": "(4-6)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+          "stats": [
+            {
+              "id": "base_skill_cost_life_instead_of_mana_%",
+              "max": 6,
+              "min": 4
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "RageOnHit",
-      "id": 355,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant Gain # Rage on Melee Hit",
+      "template": "Gain # [Rage|Rage] on [Melee] [HitDamage|Hit]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Raging",
-          "text": "Notable Passive Skills in Radius also grant Gain 1 Rage on Melee Hit"
+          "text": "Gain 1 [Rage|Rage] on [Melee] [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "gain_x_rage_on_melee_hit",
+              "max": 1,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "GainRage",
-      "id": 356,
       "kind": "suffix",
-      "template": "Notable Passive Skills in Radius also grant Gain # Rage when Hit by an Enemy",
+      "template": "Gain # [Rage] when [HitDamage|Hit] by an Enemy",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Retribution",
-          "text": "Notable Passive Skills in Radius also grant Gain (1—2) Rage when Hit by an Enemy"
+          "text": "Gain (1-3) [Rage] when [HitDamage|Hit] by an Enemy",
+          "stats": [
+            {
+              "id": "gain_x_rage_when_hit",
+              "max": 3,
+              "min": 1
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IgniteChanceIncrease",
-      "id": 340,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant #% increased Flammability Magnitude",
+      "template": "#% increased [Flammability] [BuffMagnitude|Magnitude]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Ignition",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Flammability Magnitude"
+          "text": "(10-20)% increased [Flammability] [BuffMagnitude|Magnitude]",
+          "stats": [
+            {
+              "id": "ignite_chance_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "IncreasedStunThreshold",
-      "id": 359,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant #% increased Stun Threshold",
+      "template": "#% increased [StunThreshold|Stun Threshold]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Withstanding",
-          "text": "Small Passive Skills in Radius also grant (1—2)% increased Stun Threshold"
+          "text": "(6-16)% increased [StunThreshold|Stun Threshold]",
+          "stats": [
+            {
+              "id": "stun_threshold_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "SummonTotemCastSpeed",
-      "id": 364,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant #% increased Totem Placement speed",
+      "template": "#% increased [Totem|Totem] Placement speed",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Ancestry",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Totem Placement speed"
+          "text": "(10-20)% increased [Totem|Totem] Placement speed",
+          "stats": [
+            {
+              "id": "summon_totem_cast_speed_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "WarcrySpeed",
-      "id": 367,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant #% increased Warcry Speed",
+      "template": "#% increased [Warcry|Warcry] Speed",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Lungs",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased Warcry Speed"
+          "text": "(10-20)% increased [Warcry|Warcry] Speed",
+          "stats": [
+            {
+              "id": "warcry_speed_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "LifeLeech",
-      "id": 345,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant #% increased amount of Life Leeched",
+      "template": "#% increased amount of Life [LifeLeech|Leeched]",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Frenzy",
-          "text": "Small Passive Skills in Radius also grant (2—3)% increased amount of Life Leeched"
+          "text": "(5-15)% increased amount of Life [LifeLeech|Leeched]",
+          "stats": [
+            {
+              "id": "base_life_leech_amount_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "BannerDuration",
-      "id": 371,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant Banner Skills have #% increased Duration",
+      "template": "[Banner] Skills have #% increased Duration",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Inspiring",
-          "text": "Small Passive Skills in Radius also grant Banner Skills have (3—4)% increased Duration"
+          "text": "[Banner] Skills have (15-25)% increased Duration",
+          "stats": [
+            {
+              "id": "banner_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
         }
       ]
     },
     {
       "family_key": "MinionPhysicalDamageReduction",
-      "id": 353,
       "kind": "suffix",
-      "template": "Small Passive Skills in Radius also grant Minions have #% additional Physical Damage Reduction",
+      "template": "[Minion|Minions] have #% additional [Physical] Damage Reduction",
       "tiers": [
         {
-          "drop_chance": 1,
           "level": 1,
           "name": "of Confidence",
-          "text": "Small Passive Skills in Radius also grant Minions have (1—2)% additional Physical Damage Reduction"
+          "text": "[Minion|Minions] have (6-16)% additional [Physical] Damage Reduction",
+          "stats": [
+            {
+              "id": "minion_additional_physical_damage_reduction_%",
+              "max": 16,
+              "min": 6
+            }
+          ]
         }
       ]
     }

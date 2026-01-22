@@ -1,58 +1,55 @@
-// src/helpers/generateRowPreviewLines.js
-import {tierIndexFromBottom} from "./tiers"
-
 /**
- * Builds proof-of-concept preview lines for one row.
+ * Builds preview lines for one row (human-readable).
  *
- * @param {object} p
- * @param {string} p.selectedItemSlug
- * @param {object|null} p.selectedItem
- * @param {Array<{selectedAffixKey: string|null, selectedTierLevel: number|null}>} p.affixSlots
- * @param {(key: string|null) => any|null} p.findAffixByKey
- * @param {(slotIdx: number) => any[]|undefined|null} p.availableTiersForSlot
+ * New data format:
+ * - affix: { family_key, kind, template, tiers: [{ level, name, text, stats: [{ id, min, max }] }] }
+ *
+ * @param {object} params
+ * @param {string} params.selectedItemSlug
+ * @param {object|null} params.selectedItem
+ * @param {Array<{selectedAffixKey: string|null, selectedTierLevel: number|null}>} params.affixSlots
+ * @param {(key: string|null) => any|null} params.findAffixByKey
+ * @param {(slotIdx: number) => any[]|undefined|null} params.availableTiersForSlot
  * @returns {string[]}
  */
-export function generateRowPreviewLines(p) {
-    const selectedItemSlug = p?.selectedItemSlug || ""
+export function generateRowPreviewLines(params) {
+    const selectedItemSlug = params?.selectedItemSlug || ""
     if (!selectedItemSlug) return []
 
-    const selectedItem = p?.selectedItem || null
+    const selectedItem = params?.selectedItem || null
     const itemLabel = (selectedItem && selectedItem.label) || selectedItemSlug
 
-    const affixSlots = Array.isArray(p?.affixSlots) ? p.affixSlots : []
-    const findAffixByKey = typeof p?.findAffixByKey === "function" ? p.findAffixByKey : () => null
+    const affixSlots = Array.isArray(params?.affixSlots) ? params.affixSlots : []
+    const findAffixByKey =
+        typeof params?.findAffixByKey === "function" ? params.findAffixByKey : () => null
     const availableTiersForSlot =
-        typeof p?.availableTiersForSlot === "function" ? p.availableTiersForSlot : () => []
+        typeof params?.availableTiersForSlot === "function" ? params.availableTiersForSlot : () => []
 
-    const lines = []
+    const previewLines = []
 
-    for (let i = 0; i < affixSlots.length; i++) {
-        const slot = affixSlots[i]
-        const aff = findAffixByKey(slot?.selectedAffixKey || null)
-        if (!aff) continue
+    for (let slotIndex = 0; slotIndex < affixSlots.length; slotIndex++) {
+        const slotState = affixSlots[slotIndex]
+        const selectedAffix = findAffixByKey(slotState?.selectedAffixKey || null)
+        if (!selectedAffix) continue
 
-        const tiersRaw = availableTiersForSlot(i)
-        const tiers = Array.isArray(tiersRaw) ? tiersRaw : []
+        const tierCandidatesRaw = availableTiersForSlot(slotIndex)
+        const tierCandidates = Array.isArray(tierCandidatesRaw) ? tierCandidatesRaw : []
 
-        const tierLevel = slot?.selectedTierLevel ?? null
-        const tier = tiers.find((t) => t?.level === tierLevel) || null
+        const selectedTierLevel = slotState?.selectedTierLevel ?? null
+        const selectedTier =
+            tierCandidates.find((tier) => tier?.level === selectedTierLevel) || null
 
-        const modDomain = typeof aff.domain === "string" ? aff.domain : ""
-        const domainPart = modDomain ? ` | ${modDomain}` : ""
+        // If a tier is chosen, the tier.text is already the final human string.
+        // Otherwise, fall back to the generic template (with # placeholders).
+        const affixText =
+            selectedTier && typeof selectedTier.text === "string" && selectedTier.text.trim()
+                ? selectedTier.text.trim()
+                : (typeof selectedAffix.template === "string" ? selectedAffix.template : "").trim()
 
-        if (!tier) {
-            lines.push(`[${itemLabel}] ${aff.kind}${domainPart} | ${aff.template}`)
-            continue
-        }
+        if (!affixText) continue
 
-        const tIndex = tierIndexFromBottom(tiers, tier.level)
-        const tierName = tier.name || `T${tIndex}`
-        const tierText = tier.text || ""
-
-        lines.push(
-            `[${itemLabel}] ${aff.kind}${domainPart} | ${aff.template} | T${tIndex} (lvl ${tier.level}) ${tierName} -> ${tierText}`
-        )
+        previewLines.push(`[${itemLabel}] ${affixText}`)
     }
 
-    return lines
+    return previewLines
 }
