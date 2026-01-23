@@ -3,387 +3,464 @@
     {
       "slug": "Body_Armours_dex",
       "category": "Body Armours",
-      "label": "Body Armours(dex)"
+      "label": "Body Armours(dex)",
+      "pickitCategory": "BodyArmour"
     },
     {
       "slug": "Body_Armours_dex_int",
       "category": "Body Armours",
-      "label": "Body Armours(dex_int)"
+      "label": "Body Armours(dex_int)",
+      "pickitCategory": "BodyArmour"
     },
     {
       "slug": "Body_Armours_int",
       "category": "Body Armours",
-      "label": "Body Armours(int)"
+      "label": "Body Armours(int)",
+      "pickitCategory": "BodyArmour"
     },
     {
       "slug": "Body_Armours_str",
       "category": "Body Armours",
-      "label": "Body Armours(str)"
+      "label": "Body Armours(str)",
+      "pickitCategory": "BodyArmour"
     },
     {
       "slug": "Body_Armours_str_dex",
       "category": "Body Armours",
-      "label": "Body Armours(str_dex)"
+      "label": "Body Armours(str_dex)",
+      "pickitCategory": "BodyArmour"
     },
     {
       "slug": "Body_Armours_str_int",
       "category": "Body Armours",
-      "label": "Body Armours(str_int)"
+      "label": "Body Armours(str_int)",
+      "pickitCategory": "BodyArmour"
     },
     {
       "slug": "Boots_dex",
       "category": "Boots",
-      "label": "Boots(dex)"
+      "label": "Boots(dex)",
+      "pickitCategory": "Boots"
     },
     {
       "slug": "Boots_dex_int",
       "category": "Boots",
-      "label": "Boots(dex_int)"
+      "label": "Boots(dex_int)",
+      "pickitCategory": "Boots"
     },
     {
       "slug": "Boots_int",
       "category": "Boots",
-      "label": "Boots(int)"
+      "label": "Boots(int)",
+      "pickitCategory": "Boots"
     },
     {
       "slug": "Boots_str",
       "category": "Boots",
-      "label": "Boots(str)"
+      "label": "Boots(str)",
+      "pickitCategory": "Boots"
     },
     {
       "slug": "Boots_str_dex",
       "category": "Boots",
-      "label": "Boots(str_dex)"
+      "label": "Boots(str_dex)",
+      "pickitCategory": "Boots"
     },
     {
       "slug": "Boots_str_int",
       "category": "Boots",
-      "label": "Boots(str_int)"
+      "label": "Boots(str_int)",
+      "pickitCategory": "Boots"
     },
     {
       "slug": "Charms",
       "category": "Flasks",
-      "label": "Charms"
+      "label": "Charms",
+      "pickitCategory": "Flask"
     },
     {
       "slug": "Life_Flasks",
       "category": "Flasks",
-      "label": "Life Flasks"
+      "label": "Life Flasks",
+      "pickitCategory": "Flask"
     },
     {
       "slug": "Mana_Flasks",
       "category": "Flasks",
-      "label": "Mana Flasks"
+      "label": "Mana Flasks",
+      "pickitCategory": "Flask"
     },
     {
       "slug": "Gloves_dex",
       "category": "Gloves",
-      "label": "Gloves(dex)"
+      "label": "Gloves(dex)",
+      "pickitCategory": "Gloves"
     },
     {
       "slug": "Gloves_dex_int",
       "category": "Gloves",
-      "label": "Gloves(dex_int)"
+      "label": "Gloves(dex_int)",
+      "pickitCategory": "Gloves"
     },
     {
       "slug": "Gloves_int",
       "category": "Gloves",
-      "label": "Gloves(int)"
+      "label": "Gloves(int)",
+      "pickitCategory": "Gloves"
     },
     {
       "slug": "Gloves_str",
       "category": "Gloves",
-      "label": "Gloves(str)"
+      "label": "Gloves(str)",
+      "pickitCategory": "Gloves"
     },
     {
       "slug": "Gloves_str_dex",
       "category": "Gloves",
-      "label": "Gloves(str_dex)"
+      "label": "Gloves(str_dex)",
+      "pickitCategory": "Gloves"
     },
     {
       "slug": "Gloves_str_int",
       "category": "Gloves",
-      "label": "Gloves(str_int)"
+      "label": "Gloves(str_int)",
+      "pickitCategory": "Gloves"
     },
     {
       "slug": "Helmets_dex",
       "category": "Helmets",
-      "label": "Helmets(dex)"
+      "label": "Helmets(dex)",
+      "pickitCategory": "Helmet"
     },
     {
       "slug": "Helmets_dex_int",
       "category": "Helmets",
-      "label": "Helmets(dex_int)"
+      "label": "Helmets(dex_int)",
+      "pickitCategory": "Helmet"
     },
     {
       "slug": "Helmets_int",
       "category": "Helmets",
-      "label": "Helmets(int)"
+      "label": "Helmets(int)",
+      "pickitCategory": "Helmet"
     },
     {
       "slug": "Helmets_str",
       "category": "Helmets",
-      "label": "Helmets(str)"
+      "label": "Helmets(str)",
+      "pickitCategory": "Helmet"
     },
     {
       "slug": "Helmets_str_dex",
       "category": "Helmets",
-      "label": "Helmets(str_dex)"
+      "label": "Helmets(str_dex)",
+      "pickitCategory": "Helmet"
     },
     {
       "slug": "Helmets_str_int",
       "category": "Helmets",
-      "label": "Helmets(str_int)"
+      "label": "Helmets(str_int)",
+      "pickitCategory": "Helmet"
     },
     {
       "slug": "Amulets",
       "category": "Jewellery",
-      "label": "Amulets"
+      "label": "Amulets",
+      "pickitCategory": "Amulet"
     },
     {
       "slug": "Belts",
       "category": "Jewellery",
-      "label": "Belts"
+      "label": "Belts",
+      "pickitCategory": "Belt"
     },
     {
       "slug": "Rings",
       "category": "Jewellery",
-      "label": "Rings"
+      "label": "Rings",
+      "pickitCategory": "Ring"
     },
     {
       "slug": "Emerald",
       "category": "Jewels",
-      "label": "Emerald"
+      "label": "Emerald",
+      "pickitCategory": null
     },
     {
       "slug": "Ruby",
       "category": "Jewels",
-      "label": "Ruby"
+      "label": "Ruby",
+      "pickitCategory": null
     },
     {
       "slug": "Sapphire",
       "category": "Jewels",
-      "label": "Sapphire"
+      "label": "Sapphire",
+      "pickitCategory": null
     },
     {
       "slug": "Time-Lost_Emerald",
       "category": "Jewels",
-      "label": "Time-Lost Emerald"
+      "label": "Time-Lost Emerald",
+      "pickitCategory": null
     },
     {
       "slug": "Time-Lost_Ruby",
       "category": "Jewels",
-      "label": "Time-Lost Ruby"
+      "label": "Time-Lost Ruby",
+      "pickitCategory": null
     },
     {
       "slug": "Time-Lost_Sapphire",
       "category": "Jewels",
-      "label": "Time-Lost Sapphire"
+      "label": "Time-Lost Sapphire",
+      "pickitCategory": null
     },
     {
       "slug": "Bucklers",
       "category": "Off-hand",
-      "label": "Bucklers"
+      "label": "Bucklers",
+      "pickitCategory": "Shield"
     },
     {
       "slug": "Foci",
       "category": "Off-hand",
-      "label": "Foci"
+      "label": "Foci",
+      "pickitCategory": "Focus"
     },
     {
       "slug": "Quivers",
       "category": "Off-hand",
-      "label": "Quivers"
+      "label": "Quivers",
+      "pickitCategory": "Quiver"
     },
     {
       "slug": "Shields_str",
       "category": "Off-hand",
-      "label": "Shields(str)"
+      "label": "Shields(str)",
+      "pickitCategory": "Shield"
     },
     {
       "slug": "Shields_str_dex",
       "category": "Off-hand",
-      "label": "Shields(str_dex)"
+      "label": "Shields(str_dex)",
+      "pickitCategory": "Shield"
     },
     {
       "slug": "Shields_str_int",
       "category": "Off-hand",
-      "label": "Shields(str_int)"
+      "label": "Shields(str_int)",
+      "pickitCategory": "Shield"
     },
     {
       "slug": "Claws",
       "category": "One Handed Weapons",
-      "label": "Claws"
+      "label": "Claws",
+      "pickitCategory": "Claw"
     },
     {
       "slug": "Daggers",
       "category": "One Handed Weapons",
-      "label": "Daggers"
+      "label": "Daggers",
+      "pickitCategory": "Dagger"
     },
     {
       "slug": "Flails",
       "category": "One Handed Weapons",
-      "label": "Flails"
+      "label": "Flails",
+      "pickitCategory": "Flail"
     },
     {
       "slug": "One_Hand_Axes",
       "category": "One Handed Weapons",
-      "label": "One Hand Axes"
+      "label": "One Hand Axes",
+      "pickitCategory": "OneHandAxe"
     },
     {
       "slug": "One_Hand_Maces",
       "category": "One Handed Weapons",
-      "label": "One Hand Maces"
+      "label": "One Hand Maces",
+      "pickitCategory": "OneHandMace"
     },
     {
       "slug": "One_Hand_Swords",
       "category": "One Handed Weapons",
-      "label": "One Hand Swords"
+      "label": "One Hand Swords",
+      "pickitCategory": "OneHandSword"
     },
     {
       "slug": "Sceptres",
       "category": "One Handed Weapons",
-      "label": "Sceptres"
+      "label": "Sceptres",
+      "pickitCategory": "Sceptre"
     },
     {
       "slug": "Spears",
       "category": "One Handed Weapons",
-      "label": "Spears"
+      "label": "Spears",
+      "pickitCategory": "Spear"
     },
     {
       "slug": "Wands",
       "category": "One Handed Weapons",
-      "label": "Wands"
+      "label": "Wands",
+      "pickitCategory": "Wand"
     },
     {
       "slug": "Amphora_Relic",
       "category": "Relics",
-      "label": "Amphora Relic"
+      "label": "Amphora Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Coffer_Relic",
       "category": "Relics",
-      "label": "Coffer Relic"
+      "label": "Coffer Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Incense_Relic",
       "category": "Relics",
-      "label": "Incense Relic"
+      "label": "Incense Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Seal_Relic",
       "category": "Relics",
-      "label": "Seal Relic"
+      "label": "Seal Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Tapestry_Relic",
       "category": "Relics",
-      "label": "Tapestry Relic"
+      "label": "Tapestry Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Urn_Relic",
       "category": "Relics",
-      "label": "Urn Relic"
+      "label": "Urn Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Vase_Relic",
       "category": "Relics",
-      "label": "Vase Relic"
+      "label": "Vase Relic",
+      "pickitCategory": null
     },
     {
       "slug": "Abyss_Precursor_Tablet",
       "category": "Tablet",
-      "label": "Abyss Precursor Tablet"
+      "label": "Abyss Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Breach_Precursor_Tablet",
       "category": "Tablet",
-      "label": "Breach Precursor Tablet"
+      "label": "Breach Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Delirium_Precursor_Tablet",
       "category": "Tablet",
-      "label": "Delirium Precursor Tablet"
+      "label": "Delirium Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Expedition_Precursor_Tablet",
       "category": "Tablet",
-      "label": "Expedition Precursor Tablet"
+      "label": "Expedition Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Overseer_Precursor_Tablet",
       "category": "Tablet",
-      "label": "Overseer Precursor Tablet"
+      "label": "Overseer Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Precursor_Tablet",
       "category": "Tablet",
-      "label": "Precursor Tablet"
+      "label": "Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Ritual_Precursor_Tablet",
       "category": "Tablet",
-      "label": "Ritual Precursor Tablet"
+      "label": "Ritual Precursor Tablet",
+      "pickitCategory": "Tablet"
     },
     {
       "slug": "Bows",
       "category": "Two Handed Weapons",
-      "label": "Bows"
+      "label": "Bows",
+      "pickitCategory": "Bow"
     },
     {
       "slug": "Crossbows",
       "category": "Two Handed Weapons",
-      "label": "Crossbows"
+      "label": "Crossbows",
+      "pickitCategory": "Crossbow"
     },
     {
       "slug": "Quarterstaves",
       "category": "Two Handed Weapons",
-      "label": "Quarterstaves"
+      "label": "Quarterstaves",
+      "pickitCategory": "Quarterstaff"
     },
     {
       "slug": "Staves",
       "category": "Two Handed Weapons",
-      "label": "Staves"
+      "label": "Staves",
+      "pickitCategory": "Staff"
     },
     {
       "slug": "Talismans",
       "category": "Two Handed Weapons",
-      "label": "Talismans"
+      "label": "Talismans",
+      "pickitCategory": null
     },
     {
       "slug": "Traps",
       "category": "Two Handed Weapons",
-      "label": "Traps"
+      "label": "Traps",
+      "pickitCategory": "Trap"
     },
     {
       "slug": "Two_Hand_Axes",
       "category": "Two Handed Weapons",
-      "label": "Two Hand Axes"
+      "label": "Two Hand Axes",
+      "pickitCategory": "TwoHandAxe"
     },
     {
       "slug": "Two_Hand_Maces",
       "category": "Two Handed Weapons",
-      "label": "Two Hand Maces"
+      "label": "Two Hand Maces",
+      "pickitCategory": "TwoHandMace"
     },
     {
       "slug": "Two_Hand_Swords",
       "category": "Two Handed Weapons",
-      "label": "Two Hand Swords"
+      "label": "Two Hand Swords",
+      "pickitCategory": "TwoHandSword"
     },
     {
       "slug": "Waystones_low_tier",
       "category": "Waystones",
-      "label": "Waystones(Low)"
+      "label": "Waystones(Low)",
+      "pickitCategory": "Waystone"
     },
     {
       "slug": "Waystones_mid_tier",
       "category": "Waystones",
-      "label": "Waystones(Mid)"
+      "label": "Waystones(Mid)",
+      "pickitCategory": "Waystone"
     },
     {
       "slug": "Waystones_top_tier",
       "category": "Waystones",
-      "label": "Waystones(Top)"
+      "label": "Waystones(Top)",
+      "pickitCategory": "Waystone"
     }
   ]
 }

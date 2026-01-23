@@ -12,5 +12,6 @@ app.provide(ItemsStoreKey, itemsStore)
 
 // load once at startup
 itemsStore.loadItems()
+itemsStore.loadActions()
 
 app.mount("#app")

@@ -24,6 +24,24 @@
 
       <!-- Items config UI -->
       <template v-if="selectedConfigType === 'items'">
+        <!-- Action flag dropdown -->
+        <label class="field">
+          <span class="field-label">Action flag</span>
+          <select
+              v-model="selectedActionFlag"
+              class="field-select"
+              :disabled="!availableActionOptions.length"
+          >
+            <option
+                v-for="action in availableActionOptions"
+                :key="action.flag"
+                :value="action.flag"
+            >
+              {{ action.label }}
+            </option>
+          </select>
+        </label>
+
         <!-- Item type dropdown -->
         <label class="field">
           <span class="field-label">Item type</span>
@@ -274,17 +292,26 @@ function computeCurrentRowLines() {
   if (selectedConfigType.value !== "items") return []
 
   return generateRowPreviewLines({
+    configType: selectedConfigType.value, // only if you already added it, otherwise omit for now
+    actionFlag: selectedActionFlag.value,
+
     selectedItemSlug: selectedItemSlug.value,
     selectedItem: selectedItem.value,
     affixSlots: affixSlots.value,
     findAffixByKey,
     availableTiersForSlot,
-
-    // Not strictly required if generateRowPreviewLines doesn't need it,
-    // but useful if you want tier labels inside helper in the future.
     tierIndexFromBottom,
   })
 }
+
+/** Dropdown options for Pickit action flags (loaded from actions.json). */
+const availableActionOptions = computed(() => itemsStore.actions?.value || [])
+
+/**
+ * Selected Pickit action flag (without brackets).
+ * This will be used by the generator to append: && [Flag] == "true"
+ */
+const selectedActionFlag = ref("StashItem")
 
 /**
  * Loads affix catalog for the given item slug.

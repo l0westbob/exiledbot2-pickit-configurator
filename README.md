@@ -200,8 +200,11 @@ very precise filtering/selecting.
 
 ## Current issues
 
-- `identifiers for Time-Lost* jewels are missing in mods.json`
-- `identifiers for waystones are not mapped yet fully`
-- `identifiers for some tablets are also missing`
-
-- `the app does not generate any correct config-line yet because it is still work in progress`
+- no complex rules possible (no OR) (no grouped stats checking)
+- data quality could still be improved
+- still only item categories
+- no custom rules yet
+- no currency blocks yet
+- no uniques yet
+- no rule edit possible
+- no copy button yet

@@ -5,6 +5,7 @@ import {ref} from "vue"
  * App-level data store for:
  * - available item types (from public/data/items.json)
  * - affix catalogs per item slug (from public/data/affixes/<slug>.json)
+ * - available action flags (from public/data/actions.json)
  *
  * This is intentionally "simple store" style (no Pinia):
  * - state is Vue refs
@@ -26,6 +27,18 @@ export function createItemsStore() {
 
     /** Human-readable error message for items.json loading failures (empty string if none). */
     const itemsLoadError = ref("")
+
+    /**
+     * List of supported Pickit action flags loaded from actions.json.
+     * Expected schema entry: { actions: Array<{ label: string, flag: string }> }
+     */
+    const actions = ref([])
+
+    /** Indicates whether actions.json is currently being loaded. */
+    const isLoadingActions = ref(false)
+
+    /** Human-readable error message for actions.json loading failures (empty string if none). */
+    const actionsLoadError = ref("")
 
     /**
      * Cache for affix files:
@@ -71,6 +84,40 @@ export function createItemsStore() {
     }
 
     /**
+     * Loads supported Pickit action flags from public/data/actions.json.
+     * - Populates `actions`
+     * - Sets `isLoadingActions` and `actionsLoadError`
+     */
+    async function loadActions() {
+        isLoadingActions.value = true
+        actionsLoadError.value = ""
+
+        try {
+            const response = await fetch(baseUrl + "data/actions.json")
+            if (!response.ok) {
+                throw new Error(`Failed to load actions.json: ${response.status}`)
+            }
+
+            const payload = await response.json()
+            const rawActions = Array.isArray(payload?.actions) ? payload.actions : []
+
+            actions.value = rawActions
+                .filter((entry) => entry && typeof entry === "object")
+                .map((entry) => ({
+                    label: typeof entry.label === "string" ? entry.label : "",
+                    flag: typeof entry.flag === "string" ? entry.flag : "",
+                }))
+                .filter((entry) => entry.label && entry.flag)
+        } catch (error) {
+            console.error(error)
+            actionsLoadError.value = String(error)
+            actions.value = []
+        } finally {
+            isLoadingActions.value = false
+        }
+    }
+
+    /**
      * Loads affixes for the given item slug.
      *
      * Uses an in-memory cache:
@@ -112,8 +159,13 @@ export function createItemsStore() {
         isLoadingItems,
         itemsLoadError,
 
+        actions,
+        isLoadingActions,
+        actionsLoadError,
+
         // actions
         loadItems,
+        loadActions,
         getAffixesForSlug,
     }
 }
