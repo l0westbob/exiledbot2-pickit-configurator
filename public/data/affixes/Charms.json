@@ -1,73 +1,6 @@
 {
   "affixes": [
     {
-      "family_key": "FlaskRecoverySpeed",
-      "kind": "prefix",
-      "template": "#% increased Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Investigator's",
-          "text": "(16-20)% increased Duration",
-          "stats": [
-            {
-              "id": "local_charm_duration_+%",
-              "max": 20,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 20,
-          "name": "Analyst's",
-          "text": "(21-25)% increased Duration",
-          "stats": [
-            {
-              "id": "local_charm_duration_+%",
-              "max": 25,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 42,
-          "name": "Examiner's",
-          "text": "(26-30)% increased Duration",
-          "stats": [
-            {
-              "id": "local_charm_duration_+%",
-              "max": 30,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 61,
-          "name": "Clinician's",
-          "text": "(31-35)% increased Duration",
-          "stats": [
-            {
-              "id": "local_charm_duration_+%",
-              "max": 35,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 78,
-          "name": "Experimenter's",
-          "text": "(36-40)% increased Duration",
-          "stats": [
-            {
-              "id": "local_charm_duration_+%",
-              "max": 40,
-              "min": 36
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "FlaskRecoveryAmount",
       "kind": "prefix",
       "template": "Also grants # [Guard]",
@@ -353,201 +286,67 @@
       ]
     },
     {
-      "family_key": "FlaskRechargeRate",
-      "kind": "suffix",
-      "template": "#% Chance to gain a [Charges|Charge] when you kill an enemy",
+      "family_key": "FlaskRecoverySpeed",
+      "kind": "prefix",
+      "template": "#% increased Duration",
       "tiers": [
         {
-          "level": 8,
-          "name": "of the Medic",
-          "text": "(21-25)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "level": 1,
+          "name": "Investigator's",
+          "text": "(16-20)% increased Duration",
           "stats": [
             {
-              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "id": "local_charm_duration_+%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "name": "Analyst's",
+          "text": "(21-25)% increased Duration",
+          "stats": [
+            {
+              "id": "local_charm_duration_+%",
               "max": 25,
               "min": 21
             }
           ]
         },
         {
-          "level": 26,
-          "name": "of the Doctor",
-          "text": "(26-30)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "level": 42,
+          "name": "Examiner's",
+          "text": "(26-30)% increased Duration",
           "stats": [
             {
-              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "id": "local_charm_duration_+%",
               "max": 30,
               "min": 26
             }
           ]
         },
         {
-          "level": 45,
-          "name": "of the Surgeon",
-          "text": "(31-35)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "level": 61,
+          "name": "Clinician's",
+          "text": "(31-35)% increased Duration",
           "stats": [
             {
-              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "id": "local_charm_duration_+%",
               "max": 35,
               "min": 31
             }
           ]
-        }
-      ]
-    },
-    {
-      "family_key": "FlaskNumCharges",
-      "kind": "suffix",
-      "template": "#% increased Charges",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Wide",
-          "text": "(23-30)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 30,
-              "min": 23
-            }
-          ]
         },
         {
-          "level": 12,
-          "name": "of the Copious",
-          "text": "(31-38)% increased Charges",
+          "level": 78,
+          "name": "Experimenter's",
+          "text": "(36-40)% increased Duration",
           "stats": [
             {
-              "id": "local_max_charges_+%",
-              "max": 38,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 32,
-          "name": "of the Plentiful",
-          "text": "(39-46)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 46,
-              "min": 39
-            }
-          ]
-        },
-        {
-          "level": 47,
-          "name": "of the Bountiful",
-          "text": "(47-54)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 54,
-              "min": 47
-            }
-          ]
-        },
-        {
-          "level": 62,
-          "name": "of the Abundant",
-          "text": "(55-62)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 62,
-              "min": 55
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of the Ample",
-          "text": "(63-70)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 70,
-              "min": 63
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FlaskRechargeRate",
-      "kind": "suffix",
-      "template": "#% increased Charges gained",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Constant",
-          "text": "(23-30)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 30,
-              "min": 23
-            }
-          ]
-        },
-        {
-          "level": 13,
-          "name": "of the Continuous",
-          "text": "(31-38)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 38,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "of the Endless",
-          "text": "(39-46)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 46,
-              "min": 39
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "of the Bottomless",
-          "text": "(47-54)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 54,
-              "min": 47
-            }
-          ]
-        },
-        {
-          "level": 63,
-          "name": "of the Perpetual",
-          "text": "(55-62)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 62,
-              "min": 55
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "of the Eternal",
-          "text": "(63-70)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 70,
-              "min": 63
+              "id": "local_charm_duration_+%",
+              "max": 40,
+              "min": 36
             }
           ]
         }
@@ -670,6 +469,207 @@
               "id": "local_flask_gain_X_charges_every_minute",
               "max": 15,
               "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskNumCharges",
+      "kind": "suffix",
+      "template": "#% increased Charges",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Wide",
+          "text": "(23-30)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 30,
+              "min": 23
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "name": "of the Copious",
+          "text": "(31-38)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 38,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 32,
+          "name": "of the Plentiful",
+          "text": "(39-46)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 46,
+              "min": 39
+            }
+          ]
+        },
+        {
+          "level": 47,
+          "name": "of the Bountiful",
+          "text": "(47-54)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 54,
+              "min": 47
+            }
+          ]
+        },
+        {
+          "level": 62,
+          "name": "of the Abundant",
+          "text": "(55-62)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 62,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of the Ample",
+          "text": "(63-70)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 70,
+              "min": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRechargeRate",
+      "kind": "suffix",
+      "template": "#% Chance to gain a [Charges|Charge] when you kill an enemy",
+      "tiers": [
+        {
+          "level": 8,
+          "name": "of the Medic",
+          "text": "(21-25)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "stats": [
+            {
+              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "max": 25,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "name": "of the Doctor",
+          "text": "(26-30)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "stats": [
+            {
+              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of the Surgeon",
+          "text": "(31-35)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "stats": [
+            {
+              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRechargeRate",
+      "kind": "suffix",
+      "template": "#% increased Charges gained",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Constant",
+          "text": "(23-30)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 30,
+              "min": 23
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "name": "of the Continuous",
+          "text": "(31-38)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 38,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Endless",
+          "text": "(39-46)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 46,
+              "min": 39
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "of the Bottomless",
+          "text": "(47-54)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 54,
+              "min": 47
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "of the Perpetual",
+          "text": "(55-62)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 62,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "of the Eternal",
+          "text": "(63-70)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 70,
+              "min": 63
             }
           ]
         }

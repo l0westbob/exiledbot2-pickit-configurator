@@ -25,6 +25,73 @@
       ]
     },
     {
+      "family_key": "FlaskHealsOthers",
+      "kind": "prefix",
+      "template": "Grants #% of Life Recovery to Minions",
+      "tiers": [
+        {
+          "level": 10,
+          "name": "Novice's",
+          "text": "Grants (51-56)% of Life Recovery to Minions",
+          "stats": [
+            {
+              "id": "local_flask_minion_heal_%",
+              "max": 56,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "name": "Acolyte's",
+          "text": "Grants (57-62)% of Life Recovery to Minions",
+          "stats": [
+            {
+              "id": "local_flask_minion_heal_%",
+              "max": 62,
+              "min": 57
+            }
+          ]
+        },
+        {
+          "level": 46,
+          "name": "Summoner's",
+          "text": "Grants (63-68)% of Life Recovery to Minions",
+          "stats": [
+            {
+              "id": "local_flask_minion_heal_%",
+              "max": 68,
+              "min": 63
+            }
+          ]
+        },
+        {
+          "level": 64,
+          "name": "Conjurer's",
+          "text": "Grants (69-74)% of Life Recovery to Minions",
+          "stats": [
+            {
+              "id": "local_flask_minion_heal_%",
+              "max": 74,
+              "min": 69
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "Necromancer's",
+          "text": "Grants (75-80)% of Life Recovery to Minions",
+          "stats": [
+            {
+              "id": "local_flask_minion_heal_%",
+              "max": 80,
+              "min": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "FlaskRecoveryAmount",
       "kind": "prefix",
       "template": "#% increased Amount Recovered",
@@ -220,6 +287,73 @@
       ]
     },
     {
+      "family_key": "FlaskRecoveryAmount",
+      "kind": "prefix",
+      "template": "#% more Recovery if used while on Low Mana",
+      "tiers": [
+        {
+          "level": 2,
+          "name": "Sustained",
+          "text": "(51-60)% more Recovery if used while on Low Mana",
+          "stats": [
+            {
+              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
+              "max": 60,
+              "min": 51
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "name": "Tenacious",
+          "text": "(61-70)% more Recovery if used while on Low Mana",
+          "stats": [
+            {
+              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
+              "max": 70,
+              "min": 61
+            }
+          ]
+        },
+        {
+          "level": 44,
+          "name": "Persistent",
+          "text": "(71-80)% more Recovery if used while on Low Mana",
+          "stats": [
+            {
+              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
+              "max": 80,
+              "min": 71
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "Persevering",
+          "text": "(81-90)% more Recovery if used while on Low Mana",
+          "stats": [
+            {
+              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
+              "max": 90,
+              "min": 81
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "Prolonged",
+          "text": "(91-100)% more Recovery if used while on Low Mana",
+          "stats": [
+            {
+              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
+              "max": 100,
+              "min": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "FlaskRecoverySpeed",
       "kind": "prefix",
       "template": "#% increased Recovery rate",
@@ -299,73 +433,6 @@
       ]
     },
     {
-      "family_key": "FlaskRecoveryAmount",
-      "kind": "prefix",
-      "template": "#% more Recovery if used while on Low Mana",
-      "tiers": [
-        {
-          "level": 2,
-          "name": "Sustained",
-          "text": "(51-60)% more Recovery if used while on Low Mana",
-          "stats": [
-            {
-              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
-              "max": 60,
-              "min": 51
-            }
-          ]
-        },
-        {
-          "level": 25,
-          "name": "Tenacious",
-          "text": "(61-70)% more Recovery if used while on Low Mana",
-          "stats": [
-            {
-              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
-              "max": 70,
-              "min": 61
-            }
-          ]
-        },
-        {
-          "level": 44,
-          "name": "Persistent",
-          "text": "(71-80)% more Recovery if used while on Low Mana",
-          "stats": [
-            {
-              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
-              "max": 80,
-              "min": 71
-            }
-          ]
-        },
-        {
-          "level": 63,
-          "name": "Persevering",
-          "text": "(81-90)% more Recovery if used while on Low Mana",
-          "stats": [
-            {
-              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
-              "max": 90,
-              "min": 81
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "Prolonged",
-          "text": "(91-100)% more Recovery if used while on Low Mana",
-          "stats": [
-            {
-              "id": "local_flask_amount_to_recover_+%_when_on_low_mana",
-              "max": 100,
-              "min": 91
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "FlaskRecoverySpeed",
       "kind": "prefix",
       "template": "#% of Recovery applied Instantly",
@@ -403,274 +470,6 @@
               "id": "local_flask_recovery_amount_%_to_recover_instantly",
               "max": 30,
               "min": 28
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FlaskHealsOthers",
-      "kind": "prefix",
-      "template": "Grants #% of Life Recovery to Minions",
-      "tiers": [
-        {
-          "level": 10,
-          "name": "Novice's",
-          "text": "Grants (51-56)% of Life Recovery to Minions",
-          "stats": [
-            {
-              "id": "local_flask_minion_heal_%",
-              "max": 56,
-              "min": 51
-            }
-          ]
-        },
-        {
-          "level": 28,
-          "name": "Acolyte's",
-          "text": "Grants (57-62)% of Life Recovery to Minions",
-          "stats": [
-            {
-              "id": "local_flask_minion_heal_%",
-              "max": 62,
-              "min": 57
-            }
-          ]
-        },
-        {
-          "level": 46,
-          "name": "Summoner's",
-          "text": "Grants (63-68)% of Life Recovery to Minions",
-          "stats": [
-            {
-              "id": "local_flask_minion_heal_%",
-              "max": 68,
-              "min": 63
-            }
-          ]
-        },
-        {
-          "level": 64,
-          "name": "Conjurer's",
-          "text": "Grants (69-74)% of Life Recovery to Minions",
-          "stats": [
-            {
-              "id": "local_flask_minion_heal_%",
-              "max": 74,
-              "min": 69
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "Necromancer's",
-          "text": "Grants (75-80)% of Life Recovery to Minions",
-          "stats": [
-            {
-              "id": "local_flask_minion_heal_%",
-              "max": 80,
-              "min": 75
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FlaskRechargeRate",
-      "kind": "suffix",
-      "template": "#% Chance to gain a [Charges|Charge] when you kill an enemy",
-      "tiers": [
-        {
-          "level": 8,
-          "name": "of the Medic",
-          "text": "(21-25)% Chance to gain a [Charges|Charge] when you kill an enemy",
-          "stats": [
-            {
-              "id": "local_%_chance_to_gain_flask_charge_on_kill",
-              "max": 25,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 26,
-          "name": "of the Doctor",
-          "text": "(26-30)% Chance to gain a [Charges|Charge] when you kill an enemy",
-          "stats": [
-            {
-              "id": "local_%_chance_to_gain_flask_charge_on_kill",
-              "max": 30,
-              "min": 26
-            }
-          ]
-        },
-        {
-          "level": 45,
-          "name": "of the Surgeon",
-          "text": "(31-35)% Chance to gain a [Charges|Charge] when you kill an enemy",
-          "stats": [
-            {
-              "id": "local_%_chance_to_gain_flask_charge_on_kill",
-              "max": 35,
-              "min": 31
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FlaskNumCharges",
-      "kind": "suffix",
-      "template": "#% increased Charges",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Wide",
-          "text": "(23-30)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 30,
-              "min": 23
-            }
-          ]
-        },
-        {
-          "level": 12,
-          "name": "of the Copious",
-          "text": "(31-38)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 38,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 32,
-          "name": "of the Plentiful",
-          "text": "(39-46)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 46,
-              "min": 39
-            }
-          ]
-        },
-        {
-          "level": 47,
-          "name": "of the Bountiful",
-          "text": "(47-54)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 54,
-              "min": 47
-            }
-          ]
-        },
-        {
-          "level": 62,
-          "name": "of the Abundant",
-          "text": "(55-62)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 62,
-              "min": 55
-            }
-          ]
-        },
-        {
-          "level": 81,
-          "name": "of the Ample",
-          "text": "(63-70)% increased Charges",
-          "stats": [
-            {
-              "id": "local_max_charges_+%",
-              "max": 70,
-              "min": 63
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FlaskRechargeRate",
-      "kind": "suffix",
-      "template": "#% increased Charges gained",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Constant",
-          "text": "(23-30)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 30,
-              "min": 23
-            }
-          ]
-        },
-        {
-          "level": 13,
-          "name": "of the Continuous",
-          "text": "(31-38)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 38,
-              "min": 31
-            }
-          ]
-        },
-        {
-          "level": 33,
-          "name": "of the Endless",
-          "text": "(39-46)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 46,
-              "min": 39
-            }
-          ]
-        },
-        {
-          "level": 48,
-          "name": "of the Bottomless",
-          "text": "(47-54)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 54,
-              "min": 47
-            }
-          ]
-        },
-        {
-          "level": 63,
-          "name": "of the Perpetual",
-          "text": "(55-62)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 62,
-              "min": 55
-            }
-          ]
-        },
-        {
-          "level": 82,
-          "name": "of the Eternal",
-          "text": "(63-70)% increased Charges gained",
-          "stats": [
-            {
-              "id": "local_charges_added_+%",
-              "max": 70,
-              "min": 63
             }
           ]
         }
@@ -793,6 +592,207 @@
               "id": "local_flask_gain_X_charges_every_minute",
               "max": 15,
               "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskNumCharges",
+      "kind": "suffix",
+      "template": "#% increased Charges",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Wide",
+          "text": "(23-30)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 30,
+              "min": 23
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "name": "of the Copious",
+          "text": "(31-38)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 38,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 32,
+          "name": "of the Plentiful",
+          "text": "(39-46)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 46,
+              "min": 39
+            }
+          ]
+        },
+        {
+          "level": 47,
+          "name": "of the Bountiful",
+          "text": "(47-54)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 54,
+              "min": 47
+            }
+          ]
+        },
+        {
+          "level": 62,
+          "name": "of the Abundant",
+          "text": "(55-62)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 62,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 81,
+          "name": "of the Ample",
+          "text": "(63-70)% increased Charges",
+          "stats": [
+            {
+              "id": "local_max_charges_+%",
+              "max": 70,
+              "min": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRechargeRate",
+      "kind": "suffix",
+      "template": "#% Chance to gain a [Charges|Charge] when you kill an enemy",
+      "tiers": [
+        {
+          "level": 8,
+          "name": "of the Medic",
+          "text": "(21-25)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "stats": [
+            {
+              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "max": 25,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "name": "of the Doctor",
+          "text": "(26-30)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "stats": [
+            {
+              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "max": 30,
+              "min": 26
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "name": "of the Surgeon",
+          "text": "(31-35)% Chance to gain a [Charges|Charge] when you kill an enemy",
+          "stats": [
+            {
+              "id": "local_%_chance_to_gain_flask_charge_on_kill",
+              "max": 35,
+              "min": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "FlaskRechargeRate",
+      "kind": "suffix",
+      "template": "#% increased Charges gained",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Constant",
+          "text": "(23-30)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 30,
+              "min": 23
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "name": "of the Continuous",
+          "text": "(31-38)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 38,
+              "min": 31
+            }
+          ]
+        },
+        {
+          "level": 33,
+          "name": "of the Endless",
+          "text": "(39-46)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 46,
+              "min": 39
+            }
+          ]
+        },
+        {
+          "level": 48,
+          "name": "of the Bottomless",
+          "text": "(47-54)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 54,
+              "min": 47
+            }
+          ]
+        },
+        {
+          "level": 63,
+          "name": "of the Perpetual",
+          "text": "(55-62)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 62,
+              "min": 55
+            }
+          ]
+        },
+        {
+          "level": 82,
+          "name": "of the Eternal",
+          "text": "(63-70)% increased Charges gained",
+          "stats": [
+            {
+              "id": "local_charges_added_+%",
+              "max": 70,
+              "min": 63
             }
           ]
         }

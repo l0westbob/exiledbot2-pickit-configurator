@@ -1,12 +1,11 @@
-// src/composables/useAffixSlots.js
-
 import {computed, reactive, ref, watch} from "vue"
+import {getAffixFamilyKey} from "../domain/pickit/affixes.js"
 
 /**
  * Affix slot selection logic (UI/business rules, but kept component-agnostic).
  *
  * Why this exists:
- * - Row.vue was getting too large.
+ * - The row-level component was getting too large.
  * - The rules for affix selection (uniqueness, prefix/suffix caps, slot add/remove)
  *   should be testable and reusable.
  *
@@ -104,14 +103,7 @@ export function useAffixSlots(options) {
      * @returns {string}
      */
     function affixKey(affixFamily) {
-        if (!affixFamily || typeof affixFamily !== "object") return "|||"
-
-        const familyKey = typeof affixFamily.family_key === "string" ? affixFamily.family_key : ""
-        const kind = typeof affixFamily.kind === "string" ? affixFamily.kind : ""
-        const template = typeof affixFamily.template === "string" ? affixFamily.template : ""
-
-        // family_key should be stable across data enrichment and is what you group by anyway
-        return `${familyKey}|${kind}|${template}`
+        return getAffixFamilyKey(affixFamily)
     }
 
     /**
@@ -325,7 +317,7 @@ export function useAffixSlots(options) {
         canAddSlot,
         addDisabledReason,
 
-        // helpers used by Row.vue
+        // helpers used by the row editor
         affixKey,
         findAffixByKey,
         groupsForSlot,

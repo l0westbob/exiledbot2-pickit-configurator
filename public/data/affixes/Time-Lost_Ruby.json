@@ -1,25 +1,6 @@
 {
   "affixes": [
     {
-      "family_key": "MaximumRage",
-      "kind": "prefix",
-      "template": "+# to Maximum [Rage]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Angry",
-          "text": "+1 to Maximum [Rage]",
-          "stats": [
-            {
-              "id": "maximum_rage",
-              "max": 1,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "AreaOfEffect",
       "kind": "prefix",
       "template": "#% increased Area of Effect",
@@ -39,55 +20,17 @@
       ]
     },
     {
-      "family_key": "IncreasedBlockChance",
+      "family_key": "ArmourBreak",
       "kind": "prefix",
-      "template": "#% increased [Block] chance",
+      "template": "[ArmourBreak|Break] #% increased [Armour|Armour]",
       "tiers": [
         {
           "level": 1,
-          "name": "Protecting",
-          "text": "(3-7)% increased [Block] chance",
+          "name": "Shattering",
+          "text": "[ArmourBreak|Break] (5-15)% increased [Armour|Armour]",
           "stats": [
             {
-              "id": "block_chance_+%",
-              "max": 7,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ShieldArmourIncrease",
-      "kind": "prefix",
-      "template": "#% increased [Defences] from Equipped [Shield]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Shielding",
-          "text": "(18-32)% increased [Defences] from Equipped [Shield]",
-          "stats": [
-            {
-              "id": "shield_defences_+%",
-              "max": 32,
-              "min": 18
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IgniteEffect",
-      "kind": "prefix",
-      "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Burning",
-          "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
-          "stats": [
-            {
-              "id": "base_ignite_effect_+%",
+              "id": "armour_break_amount_+%",
               "max": 15,
               "min": 5
             }
@@ -96,17 +39,17 @@
       ]
     },
     {
-      "family_key": "BleedingDamage",
+      "family_key": "AttackDamage",
       "kind": "prefix",
-      "template": "#% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
+      "template": "#% increased [Attack] Damage",
       "tiers": [
         {
           "level": 1,
-          "name": "Haemorrhaging",
-          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
+          "name": "Combat",
+          "text": "(5-15)% increased [Attack] Damage",
           "stats": [
             {
-              "id": "base_bleeding_effect_+%",
+              "id": "attack_damage_+%",
               "max": 15,
               "min": 5
             }
@@ -115,38 +58,19 @@
       ]
     },
     {
-      "family_key": "PresenceRadius",
+      "family_key": "BannerArea",
       "kind": "prefix",
-      "template": "#% increased [Presence|Presence] Area of Effect",
+      "template": "[Banner] Skills have #% increased Area of Effect",
       "tiers": [
         {
           "level": 1,
-          "name": "Iconic",
-          "text": "(15-25)% increased [Presence|Presence] Area of Effect",
+          "name": "Rallying",
+          "text": "[Banner] Skills have (10-20)% increased Area of Effect",
           "stats": [
             {
-              "id": "presence_area_+%",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MinionAreaOfEffect",
-      "kind": "prefix",
-      "template": "[Minion|Minions] have #% increased Area of Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Companion",
-          "text": "[Minion|Minions] have (5-8)% increased Area of Effect",
-          "stats": [
-            {
-              "id": "minion_skill_area_of_effect_+%",
-              "max": 8,
-              "min": 5
+              "id": "banner_area_of_effect_+%",
+              "max": 20,
+              "min": 10
             }
           ]
         }
@@ -172,55 +96,55 @@
       ]
     },
     {
-      "family_key": "IncisionChance",
+      "family_key": "BleedingDamage",
       "kind": "prefix",
-      "template": "#% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
       "tiers": [
         {
           "level": 1,
-          "name": "Incise",
-          "text": "(15-25)% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+          "name": "Haemorrhaging",
+          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Bleeding|Bleeding] you inflict",
           "stats": [
             {
-              "id": "chance_to_inflict_incision_on_attack_hit_%",
-              "max": 25,
-              "min": 15
+              "id": "base_bleeding_effect_+%",
+              "max": 15,
+              "min": 5
             }
           ]
         }
       ]
     },
     {
-      "family_key": "IncreasedPhysicalDamageReductionRatingPercent",
+      "family_key": "DamageForm",
       "kind": "prefix",
-      "template": "#% increased [Armour]",
+      "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
       "tiers": [
         {
           "level": 1,
-          "name": "Armoured",
-          "text": "(10-20)% increased [Armour]",
+          "name": "Bestial",
+          "text": "(5-15)% increased Damage while [Shapeshift|Shapeshifted]",
           "stats": [
             {
-              "id": "physical_damage_reduction_rating_+%",
-              "max": 20,
-              "min": 10
+              "id": "damage_+%_while_shapeshifted",
+              "max": 15,
+              "min": 5
             }
           ]
         }
       ]
     },
     {
-      "family_key": "AttackDamage",
+      "family_key": "DamageForm",
       "kind": "prefix",
-      "template": "#% increased [Attack] Damage",
+      "template": "#% increased Damage with [Plant|Plant] Skills",
       "tiers": [
         {
           "level": 1,
-          "name": "Combat",
-          "text": "(5-15)% increased [Attack] Damage",
+          "name": "Overgrown",
+          "text": "(5-15)% increased Damage with [Plant|Plant] Skills",
           "stats": [
             {
-              "id": "attack_damage_+%",
+              "id": "plant_skill_damage_+%",
               "max": 15,
               "min": 5
             }
@@ -248,82 +172,6 @@
       ]
     },
     {
-      "family_key": "DamageForm",
-      "kind": "prefix",
-      "template": "#% increased Damage while [Shapeshift|Shapeshifted]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bestial",
-          "text": "(1-2)% increased Damage while [Shapeshift|Shapeshifted]",
-          "stats": [
-            {
-              "id": "damage_+%_while_shapeshifted",
-              "max": 2,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Mace|Maces]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Beating",
-          "text": "(6-16)% increased Damage with [Mace|Maces]",
-          "stats": [
-            {
-              "id": "mace_damage_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamageForm",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Plant|Plant] Skills",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Overgrown",
-          "text": "(1-2)% increased Damage with [Plant|Plant] Skills",
-          "stats": [
-            {
-              "id": "plant_skill_damage_+%",
-              "max": 2,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "WarcryDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Warcry|Warcries]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Yelling",
-          "text": "(10-20)% increased Damage with [Warcry|Warcries]",
-          "stats": [
-            {
-              "id": "warcry_damage_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "ElementalDamagePercent",
       "kind": "prefix",
       "template": "#% increased [ElementalDamage|Elemental Damage]",
@@ -343,6 +191,25 @@
       ]
     },
     {
+      "family_key": "ExertedAttackDamage",
+      "kind": "prefix",
+      "template": "[Empowered|Empowered Attacks] deal #% increased Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Empowering",
+          "text": "[Empowered|Empowered Attacks] deal (10-20)% increased Damage",
+          "stats": [
+            {
+              "id": "empowered_attack_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "FireDamagePercentage",
       "kind": "prefix",
       "template": "#% increased [Fire] Damage",
@@ -354,139 +221,6 @@
           "stats": [
             {
               "id": "fire_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PhysicalDamagePercent",
-      "kind": "prefix",
-      "template": "#% increased Global [Physical] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Sharpened",
-          "text": "(5-15)% increased Global [Physical] Damage",
-          "stats": [
-            {
-              "id": "physical_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MeleeDamage",
-      "kind": "prefix",
-      "template": "#% increased [Melee] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Clashing",
-          "text": "(5-15)% increased [Melee] Damage",
-          "stats": [
-            {
-              "id": "melee_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Thorns",
-      "kind": "prefix",
-      "template": "#% increased [Thorns|Thorns] damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Retaliating",
-          "text": "(10-20)% increased [Thorns|Thorns] damage",
-          "stats": [
-            {
-              "id": "thorns_damage_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "TotemDamage",
-      "kind": "prefix",
-      "template": "#% increased [Totem|Totem] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Shaman's",
-          "text": "(10-18)% increased [Totem|Totem] Damage",
-          "stats": [
-            {
-              "id": "totem_damage_+%",
-              "max": 18,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedTotemLife",
-      "kind": "prefix",
-      "template": "#% increased [Totem] Life",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Carved",
-          "text": "(10-20)% increased [Totem] Life",
-          "stats": [
-            {
-              "id": "totem_life_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BannerArea",
-      "kind": "prefix",
-      "template": "[Banner] Skills have #% increased Area of Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Rallying",
-          "text": "[Banner] Skills have (10-20)% increased Area of Effect",
-          "stats": [
-            {
-              "id": "banner_area_of_effect_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ArmourBreak",
-      "kind": "prefix",
-      "template": "[ArmourBreak|Break] #% increased [Armour|Armour]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Shattering",
-          "text": "[ArmourBreak|Break] (5-15)% increased [Armour|Armour]",
-          "stats": [
-            {
-              "id": "armour_break_amount_+%",
               "max": 15,
               "min": 5
             }
@@ -514,17 +248,74 @@
       ]
     },
     {
-      "family_key": "ExertedAttackDamage",
+      "family_key": "IgniteEffect",
       "kind": "prefix",
-      "template": "[Empowered|Empowered Attacks] deal #% increased Damage",
+      "template": "#% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
       "tiers": [
         {
           "level": 1,
-          "name": "Empowering",
-          "text": "[Empowered|Empowered Attacks] deal (10-20)% increased Damage",
+          "name": "Burning",
+          "text": "(5-15)% increased [Ignite|Ignite] [BuffMagnitude|Magnitude]",
           "stats": [
             {
-              "id": "empowered_attack_damage_+%",
+              "id": "base_ignite_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncisionChance",
+      "kind": "prefix",
+      "template": "#% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Incise",
+          "text": "(15-25)% chance for [Attack] [HitDamage|Hits] to apply [Incision]",
+          "stats": [
+            {
+              "id": "chance_to_inflict_incision_on_attack_hit_%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedBlockChance",
+      "kind": "prefix",
+      "template": "#% increased [Block] chance",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Protecting",
+          "text": "(3-7)% increased [Block] chance",
+          "stats": [
+            {
+              "id": "block_chance_+%",
+              "max": 7,
+              "min": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedPhysicalDamageReductionRatingPercent",
+      "kind": "prefix",
+      "template": "#% increased [Armour]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Armoured",
+          "text": "(10-20)% increased [Armour]",
+          "stats": [
+            {
+              "id": "physical_damage_reduction_rating_+%",
               "max": 20,
               "min": 10
             }
@@ -533,19 +324,19 @@
       ]
     },
     {
-      "family_key": "MinionLife",
+      "family_key": "IncreasedTotemLife",
       "kind": "prefix",
-      "template": "[Minion|Minions] have #% increased maximum Life",
+      "template": "#% increased [Totem] Life",
       "tiers": [
         {
           "level": 1,
-          "name": "Fortuitous",
-          "text": "[Minion|Minions] have (5-15)% increased maximum Life",
+          "name": "Carved",
+          "text": "(10-20)% increased [Totem] Life",
           "stats": [
             {
-              "id": "minion_maximum_life_+%",
-              "max": 15,
-              "min": 5
+              "id": "totem_life_+%",
+              "max": 20,
+              "min": 10
             }
           ]
         }
@@ -600,17 +391,112 @@
       ]
     },
     {
-      "family_key": "JewelRadiusNotableEffect",
-      "kind": "suffix",
-      "template": "#% increased Effect of Notable Passive Skills in Radius",
+      "family_key": "MaximumRage",
+      "kind": "prefix",
+      "template": "+# to Maximum [Rage]",
       "tiers": [
         {
           "level": 1,
-          "name": "of Supremacy",
-          "text": "(15-25)% increased Effect of Notable Passive Skills in Radius",
+          "name": "Angry",
+          "text": "+1 to Maximum [Rage]",
           "stats": [
             {
-              "id": "local_jewel_notable_passive_in_radius_effect_+%",
+              "id": "maximum_rage",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MeleeDamage",
+      "kind": "prefix",
+      "template": "#% increased [Melee] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Clashing",
+          "text": "(5-15)% increased [Melee] Damage",
+          "stats": [
+            {
+              "id": "melee_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionAreaOfEffect",
+      "kind": "prefix",
+      "template": "[Minion|Minions] have #% increased Area of Effect",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Companion",
+          "text": "[Minion|Minions] have (5-8)% increased Area of Effect",
+          "stats": [
+            {
+              "id": "minion_skill_area_of_effect_+%",
+              "max": 8,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MinionLife",
+      "kind": "prefix",
+      "template": "[Minion|Minions] have #% increased maximum Life",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Fortuitous",
+          "text": "[Minion|Minions] have (5-15)% increased maximum Life",
+          "stats": [
+            {
+              "id": "minion_maximum_life_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PhysicalDamagePercent",
+      "kind": "prefix",
+      "template": "#% increased Global [Physical] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Sharpened",
+          "text": "(5-15)% increased Global [Physical] Damage",
+          "stats": [
+            {
+              "id": "physical_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PresenceRadius",
+      "kind": "prefix",
+      "template": "#% increased [Presence|Presence] Area of Effect",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Iconic",
+          "text": "(15-25)% increased [Presence|Presence] Area of Effect",
+          "stats": [
+            {
+              "id": "presence_area_+%",
               "max": 25,
               "min": 15
             }
@@ -619,19 +505,95 @@
       ]
     },
     {
-      "family_key": "JewelRadiusSmallNodeEffect",
-      "kind": "suffix",
-      "template": "#% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+      "family_key": "ShieldArmourIncrease",
+      "kind": "prefix",
+      "template": "#% increased [Defences] from Equipped [Shield]",
       "tiers": [
         {
           "level": 1,
-          "name": "of Potency",
-          "text": "(15-25)% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+          "name": "Shielding",
+          "text": "(18-32)% increased [Defences] from Equipped [Shield]",
           "stats": [
             {
-              "id": "local_jewel_small_passive_in_radius_effect_+%",
-              "max": 25,
-              "min": 15
+              "id": "shield_defences_+%",
+              "max": 32,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Mace|Maces]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Beating",
+          "text": "(6-16)% increased Damage with [Mace|Maces]",
+          "stats": [
+            {
+              "id": "mace_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Thorns",
+      "kind": "prefix",
+      "template": "#% increased [Thorns|Thorns] damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Retaliating",
+          "text": "(10-20)% increased [Thorns|Thorns] damage",
+          "stats": [
+            {
+              "id": "thorns_damage_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "TotemDamage",
+      "kind": "prefix",
+      "template": "#% increased [Totem|Totem] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Shaman's",
+          "text": "(10-18)% increased [Totem|Totem] Damage",
+          "stats": [
+            {
+              "id": "totem_damage_+%",
+              "max": 18,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WarcryDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Warcry|Warcries]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Yelling",
+          "text": "(10-20)% increased Damage with [Warcry|Warcries]",
+          "stats": [
+            {
+              "id": "warcry_damage_+%",
+              "max": 20,
+              "min": 10
             }
           ]
         }
@@ -657,19 +619,19 @@
       ]
     },
     {
-      "family_key": "BleedDuration",
+      "family_key": "BannerDuration",
       "kind": "suffix",
-      "template": "#% increased Bleeding Duration",
+      "template": "[Banner] Skills have #% increased Duration",
       "tiers": [
         {
           "level": 1,
-          "name": "of Haemophilia",
-          "text": "(5-10)% increased Bleeding Duration",
+          "name": "of Inspiring",
+          "text": "[Banner] Skills have (15-25)% increased Duration",
           "stats": [
             {
-              "id": "base_bleed_duration_+%",
-              "max": 10,
-              "min": 5
+              "id": "banner_duration_+%",
+              "max": 25,
+              "min": 15
             }
           ]
         }
@@ -695,171 +657,19 @@
       ]
     },
     {
-      "family_key": "Knockback",
+      "family_key": "BleedDuration",
       "kind": "suffix",
-      "template": "#% increased [Knockback] Distance",
+      "template": "#% increased Bleeding Duration",
       "tiers": [
         {
           "level": 1,
-          "name": "of Fending",
-          "text": "(5-15)% increased [Knockback] Distance",
+          "name": "of Haemophilia",
+          "text": "(5-10)% increased Bleeding Duration",
           "stats": [
             {
-              "id": "knockback_distance_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LifeRegenerationRate",
-      "kind": "suffix",
-      "template": "#% increased Life Regeneration rate",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Regeneration",
-          "text": "(5-10)% increased Life Regeneration rate",
-          "stats": [
-            {
-              "id": "life_regeneration_rate_+%",
+              "id": "base_bleed_duration_+%",
               "max": 10,
               "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SkillEffectDuration",
-      "kind": "suffix",
-      "template": "#% increased Skill Effect Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Lengthening",
-          "text": "(5-10)% increased Skill Effect Duration",
-          "stats": [
-            {
-              "id": "skill_effect_duration_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponSpeed",
-      "kind": "suffix",
-      "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Wild",
-          "text": "(1-2)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
-          "stats": [
-            {
-              "id": "skill_speed_+%_while_shapeshifted",
-              "max": 2,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "StunDamageIncrease",
-      "kind": "suffix",
-      "template": "#% increased [Stun] Buildup",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Stunning",
-          "text": "(10-20)% increased [Stun] Buildup",
-          "stats": [
-            {
-              "id": "hit_damage_stun_multiplier_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MaceStun",
-      "kind": "suffix",
-      "template": "#% increased [Stun|Stun Buildup] with [Mace|Maces]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Thumping",
-          "text": "(15-25)% increased [Stun|Stun Buildup] with [Mace|Maces]",
-          "stats": [
-            {
-              "id": "mace_hit_damage_stun_multiplier_+%",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "WarcryCooldownSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Warcry|Warcry] Cooldown Recovery Rate",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Rallying",
-          "text": "(5-15)% increased [Warcry|Warcry] Cooldown Recovery Rate",
-          "stats": [
-            {
-              "id": "warcry_cooldown_speed_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LifeCost",
-      "kind": "suffix",
-      "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Sacrifice",
-          "text": "(4-6)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
-          "stats": [
-            {
-              "id": "base_skill_cost_life_instead_of_mana_%",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "RageOnHit",
-      "kind": "suffix",
-      "template": "Gain # [Rage|Rage] on [Melee] [HitDamage|Hit]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Raging",
-          "text": "Gain 1 [Rage|Rage] on [Melee] [HitDamage|Hit]",
-          "stats": [
-            {
-              "id": "gain_x_rage_on_melee_hit",
-              "max": 1,
-              "min": 1
             }
           ]
         }
@@ -923,38 +733,76 @@
       ]
     },
     {
-      "family_key": "SummonTotemCastSpeed",
+      "family_key": "JewelRadiusNotableEffect",
       "kind": "suffix",
-      "template": "#% increased [Totem|Totem] Placement speed",
+      "template": "#% increased Effect of Notable Passive Skills in Radius",
       "tiers": [
         {
           "level": 1,
-          "name": "of Ancestry",
-          "text": "(10-20)% increased [Totem|Totem] Placement speed",
+          "name": "of Supremacy",
+          "text": "(15-25)% increased Effect of Notable Passive Skills in Radius",
           "stats": [
             {
-              "id": "summon_totem_cast_speed_+%",
-              "max": 20,
-              "min": 10
+              "id": "local_jewel_notable_passive_in_radius_effect_+%",
+              "max": 25,
+              "min": 15
             }
           ]
         }
       ]
     },
     {
-      "family_key": "WarcrySpeed",
+      "family_key": "JewelRadiusSmallNodeEffect",
       "kind": "suffix",
-      "template": "#% increased [Warcry|Warcry] Speed",
+      "template": "#% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
       "tiers": [
         {
           "level": 1,
-          "name": "of Lungs",
-          "text": "(10-20)% increased [Warcry|Warcry] Speed",
+          "name": "of Potency",
+          "text": "(15-25)% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
           "stats": [
             {
-              "id": "warcry_speed_+%",
-              "max": 20,
-              "min": 10
+              "id": "local_jewel_small_passive_in_radius_effect_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Knockback",
+      "kind": "suffix",
+      "template": "#% increased [Knockback] Distance",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Fending",
+          "text": "(5-15)% increased [Knockback] Distance",
+          "stats": [
+            {
+              "id": "knockback_distance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "LifeCost",
+      "kind": "suffix",
+      "template": "#% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Sacrifice",
+          "text": "(4-6)% of Skill Mana Costs [StatConversion|Converted] to Life Costs",
+          "stats": [
+            {
+              "id": "base_skill_cost_life_instead_of_mana_%",
+              "max": 6,
+              "min": 4
             }
           ]
         }
@@ -980,17 +828,36 @@
       ]
     },
     {
-      "family_key": "BannerDuration",
+      "family_key": "LifeRegenerationRate",
       "kind": "suffix",
-      "template": "[Banner] Skills have #% increased Duration",
+      "template": "#% increased Life Regeneration rate",
       "tiers": [
         {
           "level": 1,
-          "name": "of Inspiring",
-          "text": "[Banner] Skills have (15-25)% increased Duration",
+          "name": "of Regeneration",
+          "text": "(5-10)% increased Life Regeneration rate",
           "stats": [
             {
-              "id": "banner_duration_+%",
+              "id": "life_regeneration_rate_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MaceStun",
+      "kind": "suffix",
+      "template": "#% increased [Stun|Stun Buildup] with [Mace|Maces]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Thumping",
+          "text": "(15-25)% increased [Stun|Stun Buildup] with [Mace|Maces]",
+          "stats": [
+            {
+              "id": "mace_hit_damage_stun_multiplier_+%",
               "max": 25,
               "min": 15
             }
@@ -1012,6 +879,139 @@
               "id": "minion_additional_physical_damage_reduction_%",
               "max": 16,
               "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "RageOnHit",
+      "kind": "suffix",
+      "template": "Gain # [Rage|Rage] on [Melee] [HitDamage|Hit]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Raging",
+          "text": "Gain 1 [Rage|Rage] on [Melee] [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "gain_x_rage_on_melee_hit",
+              "max": 1,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SkillEffectDuration",
+      "kind": "suffix",
+      "template": "#% increased Skill Effect Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Lengthening",
+          "text": "(5-10)% increased Skill Effect Duration",
+          "stats": [
+            {
+              "id": "skill_effect_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "kind": "suffix",
+      "template": "#% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Wild",
+          "text": "(2-4)% increased [SkillSpeed|Skill Speed] while [Shapeshift|Shapeshifted]",
+          "stats": [
+            {
+              "id": "skill_speed_+%_while_shapeshifted",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "StunDamageIncrease",
+      "kind": "suffix",
+      "template": "#% increased [Stun] Buildup",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Stunning",
+          "text": "(10-20)% increased [Stun] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_stun_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SummonTotemCastSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Totem|Totem] Placement speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Ancestry",
+          "text": "(10-20)% increased [Totem|Totem] Placement speed",
+          "stats": [
+            {
+              "id": "summon_totem_cast_speed_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WarcryCooldownSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Warcry|Warcry] Cooldown Recovery Rate",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Rallying",
+          "text": "(5-15)% increased [Warcry|Warcry] Cooldown Recovery Rate",
+          "stats": [
+            {
+              "id": "warcry_cooldown_speed_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "WarcrySpeed",
+      "kind": "suffix",
+      "template": "#% increased [Warcry|Warcry] Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Lungs",
+          "text": "(10-20)% increased [Warcry|Warcry] Speed",
+          "stats": [
+            {
+              "id": "warcry_speed_+%",
+              "max": 20,
+              "min": 10
             }
           ]
         }

@@ -6,6 +6,64 @@ This is a small tool for creating valid pickit configuration
 rules via a configurable graphical user interface instead of
 writing each line manually.
 
+## Current focus
+
+This repository is the frontend application only.
+
+Right now the implemented flow is the item-rule configurator:
+
+- select a supported item type from the imported affix catalog
+- choose the action flag
+- choose affixes and minimum tiers
+- generate preview lines and final pickit output
+
+Planned rule families such as currency, gems, and custom rules are intentionally hidden in the UI until they have real generators and test coverage.
+
+## Data provenance
+
+The affix catalog does not originate in this repository.
+
+The generated files in `public/data/affixes/*.json` and `public/data/catalog.json` come from the external `poe-affix-builder` project (https://github.com/l0westbob/poe2-affix-builder). 
+
+That upstream tool:
+
+1. fetches and snapshots modifier data from `poe2db.tw`
+2. matches those affixes against `repoe-fork/poe2` `mods.json` stat ids
+3. exports per-item affix JSON files that this frontend imports
+
+### Refreshing imported catalog data
+
+Import a folder of exported affix files into this frontend repo:
+
+```bash
+npm run import-catalog -- --source /path/to/exported/affixes
+```
+
+Validate that the generated app-facing catalog still matches the checked-in affix payloads:
+
+```bash
+npm run check-catalog
+```
+
+Run the frontend test suite after import:
+
+```bash
+npm run test
+```
+
+### What is generated vs app-owned
+
+Imported generated data:
+
+- `public/data/affixes/*.json`
+- `public/data/catalog.json`
+
+App-owned metadata and logic:
+
+- `config/catalog-augmentation.json`
+- `src/domain/pickit/*`
+- `src/components/configurator/*`
+
 The current introduction of how to use the pickit config
 file looks like this:
 
@@ -163,24 +221,16 @@ for most users.
 
 ## What does this tool cover right now?
 
-Currently, the plan is to cover all categories first.
+Currently, the app exposes the imported item-rule flow only.
 
 ```
 "BodyArmour", "Gloves", "Boots", "Belt", "Helmet", "Ring", "Amulet", "Claw", "Dagger", "Wand", "OneHandSword", "OneHandAxe", "OneHandMace", "Sceptre", "Spear", "Flail", "Bow", "Staff", "TwoHandSword", "TwoHandAxe", "TwoHandMace", "Quarterstaff", "Crossbow", "Trap", "FishingRod", "Quiver", "Shield", "Focus", "Flask", "Waystone", "Gem", "Tablet"
 ```
 
-The way I've planned to do this is by fetching each
-category from https://poe2db.tw ->Modifiers to get all possible
-affixes (I just focussed on prefix and suffix
+I just focussed on prefix and suffix
 because desecrated, essence, corrupted affixes
 usually don't drop. I will add them all when I see
-the need or get it as feature request).
-
-Then I am using the mods.json from https://github.com/repoe-fork/poe2
-to map the correct mod identifier to each affix for
-each category and generate data json files that are
-used by the vue app to fill out forms and generate
-config lines.
+the need or get it as feature request.
 
 ---
 
@@ -202,9 +252,8 @@ very precise filtering/selecting.
 
 - no complex rules possible (no OR) (no grouped stats checking)
 - data quality could still be improved
-- still only item categories
+- still only the item-rule flow is implemented in the UI
 - no custom rules yet
-- no currency blocks yet
 - no uniques yet
 - no rule edit possible
 - no copy button yet

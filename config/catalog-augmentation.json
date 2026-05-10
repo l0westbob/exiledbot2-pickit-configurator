@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "categoryOrder": [
+    "Flasks",
+    "Body Armours",
+    "Boots",
+    "Gloves",
+    "Helmets",
+    "Jewellery",
+    "Off-hand",
+    "One Handed Weapons",
+    "Two Handed Weapons",
+    "Tablet",
+    "Waystones",
+    "Jewels",
+    "Relics"
+  ],
+  "itemOverrides": {}
+}

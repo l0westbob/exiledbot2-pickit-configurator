@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "slug": "Charms",
+      "category": "Flasks",
+      "label": "Charms",
+      "pickitCategory": "Flask",
+      "status": "implemented"
+    },
+    {
+      "slug": "Life_Flasks",
+      "category": "Flasks",
+      "label": "Life Flasks",
+      "pickitCategory": "Flask",
+      "status": "implemented"
+    },
+    {
+      "slug": "Mana_Flasks",
+      "category": "Flasks",
+      "label": "Mana Flasks",
+      "pickitCategory": "Flask",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_str",
+      "category": "Body Armours",
+      "label": "Body Armours ( Armour )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_str_int",
+      "category": "Body Armours",
+      "label": "Body Armours ( Armour / Energy Shield )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_str_dex",
+      "category": "Body Armours",
+      "label": "Body Armours ( Armour / Evasion )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_str_dex_int",
+      "category": "Body Armours",
+      "label": "Body Armours ( Armour / Evasion / Energy Shield )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_int",
+      "category": "Body Armours",
+      "label": "Body Armours ( Energy Shield )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_dex",
+      "category": "Body Armours",
+      "label": "Body Armours ( Evasion )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Body_Armours_dex_int",
+      "category": "Body Armours",
+      "label": "Body Armours ( Evasion / Energy Shield )",
+      "pickitCategory": "BodyArmour",
+      "status": "implemented"
+    },
+    {
+      "slug": "Boots_str",
+      "category": "Boots",
+      "label": "Boots ( Armour )",
+      "pickitCategory": "Boots",
+      "status": "implemented"
+    },
+    {
+      "slug": "Boots_str_int",
+      "category": "Boots",
+      "label": "Boots ( Armour / Energy Shield )",
+      "pickitCategory": "Boots",
+      "status": "implemented"
+    },
+    {
+      "slug": "Boots_str_dex",
+      "category": "Boots",
+      "label": "Boots ( Armour / Evasion )",
+      "pickitCategory": "Boots",
+      "status": "implemented"
+    },
+    {
+      "slug": "Boots_int",
+      "category": "Boots",
+      "label": "Boots ( Energy Shield )",
+      "pickitCategory": "Boots",
+      "status": "implemented"
+    },
+    {
+      "slug": "Boots_dex",
+      "category": "Boots",
+      "label": "Boots ( Evasion )",
+      "pickitCategory": "Boots",
+      "status": "implemented"
+    },
+    {
+      "slug": "Boots_dex_int",
+      "category": "Boots",
+      "label": "Boots ( Evasion / Energy Shield )",
+      "pickitCategory": "Boots",
+      "status": "implemented"
+    },
+    {
+      "slug": "Gloves_str",
+      "category": "Gloves",
+      "label": "Gloves ( Armour )",
+      "pickitCategory": "Gloves",
+      "status": "implemented"
+    },
+    {
+      "slug": "Gloves_str_int",
+      "category": "Gloves",
+      "label": "Gloves ( Armour / Energy Shield )",
+      "pickitCategory": "Gloves",
+      "status": "implemented"
+    },
+    {
+      "slug": "Gloves_str_dex",
+      "category": "Gloves",
+      "label": "Gloves ( Armour / Evasion )",
+      "pickitCategory": "Gloves",
+      "status": "implemented"
+    },
+    {
+      "slug": "Gloves_int",
+      "category": "Gloves",
+      "label": "Gloves ( Energy Shield )",
+      "pickitCategory": "Gloves",
+      "status": "implemented"
+    },
+    {
+      "slug": "Gloves_dex",
+      "category": "Gloves",
+      "label": "Gloves ( Evasion )",
+      "pickitCategory": "Gloves",
+      "status": "implemented"
+    },
+    {
+      "slug": "Gloves_dex_int",
+      "category": "Gloves",
+      "label": "Gloves ( Evasion / Energy Shield )",
+      "pickitCategory": "Gloves",
+      "status": "implemented"
+    },
+    {
+      "slug": "Helmets_str",
+      "category": "Helmets",
+      "label": "Helmets ( Armour )",
+      "pickitCategory": "Helmet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Helmets_str_int",
+      "category": "Helmets",
+      "label": "Helmets ( Armour / Energy Shield )",
+      "pickitCategory": "Helmet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Helmets_str_dex",
+      "category": "Helmets",
+      "label": "Helmets ( Armour / Evasion )",
+      "pickitCategory": "Helmet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Helmets_int",
+      "category": "Helmets",
+      "label": "Helmets ( Energy Shield )",
+      "pickitCategory": "Helmet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Helmets_dex",
+      "category": "Helmets",
+      "label": "Helmets ( Evasion )",
+      "pickitCategory": "Helmet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Helmets_dex_int",
+      "category": "Helmets",
+      "label": "Helmets ( Evasion / Energy Shield )",
+      "pickitCategory": "Helmet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Amulets",
+      "category": "Jewellery",
+      "label": "Amulets",
+      "pickitCategory": "Amulet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Belts",
+      "category": "Jewellery",
+      "label": "Belts",
+      "pickitCategory": "Belt",
+      "status": "implemented"
+    },
+    {
+      "slug": "Rings",
+      "category": "Jewellery",
+      "label": "Rings",
+      "pickitCategory": "Ring",
+      "status": "implemented"
+    },
+    {
+      "slug": "Bucklers",
+      "category": "Off-hand",
+      "label": "Bucklers",
+      "pickitCategory": "Shield",
+      "status": "implemented"
+    },
+    {
+      "slug": "Foci",
+      "category": "Off-hand",
+      "label": "Foci",
+      "pickitCategory": "Focus",
+      "status": "implemented"
+    },
+    {
+      "slug": "Quivers",
+      "category": "Off-hand",
+      "label": "Quivers",
+      "pickitCategory": "Quiver",
+      "status": "implemented"
+    },
+    {
+      "slug": "Shields_str",
+      "category": "Off-hand",
+      "label": "Shields ( Armour )",
+      "pickitCategory": "Shield",
+      "status": "implemented"
+    },
+    {
+      "slug": "Shields_str_int",
+      "category": "Off-hand",
+      "label": "Shields ( Armour / Energy Shield )",
+      "pickitCategory": "Shield",
+      "status": "implemented"
+    },
+    {
+      "slug": "Shields_str_dex",
+      "category": "Off-hand",
+      "label": "Shields ( Armour / Evasion )",
+      "pickitCategory": "Shield",
+      "status": "implemented"
+    },
+    {
+      "slug": "Claws",
+      "category": "One Handed Weapons",
+      "label": "Claws",
+      "pickitCategory": "Claw",
+      "status": "implemented"
+    },
+    {
+      "slug": "Daggers",
+      "category": "One Handed Weapons",
+      "label": "Daggers",
+      "pickitCategory": "Dagger",
+      "status": "implemented"
+    },
+    {
+      "slug": "Flails",
+      "category": "One Handed Weapons",
+      "label": "Flails",
+      "pickitCategory": "Flail",
+      "status": "implemented"
+    },
+    {
+      "slug": "One_Hand_Axes",
+      "category": "One Handed Weapons",
+      "label": "One Hand Axes",
+      "pickitCategory": "OneHandAxe",
+      "status": "implemented"
+    },
+    {
+      "slug": "One_Hand_Maces",
+      "category": "One Handed Weapons",
+      "label": "One Hand Maces",
+      "pickitCategory": "OneHandMace",
+      "status": "implemented"
+    },
+    {
+      "slug": "One_Hand_Swords",
+      "category": "One Handed Weapons",
+      "label": "One Hand Swords",
+      "pickitCategory": "OneHandSword",
+      "status": "implemented"
+    },
+    {
+      "slug": "Sceptres",
+      "category": "One Handed Weapons",
+      "label": "Sceptres",
+      "pickitCategory": "Sceptre",
+      "status": "implemented"
+    },
+    {
+      "slug": "Spears",
+      "category": "One Handed Weapons",
+      "label": "Spears",
+      "pickitCategory": "Spear",
+      "status": "implemented"
+    },
+    {
+      "slug": "Wands",
+      "category": "One Handed Weapons",
+      "label": "Wands",
+      "pickitCategory": "Wand",
+      "status": "implemented"
+    },
+    {
+      "slug": "Bows",
+      "category": "Two Handed Weapons",
+      "label": "Bows",
+      "pickitCategory": "Bow",
+      "status": "implemented"
+    },
+    {
+      "slug": "Crossbows",
+      "category": "Two Handed Weapons",
+      "label": "Crossbows",
+      "pickitCategory": "Crossbow",
+      "status": "implemented"
+    },
+    {
+      "slug": "Quarterstaves",
+      "category": "Two Handed Weapons",
+      "label": "Quarterstaves",
+      "pickitCategory": "Quarterstaff",
+      "status": "implemented"
+    },
+    {
+      "slug": "Staves",
+      "category": "Two Handed Weapons",
+      "label": "Staves",
+      "pickitCategory": "Staff",
+      "status": "implemented"
+    },
+    {
+      "slug": "Talismans",
+      "category": "Two Handed Weapons",
+      "label": "Talismans",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Traps",
+      "category": "Two Handed Weapons",
+      "label": "Traps",
+      "pickitCategory": "Trap",
+      "status": "implemented"
+    },
+    {
+      "slug": "Two_Hand_Axes",
+      "category": "Two Handed Weapons",
+      "label": "Two Hand Axes",
+      "pickitCategory": "TwoHandAxe",
+      "status": "implemented"
+    },
+    {
+      "slug": "Two_Hand_Maces",
+      "category": "Two Handed Weapons",
+      "label": "Two Hand Maces",
+      "pickitCategory": "TwoHandMace",
+      "status": "implemented"
+    },
+    {
+      "slug": "Two_Hand_Swords",
+      "category": "Two Handed Weapons",
+      "label": "Two Hand Swords",
+      "pickitCategory": "TwoHandSword",
+      "status": "implemented"
+    },
+    {
+      "slug": "Abyss_Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Abyss Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Breach_Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Breach Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Delirium_Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Delirium Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Expedition_Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Expedition Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Overseer_Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Overseer Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Ritual_Precursor_Tablet",
+      "category": "Tablet",
+      "label": "Ritual Precursor Tablet",
+      "pickitCategory": "Tablet",
+      "status": "implemented"
+    },
+    {
+      "slug": "Waystones_low_tier",
+      "category": "Waystones",
+      "label": "Waystones(Low)",
+      "pickitCategory": "Waystone",
+      "status": "implemented"
+    },
+    {
+      "slug": "Waystones_mid_tier",
+      "category": "Waystones",
+      "label": "Waystones(Mid)",
+      "pickitCategory": "Waystone",
+      "status": "implemented"
+    },
+    {
+      "slug": "Waystones_top_tier",
+      "category": "Waystones",
+      "label": "Waystones(Top)",
+      "pickitCategory": "Waystone",
+      "status": "implemented"
+    },
+    {
+      "slug": "Emerald",
+      "category": "Jewels",
+      "label": "Emerald",
+      "pickitCategory": "Jewel",
+      "status": "implemented"
+    },
+    {
+      "slug": "Ruby",
+      "category": "Jewels",
+      "label": "Ruby",
+      "pickitCategory": "Jewel",
+      "status": "implemented"
+    },
+    {
+      "slug": "Sapphire",
+      "category": "Jewels",
+      "label": "Sapphire",
+      "pickitCategory": "Jewel",
+      "status": "implemented"
+    },
+    {
+      "slug": "Time-Lost_Emerald",
+      "category": "Jewels",
+      "label": "Time-Lost Emerald",
+      "pickitCategory": "Jewel",
+      "status": "implemented"
+    },
+    {
+      "slug": "Time-Lost_Ruby",
+      "category": "Jewels",
+      "label": "Time-Lost Ruby",
+      "pickitCategory": "Jewel",
+      "status": "implemented"
+    },
+    {
+      "slug": "Time-Lost_Sapphire",
+      "category": "Jewels",
+      "label": "Time-Lost Sapphire",
+      "pickitCategory": "Jewel",
+      "status": "implemented"
+    },
+    {
+      "slug": "Amphora_Relic",
+      "category": "Relics",
+      "label": "Amphora Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Coffer_Relic",
+      "category": "Relics",
+      "label": "Coffer Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Incense_Relic",
+      "category": "Relics",
+      "label": "Incense Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Seal_Relic",
+      "category": "Relics",
+      "label": "Seal Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Tapestry_Relic",
+      "category": "Relics",
+      "label": "Tapestry Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Urn_Relic",
+      "category": "Relics",
+      "label": "Urn Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    },
+    {
+      "slug": "Vase_Relic",
+      "category": "Relics",
+      "label": "Vase Relic",
+      "pickitCategory": null,
+      "status": "hidden"
+    }
+  ]
+}

@@ -1,44 +1,6 @@
 {
   "affixes": [
     {
-      "family_key": "BlindEffect",
-      "kind": "prefix",
-      "template": "#% increased [Blind] Effect",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Stifling",
-          "text": "(5-10)% increased [Blind] Effect",
-          "stats": [
-            {
-              "id": "blind_effect_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CurseEffectiveness",
-      "kind": "prefix",
-      "template": "#% increased Effect of your [Mark] Skills",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Marking",
-          "text": "(4-8)% increased Effect of your [Mark] Skills",
-          "stats": [
-            {
-              "id": "mark_effect_+%",
-              "max": 8,
-              "min": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "AilmentEffect",
       "kind": "prefix",
       "template": "#% increased [BuffMagnitude|Magnitude] of [Ailments] you inflict",
@@ -52,386 +14,6 @@
               "id": "ailment_effect_+%",
               "max": 15,
               "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CriticalAilmentEffect",
-      "kind": "prefix",
-      "template": "#% increased [BuffMagnitude|Magnitude] of [DamagingAilments|Damaging Ailments] you inflict with [Critical|Critical Hits]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Rancorous",
-          "text": "(10-20)% increased [BuffMagnitude|Magnitude] of [DamagingAilments|Damaging Ailments] you inflict with [Critical|Critical Hits]",
-          "stats": [
-            {
-              "id": "critical_hit_damaging_ailment_effect_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PoisonEffect",
-      "kind": "prefix",
-      "template": "#% increased [BuffMagnitude|Magnitude] of [Poison] you inflict",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Venomous",
-          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Poison] you inflict",
-          "stats": [
-            {
-              "id": "base_poison_effect_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ShockEffect",
-      "kind": "prefix",
-      "template": "#% increased [BuffMagnitude|Magnitude] of [Shock|Shock] you inflict",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Jolting",
-          "text": "(10-15)% increased [BuffMagnitude|Magnitude] of [Shock|Shock] you inflict",
-          "stats": [
-            {
-              "id": "shock_effect_+%",
-              "max": 15,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ProjectileSpeed",
-      "kind": "prefix",
-      "template": "#% increased [Projectile] Speed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Soaring",
-          "text": "(4-8)% increased [Projectile] Speed",
-          "stats": [
-            {
-              "id": "base_projectile_speed_+%",
-              "max": 8,
-              "min": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "EquipmentModifierEffect",
-      "kind": "prefix",
-      "template": "#% increased bonuses gained from Equipped [Quiver]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Fletching",
-          "text": "(4-6)% increased bonuses gained from Equipped [Quiver]",
-          "stats": [
-            {
-              "id": "quiver_mod_effect_+%",
-              "max": 6,
-              "min": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "IncreasedAccuracyPercent",
-      "kind": "prefix",
-      "template": "#% increased [Accuracy] Rating",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Accurate",
-          "text": "(5-10)% increased [Accuracy] Rating",
-          "stats": [
-            {
-              "id": "accuracy_rating_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponAccuracy",
-      "kind": "prefix",
-      "template": "#% increased Accuracy Rating with Bows",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Precise",
-          "text": "(5-15)% increased Accuracy Rating with Bows",
-          "stats": [
-            {
-              "id": "bow_accuracy_rating_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AttackDamage",
-      "kind": "prefix",
-      "template": "#% increased [Attack] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Combat",
-          "text": "(5-15)% increased [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CharmDamageWhileUsing",
-      "kind": "prefix",
-      "template": "#% increased Damage while you have an active [Charm|Charm]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Verdant",
-          "text": "(10-20)% increased Damage while you have an active [Charm|Charm]",
-          "stats": [
-            {
-              "id": "damage_+%_while_using_charm",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with Bows",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Perforating",
-          "text": "(6-16)% increased Damage with Bows",
-          "stats": [
-            {
-              "id": "bow_damage_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CrossbowDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Crossbow|Crossbows]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bolting",
-          "text": "(6-16)% increased Damage with [Crossbow|Crossbows]",
-          "stats": [
-            {
-              "id": "crossbow_damage_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamageVsRareOrUnique",
-      "kind": "prefix",
-      "template": "#% increased Damage with [HitDamage|Hits] against [Rarity|Rare and Unique] Enemies",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Slaying",
-          "text": "(10-20)% increased Damage with [HitDamage|Hits] against [Rarity|Rare and Unique] Enemies",
-          "stats": [
-            {
-              "id": "damage_+%_to_rare_and_unique_enemies",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DamageForm",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Plant|Plant] Skills",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Overgrown",
-          "text": "(1-2)% increased Damage with [Plant|Plant] Skills",
-          "stats": [
-            {
-              "id": "plant_skill_damage_+%",
-              "max": 2,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Quarterstaff|Quarterstaves]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Monk's",
-          "text": "(6-16)% increased Damage with [Quarterstaff|Quarterstaves]",
-          "stats": [
-            {
-              "id": "quarterstaff_damage_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpearDamage",
-      "kind": "prefix",
-      "template": "#% increased Damage with [Spear|Spears]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Spearheaded",
-          "text": "(6-16)% increased Damage with [Spear|Spears]",
-          "stats": [
-            {
-              "id": "spear_damage_+%",
-              "max": 16,
-              "min": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ElementalDamagePercent",
-      "kind": "prefix",
-      "template": "#% increased [ElementalDamage|Elemental Damage]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Prismatic",
-          "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
-          "stats": [
-            {
-              "id": "elemental_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "EvasionRatingPercent",
-      "kind": "prefix",
-      "template": "#% increased [Evasion|Evasion Rating]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Evasive",
-          "text": "(10-20)% increased [Evasion|Evasion Rating]",
-          "stats": [
-            {
-              "id": "evasion_rating_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "HazardDamage",
-      "kind": "prefix",
-      "template": "#% increased [Hazard] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Hazardous",
-          "text": "(10-20)% increased [Hazard] Damage",
-          "stats": [
-            {
-              "id": "hazard_damage_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "LightningDamagePercentage",
-      "kind": "prefix",
-      "template": "#% increased [Lightning] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Humming",
-          "text": "(5-15)% increased [Lightning] Damage",
-          "stats": [
-            {
-              "id": "lightning_damage_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MeleeDamageIfProjectileHitRecently",
-      "kind": "prefix",
-      "template": "#% increased [Melee] Damage if you've dealt a [Projectile] [Attack] [HitDamage|Hit] in the past eight seconds",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Engaging",
-          "text": "(10-20)% increased [Melee] Damage if you've dealt a [Projectile] [Attack] [HitDamage|Hit] in the past eight seconds",
-          "stats": [
-            {
-              "id": "melee_damage_+%_if_youve_dealt_projectile_attack_hit_recently",
-              "max": 20,
-              "min": 10
             }
           ]
         }
@@ -457,17 +39,17 @@
       ]
     },
     {
-      "family_key": "ProjectileDamage",
+      "family_key": "AttackDamage",
       "kind": "prefix",
-      "template": "#% increased [Projectile] Damage",
+      "template": "#% increased [Attack] Damage",
       "tiers": [
         {
           "level": 1,
-          "name": "Archer's",
-          "text": "(5-15)% increased [Projectile] Damage",
+          "name": "Combat",
+          "text": "(5-15)% increased [Attack] Damage",
           "stats": [
             {
-              "id": "projectile_damage_+%",
+              "id": "attack_damage_+%",
               "max": 15,
               "min": 5
             }
@@ -476,17 +58,36 @@
       ]
     },
     {
-      "family_key": "ProjectileDamageIfMeleeHitRecently",
+      "family_key": "BlindEffect",
       "kind": "prefix",
-      "template": "#% increased [Projectile] Damage if you've dealt a [Melee] [HitDamage|Hit] in the past eight seconds",
+      "template": "#% increased [Blind] Effect",
       "tiers": [
         {
           "level": 1,
-          "name": "Retreating",
-          "text": "(10-20)% increased [Projectile] Damage if you've dealt a [Melee] [HitDamage|Hit] in the past eight seconds",
+          "name": "Stifling",
+          "text": "(5-10)% increased [Blind] Effect",
           "stats": [
             {
-              "id": "projectile_damage_+%_if_youve_dealt_melee_hit_recently",
+              "id": "blind_effect_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CharmDamageWhileUsing",
+      "kind": "prefix",
+      "template": "#% increased Damage while you have an active [Charm|Charm]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Verdant",
+          "text": "(10-20)% increased Damage while you have an active [Charm|Charm]",
+          "stats": [
+            {
+              "id": "damage_+%_while_using_charm",
               "max": 20,
               "min": 10
             }
@@ -533,19 +134,171 @@
       ]
     },
     {
-      "family_key": "LightningResistancePenetration",
+      "family_key": "CriticalAilmentEffect",
       "kind": "prefix",
-      "template": "Damage [Penetration|Penetrates] #% [Resistances|Lightning Resistance]",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [DamagingAilments|Damaging Ailments] you inflict with [Critical|Critical Hits]",
       "tiers": [
         {
           "level": 1,
-          "name": "Surging",
-          "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Lightning Resistance]",
+          "name": "Rancorous",
+          "text": "(10-20)% increased [BuffMagnitude|Magnitude] of [DamagingAilments|Damaging Ailments] you inflict with [Critical|Critical Hits]",
           "stats": [
             {
-              "id": "base_reduce_enemy_lightning_resistance_%",
-              "max": 10,
+              "id": "critical_hit_damaging_ailment_effect_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CrossbowDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Crossbow|Crossbows]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Bolting",
+          "text": "(6-16)% increased Damage with [Crossbow|Crossbows]",
+          "stats": [
+            {
+              "id": "crossbow_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CurseEffectiveness",
+      "kind": "prefix",
+      "template": "#% increased Effect of your [Mark] Skills",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Marking",
+          "text": "(4-8)% increased Effect of your [Mark] Skills",
+          "stats": [
+            {
+              "id": "mark_effect_+%",
+              "max": 8,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageForm",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Plant|Plant] Skills",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Overgrown",
+          "text": "(5-15)% increased Damage with [Plant|Plant] Skills",
+          "stats": [
+            {
+              "id": "plant_skill_damage_+%",
+              "max": 15,
               "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DamageVsRareOrUnique",
+      "kind": "prefix",
+      "template": "#% increased Damage with [HitDamage|Hits] against [Rarity|Rare and Unique] Enemies",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Slaying",
+          "text": "(10-20)% increased Damage with [HitDamage|Hits] against [Rarity|Rare and Unique] Enemies",
+          "stats": [
+            {
+              "id": "damage_+%_to_rare_and_unique_enemies",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ElementalDamagePercent",
+      "kind": "prefix",
+      "template": "#% increased [ElementalDamage|Elemental Damage]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Prismatic",
+          "text": "(5-15)% increased [ElementalDamage|Elemental Damage]",
+          "stats": [
+            {
+              "id": "elemental_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EquipmentModifierEffect",
+      "kind": "prefix",
+      "template": "#% increased bonuses gained from Equipped [Quiver]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Fletching",
+          "text": "(4-6)% increased bonuses gained from Equipped [Quiver]",
+          "stats": [
+            {
+              "id": "quiver_mod_effect_+%",
+              "max": 6,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "EvasionRatingPercent",
+      "kind": "prefix",
+      "template": "#% increased [Evasion|Evasion Rating]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Evasive",
+          "text": "(10-20)% increased [Evasion|Evasion Rating]",
+          "stats": [
+            {
+              "id": "evasion_rating_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "HazardDamage",
+      "kind": "prefix",
+      "template": "#% increased [Hazard] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Hazardous",
+          "text": "(10-20)% increased [Hazard] Damage",
+          "stats": [
+            {
+              "id": "hazard_damage_+%",
+              "max": 20,
+              "min": 10
             }
           ]
         }
@@ -565,6 +318,25 @@
               "id": "damage_+%_with_herald_skills",
               "max": 25,
               "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAccuracyPercent",
+      "kind": "prefix",
+      "template": "#% increased [Accuracy] Rating",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Accurate",
+          "text": "(5-10)% increased [Accuracy] Rating",
+          "stats": [
+            {
+              "id": "accuracy_rating_+%",
+              "max": 10,
+              "min": 5
             }
           ]
         }
@@ -619,57 +391,323 @@
       ]
     },
     {
-      "family_key": "JewelRadiusNotableEffect",
-      "kind": "suffix",
-      "template": "#% increased Effect of Notable Passive Skills in Radius",
+      "family_key": "LightningDamagePercentage",
+      "kind": "prefix",
+      "template": "#% increased [Lightning] Damage",
       "tiers": [
         {
           "level": 1,
-          "name": "of Supremacy",
-          "text": "(15-25)% increased Effect of Notable Passive Skills in Radius",
+          "name": "Humming",
+          "text": "(5-15)% increased [Lightning] Damage",
           "stats": [
             {
-              "id": "local_jewel_notable_passive_in_radius_effect_+%",
-              "max": 25,
-              "min": 15
+              "id": "lightning_damage_+%",
+              "max": 15,
+              "min": 5
             }
           ]
         }
       ]
     },
     {
-      "family_key": "JewelRadiusSmallNodeEffect",
-      "kind": "suffix",
-      "template": "#% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+      "family_key": "LightningResistancePenetration",
+      "kind": "prefix",
+      "template": "Damage [Penetration|Penetrates] #% [Resistances|Lightning Resistance]",
       "tiers": [
         {
           "level": 1,
-          "name": "of Potency",
-          "text": "(15-25)% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+          "name": "Surging",
+          "text": "Damage [Penetration|Penetrates] (5-10)% [Resistances|Lightning Resistance]",
           "stats": [
             {
-              "id": "local_jewel_small_passive_in_radius_effect_+%",
-              "max": 25,
-              "min": 15
+              "id": "base_reduce_enemy_lightning_resistance_%",
+              "max": 10,
+              "min": 5
             }
           ]
         }
       ]
     },
     {
-      "family_key": "MovementVelocity",
-      "kind": "suffix",
-      "template": "#% increased Movement Speed",
+      "family_key": "MeleeDamageIfProjectileHitRecently",
+      "kind": "prefix",
+      "template": "#% increased [Melee] Damage if you've dealt a [Projectile] [Attack] [HitDamage|Hit] in the past eight seconds",
       "tiers": [
         {
           "level": 1,
-          "name": "of Speed",
-          "text": "(1-2)% increased Movement Speed",
+          "name": "Engaging",
+          "text": "(10-20)% increased [Melee] Damage if you've dealt a [Projectile] [Attack] [HitDamage|Hit] in the past eight seconds",
           "stats": [
             {
-              "id": "base_movement_velocity_+%",
-              "max": 2,
-              "min": 1
+              "id": "melee_damage_+%_if_youve_dealt_projectile_attack_hit_recently",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonEffect",
+      "kind": "prefix",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Poison] you inflict",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Venomous",
+          "text": "(5-15)% increased [BuffMagnitude|Magnitude] of [Poison] you inflict",
+          "stats": [
+            {
+              "id": "base_poison_effect_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileDamage",
+      "kind": "prefix",
+      "template": "#% increased [Projectile] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Archer's",
+          "text": "(5-15)% increased [Projectile] Damage",
+          "stats": [
+            {
+              "id": "projectile_damage_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileDamageIfMeleeHitRecently",
+      "kind": "prefix",
+      "template": "#% increased [Projectile] Damage if you've dealt a [Melee] [HitDamage|Hit] in the past eight seconds",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Retreating",
+          "text": "(10-20)% increased [Projectile] Damage if you've dealt a [Melee] [HitDamage|Hit] in the past eight seconds",
+          "stats": [
+            {
+              "id": "projectile_damage_+%_if_youve_dealt_melee_hit_recently",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ProjectileSpeed",
+      "kind": "prefix",
+      "template": "#% increased [Projectile] Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Soaring",
+          "text": "(4-8)% increased [Projectile] Speed",
+          "stats": [
+            {
+              "id": "base_projectile_speed_+%",
+              "max": 8,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockEffect",
+      "kind": "prefix",
+      "template": "#% increased [BuffMagnitude|Magnitude] of [Shock|Shock] you inflict",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Jolting",
+          "text": "(10-15)% increased [BuffMagnitude|Magnitude] of [Shock|Shock] you inflict",
+          "stats": [
+            {
+              "id": "shock_effect_+%",
+              "max": 15,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpearDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Spear|Spears]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Spearheaded",
+          "text": "(6-16)% increased Damage with [Spear|Spears]",
+          "stats": [
+            {
+              "id": "spear_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponAccuracy",
+      "kind": "prefix",
+      "template": "#% increased Accuracy Rating with Bows",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Precise",
+          "text": "(5-15)% increased Accuracy Rating with Bows",
+          "stats": [
+            {
+              "id": "bow_accuracy_rating_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage with Bows",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Perforating",
+          "text": "(6-16)% increased Damage with Bows",
+          "stats": [
+            {
+              "id": "bow_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponDamage",
+      "kind": "prefix",
+      "template": "#% increased Damage with [Quarterstaff|Quarterstaves]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Monk's",
+          "text": "(6-16)% increased Damage with [Quarterstaff|Quarterstaves]",
+          "stats": [
+            {
+              "id": "quarterstaff_damage_+%",
+              "max": 16,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentChance",
+      "kind": "suffix",
+      "template": "#% increased chance to inflict [Ailments]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Ailing",
+          "text": "(5-15)% increased chance to inflict [Ailments]",
+          "stats": [
+            {
+              "id": "ailment_chance_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "AilmentThreshold",
+      "kind": "suffix",
+      "template": "#% increased [AilmentThreshold|Elemental Ailment Threshold]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Enduring",
+          "text": "(10-20)% increased [AilmentThreshold|Elemental Ailment Threshold]",
+          "stats": [
+            {
+              "id": "ailment_threshold_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BeltFlaskChargesGained",
+      "kind": "suffix",
+      "template": "#% increased [Flask|Flask] Charges gained",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Gathering",
+          "text": "(5-10)% increased [Flask|Flask] Charges gained",
+          "stats": [
+            {
+              "id": "flask_charges_gained_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BlindOnHit",
+      "kind": "suffix",
+      "template": "#% chance to [Blind] Enemies on [HitDamage|Hit] with [Attack|Attacks]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Blinding",
+          "text": "(3-7)% chance to [Blind] Enemies on [HitDamage|Hit] with [Attack|Attacks]",
+          "stats": [
+            {
+              "id": "attacks_chance_to_blind_on_hit_%",
+              "max": 7,
+              "min": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ChainFromTerrain",
+      "kind": "suffix",
+      "template": "[Projectile|Projectiles] have #% chance to [Chain] an additional time from terrain",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Chaining",
+          "text": "[Projectile|Projectiles] have (3-5)% chance to [Chain] an additional time from terrain",
+          "stats": [
+            {
+              "id": "projectile_chance_to_chain_1_extra_time_from_terrain_%",
+              "max": 5,
+              "min": 3
             }
           ]
         }
@@ -695,101 +733,6 @@
       ]
     },
     {
-      "family_key": "IncreasedAttackSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Attack] Speed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Alacrity",
-          "text": "(2-4)% increased [Attack] Speed",
-          "stats": [
-            {
-              "id": "attack_speed_+%",
-              "max": 4,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Attack] Speed with Bows",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Nocking",
-          "text": "(2-4)% increased [Attack] Speed with Bows",
-          "stats": [
-            {
-              "id": "bow_attack_speed_+%",
-              "max": 4,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CrossbowSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Attack] Speed with [Crossbow|Crossbows]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Rapidity",
-          "text": "(2-4)% increased [Attack] Speed with [Crossbow|Crossbows]",
-          "stats": [
-            {
-              "id": "crossbow_attack_speed_+%",
-              "max": 4,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpecificWeaponSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Attack] Speed with [Quarterstaff|Quarterstaves]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Sequencing",
-          "text": "(2-4)% increased [Attack] Speed with [Quarterstaff|Quarterstaves]",
-          "stats": [
-            {
-              "id": "quarterstaff_attack_speed_+%",
-              "max": 4,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpearAttackSpeed",
-      "kind": "suffix",
-      "template": "#% increased [Attack] Speed with [Spear|Spears]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Spearing",
-          "text": "(2-4)% increased [Attack] Speed with [Spear|Spears]",
-          "stats": [
-            {
-              "id": "spear_attack_speed_+%",
-              "max": 4,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "CharmChargesGained",
       "kind": "suffix",
       "template": "#% increased [Charm] Charges gained",
@@ -801,6 +744,25 @@
           "stats": [
             {
               "id": "charm_charges_gained_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CharmDuration",
+      "kind": "suffix",
+      "template": "#% increased [Charm] Effect Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Woodland",
+          "text": "(5-15)% increased [Charm] Effect Duration",
+          "stats": [
+            {
+              "id": "charm_duration_+%",
               "max": 15,
               "min": 5
             }
@@ -828,44 +790,6 @@
       ]
     },
     {
-      "family_key": "CriticalStrikeMultiplier",
-      "kind": "suffix",
-      "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Demolishing",
-          "text": "(10-20)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
-          "stats": [
-            {
-              "id": "attack_critical_strike_multiplier_+",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SpearCriticalDamage",
-      "kind": "suffix",
-      "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus] with [Spear|Spears]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Hunting",
-          "text": "(10-20)% increased [CriticalDamageBonus|Critical Damage Bonus] with [Spear|Spears]",
-          "stats": [
-            {
-              "id": "spear_critical_strike_multiplier_+",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "CriticalStrikeChanceIncrease",
       "kind": "suffix",
       "template": "#% increased [Critical|Critical Hit Chance] for [Attack|Attacks]",
@@ -879,6 +803,25 @@
               "id": "attack_critical_strike_chance_+%",
               "max": 16,
               "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CriticalStrikeMultiplier",
+      "kind": "suffix",
+      "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Demolishing",
+          "text": "(10-20)% increased [CriticalDamageBonus|Critical Damage Bonus] for [Attack] Damage",
+          "stats": [
+            {
+              "id": "attack_critical_strike_multiplier_+",
+              "max": 20,
+              "min": 10
             }
           ]
         }
@@ -904,6 +847,44 @@
       ]
     },
     {
+      "family_key": "CrossbowSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Attack] Speed with [Crossbow|Crossbows]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Rapidity",
+          "text": "(2-4)% increased [Attack] Speed with [Crossbow|Crossbows]",
+          "stats": [
+            {
+              "id": "crossbow_attack_speed_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "CurseCastSpeed",
+      "kind": "suffix",
+      "template": "[Mark] Skills have #% increased Use Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Targeting",
+          "text": "[Mark] Skills have (5-15)% increased Use Speed",
+          "stats": [
+            {
+              "id": "mark_use_speed_+%",
+              "max": 15,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "DamagingAilmentDuration",
       "kind": "suffix",
       "template": "#% increased Duration of [DamagingAilments|Damaging Ailments] on Enemies",
@@ -915,6 +896,44 @@
           "stats": [
             {
               "id": "damaging_ailment_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DazeBuildup",
+      "kind": "suffix",
+      "template": "#% chance to [Daze] on [HitDamage|Hit]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Dazing",
+          "text": "(5-10)% chance to [Daze] on [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "base_chance_to_daze_%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "DebuffTime",
+      "kind": "suffix",
+      "template": "[Debuff|Debuffs] on you expire #% faster",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Diminishing",
+          "text": "[Debuff|Debuffs] on you expire (5-10)% faster",
+          "stats": [
+            {
+              "id": "debuff_time_passed_+%",
               "max": 10,
               "min": 5
             }
@@ -942,38 +961,19 @@
       ]
     },
     {
-      "family_key": "BeltFlaskChargesGained",
+      "family_key": "FasterAilmentDamage",
       "kind": "suffix",
-      "template": "#% increased [Flask|Flask] Charges gained",
+      "template": "[DamagingAilments|Damaging Ailments] deal damage #% faster",
       "tiers": [
         {
           "level": 1,
-          "name": "of Gathering",
-          "text": "(5-10)% increased [Flask|Flask] Charges gained",
+          "name": "of Decrepifying",
+          "text": "[DamagingAilments|Damaging Ailments] deal damage (3-7)% faster",
           "stats": [
             {
-              "id": "flask_charges_gained_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "QuarterstaffFreezeBuildup",
-      "kind": "suffix",
-      "template": "#% increased [Freeze] Buildup with [Quarterstaff|Quarterstaves]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Glaciers",
-          "text": "(10-20)% increased [Freeze] Buildup with [Quarterstaff|Quarterstaves]",
-          "stats": [
-            {
-              "id": "quarterstaff_hit_damage_freeze_multiplier_+%",
-              "max": 20,
-              "min": 10
+              "id": "damaging_ailments_deal_damage_+%_faster",
+              "max": 7,
+              "min": 3
             }
           ]
         }
@@ -1010,291 +1010,6 @@
           "stats": [
             {
               "id": "mana_flask_charges_gained_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ParriedDebuff",
-      "kind": "suffix",
-      "template": "#% increased [ParriedDebuff|Parried Debuff] Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Unsettling",
-          "text": "(10-15)% increased [ParriedDebuff|Parried Debuff] Duration",
-          "stats": [
-            {
-              "id": "parry_skill_effect_duration_+%",
-              "max": 15,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PinBuildup",
-      "kind": "suffix",
-      "template": "#% increased [Pinned|Pin] Buildup",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Pinning",
-          "text": "(10-20)% increased [Pinned|Pin] Buildup",
-          "stats": [
-            {
-              "id": "hit_damage_pin_multiplier_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PoisonDuration",
-      "kind": "suffix",
-      "template": "#% increased [Poison] Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Infection",
-          "text": "(5-10)% increased [Poison] Duration",
-          "stats": [
-            {
-              "id": "base_poison_duration_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "StunThresholdDuringParry",
-      "kind": "suffix",
-      "template": "#% increased [StunThreshold|Stun Threshold] while [Parry|Parrying]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Biding",
-          "text": "(15-25)% increased [StunThreshold|Stun Threshold] while [Parry|Parrying]",
-          "stats": [
-            {
-              "id": "parry_stun_threshold_+%_during_parry",
-              "max": 25,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AilmentChance",
-      "kind": "suffix",
-      "template": "#% increased chance to inflict [Ailments]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Ailing",
-          "text": "(5-15)% increased chance to inflict [Ailments]",
-          "stats": [
-            {
-              "id": "ailment_chance_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SlowPotency",
-      "kind": "suffix",
-      "template": "#% reduced [Slow|Slowing] Potency of [Debuff|Debuffs] on You",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Hastening",
-          "text": "(10-5)% reduced [Slow|Slowing] Potency of [Debuff|Debuffs] on You",
-          "stats": [
-            {
-              "id": "base_slow_potency_+%",
-              "max": -5,
-              "min": -10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "FasterAilmentDamage",
-      "kind": "suffix",
-      "template": "[DamagingAilments|Damaging Ailments] deal damage #% faster",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Decrepifying",
-          "text": "[DamagingAilments|Damaging Ailments] deal damage (3-7)% faster",
-          "stats": [
-            {
-              "id": "damaging_ailments_deal_damage_+%_faster",
-              "max": 7,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DebuffTime",
-      "kind": "suffix",
-      "template": "[Debuff|Debuffs] on you expire #% faster",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Diminishing",
-          "text": "[Debuff|Debuffs] on you expire (5-10)% faster",
-          "stats": [
-            {
-              "id": "debuff_time_passed_+%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ForkingProjectiles",
-      "kind": "suffix",
-      "template": "Projectiles have #% chance for an additional Projectile when [Fork|Forking]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Forking",
-          "text": "Projectiles have (10-15)% chance for an additional Projectile when [Fork|Forking]",
-          "stats": [
-            {
-              "id": "chance_to_fork_extra_projectile_%",
-              "max": 15,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "ChainFromTerrain",
-      "kind": "suffix",
-      "template": "[Projectile|Projectiles] have #% chance to [Chain] an additional time from terrain",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Chaining",
-          "text": "[Projectile|Projectiles] have (3-5)% chance to [Chain] an additional time from terrain",
-          "stats": [
-            {
-              "id": "projectile_chance_to_chain_1_extra_time_from_terrain_%",
-              "max": 5,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "BlindOnHit",
-      "kind": "suffix",
-      "template": "#% chance to [Blind] Enemies on [HitDamage|Hit] with [Attack|Attacks]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Blinding",
-          "text": "(3-7)% chance to [Blind] Enemies on [HitDamage|Hit] with [Attack|Attacks]",
-          "stats": [
-            {
-              "id": "attacks_chance_to_blind_on_hit_%",
-              "max": 7,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "DazeBuildup",
-      "kind": "suffix",
-      "template": "#% chance to [Daze] on [HitDamage|Hit]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Dazing",
-          "text": "(5-10)% chance to [Daze] on [HitDamage|Hit]",
-          "stats": [
-            {
-              "id": "base_chance_to_daze_%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "PoisonChanceIncrease",
-      "kind": "suffix",
-      "template": "#% chance to [Poison|Poison] on [HitDamage|Hit]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Poisoning",
-          "text": "(5-10)% chance to [Poison|Poison] on [HitDamage|Hit]",
-          "stats": [
-            {
-              "id": "base_chance_to_poison_on_hit_%",
-              "max": 10,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "CharmDuration",
-      "kind": "suffix",
-      "template": "#% increased [Charm] Effect Duration",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Woodland",
-          "text": "(5-15)% increased [Charm] Effect Duration",
-          "stats": [
-            {
-              "id": "charm_duration_+%",
-              "max": 15,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "AilmentThreshold",
-      "kind": "suffix",
-      "template": "#% increased [AilmentThreshold|Elemental Ailment Threshold]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Enduring",
-          "text": "(10-20)% increased [AilmentThreshold|Elemental Ailment Threshold]",
-          "stats": [
-            {
-              "id": "ailment_threshold_+%",
               "max": 20,
               "min": 10
             }
@@ -1360,19 +1075,38 @@
       ]
     },
     {
-      "family_key": "ShockDuration",
+      "family_key": "ForkingProjectiles",
       "kind": "suffix",
-      "template": "#% increased [Shock] Duration",
+      "template": "Projectiles have #% chance for an additional Projectile when [Fork|Forking]",
       "tiers": [
         {
           "level": 1,
-          "name": "of Paralyzing",
-          "text": "(15-25)% increased [Shock] Duration",
+          "name": "of Forking",
+          "text": "Projectiles have (10-15)% chance for an additional Projectile when [Fork|Forking]",
           "stats": [
             {
-              "id": "shock_duration_+%",
-              "max": 25,
-              "min": 15
+              "id": "chance_to_fork_extra_projectile_%",
+              "max": 15,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "IncreasedAttackSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Attack] Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Alacrity",
+          "text": "(2-4)% increased [Attack] Speed",
+          "stats": [
+            {
+              "id": "attack_speed_+%",
+              "max": 4,
+              "min": 2
             }
           ]
         }
@@ -1390,6 +1124,44 @@
           "stats": [
             {
               "id": "stun_threshold_+%_when_not_stunned_recently",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "JewelRadiusNotableEffect",
+      "kind": "suffix",
+      "template": "#% increased Effect of Notable Passive Skills in Radius",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Supremacy",
+          "text": "(15-25)% increased Effect of Notable Passive Skills in Radius",
+          "stats": [
+            {
+              "id": "local_jewel_notable_passive_in_radius_effect_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "JewelRadiusSmallNodeEffect",
+      "kind": "suffix",
+      "template": "#% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Potency",
+          "text": "(15-25)% increased Effect of [SmallPassive|Small Passive] Skills in Radius",
+          "stats": [
+            {
+              "id": "local_jewel_small_passive_in_radius_effect_+%",
               "max": 25,
               "min": 15
             }
@@ -1417,25 +1189,6 @@
       ]
     },
     {
-      "family_key": "ShockChanceIncrease",
-      "kind": "suffix",
-      "template": "#% increased chance to [Shock]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Shocking",
-          "text": "(10-20)% increased chance to [Shock]",
-          "stats": [
-            {
-              "id": "shock_chance_+%",
-              "max": 20,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "MarkDuration",
       "kind": "suffix",
       "template": "[Mark] Skills have #% increased Skill Effect Duration",
@@ -1455,19 +1208,266 @@
       ]
     },
     {
-      "family_key": "CurseCastSpeed",
+      "family_key": "MovementVelocity",
       "kind": "suffix",
-      "template": "[Mark] Skills have #% increased Use Speed",
+      "template": "#% increased Movement Speed",
       "tiers": [
         {
           "level": 1,
-          "name": "of Targeting",
-          "text": "[Mark] Skills have (5-15)% increased Use Speed",
+          "name": "of Speed",
+          "text": "(1-2)% increased Movement Speed",
           "stats": [
             {
-              "id": "mark_use_speed_+%",
+              "id": "base_movement_velocity_+%",
+              "max": 2,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ParriedDebuff",
+      "kind": "suffix",
+      "template": "#% increased [ParriedDebuff|Parried Debuff] Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Unsettling",
+          "text": "(10-15)% increased [ParriedDebuff|Parried Debuff] Duration",
+          "stats": [
+            {
+              "id": "parry_skill_effect_duration_+%",
               "max": 15,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PinBuildup",
+      "kind": "suffix",
+      "template": "#% increased [Pinned|Pin] Buildup",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Pinning",
+          "text": "(10-20)% increased [Pinned|Pin] Buildup",
+          "stats": [
+            {
+              "id": "hit_damage_pin_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonChanceIncrease",
+      "kind": "suffix",
+      "template": "#% chance to [Poison|Poison] on [HitDamage|Hit]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Poisoning",
+          "text": "(5-10)% chance to [Poison|Poison] on [HitDamage|Hit]",
+          "stats": [
+            {
+              "id": "base_chance_to_poison_on_hit_%",
+              "max": 10,
               "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "PoisonDuration",
+      "kind": "suffix",
+      "template": "#% increased [Poison] Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Infection",
+          "text": "(5-10)% increased [Poison] Duration",
+          "stats": [
+            {
+              "id": "base_poison_duration_+%",
+              "max": 10,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "QuarterstaffFreezeBuildup",
+      "kind": "suffix",
+      "template": "#% increased [Freeze] Buildup with [Quarterstaff|Quarterstaves]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Glaciers",
+          "text": "(10-20)% increased [Freeze] Buildup with [Quarterstaff|Quarterstaves]",
+          "stats": [
+            {
+              "id": "quarterstaff_hit_damage_freeze_multiplier_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockChanceIncrease",
+      "kind": "suffix",
+      "template": "#% increased chance to [Shock]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Shocking",
+          "text": "(10-20)% increased chance to [Shock]",
+          "stats": [
+            {
+              "id": "shock_chance_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "ShockDuration",
+      "kind": "suffix",
+      "template": "#% increased [Shock] Duration",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Paralyzing",
+          "text": "(15-25)% increased [Shock] Duration",
+          "stats": [
+            {
+              "id": "shock_duration_+%",
+              "max": 25,
+              "min": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SlowPotency",
+      "kind": "suffix",
+      "template": "#% reduced [Slow|Slowing] Potency of [Debuff|Debuffs] on You",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Hastening",
+          "text": "(10-5)% reduced [Slow|Slowing] Potency of [Debuff|Debuffs] on You",
+          "stats": [
+            {
+              "id": "base_slow_potency_+%",
+              "max": -5,
+              "min": -10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpearAttackSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Attack] Speed with [Spear|Spears]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Spearing",
+          "text": "(2-4)% increased [Attack] Speed with [Spear|Spears]",
+          "stats": [
+            {
+              "id": "spear_attack_speed_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpearCriticalDamage",
+      "kind": "suffix",
+      "template": "#% increased [CriticalDamageBonus|Critical Damage Bonus] with [Spear|Spears]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Hunting",
+          "text": "(10-20)% increased [CriticalDamageBonus|Critical Damage Bonus] with [Spear|Spears]",
+          "stats": [
+            {
+              "id": "spear_critical_strike_multiplier_+",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Attack] Speed with Bows",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Nocking",
+          "text": "(2-4)% increased [Attack] Speed with Bows",
+          "stats": [
+            {
+              "id": "bow_attack_speed_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SpecificWeaponSpeed",
+      "kind": "suffix",
+      "template": "#% increased [Attack] Speed with [Quarterstaff|Quarterstaves]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Sequencing",
+          "text": "(2-4)% increased [Attack] Speed with [Quarterstaff|Quarterstaves]",
+          "stats": [
+            {
+              "id": "quarterstaff_attack_speed_+%",
+              "max": 4,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "StunThresholdDuringParry",
+      "kind": "suffix",
+      "template": "#% increased [StunThreshold|Stun Threshold] while [Parry|Parrying]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Biding",
+          "text": "(15-25)% increased [StunThreshold|Stun Threshold] while [Parry|Parrying]",
+          "stats": [
+            {
+              "id": "parry_stun_threshold_+%_during_parry",
+              "max": 25,
+              "min": 15
             }
           ]
         }

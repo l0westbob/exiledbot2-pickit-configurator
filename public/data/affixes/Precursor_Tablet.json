@@ -1,82 +1,6 @@
 {
   "affixes": [
     {
-      "family_key": "MapExperienceGainIncrease",
-      "kind": "prefix",
-      "template": "#% increased Experience gain",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Elevated",
-          "text": "(25-34)% increased Experience gain",
-          "stats": [
-            {
-              "id": "map_experience_gain_+%",
-              "max": 34,
-              "min": 25
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapDroppedGoldIncrease",
-      "kind": "prefix",
-      "template": "#% increased Gold found in this Area",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bountiful",
-          "text": "(55-75)% increased Gold found in this Area",
-          "stats": [
-            {
-              "id": "map_extra_gold_piles_chance_%",
-              "max": 75,
-              "min": 55
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapPackSizeIncrease",
-      "kind": "prefix",
-      "template": "#% increased Pack size",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Breeding",
-          "text": "(21-30)% increased Pack size",
-          "stats": [
-            {
-              "id": "map_pack_size_+%",
-              "max": 30,
-              "min": 21
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapDroppedItemRarityIncrease",
-      "kind": "prefix",
-      "template": "#% increased [Rarity] of Items found in this Area",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Collector's",
-          "text": "(50-65)% increased [Rarity] of Items found in this Area",
-          "stats": [
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 65,
-              "min": 50
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "MapAdditionalAzmeriWisp",
       "kind": "prefix",
       "template": "Map contains # additional [AzmeriSpirit|Azmeri Spirit]",
@@ -88,6 +12,54 @@
           "stats": [
             {
               "id": "map_spawn_extra_torment_spirits",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 0,
+              "min": 0
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalChests",
+      "kind": "prefix",
+      "template": "Map contains # additional [Rarity|Rare] Chests",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Treasurer's",
+          "text": "Map contains (2-3) additional [Rarity|Rare] Chests",
+          "stats": [
+            {
+              "id": "map_addtional_rare_chest_amount",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "kind": "prefix",
+      "template": "Map contains an additional [Essence]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Crystallised",
+          "text": "Map contains an additional [Essence]",
+          "stats": [
+            {
+              "id": "map_extra_monoliths",
               "max": 1,
               "min": 1
             },
@@ -135,54 +107,6 @@
       ]
     },
     {
-      "family_key": "MapAdditionalChests",
-      "kind": "prefix",
-      "template": "Map contains # additional [Rarity|Rare] Chests",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Treasurer's",
-          "text": "Map contains (2-3) additional [Rarity|Rare] Chests",
-          "stats": [
-            {
-              "id": "map_addtional_rare_chest_amount",
-              "max": 3,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalEssence",
-      "kind": "prefix",
-      "template": "Area contains an additional [Essence] #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Crystallised",
-          "text": "Area contains an additional [Essence] 10% increased [Waystone|Waystones] found in Area 10% increased [Rarity] of Items found in this Area",
-          "stats": [
-            {
-              "id": "map_extra_monoliths",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 10,
-              "min": 10
-            },
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 10,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "MapAdditionalStoneCircle",
       "kind": "prefix",
       "template": "Map contains an additional [StoneSummoningCircle|Summoning Circle]",
@@ -202,38 +126,76 @@
       ]
     },
     {
-      "family_key": "MapMagicPackIncrease",
+      "family_key": "MapDroppedGoldIncrease",
       "kind": "prefix",
-      "template": "#% increased number of [Rarity|Magic] Monsters",
+      "template": "#% increased Gold found in Map",
       "tiers": [
         {
           "level": 1,
-          "name": "Teeming",
-          "text": "(35-49)% increased number of [Rarity|Magic] Monsters",
+          "name": "Bountiful",
+          "text": "(25-40)% increased Gold found in Map",
           "stats": [
             {
-              "id": "map_number_of_magic_packs_+%",
-              "max": 49,
-              "min": 35
+              "id": "map_extra_gold_piles_chance_%",
+              "max": 40,
+              "min": 25
             }
           ]
         }
       ]
     },
     {
-      "family_key": "MapRarePackIncrease",
+      "family_key": "MapDroppedItemRarityIncrease",
       "kind": "prefix",
-      "template": "#% increased number of [Rarity|Rare] Monsters",
+      "template": "#% increased [Rarity] of Items found in Map",
       "tiers": [
         {
           "level": 1,
-          "name": "Brimming",
-          "text": "(25-34)% increased number of [Rarity|Rare] Monsters",
+          "name": "Collector's",
+          "text": "(18-30)% increased [Rarity] of Items found in Map",
           "stats": [
             {
-              "id": "map_number_of_rare_packs_+%",
-              "max": 34,
-              "min": 25
+              "id": "map_item_drop_rarity_+%",
+              "max": 30,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapExperienceGainIncrease",
+      "kind": "prefix",
+      "template": "#% increased Experience gain in Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Elevated",
+          "text": "(10-20)% increased Experience gain in Map",
+          "stats": [
+            {
+              "id": "map_experience_gain_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMagicPackIncrease",
+      "kind": "prefix",
+      "template": "Map has #% increased [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Teeming",
+          "text": "Map has (50-70)% increased [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 70,
+              "min": 50
             }
           ]
         }
@@ -259,115 +221,38 @@
       ]
     },
     {
-      "family_key": "MapDroppedMapsIncrease",
-      "kind": "suffix",
-      "template": "#% increased Quantity of [Waystone|Waystones] found in Map",
+      "family_key": "MapPackSizeIncrease",
+      "kind": "prefix",
+      "template": "#% increased Pack Size in Map",
       "tiers": [
         {
           "level": 1,
-          "name": "of the Cartographer",
-          "text": "(30-50)% increased Quantity of [Waystone|Waystones] found in Map",
+          "name": "Breeding",
+          "text": "(6-10)% increased Pack Size in Map",
           "stats": [
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 50,
-              "min": 30
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalShrine",
-      "kind": "suffix",
-      "template": "Map contains an additional [Shrine]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Devoted",
-          "text": "Map contains an additional [Shrine]",
-          "stats": [
-            {
-              "id": "map_num_extra_shrines",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 0,
-              "min": 0
-            },
             {
               "id": "map_pack_size_+%",
-              "max": 0,
-              "min": 0
+              "max": 10,
+              "min": 6
             }
           ]
         }
       ]
     },
     {
-      "family_key": "MapAdditionalStrongbox",
-      "kind": "suffix",
-      "template": "Map contains an additional [Strongbox]",
+      "family_key": "MapRarePackIncrease",
+      "kind": "prefix",
+      "template": "Map has #% increased number of [Rarity|Rare] Monsters",
       "tiers": [
         {
           "level": 1,
-          "name": "of the Antiquarian",
-          "text": "Map contains an additional [Strongbox]",
+          "name": "Brimming",
+          "text": "Map has (25-40)% increased number of [Rarity|Rare] Monsters",
           "stats": [
             {
-              "id": "map_num_extra_strongboxes",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 0,
-              "min": 0
-            },
-            {
-              "id": "map_pack_size_+%",
-              "max": 0,
-              "min": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalModifier",
-      "kind": "suffix",
-      "template": "Map has # additional random Modifiers",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Undertaking",
-          "text": "Map has (1-2) additional random Modifiers",
-          "stats": [
-            {
-              "id": "map_number_of_additional_mods",
-              "max": 2,
-              "min": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalSpirit",
-      "kind": "suffix",
-      "template": "Map has #% increased chance to contain [AzmeriSpirit|Azmeri Spirits]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Spirits",
-          "text": "Map has (70-100)% increased chance to contain [AzmeriSpirit|Azmeri Spirits]",
-          "stats": [
-            {
-              "id": "map_tormented_spirit_chance_+%",
-              "max": 100,
-              "min": 70
+              "id": "map_number_of_rare_packs_+%",
+              "max": 40,
+              "min": 25
             }
           ]
         }
@@ -412,6 +297,54 @@
       ]
     },
     {
+      "family_key": "MapAdditionalModifier",
+      "kind": "suffix",
+      "template": "Map has # additional random Modifiers",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Undertaking",
+          "text": "Map has (1-2) additional random Modifiers",
+          "stats": [
+            {
+              "id": "map_number_of_additional_mods",
+              "max": 2,
+              "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalShrine",
+      "kind": "suffix",
+      "template": "Map contains an additional [Shrine]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Devoted",
+          "text": "Map contains an additional [Shrine]",
+          "stats": [
+            {
+              "id": "map_num_extra_shrines",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 0,
+              "min": 0
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "MapAdditionalShrine",
       "kind": "suffix",
       "template": "Map has #% increased chance to contain [Shrine|Shrines]",
@@ -431,17 +364,17 @@
       ]
     },
     {
-      "family_key": "MapAdditionalStrongbox",
+      "family_key": "MapAdditionalSpirit",
       "kind": "suffix",
-      "template": "Map has #% increased chance to contain [Strongbox|Strongboxes]",
+      "template": "Map has #% increased chance to contain [AzmeriSpirit|Azmeri Spirits]",
       "tiers": [
         {
           "level": 1,
-          "name": "of Strongboxes",
-          "text": "Map has (70-100)% increased chance to contain [Strongbox|Strongboxes]",
+          "name": "of Spirits",
+          "text": "Map has (70-100)% increased chance to contain [AzmeriSpirit|Azmeri Spirits]",
           "stats": [
             {
-              "id": "map_strongbox_chance_+%",
+              "id": "map_tormented_spirit_chance_+%",
               "max": 100,
               "min": 70
             }
@@ -469,19 +402,48 @@
       ]
     },
     {
-      "family_key": "MapRareMonstersAdditionalModifier",
+      "family_key": "MapAdditionalStrongbox",
       "kind": "suffix",
-      "template": "[Rarity|Rare] Monsters in Map have a #% chance to have an additional Modifier",
+      "template": "Map contains an additional [Strongbox]",
       "tiers": [
         {
           "level": 1,
-          "name": "of the Nemesis",
-          "text": "[Rarity|Rare] Monsters in Map have a (50-80)% chance to have an additional Modifier",
+          "name": "of the Antiquarian",
+          "text": "Map contains an additional [Strongbox]",
           "stats": [
             {
-              "id": "map_rare_monster_additional_modifier_chance_%_with_rollover",
-              "max": 80,
-              "min": 50
+              "id": "map_num_extra_strongboxes",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 0,
+              "min": 0
+            },
+            {
+              "id": "map_pack_size_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalStrongbox",
+      "kind": "suffix",
+      "template": "Map has #% increased chance to contain [Strongbox|Strongboxes]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Strongboxes",
+          "text": "Map has (70-100)% increased chance to contain [Strongbox|Strongboxes]",
+          "stats": [
+            {
+              "id": "map_strongbox_chance_+%",
+              "max": 100,
+              "min": 70
             }
           ]
         }
@@ -501,6 +463,44 @@
               "id": "map_unique_monster_num_additional_modifiers",
               "max": 1,
               "min": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapDroppedMapsIncrease",
+      "kind": "suffix",
+      "template": "#% increased Quantity of [Waystone|Waystones] found in Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Cartographer",
+          "text": "(30-50)% increased Quantity of [Waystone|Waystones] found in Map",
+          "stats": [
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 50,
+              "min": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapRareMonstersAdditionalModifier",
+      "kind": "suffix",
+      "template": "[Rarity|Rare] Monsters in Map have a #% chance to have an additional Modifier",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Nemesis",
+          "text": "[Rarity|Rare] Monsters in Map have a (50-80)% chance to have an additional Modifier",
+          "stats": [
+            {
+              "id": "map_rare_monster_additional_modifier_chance_%_with_rollover",
+              "max": 80,
+              "min": 50
             }
           ]
         }

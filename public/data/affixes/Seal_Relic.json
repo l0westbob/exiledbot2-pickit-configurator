@@ -56,116 +56,6 @@
       ]
     },
     {
-      "family_key": "SanctumResolveRecovery",
-      "kind": "prefix",
-      "template": "#% increased [Honour] restored",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Revitalising",
-          "text": "(16-20)% increased [Honour] restored",
-          "stats": [
-            {
-              "id": "sanctum_honour_restored_+%",
-              "max": 20,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 50,
-          "name": "Galvanising",
-          "text": "(21-24)% increased [Honour] restored",
-          "stats": [
-            {
-              "id": "sanctum_honour_restored_+%",
-              "max": 24,
-              "min": 21
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "name": "Enlivening",
-          "text": "(25-29)% increased [Honour] restored",
-          "stats": [
-            {
-              "id": "sanctum_honour_restored_+%",
-              "max": 29,
-              "min": 25
-            }
-          ]
-        },
-        {
-          "level": 75,
-          "name": "Emboldening",
-          "text": "(30-34)% increased [Honour] restored",
-          "stats": [
-            {
-              "id": "sanctum_honour_restored_+%",
-              "max": 34,
-              "min": 30
-            }
-          ]
-        },
-        {
-          "level": 80,
-          "name": "Brightening",
-          "text": "(35-45)% increased [Honour] restored",
-          "stats": [
-            {
-              "id": "sanctum_honour_restored_+%",
-              "max": 45,
-              "min": 35
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumMovementSpeed",
-      "kind": "prefix",
-      "template": "#% increased Movement Speed",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Nimble",
-          "text": "(3-4)% increased Movement Speed",
-          "stats": [
-            {
-              "id": "map_players_movement_speed_+%",
-              "max": 4,
-              "min": 3
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "Swift",
-          "text": "(5-6)% increased Movement Speed",
-          "stats": [
-            {
-              "id": "map_players_movement_speed_+%",
-              "max": 6,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 78,
-          "name": "Hasted",
-          "text": "(7-10)% increased Movement Speed",
-          "stats": [
-            {
-              "id": "map_players_movement_speed_+%",
-              "max": 10,
-              "min": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "SanctumMaximumHonour",
       "kind": "prefix",
       "template": "#% increased maximum [Honour]",
@@ -300,6 +190,116 @@
       ]
     },
     {
+      "family_key": "SanctumMovementSpeed",
+      "kind": "prefix",
+      "template": "#% increased Movement Speed",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Nimble",
+          "text": "(3-4)% increased Movement Speed",
+          "stats": [
+            {
+              "id": "map_players_movement_speed_+%",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "Swift",
+          "text": "(5-6)% increased Movement Speed",
+          "stats": [
+            {
+              "id": "map_players_movement_speed_+%",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "Hasted",
+          "text": "(7-10)% increased Movement Speed",
+          "stats": [
+            {
+              "id": "map_players_movement_speed_+%",
+              "max": 10,
+              "min": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumResolveRecovery",
+      "kind": "prefix",
+      "template": "#% increased [Honour] restored",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Revitalising",
+          "text": "(6-10)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 10,
+              "min": 6
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "name": "Galvanising",
+          "text": "(11-15)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "Enlivening",
+          "text": "(16-20)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 20,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "name": "Emboldening",
+          "text": "(21-24)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 24,
+              "min": 21
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "name": "Brightening",
+          "text": "(25-29)% increased [Honour] restored",
+          "stats": [
+            {
+              "id": "sanctum_honour_restored_+%",
+              "max": 29,
+              "min": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "SanctumStartingGold",
       "kind": "prefix",
       "template": "Gain # [SacredWater|Sacred Water] at the start of the Trial",
@@ -337,6 +337,159 @@
               "id": "sanctum_starting_gold",
               "max": 49,
               "min": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumDodgeRollDistance",
+      "kind": "suffix",
+      "template": "+(#.#-#.#) metres to Dodge Roll distance",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Lunging",
+          "text": "+(0.3-0.4) metres to Dodge Roll distance",
+          "stats": [
+            {
+              "id": "map_player_dodge_roll_base_travel_distance",
+              "max": 4,
+              "min": 3
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "of Eluding",
+          "text": "+(0.5-0.7) metres to Dodge Roll distance",
+          "stats": [
+            {
+              "id": "map_player_dodge_roll_base_travel_distance",
+              "max": 7,
+              "min": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumFountainDoubleGoldChance",
+      "kind": "suffix",
+      "template": "Fountains have #% chance to grant double [SacredWater|Sacred Water]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Flowing",
+          "text": "Fountains have (5-6)% chance to grant double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_fountain_double_gold_%",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 35,
+          "name": "of Brimming",
+          "text": "Fountains have (7-8)% chance to grant double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_fountain_double_gold_%",
+              "max": 8,
+              "min": 7
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "of Overflowing",
+          "text": "Fountains have (9-10)% chance to grant double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_fountain_double_gold_%",
+              "max": 10,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "of Abundance",
+          "text": "Fountains have (11-15)% chance to grant double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_fountain_double_gold_%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumHonourResistance",
+      "kind": "suffix",
+      "template": "+#% to [HonourResistance|Honour Resistance]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Worth",
+          "text": "+(8-10)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 10,
+              "min": 8
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "name": "of Deserving",
+          "text": "+(11-13)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 13,
+              "min": 11
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Justification",
+          "text": "+(14-16)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 16,
+              "min": 14
+            }
+          ]
+        },
+        {
+          "level": 67,
+          "name": "of Entitlement",
+          "text": "+(17-19)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 19,
+              "min": 17
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Merit",
+          "text": "+(20-22)% to [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_honour_resistance_%",
+              "max": 22,
+              "min": 20
             }
           ]
         }
@@ -392,6 +545,104 @@
               "id": "map_sanctum_key_drop_chance_+%",
               "max": 25,
               "min": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumMonstersDoubleGoldChance",
+      "kind": "suffix",
+      "template": "Monsters have #% chance to drop double [SacredWater|Sacred Water]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Dampening",
+          "text": "Monsters have (5-6)% chance to drop double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_monster_double_gold_%",
+              "max": 6,
+              "min": 5
+            }
+          ]
+        },
+        {
+          "level": 35,
+          "name": "of Soaking",
+          "text": "Monsters have (7-8)% chance to drop double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_monster_double_gold_%",
+              "max": 8,
+              "min": 7
+            }
+          ]
+        },
+        {
+          "level": 54,
+          "name": "of Drenching",
+          "text": "Monsters have (9-10)% chance to drop double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_monster_double_gold_%",
+              "max": 10,
+              "min": 9
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "name": "of Saturating",
+          "text": "Monsters have (11-15)% chance to drop double [SacredWater|Sacred Water]",
+          "stats": [
+            {
+              "id": "sanctum_monster_double_gold_%",
+              "max": 15,
+              "min": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumReducedCritDamage",
+      "kind": "suffix",
+      "template": "Hits against you have #% reduced [CriticalDamageBonus|Critical Damage Bonus]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Stoutness",
+          "text": "Hits against you have (12-15)% reduced [CriticalDamageBonus|Critical Damage Bonus]",
+          "stats": [
+            {
+              "id": "map_player_base_self_critical_strike_multiplier_-%",
+              "max": 15,
+              "min": 12
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "name": "of Tenacity",
+          "text": "Hits against you have (16-19)% reduced [CriticalDamageBonus|Critical Damage Bonus]",
+          "stats": [
+            {
+              "id": "map_player_base_self_critical_strike_multiplier_-%",
+              "max": 19,
+              "min": 16
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Unwavering",
+          "text": "Hits against you have (20-25)% reduced [CriticalDamageBonus|Critical Damage Bonus]",
+          "stats": [
+            {
+              "id": "map_player_base_self_critical_strike_multiplier_-%",
+              "max": 25,
+              "min": 20
             }
           ]
         }
@@ -478,257 +729,6 @@
               "id": "map_player_base_slow_potency_+%",
               "max": -16,
               "min": -20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumDodgeRollDistance",
-      "kind": "suffix",
-      "template": "+(#.#-#.#) metres to Dodge Roll distance",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Lunging",
-          "text": "+(0.3-0.4) metres to Dodge Roll distance",
-          "stats": [
-            {
-              "id": "map_player_dodge_roll_base_travel_distance",
-              "max": 4,
-              "min": 3
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "name": "of Eluding",
-          "text": "+(0.5-0.7) metres to Dodge Roll distance",
-          "stats": [
-            {
-              "id": "map_player_dodge_roll_base_travel_distance",
-              "max": 7,
-              "min": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumHonourResistance",
-      "kind": "suffix",
-      "template": "+#% to [HonourResistance|Honour Resistance]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Worth",
-          "text": "+(8-10)% to [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_honour_resistance_%",
-              "max": 10,
-              "min": 8
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "name": "of Deserving",
-          "text": "+(11-13)% to [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_honour_resistance_%",
-              "max": 13,
-              "min": 11
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "of Justification",
-          "text": "+(14-16)% to [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_honour_resistance_%",
-              "max": 16,
-              "min": 14
-            }
-          ]
-        },
-        {
-          "level": 67,
-          "name": "of Entitlement",
-          "text": "+(17-19)% to [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_honour_resistance_%",
-              "max": 19,
-              "min": 17
-            }
-          ]
-        },
-        {
-          "level": 76,
-          "name": "of Merit",
-          "text": "+(20-22)% to [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_honour_resistance_%",
-              "max": 22,
-              "min": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumFountainDoubleGoldChance",
-      "kind": "suffix",
-      "template": "Fountains have #% chance to grant double [SacredWater|Sacred Water]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Flowing",
-          "text": "Fountains have (5-6)% chance to grant double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_fountain_double_gold_%",
-              "max": 6,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 35,
-          "name": "of Brimming",
-          "text": "Fountains have (7-8)% chance to grant double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_fountain_double_gold_%",
-              "max": 8,
-              "min": 7
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "of Overflowing",
-          "text": "Fountains have (9-10)% chance to grant double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_fountain_double_gold_%",
-              "max": 10,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "name": "of Abundance",
-          "text": "Fountains have (11-15)% chance to grant double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_fountain_double_gold_%",
-              "max": 15,
-              "min": 11
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumReducedCritDamage",
-      "kind": "suffix",
-      "template": "Hits against you have #% reduced [CriticalDamageBonus|Critical Damage Bonus]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Stoutness",
-          "text": "Hits against you have (12-15)% reduced [CriticalDamageBonus|Critical Damage Bonus]",
-          "stats": [
-            {
-              "id": "map_player_base_self_critical_strike_multiplier_-%",
-              "max": 15,
-              "min": 12
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "name": "of Tenacity",
-          "text": "Hits against you have (16-19)% reduced [CriticalDamageBonus|Critical Damage Bonus]",
-          "stats": [
-            {
-              "id": "map_player_base_self_critical_strike_multiplier_-%",
-              "max": 19,
-              "min": 16
-            }
-          ]
-        },
-        {
-          "level": 76,
-          "name": "of Unwavering",
-          "text": "Hits against you have (20-25)% reduced [CriticalDamageBonus|Critical Damage Bonus]",
-          "stats": [
-            {
-              "id": "map_player_base_self_critical_strike_multiplier_-%",
-              "max": 25,
-              "min": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumMonstersDoubleGoldChance",
-      "kind": "suffix",
-      "template": "Monsters have #% chance to drop double [SacredWater|Sacred Water]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Dampening",
-          "text": "Monsters have (5-6)% chance to drop double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_monster_double_gold_%",
-              "max": 6,
-              "min": 5
-            }
-          ]
-        },
-        {
-          "level": 35,
-          "name": "of Soaking",
-          "text": "Monsters have (7-8)% chance to drop double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_monster_double_gold_%",
-              "max": 8,
-              "min": 7
-            }
-          ]
-        },
-        {
-          "level": 54,
-          "name": "of Drenching",
-          "text": "Monsters have (9-10)% chance to drop double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_monster_double_gold_%",
-              "max": 10,
-              "min": 9
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "name": "of Saturating",
-          "text": "Monsters have (11-15)% chance to drop double [SacredWater|Sacred Water]",
-          "stats": [
-            {
-              "id": "sanctum_monster_double_gold_%",
-              "max": 15,
-              "min": 11
             }
           ]
         }

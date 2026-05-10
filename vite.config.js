@@ -5,5 +5,9 @@ import vue from "@vitejs/plugin-vue"
 export default defineConfig({
     plugins: [vue()],
     // IMPORTANT for GitHub Pages: repo name as base
-    base: "/exiledbot2-pickit-configurator/"
+    base: "/exiledbot2-pickit-configurator/",
+    test: {
+        environment: "jsdom",
+        globals: true,
+    },
 })

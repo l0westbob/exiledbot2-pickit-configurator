@@ -1,43 +1,43 @@
 {
   "affixes": [
     {
-      "family_key": "SanctumKeyUpgradeChance",
+      "family_key": "SanctumAdditionalKeyChance",
       "kind": "prefix",
-      "template": "#% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+      "template": "When you gain a [SekhemaKeys|Key] #% chance to gain another",
       "tiers": [
         {
           "level": 1,
-          "name": "Enhancing",
-          "text": "(3-4)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+          "name": "Pilferer's",
+          "text": "When you gain a [SekhemaKeys|Key] (7-9)% chance to gain another",
           "stats": [
             {
-              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
-              "max": 4,
-              "min": 3
+              "id": "sanctum_additional_key_chance_%",
+              "max": 9,
+              "min": 7
             }
           ]
         },
         {
           "level": 60,
-          "name": "Reforging",
-          "text": "(5-6)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+          "name": "Picklock's",
+          "text": "When you gain a [SekhemaKeys|Key] (10-12)% chance to gain another",
           "stats": [
             {
-              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
-              "max": 6,
-              "min": 5
+              "id": "sanctum_additional_key_chance_%",
+              "max": 12,
+              "min": 10
             }
           ]
         },
         {
-          "level": 77,
-          "name": "Upgrading",
-          "text": "(7-9)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
+          "level": 78,
+          "name": "Thief's",
+          "text": "When you gain a [SekhemaKeys|Key] (13-16)% chance to gain another",
           "stats": [
             {
-              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
-              "max": 9,
-              "min": 7
+              "id": "sanctum_additional_key_chance_%",
+              "max": 16,
+              "min": 13
             }
           ]
         }
@@ -75,50 +75,43 @@
       ]
     },
     {
-      "family_key": "SanctumMonstersReducedDamage",
+      "family_key": "SanctumKeyUpgradeChance",
       "kind": "prefix",
-      "template": "Monsters deal #% reduced Damage",
+      "template": "#% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
       "tiers": [
         {
           "level": 1,
-          "name": "Resilient",
-          "text": "Monsters deal 6% reduced Damage",
+          "name": "Enhancing",
+          "text": "(3-4)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
           "stats": [
             {
-              "id": "map_monsters_damage_+%",
-              "max": -6,
-              "min": -6
+              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
+              "max": 4,
+              "min": 3
             }
           ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumMonstersReducedDamage",
-      "kind": "prefix",
-      "template": "Monsters deal #% reduced Damage",
-      "tiers": [
+        },
         {
-          "level": 56,
-          "name": "Fortified",
-          "text": "Monsters deal (8-7)% reduced Damage",
+          "level": 60,
+          "name": "Reforging",
+          "text": "(5-6)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
           "stats": [
             {
-              "id": "map_monsters_damage_+%",
-              "max": -7,
-              "min": -8
+              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
+              "max": 6,
+              "min": 5
             }
           ]
         },
         {
           "level": 77,
-          "name": "Impenetrable",
-          "text": "Monsters deal (12-9)% reduced Damage",
+          "name": "Upgrading",
+          "text": "(7-9)% chance for each of your [SekhemaKeys|Keys] to upgrade on completing a Floor",
           "stats": [
             {
-              "id": "map_monsters_damage_+%",
-              "max": -9,
-              "min": -12
+              "id": "sanctum_chance_to_upgrade_key_on_floor_completed_%",
+              "max": 9,
+              "min": 7
             }
           ]
         }
@@ -218,74 +211,50 @@
       ]
     },
     {
-      "family_key": "SanctumAdditionalKeyChance",
+      "family_key": "SanctumMonstersReducedDamage",
       "kind": "prefix",
-      "template": "When you gain a [SekhemaKeys|Key] #% chance to gain another",
+      "template": "Monsters deal #% reduced Damage",
       "tiers": [
         {
           "level": 1,
-          "name": "Pilferer's",
-          "text": "When you gain a [SekhemaKeys|Key] (7-9)% chance to gain another",
+          "name": "Resilient",
+          "text": "Monsters deal 6% reduced Damage",
           "stats": [
             {
-              "id": "sanctum_additional_key_chance_%",
-              "max": 9,
-              "min": 7
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "name": "Picklock's",
-          "text": "When you gain a [SekhemaKeys|Key] (10-12)% chance to gain another",
-          "stats": [
-            {
-              "id": "sanctum_additional_key_chance_%",
-              "max": 12,
-              "min": 10
-            }
-          ]
-        },
-        {
-          "level": 78,
-          "name": "Thief's",
-          "text": "When you gain a [SekhemaKeys|Key] (13-16)% chance to gain another",
-          "stats": [
-            {
-              "id": "sanctum_additional_key_chance_%",
-              "max": 16,
-              "min": 13
+              "id": "map_monsters_damage_+%",
+              "max": -6,
+              "min": -6
             }
           ]
         }
       ]
     },
     {
-      "family_key": "SanctumRevealExtraRoomEachFloor",
-      "kind": "suffix",
-      "template": "An additional Room is revealed on the Trial Map",
+      "family_key": "SanctumMonstersReducedDamage",
+      "kind": "prefix",
+      "template": "Monsters deal #% reduced Damage",
       "tiers": [
         {
-          "level": 1,
-          "name": "of Illumination",
-          "text": "An additional Room is revealed on the Trial Map",
+          "level": 56,
+          "name": "Fortified",
+          "text": "Monsters deal (8-7)% reduced Damage",
           "stats": [
             {
-              "id": "sanctum_map_reveal_extra_room_each_floor",
-              "max": 1,
-              "min": 1
+              "id": "map_monsters_damage_+%",
+              "max": -7,
+              "min": -8
             }
           ]
         },
         {
-          "level": 76,
-          "name": "of Clairvoyance",
-          "text": "2 additional Rooms are revealed on the Trial Map",
+          "level": 77,
+          "name": "Impenetrable",
+          "text": "Monsters deal (12-9)% reduced Damage",
           "stats": [
             {
-              "id": "sanctum_map_reveal_extra_room_each_floor",
-              "max": 2,
-              "min": 2
+              "id": "map_monsters_damage_+%",
+              "max": -9,
+              "min": -12
             }
           ]
         }
@@ -341,37 +310,6 @@
               "id": "sanctum_avoid_affliction_chance_%",
               "max": 15,
               "min": 12
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "SanctumMaximumHonourResistance",
-      "kind": "suffix",
-      "template": "+#% to Maximum [HonourResistance|Honour Resistance]",
-      "tiers": [
-        {
-          "level": 60,
-          "name": "of Excellence",
-          "text": "+(2-3)% to Maximum [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_additional_max_honour_resistance_%",
-              "max": 3,
-              "min": 2
-            }
-          ]
-        },
-        {
-          "level": 78,
-          "name": "of Brilliance",
-          "text": "+(4-5)% to Maximum [HonourResistance|Honour Resistance]",
-          "stats": [
-            {
-              "id": "sanctum_additional_max_honour_resistance_%",
-              "max": 5,
-              "min": 4
             }
           ]
         }
@@ -488,6 +426,37 @@
       ]
     },
     {
+      "family_key": "SanctumMaximumHonourResistance",
+      "kind": "suffix",
+      "template": "+#% to Maximum [HonourResistance|Honour Resistance]",
+      "tiers": [
+        {
+          "level": 60,
+          "name": "of Excellence",
+          "text": "+(2-3)% to Maximum [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_additional_max_honour_resistance_%",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 78,
+          "name": "of Brilliance",
+          "text": "+(4-5)% to Maximum [HonourResistance|Honour Resistance]",
+          "stats": [
+            {
+              "id": "sanctum_additional_max_honour_resistance_%",
+              "max": 5,
+              "min": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
       "family_key": "SanctumResolveOnRoomComplete",
       "kind": "suffix",
       "template": "Restore # [Honour] on room completion",
@@ -537,6 +506,37 @@
               "id": "sanctum_restore_honour_on_room_completion",
               "max": 30,
               "min": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "SanctumRevealExtraRoomEachFloor",
+      "kind": "suffix",
+      "template": "# additional Rooms are revealed on the Trial Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Illumination",
+          "text": "(2-3) additional Rooms are revealed on the Trial Map",
+          "stats": [
+            {
+              "id": "sanctum_map_reveal_extra_room_each_floor",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        },
+        {
+          "level": 76,
+          "name": "of Clairvoyance",
+          "text": "4 additional Rooms are revealed on the Trial Map",
+          "stats": [
+            {
+              "id": "sanctum_map_reveal_extra_room_each_floor",
+              "max": 4,
+              "min": 4
             }
           ]
         }

@@ -1,82 +1,6 @@
 {
   "affixes": [
     {
-      "family_key": "MapExperienceGainIncrease",
-      "kind": "prefix",
-      "template": "#% increased Experience gain",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Elevated",
-          "text": "(25-34)% increased Experience gain",
-          "stats": [
-            {
-              "id": "map_experience_gain_+%",
-              "max": 34,
-              "min": 25
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapDroppedGoldIncrease",
-      "kind": "prefix",
-      "template": "#% increased Gold found in this Area",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Bountiful",
-          "text": "(55-75)% increased Gold found in this Area",
-          "stats": [
-            {
-              "id": "map_extra_gold_piles_chance_%",
-              "max": 75,
-              "min": 55
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapPackSizeIncrease",
-      "kind": "prefix",
-      "template": "#% increased Pack size",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Breeding",
-          "text": "(21-30)% increased Pack size",
-          "stats": [
-            {
-              "id": "map_pack_size_+%",
-              "max": 30,
-              "min": 21
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapDroppedItemRarityIncrease",
-      "kind": "prefix",
-      "template": "#% increased [Rarity] of Items found in this Area",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Collector's",
-          "text": "(50-65)% increased [Rarity] of Items found in this Area",
-          "stats": [
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 65,
-              "min": 50
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "MapAdditionalAzmeriWisp",
       "kind": "prefix",
       "template": "Map contains # additional [AzmeriSpirit|Azmeri Spirit]",
@@ -88,6 +12,54 @@
           "stats": [
             {
               "id": "map_spawn_extra_torment_spirits",
+              "max": 1,
+              "min": 1
+            },
+            {
+              "id": "map_map_item_drop_chance_+%",
+              "max": 0,
+              "min": 0
+            },
+            {
+              "id": "map_item_drop_rarity_+%",
+              "max": 0,
+              "min": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalChests",
+      "kind": "prefix",
+      "template": "Map contains # additional [Rarity|Rare] Chests",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Treasurer's",
+          "text": "Map contains (2-3) additional [Rarity|Rare] Chests",
+          "stats": [
+            {
+              "id": "map_addtional_rare_chest_amount",
+              "max": 3,
+              "min": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapAdditionalEssence",
+      "kind": "prefix",
+      "template": "Map contains an additional [Essence]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Crystallised",
+          "text": "Map contains an additional [Essence]",
+          "stats": [
+            {
+              "id": "map_extra_monoliths",
               "max": 1,
               "min": 1
             },
@@ -135,54 +107,6 @@
       ]
     },
     {
-      "family_key": "MapAdditionalChests",
-      "kind": "prefix",
-      "template": "Map contains # additional [Rarity|Rare] Chests",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Treasurer's",
-          "text": "Map contains (2-3) additional [Rarity|Rare] Chests",
-          "stats": [
-            {
-              "id": "map_addtional_rare_chest_amount",
-              "max": 3,
-              "min": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "MapAdditionalEssence",
-      "kind": "prefix",
-      "template": "Area contains an additional [Essence] #% increased [Waystone|Waystones] found in Area #% increased [Rarity] of Items found in this Area",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "Crystallised",
-          "text": "Area contains an additional [Essence] 10% increased [Waystone|Waystones] found in Area 10% increased [Rarity] of Items found in this Area",
-          "stats": [
-            {
-              "id": "map_extra_monoliths",
-              "max": 1,
-              "min": 1
-            },
-            {
-              "id": "map_map_item_drop_chance_+%",
-              "max": 10,
-              "min": 10
-            },
-            {
-              "id": "map_item_drop_rarity_+%",
-              "max": 10,
-              "min": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "MapAdditionalStoneCircle",
       "kind": "prefix",
       "template": "Map contains an additional [StoneSummoningCircle|Summoning Circle]",
@@ -202,38 +126,76 @@
       ]
     },
     {
-      "family_key": "MapMagicPackIncrease",
+      "family_key": "MapDroppedGoldIncrease",
       "kind": "prefix",
-      "template": "#% increased number of [Rarity|Magic] Monsters",
+      "template": "#% increased Gold found in Map",
       "tiers": [
         {
           "level": 1,
-          "name": "Teeming",
-          "text": "(35-49)% increased number of [Rarity|Magic] Monsters",
+          "name": "Bountiful",
+          "text": "(25-40)% increased Gold found in Map",
           "stats": [
             {
-              "id": "map_number_of_magic_packs_+%",
-              "max": 49,
-              "min": 35
+              "id": "map_extra_gold_piles_chance_%",
+              "max": 40,
+              "min": 25
             }
           ]
         }
       ]
     },
     {
-      "family_key": "MapRarePackIncrease",
+      "family_key": "MapDroppedItemRarityIncrease",
       "kind": "prefix",
-      "template": "#% increased number of [Rarity|Rare] Monsters",
+      "template": "#% increased [Rarity] of Items found in Map",
       "tiers": [
         {
           "level": 1,
-          "name": "Brimming",
-          "text": "(25-34)% increased number of [Rarity|Rare] Monsters",
+          "name": "Collector's",
+          "text": "(18-30)% increased [Rarity] of Items found in Map",
           "stats": [
             {
-              "id": "map_number_of_rare_packs_+%",
-              "max": 34,
-              "min": 25
+              "id": "map_item_drop_rarity_+%",
+              "max": 30,
+              "min": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapExperienceGainIncrease",
+      "kind": "prefix",
+      "template": "#% increased Experience gain in Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Elevated",
+          "text": "(10-20)% increased Experience gain in Map",
+          "stats": [
+            {
+              "id": "map_experience_gain_+%",
+              "max": 20,
+              "min": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapMagicPackIncrease",
+      "kind": "prefix",
+      "template": "Map has #% increased [Rarity|Magic] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Teeming",
+          "text": "Map has (50-70)% increased [Rarity|Magic] Monsters",
+          "stats": [
+            {
+              "id": "map_number_of_magic_packs_+%",
+              "max": 70,
+              "min": 50
             }
           ]
         }
@@ -259,17 +221,74 @@
       ]
     },
     {
-      "family_key": "BreachMonsterSplinterIncrease",
-      "kind": "suffix",
-      "template": "#% increased Quantity of [ContainsBreach|Breach] Splinters dropped by [ContainsBreach|Breach] Monsters in Map",
+      "family_key": "MapPackSizeIncrease",
+      "kind": "prefix",
+      "template": "#% increased Pack Size in Map",
       "tiers": [
         {
           "level": 1,
-          "name": "of the Domain",
-          "text": "(15-30)% increased Quantity of [ContainsBreach|Breach] Splinters dropped by [ContainsBreach|Breach] Monsters in Map",
+          "name": "Breeding",
+          "text": "(6-10)% increased Pack Size in Map",
           "stats": [
             {
-              "id": "map_breach_monster_splinter_quantity_+%",
+              "id": "map_pack_size_+%",
+              "max": 10,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "MapRarePackIncrease",
+      "kind": "prefix",
+      "template": "Map has #% increased number of [Rarity|Rare] Monsters",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "Brimming",
+          "text": "Map has (25-40)% increased number of [Rarity|Rare] Monsters",
+          "stats": [
+            {
+              "id": "map_number_of_rare_packs_+%",
+              "max": 40,
+              "min": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "Breach3AdditionalChance",
+      "kind": "suffix",
+      "template": "Map has #% chance to contain three additional [ContainsBreach|Breaches]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Rupturing",
+          "text": "Map has (6-10)% chance to contain three additional [ContainsBreach|Breaches]",
+          "stats": [
+            {
+              "id": "map_breach_%_chance_for_3_additional_breach",
+              "max": 10,
+              "min": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BreachAdditionalChance",
+      "kind": "suffix",
+      "template": "Map has #% chance to contain an additional [ContainsBreach|Breach]",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of Fissuring",
+          "text": "Map has (15-30)% chance to contain an additional [ContainsBreach|Breach]",
+          "stats": [
+            {
+              "id": "map_breach_%_chance_for_1_additional_breach",
               "max": 30,
               "min": 15
             }
@@ -316,30 +335,6 @@
       ]
     },
     {
-      "family_key": "BreachSpeedIncrease",
-      "kind": "suffix",
-      "template": "[ContainsBreach|Breaches] in Map open and close #% faster [ContainsBreach|Breaches] in Map have #% increased Monster density",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of the Flash",
-          "text": "[ContainsBreach|Breaches] in Map open and close (10-30)% faster [ContainsBreach|Breaches] in Map have (3-8)% increased Monster density",
-          "stats": [
-            {
-              "id": "map_breach_time_passed_+%",
-              "max": 30,
-              "min": 10
-            },
-            {
-              "id": "map_breach_monster_quantity_+%",
-              "max": 8,
-              "min": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
       "family_key": "BreachMagicMonsterIncrease",
       "kind": "suffix",
       "template": "Breaches in Map spawn #% increased Magic Monsters",
@@ -353,6 +348,25 @@
               "id": "map_breach_number_of_magic_packs_+%",
               "max": 70,
               "min": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family_key": "BreachMonsterSplinterIncrease",
+      "kind": "suffix",
+      "template": "#% increased Quantity of [ContainsBreach|Breach] Splinters dropped by [ContainsBreach|Breach] Monsters in Map",
+      "tiers": [
+        {
+          "level": 1,
+          "name": "of the Domain",
+          "text": "(15-30)% increased Quantity of [ContainsBreach|Breach] Splinters dropped by [ContainsBreach|Breach] Monsters in Map",
+          "stats": [
+            {
+              "id": "map_breach_monster_splinter_quantity_+%",
+              "max": 30,
+              "min": 15
             }
           ]
         }
@@ -378,38 +392,24 @@
       ]
     },
     {
-      "family_key": "BreachAdditionalChance",
+      "family_key": "BreachSpeedIncrease",
       "kind": "suffix",
-      "template": "Map has #% chance to contain an additional [ContainsBreach|Breach]",
+      "template": "[ContainsBreach|Breaches] in Map open and close #% faster [ContainsBreach|Breaches] in Map have #% increased Monster density",
       "tiers": [
         {
           "level": 1,
-          "name": "of Fissuring",
-          "text": "Map has (15-30)% chance to contain an additional [ContainsBreach|Breach]",
+          "name": "of the Flash",
+          "text": "[ContainsBreach|Breaches] in Map open and close (10-30)% faster [ContainsBreach|Breaches] in Map have (3-8)% increased Monster density",
           "stats": [
             {
-              "id": "map_breach_%_chance_for_1_additional_breach",
+              "id": "map_breach_time_passed_+%",
               "max": 30,
-              "min": 15
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "family_key": "Breach3AdditionalChance",
-      "kind": "suffix",
-      "template": "Map has #% chance to contain three additional [ContainsBreach|Breaches]",
-      "tiers": [
-        {
-          "level": 1,
-          "name": "of Rupturing",
-          "text": "Map has (6-10)% chance to contain three additional [ContainsBreach|Breaches]",
-          "stats": [
+              "min": 10
+            },
             {
-              "id": "map_breach_%_chance_for_3_additional_breach",
-              "max": 10,
-              "min": 6
+              "id": "map_breach_monster_quantity_+%",
+              "max": 8,
+              "min": 3
             }
           ]
         }

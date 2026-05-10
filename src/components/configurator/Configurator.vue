@@ -1,8 +1,12 @@
 <template>
   <section class="cfg-root">
     <header class="cfg-header">
-      <h2 class="cfg-title">Exiledbot2 Pickit Configurator - Still work in progress!</h2>
-      <h3 class="cfg-title">Repo here: <a href="https://github.com/l0westbob/exiledbot2-pickit-configurator">https://github.com/l0westbob/exiledbot2-pickit-configurator</a></h3>
+      <div>
+        <h2 class="cfg-title">Exiledbot2 Pickit Configurator</h2>
+        <h3 class="cfg-subtitle">
+          The current app focuses on imported affix catalogs and the item-rule flow that already works well.
+        </h3>
+      </div>
 
       <div class="cfg-actions">
         <button type="button" class="btn" @click="addRow">Add row</button>
@@ -13,11 +17,14 @@
     </header>
 
     <div class="cfg-rows">
-      <Row
+      <ItemRuleRow
           v-for="(row, idx) in rows"
           :key="row.id"
           :row-id="row.id"
           :row-index="idx"
+          :available-items="availableItems"
+          :is-loading-catalog="isLoadingCatalog"
+          :catalog-error-message="catalogErrorMessage"
           @update-lines="onRowUpdateLines"
           @remove="removeRow"
       />
@@ -35,8 +42,9 @@
 </template>
 
 <script setup>
-import {ref} from "vue"
-import Row from "./Row.vue"
+import {onMounted, ref} from "vue"
+import {useCatalogData} from "../../composables/useCatalogData.js"
+import ItemRuleRow from "./ItemRuleRow.vue"
 
 /**
  * Configurator-level state management.
@@ -74,6 +82,11 @@ function createRowId() {
  * @type {import("vue").Ref<Array<{id: string}>>}
  */
 const rows = ref([{id: createRowId()}])
+const {availableItems, isLoadingCatalog, catalogErrorMessage, ensureCatalogLoaded} = useCatalogData()
+
+onMounted(() => {
+  ensureCatalogLoaded()
+})
 
 /**
  * Map of rowId -> array of generated config lines.
@@ -158,7 +171,7 @@ function generateFinal() {
 
 .cfg-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
   padding: 0.75rem 1rem;
@@ -171,6 +184,13 @@ function generateFinal() {
   margin: 0;
   color: #e5e7eb;
   font-size: 1rem;
+}
+
+.cfg-subtitle {
+  margin: 0.35rem 0 0;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 400;
 }
 
 .cfg-actions {
