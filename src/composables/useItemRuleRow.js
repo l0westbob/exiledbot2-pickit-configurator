@@ -2,7 +2,7 @@ import {computed, ref, watch} from "vue"
 import {filterVisibleAffixes} from "../domain/pickit/affixes.js"
 import {DEFAULT_ACTION_FLAG} from "../domain/pickit/actions.js"
 import {generateRulePreviewLines} from "../domain/pickit/rules.js"
-import {getAffixesForSlug} from "../services/catalogService.js"
+import {getItemDataForSlug} from "../services/catalogService.js"
 import {useAffixSlots} from "./useAffixSlots.js"
 
 export function useItemRuleRow(options) {
@@ -10,6 +10,8 @@ export function useItemRuleRow(options) {
 
   const selectedActionFlag = ref(DEFAULT_ACTION_FLAG)
   const selectedItemSlug = ref("")
+  const selectedBaseName = ref("")
+  const loadedItemData = ref(null)
   const loadedAffixFamilies = ref([])
   const isLoadingAffixes = ref(false)
   const affixLoadErrorMessage = ref("")
@@ -19,6 +21,9 @@ export function useItemRuleRow(options) {
   })
 
   const visibleAffixFamilies = computed(() => filterVisibleAffixes(loadedAffixFamilies.value))
+  const availableBases = computed(() => {
+    return Array.isArray(loadedItemData.value?.bases) ? loadedItemData.value.bases : []
+  })
 
   const affixSlotsApi = useAffixSlots({
     affixesRef: visibleAffixFamilies,
@@ -29,7 +34,9 @@ export function useItemRuleRow(options) {
 
   async function loadAffixesForSelectedItem(slug) {
     if (!slug) {
+      loadedItemData.value = null
       loadedAffixFamilies.value = []
+      selectedBaseName.value = ""
       affixSlotsApi.resetSlots()
       return
     }
@@ -38,12 +45,17 @@ export function useItemRuleRow(options) {
     affixLoadErrorMessage.value = ""
 
     try {
-      loadedAffixFamilies.value = await getAffixesForSlug(slug)
+      const itemData = await getItemDataForSlug(slug)
+      loadedItemData.value = itemData
+      loadedAffixFamilies.value = Array.isArray(itemData?.affixes) ? itemData.affixes : []
+      selectedBaseName.value = ""
       affixSlotsApi.resetSlots()
     } catch (error) {
       console.error(error)
       affixLoadErrorMessage.value = String(error)
+      loadedItemData.value = null
       loadedAffixFamilies.value = []
+      selectedBaseName.value = ""
       affixSlotsApi.resetSlots()
     } finally {
       isLoadingAffixes.value = false
@@ -69,6 +81,7 @@ export function useItemRuleRow(options) {
       actionFlag: selectedActionFlag.value,
       selectedItemSlug: selectedItemSlug.value,
       selectedItem: selectedItem.value,
+      selectedBaseName: selectedBaseName.value,
       affixSlots: affixSlotsApi.slots.value,
       findAffixByKey: affixSlotsApi.findAffixByKey,
       availableTiersForSlot: affixSlotsApi.availableTiersForSlot,
@@ -79,6 +92,8 @@ export function useItemRuleRow(options) {
     selectedActionFlag,
     selectedItemSlug,
     selectedItem,
+    selectedBaseName,
+    availableBases,
     visibleAffixFamilies,
     isLoadingAffixes,
     affixLoadErrorMessage,

@@ -32,7 +32,7 @@
                 :key="affixKey(affix)"
                 :value="affixKey(affix)"
             >
-              {{ affix.template }}
+              {{ affix.template || "Unnamed affix" }}
             </option>
           </optgroup>
         </select>

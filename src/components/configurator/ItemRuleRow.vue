@@ -24,6 +24,12 @@
           :disabled="isLoadingCatalog || isLoadingAffixes || !availableItems.length"
       />
 
+      <CatalogBaseSelectField
+          v-model="selectedBaseName"
+          :bases="availableBases"
+          :disabled="isLoadingAffixes"
+      />
+
       <AffixSlotsEditor
           :slots="affixSlots"
           :visible-affix-families="visibleAffixFamilies"
@@ -66,6 +72,7 @@ import {toRef, watch, watchEffect, ref} from "vue"
 import {ACTION_OPTIONS} from "../../domain/pickit/actions.js"
 import {useItemRuleRow} from "../../composables/useItemRuleRow.js"
 import AffixSlotsEditor from "./AffixSlotsEditor.vue"
+import CatalogBaseSelectField from "./CatalogBaseSelectField.vue"
 import CatalogItemSelectField from "./CatalogItemSelectField.vue"
 import RowPreviewPanel from "./RowPreviewPanel.vue"
 import RuleActionSelectField from "./RuleActionSelectField.vue"
@@ -98,6 +105,8 @@ const {
   availableTiersForSlot,
   selectedActionFlag,
   selectedItemSlug,
+  selectedBaseName,
+  availableBases,
   visibleAffixFamilies,
   isLoadingAffixes,
   affixLoadErrorMessage,

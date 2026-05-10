@@ -1,4 +1,5 @@
 import {resolvePickitActionFlag} from "./actions.js"
+import {formatAffixDisplayLabel} from "./affixes.js"
 import {resolvePickitCategoryFromItem} from "./catalog.js"
 
 function countSelectedAffixes(affixSlots) {
@@ -89,6 +90,8 @@ function collectOrderedStatsAndTotals(affixSlots, findAffixByKey, availableTiers
 function buildHumanCommentLine(params) {
   const selectedItem = params?.selectedItem || null
   const pickitCategory = selectedItem?.pickitCategory || "UNKNOWN"
+  const selectedBaseName =
+    typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
 
   const affixSlots = Array.isArray(params?.affixSlots) ? params.affixSlots : []
   const findAffixByKey = typeof params?.findAffixByKey === "function" ? params.findAffixByKey : () => null
@@ -114,14 +117,16 @@ function buildHumanCommentLine(params) {
     const selectedTier = tiers.find((tier) => tier?.level === selectedTierLevel) || null
     const tierText = selectedTier ? `T${tierIndexFromBottom(tiers, selectedTier?.level)}` : "any tier"
 
-    selectedAffixDescriptions.push(`${affix.template} of tier ${tierText}`)
+    selectedAffixDescriptions.push(`${formatAffixDisplayLabel(affix)} of tier ${tierText}`)
   }
 
   const affixPart = selectedAffixDescriptions.length
     ? ` if they have at least ${selectedAffixDescriptions.join(", ")}`
     : ""
 
-  return `// Picks up ${pickitCategory} of rarity ${inferredRarity} and ${actionFlag}${affixPart}`
+  const basePart = selectedBaseName ? ` base ${selectedBaseName}` : ""
+
+  return `// Picks up ${pickitCategory}${basePart} of rarity ${inferredRarity} and ${actionFlag}${affixPart}`
 }
 
 function buildAfterIdentifyStatConditionsInSlotOrder(orderedSlots, totalsById) {
@@ -157,6 +162,8 @@ export function generateRulePreviewLines(params) {
   }
 
   const affixSlots = Array.isArray(params?.affixSlots) ? params.affixSlots : []
+  const selectedBaseName =
+    typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
   const selectedAffixCount = countSelectedAffixes(affixSlots)
   const inferredRarity = rarityFromSelectedAffixCount(selectedAffixCount)
   const actionFlag = resolvePickitActionFlag(params?.actionFlag)
@@ -174,7 +181,13 @@ export function generateRulePreviewLines(params) {
   const statConditions = buildAfterIdentifyStatConditionsInSlotOrder(orderedSlots, totalsById)
   const afterConditions = [...statConditions, `[${actionFlag}] == "true"`]
 
-  const beforeIdentify = `[Category] == "${pickitCategory}" && [Rarity] == "${inferredRarity}"`
+  const beforeIdentifyConditions = [`[Category] == "${pickitCategory}"`]
+  if (selectedBaseName) {
+    beforeIdentifyConditions.push(`[Type] == "${selectedBaseName}"`)
+  }
+  beforeIdentifyConditions.push(`[Rarity] == "${inferredRarity}"`)
+
+  const beforeIdentify = beforeIdentifyConditions.join(" && ")
   const afterIdentify = afterConditions.join(" && ")
 
   const commentLine = buildHumanCommentLine({

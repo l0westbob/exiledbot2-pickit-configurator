@@ -1,6 +1,16 @@
 {
-  "affixes": [],
+  "bases": [
+    {
+      "name": "Golden Hoop",
+      "href": "https://poe2db.tw/Golden_Hoop",
+      "required_level": 12
+    }
+  ],
   "category": "Jewellery",
   "label": "Rings",
+  "modifier_sections": {
+    "normal": [],
+    "corrupted": []
+  },
   "slug": "Rings"
 }

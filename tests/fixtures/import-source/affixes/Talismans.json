@@ -1,6 +1,9 @@
 {
-  "affixes": [],
+  "bases": [],
   "category": "Two Handed Weapons",
   "label": "Talismans",
+  "modifier_sections": {
+    "normal": []
+  },
   "slug": "Talismans"
 }

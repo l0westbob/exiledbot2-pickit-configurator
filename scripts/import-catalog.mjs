@@ -182,8 +182,17 @@ function validateAffixPayload(payload, filename) {
   if (typeof payload.label !== "string" || !payload.label) {
     throw new Error(`Invalid affix payload for ${filename}: missing label.`)
   }
-  if (!Array.isArray(payload.affixes)) {
-    throw new Error(`Invalid affix payload for ${filename}: missing affixes array.`)
+  if (
+    !payload.modifier_sections ||
+    typeof payload.modifier_sections !== "object" ||
+    !Array.isArray(payload.modifier_sections.normal)
+  ) {
+    throw new Error(
+      `Invalid affix payload for ${filename}: missing modifier_sections.normal array.`
+    )
+  }
+  if (payload.bases !== undefined && !Array.isArray(payload.bases)) {
+    throw new Error(`Invalid affix payload for ${filename}: expected bases to be an array.`)
   }
 }
 

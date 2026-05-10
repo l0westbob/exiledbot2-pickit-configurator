@@ -1,5 +1,19 @@
 import {computed, reactive, ref, watch} from "vue"
-import {getAffixFamilyKey} from "../domain/pickit/affixes.js"
+import {
+    getAffixFamilyKey,
+    getModifierSectionKey,
+    getModifierSectionLabel,
+} from "../domain/pickit/affixes.js"
+
+const MODIFIER_SECTION_GROUP_ORDER = [
+    "normal",
+    "desecrated",
+    "essence",
+    "perfect_essence",
+    "corrupted",
+    "bonded",
+    "socketable",
+]
 
 /**
  * Affix slot selection logic (UI/business rules, but kept component-agnostic).
@@ -23,12 +37,11 @@ import {getAffixFamilyKey} from "../domain/pickit/affixes.js"
  *
  * @typedef {{ level:number, name?:string, text?:string }} Tier
  * @typedef {{
- *   kind: string,
- *   domain: string,
- *   family_key: string,
- *   template: string,
- *   identifier: string,
- *   tiers: Tier[]
+ *   kind?: string,
+ *   modifierSection?: string,
+ *   family_key?: string,
+ *   template?: string,
+ *   tiers?: Tier[]
  * }} AffixFamily
  *
  * @typedef {{
@@ -174,6 +187,32 @@ export function useAffixSlots(options) {
     const prefixCount = computed(() => countSelectedKinds(null).prefixes)
     const suffixCount = computed(() => countSelectedKinds(null).suffixes)
 
+    function byTemplate(leftAffix, rightAffix) {
+        const leftTemplate = typeof leftAffix?.template === "string" ? leftAffix.template : ""
+        const rightTemplate = typeof rightAffix?.template === "string" ? rightAffix.template : ""
+        return leftTemplate.localeCompare(rightTemplate)
+    }
+
+    function sortModifierSectionKeys(sectionKeys) {
+        return [...sectionKeys].sort((leftSectionKey, rightSectionKey) => {
+            const leftPriority = MODIFIER_SECTION_GROUP_ORDER.indexOf(leftSectionKey)
+            const rightPriority = MODIFIER_SECTION_GROUP_ORDER.indexOf(rightSectionKey)
+
+            const leftWeight = leftPriority === -1 ? Number.MAX_SAFE_INTEGER : leftPriority
+            const rightWeight = rightPriority === -1 ? Number.MAX_SAFE_INTEGER : rightPriority
+
+            if (leftWeight !== rightWeight) return leftWeight - rightWeight
+            return leftSectionKey.localeCompare(rightSectionKey)
+        })
+    }
+
+    function buildGroupLabel(modifierSectionKey, affixKind) {
+        const sectionLabel = getModifierSectionLabel(modifierSectionKey)
+        if (affixKind === "prefix") return `-- ${sectionLabel} Prefixes --`
+        if (affixKind === "suffix") return `-- ${sectionLabel} Suffixes --`
+        return `-- ${sectionLabel} Other --`
+    }
+
     /**
      * Builds optgroup-friendly dropdown options for a given slot:
      * [
@@ -216,28 +255,62 @@ export function useAffixSlots(options) {
             return true
         })
 
-        function byTemplate(a, b) {
-            const templateA = typeof a.template === "string" ? a.template : ""
-            const templateB = typeof b.template === "string" ? b.template : ""
-            return templateA.localeCompare(templateB)
+        const sectionBuckets = new Map()
+
+        for (const affixFamily of filteredAffixFamilies) {
+            const modifierSectionKey = getModifierSectionKey(affixFamily)
+            if (!sectionBuckets.has(modifierSectionKey)) {
+                sectionBuckets.set(modifierSectionKey, {
+                    prefix: [],
+                    suffix: [],
+                    other: [],
+                })
+            }
+
+            const bucket = sectionBuckets.get(modifierSectionKey)
+            if (!bucket) continue
+
+            if (affixFamily.kind === "prefix") {
+                bucket.prefix.push(affixFamily)
+                continue
+            }
+            if (affixFamily.kind === "suffix") {
+                bucket.suffix.push(affixFamily)
+                continue
+            }
+
+            bucket.other.push(affixFamily)
         }
 
-        const prefixAffixes = filteredAffixFamilies
-            .filter((affixFamily) => affixFamily.kind === "prefix")
-            .sort(byTemplate)
-
-        const suffixAffixes = filteredAffixFamilies
-            .filter((affixFamily) => affixFamily.kind === "suffix")
-            .sort(byTemplate)
-
-        const otherAffixes = filteredAffixFamilies
-            .filter((affixFamily) => affixFamily.kind !== "prefix" && affixFamily.kind !== "suffix")
-            .sort(byTemplate)
-
         const optGroups = []
-        if (prefixAffixes.length) optGroups.push({label: "-- Prefixes --", items: prefixAffixes})
-        if (suffixAffixes.length) optGroups.push({label: "-- Suffixes --", items: suffixAffixes})
-        if (otherAffixes.length) optGroups.push({label: "-- Other --", items: otherAffixes})
+
+        for (const modifierSectionKey of sortModifierSectionKeys(sectionBuckets.keys())) {
+            const bucket = sectionBuckets.get(modifierSectionKey)
+            if (!bucket) continue
+
+            const prefixAffixes = [...bucket.prefix].sort(byTemplate)
+            const suffixAffixes = [...bucket.suffix].sort(byTemplate)
+            const otherAffixes = [...bucket.other].sort(byTemplate)
+
+            if (prefixAffixes.length) {
+                optGroups.push({
+                    label: buildGroupLabel(modifierSectionKey, "prefix"),
+                    items: prefixAffixes,
+                })
+            }
+            if (suffixAffixes.length) {
+                optGroups.push({
+                    label: buildGroupLabel(modifierSectionKey, "suffix"),
+                    items: suffixAffixes,
+                })
+            }
+            if (otherAffixes.length) {
+                optGroups.push({
+                    label: buildGroupLabel(modifierSectionKey, "other"),
+                    items: otherAffixes,
+                })
+            }
+        }
 
         return optGroups
     }

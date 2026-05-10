@@ -3,20 +3,24 @@ import {mount} from "@vue/test-utils"
 import {describe, expect, it, vi} from "vitest"
 
 const ensureCatalogLoaded = vi.fn()
-const getAffixesForSlug = vi.fn().mockResolvedValue([
-  {
-    family_key: "MaximumLife",
-    kind: "prefix",
-    template: "+# to [Life|Life]",
-    tiers: [
-      {
-        level: 10,
-        name: "Healthy",
-        stats: [{id: "base_maximum_life", min: 20, max: 29}],
-      },
-    ],
-  },
-])
+const getItemDataForSlug = vi.fn().mockResolvedValue({
+  bases: [{name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", requiredLevel: 12}],
+  affixes: [
+    {
+      modifierSection: "essence",
+      family_key: "MaximumLife",
+      kind: "prefix",
+      template: "+# to [Life|Life]",
+      tiers: [
+        {
+          level: 10,
+          name: "Healthy",
+          stats: [{id: "base_maximum_life", min: 20, max: 29}],
+        },
+      ],
+    },
+  ],
+})
 
 vi.mock("../src/composables/useCatalogData.js", () => ({
   useCatalogData: () => ({
@@ -37,7 +41,7 @@ vi.mock("../src/composables/useCatalogData.js", () => ({
 }))
 
 vi.mock("../src/services/catalogService.js", () => ({
-  getAffixesForSlug,
+  getItemDataForSlug,
 }))
 
 import Configurator from "../src/components/configurator/Configurator.vue"
@@ -55,21 +59,24 @@ describe("Configurator integration", () => {
     await flushPromises()
 
     const selects = wrapper.findAll("select")
-    expect(selects).toHaveLength(4)
+    expect(selects).toHaveLength(5)
 
-    const affixSelect = selects[2]
-    const tierSelect = selects[3]
+    const baseSelect = selects[2]
+    const affixSelect = selects[3]
+    const tierSelect = selects[4]
 
-    await affixSelect.setValue("MaximumLife|prefix|+# to [Life|Life]")
+    await baseSelect.setValue("Golden Hoop")
+    await affixSelect.setValue("essence|MaximumLife|prefix|+# to [Life|Life]")
     await tierSelect.setValue("10")
 
     const buttons = wrapper.findAll("button")
     await buttons.find((button) => button.text() === "Generate row").trigger("click")
     await buttons.find((button) => button.text() === "Generate final").trigger("click")
 
-    expect(wrapper.text()).toContain("// Picks up Ring of rarity Magic and StashItem")
-    expect(wrapper.text()).toContain('[Category] == "Ring" && [Rarity] == "Magic"')
+    expect(wrapper.text()).toContain("// Picks up Ring base Golden Hoop of rarity Magic and StashItem")
+    expect(wrapper.text()).toContain("Essence - +# to [Life|Life]")
+    expect(wrapper.text()).toContain('[Category] == "Ring" && [Type] == "Golden Hoop" && [Rarity] == "Magic"')
     expect(ensureCatalogLoaded).toHaveBeenCalledTimes(1)
-    expect(getAffixesForSlug).toHaveBeenCalledWith("Rings")
+    expect(getItemDataForSlug).toHaveBeenCalledWith("Rings")
   })
 })

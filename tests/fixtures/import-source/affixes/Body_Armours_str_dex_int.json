@@ -1,6 +1,16 @@
 {
-  "affixes": [],
+  "bases": [
+    {
+      "name": "Golden Mantle",
+      "href": "https://poe2db.tw/Golden_Mantle",
+      "required_level": 20
+    }
+  ],
   "category": "Body Armours",
   "label": "Body Armours(str_dex_int)",
+  "modifier_sections": {
+    "normal": [],
+    "essence": []
+  },
   "slug": "Body_Armours_str_dex_int"
 }

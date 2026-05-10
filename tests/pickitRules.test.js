@@ -19,6 +19,7 @@ describe("pickit rule generation", () => {
   it("builds the current magic rule shape for a single affix", () => {
     const affixes = [
       {
+        modifierSection: "normal",
         family_key: "MaximumLife",
         kind: "prefix",
         template: "+# to [Life|Life]",
@@ -52,12 +53,14 @@ describe("pickit rule generation", () => {
   it("aggregates duplicate stat ids across selected affixes", () => {
     const affixes = [
       {
+        modifierSection: "normal",
         family_key: "StrengthA",
         kind: "prefix",
         template: "+# to [Strength|Strength]",
         tiers: [{level: 8, name: "Strong", stats: [{id: "additional_strength", min: 10, max: 12}]}],
       },
       {
+        modifierSection: "normal",
         family_key: "StrengthB",
         kind: "suffix",
         template: "+# to [Strength|Strength]",
@@ -101,5 +104,56 @@ describe("pickit rule generation", () => {
   it("computes tier labels from the highest required level down", () => {
     expect(tierIndexFromBottom([{level: 1}, {level: 10}, {level: 20}], 20)).toBe(1)
     expect(tierIndexFromBottom([{level: 1}, {level: 10}, {level: 20}], 1)).toBe(3)
+  })
+
+  it("keeps modifier keys unique across modifier sections", () => {
+    const normalKey = getAffixFamilyKey({
+      modifierSection: "normal",
+      family_key: "Life",
+      kind: "prefix",
+      template: "+# to Life",
+    })
+    const essenceKey = getAffixFamilyKey({
+      modifierSection: "essence",
+      family_key: "Life",
+      kind: "prefix",
+      template: "+# to Life",
+    })
+
+    expect(normalKey).not.toBe(essenceKey)
+  })
+
+  it("includes the selected base in the generated rule when one is chosen", () => {
+    const affixes = [
+      {
+        modifierSection: "essence",
+        family_key: "MaximumLife",
+        kind: "prefix",
+        template: "+# to [Life|Life]",
+        tiers: [
+          {
+            level: 10,
+            name: "Healthy",
+            stats: [{id: "base_maximum_life", min: 20, max: 29}],
+          },
+        ],
+      },
+    ]
+    const slots = [{selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10}]
+    const {findAffixByKey, availableTiersForSlot} = createFinders(affixes)
+
+    const lines = generateRulePreviewLines({
+      actionFlag: "StashItem",
+      selectedItemSlug: "Rings",
+      selectedItem: {pickitCategory: "Ring"},
+      selectedBaseName: "Golden Hoop",
+      affixSlots: slots,
+      findAffixByKey,
+      availableTiersForSlot: (slotIndex) => availableTiersForSlot(slotIndex, slots),
+    })
+
+    expect(lines[0]).toContain("base Golden Hoop")
+    expect(lines[0]).toContain("Essence - +# to [Life|Life]")
+    expect(lines[1]).toContain('[Type] == "Golden Hoop"')
   })
 })

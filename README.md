@@ -13,8 +13,9 @@ This repository is the frontend application only.
 Right now the implemented flow is the item-rule configurator:
 
 - select a supported item type from the imported affix catalog
+- optionally narrow to a known base when that item family has bases
 - choose the action flag
-- choose affixes and minimum tiers
+- choose modifiers and minimum tiers
 - generate preview lines and final pickit output
 
 Planned rule families such as currency, gems, and custom rules are intentionally hidden in the UI until they have real generators and test coverage.
@@ -30,6 +31,12 @@ That upstream tool:
 1. fetches and snapshots modifier data from `poe2db.tw`
 2. matches those affixes against `repoe-fork/poe2` `mods.json` stat ids
 3. exports per-item affix JSON files that this frontend imports
+
+Each imported per-item JSON payload now contains:
+
+- `modifier_sections.normal` for the regular affix pool
+- additional modifier sections such as corrupted, essence, desecrated, bonded, or socketable when available
+- `bases` for the concrete item bases in that family when available
 
 ### Refreshing imported catalog data
 
@@ -227,10 +234,12 @@ Currently, the app exposes the imported item-rule flow only.
 "BodyArmour", "Gloves", "Boots", "Belt", "Helmet", "Ring", "Amulet", "Claw", "Dagger", "Wand", "OneHandSword", "OneHandAxe", "OneHandMace", "Sceptre", "Spear", "Flail", "Bow", "Staff", "TwoHandSword", "TwoHandAxe", "TwoHandMace", "Quarterstaff", "Crossbow", "Trap", "FishingRod", "Quiver", "Shield", "Focus", "Flask", "Waystone", "Gem", "Tablet"
 ```
 
-I just focussed on prefix and suffix
-because desecrated, essence, corrupted affixes
-usually don't drop. I will add them all when I see
-the need or get it as feature request.
+The current rule editor is centered around imported
+item modifiers and tier thresholds. With the newer
+catalog format, it can now surface normal modifiers
+plus the extra imported modifier sections when they
+exist, and it can narrow a rule to a concrete base
+when the payload provides base data.
 
 ---
 
