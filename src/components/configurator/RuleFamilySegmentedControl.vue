@@ -4,14 +4,14 @@
 
     <div class="family-options" role="radiogroup" aria-label="Rule type">
       <button
-          v-for="option in options"
-          :key="option.value"
-          type="button"
-          class="family-option"
-          :class="{'family-option-active': option.value === modelValue}"
-          role="radio"
-          :aria-checked="option.value === modelValue"
-          @click="$emit('update:modelValue', option.value)"
+        v-for="option in options"
+        :key="option.value"
+        type="button"
+        class="family-option"
+        :class="{ 'family-option-active': option.value === modelValue }"
+        role="radio"
+        :aria-checked="option.value === modelValue"
+        @click="$emit('update:modelValue', option.value)"
       >
         {{ option.label }}
       </button>
@@ -21,8 +21,8 @@
 
 <script setup>
 defineProps({
-  modelValue: {type: String, required: true},
-  options: {type: Array, default: () => []},
+  modelValue: { type: String, required: true },
+  options: { type: Array, default: () => [] },
 })
 
 defineEmits(["update:modelValue"])

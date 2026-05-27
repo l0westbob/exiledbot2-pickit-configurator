@@ -1,4 +1,11 @@
-import {resolvePickitActionFlag} from "./actions.js"
+import { resolvePickitActionFlag } from "./actions.js"
+import {
+  formatPickitComment,
+  formatPickitCondition,
+  formatPickitFlagCondition,
+  formatPickitNumber,
+  formatPickitRule,
+} from "./formatter.js"
 
 export const UNIQUE_SINGLE_GROUP_SELECTION = {
   ALL: "all",
@@ -40,7 +47,8 @@ function findUniqueClassBySlug(classes, classSlug) {
 }
 
 function describeUniqueSelection(draft, items, uniqueClass) {
-  const singleGroupSelection = draft?.singleGroupSelection || getDefaultUniqueSelection({classes: uniqueClass ? [uniqueClass] : []})
+  const singleGroupSelection =
+    draft?.singleGroupSelection || getDefaultUniqueSelection({ classes: uniqueClass ? [uniqueClass] : [] })
 
   if (singleGroupSelection === UNIQUE_SINGLE_GROUP_SELECTION.ALL) {
     return "all uniques"
@@ -61,14 +69,8 @@ function describeUniqueSelection(draft, items, uniqueClass) {
   return "selected uniques"
 }
 
-function escapePickitString(value) {
-  return String(value).replaceAll("\\", "\\\\").replaceAll('"', '\\"')
-}
-
 function normalizeUniqueStatIds(stat) {
-  const rawIds = Array.isArray(stat?.affix_ids) && stat.affix_ids.length
-    ? stat.affix_ids
-    : stat?.stat_ids
+  const rawIds = Array.isArray(stat?.affix_ids) && stat.affix_ids.length ? stat.affix_ids : stat?.stat_ids
 
   return (Array.isArray(rawIds) ? rawIds : [])
     .map((statId) => (typeof statId === "string" ? statId.trim() : ""))
@@ -88,11 +90,6 @@ function normalizeMinimumValue(value) {
   if (typeof value === "string" && !value.trim()) return null
   const numberValue = Number(value)
   return Number.isFinite(numberValue) ? numberValue : null
-}
-
-function formatPickitNumber(value) {
-  if (!Number.isFinite(value)) return ""
-  return Number.isInteger(value) ? String(value) : String(value)
 }
 
 export function getDefaultUniqueSelection(catalog) {
@@ -141,8 +138,9 @@ export function filterUniquesBySearch(uniques, searchText) {
   if (!normalizedSearchText) return rawUniques
 
   return rawUniques.filter((unique) => {
-    const searchableValues = [unique?.name, unique?.displayName, unique?.baseName]
-      .map((value) => (typeof value === "string" ? value.toLowerCase() : ""))
+    const searchableValues = [unique?.name, unique?.displayName, unique?.baseName].map((value) =>
+      typeof value === "string" ? value.toLowerCase() : ""
+    )
 
     return searchableValues.some((value) => value.includes(normalizedSearchText))
   })
@@ -157,29 +155,34 @@ export function resolveUniqueSelectionItems(draft, catalog) {
     const items = sortUniquesByDisplayName(dedupeUniquesByDisplayName(allUniques))
     return {
       items,
-      description: describeUniqueSelection({...draft, singleGroupSelection}, items, null),
+      description: describeUniqueSelection({ ...draft, singleGroupSelection }, items, null),
     }
   }
 
   if (singleGroupSelection === UNIQUE_SINGLE_GROUP_SELECTION.SINGLE) {
     const filteredUniques = sortUniquesByDisplayName(filterUniquesBySearch(allUniques, draft?.searchText))
-    const selectedUnique = findUniqueByDisplayName(filteredUniques, draft?.selectedItemDisplayName) || filteredUniques[0] || null
+    const selectedUnique =
+      findUniqueByDisplayName(filteredUniques, draft?.selectedItemDisplayName) || filteredUniques[0] || null
     const items = dedupeUniquesByDisplayName(selectedUnique ? [selectedUnique] : [])
     return {
       items,
-      description: describeUniqueSelection({...draft, singleGroupSelection}, items, null),
+      description: describeUniqueSelection({ ...draft, singleGroupSelection }, items, null),
     }
   }
 
   const selectedClass = findUniqueClassBySlug(classes, singleGroupSelection)
   const selectedGroupItemDisplayName = draft?.selectedGroupItemDisplayName || UNIQUE_GROUP_ALL_VALUE
-  if (!selectedClass) return {items: [], description: "selected uniques"}
+  if (!selectedClass) return { items: [], description: "selected uniques" }
 
   if (selectedGroupItemDisplayName === UNIQUE_GROUP_ALL_VALUE) {
     const items = sortUniquesByDisplayName(dedupeUniquesByDisplayName(selectedClass.uniques))
     return {
       items,
-      description: describeUniqueSelection({...draft, singleGroupSelection, selectedGroupItemDisplayName}, items, selectedClass),
+      description: describeUniqueSelection(
+        { ...draft, singleGroupSelection, selectedGroupItemDisplayName },
+        items,
+        selectedClass
+      ),
     }
   }
 
@@ -187,7 +190,11 @@ export function resolveUniqueSelectionItems(draft, catalog) {
   const items = sortUniquesByDisplayName(dedupeUniquesByDisplayName(selectedUnique ? [selectedUnique] : []))
   return {
     items,
-    description: describeUniqueSelection({...draft, singleGroupSelection, selectedGroupItemDisplayName}, items, selectedClass),
+    description: describeUniqueSelection(
+      { ...draft, singleGroupSelection, selectedGroupItemDisplayName },
+      items,
+      selectedClass
+    ),
   }
 }
 
@@ -227,12 +234,15 @@ export function groupUniquesByClass(items, catalog) {
 
 function createUniqueRuleLineWithConditions(unique, actionFlag, statConditions) {
   const afterIdentifyConditions = [
-    `[UniqueName] == "${escapePickitString(unique.name)}"`,
+    formatPickitCondition("UniqueName", "==", unique.name),
     ...(Array.isArray(statConditions) ? statConditions : []),
-    `[${actionFlag}] == "true"`,
+    formatPickitFlagCondition(actionFlag),
   ]
 
-  return `[Type] == "${escapePickitString(unique.baseName)}" && [Rarity] == "Unique" # ${afterIdentifyConditions.join(" && ")}`
+  return formatPickitRule(
+    [formatPickitCondition("Type", "==", unique.baseName), formatPickitCondition("Rarity", "==", "Unique")],
+    afterIdentifyConditions
+  )
 }
 
 export function buildUniqueStatConditions(unique, statSlots) {
@@ -256,12 +266,12 @@ export function buildUniqueStatConditions(unique, statSlots) {
 
   return orderedStatIds
     .filter((statId) => totalsByStatId.has(statId))
-    .map((statId) => `[${statId}] >= "${formatPickitNumber(totalsByStatId.get(statId))}"`)
+    .map((statId) => formatPickitCondition(statId, ">=", formatPickitNumber(totalsByStatId.get(statId))))
 }
 
 export function generateUniqueRuleLines(params) {
   const actionFlag = resolvePickitActionFlag(params?.actionFlag)
-  const {items, description} = resolveUniqueSelectionItems(params?.draft, params?.catalog)
+  const { items, description } = resolveUniqueSelectionItems(params?.draft, params?.catalog)
   const groups = groupUniquesByClass(items, params?.catalog)
   const selectedUniqueForStats = items.length === 1 ? items[0] : null
   const statConditions = selectedUniqueForStats
@@ -273,9 +283,11 @@ export function generateUniqueRuleLines(params) {
 
   if (!params?.includeExplanation || !ruleLines.length) return ruleLines
 
-  const explainedLines = [`// Picks up ${description} (${items.length} ${items.length === 1 ? "item" : "items"})`]
+  const explainedLines = [
+    formatPickitComment(`Picks up ${description} (${items.length} ${items.length === 1 ? "item" : "items"})`),
+  ]
   for (const group of groups) {
-    if (items.length > 1) explainedLines.push(`// ${group.className}`)
+    if (items.length > 1) explainedLines.push(formatPickitComment(group.className))
     explainedLines.push(
       ...group.items.map((unique) => createUniqueRuleLineWithConditions(unique, actionFlag, statConditions))
     )

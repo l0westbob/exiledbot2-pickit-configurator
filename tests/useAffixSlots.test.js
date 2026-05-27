@@ -1,7 +1,7 @@
-import {nextTick, ref} from "vue"
-import {describe, expect, it} from "vitest"
+import { nextTick, ref } from "vue"
+import { describe, expect, it } from "vitest"
 
-import {useAffixSlots} from "../src/composables/useAffixSlots.js"
+import { useAffixSlots } from "../src/composables/useAffixSlots.js"
 
 const prefixOne = {
   modifierSection: "normal",
@@ -28,12 +28,13 @@ const suffixOne = {
 describe("useAffixSlots", () => {
   it("hides earlier selections from later slots", () => {
     const affixesRef = ref([prefixOne, prefixTwo, suffixOne])
-    const api = useAffixSlots({affixesRef, maxSlots: 3, maxPrefixes: 2, maxSuffixes: 1})
+    const api = useAffixSlots({ affixesRef, maxSlots: 3, maxPrefixes: 2, maxSuffixes: 1 })
 
     api.slots.value[0].selectedAffixKey = api.affixKey(prefixOne)
     api.addSlot()
 
-    const availableKeysInSecondSlot = api.groupsForSlot(1)
+    const availableKeysInSecondSlot = api
+      .groupsForSlot(1)
       .flatMap((group) => group.items)
       .map((affix) => api.affixKey(affix))
 
@@ -43,7 +44,7 @@ describe("useAffixSlots", () => {
 
   it("clears the selected tier when the chosen affix changes", async () => {
     const affixesRef = ref([prefixOne, prefixTwo])
-    const api = useAffixSlots({affixesRef, maxSlots: 2, maxPrefixes: 2, maxSuffixes: 0})
+    const api = useAffixSlots({ affixesRef, maxSlots: 2, maxPrefixes: 2, maxSuffixes: 0 })
 
     api.slots.value[0].selectedAffixKey = api.affixKey(prefixOne)
     api.slots.value[0].selectedTierLevel = 42
@@ -54,9 +55,29 @@ describe("useAffixSlots", () => {
     expect(api.slots.value[0].selectedTierLevel).toBeNull()
   })
 
+  it("updates slots through payloads emitted by slot editor components", async () => {
+    const affixesRef = ref([prefixOne])
+    const api = useAffixSlots({ affixesRef, maxSlots: 2, maxPrefixes: 2, maxSuffixes: 0 })
+
+    api.updateSlot({
+      slotIndex: 0,
+      selectedAffixKey: api.affixKey(prefixOne),
+    })
+    await nextTick()
+
+    api.updateSlot({
+      slotIndex: 0,
+      selectedTierLevel: "42",
+    })
+    await nextTick()
+
+    expect(api.slots.value[0].selectedAffixKey).toBe(api.affixKey(prefixOne))
+    expect(api.slots.value[0].selectedTierLevel).toBe(42)
+  })
+
   it("stops offering new slots when all unique affixes are already used", () => {
     const affixesRef = ref([prefixOne])
-    const api = useAffixSlots({affixesRef, maxSlots: 3, maxPrefixes: 3, maxSuffixes: 0})
+    const api = useAffixSlots({ affixesRef, maxSlots: 3, maxPrefixes: 3, maxSuffixes: 0 })
 
     api.slots.value[0].selectedAffixKey = api.affixKey(prefixOne)
 
@@ -66,7 +87,7 @@ describe("useAffixSlots", () => {
 
   it("groups normal affixes with prefixes before suffixes", () => {
     const affixesRef = ref([suffixOne, prefixTwo, prefixOne])
-    const api = useAffixSlots({affixesRef, maxSlots: 6, maxPrefixes: 3, maxSuffixes: 3})
+    const api = useAffixSlots({ affixesRef, maxSlots: 6, maxPrefixes: 3, maxSuffixes: 3 })
 
     const groups = api.groupsForSlot(0)
 

@@ -1,13 +1,9 @@
-import {computed, ref, watch} from "vue"
-import {filterVisibleAffixes} from "../domain/pickit/affixes.js"
-import {DEFAULT_ACTION_FLAG} from "../domain/pickit/actions.js"
-import {
-  countSelectedAffixes,
-  generateRulePreviewLines,
-  rarityFromSelectedAffixCount,
-} from "../domain/pickit/rules.js"
-import {getItemDataForSlug} from "../services/catalogService.js"
-import {useAffixSlots} from "./useAffixSlots.js"
+import { computed, ref, watch } from "vue"
+import { filterVisibleAffixes } from "../domain/pickit/affixes.js"
+import { DEFAULT_ACTION_FLAG } from "../domain/pickit/actions.js"
+import { countSelectedAffixes, generateRulePreviewLines, rarityFromSelectedAffixCount } from "../domain/pickit/rules.js"
+import { getItemDataForSlug } from "../services/catalogService.js"
+import { useAffixSlots } from "./useAffixSlots.js"
 
 export function useItemRuleRow(options) {
   const availableItemsRef = options.availableItemsRef
@@ -76,7 +72,7 @@ export function useItemRuleRow(options) {
         selectedItemSlug.value = items[0].slug
       }
     },
-    {immediate: true}
+    { immediate: true }
   )
 
   watch(
@@ -84,7 +80,7 @@ export function useItemRuleRow(options) {
     (slug) => {
       loadAffixesForSelectedItem(slug)
     },
-    {immediate: true}
+    { immediate: true }
   )
 
   watch(selectedAffixCount, (affixCount) => {

@@ -9,20 +9,30 @@
     "preview": "vite preview",
     "import-catalog": "node ./scripts/import-catalog.mjs",
     "check-catalog": "node ./scripts/import-catalog.mjs --check --source ./public/data/affixes",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run format:check && npm run test && npm run build && npm run check-catalog",
     "test": "vitest run"
   },
   "dependencies": {
     "vue": "^3.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.0",
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-vue": "^6.0.7",
     "@vue/test-utils": "^2.4.6",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.9.1",
+    "globals": "^17.6.0",
     "jsdom": "^26.0.0",
-    "rollup": "npm:@rollup/wasm-node@4.55.1",
-    "vite": "^5.0.0",
-    "vitest": "^2.1.8"
+    "prettier": "^3.8.3",
+    "rollup": "npm:@rollup/wasm-node@4.60.4",
+    "vite": "^8.0.14",
+    "vitest": "^4.1.7"
   },
   "overrides": {
-    "rollup": "npm:@rollup/wasm-node@4.55.1"
+    "rollup": "npm:@rollup/wasm-node@4.60.4"
   }
 }

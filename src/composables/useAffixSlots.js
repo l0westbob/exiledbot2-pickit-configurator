@@ -1,18 +1,14 @@
-import {computed, reactive, ref, watch} from "vue"
-import {
-    getAffixFamilyKey,
-    getModifierSectionKey,
-    getModifierSectionLabel,
-} from "../domain/pickit/affixes.js"
+import { computed, reactive, ref, watch } from "vue"
+import { getAffixFamilyKey, getModifierSectionKey, getModifierSectionLabel } from "../domain/pickit/affixes.js"
 
 const MODIFIER_SECTION_GROUP_ORDER = [
-    "normal",
-    "desecrated",
-    "essence",
-    "perfect_essence",
-    "corrupted",
-    "bonded",
-    "socketable",
+  "normal",
+  "desecrated",
+  "essence",
+  "perfect_essence",
+  "corrupted",
+  "bonded",
+  "socketable",
 ]
 
 /**
@@ -60,345 +56,361 @@ const MODIFIER_SECTION_GROUP_ORDER = [
  * @param {UseAffixSlotsOptions} options
  */
 export function useAffixSlots(options) {
-    const affixesRef = options.affixesRef
+  const affixesRef = options.affixesRef
 
-    const maxAffixSlots = Number.isFinite(options.maxSlots) ? options.maxSlots : 6
-    const maxPrefixesAllowed = Number.isFinite(options.maxPrefixes) ? options.maxPrefixes : 3
-    const maxSuffixesAllowed = Number.isFinite(options.maxSuffixes) ? options.maxSuffixes : 3
+  const maxAffixSlots = Number.isFinite(options.maxSlots) ? options.maxSlots : 6
+  const maxPrefixesAllowed = Number.isFinite(options.maxPrefixes) ? options.maxPrefixes : 3
+  const maxSuffixesAllowed = Number.isFinite(options.maxSuffixes) ? options.maxSuffixes : 3
 
-    /**
-     * Stable-ish ID for slots. Works in modern browsers and in environments
-     * where crypto.randomUUID might be unavailable.
-     */
-    function createSlotId() {
-        if (crypto?.randomUUID) return crypto.randomUUID()
-        return `${Date.now()}-${Math.random()}`
+  /**
+   * Stable-ish ID for slots. Works in modern browsers and in environments
+   * where crypto.randomUUID might be unavailable.
+   */
+  function createSlotId() {
+    if (crypto?.randomUUID) return crypto.randomUUID()
+    return `${Date.now()}-${Math.random()}`
+  }
+
+  /** @returns {AffixSlot} */
+  function createEmptySlot() {
+    return reactive({
+      id: createSlotId(),
+      selectedAffixKey: null,
+      selectedTierLevel: null,
+    })
+  }
+
+  /** @type {import("vue").Ref<AffixSlot[]>} */
+  const slots = ref([createEmptySlot()])
+
+  function resetSlots() {
+    slots.value = [createEmptySlot()]
+  }
+
+  function addSlot() {
+    if (slots.value.length >= maxAffixSlots) return
+    if (!canAddSlot.value) return
+    slots.value.push(createEmptySlot())
+  }
+
+  function removeSlot(slotIndex) {
+    if (slots.value.length <= 1) return
+    slots.value.splice(slotIndex, 1)
+  }
+
+  function updateSlot(slotIndexOrPayload, changes) {
+    const payload =
+      changes === undefined && slotIndexOrPayload && typeof slotIndexOrPayload === "object"
+        ? slotIndexOrPayload
+        : { slotIndex: slotIndexOrPayload, ...(changes || {}) }
+    const slotIndex = Number(payload.slotIndex)
+    const slot = slots.value[slotIndex]
+    if (!slot || !payload || typeof payload !== "object") return
+
+    if (Object.prototype.hasOwnProperty.call(payload, "selectedAffixKey")) {
+      slot.selectedAffixKey = payload.selectedAffixKey || null
     }
 
-    /** @returns {AffixSlot} */
-    function createEmptySlot() {
-        return reactive({
-            id: createSlotId(),
-            selectedAffixKey: null,
-            selectedTierLevel: null,
-        })
+    if (Object.prototype.hasOwnProperty.call(payload, "selectedTierLevel")) {
+      const tierLevel = Number(payload.selectedTierLevel)
+      slot.selectedTierLevel = Number.isFinite(tierLevel) ? tierLevel : null
+    }
+  }
+
+  /**
+   * Creates a "unique key" to identify an affix family.
+   * This is used for:
+   * - dropdown v-model values
+   * - uniqueness comparisons across slots
+   *
+   * WARNING:
+   * - If any of these fields are not stable in your data,
+   *   uniqueness can behave unexpectedly.
+   *
+   * @param {AffixFamily} affixFamily
+   * @returns {string}
+   */
+  function affixKey(affixFamily) {
+    return getAffixFamilyKey(affixFamily)
+  }
+
+  /**
+   * @param {string|null} key
+   * @returns {AffixFamily|null}
+   */
+  function findAffixByKey(key) {
+    if (!key) return null
+    return (affixesRef.value || []).find((affixFamily) => affixKey(affixFamily) === key) || null
+  }
+
+  /**
+   * @param {string|null} key
+   * @returns {string} usually "prefix" | "suffix" | ""
+   */
+  function kindOfSelectedKey(key) {
+    const selectedAffixFamily = findAffixByKey(key)
+    return selectedAffixFamily && typeof selectedAffixFamily.kind === "string" ? selectedAffixFamily.kind : ""
+  }
+
+  /**
+   * Builds a set of keys that must be excluded in a given slot.
+   * Only earlier slots exclude later ones.
+   *
+   * @param {number} slotIndex
+   * @returns {Set<string>}
+   */
+  function excludedKeysForSlot(slotIndex) {
+    const excludedKeys = new Set()
+
+    const earlierSlotsEnd = Math.min(slotIndex, slots.value.length)
+    for (let i = 0; i < earlierSlotsEnd; i++) {
+      const selectedKey = slots.value[i]?.selectedAffixKey
+      if (selectedKey) excludedKeys.add(selectedKey)
     }
 
-    /** @type {import("vue").Ref<AffixSlot[]>} */
-    const slots = ref([createEmptySlot()])
+    return excludedKeys
+  }
 
-    function resetSlots() {
-        slots.value = [createEmptySlot()]
+  /**
+   * Counts selected kinds across all slots.
+   * The `exceptSlotIndex` is used to allow the current slot to keep its selection,
+   * even if we're already at the cap (so selection doesn't "disappear").
+   *
+   * @param {number|null} exceptSlotIndex
+   * @returns {{prefixes:number, suffixes:number}}
+   */
+  function countSelectedKinds(exceptSlotIndex) {
+    let selectedPrefixes = 0
+    let selectedSuffixes = 0
+
+    for (let i = 0; i < slots.value.length; i++) {
+      if (exceptSlotIndex !== null && i === exceptSlotIndex) continue
+
+      const selectedKey = slots.value[i]?.selectedAffixKey
+      if (!selectedKey) continue
+
+      const selectedKind = kindOfSelectedKey(selectedKey)
+      if (selectedKind === "prefix") selectedPrefixes++
+      if (selectedKind === "suffix") selectedSuffixes++
     }
 
-    function addSlot() {
-        if (slots.value.length >= maxAffixSlots) return
-        if (!canAddSlot.value) return
-        slots.value.push(createEmptySlot())
-    }
+    return { prefixes: selectedPrefixes, suffixes: selectedSuffixes }
+  }
 
-    function removeSlot(slotIndex) {
-        if (slots.value.length <= 1) return
-        slots.value.splice(slotIndex, 1)
-    }
+  const prefixCount = computed(() => countSelectedKinds(null).prefixes)
+  const suffixCount = computed(() => countSelectedKinds(null).suffixes)
 
-    /**
-     * Creates a "unique key" to identify an affix family.
-     * This is used for:
-     * - dropdown v-model values
-     * - uniqueness comparisons across slots
-     *
-     * WARNING:
-     * - If any of these fields are not stable in your data,
-     *   uniqueness can behave unexpectedly.
-     *
-     * @param {AffixFamily} affixFamily
-     * @returns {string}
-     */
-    function affixKey(affixFamily) {
-        return getAffixFamilyKey(affixFamily)
-    }
+  function byTemplate(leftAffix, rightAffix) {
+    const leftTemplate = typeof leftAffix?.template === "string" ? leftAffix.template : ""
+    const rightTemplate = typeof rightAffix?.template === "string" ? rightAffix.template : ""
+    return leftTemplate.localeCompare(rightTemplate)
+  }
 
-    /**
-     * @param {string|null} key
-     * @returns {AffixFamily|null}
-     */
-    function findAffixByKey(key) {
-        if (!key) return null
-        return (affixesRef.value || []).find((affixFamily) => affixKey(affixFamily) === key) || null
-    }
+  function sortModifierSectionKeys(sectionKeys) {
+    return [...sectionKeys].sort((leftSectionKey, rightSectionKey) => {
+      const leftPriority = MODIFIER_SECTION_GROUP_ORDER.indexOf(leftSectionKey)
+      const rightPriority = MODIFIER_SECTION_GROUP_ORDER.indexOf(rightSectionKey)
 
-    /**
-     * @param {string|null} key
-     * @returns {string} usually "prefix" | "suffix" | ""
-     */
-    function kindOfSelectedKey(key) {
-        const selectedAffixFamily = findAffixByKey(key)
-        return selectedAffixFamily && typeof selectedAffixFamily.kind === "string"
-            ? selectedAffixFamily.kind
-            : ""
-    }
+      const leftWeight = leftPriority === -1 ? Number.MAX_SAFE_INTEGER : leftPriority
+      const rightWeight = rightPriority === -1 ? Number.MAX_SAFE_INTEGER : rightPriority
 
-    /**
-     * Builds a set of keys that must be excluded in a given slot.
-     * Only earlier slots exclude later ones.
-     *
-     * @param {number} slotIndex
-     * @returns {Set<string>}
-     */
-    function excludedKeysForSlot(slotIndex) {
-        const excludedKeys = new Set()
+      if (leftWeight !== rightWeight) return leftWeight - rightWeight
+      return leftSectionKey.localeCompare(rightSectionKey)
+    })
+  }
 
-        const earlierSlotsEnd = Math.min(slotIndex, slots.value.length)
-        for (let i = 0; i < earlierSlotsEnd; i++) {
-            const selectedKey = slots.value[i]?.selectedAffixKey
-            if (selectedKey) excludedKeys.add(selectedKey)
-        }
+  function buildGroupLabel(modifierSectionKey, affixKind) {
+    const sectionLabel = getModifierSectionLabel(modifierSectionKey)
+    if (affixKind === "prefix") return `-- ${sectionLabel} Prefixes --`
+    if (affixKind === "suffix") return `-- ${sectionLabel} Suffixes --`
+    return `-- ${sectionLabel} Other --`
+  }
 
-        return excludedKeys
-    }
+  /**
+   * Builds optgroup-friendly dropdown options for a given slot:
+   * [
+   *   { label: "-- Prefixes --", items: [...] },
+   *   { label: "-- Suffixes --", items: [...] },
+   *   { label: "-- Other --", items: [...] },
+   * ]
+   *
+   * @param {number} slotIndex
+   * @returns {{label:string, items:AffixFamily[]}[]}
+   */
+  function groupsForSlot(slotIndex) {
+    const availableAffixFamilies = affixesRef.value || []
+    const excludedKeys = excludedKeysForSlot(slotIndex)
 
-    /**
-     * Counts selected kinds across all slots.
-     * The `exceptSlotIndex` is used to allow the current slot to keep its selection,
-     * even if we're already at the cap (so selection doesn't "disappear").
-     *
-     * @param {number|null} exceptSlotIndex
-     * @returns {{prefixes:number, suffixes:number}}
-     */
-    function countSelectedKinds(exceptSlotIndex) {
-        let selectedPrefixes = 0
-        let selectedSuffixes = 0
+    // counts excluding current slot (better UX while editing)
+    const countsExcludingCurrent = countSelectedKinds(slotIndex)
+    const currentSelectedKey = slots.value[slotIndex]?.selectedAffixKey || null
+    const currentSelectedKind = currentSelectedKey ? kindOfSelectedKey(currentSelectedKey) : ""
 
-        for (let i = 0; i < slots.value.length; i++) {
-            if (exceptSlotIndex !== null && i === exceptSlotIndex) continue
+    const canSelectPrefix = countsExcludingCurrent.prefixes < maxPrefixesAllowed || currentSelectedKind === "prefix"
+    const canSelectSuffix = countsExcludingCurrent.suffixes < maxSuffixesAllowed || currentSelectedKind === "suffix"
 
-            const selectedKey = slots.value[i]?.selectedAffixKey
-            if (!selectedKey) continue
+    const filteredAffixFamilies = availableAffixFamilies.filter((affixFamily) => {
+      const key = affixKey(affixFamily)
+      const kind = typeof affixFamily.kind === "string" ? affixFamily.kind : ""
 
-            const selectedKind = kindOfSelectedKey(selectedKey)
-            if (selectedKind === "prefix") selectedPrefixes++
-            if (selectedKind === "suffix") selectedSuffixes++
-        }
+      // keep current selection visible even if it would otherwise be filtered out
+      if (currentSelectedKey && key === currentSelectedKey) return true
 
-        return {prefixes: selectedPrefixes, suffixes: selectedSuffixes}
-    }
+      // uniqueness across slots (only earlier slots)
+      if (excludedKeys.has(key)) return false
 
-    const prefixCount = computed(() => countSelectedKinds(null).prefixes)
-    const suffixCount = computed(() => countSelectedKinds(null).suffixes)
+      // enforce 3/3 caps
+      if (kind === "prefix" && !canSelectPrefix) return false
+      if (kind === "suffix" && !canSelectSuffix) return false
 
-    function byTemplate(leftAffix, rightAffix) {
-        const leftTemplate = typeof leftAffix?.template === "string" ? leftAffix.template : ""
-        const rightTemplate = typeof rightAffix?.template === "string" ? rightAffix.template : ""
-        return leftTemplate.localeCompare(rightTemplate)
-    }
-
-    function sortModifierSectionKeys(sectionKeys) {
-        return [...sectionKeys].sort((leftSectionKey, rightSectionKey) => {
-            const leftPriority = MODIFIER_SECTION_GROUP_ORDER.indexOf(leftSectionKey)
-            const rightPriority = MODIFIER_SECTION_GROUP_ORDER.indexOf(rightSectionKey)
-
-            const leftWeight = leftPriority === -1 ? Number.MAX_SAFE_INTEGER : leftPriority
-            const rightWeight = rightPriority === -1 ? Number.MAX_SAFE_INTEGER : rightPriority
-
-            if (leftWeight !== rightWeight) return leftWeight - rightWeight
-            return leftSectionKey.localeCompare(rightSectionKey)
-        })
-    }
-
-    function buildGroupLabel(modifierSectionKey, affixKind) {
-        const sectionLabel = getModifierSectionLabel(modifierSectionKey)
-        if (affixKind === "prefix") return `-- ${sectionLabel} Prefixes --`
-        if (affixKind === "suffix") return `-- ${sectionLabel} Suffixes --`
-        return `-- ${sectionLabel} Other --`
-    }
-
-    /**
-     * Builds optgroup-friendly dropdown options for a given slot:
-     * [
-     *   { label: "-- Prefixes --", items: [...] },
-     *   { label: "-- Suffixes --", items: [...] },
-     *   { label: "-- Other --", items: [...] },
-     * ]
-     *
-     * @param {number} slotIndex
-     * @returns {{label:string, items:AffixFamily[]}[]}
-     */
-    function groupsForSlot(slotIndex) {
-        const availableAffixFamilies = affixesRef.value || []
-        const excludedKeys = excludedKeysForSlot(slotIndex)
-
-        // counts excluding current slot (better UX while editing)
-        const countsExcludingCurrent = countSelectedKinds(slotIndex)
-        const currentSelectedKey = slots.value[slotIndex]?.selectedAffixKey || null
-        const currentSelectedKind = currentSelectedKey ? kindOfSelectedKey(currentSelectedKey) : ""
-
-        const canSelectPrefix =
-            countsExcludingCurrent.prefixes < maxPrefixesAllowed || currentSelectedKind === "prefix"
-        const canSelectSuffix =
-            countsExcludingCurrent.suffixes < maxSuffixesAllowed || currentSelectedKind === "suffix"
-
-        const filteredAffixFamilies = availableAffixFamilies.filter((affixFamily) => {
-            const key = affixKey(affixFamily)
-            const kind = typeof affixFamily.kind === "string" ? affixFamily.kind : ""
-
-            // keep current selection visible even if it would otherwise be filtered out
-            if (currentSelectedKey && key === currentSelectedKey) return true
-
-            // uniqueness across slots (only earlier slots)
-            if (excludedKeys.has(key)) return false
-
-            // enforce 3/3 caps
-            if (kind === "prefix" && !canSelectPrefix) return false
-            if (kind === "suffix" && !canSelectSuffix) return false
-
-            return true
-        })
-
-        const sectionBuckets = new Map()
-
-        for (const affixFamily of filteredAffixFamilies) {
-            const modifierSectionKey = getModifierSectionKey(affixFamily)
-            if (!sectionBuckets.has(modifierSectionKey)) {
-                sectionBuckets.set(modifierSectionKey, {
-                    prefix: [],
-                    suffix: [],
-                    other: [],
-                })
-            }
-
-            const bucket = sectionBuckets.get(modifierSectionKey)
-            if (!bucket) continue
-
-            if (affixFamily.kind === "prefix") {
-                bucket.prefix.push(affixFamily)
-                continue
-            }
-            if (affixFamily.kind === "suffix") {
-                bucket.suffix.push(affixFamily)
-                continue
-            }
-
-            bucket.other.push(affixFamily)
-        }
-
-        const optGroups = []
-
-        for (const modifierSectionKey of sortModifierSectionKeys(sectionBuckets.keys())) {
-            const bucket = sectionBuckets.get(modifierSectionKey)
-            if (!bucket) continue
-
-            const prefixAffixes = [...bucket.prefix].sort(byTemplate)
-            const suffixAffixes = [...bucket.suffix].sort(byTemplate)
-            const otherAffixes = [...bucket.other].sort(byTemplate)
-
-            if (prefixAffixes.length) {
-                optGroups.push({
-                    label: buildGroupLabel(modifierSectionKey, "prefix"),
-                    items: prefixAffixes,
-                })
-            }
-            if (suffixAffixes.length) {
-                optGroups.push({
-                    label: buildGroupLabel(modifierSectionKey, "suffix"),
-                    items: suffixAffixes,
-                })
-            }
-            if (otherAffixes.length) {
-                optGroups.push({
-                    label: buildGroupLabel(modifierSectionKey, "other"),
-                    items: otherAffixes,
-                })
-            }
-        }
-
-        return optGroups
-    }
-
-    /**
-     * Can we add another slot *right now*?
-     * This checks:
-     * - slot count cap (maxAffixSlots)
-     * - whether there are any affixes available at all
-     * - whether the next slot would have any valid options
-     */
-    const canAddSlot = computed(() => {
-        if (slots.value.length >= maxAffixSlots) return false
-        if (!(affixesRef.value || []).length) return false
-
-        const nextSlotIndex = slots.value.length
-        const optGroups = groupsForSlot(nextSlotIndex)
-        const totalOptions = optGroups.reduce((sum, group) => sum + (group.items?.length || 0), 0)
-        return totalOptions > 0
+      return true
     })
 
-    /**
-     * Explanation string for disabled "Add affix" button.
-     */
-    const addDisabledReason = computed(() => {
-        if (slots.value.length >= maxAffixSlots) return `Max ${maxAffixSlots} affixes.`
-        if (!(affixesRef.value || []).length) return "No affixes available."
-        if (prefixCount.value >= maxPrefixesAllowed && suffixCount.value >= maxSuffixesAllowed) {
-            return `Prefix/Suffix caps reached (${maxPrefixesAllowed}/${maxSuffixesAllowed}).`
-        }
-        return "No valid affixes left to add."
-    })
+    const sectionBuckets = new Map()
 
-    /**
-     * Returns the tier list for the slot's currently selected affix.
-     *
-     * @param {number} slotIndex
-     * @returns {Tier[]}
-     */
-    function availableTiersForSlot(slotIndex) {
-        const selectedKey = slots.value[slotIndex]?.selectedAffixKey
-        if (!selectedKey) return []
+    for (const affixFamily of filteredAffixFamilies) {
+      const modifierSectionKey = getModifierSectionKey(affixFamily)
+      if (!sectionBuckets.has(modifierSectionKey)) {
+        sectionBuckets.set(modifierSectionKey, {
+          prefix: [],
+          suffix: [],
+          other: [],
+        })
+      }
 
-        const selectedAffixFamily = findAffixByKey(selectedKey)
-        if (!selectedAffixFamily || !Array.isArray(selectedAffixFamily.tiers)) return []
+      const bucket = sectionBuckets.get(modifierSectionKey)
+      if (!bucket) continue
 
-        return selectedAffixFamily.tiers
+      if (affixFamily.kind === "prefix") {
+        bucket.prefix.push(affixFamily)
+        continue
+      }
+      if (affixFamily.kind === "suffix") {
+        bucket.suffix.push(affixFamily)
+        continue
+      }
+
+      bucket.other.push(affixFamily)
     }
 
-    /**
-     * Automatically clear tier selection when the selected affix changes.
-     * This prevents "tier remains selected for a different affix" bugs.
-     */
-    watch(
-        () => slots.value.map((slot) => slot.selectedAffixKey),
-        (nextKeys, previousKeys) => {
-            for (let i = 0; i < nextKeys.length; i++) {
-                if (nextKeys[i] !== (previousKeys?.[i] ?? null)) {
-                    if (slots.value[i]) slots.value[i].selectedTierLevel = null
-                }
-            }
-        }
-    )
+    const optGroups = []
 
-    return {
-        // exposed "constants" (for Row template labels and counters)
-        MAX_SLOTS: maxAffixSlots,
-        MAX_PREFIXES: maxPrefixesAllowed,
-        MAX_SUFFIXES: maxSuffixesAllowed,
+    for (const modifierSectionKey of sortModifierSectionKeys(sectionBuckets.keys())) {
+      const bucket = sectionBuckets.get(modifierSectionKey)
+      if (!bucket) continue
 
-        // state
-        slots,
+      const prefixAffixes = [...bucket.prefix].sort(byTemplate)
+      const suffixAffixes = [...bucket.suffix].sort(byTemplate)
+      const otherAffixes = [...bucket.other].sort(byTemplate)
 
-        // derived state
-        prefixCount,
-        suffixCount,
-        canAddSlot,
-        addDisabledReason,
-
-        // helpers used by the row editor
-        affixKey,
-        findAffixByKey,
-        groupsForSlot,
-        availableTiersForSlot,
-
-        // actions
-        addSlot,
-        removeSlot,
-        resetSlots,
+      if (prefixAffixes.length) {
+        optGroups.push({
+          label: buildGroupLabel(modifierSectionKey, "prefix"),
+          items: prefixAffixes,
+        })
+      }
+      if (suffixAffixes.length) {
+        optGroups.push({
+          label: buildGroupLabel(modifierSectionKey, "suffix"),
+          items: suffixAffixes,
+        })
+      }
+      if (otherAffixes.length) {
+        optGroups.push({
+          label: buildGroupLabel(modifierSectionKey, "other"),
+          items: otherAffixes,
+        })
+      }
     }
+
+    return optGroups
+  }
+
+  /**
+   * Can we add another slot *right now*?
+   * This checks:
+   * - slot count cap (maxAffixSlots)
+   * - whether there are any affixes available at all
+   * - whether the next slot would have any valid options
+   */
+  const canAddSlot = computed(() => {
+    if (slots.value.length >= maxAffixSlots) return false
+    if (!(affixesRef.value || []).length) return false
+
+    const nextSlotIndex = slots.value.length
+    const optGroups = groupsForSlot(nextSlotIndex)
+    const totalOptions = optGroups.reduce((sum, group) => sum + (group.items?.length || 0), 0)
+    return totalOptions > 0
+  })
+
+  /**
+   * Explanation string for disabled "Add affix" button.
+   */
+  const addDisabledReason = computed(() => {
+    if (slots.value.length >= maxAffixSlots) return `Max ${maxAffixSlots} affixes.`
+    if (!(affixesRef.value || []).length) return "No affixes available."
+    if (prefixCount.value >= maxPrefixesAllowed && suffixCount.value >= maxSuffixesAllowed) {
+      return `Prefix/Suffix caps reached (${maxPrefixesAllowed}/${maxSuffixesAllowed}).`
+    }
+    return "No valid affixes left to add."
+  })
+
+  /**
+   * Returns the tier list for the slot's currently selected affix.
+   *
+   * @param {number} slotIndex
+   * @returns {Tier[]}
+   */
+  function availableTiersForSlot(slotIndex) {
+    const selectedKey = slots.value[slotIndex]?.selectedAffixKey
+    if (!selectedKey) return []
+
+    const selectedAffixFamily = findAffixByKey(selectedKey)
+    if (!selectedAffixFamily || !Array.isArray(selectedAffixFamily.tiers)) return []
+
+    return selectedAffixFamily.tiers
+  }
+
+  /**
+   * Automatically clear tier selection when the selected affix changes.
+   * This prevents "tier remains selected for a different affix" bugs.
+   */
+  watch(
+    () => slots.value.map((slot) => slot.selectedAffixKey),
+    (nextKeys, previousKeys) => {
+      for (let i = 0; i < nextKeys.length; i++) {
+        if (nextKeys[i] !== (previousKeys?.[i] ?? null)) {
+          if (slots.value[i]) slots.value[i].selectedTierLevel = null
+        }
+      }
+    }
+  )
+
+  return {
+    // exposed "constants" (for Row template labels and counters)
+    MAX_SLOTS: maxAffixSlots,
+    MAX_PREFIXES: maxPrefixesAllowed,
+    MAX_SUFFIXES: maxSuffixesAllowed,
+
+    // state
+    slots,
+
+    // derived state
+    prefixCount,
+    suffixCount,
+    canAddSlot,
+    addDisabledReason,
+
+    // helpers used by the row editor
+    affixKey,
+    findAffixByKey,
+    groupsForSlot,
+    availableTiersForSlot,
+
+    // actions
+    addSlot,
+    removeSlot,
+    updateSlot,
+    resetSlots,
+  }
 }

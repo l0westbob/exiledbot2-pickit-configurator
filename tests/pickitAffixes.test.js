@@ -1,6 +1,6 @@
-import {describe, expect, it} from "vitest"
+import { describe, expect, it } from "vitest"
 
-import {filterVisibleAffixes} from "../src/domain/pickit/affixes.js"
+import { filterVisibleAffixes } from "../src/domain/pickit/affixes.js"
 
 describe("pickit affix visibility", () => {
   it("only exposes normal prefixes and suffixes to the active picker", () => {

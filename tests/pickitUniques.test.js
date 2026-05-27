@@ -1,4 +1,4 @@
-import {describe, expect, it} from "vitest"
+import { describe, expect, it } from "vitest"
 
 import {
   buildUniqueStatConditions,
@@ -22,14 +22,14 @@ const astramentis = {
     {
       text: "+(5-7) to all Attributes",
       template: "+# to all Attributes",
-      rolls: [{min: 5, max: 7}],
+      rolls: [{ min: 5, max: 7 }],
       stat_ids: ["additional all attributes"],
       affix_ids: ["additional_all_attributes"],
     },
     {
       text: "+(50-100) to all Attributes",
       template: "+# to all Attributes",
-      rolls: [{min: 50, max: 100}],
+      rolls: [{ min: 50, max: 100 }],
       stat_ids: ["additional all attributes"],
       affix_ids: ["additional_all_attributes"],
     },
@@ -66,9 +66,9 @@ const andvarius = {
 
 const catalog = {
   classes: [
-    {name: "Amulets", slug: "Amulets", uniques: [beacon, astramentis]},
-    {name: "Belts", slug: "Belts", uniques: [headhunter]},
-    {name: "Rings", slug: "Rings", uniques: [andvarius]},
+    { name: "Amulets", slug: "Amulets", uniques: [beacon, astramentis] },
+    { name: "Belts", slug: "Belts", uniques: [headhunter] },
+    { name: "Rings", slug: "Rings", uniques: [andvarius] },
   ],
   uniques: [headhunter, beacon, andvarius, astramentis],
 }
@@ -85,10 +85,7 @@ describe("pickit unique rules", () => {
   })
 
   it("resolves all unique items", () => {
-    const result = resolveUniqueSelectionItems(
-      {singleGroupSelection: UNIQUE_SINGLE_GROUP_SELECTION.ALL},
-      catalog
-    )
+    const result = resolveUniqueSelectionItems({ singleGroupSelection: UNIQUE_SINGLE_GROUP_SELECTION.ALL }, catalog)
 
     expect(result.items.map((unique) => unique.displayName)).toEqual([
       "Andvarius Gold Ring",
@@ -172,8 +169,8 @@ describe("pickit unique rules", () => {
     const statOptions = getUniqueStatOptions(astramentis)
 
     const conditions = buildUniqueStatConditions(astramentis, [
-      {selectedStatKey: statOptions[0].key, minimumValue: "7"},
-      {selectedStatKey: statOptions[1].key, minimumValue: "100"},
+      { selectedStatKey: statOptions[0].key, minimumValue: "7" },
+      { selectedStatKey: statOptions[1].key, minimumValue: "100" },
     ])
 
     expect(conditions).toEqual(['[additional_all_attributes] >= "107"'])
@@ -188,8 +185,8 @@ describe("pickit unique rules", () => {
         singleGroupSelection: "Amulets",
         selectedGroupItemDisplayName: "Astramentis Stellar Amulet",
         statSlots: [
-          {selectedStatKey: statOptions[0].key, minimumValue: "7"},
-          {selectedStatKey: statOptions[1].key, minimumValue: "100"},
+          { selectedStatKey: statOptions[0].key, minimumValue: "7" },
+          { selectedStatKey: statOptions[1].key, minimumValue: "100" },
         ],
       },
     })

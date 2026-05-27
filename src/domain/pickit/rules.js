@@ -1,6 +1,7 @@
-import {resolvePickitActionFlag} from "./actions.js"
-import {formatAffixDisplayLabel} from "./affixes.js"
-import {resolvePickitCategoryFromItem} from "./catalog.js"
+import { resolvePickitActionFlag } from "./actions.js"
+import { formatAffixDisplayLabel } from "./affixes.js"
+import { resolvePickitCategoryFromItem } from "./catalog.js"
+import { formatPickitCondition, formatPickitFlagCondition, formatPickitRule } from "./formatter.js"
 
 export const ITEM_RARITY_OPTIONS = ["Normal", "Magic", "Rare", "Unique"]
 
@@ -47,7 +48,7 @@ function collectOrderedStatsAndTotals(affixSlots, findAffixByKey, availableTiers
   const totalsById = new Map()
   const orderedSlots = []
 
-  if (!Array.isArray(affixSlots)) return {orderedSlots, totalsById}
+  if (!Array.isArray(affixSlots)) return { orderedSlots, totalsById }
 
   for (let slotIndex = 0; slotIndex < affixSlots.length; slotIndex++) {
     const slot = affixSlots[slotIndex]
@@ -65,8 +66,7 @@ function collectOrderedStatsAndTotals(affixSlots, findAffixByKey, availableTiers
     const tiersRaw = availableTiersForSlot(slotIndex)
     const tiers = Array.isArray(tiersRaw) ? tiersRaw : []
 
-    const selectedTier =
-      tiers.find((tier) => Number.isFinite(tier?.level) && tier.level === selectedTierLevel) || null
+    const selectedTier = tiers.find((tier) => Number.isFinite(tier?.level) && tier.level === selectedTierLevel) || null
     if (!selectedTier) continue
 
     const tierStats = Array.isArray(selectedTier?.stats) ? selectedTier.stats : []
@@ -82,7 +82,7 @@ function collectOrderedStatsAndTotals(affixSlots, findAffixByKey, availableTiers
 
       const existing = totalsById.get(statId)
       if (!existing) {
-        totalsById.set(statId, {id: statId, min: minValue, max: maxValue})
+        totalsById.set(statId, { id: statId, min: minValue, max: maxValue })
       } else {
         existing.min += minValue
         existing.max += maxValue
@@ -90,14 +90,13 @@ function collectOrderedStatsAndTotals(affixSlots, findAffixByKey, availableTiers
     }
   }
 
-  return {orderedSlots, totalsById}
+  return { orderedSlots, totalsById }
 }
 
 function buildHumanCommentLine(params) {
   const selectedItem = params?.selectedItem || null
   const pickitCategory = selectedItem?.pickitCategory || "UNKNOWN"
-  const selectedBaseName =
-    typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
+  const selectedBaseName = typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
 
   const affixSlots = Array.isArray(params?.affixSlots) ? params.affixSlots : []
   const findAffixByKey = typeof params?.findAffixByKey === "function" ? params.findAffixByKey : () => null
@@ -146,8 +145,8 @@ function buildAfterIdentifyStatConditionsInSlotOrder(orderedSlots, totalsById) {
       const total = totalsById.get(statId)
       if (!total) continue
 
-      conditions.push(`${statId} >= "${total.min}"`)
-      conditions.push(`${statId} <= "${total.max}"`)
+      conditions.push(formatPickitCondition(statId, ">=", total.min, { bracketField: false }))
+      conditions.push(formatPickitCondition(statId, "<=", total.max, { bracketField: false }))
 
       emitted.add(statId)
     }
@@ -168,37 +167,27 @@ export function generateRulePreviewLines(params) {
   }
 
   const affixSlots = Array.isArray(params?.affixSlots) ? params.affixSlots : []
-  const selectedBaseName =
-    typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
+  const selectedBaseName = typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
   const selectedAffixCount = countSelectedAffixes(affixSlots)
-  const inferredRarity = normalizeItemRarity(
-    params?.selectedRarity || rarityFromSelectedAffixCount(selectedAffixCount)
-  )
+  const inferredRarity = normalizeItemRarity(params?.selectedRarity || rarityFromSelectedAffixCount(selectedAffixCount))
   const actionFlag = resolvePickitActionFlag(params?.actionFlag)
 
   const findAffixByKey = typeof params?.findAffixByKey === "function" ? params.findAffixByKey : () => null
   const availableTiersForSlot =
     typeof params?.availableTiersForSlot === "function" ? params.availableTiersForSlot : () => []
 
-  const {orderedSlots, totalsById} = collectOrderedStatsAndTotals(
-    affixSlots,
-    findAffixByKey,
-    availableTiersForSlot
-  )
+  const { orderedSlots, totalsById } = collectOrderedStatsAndTotals(affixSlots, findAffixByKey, availableTiersForSlot)
 
   const statConditions = buildAfterIdentifyStatConditionsInSlotOrder(orderedSlots, totalsById)
-  const afterConditions = [...statConditions, `[${actionFlag}] == "true"`]
+  const afterConditions = [...statConditions, formatPickitFlagCondition(actionFlag)]
 
-  const beforeIdentifyConditions = [`[Category] == "${pickitCategory}"`]
+  const beforeIdentifyConditions = [formatPickitCondition("Category", "==", pickitCategory)]
   if (selectedBaseName) {
-    beforeIdentifyConditions.push(`[Type] == "${selectedBaseName}"`)
+    beforeIdentifyConditions.push(formatPickitCondition("Type", "==", selectedBaseName))
   }
-  beforeIdentifyConditions.push(`[Rarity] == "${inferredRarity}"`)
+  beforeIdentifyConditions.push(formatPickitCondition("Rarity", "==", inferredRarity))
 
-  const beforeIdentify = beforeIdentifyConditions.join(" && ")
-  const afterIdentify = afterConditions.join(" && ")
-
-  const ruleLine = `${beforeIdentify} # ${afterIdentify}`
+  const ruleLine = formatPickitRule(beforeIdentifyConditions, afterConditions)
   if (!params?.includeExplanation) return [ruleLine]
 
   const commentLine = buildHumanCommentLine({

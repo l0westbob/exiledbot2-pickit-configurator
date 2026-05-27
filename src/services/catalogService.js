@@ -1,16 +1,4 @@
-const baseUrl = import.meta.env?.BASE_URL || "/"
-
-let catalogCache = null
-let catalogPromise = null
-const itemDataCacheBySlug = new Map()
-
-async function fetchJson(relativePath) {
-  const response = await fetch(baseUrl + relativePath)
-  if (!response.ok) {
-    throw new Error(`Failed to load ${relativePath}: ${response.status}`)
-  }
-  return response.json()
-}
+import { createKeyedResourceCache, createResourceCache, fetchJson } from "./dataRuntime.js"
 
 function validateCatalogPayload(payload) {
   if (!payload || typeof payload !== "object" || !Array.isArray(payload.items)) {
@@ -77,15 +65,7 @@ function normalizeModifierSections(rawSections) {
 }
 
 function flattenModifierSections(modifierSections) {
-  const orderedSectionKeys = [
-    "normal",
-    "essence",
-    "perfect_essence",
-    "desecrated",
-    "corrupted",
-    "bonded",
-    "socketable",
-  ]
+  const orderedSectionKeys = ["normal", "essence", "perfect_essence", "desecrated", "corrupted", "bonded", "socketable"]
 
   const seenSectionKeys = new Set()
   const affixes = []
@@ -118,31 +98,12 @@ function normalizeAffixPayload(payload) {
 }
 
 export async function loadCatalog() {
-  if (catalogCache) return catalogCache
-  if (catalogPromise) return catalogPromise
-
-  catalogPromise = fetchJson("data/catalog.json")
-    .then((payload) => {
-      validateCatalogPayload(payload)
-      catalogCache = payload.items
-      return catalogCache
-    })
-    .finally(() => {
-      catalogPromise = null
-    })
-
-  return catalogPromise
+  return catalogResource.load()
 }
 
 export async function getItemDataForSlug(itemSlug) {
   if (!itemSlug) return null
-  if (itemDataCacheBySlug.has(itemSlug)) return itemDataCacheBySlug.get(itemSlug) || null
-
-  const payload = await fetchJson(`data/affixes/${itemSlug}.json`)
-  validateAffixPayload(payload, itemSlug)
-  const normalizedPayload = normalizeAffixPayload(payload)
-  itemDataCacheBySlug.set(itemSlug, normalizedPayload)
-  return normalizedPayload
+  return itemDataResource.load(itemSlug)
 }
 
 export async function getAffixesForSlug(itemSlug) {
@@ -153,7 +114,18 @@ export async function getAffixesForSlug(itemSlug) {
 }
 
 export function resetCatalogServiceCache() {
-  catalogCache = null
-  catalogPromise = null
-  itemDataCacheBySlug.clear()
+  catalogResource.reset()
+  itemDataResource.reset()
 }
+
+const catalogResource = createResourceCache(async () => {
+  const payload = await fetchJson("data/catalog.json")
+  validateCatalogPayload(payload)
+  return payload.items
+})
+
+const itemDataResource = createKeyedResourceCache(async (itemSlug) => {
+  const payload = await fetchJson(`data/affixes/${itemSlug}.json`)
+  validateAffixPayload(payload, itemSlug)
+  return normalizeAffixPayload(payload)
+})

@@ -19,8 +19,7 @@ const MODIFIER_SECTION_LABELS = {
 }
 
 export function getModifierSectionKey(affixFamily) {
-  const modifierSection =
-    typeof affixFamily?.modifierSection === "string" ? affixFamily.modifierSection.trim() : ""
+  const modifierSection = typeof affixFamily?.modifierSection === "string" ? affixFamily.modifierSection.trim() : ""
   return modifierSection || "normal"
 }
 

@@ -1,10 +1,10 @@
-import {ref} from "vue"
-import {mount} from "@vue/test-utils"
-import {beforeEach, describe, expect, it, vi} from "vitest"
+import { ref } from "vue"
+import { mount } from "@vue/test-utils"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 
-const {ensureCatalogLoaded, getItemDataForSlug, loadCurrencyCatalog, loadUniqueCatalog} = vi.hoisted(() => {
-  const mirror = {name: "Mirror of Kalandra", categoryName: "Currency", categorySlug: "Currency"}
-  const divine = {name: "Divine Orb", categoryName: "Currency", categorySlug: "Currency"}
+const { ensureCatalogLoaded, getItemDataForSlug, loadCurrencyCatalog, loadUniqueCatalog } = vi.hoisted(() => {
+  const mirror = { name: "Mirror of Kalandra", categoryName: "Currency", categorySlug: "Currency" }
+  const divine = { name: "Divine Orb", categoryName: "Currency", categorySlug: "Currency" }
   const rune = {
     name: "Hedgewitch Assandra's Rune of Wisdom",
     categoryName: "Runes",
@@ -20,14 +20,14 @@ const {ensureCatalogLoaded, getItemDataForSlug, loadCurrencyCatalog, loadUniqueC
       {
         text: "+(5-7) to all Attributes",
         template: "+# to all Attributes",
-        rolls: [{min: 5, max: 7}],
+        rolls: [{ min: 5, max: 7 }],
         stat_ids: ["additional all attributes"],
         affix_ids: ["additional_all_attributes"],
       },
       {
         text: "+(50-100) to all Attributes",
         template: "+# to all Attributes",
-        rolls: [{min: 50, max: 100}],
+        rolls: [{ min: 50, max: 100 }],
         stat_ids: ["additional all attributes"],
         affix_ids: ["additional_all_attributes"],
       },
@@ -51,7 +51,7 @@ const {ensureCatalogLoaded, getItemDataForSlug, loadCurrencyCatalog, loadUniqueC
   return {
     ensureCatalogLoaded: vi.fn(),
     getItemDataForSlug: vi.fn().mockResolvedValue({
-      bases: [{name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", requiredLevel: 12}],
+      bases: [{ name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", requiredLevel: 12 }],
       affixes: [
         {
           modifierSection: "normal",
@@ -62,7 +62,7 @@ const {ensureCatalogLoaded, getItemDataForSlug, loadCurrencyCatalog, loadUniqueC
             {
               level: 10,
               name: "Healthy",
-              stats: [{id: "base_maximum_life", min: 20, max: 29}],
+              stats: [{ id: "base_maximum_life", min: 20, max: 29 }],
             },
           ],
         },
@@ -70,19 +70,19 @@ const {ensureCatalogLoaded, getItemDataForSlug, loadCurrencyCatalog, loadUniqueC
     }),
     loadCurrencyCatalog: vi.fn().mockResolvedValue({
       categories: [
-        {name: "Currency", slug: "Currency", items: [mirror, divine]},
-        {name: "Runes", slug: "Runes", items: [rune]},
+        { name: "Currency", slug: "Currency", items: [mirror, divine] },
+        { name: "Runes", slug: "Runes", items: [rune] },
       ],
       items: [mirror, divine, rune],
       tiers: [
-        {name: "S", items: [mirror]},
-        {name: "A", items: [divine, rune]},
+        { name: "S", items: [mirror] },
+        { name: "A", items: [divine, rune] },
       ],
     }),
     loadUniqueCatalog: vi.fn().mockResolvedValue({
       classes: [
-        {name: "Amulets", slug: "Amulets", uniques: [astramentis, beacon]},
-        {name: "Belts", slug: "Belts", uniques: [headhunter]},
+        { name: "Amulets", slug: "Amulets", uniques: [astramentis, beacon] },
+        { name: "Belts", slug: "Belts", uniques: [headhunter] },
       ],
       uniques: [astramentis, beacon, headhunter],
     }),
@@ -139,12 +139,12 @@ describe("Configurator integration", () => {
 
     const ruleTypeButtons = wrapper
       .findAll('[role="radio"]')
-      .map((button) => ({text: button.text(), checked: button.attributes("aria-checked")}))
+      .map((button) => ({ text: button.text(), checked: button.attributes("aria-checked") }))
 
     expect(ruleTypeButtons).toEqual([
-      {text: "Item", checked: "true"},
-      {text: "Currency", checked: "false"},
-      {text: "Unique", checked: "false"},
+      { text: "Item", checked: "true" },
+      { text: "Currency", checked: "false" },
+      { text: "Unique", checked: "false" },
     ])
     expect(wrapper.findAll("select")).not.toHaveLength(0)
   })
@@ -203,13 +203,19 @@ describe("Configurator integration", () => {
     selects = wrapper.findAll("select")
     await selects[5].setValue("10")
 
-    await wrapper.findAll("button").find((button) => button.text() === "Currency").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Currency")
+      .trigger("click")
     await flushPromises()
 
     expect(wrapper.text()).toContain("Currency configuration")
     expect(wrapper.findAll("select")).toHaveLength(3)
 
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     expect(wrapper.text()).toContain('[Type] == "Mirror of Kalandra" # [StashItem] == "true"')
     expect(wrapper.text()).not.toContain('[Category] == "Ring"')
@@ -221,7 +227,10 @@ describe("Configurator integration", () => {
     await flushPromises()
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Currency").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Currency")
+      .trigger("click")
     await flushPromises()
 
     let selects = wrapper.findAll("select")
@@ -229,7 +238,10 @@ describe("Configurator integration", () => {
     expect(selects[2].element.value).toBe("all")
 
     await selects[2].setValue("A")
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     expect(wrapper.text()).toContain('[Type] == "Divine Orb" # [StashItem] == "true"')
     expect(wrapper.text()).toContain('[Type] == "Hedgewitch Assandra\'s Rune of Wisdom" # [StashItem] == "true"')
@@ -242,7 +254,10 @@ describe("Configurator integration", () => {
     await flushPromises()
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Currency").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Currency")
+      .trigger("click")
     await flushPromises()
 
     let selects = wrapper.findAll("select")
@@ -254,7 +269,10 @@ describe("Configurator integration", () => {
     await wrapper.find('input[type="search"]').setValue("DIV")
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     expect(wrapper.text()).toContain('[Type] == "Divine Orb" # [StashItem] == "true"')
     expect(wrapper.text()).not.toContain('[Type] == "Mirror of Kalandra" # [StashItem] == "true"')
@@ -266,7 +284,10 @@ describe("Configurator integration", () => {
     await flushPromises()
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Currency").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Currency")
+      .trigger("click")
     await flushPromises()
 
     let selects = wrapper.findAll("select")
@@ -280,7 +301,10 @@ describe("Configurator integration", () => {
     selects = wrapper.findAll("select")
     expect(selects[3].element.value).toBe("all")
 
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     expect(wrapper.text()).toContain('[Type] == "Hedgewitch Assandra\'s Rune of Wisdom" # [StashItem] == "true"')
     expect(wrapper.text()).not.toContain('[Type] == "Divine Orb" # [StashItem] == "true"')
@@ -300,10 +324,16 @@ describe("Configurator integration", () => {
     selects = wrapper.findAll("select")
     await selects[5].setValue("10")
 
-    await wrapper.findAll("button").find((button) => button.text() === "Currency").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Currency")
+      .trigger("click")
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Unique").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Unique")
+      .trigger("click")
     await flushPromises()
     await flushPromises()
 
@@ -316,7 +346,10 @@ describe("Configurator integration", () => {
     expect(selects[1].element.value).toBe("Amulets")
     expect(selects[2].element.value).toBe("all")
 
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     expect(wrapper.text()).toContain(
       '[Type] == "Stellar Amulet" && [Rarity] == "Unique" # [UniqueName] == "Astramentis" && [StashItem] == "true"'
@@ -331,7 +364,10 @@ describe("Configurator integration", () => {
     await flushPromises()
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Unique").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Unique")
+      .trigger("click")
     await flushPromises()
     await flushPromises()
 
@@ -342,7 +378,10 @@ describe("Configurator integration", () => {
     await wrapper.find('input[type="search"]').setValue("HEAD")
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     expect(wrapper.text()).toContain(
       '[Type] == "Heavy Belt" && [Rarity] == "Unique" # [UniqueName] == "Headhunter" && [StashItem] == "true"'
@@ -358,7 +397,10 @@ describe("Configurator integration", () => {
     await flushPromises()
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Unique").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Unique")
+      .trigger("click")
     await flushPromises()
     await flushPromises()
 
@@ -374,7 +416,10 @@ describe("Configurator integration", () => {
     await statSelect.setValue(statOption.element.value)
     await wrapper.find('input[type="number"]').setValue("7")
 
-    await wrapper.findAll("button").find((button) => button.text().startsWith("Add stat filter")).trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text().startsWith("Add stat filter"))
+      .trigger("click")
     await flushPromises()
 
     selects = wrapper.findAll("select")
@@ -386,7 +431,10 @@ describe("Configurator integration", () => {
     await numberInputs[1].setValue("100")
     await flushPromises()
 
-    await wrapper.findAll("button").find((button) => button.text() === "Generate final").trigger("click")
+    await wrapper
+      .findAll("button")
+      .find((button) => button.text() === "Generate final")
+      .trigger("click")
 
     const output = wrapper.text()
     expect(output).toContain(
@@ -449,5 +497,26 @@ describe("Configurator integration", () => {
 
     expect(wrapper.text()).toContain("// Picks up Ring base Golden Hoop of rarity Magic and StashItem")
     expect(wrapper.text()).toContain('[Category] == "Ring" && [Type] == "Golden Hoop" && [Rarity] == "Magic"')
+  })
+
+  it("copies the generated final config when the clipboard API is available", async () => {
+    const writeText = vi.fn().mockResolvedValue(undefined)
+    Object.defineProperty(globalThis.navigator, "clipboard", {
+      configurable: true,
+      value: { writeText },
+    })
+
+    const wrapper = mount(Configurator)
+
+    await flushPromises()
+    await flushPromises()
+
+    const buttons = wrapper.findAll("button")
+    await buttons.find((button) => button.text() === "Generate final").trigger("click")
+    await buttons.find((button) => button.text() === "Copy final").trigger("click")
+    await flushPromises()
+
+    expect(writeText).toHaveBeenCalledWith(expect.stringContaining('[Category] == "Ring"'))
+    expect(wrapper.text()).toContain("Copied final config.")
   })
 })

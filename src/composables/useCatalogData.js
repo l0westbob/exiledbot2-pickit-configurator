@@ -1,6 +1,6 @@
-import {computed, ref} from "vue"
-import {getImplementedCatalogItems} from "../domain/pickit/catalog.js"
-import {loadCatalog} from "../services/catalogService.js"
+import { computed, ref } from "vue"
+import { getImplementedCatalogItems } from "../domain/pickit/catalog.js"
+import { loadCatalog } from "../services/catalogService.js"
 
 const catalogItems = ref([])
 const isLoadingCatalog = ref(false)

@@ -1,4 +1,4 @@
-import {describe, expect, it} from "vitest"
+import { describe, expect, it } from "vitest"
 
 import {
   CURRENCY_GROUP_ALL_VALUE,
@@ -9,28 +9,25 @@ import {
   resolveCurrencySelectionItems,
 } from "../src/domain/pickit/currency.js"
 
-const divineOrb = {name: "Divine Orb", categoryName: "Currency", categorySlug: "Currency"}
-const mirror = {name: "Mirror of Kalandra", categoryName: "Currency", categorySlug: "Currency"}
-const wisdomRune = {name: "Hedgewitch Assandra's Rune of Wisdom", categoryName: "Runes", categorySlug: "Runes"}
+const divineOrb = { name: "Divine Orb", categoryName: "Currency", categorySlug: "Currency" }
+const mirror = { name: "Mirror of Kalandra", categoryName: "Currency", categorySlug: "Currency" }
+const wisdomRune = { name: "Hedgewitch Assandra's Rune of Wisdom", categoryName: "Runes", categorySlug: "Runes" }
 
 const catalog = {
   categories: [
-    {name: "Currency", slug: "Currency", items: [mirror, divineOrb]},
-    {name: "Runes", slug: "Runes", items: [wisdomRune]},
+    { name: "Currency", slug: "Currency", items: [mirror, divineOrb] },
+    { name: "Runes", slug: "Runes", items: [wisdomRune] },
   ],
   items: [mirror, divineOrb, wisdomRune],
   tiers: [
-    {name: "S", items: [mirror]},
-    {name: "A", items: [wisdomRune]},
+    { name: "S", items: [mirror] },
+    { name: "A", items: [wisdomRune] },
   ],
 }
 
 describe("pickit currency rules", () => {
   it("resolves the exact selected tier", () => {
-    const result = resolveCurrencySelectionItems(
-      {mode: CURRENCY_SELECTION_MODE.TIER, selectedTier: "S"},
-      catalog
-    )
+    const result = resolveCurrencySelectionItems({ mode: CURRENCY_SELECTION_MODE.TIER, selectedTier: "S" }, catalog)
 
     expect(result.items.map((item) => item.name)).toEqual(["Mirror of Kalandra"])
   })
@@ -52,10 +49,7 @@ describe("pickit currency rules", () => {
   })
 
   it("resolves all tiers when the tier selection is all", () => {
-    const result = resolveCurrencySelectionItems(
-      {mode: CURRENCY_SELECTION_MODE.TIER, selectedTier: "all"},
-      catalog
-    )
+    const result = resolveCurrencySelectionItems({ mode: CURRENCY_SELECTION_MODE.TIER, selectedTier: "all" }, catalog)
 
     expect(result.items.map((item) => item.name)).toEqual([
       "Divine Orb",
@@ -103,9 +97,7 @@ describe("pickit currency rules", () => {
       },
     })
 
-    expect(lines).toEqual([
-      '[Type] == "Hedgewitch Assandra\'s Rune of Wisdom" # [StashItem] == "true"',
-    ])
+    expect(lines).toEqual(['[Type] == "Hedgewitch Assandra\'s Rune of Wisdom" # [StashItem] == "true"'])
   })
 
   it("adds a single summary comment when explanations are enabled", () => {

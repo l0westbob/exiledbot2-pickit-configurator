@@ -5,106 +5,27 @@
         <h3 class="row-title">Row {{ rowIndex + 1 }}</h3>
         <div class="row-head-actions">
           <label class="explanation-toggle">
-            <input
-                v-model="shouldIncludeExplanation"
-                type="checkbox"
-                class="explanation-checkbox"
-            >
+            <input v-model="shouldIncludeExplanation" type="checkbox" class="explanation-checkbox" />
             <span>Add config explanation</span>
           </label>
 
-          <button type="button" class="btn-remove" @click="$emit('remove', rowId)">
-            Remove row
-          </button>
+          <button type="button" class="btn-remove" @click="$emit('remove', rowId)">Remove row</button>
         </div>
       </div>
 
       <p class="field-hint">
-        Item, currency, and unique rules are implemented. Unique rules support exact pickup and optional
-        stat minimum filters; weighted roll scoring can come later.
+        Item, currency, and unique rules are implemented. Unique rules support exact pickup and optional stat minimum
+        filters; weighted roll scoring can come later.
       </p>
 
-      <RuleActionSelectField
-          v-model="selectedActionFlag"
-          :action-options="ACTION_OPTIONS"
-      />
+      <RuleActionSelectField v-model="selectedActionFlag" :action-options="ACTION_OPTIONS" />
 
-      <RuleFamilySegmentedControl
-          v-model="selectedRuleFamily"
-          :options="RULE_FAMILY_OPTIONS"
-      />
+      <RuleFamilySegmentedControl v-model="selectedRuleFamily" :options="ruleFamilyOptions" />
 
-      <template v-if="isItemRuleFamily">
-        <CatalogItemSelectField
-            v-model="selectedItemSlug"
-            :items="availableItems"
-            :disabled="isLoadingCatalog || isLoadingAffixes || !availableItems.length"
-        />
-
-        <ItemRaritySelectField
-            v-model="selectedRarity"
-            :rarity-options="ITEM_RARITY_OPTIONS"
-        />
-
-        <CatalogBaseSelectField
-            v-model="selectedBaseName"
-            :bases="availableBases"
-            :disabled="isLoadingAffixes"
-        />
-
-        <AffixSlotsEditor
-            :slots="affixSlots"
-            :visible-affix-families="visibleAffixFamilies"
-            :prefix-count="prefixCount"
-            :suffix-count="suffixCount"
-            :max-slots="MAX_AFFIX_SLOTS"
-            :max-prefixes="MAX_PREFIXES"
-            :max-suffixes="MAX_SUFFIXES"
-            :can-add-affix-slot="canAddAffixSlot"
-            :add-affix-disabled-reason="addAffixDisabledReason"
-            :affix-key="affixKey"
-            :affix-groups-for-slot="affixGroupsForSlot"
-            :available-tiers-for-slot="availableTiersForSlot"
-            @add-slot="addAffixSlot"
-            @remove-slot="removeAffixSlot"
-        />
-      </template>
-
-      <CurrencyRuleEditor
-          v-else-if="isCurrencyRuleFamily"
-          v-model:mode="selectedCurrencyMode"
-          v-model:selected-tier="selectedCurrencyTier"
-          v-model:single-group-selection="selectedSingleGroupSelection"
-          v-model:search-text="currencySearchText"
-          v-model:selected-item-name="selectedCurrencyItemName"
-          v-model:selected-group-item-name="selectedGroupItemName"
-          :categories="currencyCategories"
-          :tiers="currencyTiers"
-          :filtered-items="filteredCurrencyItems"
-          :group-items="selectedCurrencyGroupItems"
-          :is-loading="isLoadingCurrency"
-          :error-message="currencyLoadErrorMessage"
-      />
-
-      <UniqueRuleEditor
-          v-else-if="isUniqueRuleFamily"
-          v-model:selection="selectedUniqueSelection"
-          v-model:search-text="uniqueSearchText"
-          v-model:selected-item-display-name="selectedUniqueDisplayName"
-          v-model:selected-group-item-display-name="selectedUniqueGroupItemDisplayName"
-          :classes="uniqueClasses"
-          :filtered-items="filteredUniqueItems"
-          :group-items="selectedUniqueClassItems"
-          :selected-unique-for-stats="selectedUniqueForStats"
-          :stat-slots="uniqueStatSlots"
-          :stat-options="uniqueStatOptions"
-          :stat-options-for-slot="uniqueStatOptionsForSlot"
-          :can-add-stat-slot="canAddUniqueStatSlot"
-          :add-stat-disabled-reason="addUniqueStatDisabledReason"
-          :is-loading="isLoadingUniques"
-          :error-message="uniqueLoadErrorMessage"
-          @add-stat-slot="addUniqueStatSlot"
-          @remove-stat-slot="removeUniqueStatSlot"
+      <component
+        :is="activeRuleFamilyEditor"
+        v-bind="activeRuleFamilyEditorProps"
+        v-on="activeRuleFamilyEditorEvents"
       />
 
       <p v-if="catalogErrorMessage" class="field-error">
@@ -115,51 +36,42 @@
         {{ affixLoadErrorMessage }}
       </p>
 
-      <button type="button" class="btn-generate" @click="onGenerate">
-        Generate row
-      </button>
+      <button type="button" class="btn-generate" @click="onGenerate">Generate row</button>
     </div>
 
-    <RowPreviewPanel
-        :preview-text="previewText"
-        placeholder="No config generated yet."
-    />
+    <RowPreviewPanel :preview-text="previewText" placeholder="No config generated yet." />
   </div>
 </template>
 
 <script setup>
-import {computed, toRef, watch, watchEffect, ref} from "vue"
-import {ACTION_OPTIONS} from "../../domain/pickit/actions.js"
-import {ITEM_RARITY_OPTIONS} from "../../domain/pickit/rules.js"
-import {RULE_FAMILY, RULE_FAMILY_OPTIONS} from "../../domain/pickit/ruleFamilies.js"
-import {useCurrencyRuleRow} from "../../composables/useCurrencyRuleRow.js"
-import {useItemRuleRow} from "../../composables/useItemRuleRow.js"
-import {useUniqueRuleRow} from "../../composables/useUniqueRuleRow.js"
-import AffixSlotsEditor from "./AffixSlotsEditor.vue"
-import CatalogBaseSelectField from "./CatalogBaseSelectField.vue"
-import CatalogItemSelectField from "./CatalogItemSelectField.vue"
+import { computed, toRef, watch, watchEffect, ref } from "vue"
+import { ACTION_OPTIONS } from "../../domain/pickit/actions.js"
+import { ITEM_RARITY_OPTIONS } from "../../domain/pickit/rules.js"
+import { RULE_FAMILY, getRuleFamilyOptions } from "../../domain/pickit/ruleFamilies.js"
+import { useActiveRuleFamilyRuntime } from "../../composables/useActiveRuleFamilyRuntime.js"
+import { useCurrencyRuleRow } from "../../composables/useCurrencyRuleRow.js"
+import { useItemRuleRow } from "../../composables/useItemRuleRow.js"
+import { useUniqueRuleRow } from "../../composables/useUniqueRuleRow.js"
 import CurrencyRuleEditor from "./CurrencyRuleEditor.vue"
 import RowPreviewPanel from "./RowPreviewPanel.vue"
-import ItemRaritySelectField from "./ItemRaritySelectField.vue"
+import ItemRuleEditor from "./ItemRuleEditor.vue"
 import RuleActionSelectField from "./RuleActionSelectField.vue"
 import RuleFamilySegmentedControl from "./RuleFamilySegmentedControl.vue"
 import UniqueRuleEditor from "./UniqueRuleEditor.vue"
 
 const props = defineProps({
-  rowId: {type: String, required: true},
-  rowIndex: {type: Number, required: true},
-  availableItems: {type: Array, default: () => []},
-  isLoadingCatalog: {type: Boolean, default: false},
-  catalogErrorMessage: {type: String, default: ""},
+  rowId: { type: String, required: true },
+  rowIndex: { type: Number, required: true },
+  availableItems: { type: Array, default: () => [] },
+  isLoadingCatalog: { type: Boolean, default: false },
+  catalogErrorMessage: { type: String, default: "" },
 })
 
 const emit = defineEmits(["update-lines", "remove"])
 
 const previewText = ref("")
 const selectedRuleFamily = ref(RULE_FAMILY.ITEM)
-const isItemRuleFamily = computed(() => selectedRuleFamily.value === RULE_FAMILY.ITEM)
-const isCurrencyRuleFamily = computed(() => selectedRuleFamily.value === RULE_FAMILY.CURRENCY)
-const isUniqueRuleFamily = computed(() => selectedRuleFamily.value === RULE_FAMILY.UNIQUE)
+const ruleFamilyOptions = getRuleFamilyOptions()
 
 const {
   MAX_SLOTS: MAX_AFFIX_SLOTS,
@@ -172,6 +84,7 @@ const {
   addDisabledReason: addAffixDisabledReason,
   addSlot: addAffixSlot,
   removeSlot: removeAffixSlot,
+  updateSlot: updateAffixSlot,
   affixKey,
   groupsForSlot: affixGroupsForSlot,
   availableTiersForSlot,
@@ -225,6 +138,7 @@ const {
   addUniqueStatDisabledReason,
   addUniqueStatSlot,
   removeUniqueStatSlot,
+  updateUniqueStatSlot,
   uniqueStatSlotSignature,
   isLoadingUniques,
   uniqueLoadErrorMessage,
@@ -235,19 +149,167 @@ const {
   includeExplanationRef: shouldIncludeExplanation,
 })
 
-const activeGeneratedLines = computed(() => {
-  if (isItemRuleFamily.value) return itemCurrentLines.value
-  if (isCurrencyRuleFamily.value) return currentCurrencyLines.value
-  if (isUniqueRuleFamily.value) return currentUniqueLines.value
-  return []
+const familyRuntimeById = {
+  [RULE_FAMILY.ITEM]: {
+    generatedLines: itemCurrentLines,
+    isLoading: isLoadingAffixes,
+    errorMessage: affixLoadErrorMessage,
+    loadingMessage: "Loading affix data.",
+    missingSelectionMessage: computed(() => (selectedItemSlug.value ? "" : "Select an item type first.")),
+  },
+  [RULE_FAMILY.CURRENCY]: {
+    generatedLines: currentCurrencyLines,
+    isLoading: isLoadingCurrency,
+    errorMessage: currencyLoadErrorMessage,
+    loadingMessage: "Loading currency data.",
+    missingSelectionMessage: computed(() => ""),
+    ensureLoaded: ensureCurrencyCatalogLoaded,
+  },
+  [RULE_FAMILY.UNIQUE]: {
+    generatedLines: currentUniqueLines,
+    isLoading: isLoadingUniques,
+    errorMessage: uniqueLoadErrorMessage,
+    loadingMessage: "Loading unique data.",
+    missingSelectionMessage: computed(() => ""),
+    ensureLoaded: ensureUniqueCatalogLoaded,
+  },
+}
+
+const { activeRuleFamily, activeFamilyRuntime, activeGeneratedLines } = useActiveRuleFamilyRuntime(
+  selectedRuleFamily,
+  familyRuntimeById
+)
+const isCurrencyRuleFamily = computed(() => activeRuleFamily.value.id === RULE_FAMILY.CURRENCY)
+const isUniqueRuleFamily = computed(() => activeRuleFamily.value.id === RULE_FAMILY.UNIQUE)
+
+const ruleFamilyEditorById = {
+  [RULE_FAMILY.ITEM]: ItemRuleEditor,
+  [RULE_FAMILY.CURRENCY]: CurrencyRuleEditor,
+  [RULE_FAMILY.UNIQUE]: UniqueRuleEditor,
+}
+
+const activeRuleFamilyEditor = computed(() => ruleFamilyEditorById[activeRuleFamily.value.id] || ItemRuleEditor)
+
+const activeRuleFamilyEditorProps = computed(() => {
+  if (isCurrencyRuleFamily.value) {
+    return {
+      mode: selectedCurrencyMode.value,
+      selectedTier: selectedCurrencyTier.value,
+      singleGroupSelection: selectedSingleGroupSelection.value,
+      searchText: currencySearchText.value,
+      selectedItemName: selectedCurrencyItemName.value,
+      selectedGroupItemName: selectedGroupItemName.value,
+      categories: currencyCategories.value,
+      tiers: currencyTiers.value,
+      filteredItems: filteredCurrencyItems.value,
+      groupItems: selectedCurrencyGroupItems.value,
+      isLoading: isLoadingCurrency.value,
+      errorMessage: currencyLoadErrorMessage.value,
+    }
+  }
+
+  if (isUniqueRuleFamily.value) {
+    return {
+      selection: selectedUniqueSelection.value,
+      searchText: uniqueSearchText.value,
+      selectedItemDisplayName: selectedUniqueDisplayName.value,
+      selectedGroupItemDisplayName: selectedUniqueGroupItemDisplayName.value,
+      classes: uniqueClasses.value,
+      filteredItems: filteredUniqueItems.value,
+      groupItems: selectedUniqueClassItems.value,
+      selectedUniqueForStats: selectedUniqueForStats.value,
+      statSlots: uniqueStatSlots.value,
+      statOptions: uniqueStatOptions.value,
+      statOptionsForSlot: uniqueStatOptionsForSlot,
+      canAddStatSlot: canAddUniqueStatSlot.value,
+      addStatDisabledReason: addUniqueStatDisabledReason.value,
+      isLoading: isLoadingUniques.value,
+      errorMessage: uniqueLoadErrorMessage.value,
+    }
+  }
+
+  return {
+    selectedItemSlug: selectedItemSlug.value,
+    selectedRarity: selectedRarity.value,
+    selectedBaseName: selectedBaseName.value,
+    availableItems: props.availableItems,
+    rarityOptions: ITEM_RARITY_OPTIONS,
+    availableBases: availableBases.value,
+    affixSlots: affixSlots.value,
+    visibleAffixFamilies: visibleAffixFamilies.value,
+    prefixCount: prefixCount.value,
+    suffixCount: suffixCount.value,
+    maxAffixSlots: MAX_AFFIX_SLOTS,
+    maxPrefixes: MAX_PREFIXES,
+    maxSuffixes: MAX_SUFFIXES,
+    canAddAffixSlot: canAddAffixSlot.value,
+    addAffixDisabledReason: addAffixDisabledReason.value,
+    affixKey,
+    affixGroupsForSlot,
+    availableTiersForSlot,
+    isLoadingCatalog: props.isLoadingCatalog,
+    isLoadingAffixes: isLoadingAffixes.value,
+  }
 })
 
-watch(isCurrencyRuleFamily, (isCurrency) => {
-  if (isCurrency) ensureCurrencyCatalogLoaded()
-})
+const activeRuleFamilyEditorEvents = computed(() => {
+  if (isCurrencyRuleFamily.value) {
+    return {
+      "update:mode": (value) => {
+        selectedCurrencyMode.value = value
+      },
+      "update:selectedTier": (value) => {
+        selectedCurrencyTier.value = value
+      },
+      "update:singleGroupSelection": (value) => {
+        selectedSingleGroupSelection.value = value
+      },
+      "update:searchText": (value) => {
+        currencySearchText.value = value
+      },
+      "update:selectedItemName": (value) => {
+        selectedCurrencyItemName.value = value
+      },
+      "update:selectedGroupItemName": (value) => {
+        selectedGroupItemName.value = value
+      },
+    }
+  }
 
-watch(isUniqueRuleFamily, (isUnique) => {
-  if (isUnique) ensureUniqueCatalogLoaded()
+  if (isUniqueRuleFamily.value) {
+    return {
+      "update:selection": (value) => {
+        selectedUniqueSelection.value = value
+      },
+      "update:searchText": (value) => {
+        uniqueSearchText.value = value
+      },
+      "update:selectedItemDisplayName": (value) => {
+        selectedUniqueDisplayName.value = value
+      },
+      "update:selectedGroupItemDisplayName": (value) => {
+        selectedUniqueGroupItemDisplayName.value = value
+      },
+      "add-stat-slot": addUniqueStatSlot,
+      "remove-stat-slot": removeUniqueStatSlot,
+      "update-stat-slot": updateUniqueStatSlot,
+    }
+  }
+
+  return {
+    "update:selectedItemSlug": (value) => {
+      selectedItemSlug.value = value
+    },
+    "update:selectedRarity": (value) => {
+      selectedRarity.value = value
+    },
+    "update:selectedBaseName": (value) => {
+      selectedBaseName.value = value
+    },
+    "add-affix-slot": addAffixSlot,
+    "remove-affix-slot": removeAffixSlot,
+    "update-affix-slot": updateAffixSlot,
+  }
 })
 
 watch(
@@ -255,16 +317,14 @@ watch(
   (items) => {
     if (!items.length) {
       previewText.value = ""
-      emit("update-lines", {rowId: props.rowId, lines: []})
+      emit("update-lines", { rowId: props.rowId, lines: [] })
     }
   },
-  {immediate: true}
+  { immediate: true }
 )
 
 watchEffect(() => {
-  if (isItemRuleFamily.value && isLoadingAffixes.value) return
-  if (isCurrencyRuleFamily.value && isLoadingCurrency.value) return
-  if (isUniqueRuleFamily.value && isLoadingUniques.value) return
+  if (activeFamilyRuntime.value.isLoading.value) return
 
   emit("update-lines", {
     rowId: props.rowId,
@@ -294,66 +354,34 @@ watch(
 )
 
 function setPreviewFromActiveLines() {
-  previewText.value = activeGeneratedLines.value.length
-    ? activeGeneratedLines.value.join("\n")
-    : "Nothing selected."
+  previewText.value = activeGeneratedLines.value.length ? activeGeneratedLines.value.join("\n") : "Nothing selected."
 }
-
-function onGenerateCurrency() {
-  if (isLoadingCurrency.value) {
-    previewText.value = "Loading currency data."
-    return
-  }
-
-  if (currencyLoadErrorMessage.value) {
-    previewText.value = currencyLoadErrorMessage.value
-    return
-  }
-
-  setPreviewFromActiveLines()
-}
-
-watch(currencyLoadErrorMessage, () => {
-  previewText.value = ""
-})
-
-function onGenerateUnique() {
-  if (isLoadingUniques.value) {
-    previewText.value = "Loading unique data."
-    return
-  }
-
-  if (uniqueLoadErrorMessage.value) {
-    previewText.value = uniqueLoadErrorMessage.value
-    return
-  }
-
-  setPreviewFromActiveLines()
-}
-
-watch(uniqueLoadErrorMessage, () => {
-  previewText.value = ""
-})
 
 function onGenerate() {
-  if (isCurrencyRuleFamily.value) {
-    onGenerateCurrency()
+  activeFamilyRuntime.value.ensureLoaded?.()
+
+  if (activeFamilyRuntime.value.isLoading.value) {
+    previewText.value = activeFamilyRuntime.value.loadingMessage
     return
   }
 
-  if (isUniqueRuleFamily.value) {
-    onGenerateUnique()
+  if (activeFamilyRuntime.value.errorMessage.value) {
+    previewText.value = activeFamilyRuntime.value.errorMessage.value
     return
   }
 
-  if (!selectedItemSlug.value) {
-    previewText.value = "Select an item type first."
+  const missingSelectionMessage = activeFamilyRuntime.value.missingSelectionMessage.value
+  if (missingSelectionMessage) {
+    previewText.value = missingSelectionMessage
     return
   }
 
   setPreviewFromActiveLines()
 }
 
+watch([affixLoadErrorMessage, currencyLoadErrorMessage, uniqueLoadErrorMessage], () => {
+  previewText.value = ""
+})
 </script>
 
 <style scoped>

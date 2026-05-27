@@ -1,15 +1,4 @@
-const baseUrl = import.meta.env?.BASE_URL || "/"
-
-let currencyCatalogCache = null
-let currencyCatalogPromise = null
-
-async function fetchJson(relativePath) {
-  const response = await fetch(baseUrl + relativePath)
-  if (!response.ok) {
-    throw new Error(`Failed to load ${relativePath}: ${response.status}`)
-  }
-  return response.json()
-}
+import { createResourceCache, fetchJson } from "./dataRuntime.js"
 
 function validateCurrencyPayload(payload) {
   if (!payload || typeof payload !== "object" || !Array.isArray(payload.categories)) {
@@ -124,25 +113,18 @@ function normalizeCurrencyCatalog(currencyPayload, tierPayload) {
 }
 
 export async function loadCurrencyCatalog() {
-  if (currencyCatalogCache) return currencyCatalogCache
-  if (currencyCatalogPromise) return currencyCatalogPromise
-
-  currencyCatalogPromise = Promise.all([
-    fetchJson("data/economy/currency.json"),
-    fetchJson("data/tiers/tiers-early.json"),
-  ])
-    .then(([currencyPayload, tierPayload]) => {
-      currencyCatalogCache = normalizeCurrencyCatalog(currencyPayload, tierPayload)
-      return currencyCatalogCache
-    })
-    .finally(() => {
-      currencyCatalogPromise = null
-    })
-
-  return currencyCatalogPromise
+  return currencyCatalogResource.load()
 }
 
 export function resetCurrencyServiceCache() {
-  currencyCatalogCache = null
-  currencyCatalogPromise = null
+  currencyCatalogResource.reset()
 }
+
+const currencyCatalogResource = createResourceCache(async () => {
+  const [currencyPayload, tierPayload] = await Promise.all([
+    fetchJson("data/economy/currency.json"),
+    fetchJson("data/tiers/tiers-early.json"),
+  ])
+
+  return normalizeCurrencyCatalog(currencyPayload, tierPayload)
+})

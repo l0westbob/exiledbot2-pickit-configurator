@@ -1,4 +1,4 @@
-import {computed, ref, watch} from "vue"
+import { computed, ref, watch } from "vue"
 import {
   CURRENCY_GROUP_ALL_VALUE,
   CURRENCY_ALL_TIERS_VALUE,
@@ -8,7 +8,7 @@ import {
   filterCurrencyItemsBySearch,
   generateCurrencyRuleLines,
 } from "../domain/pickit/currency.js"
-import {loadCurrencyCatalog} from "../services/currencyService.js"
+import { loadCurrencyCatalog } from "../services/currencyService.js"
 
 export function useCurrencyRuleRow(options) {
   const actionFlagRef = options.actionFlagRef
@@ -28,7 +28,7 @@ export function useCurrencyRuleRow(options) {
   const currencyCategories = computed(() => currencyCatalog.value?.categories || [])
   const currencyItems = computed(() => currencyCatalog.value?.items || [])
   const currencyTiers = computed(() => [
-    {name: CURRENCY_ALL_TIERS_VALUE, items: currencyItems.value},
+    { name: CURRENCY_ALL_TIERS_VALUE, items: currencyItems.value },
     ...(currencyCatalog.value?.tiers || []),
   ])
   const filteredCurrencyItems = computed(() => {

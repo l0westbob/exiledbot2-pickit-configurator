@@ -1,30 +1,35 @@
 # exiledbot2-pickit-configurator
 
-Usable configurator here: https://l0westbob.github.io/exiledbot2-pickit-configurator/
+Usable configurator: https://l0westbob.github.io/exiledbot2-pickit-configurator/
 
-This is a small tool for creating valid pickit configuration
-rules via a configurable graphical user interface instead of
-writing each line manually.
+This is a frontend-only Vue app for creating ExiledBot2 pickit configuration lines through a guided UI instead of writing every rule by hand.
 
-## Current focus
+The app is intentionally focused on preventing the mistakes that are easiest to make manually: selecting impossible affixes for an item family, picking unavailable tiers, mixing invalid prefix/suffix counts, or writing long lists of exact pickup rules by hand.
 
-This repository is the frontend application only.
+## Current Support
 
-Right now the implemented flow is the item-rule configurator:
+Implemented rule families:
 
-- select a supported item type from the imported affix catalog
-- optionally narrow to a known base when that item family has bases
-- choose the action flag
-- choose modifiers and minimum tiers
-- generate preview lines and final pickit output
+- `Item`: select an imported item family, optional base, rarity, normal prefixes/suffixes, minimum tiers, and action flag.
+- `Currency`: generate exact `[Type]` pickup rules by tier, all currency/economy items, one item, or one currency group.
+- `Unique`: generate exact unique pickup rules by all uniques, one unique, one class, or one class item; single selected uniques can also add mapped stat minimum filters.
 
-Planned rule families such as currency, gems, and custom rules are intentionally hidden in the UI until they have real generators and test coverage.
+Not implemented yet:
 
-## Data provenance
+- weighted rare-item scoring with `[WeightedSum(...)]`
+- gem-level builders
+- waystone-tier builders
+- item-tier/base pickup builders outside the current item-affix flow
+- quality, socket, computed armour/evasion/energy-shield, and DPS builders
+- custom grouped OR/AND rule composition
 
-The affix catalog does not originate in this repository.
+Some imported affixes and unique stats are not mapped yet, so unmapped modifiers may not appear in selectors or generated rules.
 
-The generated files in `public/data/affixes/*.json` and `public/data/catalog.json` come from the external `poe-affix-builder` project (https://github.com/l0westbob/poe2-affix-builder). 
+## Data Provenance
+
+This repo is the web app only. The affix catalog does not originate here.
+
+The generated files in `public/data/affixes/*.json` and `public/data/catalog.json` come from the external `poe-affix-builder` project: https://github.com/l0westbob/poe2-affix-builder
 
 That upstream tool:
 
@@ -32,15 +37,59 @@ That upstream tool:
 2. matches those affixes against `repoe-fork/poe2` `mods.json` stat ids
 3. exports per-item affix JSON files that this frontend imports
 
-Each imported per-item JSON payload now contains:
+Each imported per-item payload currently contains:
 
 - `modifier_sections.normal` for the regular affix pool
 - additional modifier sections such as corrupted, essence, desecrated, bonded, or socketable when available
-- `bases` for the concrete item bases in that family when available
+- `bases` for concrete item bases when the imported item family has them
 
-The app currently exposes only normal prefixes and suffixes in the picker. The other imported modifier sections are kept in the payloads for future rule families, but are intentionally hidden from the active item-rule flow for now.
+The app currently exposes only normal prefixes and suffixes in the Item editor. The other imported sections are kept in the data for future rule families.
 
-### Refreshing imported catalog data
+Additional runtime data:
+
+- `public/data/economy/currency.json`: currency/economy categories and items used by the Currency family
+- `public/data/tiers/tiers-early.json`: tier groupings used by Currency tier mode
+- `public/data/uniques/index.json`: index of unique class files
+- `public/data/uniques/*.json`: unique items, bases, and mapped stat roll data used by the Unique family
+
+## Generated Vs App-Owned Files
+
+Imported/generated artifacts:
+
+- `public/data/affixes/*.json`
+- `public/data/catalog.json`
+- `public/data/economy/currency.json`
+- `public/data/tiers/tiers-early.json`
+- `public/data/uniques/*.json`
+
+App-owned metadata and logic:
+
+- `config/catalog-augmentation.json`
+- `scripts/import-catalog.mjs`
+- `src/domain/pickit/*`
+- `src/services/*`
+- `src/composables/*`
+- `src/components/configurator/*`
+
+## Architecture Overview
+
+The app is organized around four layers:
+
+- Data import/check: `scripts/import-catalog.mjs` imports affix exports and validates all runtime data contracts.
+- Data runtime: `src/services/*` loads checked-in JSON data through shared fetch/cache helpers.
+- Pickit domain: `src/domain/pickit/*` contains pure rule logic, action flags, rule-family metadata, and shared pickit formatting.
+- Vue UI: `src/components/configurator/*` and `src/composables/*` hold editor state and render the rule-family forms.
+
+Good starting points:
+
+- UI behavior: `src/components/configurator/ItemRuleRow.vue` and the matching family editor component
+- Row state: `src/composables/useItemRuleRow.js`, `src/composables/useCurrencyRuleRow.js`, or `src/composables/useUniqueRuleRow.js`
+- Rule output: `src/domain/pickit/rules.js`, `src/domain/pickit/currency.js`, or `src/domain/pickit/uniques.js`
+- Shared rule syntax: `src/domain/pickit/formatter.js`
+- Runtime loading: `src/services/dataRuntime.js`
+- Data import/parity: `scripts/import-catalog.mjs`
+
+## Data Workflow
 
 Import a folder of exported affix files into this frontend repo:
 
@@ -48,223 +97,82 @@ Import a folder of exported affix files into this frontend repo:
 npm run import-catalog -- --source /path/to/exported/affixes
 ```
 
-Validate that the generated app-facing catalog still matches the checked-in affix payloads:
+Validate that the app-facing catalog and all runtime data contracts still match the checked-in data:
 
 ```bash
 npm run check-catalog
 ```
 
-Run the frontend test suite after import:
+Run the full local verification gate:
+
+```bash
+npm run check
+```
+
+`npm run check` runs lint, formatting validation, tests, production build, and data contract validation.
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Run tests:
 
 ```bash
 npm run test
 ```
 
-### What is generated vs app-owned
+Run lint and formatting checks:
 
-Imported generated data:
-
-- `public/data/affixes/*.json`
-- `public/data/catalog.json`
-
-App-owned metadata and logic:
-
-- `config/catalog-augmentation.json`
-- `src/domain/pickit/*`
-- `src/components/configurator/*`
-
-The current introduction of how to use the pickit config
-file looks like this:
-
-```
-//
-// Exiled Bot 2 Pickit - Configuration Guide for Path of Exile 2
-//
-// This file defines which items your bot should pick up, identify, keep, or salvage.
-//
-// Important File:
-// - ModsList.html in the main bot folder contains all available mods
-//   (Use expressions from the right column, like local_minimum_added_physical_damage)
-//
-// Special Computed Values:
-// ----------------------
-// [TotalResistances] - Sums all resistance values on an item
-//   Example: [Category] == "Helmet" # [TotalResistances] > "50" && [StashItem] == "true"  // Keeps helmets with >50 total resistance
-//
-// Defensive Calculations:
-// ---------------------
-// [ComputedArmour] - Final armour value after all modifiers
-// [ComputedEvasion] - Final evasion value after all modifiers
-// [ComputedEnergyShield] - Final ES value after all modifiers
-//
-// Damage Calculations:
-// ------------------
-// [DPS] - Total weapon DPS (physical + elemental)
-// [ElementalDPS] - Only elemental portion of weapon DPS
-// [PhysicalDPS] - Only physical portion of weapon DPS
-//
-// Spell Damage Totals:
-// ------------------
-// [TotalSpellElementalDamage] - Combined spell + elemental damage (%)
-// [TotalFireSpellDamage] - Fire spell damage including general spell damage (%)
-// [TotalColdSpellDamage] - Cold spell damage including general spell damage (%)
-// [TotalLightningSpellDamage] - Lightning spell damage including general spell damage (%)
-//
-// Gems:
-// -------------
-// [GemLevel] - Current level of the gem
-//
-// Example:
-// [Type] == "Uncut Support Gem" && [GemLevel] == "3" # [StashItem] == "true"
-// This means: Pick up level 3 support gems
-// This means: Pick up spirit gem with level higher than 17
-//
-// UniqueName:
-// -----------
-// Matches specific unique items by their exact name
-// Example: [Type] == "Heavy Belt" && [Rarity] == "Unique" # [UniqueName] == "Headhunter" && [StashItem] == "true"
-// This means: Pick up and stash items named "Headhunter"
-//
-// ItemTier:
-// --------
-// Represents the tier of the item base type (higher is better)
-// Example: [Category] == "Ring" && [ItemTier] >= "2" # [StashItem] == "true"
-// This means: Pick up and stash rings of tier 2 or higher
-//
-// Quality:
-// -------
-// The quality percentage of an item (0-20 for most items)
-// Example: [Quality] >= "15" # [StashItem] == "true"
-// This means: Pick up and stash items with 15% or more quality
-//
-// WaystoneTier:
-// -------
-// The tier of a waystone (1-16 at the moment)
-// Example: [Category] == "Waystone" && [WaystoneTier] >= "10" # [StashItem] == "true"
-// This means: Pick up and stash waystones tier 10 or more
-//
-// Basic Syntax:
-// -----------
-// Each line follows this pattern: [What to Check] Operator "Value"
-//
-// Available Operators:
-// == (equals)              Example: [Rarity] == "Unique"
-// != (not equals)          Example: [Category] != "Flask"
-// >  (greater than)        Example: [ItemLevel] > "75"
-// >= (greater or equal)    Example: [Quality] >= "20"
-// <  (less than)          Example: [Quality] < "6"
-// <= (less or equal)       Example: [Quality] <= "10"
-//
-// You can combine checks using:
-// && (AND)  - Both conditions must be true
-// || (OR)   - At least one condition must be true
-// ()        - Group conditions together
-//
-// Available Categories:
-// ------------------
-// Equipment: "BodyArmour", "Gloves", "Boots", "Belt", "Helmet", "Ring", "Amulet"
-// Weapons: "Weapon", "1Handed", "2Handed", "OffHand"
-// Others: "Flask", "Waystone", "Gem", "Tablet"
-//
-// Weapon Categories:
-// ---------------
-// One-handed: "Claw", "Dagger", "Wand", "OneHandSword", "OneHandAxe", "OneHandMace", 
-//            "Sceptre", "Spear", "Flail"
-// Two-handed: "Bow", "Staff", "TwoHandSword", "TwoHandAxe", "TwoHandMace", 
-//            "Quarterstaff", "Crossbow", "Trap", "FishingRod"
-// Off-hand:   "Quiver", "Shield", "Focus"
-//
-// Example:
-// [WeaponCategory] == "OneHandSword" # [PhysicalDPS] > "300" && [StashItem] == "true"
-// This means: Pick up one-handed swords, but only keep ones with >300 physical DPS
-//
-// Rarity Values:
-// ------------
-// [Rarity] can only use == or != with these values:
-// "Normal", "Magic", "Rare", "Unique"
-//
-// Special Flags:
-// ------------
-// [StashItem] == "true"   - Put item in stash
-// [StashUnid] == "true"   - Stash without identifying
-// [Salvage] == "true"     - Mark for salvaging
-// [IgnoreRitual] == "true" - Ignore item from ritual rewards (example: [Type] == "Exalted Orb" # [StashItem] == "true" && [IgnoreRitual] == "true")
-//
-// Using # to Split Checks:
-// ----------------------
-// Rules can have two parts, split by #
-// Before #: Checked BEFORE identifying the item
-// After #: Checked AFTER identifying the item
-//
-// Example:
-// [Rarity] == "Rare" # [TotalResistances] > "50" && [StashItem] == "true"
-// This means: Pick up rare items, but only keep ones with >50% total resistance
-//
-// IMPORTANT - Understanding Local vs Global Modifiers:
-// -----------------------------------------------
-// local_* mods (like local_attack_speed_+%) ONLY affect the item itself
-// regular mods (like attack_speed_+%) affect your entire character
-//
-// Example:
-// local_attack_speed_+% on a weapon: Only speeds up that weapon
-// attack_speed_+% on a ring: Speeds up ALL your attacks
-//
-//
-//
-// Weighted Sums 
-// ----------------------
-// A weighted sum is just like a regular sum (5+3+6=14), but each number is multiplied by its weight before being added together example : (sum1weight = 2, sum2weight = 3, sum3weight = 4) then (5x2)+(3x3)+(6x4) = (10)+(9)+(24)=43.
-// This is a new way for the pickit system to better read rare mods on an item. It allows us to simplying millions of lines of code in a few simple lines.
-// When looking at an items sum values, you want to figure out the weights based off of each base and the current meta/value of things.
-// This can be somewhat simple at times, though mostly requires alot of experience and knowledge of the game. An example would be as follows; if you decide that mana = 1 sum point, then you could assume that 1 intelligence holds a value of 2 sum points, because 1 point of intelligence gives you 2 mana.
-// To figure out relative sum values for targeting preffix/suffix tiers can be easy; you just have to look at the top rolls of each and compare to one and other. example: max life roll being 100 and max mana roll being 200, we can assume life = 2 and mana = 1. those are the relative sum numbers.
-// Once you have your sum values figured out, the rest becomes about figuring out the total sum that you want, the high end or low end of given set of stats on an item. the higher the number, the more strict the pickit becomes.
-// if this is all too complicated for you, do not touch any of the sum numbers, but feel free to tinker with the total sum numers and adjust to your needs. example : [WeightedSum(...)] >= "thisNumberHere" && [StashItem] == "true".
+```bash
+npm run lint
+npm run format:check
 ```
 
-I will try to keep it updated from version to version,
-but this tool should make big parts of this irrelevant
-for most users.
+Format the app code and docs:
 
----
-
-## What does this tool cover right now?
-
-Currently, the app exposes the imported item-rule flow only.
-
-```
-"BodyArmour", "Gloves", "Boots", "Belt", "Helmet", "Ring", "Amulet", "Claw", "Dagger", "Wand", "OneHandSword", "OneHandAxe", "OneHandMace", "Sceptre", "Spear", "Flail", "Bow", "Staff", "TwoHandSword", "TwoHandAxe", "TwoHandMace", "Quarterstaff", "Crossbow", "Trap", "FishingRod", "Quiver", "Shield", "Focus", "Flask", "Waystone", "Gem", "Tablet"
+```bash
+npm run format
 ```
 
-The current rule editor is centered around imported
-item modifiers and tier thresholds. With the newer
-catalog format, it reads sectioned modifier payloads
-but currently surfaces only normal prefixes and
-suffixes in the picker. It can also narrow a rule to a
-concrete base when the payload provides base data.
+Build for production:
 
----
+```bash
+npm run build
+```
 
-## What's the plan?
+## ExiledBot2 Rule Notes
 
-I want to be able to tell this app, what item
-category i want to configure, then the app
-prefilters only available affixes for that category,
-so i dont select non-existing affixes, and then i
-select the minimum affix tier i am searching for.
-In case i select multiple affixes the app
-automatically detects rarity (magic <= 2 affixes,
-rare >= 3 affixes) and creates rules for all
-combinations of these affixes, so there is at least
-one specific rule for each affix combination for
-very precise filtering/selecting.
+A pickit line generally has a pre-identification section, an optional `#`, and a post-identification/action section:
 
-## Current issues
+```text
+[Category] == "Ring" && [Rarity] == "Rare" # [StashItem] == "true"
+```
 
-- no complex rules possible (no OR) (no grouped stats checking)
-- data quality could still be improved
-- still only the item-rule flow is implemented in the UI
-- no custom rules yet
-- no uniques yet
-- no rule edit possible
-- no copy button yet
+Examples:
+
+```text
+[Type] == "Exalted Orb" # [StashItem] == "true"
+[Type] == "Heavy Belt" && [Rarity] == "Unique" # [UniqueName] == "Headhunter" && [StashItem] == "true"
+[Category] == "Ring" && [Type] == "Golden Hoop" && [Rarity] == "Magic" # base_maximum_life >= "20" && base_maximum_life <= "29" && [StashItem] == "true"
+```
+
+Supported action flags in the current UI:
+
+- `StashItem`
+- `StashUnid`
+- `Salvage`
+- `IgnoreRitual`
+
+## Direction
+
+The next architecture priority is not another large feature. The healthier path is to keep hardening the existing Item, Currency, and Unique flows, then add future families only when they have a real data contract, pure domain logic, UI, and tests.

@@ -1,7 +1,11 @@
-import {describe, expect, it} from "vitest"
+import { describe, expect, it } from "vitest"
 
-import {getAffixFamilyKey} from "../src/domain/pickit/affixes.js"
-import {generateRulePreviewLines, rarityFromSelectedAffixCount, tierIndexFromBottom} from "../src/domain/pickit/rules.js"
+import { getAffixFamilyKey } from "../src/domain/pickit/affixes.js"
+import {
+  generateRulePreviewLines,
+  rarityFromSelectedAffixCount,
+  tierIndexFromBottom,
+} from "../src/domain/pickit/rules.js"
 
 function createFinders(affixes) {
   return {
@@ -27,18 +31,18 @@ describe("pickit rule generation", () => {
           {
             level: 10,
             name: "Healthy",
-            stats: [{id: "base_maximum_life", min: 20, max: 29}],
+            stats: [{ id: "base_maximum_life", min: 20, max: 29 }],
           },
         ],
       },
     ]
-    const slots = [{selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10}]
-    const {findAffixByKey, availableTiersForSlot} = createFinders(affixes)
+    const slots = [{ selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10 }]
+    const { findAffixByKey, availableTiersForSlot } = createFinders(affixes)
 
     const lines = generateRulePreviewLines({
       actionFlag: "StashItem",
       selectedItemSlug: "Rings",
-      selectedItem: {pickitCategory: "Ring"},
+      selectedItem: { pickitCategory: "Ring" },
       affixSlots: slots,
       findAffixByKey,
       availableTiersForSlot: (slotIndex) => availableTiersForSlot(slotIndex, slots),
@@ -60,19 +64,19 @@ describe("pickit rule generation", () => {
           {
             level: 10,
             name: "Healthy",
-            stats: [{id: "base_maximum_life", min: 20, max: 29}],
+            stats: [{ id: "base_maximum_life", min: 20, max: 29 }],
           },
         ],
       },
     ]
-    const slots = [{selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10}]
-    const {findAffixByKey, availableTiersForSlot} = createFinders(affixes)
+    const slots = [{ selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10 }]
+    const { findAffixByKey, availableTiersForSlot } = createFinders(affixes)
 
     const lines = generateRulePreviewLines({
       actionFlag: "StashItem",
       includeExplanation: true,
       selectedItemSlug: "Rings",
-      selectedItem: {pickitCategory: "Ring"},
+      selectedItem: { pickitCategory: "Ring" },
       affixSlots: slots,
       findAffixByKey,
       availableTiersForSlot: (slotIndex) => availableTiersForSlot(slotIndex, slots),
@@ -91,26 +95,26 @@ describe("pickit rule generation", () => {
         family_key: "StrengthA",
         kind: "prefix",
         template: "+# to [Strength|Strength]",
-        tiers: [{level: 8, name: "Strong", stats: [{id: "additional_strength", min: 10, max: 12}]}],
+        tiers: [{ level: 8, name: "Strong", stats: [{ id: "additional_strength", min: 10, max: 12 }] }],
       },
       {
         modifierSection: "normal",
         family_key: "StrengthB",
         kind: "suffix",
         template: "+# to [Strength|Strength]",
-        tiers: [{level: 12, name: "of the Titan", stats: [{id: "additional_strength", min: 13, max: 15}]}],
+        tiers: [{ level: 12, name: "of the Titan", stats: [{ id: "additional_strength", min: 13, max: 15 }] }],
       },
     ]
     const slots = [
-      {selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 8},
-      {selectedAffixKey: getAffixFamilyKey(affixes[1]), selectedTierLevel: 12},
+      { selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 8 },
+      { selectedAffixKey: getAffixFamilyKey(affixes[1]), selectedTierLevel: 12 },
     ]
-    const {findAffixByKey, availableTiersForSlot} = createFinders(affixes)
+    const { findAffixByKey, availableTiersForSlot } = createFinders(affixes)
 
     const lines = generateRulePreviewLines({
       actionFlag: "StashItem",
       selectedItemSlug: "Amulets",
-      selectedItem: {pickitCategory: "Amulet"},
+      selectedItem: { pickitCategory: "Amulet" },
       affixSlots: slots,
       findAffixByKey,
       availableTiersForSlot: (slotIndex) => availableTiersForSlot(slotIndex, slots),
@@ -128,7 +132,7 @@ describe("pickit rule generation", () => {
   it("keeps the unknown fallback for items without a pickit category", () => {
     const lines = generateRulePreviewLines({
       selectedItemSlug: "Talismans",
-      selectedItem: {pickitCategory: null},
+      selectedItem: { pickitCategory: null },
       affixSlots: [],
     })
 
@@ -136,8 +140,8 @@ describe("pickit rule generation", () => {
   })
 
   it("computes tier labels from the highest required level down", () => {
-    expect(tierIndexFromBottom([{level: 1}, {level: 10}, {level: 20}], 20)).toBe(1)
-    expect(tierIndexFromBottom([{level: 1}, {level: 10}, {level: 20}], 1)).toBe(3)
+    expect(tierIndexFromBottom([{ level: 1 }, { level: 10 }, { level: 20 }], 20)).toBe(1)
+    expect(tierIndexFromBottom([{ level: 1 }, { level: 10 }, { level: 20 }], 1)).toBe(3)
   })
 
   it("keeps modifier keys unique across modifier sections", () => {
@@ -168,19 +172,19 @@ describe("pickit rule generation", () => {
           {
             level: 10,
             name: "Healthy",
-            stats: [{id: "base_maximum_life", min: 20, max: 29}],
+            stats: [{ id: "base_maximum_life", min: 20, max: 29 }],
           },
         ],
       },
     ]
-    const slots = [{selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10}]
-    const {findAffixByKey, availableTiersForSlot} = createFinders(affixes)
+    const slots = [{ selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10 }]
+    const { findAffixByKey, availableTiersForSlot } = createFinders(affixes)
 
     const lines = generateRulePreviewLines({
       actionFlag: "StashItem",
       includeExplanation: true,
       selectedItemSlug: "Rings",
-      selectedItem: {pickitCategory: "Ring"},
+      selectedItem: { pickitCategory: "Ring" },
       selectedBaseName: "Golden Hoop",
       affixSlots: slots,
       findAffixByKey,

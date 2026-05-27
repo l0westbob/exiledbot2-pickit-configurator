@@ -1,4 +1,4 @@
-import {computed, reactive, ref, watch} from "vue"
+import { computed, reactive, ref, watch } from "vue"
 import {
   filterUniquesBySearch,
   generateUniqueRuleLines,
@@ -8,7 +8,7 @@ import {
   UNIQUE_GROUP_ALL_VALUE,
   UNIQUE_SINGLE_GROUP_SELECTION,
 } from "../domain/pickit/uniques.js"
-import {loadUniqueCatalog} from "../services/uniqueService.js"
+import { loadUniqueCatalog } from "../services/uniqueService.js"
 
 export function useUniqueRuleRow(options) {
   const actionFlagRef = options.actionFlagRef
@@ -49,9 +49,7 @@ export function useUniqueRuleRow(options) {
   })
   const uniqueStatOptions = computed(() => getUniqueStatOptions(selectedUniqueForStats.value))
   const uniqueStatSlotSignature = computed(() => {
-    return uniqueStatSlots.value
-      .map((slot) => `${slot.selectedStatKey || ""}:${slot.minimumValue || ""}`)
-      .join("|")
+    return uniqueStatSlots.value.map((slot) => `${slot.selectedStatKey || ""}:${slot.minimumValue || ""}`).join("|")
   })
   const canAddUniqueStatSlot = computed(() => {
     if (!selectedUniqueForStats.value) return false
@@ -90,6 +88,24 @@ export function useUniqueRuleRow(options) {
   function removeUniqueStatSlot(slotIndex) {
     if (uniqueStatSlots.value.length <= 1) return
     uniqueStatSlots.value.splice(slotIndex, 1)
+  }
+
+  function updateUniqueStatSlot(slotIndexOrPayload, changes) {
+    const payload =
+      changes === undefined && slotIndexOrPayload && typeof slotIndexOrPayload === "object"
+        ? slotIndexOrPayload
+        : { slotIndex: slotIndexOrPayload, ...(changes || {}) }
+    const slotIndex = Number(payload.slotIndex)
+    const slot = uniqueStatSlots.value[slotIndex]
+    if (!slot || !payload || typeof payload !== "object") return
+
+    if (Object.prototype.hasOwnProperty.call(payload, "selectedStatKey")) {
+      slot.selectedStatKey = payload.selectedStatKey || null
+    }
+
+    if (Object.prototype.hasOwnProperty.call(payload, "minimumValue")) {
+      slot.minimumValue = payload.minimumValue ?? ""
+    }
   }
 
   function uniqueStatOptionsForSlot(slotIndex) {
@@ -134,7 +150,7 @@ export function useUniqueRuleRow(options) {
     const currentSelection = selectedUniqueSelection.value
     if (!classes.length) return
     if (!currentSelection) {
-      selectedUniqueSelection.value = getDefaultUniqueSelection({classes})
+      selectedUniqueSelection.value = getDefaultUniqueSelection({ classes })
       return
     }
 
@@ -142,7 +158,7 @@ export function useUniqueRuleRow(options) {
       ![UNIQUE_SINGLE_GROUP_SELECTION.ALL, UNIQUE_SINGLE_GROUP_SELECTION.SINGLE].includes(currentSelection) &&
       !classes.some((uniqueClass) => uniqueClass.slug === currentSelection)
     ) {
-      selectedUniqueSelection.value = getDefaultUniqueSelection({classes})
+      selectedUniqueSelection.value = getDefaultUniqueSelection({ classes })
     }
   })
 
@@ -210,6 +226,7 @@ export function useUniqueRuleRow(options) {
     addUniqueStatDisabledReason,
     addUniqueStatSlot,
     removeUniqueStatSlot,
+    updateUniqueStatSlot,
     uniqueStatSlotSignature,
     isLoadingUniques,
     uniqueLoadErrorMessage,

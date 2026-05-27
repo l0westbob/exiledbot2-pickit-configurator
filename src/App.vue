@@ -1,6 +1,6 @@
 <template>
   <main class="app-root">
-    <Configurator/>
+    <Configurator />
   </main>
 </template>
 

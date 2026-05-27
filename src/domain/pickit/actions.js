@@ -1,8 +1,8 @@
 export const ACTION_OPTIONS = [
-  {label: "Stash Item", flag: "StashItem"},
-  {label: "Stash Unidentified ( Not supported yet )", flag: "StashUnid"},
-  {label: "Salvage", flag: "Salvage"},
-  {label: "Ignore Ritual", flag: "IgnoreRitual"},
+  { label: "Stash Item", flag: "StashItem" },
+  { label: "Stash Unidentified ( Not supported yet )", flag: "StashUnid" },
+  { label: "Salvage", flag: "Salvage" },
+  { label: "Ignore Ritual", flag: "IgnoreRitual" },
 ]
 
 export const DEFAULT_ACTION_FLAG = ACTION_OPTIONS[0].flag

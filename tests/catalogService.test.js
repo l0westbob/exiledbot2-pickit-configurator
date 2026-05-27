@@ -1,4 +1,4 @@
-import {beforeEach, describe, expect, it, vi} from "vitest"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 
 import {
   getAffixesForSlug,
@@ -16,7 +16,7 @@ describe("catalog service", () => {
   it("caches catalog fetches", async () => {
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
-      json: async () => ({items: [{slug: "Rings", pickitCategory: "Ring", status: "implemented"}]}),
+      json: async () => ({ items: [{ slug: "Rings", pickitCategory: "Ring", status: "implemented" }] }),
     })
 
     const first = await loadCatalog()
@@ -33,10 +33,10 @@ describe("catalog service", () => {
         slug: "Rings",
         category: "Jewellery",
         label: "Rings",
-        bases: [{name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", required_level: 12}],
+        bases: [{ name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", required_level: 12 }],
         modifier_sections: {
-          normal: [{family_key: "Life", kind: "prefix", template: "+# to Life", tiers: []}],
-          corrupted: [{family_key: "CorruptLife", kind: "gen5", template: "+# to Life", tiers: []}],
+          normal: [{ family_key: "Life", kind: "prefix", template: "+# to Life", tiers: [] }],
+          corrupted: [{ family_key: "CorruptLife", kind: "gen5", template: "+# to Life", tiers: [] }],
         },
       }),
     })
@@ -45,9 +45,7 @@ describe("catalog service", () => {
     const second = await getItemDataForSlug("Rings")
 
     expect(first).toEqual(second)
-    expect(first.bases).toEqual([
-      {name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", requiredLevel: 12},
-    ])
+    expect(first.bases).toEqual([{ name: "Golden Hoop", href: "https://poe2db.tw/Golden_Hoop", requiredLevel: 12 }])
     expect(first.affixes).toHaveLength(2)
     expect(first.affixes[0].modifierSection).toBe("normal")
     expect(first.affixes[1].modifierSection).toBe("corrupted")
@@ -62,8 +60,8 @@ describe("catalog service", () => {
         category: "Jewellery",
         label: "Rings",
         modifier_sections: {
-          normal: [{family_key: "Life", kind: "prefix", template: "+# to Life", tiers: []}],
-          essence: [{family_key: "EssenceLife", kind: "prefix", template: "+# to Life", tiers: []}],
+          normal: [{ family_key: "Life", kind: "prefix", template: "+# to Life", tiers: [] }],
+          essence: [{ family_key: "EssenceLife", kind: "prefix", template: "+# to Life", tiers: [] }],
         },
       }),
     })

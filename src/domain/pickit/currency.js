@@ -1,4 +1,5 @@
-import {resolvePickitActionFlag} from "./actions.js"
+import { resolvePickitActionFlag } from "./actions.js"
+import { formatPickitComment, formatPickitCondition, formatPickitFlagCondition, formatPickitRule } from "./formatter.js"
 
 export const CURRENCY_SELECTION_MODE = {
   TIER: "tier",
@@ -6,8 +7,8 @@ export const CURRENCY_SELECTION_MODE = {
 }
 
 export const CURRENCY_SELECTION_MODE_OPTIONS = [
-  {value: CURRENCY_SELECTION_MODE.TIER, label: "By tier"},
-  {value: CURRENCY_SELECTION_MODE.SINGLE_GROUP, label: "Single/group"},
+  { value: CURRENCY_SELECTION_MODE.TIER, label: "By tier" },
+  { value: CURRENCY_SELECTION_MODE.SINGLE_GROUP, label: "Single/group" },
 ]
 
 export const CURRENCY_SINGLE_GROUP_SELECTION = {
@@ -74,10 +75,6 @@ function describeCurrencySelection(draft, items, category) {
   return "selected currency items"
 }
 
-function escapePickitString(value) {
-  return String(value).replaceAll("\\", "\\\\").replaceAll('"', '\\"')
-}
-
 export function filterCurrencyItemsBySearch(items, searchText) {
   const normalizedSearchText = typeof searchText === "string" ? searchText.trim().toLowerCase() : ""
   const rawItems = Array.isArray(items) ? items : []
@@ -100,7 +97,7 @@ export function resolveCurrencySelectionItems(draft, catalog) {
       const items = sortItemsByName(dedupeItemsByName(allItems))
       return {
         items,
-        description: describeCurrencySelection({...draft, selectedTier: selectedTierName}, items, null),
+        description: describeCurrencySelection({ ...draft, selectedTier: selectedTierName }, items, null),
       }
     }
 
@@ -108,7 +105,7 @@ export function resolveCurrencySelectionItems(draft, catalog) {
     const items = sortItemsByName(dedupeItemsByName(selectedTier?.items || []))
     return {
       items,
-      description: describeCurrencySelection({...draft, selectedTier: selectedTierName}, items, null),
+      description: describeCurrencySelection({ ...draft, selectedTier: selectedTierName }, items, null),
     }
   }
 
@@ -117,7 +114,7 @@ export function resolveCurrencySelectionItems(draft, catalog) {
     const items = sortItemsByName(dedupeItemsByName(allItems))
     return {
       items,
-      description: describeCurrencySelection({...draft, singleGroupSelection}, items, null),
+      description: describeCurrencySelection({ ...draft, singleGroupSelection }, items, null),
     }
   }
 
@@ -127,19 +124,19 @@ export function resolveCurrencySelectionItems(draft, catalog) {
     const items = dedupeItemsByName(selectedItem ? [selectedItem] : [])
     return {
       items,
-      description: describeCurrencySelection({...draft, singleGroupSelection}, items, null),
+      description: describeCurrencySelection({ ...draft, singleGroupSelection }, items, null),
     }
   }
 
   const selectedCategory = findCategoryBySlug(categories, singleGroupSelection)
   const selectedGroupItemName = draft?.selectedGroupItemName || CURRENCY_GROUP_ALL_VALUE
-  if (!selectedCategory) return {items: [], description: "selected currency items"}
+  if (!selectedCategory) return { items: [], description: "selected currency items" }
 
   if (selectedGroupItemName === CURRENCY_GROUP_ALL_VALUE) {
     const items = sortItemsByName(dedupeItemsByName(selectedCategory.items))
     return {
       items,
-      description: describeCurrencySelection({...draft, selectedGroupItemName}, items, selectedCategory),
+      description: describeCurrencySelection({ ...draft, selectedGroupItemName }, items, selectedCategory),
     }
   }
 
@@ -147,7 +144,7 @@ export function resolveCurrencySelectionItems(draft, catalog) {
   const items = sortItemsByName(dedupeItemsByName(selectedItem ? [selectedItem] : []))
   return {
     items,
-    description: describeCurrencySelection({...draft, selectedGroupItemName}, items, selectedCategory),
+    description: describeCurrencySelection({ ...draft, selectedGroupItemName }, items, selectedCategory),
   }
 }
 
@@ -174,8 +171,12 @@ function groupItemsByCategory(items, catalog) {
 
   return [...groupBySlug.values()]
     .sort((left, right) => {
-      const leftIndex = categoryOrder.has(left.categorySlug) ? categoryOrder.get(left.categorySlug) : Number.MAX_SAFE_INTEGER
-      const rightIndex = categoryOrder.has(right.categorySlug) ? categoryOrder.get(right.categorySlug) : Number.MAX_SAFE_INTEGER
+      const leftIndex = categoryOrder.has(left.categorySlug)
+        ? categoryOrder.get(left.categorySlug)
+        : Number.MAX_SAFE_INTEGER
+      const rightIndex = categoryOrder.has(right.categorySlug)
+        ? categoryOrder.get(right.categorySlug)
+        : Number.MAX_SAFE_INTEGER
       if (leftIndex !== rightIndex) return leftIndex - rightIndex
       return left.categoryName.localeCompare(right.categoryName)
     })
@@ -187,21 +188,25 @@ function groupItemsByCategory(items, catalog) {
 
 export function generateCurrencyRuleLines(params) {
   const actionFlag = resolvePickitActionFlag(params?.actionFlag)
-  const {items, description} = resolveCurrencySelectionItems(params?.draft, params?.catalog)
+  const { items, description } = resolveCurrencySelectionItems(params?.draft, params?.catalog)
   const groups = groupItemsByCategory(items, params?.catalog)
   const ruleLines = groups.flatMap((group) => {
-    return group.items.map((item) => `[Type] == "${escapePickitString(item.name)}" # [${actionFlag}] == "true"`)
+    return group.items.map((item) => createCurrencyRuleLine(item, actionFlag))
   })
 
   if (!params?.includeExplanation || !ruleLines.length) return ruleLines
 
-  const explainedLines = [`// Picks up ${description} (${items.length} ${items.length === 1 ? "item" : "items"})`]
+  const explainedLines = [
+    formatPickitComment(`Picks up ${description} (${items.length} ${items.length === 1 ? "item" : "items"})`),
+  ]
   for (const group of groups) {
-    if (items.length > 1) explainedLines.push(`// ${group.categoryName}`)
-    explainedLines.push(
-      ...group.items.map((item) => `[Type] == "${escapePickitString(item.name)}" # [${actionFlag}] == "true"`)
-    )
+    if (items.length > 1) explainedLines.push(formatPickitComment(group.categoryName))
+    explainedLines.push(...group.items.map((item) => createCurrencyRuleLine(item, actionFlag)))
   }
 
   return explainedLines
+}
+
+function createCurrencyRuleLine(item, actionFlag) {
+  return formatPickitRule([formatPickitCondition("Type", "==", item.name)], [formatPickitFlagCondition(actionFlag)])
 }

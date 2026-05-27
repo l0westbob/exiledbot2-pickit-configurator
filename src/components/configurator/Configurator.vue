@@ -4,48 +4,39 @@
       <div>
         <h2 class="cfg-title">Exiledbot2 Pickit Configurator</h2>
         <h3 class="cfg-subtitle">
-          The current app focuses on imported affix catalogs and the item, currency, and unique rule flows.
-          Some imported affixes are not mapped yet, so unmapped modifiers may not appear in selectors or
-          generated rules.
+          The current app focuses on imported affix catalogs and the item, currency, and unique rule flows. Some
+          imported affixes are not mapped yet, so unmapped modifiers may not appear in selectors or generated rules.
         </h3>
       </div>
 
       <div class="cfg-actions">
         <button type="button" class="btn" @click="addRow">Add row</button>
-        <button type="button" class="btn btn-primary" @click="generateFinal">
-          Generate final
-        </button>
+        <button type="button" class="btn btn-primary" @click="generateFinal">Generate final</button>
       </div>
     </header>
 
     <div class="cfg-rows">
       <ItemRuleRow
-          v-for="(row, idx) in rows"
-          :key="row.id"
-          :row-id="row.id"
-          :row-index="idx"
-          :available-items="availableItems"
-          :is-loading-catalog="isLoadingCatalog"
-          :catalog-error-message="catalogErrorMessage"
-          @update-lines="onRowUpdateLines"
-          @remove="removeRow"
+        v-for="(row, idx) in rows"
+        :key="row.id"
+        :row-id="row.id"
+        :row-index="idx"
+        :available-items="availableItems"
+        :is-loading-catalog="isLoadingCatalog"
+        :catalog-error-message="catalogErrorMessage"
+        @update-lines="onRowUpdateLines"
+        @remove="removeRow"
       />
     </div>
 
-    <div class="cfg-final">
-      <h3 class="cfg-subtitle">Final Config-lines</h3>
-
-      <div class="final-box">
-        <pre v-if="finalText" class="final-pre">{{ finalText }}</pre>
-        <span v-else class="final-placeholder">Nothing generated yet.</span>
-      </div>
-    </div>
+    <GeneratedOutputPanel title="Final Config-lines" :text="finalText" placeholder="Nothing generated yet." />
   </section>
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue"
-import {useCatalogData} from "../../composables/useCatalogData.js"
+import { onMounted, ref } from "vue"
+import { useCatalogData } from "../../composables/useCatalogData.js"
+import GeneratedOutputPanel from "./GeneratedOutputPanel.vue"
 import ItemRuleRow from "./ItemRuleRow.vue"
 
 /**
@@ -83,8 +74,8 @@ function createRowId() {
  *
  * @type {import("vue").Ref<Array<{id: string}>>}
  */
-const rows = ref([{id: createRowId()}])
-const {availableItems, isLoadingCatalog, catalogErrorMessage, ensureCatalogLoaded} = useCatalogData()
+const rows = ref([{ id: createRowId() }])
+const { availableItems, isLoadingCatalog, catalogErrorMessage, ensureCatalogLoaded } = useCatalogData()
 
 onMounted(() => {
   ensureCatalogLoaded()
@@ -103,7 +94,7 @@ onMounted(() => {
 const rowLinesById = ref(new Map())
 
 function addRow() {
-  rows.value.push({id: createRowId()})
+  rows.value.push({ id: createRowId() })
 }
 
 /**
@@ -130,7 +121,7 @@ function removeRow(rowId) {
  * @param {{rowId: string, lines: unknown}} payload
  */
 function onRowUpdateLines(payload) {
-  const {rowId, lines} = payload || {}
+  const { rowId, lines } = payload || {}
   const normalizedLines = Array.isArray(lines) ? lines : []
   rowLinesById.value.set(rowId, normalizedLines)
 }
@@ -223,40 +214,5 @@ function generateFinal() {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-.cfg-final {
-  padding: 0.75rem;
-  border-radius: 0.75rem;
-  border: 1px solid #1f2937;
-  background: #020617;
-}
-
-.cfg-subtitle {
-  margin: 0 0 0.5rem;
-  color: #e5e7eb;
-  font-size: 0.95rem;
-}
-
-.final-box {
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  background: #020617;
-  border: 1px dashed #374151;
-  min-height: 4.5rem;
-}
-
-.final-pre {
-  margin: 0;
-  white-space: pre-wrap;
-  word-break: break-word;
-  color: #e5e7eb;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
-  font-size: 0.85rem;
-}
-
-.final-placeholder {
-  color: #6b7280;
 }
 </style>

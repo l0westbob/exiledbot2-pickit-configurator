@@ -1,15 +1,4 @@
-const baseUrl = import.meta.env?.BASE_URL || "/"
-
-let uniqueCatalogCache = null
-let uniqueCatalogPromise = null
-
-async function fetchJson(relativePath) {
-  const response = await fetch(baseUrl + relativePath)
-  if (!response.ok) {
-    throw new Error(`Failed to load ${relativePath}: ${response.status}`)
-  }
-  return response.json()
-}
+import { createResourceCache, fetchJson } from "./dataRuntime.js"
 
 function validateUniqueIndexPayload(payload) {
   if (!payload || typeof payload !== "object" || !Array.isArray(payload.classes)) {
@@ -35,7 +24,7 @@ function normalizeIndexEntries(indexPayload) {
       throw new Error("Invalid schema for uniques/index.json: class entry is missing slug, class, or file.")
     }
 
-    return {slug, className, file}
+    return { slug, className, file }
   })
 }
 
@@ -45,7 +34,9 @@ function normalizeUnique(rawUnique, className, classSlug) {
   const baseName = typeof rawUnique?.base_name === "string" ? rawUnique.base_name.trim() : ""
 
   if (!name || !displayName || !baseName) {
-    throw new Error(`Invalid schema for unique ${displayName || name || "(unknown)"}: missing name, display_name, or base_name.`)
+    throw new Error(
+      `Invalid schema for unique ${displayName || name || "(unknown)"}: missing name, display_name, or base_name.`
+    )
   }
 
   return {
@@ -71,18 +62,20 @@ function sortUniquesByDisplayName(uniques) {
 function normalizeUniqueClass(indexEntry, classPayload) {
   validateUniqueClassPayload(classPayload, indexEntry.file)
 
-  const className = typeof classPayload.class === "string" && classPayload.class.trim()
-    ? classPayload.class.trim()
-    : indexEntry.className
-  const classSlug = typeof classPayload.slug === "string" && classPayload.slug.trim()
-    ? classPayload.slug.trim()
-    : indexEntry.slug
+  const className =
+    typeof classPayload.class === "string" && classPayload.class.trim()
+      ? classPayload.class.trim()
+      : indexEntry.className
+  const classSlug =
+    typeof classPayload.slug === "string" && classPayload.slug.trim() ? classPayload.slug.trim() : indexEntry.slug
 
   return {
     name: className,
     slug: classSlug,
     file: indexEntry.file,
-    uniques: sortUniquesByDisplayName(classPayload.uniques.map((unique) => normalizeUnique(unique, className, classSlug))),
+    uniques: sortUniquesByDisplayName(
+      classPayload.uniques.map((unique) => normalizeUnique(unique, className, classSlug))
+    ),
   }
 }
 
@@ -100,27 +93,17 @@ function normalizeUniqueCatalog(indexPayload, classPayloads) {
 }
 
 export async function loadUniqueCatalog() {
-  if (uniqueCatalogCache) return uniqueCatalogCache
-  if (uniqueCatalogPromise) return uniqueCatalogPromise
-
-  uniqueCatalogPromise = fetchJson("data/uniques/index.json")
-    .then(async (indexPayload) => {
-      const indexEntries = normalizeIndexEntries(indexPayload)
-      const classPayloads = await Promise.all(
-        indexEntries.map((entry) => fetchJson(`data/uniques/${entry.file}`))
-      )
-
-      uniqueCatalogCache = normalizeUniqueCatalog(indexPayload, classPayloads)
-      return uniqueCatalogCache
-    })
-    .finally(() => {
-      uniqueCatalogPromise = null
-    })
-
-  return uniqueCatalogPromise
+  return uniqueCatalogResource.load()
 }
 
 export function resetUniqueServiceCache() {
-  uniqueCatalogCache = null
-  uniqueCatalogPromise = null
+  uniqueCatalogResource.reset()
 }
+
+const uniqueCatalogResource = createResourceCache(async () => {
+  const indexPayload = await fetchJson("data/uniques/index.json")
+  const indexEntries = normalizeIndexEntries(indexPayload)
+  const classPayloads = await Promise.all(indexEntries.map((entry) => fetchJson(`data/uniques/${entry.file}`)))
+
+  return normalizeUniqueCatalog(indexPayload, classPayloads)
+})

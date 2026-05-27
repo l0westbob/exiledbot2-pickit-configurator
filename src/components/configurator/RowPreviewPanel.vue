@@ -10,8 +10,8 @@
 
 <script setup>
 defineProps({
-  previewText: {type: String, default: ""},
-  placeholder: {type: String, default: "No config generated yet."},
+  previewText: { type: String, default: "" },
+  placeholder: { type: String, default: "No config generated yet." },
 })
 </script>
 
@@ -33,8 +33,7 @@ defineProps({
   border-radius: 0.5rem;
   background: #020617;
   border: 1px dashed #374151;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.85rem;
   white-space: pre-wrap;
   word-break: break-word;

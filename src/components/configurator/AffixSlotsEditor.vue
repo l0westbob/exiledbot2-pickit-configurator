@@ -4,62 +4,48 @@
       Prefixes: {{ prefixCount }}/{{ maxPrefixes }}, Suffixes: {{ suffixCount }}/{{ maxSuffixes }}
     </p>
 
-    <div v-for="(slot, idx) in slots" :key="slot.id" class="slot-root">
-      <div class="slot-head">
-        <span class="slot-title">Affix {{ idx + 1 }}</span>
-        <button
-            v-if="slots.length > 1"
-            type="button"
-            class="btn-remove-slot"
-            @click="$emit('remove-slot', idx)"
-        >
-          Remove
-        </button>
-      </div>
+    <SlotCard
+      v-for="(slot, idx) in slots"
+      :key="slot.id"
+      :title="`Affix ${idx + 1}`"
+      :removable="slots.length > 1"
+      @remove="$emit('remove-slot', idx)"
+    >
+      <ConfigSelectField
+        v-if="visibleAffixFamilies.length"
+        label="Affix"
+        :model-value="slot.selectedAffixKey"
+        @change="$emit('update-slot', { slotIndex: idx, selectedAffixKey: $event })"
+      >
+        <option value="" disabled>Select affix...</option>
 
-      <label v-if="visibleAffixFamilies.length" class="field">
-        <span class="field-label">Affix</span>
-        <select v-model="slot.selectedAffixKey" class="field-select">
-          <option :value="null" disabled>Select affix…</option>
-
-          <optgroup
-              v-for="group in affixGroupsForSlot(idx)"
-              :key="group.label"
-              :label="group.label"
-          >
-            <option
-                v-for="affix in group.items"
-                :key="affixKey(affix)"
-                :value="affixKey(affix)"
-            >
-              {{ affix.template || "Unnamed affix" }}
-            </option>
-          </optgroup>
-        </select>
-      </label>
-
-      <label v-if="availableTiersForSlot(idx).length" class="field">
-        <span class="field-label">Tier</span>
-        <select v-model.number="slot.selectedTierLevel" class="field-select">
-          <option :value="null" disabled>Select tier…</option>
-          <option
-              v-for="tier in availableTiersForSlot(idx)"
-              :key="tier.level"
-              :value="tier.level"
-          >
-            T{{ tierIndexFromBottom(availableTiersForSlot(idx), tier.level) }}
-            (lvl {{ tier.level }}) – {{ tier.name || "unnamed" }}
+        <optgroup v-for="group in affixGroupsForSlot(idx)" :key="group.label" :label="group.label">
+          <option v-for="affix in group.items" :key="affixKey(affix)" :value="affixKey(affix)">
+            {{ affix.template || "Unnamed affix" }}
           </option>
-        </select>
-      </label>
-    </div>
+        </optgroup>
+      </ConfigSelectField>
+
+      <ConfigSelectField
+        v-if="availableTiersForSlot(idx).length"
+        label="Tier"
+        :model-value="slot.selectedTierLevel"
+        @change="$emit('update-slot', { slotIndex: idx, selectedTierLevel: $event })"
+      >
+        <option value="" disabled>Select tier...</option>
+        <option v-for="tier in availableTiersForSlot(idx)" :key="tier.level" :value="tier.level">
+          T{{ tierIndexFromBottom(availableTiersForSlot(idx), tier.level) }} (lvl {{ tier.level }}) -
+          {{ tier.name || "unnamed" }}
+        </option>
+      </ConfigSelectField>
+    </SlotCard>
 
     <button
-        type="button"
-        class="btn-add-affix"
-        :disabled="slots.length >= maxSlots || !canAddAffixSlot"
-        :title="!canAddAffixSlot ? addAffixDisabledReason : ''"
-        @click="$emit('add-slot')"
+      type="button"
+      class="btn-add-affix"
+      :disabled="slots.length >= maxSlots || !canAddAffixSlot"
+      :title="!canAddAffixSlot ? addAffixDisabledReason : ''"
+      @click="$emit('add-slot')"
     >
       Add affix ({{ slots.length }}/{{ maxSlots }})
     </button>
@@ -67,83 +53,33 @@
 </template>
 
 <script setup>
-import {tierIndexFromBottom} from "../../domain/pickit/rules.js"
+import { tierIndexFromBottom } from "../../domain/pickit/rules.js"
+import ConfigSelectField from "./ConfigSelectField.vue"
+import SlotCard from "./SlotCard.vue"
 
 defineProps({
-  slots: {type: Array, default: () => []},
-  visibleAffixFamilies: {type: Array, default: () => []},
-  prefixCount: {type: Number, required: true},
-  suffixCount: {type: Number, required: true},
-  maxSlots: {type: Number, required: true},
-  maxPrefixes: {type: Number, required: true},
-  maxSuffixes: {type: Number, required: true},
-  canAddAffixSlot: {type: Boolean, required: true},
-  addAffixDisabledReason: {type: String, required: true},
-  affixKey: {type: Function, required: true},
-  affixGroupsForSlot: {type: Function, required: true},
-  availableTiersForSlot: {type: Function, required: true},
+  slots: { type: Array, default: () => [] },
+  visibleAffixFamilies: { type: Array, default: () => [] },
+  prefixCount: { type: Number, required: true },
+  suffixCount: { type: Number, required: true },
+  maxSlots: { type: Number, required: true },
+  maxPrefixes: { type: Number, required: true },
+  maxSuffixes: { type: Number, required: true },
+  canAddAffixSlot: { type: Boolean, required: true },
+  addAffixDisabledReason: { type: String, required: true },
+  affixKey: { type: Function, required: true },
+  affixGroupsForSlot: { type: Function, required: true },
+  availableTiersForSlot: { type: Function, required: true },
 })
 
-defineEmits(["add-slot", "remove-slot"])
+defineEmits(["add-slot", "remove-slot", "update-slot"])
 </script>
 
 <style scoped>
-.field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
-}
-
-.field-label {
-  font-size: 0.8rem;
-  color: #9ca3af;
-  margin-bottom: 0.15rem;
-}
-
-.field-select {
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #4b5563;
-  background: #020617;
-  color: #e5e7eb;
-  font-size: 0.85rem;
-}
-
 .field-hint {
   font-size: 0.8rem;
   color: #9ca3af;
   margin: 0 0 0.5rem;
-}
-
-.slot-root {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #1f2937;
-  background: rgba(17, 24, 39, 0.35);
-  margin-bottom: 0.5rem;
-}
-
-.slot-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.35rem;
-}
-
-.slot-title {
-  font-size: 0.85rem;
-  color: #e5e7eb;
-}
-
-.btn-remove-slot {
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #4b5563;
-  background: #111827;
-  color: #e5e7eb;
-  font-size: 0.8rem;
-  cursor: pointer;
 }
 
 .btn-add-affix {

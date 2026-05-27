@@ -1,9 +1,15 @@
 import fs from "node:fs/promises"
 import os from "node:os"
 import path from "node:path"
-import {afterEach, describe, expect, it} from "vitest"
+import { afterEach, describe, expect, it } from "vitest"
 
-import {buildCatalogDocument, importCatalog, loadAugmentation, readAffixDirectory} from "../scripts/import-catalog.mjs"
+import {
+  buildCatalogDocument,
+  importCatalog,
+  loadAugmentation,
+  readAffixDirectory,
+  validateRuntimeDataContracts,
+} from "../scripts/import-catalog.mjs"
 
 const fixtureSourceDir = path.resolve("tests/fixtures/import-source/affixes")
 const augmentationPath = path.resolve("config/catalog-augmentation.json")
@@ -17,7 +23,7 @@ async function makeTmpDir() {
 }
 
 afterEach(async () => {
-  await Promise.all(tmpDirs.splice(0).map((dir) => fs.rm(dir, {recursive: true, force: true})))
+  await Promise.all(tmpDirs.splice(0).map((dir) => fs.rm(dir, { recursive: true, force: true })))
 })
 
 describe("catalog import", () => {
@@ -78,7 +84,7 @@ describe("catalog import", () => {
       })
     ).resolves.toBeTruthy()
 
-    await fs.writeFile(catalogOutPath, "{\"version\":1,\"items\":[]}\n", "utf-8")
+    await fs.writeFile(catalogOutPath, '{"version":1,"items":[]}\n', "utf-8")
 
     await expect(
       importCatalog({
@@ -89,5 +95,16 @@ describe("catalog import", () => {
         check: true,
       })
     ).rejects.toThrow("Catalog drift detected")
+  })
+
+  it("validates checked-in runtime data contracts", async () => {
+    await expect(validateRuntimeDataContracts()).resolves.toMatchObject({
+      catalogItems: 78,
+      categoryCount: 15,
+      itemCount: 437,
+      tierCount: 7,
+      classCount: 27,
+      uniqueCount: 403,
+    })
   })
 })

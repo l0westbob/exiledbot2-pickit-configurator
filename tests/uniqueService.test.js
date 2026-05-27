@@ -1,7 +1,7 @@
 import fs from "node:fs/promises"
-import {beforeEach, describe, expect, it, vi} from "vitest"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 
-import {loadUniqueCatalog, resetUniqueServiceCache} from "../src/services/uniqueService.js"
+import { loadUniqueCatalog, resetUniqueServiceCache } from "../src/services/uniqueService.js"
 
 async function readJson(path) {
   return JSON.parse(await fs.readFile(path, "utf-8"))
@@ -24,16 +24,16 @@ describe("unique service", () => {
     global.fetch = vi.fn(async (url) => {
       const urlText = String(url)
       if (urlText.endsWith("data/uniques/index.json")) {
-        return {ok: true, json: async () => indexPayload}
+        return { ok: true, json: async () => indexPayload }
       }
 
       for (const [relativePath, payload] of classPayloads) {
         if (urlText.endsWith(relativePath)) {
-          return {ok: true, json: async () => payload}
+          return { ok: true, json: async () => payload }
         }
       }
 
-      return {ok: false, status: 404, json: async () => ({})}
+      return { ok: false, status: 404, json: async () => ({}) }
     })
 
     const catalog = await loadUniqueCatalog()
@@ -49,7 +49,7 @@ describe("unique service", () => {
   it("caches the normalized unique catalog", async () => {
     const indexPayload = {
       version: 1,
-      classes: [{slug: "Belts", class: "Belts", file: "Belts.json"}],
+      classes: [{ slug: "Belts", class: "Belts", file: "Belts.json" }],
     }
     const classPayload = {
       class: "Belts",
@@ -65,8 +65,8 @@ describe("unique service", () => {
 
     global.fetch = vi
       .fn()
-      .mockResolvedValueOnce({ok: true, json: async () => indexPayload})
-      .mockResolvedValueOnce({ok: true, json: async () => classPayload})
+      .mockResolvedValueOnce({ ok: true, json: async () => indexPayload })
+      .mockResolvedValueOnce({ ok: true, json: async () => classPayload })
 
     const first = await loadUniqueCatalog()
     const second = await loadUniqueCatalog()

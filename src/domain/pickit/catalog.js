@@ -26,7 +26,6 @@ export function getImplementedCatalogItems(items) {
 }
 
 export function resolvePickitCategoryFromItem(selectedItem) {
-  const pickitCategory =
-    typeof selectedItem?.pickitCategory === "string" ? selectedItem.pickitCategory.trim() : ""
+  const pickitCategory = typeof selectedItem?.pickitCategory === "string" ? selectedItem.pickitCategory.trim() : ""
   return pickitCategory || null
 }
