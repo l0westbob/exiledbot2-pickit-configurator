@@ -1,0 +1,680 @@
+{
+  "class": "Tablet",
+  "slug": "Tablet",
+  "uniques": [
+    {
+      "name": "Clear Skies",
+      "display_name": "Clear Skies Delirium Precursor Tablet",
+      "base_name": "Delirium Precursor Tablet",
+      "href": "https://poe2db.tw/us/Clear_Skies",
+      "base_href": "https://poe2db.tw/Delirium_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds a Mirror of Delirium to a Map 10 uses remaining",
+          "template": "Adds a Mirror of Delirium to a Map 10 uses remaining",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add delirium to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_delirium_to_X_maps"
+          ]
+        },
+        {
+          "text": "Delirium Fog in your Maps never dissipates",
+          "template": "Delirium Fog in your Maps never dissipates",
+          "rolls": [],
+          "family": "TowerAddUniqueBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map delirium fog never dissipates"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_delirium_fog_never_dissipates"
+          ]
+        },
+        {
+          "text": "Delirium in Map increases (-10—10)% slower with distance from the mirror",
+          "template": "Delirium in Map increases #% slower with distance from the mirror",
+          "rolls": [
+            {
+              "raw": "(-10—10)",
+              "min": -10,
+              "max": 10
+            }
+          ],
+          "family": "DeliriumDifficultyIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map affliction encounter monster depth +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_affliction_encounter_monster_depth_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Cruel Hegemony",
+      "display_name": "Cruel Hegemony Overseer Precursor Tablet",
+      "base_name": "Overseer Precursor Tablet",
+      "href": "https://poe2db.tw/us/Cruel_Hegemony",
+      "base_href": "https://poe2db.tw/Overseer_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Empowers the Map Boss of a Map 10 uses remaining",
+          "template": "Empowers the Map Boss of a Map 10 uses remaining",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add map bosses to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_map_bosses_to_X_maps"
+          ]
+        },
+        {
+          "text": "Map Bosses have 1 additional Modifier",
+          "template": "Map Bosses have 1 additional Modifier",
+          "rolls": [],
+          "family": "MapAdditionalModifier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map unique boss num additional modifiers"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_unique_boss_num_additional_modifiers"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Forgotten By Time",
+      "display_name": "Forgotten By Time Expedition Precursor Tablet",
+      "base_name": "Expedition Precursor Tablet",
+      "href": "https://poe2db.tw/us/Forgotten_By_Time",
+      "base_href": "https://poe2db.tw/Expedition_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds a Kalguuran Expedition to a Map 10 uses remaining",
+          "template": "Adds a Kalguuran Expedition to a Map 10 uses remaining",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add expedition to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_expedition_to_X_maps"
+          ]
+        },
+        {
+          "text": "Expedition Monsters in your Maps spawn with half of their Life missing",
+          "template": "Expedition Monsters in your Maps spawn with half of their Life missing",
+          "rolls": [],
+          "family": "TowerAddUniqueBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map expedition monster spawn with half life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_expedition_monster_spawn_with_half_life"
+          ]
+        },
+        {
+          "text": "Runic Monsters in your Maps are Duplicated",
+          "template": "Runic Monsters in your Maps are Duplicated",
+          "rolls": [],
+          "family": "TowerAddUniqueBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map expedition twinned elites"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_expedition_twinned_elites"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Freedom of Faith",
+      "display_name": "Freedom of Faith Ritual Precursor Tablet",
+      "base_name": "Ritual Precursor Tablet",
+      "href": "https://poe2db.tw/us/Freedom_of_Faith",
+      "base_href": "https://poe2db.tw/Ritual_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds Ritual Altars to a Map 10 uses remaining",
+          "template": "Adds Ritual Altars to a Map 10 uses remaining",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add ritual to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_ritual_to_X_maps"
+          ]
+        },
+        {
+          "text": "Favours at Ritual Altars in Area costs (10—15)% increased Tribute",
+          "template": "Favours at Ritual Altars in Area costs #% increased Tribute",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "RitualTributeCostIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map ritual offered and defer rewards tribute cost +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_ritual_offered_and_defer_rewards_tribute_cost_+%"
+          ]
+        },
+        {
+          "text": "Can Reroll Favours at Ritual Altars in your Maps twice as many times",
+          "template": "Can Reroll Favours at Ritual Altars in your Maps twice as many times",
+          "rolls": [],
+          "family": "TowerAddUniqueBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map ritual unlimited reward rerolls"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_ritual_unlimited_reward_rerolls"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Season of the Hunt",
+      "display_name": "Season of the Hunt Overseer Precursor Tablet",
+      "base_name": "Overseer Precursor Tablet",
+      "href": "https://poe2db.tw/us/Season_of_the_Hunt",
+      "base_href": "https://poe2db.tw/Overseer_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Empowers the Map Boss of a Map 10 uses remaining",
+          "template": "Empowers the Map Boss of a Map 10 uses remaining",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add map bosses to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_map_bosses_to_X_maps"
+          ]
+        },
+        {
+          "text": "Map Bosses are Hunted by Azmeri Spirits",
+          "template": "Map Bosses are Hunted by Azmeri Spirits",
+          "rolls": [],
+          "family": "MapBossPossessed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map boss is possessed"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_boss_is_possessed"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Grand Project",
+      "display_name": "The Grand Project Precursor Tablet",
+      "base_name": "Precursor Tablet",
+      "href": "https://poe2db.tw/us/The_Grand_Project",
+      "base_href": "https://poe2db.tw/Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds Irradiated to a Map",
+          "template": "Adds Irradiated to a Map",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add irradiated to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_irradiated_to_X_maps"
+          ]
+        },
+        {
+          "text": "1 use remaining",
+          "template": "1 use remaining",
+          "rolls": []
+        },
+        {
+          "text": "Can only be applied to Precursor Tower Maps Completing the Tower makes all nearby Maps accessible",
+          "template": "Can only be applied to Precursor Tower Maps Completing the Tower makes all nearby Maps accessible",
+          "rolls": [],
+          "family": "IrridiatedMaps",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local tablet make maps in radius available"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_tablet_make_maps_in_radius_available"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Unforeseen Consequences",
+      "display_name": "Unforeseen Consequences Abyss Precursor Tablet",
+      "base_name": "Abyss Precursor Tablet",
+      "href": "https://poe2db.tw/us/Unforeseen_Consequences",
+      "base_href": "https://poe2db.tw/Abyss_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds Abysses to a Map",
+          "template": "Adds Abysses to a Map",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add abyss to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_abyss_to_X_maps"
+          ]
+        },
+        {
+          "text": "1 use remaining",
+          "template": "1 use remaining",
+          "rolls": []
+        },
+        {
+          "text": "% reduced Pack Size in Map",
+          "template": "% reduced Pack Size in Map",
+          "rolls": [],
+          "family": "MapAbyssalOverrun",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map pack size +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_pack_size_+%"
+          ]
+        },
+        {
+          "text": "(4—6) additional Rare Monsters are spawned from Abysses in Map",
+          "template": "# additional Rare Monsters are spawned from Abysses in Map",
+          "rolls": [
+            {
+              "raw": "(4—6)",
+              "min": 4,
+              "max": 6
+            }
+          ],
+          "family": "MapAbyssalOverrun",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map abyss num additional rare monsters"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_abyss_num_additional_rare_monsters"
+          ]
+        },
+        {
+          "text": "Map contains (14—18) additional Abysses",
+          "template": "Map contains # additional Abysses",
+          "rolls": [
+            {
+              "raw": "(14—18)",
+              "min": 14,
+              "max": 18
+            }
+          ],
+          "family": "MapAbyssalOverrun",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map abyss overrun extra pits"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_abyss_overrun_extra_pits"
+          ]
+        },
+        {
+          "text": "Map is overrun by the Abyssal",
+          "template": "Map is overrun by the Abyssal",
+          "rolls": [],
+          "family": "MapAbyssalOverrun",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map abyss overrun no monsters"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_abyss_overrun_no_monsters"
+          ]
+        },
+        {
+          "text": "% increased Quantity of Waystones found in Map",
+          "template": "% increased Quantity of Waystones found in Map",
+          "rolls": [],
+          "family": "MapAbyssalOverrun",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map map item drop chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_map_item_drop_chance_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Visions of Paradise",
+      "display_name": "Visions of Paradise Precursor Tablet",
+      "base_name": "Precursor Tablet",
+      "href": "https://poe2db.tw/us/Visions_of_Paradise",
+      "base_href": "https://poe2db.tw/Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds Irradiated to a Map",
+          "template": "Adds Irradiated to a Map",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add irradiated to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_irradiated_to_X_maps"
+          ]
+        },
+        {
+          "text": "1 use remaining",
+          "template": "1 use remaining",
+          "rolls": []
+        },
+        {
+          "text": "If Map was not previously Irradiated , completing Map adds Irradiation instead",
+          "template": "If Map was not previously Irradiated , completing Map adds Irradiation instead",
+          "rolls": [],
+          "family": "IrridiatedMaps",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map add irradiation instead of completing"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_add_irradiation_instead_of_completing"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Wraeclast Besieged",
+      "display_name": "Wraeclast Besieged Breach Precursor Tablet",
+      "base_name": "Breach Precursor Tablet",
+      "href": "https://poe2db.tw/us/Wraeclast_Besieged",
+      "base_href": "https://poe2db.tw/Breach_Precursor_Tablet",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds an Otherworldy Breach to a Map 10 uses remaining",
+          "template": "Adds an Otherworldy Breach to a Map 10 uses remaining",
+          "rolls": [],
+          "family": "TowerAddContent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "tower add breach to X maps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "tower_add_breach_to_X_maps"
+          ]
+        },
+        {
+          "text": "Breaches expand to at least 20 metres in radius",
+          "template": "Breaches expand to at least 20 metres in radius",
+          "rolls": [],
+          "affix_ids": [
+            "map_breach_minimum_radius"
+          ]
+        },
+        {
+          "text": "Breaches remain open while there are alive Breach Monsters",
+          "template": "Breaches remain open while there are alive Breach Monsters",
+          "rolls": [],
+          "family": "TowerAddUniqueBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map breach minimum radius"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_breach_minimum_radius"
+          ]
+        },
+        {
+          "text": "Breaches in Map have (-10—20)% reduced Monster density",
+          "template": "Breaches in Map have #% reduced Monster density",
+          "rolls": [
+            {
+              "raw": "(-10—20)",
+              "min": -10,
+              "max": 20
+            }
+          ],
+          "family": "BreachDensityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map breach monster quantity +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_breach_monster_quantity_+%"
+          ]
+        },
+        {
+          "text": "map breach minimum monster power to not close [5]",
+          "template": "map breach minimum monster power to not close [5]",
+          "rolls": [],
+          "family": "TowerAddUniqueBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map breach minimum monster power to not close"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_breach_minimum_monster_power_to_not_close"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Tablet",
+      "class_slug": "Tablet",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    }
+  ]
+}

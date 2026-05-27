@@ -64,49 +64,14 @@ describe("useAffixSlots", () => {
     expect(api.addDisabledReason.value).toBe("No valid affixes left to add.")
   })
 
-  it("groups affixes by modifier section with prefixes before suffixes", () => {
-    const desecratedPrefix = {
-      modifierSection: "desecrated",
-      family_key: "DesecratedLife",
-      kind: "prefix",
-      template: "+# to Desecrated Life",
-      tiers: [],
-    }
-    const desecratedSuffix = {
-      modifierSection: "desecrated",
-      family_key: "DesecratedStrength",
-      kind: "suffix",
-      template: "+# to Desecrated Strength",
-      tiers: [],
-    }
-    const essencePrefix = {
-      modifierSection: "essence",
-      family_key: "EssenceMana",
-      kind: "prefix",
-      template: "+# to Essence Mana",
-      tiers: [],
-    }
-
-    const affixesRef = ref([
-      essencePrefix,
-      suffixOne,
-      desecratedSuffix,
-      prefixTwo,
-      desecratedPrefix,
-      prefixOne,
-    ])
+  it("groups normal affixes with prefixes before suffixes", () => {
+    const affixesRef = ref([suffixOne, prefixTwo, prefixOne])
     const api = useAffixSlots({affixesRef, maxSlots: 6, maxPrefixes: 3, maxSuffixes: 3})
 
     const groups = api.groupsForSlot(0)
 
-    expect(groups.map((group) => group.label)).toEqual([
-      "-- Normal Prefixes --",
-      "-- Normal Suffixes --",
-      "-- Desecrated Prefixes --",
-      "-- Desecrated Suffixes --",
-      "-- Essence Prefixes --",
-    ])
+    expect(groups.map((group) => group.label)).toEqual(["-- Normal Prefixes --", "-- Normal Suffixes --"])
     expect(groups[0].items.map((affix) => affix.template)).toEqual(["+# to Life", "+# to Mana"])
-    expect(groups[2].items.map((affix) => affix.template)).toEqual(["+# to Desecrated Life"])
+    expect(groups[1].items.map((affix) => affix.template)).toEqual(["+# to Strength"])
   })
 })

@@ -1,0 +1,6484 @@
+{
+  "class": "Helmets",
+  "slug": "Helmets",
+  "uniques": [
+    {
+      "name": "Alpha's Howl",
+      "display_name": "Alpha's Howl Armoured Cap",
+      "base_name": "Armoured Cap",
+      "href": "https://poe2db.tw/us/Alphas_Howl",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 91,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 91,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(80—100)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+100 to Spirit",
+          "template": "+100 to Spirit",
+          "rolls": [],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "+(50—75)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(50—75)",
+              "min": 50,
+              "max": 75
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Presence Radius is doubled",
+          "template": "Presence Radius is doubled",
+          "rolls": [],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique double presence radius"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_double_presence_radius"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Armoured_Cap",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Assailum",
+      "display_name": "Assailum Closed Helm",
+      "base_name": "Closed Helm",
+      "href": "https://poe2db.tw/us/Assailum",
+      "requirements": {
+        "level": 45,
+        "str": 36,
+        "dex": 36,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 36,
+        "dex": 36,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(200—300)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(200—300)",
+              "min": 200,
+              "max": 300
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(200—400) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(200—400)",
+              "min": 200,
+              "max": 400
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "Skills have a (100—150)% longer Perfect Timing window",
+          "template": "Skills have a #% longer Perfect Timing window",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "PerfectTimingWindow",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "perfect timing window ms +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "perfect_timing_window_ms_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Closed_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Atsak's Sight",
+      "display_name": "Atsak's Sight Veiled Mask",
+      "base_name": "Veiled Mask",
+      "href": "https://poe2db.tw/us/Atsaks_Sight",
+      "requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 23,
+        "int": 23
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 23,
+        "int": 23
+      },
+      "stats": [
+        {
+          "text": "(100—150)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Critical Hits Poison the enemy",
+          "template": "Critical Hits Poison the enemy",
+          "rolls": [],
+          "family": "CausesPoisonOnCrit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "poison on critical strike"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Attack",
+            "Critical",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "poison_on_critical_strike"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Veiled_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Atziri's Disdain",
+      "display_name": "Atziri's Disdain Gold Circlet",
+      "base_name": "Gold Circlet",
+      "href": "https://poe2db.tw/us/Atziris_Disdain",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": 58
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": 58
+      },
+      "stats": [
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "10 % of Damage taken bypasses Energy Shield",
+          "template": "10 % of Damage taken bypasses Energy Shield",
+          "rolls": [],
+          "family": "DamageBypassEnergyShield",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base all damage bypass energy shield %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_all_damage_bypass_energy_shield_%"
+          ]
+        },
+        {
+          "text": "Gain (10—15)% of maximum Life as Extra maximum Energy Shield",
+          "template": "Gain #% of maximum Life as Extra maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "MaximumEnergyShieldAsPercentageOfLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life % to gain as maximum energy shield"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "maximum_life_%_to_gain_as_maximum_energy_shield"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Gold_Circlet",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Black Sun Crest",
+      "display_name": "Black Sun Crest Wrapped Greathelm",
+      "base_name": "Wrapped Greathelm",
+      "href": "https://poe2db.tw/us/Black_Sun_Crest",
+      "requirements": {
+        "level": 16,
+        "str": 25,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 25,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—80)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "20 % reduced Light Radius",
+          "template": "20 % reduced Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "(5—15)% increased Strength",
+          "template": "#% increased Strength",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "PercentageStrength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "strength +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "strength_+%"
+          ]
+        },
+        {
+          "text": "(5—15)% increased Dexterity",
+          "template": "#% increased Dexterity",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "PercentageDexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "dexterity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "dexterity_+%"
+          ]
+        },
+        {
+          "text": "(5—15)% increased Intelligence",
+          "template": "#% increased Intelligence",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "PercentageIntelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "intelligence +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "intelligence_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Wrapped_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Blood Price",
+      "display_name": "Blood Price Fierce Greathelm",
+      "base_name": "Fierce Greathelm",
+      "href": "https://poe2db.tw/us/Blood_Price",
+      "requirements": {
+        "level": 51,
+        "str": 73,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 51,
+        "str": 73,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(80—120)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "(10—15) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "+(100—150) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "(30—60)% increased Presence Area of Effect",
+          "template": "#% increased Presence Area of Effect",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "presence area +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "presence_area_+%"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence have at least 10 % of Life Reserved",
+          "template": "Enemies in your Presence have at least 10 % of Life Reserved",
+          "rolls": [],
+          "family": "ReservesLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence have life reserved %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemies_in_presence_have_life_reserved_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Fierce_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Bronzebeard",
+      "display_name": "Bronzebeard Horned Crown",
+      "base_name": "Horned Crown",
+      "href": "https://poe2db.tw/us/Bronzebeard",
+      "requirements": {
+        "level": 10,
+        "str": 10,
+        "dex": null,
+        "int": 10
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": 10,
+        "dex": null,
+        "int": 10
+      },
+      "stats": [
+        {
+          "text": "10 % reduced Movement Speed",
+          "template": "10 % reduced Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(50—100)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+100 to maximum Life",
+          "template": "+100 to maximum Life",
+          "rolls": [],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(35—50)% reduced Effect of Chill on you",
+          "template": "#% reduced Effect of Chill on you",
+          "rolls": [
+            {
+              "raw": "(35—50)",
+              "min": 35,
+              "max": 50
+            }
+          ],
+          "family": "ChillEffectivenessOnSelf",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chill effectiveness on self +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chill_effectiveness_on_self_+%"
+          ]
+        },
+        {
+          "text": "(35—50)% reduced Magnitude of Ignite on you",
+          "template": "#% reduced Magnitude of Ignite on you",
+          "rolls": [
+            {
+              "raw": "(35—50)",
+              "min": 35,
+              "max": 50
+            }
+          ],
+          "family": "IgniteEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite effect on self +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "ignite_effect_on_self_+%"
+          ]
+        },
+        {
+          "text": "(35—50)% reduced effect of Shock on you",
+          "template": "#% reduced effect of Shock on you",
+          "rolls": [
+            {
+              "raw": "(35—50)",
+              "min": 35,
+              "max": 50
+            }
+          ],
+          "family": "ShockEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "shocked effect on self +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "shocked_effect_on_self_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_int",
+      "base_href": "https://poe2db.tw/Horned_Crown",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Constricting Command",
+      "display_name": "Constricting Command Viper Cap",
+      "base_name": "Viper Cap",
+      "href": "https://poe2db.tw/us/Constricting_Command",
+      "requirements": {
+        "level": 38,
+        "str": null,
+        "dex": 54,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 38,
+        "str": null,
+        "dex": 54,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(80—120) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(10—15) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "(8—12) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(8—12)",
+              "min": 8,
+              "max": 12
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Require (2—4) fewer enemies to be Surrounded",
+          "template": "Require # fewer enemies to be Surrounded",
+          "rolls": [
+            {
+              "raw": "(2—4)",
+              "min": 2,
+              "max": 4
+            }
+          ],
+          "family": "Surrounded",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "required enemies to be considered surrounded offset"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "required_enemies_to_be_considered_surrounded_offset"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Viper_Cap",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Cornathaum",
+      "display_name": "Cornathaum Heavy Crown",
+      "base_name": "Heavy Crown",
+      "href": "https://poe2db.tw/us/Cornathaum",
+      "requirements": {
+        "level": 33,
+        "str": 27,
+        "dex": null,
+        "int": 27
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 27,
+        "dex": null,
+        "int": 27
+      },
+      "stats": [
+        {
+          "text": "(10—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(40—50) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "30 % increased Light Radius",
+          "template": "30 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "5 % increased Experience gain",
+          "template": "5 % increased Experience gain",
+          "rolls": [],
+          "family": "ExperienceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "experience gain +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "experience_gain_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_str_int",
+      "base_href": "https://poe2db.tw/Heavy_Crown",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Corona of the Red Sun",
+      "display_name": "Corona of the Red Sun Warrior Greathelm",
+      "base_name": "Warrior Greathelm",
+      "href": "https://poe2db.tw/us/Corona_of_the_Red_Sun",
+      "requirements": {
+        "level": 36,
+        "str": 52,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 36,
+        "str": 52,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(100—150) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(60—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(20—25)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "25 % increased Light Radius",
+          "template": "25 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Leeching Life from your Hits causes Allies in your Presence to also Leech the same amount of Life",
+          "template": "Leeching Life from your Hits causes Allies in your Presence to also Leech the same amount of Life",
+          "rolls": [],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life leeched from hits also leeches same amount to allies in presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_leeched_from_hits_also_leeches_same_amount_to_allies_in_presence"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Warrior_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Crown of Eyes",
+      "display_name": "Crown of Eyes Vermeil Circlet",
+      "base_name": "Vermeil Circlet",
+      "href": "https://poe2db.tw/us/Crown_of_Eyes",
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": null,
+        "int": 64
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": null,
+        "dex": null,
+        "int": 64
+      },
+      "stats": [
+        {
+          "text": "(100—140)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—140)",
+              "min": 100,
+              "max": 140
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(150—200) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(10—15) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "-10 % to Fire Resistance",
+          "template": "-10 % to Fire Resistance",
+          "rolls": [],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Increases and Reductions to Spell damage also apply to Attacks",
+          "template": "Increases and Reductions to Spell damage also apply to Attacks",
+          "rolls": [],
+          "family": "SpellDamageModifiersApplyToAttackDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additive spell damage modifiers apply to attack damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Attack"
+          ],
+          "affix_ids": [
+            "additive_spell_damage_modifiers_apply_to_attack_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Vermeil_Circlet",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Crown of Thorns",
+      "display_name": "Crown of Thorns Twig Circlet",
+      "base_name": "Twig Circlet",
+      "href": "https://poe2db.tw/us/Crown_of_Thorns",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(100—150) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "Lose 5 Life when you use a Skill",
+          "template": "Lose 5 Life when you use a Skill",
+          "rolls": [],
+          "family": "LoseLifeOnKillUse",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lose x life when you use skill"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "lose_x_life_when_you_use_skill"
+          ]
+        },
+        {
+          "text": "(3—5) to (6—10) Physical Thorns damage",
+          "template": "# to # Physical Thorns damage",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            },
+            {
+              "raw": "(6—10)",
+              "min": 6,
+              "max": 10
+            }
+          ],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns minimum base physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "thorns_minimum_base_physical_damage"
+          ]
+        },
+        {
+          "text": "Pain Attunement",
+          "template": "Pain Attunement",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone pain attunement"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "keystone_pain_attunement"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Twig_Circlet",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Crown of the Pale King",
+      "display_name": "Crown of the Pale King Cultist Crown",
+      "base_name": "Cultist Crown",
+      "href": "https://poe2db.tw/us/Crown_of_the_Pale_King",
+      "requirements": {
+        "level": 16,
+        "str": 15,
+        "dex": null,
+        "int": 15
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 15,
+        "dex": null,
+        "int": 15
+      },
+      "stats": [
+        {
+          "text": "(50—100)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(40—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—80)",
+              "min": 40,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "10 % increased Rarity of Items found",
+          "template": "10 % increased Rarity of Items found",
+          "rolls": [],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(10—15) to (20—25) Physical Thorns damage",
+          "template": "# to # Physical Thorns damage",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            },
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns minimum base physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "thorns_minimum_base_physical_damage"
+          ]
+        },
+        {
+          "text": "Thorns can Retaliate against all Hits",
+          "template": "Thorns can Retaliate against all Hits",
+          "rolls": [],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns proc off any hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "thorns_proc_off_any_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_int",
+      "base_href": "https://poe2db.tw/Cultist_Crown",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Crown of the Victor",
+      "display_name": "Crown of the Victor Iron Crown",
+      "base_name": "Iron Crown",
+      "href": "https://poe2db.tw/us/Crown_of_the_Victor",
+      "requirements": {
+        "level": 5,
+        "str": 7,
+        "dex": null,
+        "int": 7
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": 7,
+        "dex": null,
+        "int": 7
+      },
+      "stats": [
+        {
+          "text": "(10—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "Gain 10 Life per enemy killed",
+          "template": "Gain 10 Life per enemy killed",
+          "rolls": [],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Gain 10 Mana per enemy killed",
+          "template": "Gain 10 Mana per enemy killed",
+          "rolls": [],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "+1 to Level of all Skills",
+          "template": "+1 to Level of all Skills",
+          "rolls": [],
+          "family": "IncreaseSocketedGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Gem"
+          ],
+          "affix_ids": [
+            "all_skill_gem_level_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_int",
+      "base_href": "https://poe2db.tw/Iron_Crown",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Deidbell",
+      "display_name": "Deidbell Elite Greathelm",
+      "base_name": "Elite Greathelm",
+      "href": "https://poe2db.tw/us/Deidbell",
+      "requirements": {
+        "level": 33,
+        "str": 48,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 48,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Warcry Speed",
+          "template": "#% increased Warcry Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "WarcrySpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "warcry speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "warcry_speed_+%"
+          ]
+        },
+        {
+          "text": "Warcries Explode Corpses dealing 10 % of their Life as Physical Damage",
+          "template": "Warcries Explode Corpses dealing 10 % of their Life as Physical Damage",
+          "rolls": [],
+          "family": "WarcryBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "corpses in your area of effect explode dealing % maximum life physical damage on warcry"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "corpses_in_your_area_of_effect_explode_dealing_%_maximum_life_physical_damage_on_warcry"
+          ]
+        },
+        {
+          "text": "Warcry Skills have (20—30)% increased Area of Effect",
+          "template": "Warcry Skills have #% increased Area of Effect",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "AreaOfEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "warcry skill area of effect +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "warcry_skill_area_of_effect_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Elite_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Demigod's Virtue",
+      "display_name": "Demigod's Virtue Golden Visage",
+      "base_name": "Golden Visage",
+      "href": "https://poe2db.tw/us/Demigods_Virtue",
+      "base_href": "https://poe2db.tw/Golden_Visage",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "25 % increased Rarity of Items found",
+          "template": "25 % increased Rarity of Items found",
+          "rolls": [],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "drop"
+          ],
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "Virtuous",
+          "template": "Virtuous",
+          "rolls": [],
+          "family": "Nothing",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "demigods virtue"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "demigods_virtue"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Helmets",
+      "class_slug": "Helmets",
+      "source_categories": [
+        "ArmourUnique"
+      ]
+    },
+    {
+      "name": "Elevore",
+      "display_name": "Elevore Hunter Hood",
+      "base_name": "Hunter Hood",
+      "href": "https://poe2db.tw/us/Elevore",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 48,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 48,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—80)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Charms gain 0.5 charges per Second",
+          "template": "Charms gain 0.5 charges per Second",
+          "rolls": [],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for charms per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_charms_per_minute"
+          ]
+        },
+        {
+          "text": "+1 Charm Slot",
+          "template": "+1 Charm Slot",
+          "rolls": [],
+          "family": "AdditionalCharm",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "num charm slots"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Charm"
+          ],
+          "affix_ids": [
+            "num_charm_slots"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Hunter_Hood",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Erian's Cobble",
+      "display_name": "Erian's Cobble Guarded Helm",
+      "base_name": "Guarded Helm",
+      "href": "https://poe2db.tw/us/Erians_Cobble",
+      "requirements": {
+        "level": 11,
+        "str": 11,
+        "dex": 11,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": 11,
+        "dex": 11,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(0—40) to Armour",
+          "template": "+# to Armour",
+          "rolls": [
+            {
+              "raw": "(0—40)",
+              "min": 0,
+              "max": 40
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base physical damage reduction rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "+(0—30) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(0—30)",
+              "min": 0,
+              "max": 30
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base evasion rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_evasion_rating"
+          ]
+        },
+        {
+          "text": "+(0—20) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(0—20)",
+              "min": 0,
+              "max": 20
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+(0—60) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(0—60)",
+              "min": 0,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(0—30) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(0—30)",
+              "min": 0,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(0—20) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(0—20)",
+              "min": 0,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(0—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(0—20)",
+              "min": 0,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(0—30)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(0—30)",
+              "min": 0,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(0—10) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(0—10)",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(0—10) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(0—10)",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(0—10) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(0—10)",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(0—10)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(0—10)",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(0—10)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(0—10)",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(0—10)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(0—10)",
+              "min": 0,
+              "max": 10
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(0—6) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(0—6)",
+              "min": 0,
+              "max": 6
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Guarded_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Ezomyte Peak",
+      "display_name": "Ezomyte Peak Soldier Greathelm",
+      "base_name": "Soldier Greathelm",
+      "href": "https://poe2db.tw/us/Ezomyte_Peak",
+      "requirements": {
+        "level": 12,
+        "str": 19,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": 19,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(50—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(3—6) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(3—6)",
+              "min": 3,
+              "max": 6
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Area of Effect",
+          "template": "#% increased Area of Effect",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AreaOfEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base skill area of effect +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_skill_area_of_effect_+%"
+          ]
+        },
+        {
+          "text": "Unwavering Stance",
+          "template": "Unwavering Stance",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone unwavering stance"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "keystone_unwavering_stance"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Soldier_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Glimpse of Chaos",
+      "display_name": "Glimpse of Chaos Tribal Mask",
+      "base_name": "Tribal Mask",
+      "href": "https://poe2db.tw/us/Glimpse_of_Chaos",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 27,
+        "int": 27
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 27,
+        "int": 27
+      },
+      "stats": [
+        {
+          "text": "Can be modified while Corrupted",
+          "template": "Can be modified while Corrupted",
+          "rolls": [],
+          "family": "CorruptionIntertactions",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local item allow modification while corrupted"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_item_allow_modification_while_corrupted"
+          ]
+        },
+        {
+          "text": "+(50—150) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(50—150)",
+              "min": 50,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(50—150) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(50—150)",
+              "min": 50,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(-30—30)% to Fire Resistance",
+          "template": "#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(-30—30)",
+              "min": -30,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(-30—30)% to Cold Resistance",
+          "template": "#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(-30—30)",
+              "min": -30,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(-30—30)% to Lightning Resistance",
+          "template": "#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(-30—30)",
+              "min": -30,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Chaos Resistance is zero",
+          "template": "Chaos Resistance is zero",
+          "rolls": [],
+          "family": "ChaosResistanceIsZero",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "zero chaos resistance"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "zero_chaos_resistance"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Tribal_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Goldrim",
+      "display_name": "Goldrim Felt Cap",
+      "base_name": "Felt Cap",
+      "href": "https://poe2db.tw/us/Goldrim",
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": 17,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": null,
+        "dex": 17,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(30—50) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base evasion rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_evasion_rating"
+          ]
+        },
+        {
+          "text": "10 % increased Rarity of Items found",
+          "template": "10 % increased Rarity of Items found",
+          "rolls": [],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(25—35)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Felt_Cap",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Greymake",
+      "display_name": "Greymake Brimmed Helm",
+      "base_name": "Brimmed Helm",
+      "href": "https://poe2db.tw/us/Greymake",
+      "requirements": {
+        "level": 5,
+        "str": 7,
+        "dex": 7,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": 7,
+        "dex": 7,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(30—50) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(30—50) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(30—50) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "-1 to all Attributes per Level",
+          "template": "-1 to all Attributes per Level",
+          "rolls": [],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local all attributes - per level"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_all_attributes_-_per_level"
+          ]
+        },
+        {
+          "text": "Has 4 Augment Sockets (Hidden)",
+          "template": "Has 4 Augment Sockets (Hidden)",
+          "rolls": []
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Brimmed_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Heatshiver",
+      "display_name": "Heatshiver Velvet Cap",
+      "base_name": "Velvet Cap",
+      "href": "https://poe2db.tw/us/Heatshiver",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 74,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 74,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—70)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Gain 1 % of Cold damage as Extra Fire damage per 1% Chill Magnitude on enemy",
+          "template": "Gain 1 % of Cold damage as Extra Fire damage per 1% Chill Magnitude on enemy",
+          "rolls": [],
+          "family": "ColdAddedAsFireChilledEnemy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill cold damage % to gain as fire per 1% chill effect on enemy"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_cold_damage_%_to_gain_as_fire_per_1%_chill_effect_on_enemy"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Velvet_Cap",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Horns of Bynden",
+      "display_name": "Horns of Bynden Rusted Greathelm",
+      "base_name": "Rusted Greathelm",
+      "href": "https://poe2db.tw/us/Horns_of_Bynden",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+20 to Armour",
+          "template": "+20 to Armour",
+          "rolls": [],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base physical damage reduction rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "(5—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Every Rage also grants 1 % increased Armour",
+          "template": "Every Rage also grants 1 % increased Armour",
+          "rolls": [],
+          "family": "IncreasedPhysicalDamageReductionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "armour +% per rage"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "armour_+%_per_rage"
+          ]
+        },
+        {
+          "text": "Gain 1 Rage on Melee Hit",
+          "template": "Gain 1 Rage on Melee Hit",
+          "rolls": [],
+          "family": "RageOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain x rage on melee hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_x_rage_on_melee_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Rusted_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Indigon",
+      "display_name": "Indigon Magus Tiara",
+      "base_name": "Magus Tiara",
+      "href": "https://poe2db.tw/us/Indigon",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": 91
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": 91
+      },
+      "stats": [
+        {
+          "text": "(100—140)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—140)",
+              "min": 100,
+              "max": 140
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(80—120) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Cost of Skills for each 200 total Mana Spent Recently",
+          "template": "#% increased Cost of Skills for each 200 total Mana Spent Recently",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "ManaCostReduction",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana cost +% per 200 mana spent recently"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_cost_+%_per_200_mana_spent_recently"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Spell damage for each 200 total Mana you have Spent Recently",
+          "template": "#% increased Spell damage for each 200 total Mana you have Spent Recently",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "SpellDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +% per 200 mana spent recently"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%_per_200_mana_spent_recently"
+          ]
+        },
+        {
+          "text": "Mana Recovery other than Regeneration cannot Recover Mana",
+          "template": "Mana Recovery other than Regeneration cannot Recover Mana",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot recover mana except regeneration"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_recover_mana_except_regeneration"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Magus_Tiara",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Innsmouth",
+      "display_name": "Innsmouth Shabby Hood",
+      "base_name": "Shabby Hood",
+      "href": "https://poe2db.tw/us/Innsmouth",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base evasion rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_evasion_rating"
+          ]
+        },
+        {
+          "text": "25 % reduced maximum Mana",
+          "template": "25 % reduced maximum Mana",
+          "rolls": [],
+          "family": "MaximumManaIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum mana +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "maximum_mana_+%"
+          ]
+        },
+        {
+          "text": "+(10—20)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(13—19)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(13—19)",
+              "min": 13,
+              "max": 19
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "100 % increased Mana Regeneration Rate",
+          "template": "100 % increased Mana Regeneration Rate",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Shabby_Hood",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Ironride",
+      "display_name": "Ironride Visored Helm",
+      "base_name": "Visored Helm",
+      "href": "https://poe2db.tw/us/Ironride",
+      "requirements": {
+        "level": 16,
+        "str": 15,
+        "dex": 15,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 15,
+        "dex": 15,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(60—80)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(10—15)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "You have no Accuracy Penalty at Distance",
+          "template": "You have no Accuracy Penalty at Distance",
+          "rolls": [],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "deadeye accuracy unaffected by range"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "deadeye_accuracy_unaffected_by_range"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Visored_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Keeper of the Arc",
+      "display_name": "Keeper of the Arc Spiritbone Crown",
+      "base_name": "Spiritbone Crown",
+      "href": "https://poe2db.tw/us/Keeper_of_the_Arc",
+      "requirements": {
+        "level": 62,
+        "str": 36,
+        "dex": null,
+        "int": 36
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 36,
+        "dex": null,
+        "int": 36
+      },
+      "stats": [
+        {
+          "text": "(150—250)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(150—250)",
+              "min": 150,
+              "max": 250
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(15—25) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Alternating every 5 seconds: Take 40 % less Damage from Hits Take 40 % less Damage over time",
+          "template": "Alternating every 5 seconds: Take 40 % less Damage from Hits Take 40 % less Damage over time",
+          "rolls": [],
+          "family": "DamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "has trickster alternating damage taken +% final"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "has_trickster_alternating_damage_taken_+%_final"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_int",
+      "base_href": "https://poe2db.tw/Spiritbone_Crown",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Leer Cast",
+      "display_name": "Leer Cast Hooded Mask",
+      "base_name": "Hooded Mask",
+      "href": "https://poe2db.tw/us/Leer_Cast",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 15,
+        "int": 15
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 15,
+        "int": 15
+      },
+      "stats": [
+        {
+          "text": "+(30—50) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "Allies in your Presence deal 50 % increased Damage",
+          "template": "Allies in your Presence deal 50 % increased Damage",
+          "rolls": [],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "allies_in_presence_damage_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "25 % reduced Damage",
+          "template": "25 % reduced Damage",
+          "rolls": [],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "damage_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Hooded_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Mask of the Sanguimancer",
+      "display_name": "Mask of the Sanguimancer Face Mask",
+      "base_name": "Face Mask",
+      "href": "https://poe2db.tw/us/Mask_of_the_Sanguimancer",
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": 10,
+        "int": 10
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": null,
+        "dex": 10,
+        "int": 10
+      },
+      "stats": [
+        {
+          "text": "+(20—25) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base evasion rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_evasion_rating"
+          ]
+        },
+        {
+          "text": "+(10—15) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "(20—40)% increased Critical Hit Chance for Spells",
+          "template": "#% increased Critical Hit Chance for Spells",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "SpellCriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Critical"
+          ],
+          "affix_ids": [
+            "spell_critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Blood Magic",
+          "template": "Blood Magic",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone blood magic"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Mana"
+          ],
+          "affix_ids": [
+            "keystone_blood_magic"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Face_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Mask of the Stitched Demon",
+      "display_name": "Mask of the Stitched Demon Feathered Tiara",
+      "base_name": "Feathered Tiara",
+      "href": "https://poe2db.tw/us/Mask_of_the_Stitched_Demon",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 48
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 48
+      },
+      "stats": [
+        {
+          "text": "(120—160)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(120—160)",
+              "min": 120,
+              "max": 160
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Cannot have Energy Shield",
+          "template": "Cannot have Energy Shield",
+          "rolls": [],
+          "family": "CannotGainEnergyShield",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot have current energy shield"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "cannot_have_current_energy_shield"
+          ]
+        },
+        {
+          "text": "Regenerate 0.05 Life per second per Maximum Energy Shield",
+          "template": "Regenerate 0.05 Life per second per Maximum Energy Shield",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life regeneration per minute per maximum energy shield"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_regeneration_per_minute_per_maximum_energy_shield"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Feathered_Tiara",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Mind of the Council",
+      "display_name": "Mind of the Council Death Mask",
+      "base_name": "Death Mask",
+      "href": "https://poe2db.tw/us/Mind_of_the_Council",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 50,
+        "int": 50
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 50,
+        "int": 50
+      },
+      "stats": [
+        {
+          "text": "(150—200)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(60—90) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—90)",
+              "min": 60,
+              "max": 90
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Attacks cost an additional 6 % of your maximum Mana",
+          "template": "Attacks cost an additional 6 % of your maximum Mana",
+          "rolls": [],
+          "family": "ManaCostReduction",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attacks base mana cost + % of maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attacks_base_mana_cost_+_%_of_maximum_mana"
+          ]
+        },
+        {
+          "text": "Attacks have Added maximum Lightning Damage equal to (6—9)% of maximum Mana",
+          "template": "Attacks have Added maximum Lightning Damage equal to #% of maximum Mana",
+          "rolls": [
+            {
+              "raw": "(6—9)",
+              "min": 6,
+              "max": 9
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack maximum added lightning damage % of maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_maximum_added_lightning_damage_%_of_maximum_mana"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Death_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Myris Uxor",
+      "display_name": "Myris Uxor Covert Hood",
+      "base_name": "Covert Hood",
+      "href": "https://poe2db.tw/us/Myris_Uxor",
+      "requirements": {
+        "level": 56,
+        "str": null,
+        "dex": 79,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 56,
+        "str": null,
+        "dex": 79,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(40—60)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(100—150) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "100 % increased Culling Strike Threshold",
+          "template": "100 % increased Culling Strike Threshold",
+          "rolls": [],
+          "family": "CullingStrike",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "culling strike threshold +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "culling_strike_threshold_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Covert_Hood",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Radiant Grief",
+      "display_name": "Radiant Grief Lace Hood",
+      "base_name": "Lace Hood",
+      "href": "https://poe2db.tw/us/Radiant_Grief",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 25,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 25,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(80—100)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "30 % increased Light Radius",
+          "template": "30 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence are Ignited as though dealt 100 Base Fire Damage",
+          "template": "Enemies in your Presence are Ignited as though dealt 100 Base Fire Damage",
+          "rolls": [],
+          "family": "IgniteChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite as though dealing X damage in your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_as_though_dealing_X_damage_in_your_presence"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Lace_Hood",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Sandstorm Visage",
+      "display_name": "Sandstorm Visage Chain Tiara",
+      "base_name": "Chain Tiara",
+      "href": "https://poe2db.tw/us/Sandstorm_Visage",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "+(80—120) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence are Blinded",
+          "template": "Enemies in your Presence are Blinded",
+          "rolls": [],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence are blinded"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemies_in_presence_are_blinded"
+          ]
+        },
+        {
+          "text": "Every second, inflicts Critical Weakness on enemies in your Presence for (15—20) seconds",
+          "template": "Every second, inflicts Critical Weakness on enemies in your Presence for # seconds",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence gain critical weakness every second for seconds"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemies_in_presence_gain_critical_weakness_every_second_for_seconds"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Chain_Tiara",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Scold's Bridle",
+      "display_name": "Scold's Bridle Jade Tiara",
+      "base_name": "Jade Tiara",
+      "href": "https://poe2db.tw/us/Scolds_Bridle",
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": 71
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": 71
+      },
+      "stats": [
+        {
+          "text": "+(75—150) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(75—150)",
+              "min": 75,
+              "max": 150
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "(60—100)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "SpellDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "+(80—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "15 % reduced Cast Speed",
+          "template": "15 % reduced Cast Speed",
+          "rolls": [],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Take (25—100)% of Mana Costs you pay for Skills as Physical Damage",
+          "template": "Take #% of Mana Costs you pay for Skills as Physical Damage",
+          "rolls": [
+            {
+              "raw": "(25—100)",
+              "min": 25,
+              "max": 100
+            }
+          ],
+          "family": "PhysicalDamageOnSkillUse",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skills deal you x% of mana cost as physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "skills_deal_you_x%_of_mana_cost_as_physical_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Jade_Tiara",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Solus Ipse",
+      "display_name": "Solus Ipse Grand Visage",
+      "base_name": "Grand Visage",
+      "href": "https://poe2db.tw/us/Solus_Ipse",
+      "base_href": "https://poe2db.tw/Grand_Visage",
+      "requirements": {
+        "level": 65,
+        "str": 36,
+        "dex": 36,
+        "int": 36
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(150—200)% increased Armour , Evasion and Energy Shield",
+          "template": "#% increased Armour , Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "stat_ids": [
+            "local armour and evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_armour_and_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "25 % increased Light Radius",
+          "template": "25 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Equipment and Skill Gems have 25 % increased Attribute Requirements",
+          "template": "Equipment and Skill Gems have 25 % increased Attribute Requirements",
+          "rolls": [],
+          "family": "GlobalItemAttributeRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "global item attribute requirements +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "global_item_attribute_requirements_+%"
+          ]
+        },
+        {
+          "text": "You can Socket 2 additional copies of each Lineage Support Gem , in different Skills",
+          "template": "You can Socket 2 additional copies of each Lineage Support Gem , in different Skills",
+          "rolls": [],
+          "family": "Limit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lineage support gem limit +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "lineage_support_gem_limit_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Helmets",
+      "class_slug": "Helmets",
+      "source_categories": [
+        "ArmourUnique"
+      ]
+    },
+    {
+      "name": "Starkonja's Head",
+      "display_name": "Starkonja's Head Leatherbound Hood",
+      "base_name": "Leatherbound Hood",
+      "href": "https://poe2db.tw/us/Starkonjas_Head",
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": 71,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": null,
+        "dex": 71,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(100—200)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(100—200)",
+              "min": 100,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(30—40) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "150 % increased Global Evasion Rating when on Low Life",
+          "template": "150 % increased Global Evasion Rating when on Low Life",
+          "rolls": [],
+          "family": "EvasionRatingPercentOnLowLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "evasion rating +% when on low life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "evasion_rating_+%_when_on_low_life"
+          ]
+        },
+        {
+          "text": "15 % of Damage from Hits is taken from your Damageable Companion 's Life before you",
+          "template": "15 % of Damage from Hits is taken from your Damageable Companion 's Life before you",
+          "rolls": [],
+          "family": "DamageRemovedFromMinion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "companion takes % damage before you"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "companion_takes_%_damage_before_you"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Leatherbound_Hood",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Black Insignia",
+      "display_name": "The Black Insignia Corsair Cap",
+      "base_name": "Corsair Cap",
+      "href": "https://poe2db.tw/us/The_Black_Insignia",
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 64,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 64,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(70—100)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(70—100)",
+              "min": 70,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Gain Tailwind on Critical Hit , no more than once per second",
+          "template": "Gain Tailwind on Critical Hit , no more than once per second",
+          "rolls": [],
+          "family": "Tailwind",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain tailwind on critical hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_tailwind_on_critical_hit"
+          ]
+        },
+        {
+          "text": "Lose all Tailwind when Hit",
+          "template": "Lose all Tailwind when Hit",
+          "rolls": [],
+          "family": "Tailwind",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lose all tailwind when hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "lose_all_tailwind_when_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex",
+      "base_href": "https://poe2db.tw/Corsair_Cap",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Bringer of Rain",
+      "display_name": "The Bringer of Rain Decorated Helm",
+      "base_name": "Decorated Helm",
+      "href": "https://poe2db.tw/us/The_Bringer_of_Rain",
+      "requirements": {
+        "level": 52,
+        "str": 41,
+        "dex": 41,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": 41,
+        "dex": 41,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(600—800)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(600—800)",
+              "min": 600,
+              "max": 800
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(200—300) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(200—300)",
+              "min": 200,
+              "max": 300
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "100 % increased Critical Hit Chance",
+          "template": "100 % increased Critical Hit Chance",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "(30—60) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Can't use Body Armour",
+          "template": "Can't use Body Armour",
+          "rolls": [],
+          "family": "DisableChestSlot",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "disable chest slot"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "disable_chest_slot"
+          ]
+        },
+        {
+          "text": "You can wield Two-Handed Axes , Maces and Swords in one hand",
+          "template": "You can wield Two-Handed Axes , Maces and Swords in one hand",
+          "rolls": [],
+          "family": "UseTwoHandedWeaponOneHand",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "can wield 2h axe sword mace in one hand"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "can_wield_2h_axe_sword_mace_in_one_hand"
+          ]
+        },
+        {
+          "text": "This item gains bonuses from Socketed Items as though it was a Body Armour",
+          "template": "This item gains bonuses from Socketed Items as though it was a Body Armour",
+          "rolls": [],
+          "family": "LocalItemBenefitSocketableAsIf",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local item benefit socketable as if body armour"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_item_benefit_socketable_as_if_body_armour"
+          ]
+        },
+        {
+          "text": "Has 4 Augment Sockets (Hidden)",
+          "template": "Has 4 Augment Sockets (Hidden)",
+          "rolls": []
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Decorated_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Devouring Diadem",
+      "display_name": "The Devouring Diadem Wicker Tiara",
+      "base_name": "Wicker Tiara",
+      "href": "https://poe2db.tw/us/The_Devouring_Diadem",
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(13—19)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(13—19)",
+              "min": 13,
+              "max": 19
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Every 3 seconds, Consume a nearby Corpse to Recover 20 % of maximum Life",
+          "template": "Every 3 seconds, Consume a nearby Corpse to Recover 20 % of maximum Life",
+          "rolls": [],
+          "family": "ConsumeCorpseRecoverLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "consume nearby corpse every 3 seconds to recover % maximum life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "consume_nearby_corpse_every_3_seconds_to_recover_%_maximum_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Wicker_Tiara",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Hollow Mask",
+      "display_name": "The Hollow Mask Hewn Mask",
+      "base_name": "Hewn Mask",
+      "href": "https://poe2db.tw/us/The_Hollow_Mask",
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 7,
+        "int": 7
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 7,
+        "int": 7
+      },
+      "stats": [
+        {
+          "text": "+(60—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "15 % additional Physical Damage Reduction",
+          "template": "15 % additional Physical Damage Reduction",
+          "rolls": [],
+          "family": "ReducedPhysicalDamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base additional physical damage reduction %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical"
+          ],
+          "affix_ids": [
+            "base_additional_physical_damage_reduction_%"
+          ]
+        },
+        {
+          "text": "-10 % to all Elemental Resistances",
+          "template": "-10 % to all Elemental Resistances",
+          "rolls": [],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "+13 % to Chaos Resistance",
+          "template": "+13 % to Chaos Resistance",
+          "rolls": [],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Hewn_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Smiling Knight",
+      "display_name": "The Smiling Knight Cowled Helm",
+      "base_name": "Cowled Helm",
+      "href": "https://poe2db.tw/us/The_Smiling_Knight",
+      "requirements": {
+        "level": 26,
+        "str": 22,
+        "dex": 22,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 22,
+        "dex": 22,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(50—100) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "(150—200)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "Aggravate Bleeding on targets you Critically Hit with Attacks",
+          "template": "Aggravate Bleeding on targets you Critically Hit with Attacks",
+          "rolls": [],
+          "family": "AggravateBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "aggravate bleeding on attack crit chance %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "aggravate_bleeding_on_attack_crit_chance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Cowled_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Three Dragons",
+      "display_name": "The Three Dragons Solid Mask",
+      "base_name": "Solid Mask",
+      "href": "https://poe2db.tw/us/The_Three_Dragons",
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 36,
+        "int": 36
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 36,
+        "int": 36
+      },
+      "stats": [
+        {
+          "text": "(40—60)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(10—20)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "Fire Damage from Hits Contributes to Shock Chance instead of Flammability and Ignite Magnitudes",
+          "template": "Fire Damage from Hits Contributes to Shock Chance instead of Flammability and Ignite Magnitudes",
+          "rolls": [],
+          "family": "FireShocks",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique fire damage shocks"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Lightning",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "unique_fire_damage_shocks"
+          ]
+        },
+        {
+          "text": "Cold Damage from Hits Contributes to Flammability and Ignite Magnitudes instead of Chill Magnitude or Freeze Buildup",
+          "template": "Cold Damage from Hits Contributes to Flammability and Ignite Magnitudes instead of Chill Magnitude or Freeze Buildup",
+          "rolls": [],
+          "family": "ColdIgnites",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique cold damage ignites"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "unique_cold_damage_ignites"
+          ]
+        },
+        {
+          "text": "Lightning Damage from Hits Contributes to Freeze Buildup instead of Shock Chance",
+          "template": "Lightning Damage from Hits Contributes to Freeze Buildup instead of Shock Chance",
+          "rolls": [],
+          "family": "LightningFreezes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique lightning damage freezes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Lightning",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "unique_lightning_damage_freezes"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Solid_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Vertex",
+      "display_name": "The Vertex Tribal Mask",
+      "base_name": "Tribal Mask",
+      "href": "https://poe2db.tw/us/The_Vertex",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 27,
+        "int": 27
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 27,
+        "int": 27
+      },
+      "stats": [
+        {
+          "text": "Has no Attribute Requirements",
+          "template": "Has no Attribute Requirements",
+          "rolls": [],
+          "family": "LocalAttributeRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local no attribute requirements"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_no_attribute_requirements"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(13—17)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(13—17)",
+              "min": 13,
+              "max": 17
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Skill Gems have no Attribute Requirements",
+          "template": "Skill Gems have no Attribute Requirements",
+          "rolls": [],
+          "family": "GlobalGemAttributeRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "global skill gems no attribute requirements"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "global_skill_gems_no_attribute_requirements"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Helmets_dex_int",
+      "base_href": "https://poe2db.tw/Tribal_Mask",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "The Vile Knight",
+      "display_name": "The Vile Knight Shielded Helm",
+      "base_name": "Shielded Helm",
+      "href": "https://poe2db.tw/us/The_Vile_Knight",
+      "requirements": {
+        "level": 33,
+        "str": 27,
+        "dex": 27,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 27,
+        "dex": 27,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(75—125) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(75—125)",
+              "min": 75,
+              "max": 125
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "(10—15) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Deal 4 % increased Damage with Hits to Rare or Unique Enemies for each second they've ever been in your Presence , up to a maximum of 200%",
+          "template": "Deal 4 % increased Damage with Hits to Rare or Unique Enemies for each second they've ever been in your Presence , up to a maximum of 200%",
+          "rolls": [],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique damage +% vs rare or unique enemy per second ever in presence up to max"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_damage_+%_vs_rare_or_unique_enemy_per_second_ever_in_presence_up_to_max"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_dex",
+      "base_href": "https://poe2db.tw/Shielded_Helm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Thrillsteel",
+      "display_name": "Thrillsteel Spired Greathelm",
+      "base_name": "Spired Greathelm",
+      "href": "https://poe2db.tw/us/Thrillsteel",
+      "requirements": {
+        "level": 27,
+        "str": 40,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 27,
+        "str": 40,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Onslaught",
+          "template": "Onslaught",
+          "rolls": [],
+          "family": "Onslaught",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base should have onslaught from stat"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_should_have_onslaught_from_stat"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Spired_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Veil of the Night",
+      "display_name": "Veil of the Night Martyr Crown",
+      "base_name": "Martyr Crown",
+      "href": "https://poe2db.tw/us/Veil_of_the_Night",
+      "requirements": {
+        "level": 28,
+        "str": 23,
+        "dex": null,
+        "int": 23
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": 23,
+        "dex": null,
+        "int": 23
+      },
+      "stats": [
+        {
+          "text": "50 % increased maximum Life",
+          "template": "50 % increased maximum Life",
+          "rolls": [],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "40 % reduced Light Radius",
+          "template": "40 % reduced Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "You have no Elemental Resistances",
+          "template": "You have no Elemental Resistances",
+          "rolls": [],
+          "family": "SetElementalResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "your elemental resistances do not exist"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Elemental",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "your_elemental_resistances_do_not_exist"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str_int",
+      "base_href": "https://poe2db.tw/Martyr_Crown",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Visage of Ayah",
+      "display_name": "Visage of Ayah Beaded Circlet",
+      "base_name": "Beaded Circlet",
+      "href": "https://poe2db.tw/us/Visage_of_Ayah",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 25
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 25
+      },
+      "stats": [
+        {
+          "text": "(50—80)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(10—20)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Eldritch Battery",
+          "template": "Eldritch Battery",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone eldritch battery"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "keystone_eldritch_battery"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_int",
+      "base_href": "https://poe2db.tw/Beaded_Circlet",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    },
+    {
+      "name": "Wings of Caelyn",
+      "display_name": "Wings of Caelyn Rusted Greathelm",
+      "base_name": "Rusted Greathelm",
+      "href": "https://poe2db.tw/us/Wings_of_Caelyn",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+20 to Armour",
+          "template": "+20 to Armour",
+          "rolls": [],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base physical damage reduction rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "(5—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Gain 1 Rage on Melee Hit",
+          "template": "Gain 1 Rage on Melee Hit",
+          "rolls": [],
+          "family": "RageOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain x rage on melee hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_x_rage_on_melee_hit"
+          ]
+        },
+        {
+          "text": "Every Rage also grants 1 % increased Stun Threshold",
+          "template": "Every Rage also grants 1 % increased Stun Threshold",
+          "rolls": [],
+          "family": "IncreasedStunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +% per rage"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+%_per_rage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Helmets_str",
+      "base_href": "https://poe2db.tw/Rusted_Greathelm",
+      "item_class": "Helmets",
+      "class_slug": "Helmets"
+    }
+  ]
+}

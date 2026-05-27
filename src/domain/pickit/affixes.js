@@ -51,6 +51,8 @@ export function formatAffixDisplayLabel(affixFamily) {
 
 function isVisibleAffix(affixFamily) {
   if (!affixFamily || typeof affixFamily !== "object") return false
+  if (getModifierSectionKey(affixFamily) !== "normal") return false
+  if (affixFamily.kind !== "prefix" && affixFamily.kind !== "suffix") return false
 
   return Array.isArray(affixFamily.tiers)
 }

@@ -5,62 +5,134 @@
     {
       "name": "Golden Obi",
       "href": "https://poe2db.tw/Golden_Obi",
-      "required_level": 12
+      "required_level": 12,
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Rawhide Belt",
       "href": "https://poe2db.tw/Rawhide_Belt",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Linen Belt",
       "href": "https://poe2db.tw/Linen_Belt",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Wide Belt",
       "href": "https://poe2db.tw/Wide_Belt",
-      "required_level": 14
+      "required_level": 14,
+      "requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Long Belt",
       "href": "https://poe2db.tw/Long_Belt",
-      "required_level": 20
+      "required_level": 20,
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Plate Belt",
       "href": "https://poe2db.tw/Plate_Belt",
-      "required_level": 25
+      "required_level": 25,
+      "requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Ornate Belt",
       "href": "https://poe2db.tw/Ornate_Belt",
-      "required_level": 31
+      "required_level": 31,
+      "requirements": {
+        "level": 31,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Mail Belt",
       "href": "https://poe2db.tw/Mail_Belt",
-      "required_level": 40
+      "required_level": 40,
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Double Belt",
       "href": "https://poe2db.tw/Double_Belt",
-      "required_level": 44
+      "required_level": 44,
+      "requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Heavy Belt",
       "href": "https://poe2db.tw/Heavy_Belt",
-      "required_level": 50
+      "required_level": 50,
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Utility Belt",
       "href": "https://poe2db.tw/Utility_Belt",
-      "required_level": 55
+      "required_level": 55,
+      "requirements": {
+        "level": 55,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Fine Belt",
       "href": "https://poe2db.tw/Fine_Belt",
-      "required_level": 62
+      "required_level": 62,
+      "requirements": {
+        "level": 62,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     }
   ],
   "modifier_sections": {
@@ -168,12 +240,12 @@
           {
             "level": 1,
             "name": "CorruptionIncreasedLife1",
-            "text": "+(30-40) to maximum Life",
+            "text": "+(10-19) to maximum Life",
             "stats": [
               {
                 "id": "base_maximum_life",
-                "max": 40,
-                "min": 30
+                "max": 19,
+                "min": 10
               }
             ]
           }

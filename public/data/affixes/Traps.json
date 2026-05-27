@@ -5,67 +5,145 @@
     {
       "name": "Clay Trap",
       "href": "https://poe2db.tw/Clay_Trap",
-      "required_level": 2
+      "required_level": 2,
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Clamping Trap",
       "href": "https://poe2db.tw/Clamping_Trap",
-      "required_level": 6
+      "required_level": 6,
+      "requirements": {
+        "level": 6,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Shrapnel Trap",
       "href": "https://poe2db.tw/Shrapnel_Trap",
-      "required_level": 10
+      "required_level": 10,
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Urn Trap",
       "href": "https://poe2db.tw/Urn_Trap",
-      "required_level": 16
+      "required_level": 16,
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Incense Trap",
       "href": "https://poe2db.tw/Incense_Trap",
-      "required_level": 22
+      "required_level": 22,
+      "requirements": {
+        "level": 22,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Bladed Trap",
       "href": "https://poe2db.tw/Bladed_Trap",
-      "required_level": 27
+      "required_level": 27,
+      "requirements": {
+        "level": 27,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Dart Trap",
       "href": "https://poe2db.tw/Dart_Trap",
-      "required_level": 33
+      "required_level": 33,
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Spike Trap",
       "href": "https://poe2db.tw/Spike_Trap",
-      "required_level": 38
+      "required_level": 38,
+      "requirements": {
+        "level": 38,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Coiled Trap",
       "href": "https://poe2db.tw/Coiled_Trap",
-      "required_level": 45
+      "required_level": 45,
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Lead Trap",
       "href": "https://poe2db.tw/Lead_Trap",
-      "required_level": 49
+      "required_level": 49,
+      "requirements": {
+        "level": 49,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Medallion Trap",
       "href": "https://poe2db.tw/Medallion_Trap",
-      "required_level": 52
+      "required_level": 52,
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Intricate Trap",
       "href": "https://poe2db.tw/Intricate_Trap",
-      "required_level": 56
+      "required_level": 56,
+      "requirements": {
+        "level": 56,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Refined Trap",
       "href": "https://poe2db.tw/Refined_Trap",
-      "required_level": 65
+      "required_level": 65,
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     }
   ],
   "modifier_sections": {

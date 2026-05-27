@@ -1,0 +1,1001 @@
+{
+  "class": "Foci",
+  "slug": "Foci",
+  "uniques": [
+    {
+      "name": "Apep's Supremacy",
+      "display_name": "Apep's Supremacy Voodoo Focus",
+      "base_name": "Voodoo Focus",
+      "href": "https://poe2db.tw/us/Apeps_Supremacy",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 48
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 48
+      },
+      "stats": [
+        {
+          "text": "(100—200)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—200)",
+              "min": 100,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Energy Shield Recharge Rate",
+          "template": "#% increased Energy Shield Recharge Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "EnergyShieldRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy shield recharge rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "energy_shield_recharge_rate_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% faster start of Energy Shield Recharge",
+          "template": "#% faster start of Energy Shield Recharge",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "EnergyShieldDelay",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy shield delay -%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "energy_shield_delay_-%"
+          ]
+        },
+        {
+          "text": "20 % of Elemental damage from Hits taken as Chaos damage",
+          "template": "20 % of Elemental damage from Hits taken as Chaos damage",
+          "rolls": [],
+          "family": "ElementalDamageTakenAsChaos",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "elemental damage taken % as chaos"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "elemental_damage_taken_%_as_chaos"
+          ]
+        },
+        {
+          "text": "+25 % chance to be Poisoned",
+          "template": "+25 % chance to be Poisoned",
+          "rolls": [],
+          "family": "ChanceToBePoisoned",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to be poisoned %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chance_to_be_poisoned_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Voodoo_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "Carrion Call",
+      "display_name": "Carrion Call Engraved Focus",
+      "base_name": "Engraved Focus",
+      "href": "https://poe2db.tw/us/Carrion_Call",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 25
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 25
+      },
+      "stats": [
+        {
+          "text": "+(30—40) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "Minions have (20—30)% increased maximum Life",
+          "template": "Minions have #% increased maximum Life",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "MinionLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Minion"
+          ],
+          "affix_ids": [
+            "minion_maximum_life_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Minions' Resistances are equal to yours",
+          "template": "Minions' Resistances are equal to yours",
+          "rolls": [],
+          "family": "MinionElementalResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion resistances equal yours"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Resistance",
+            "Minion"
+          ],
+          "affix_ids": [
+            "minion_resistances_equal_yours"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Engraved_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "Deathrattle",
+      "display_name": "Deathrattle Twig Focus",
+      "base_name": "Twig Focus",
+      "href": "https://poe2db.tw/us/Deathrattle",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—20) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "(20—40)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "+(5—10) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "20 % chance for Energy Shield Recharge to start when you Kill an Enemy",
+          "template": "20 % chance for Energy Shield Recharge to start when you Kill an Enemy",
+          "rolls": [],
+          "family": "EnergyShieldRechargeOnKill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy shield recharges on kill %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "energy_shield_recharges_on_kill_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Twig_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "Effigy of Cruelty",
+      "display_name": "Effigy of Cruelty Antler Focus",
+      "base_name": "Antler Focus",
+      "href": "https://poe2db.tw/us/Effigy_of_Cruelty",
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "(40—50)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "+10 to Intelligence",
+          "template": "+10 to Intelligence",
+          "rolls": [],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(7—13)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Critical Hits with Spells apply (1—3) Stack of Critical Weakness",
+          "template": "Critical Hits with Spells apply # Stack of Critical Weakness",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "family": "CriticalWeakness",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "apply X stacks of critical weakness on critical hit with spells"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Critical"
+          ],
+          "affix_ids": [
+            "apply_X_stacks_of_critical_weakness_on_critical_hit_with_spells"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Antler_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "Rathpith Globe",
+      "display_name": "Rathpith Globe Sacred Focus",
+      "base_name": "Sacred Focus",
+      "href": "https://poe2db.tw/us/Rathpith_Globe",
+      "requirements": {
+        "level": 75,
+        "str": null,
+        "dex": null,
+        "int": 107
+      },
+      "base_requirements": {
+        "level": 75,
+        "str": null,
+        "dex": null,
+        "int": 107
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "Non- Channelling Spells cost an additional 6 % of your maximum Life",
+          "template": "Non- Channelling Spells cost an additional 6 % of your maximum Life",
+          "rolls": [],
+          "family": "LifeCost",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life cost + with non channelling spells % maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Caster"
+          ],
+          "affix_ids": [
+            "base_life_cost_+_with_non_channelling_spells_%_maximum_life"
+          ]
+        },
+        {
+          "text": "Non- Channelling Spells have 3 % increased Critical Hit Chance per 100 maximum Life",
+          "template": "Non- Channelling Spells have 3 % increased Critical Hit Chance per 100 maximum Life",
+          "rolls": [],
+          "family": "SpellCriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell critical strike chance +% per 100 max life with non channelling skills"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Critical"
+          ],
+          "affix_ids": [
+            "spell_critical_strike_chance_+%_per_100_max_life_with_non_channelling_skills"
+          ]
+        },
+        {
+          "text": "Non- Channelling Spells deal 6 % increased Damage per 100 maximum Life",
+          "template": "Non- Channelling Spells deal 6 % increased Damage per 100 maximum Life",
+          "rolls": [],
+          "family": "SpellDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +% per 100 max life with non channelling skills"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%_per_100_max_life_with_non_channelling_skills"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Sacred_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "Serpent's Lesson",
+      "display_name": "Serpent's Lesson Tonal Focus",
+      "base_name": "Tonal Focus",
+      "href": "https://poe2db.tw/us/Serpents_Lesson",
+      "requirements": {
+        "level": 22,
+        "str": null,
+        "dex": null,
+        "int": 33
+      },
+      "base_requirements": {
+        "level": 22,
+        "str": null,
+        "dex": null,
+        "int": 33
+      },
+      "stats": [
+        {
+          "text": "+(60—100) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "You count as on Low Life while at 35 % of maximum Mana or below",
+          "template": "You count as on Low Life while at 35 % of maximum Mana or below",
+          "rolls": [],
+          "family": "LowLifeThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique you count as on low life while at % of maximum mana or below"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_you_count_as_on_low_life_while_at_%_of_maximum_mana_or_below"
+          ]
+        },
+        {
+          "text": "You count as on Low Mana while at 35 % of maximum Life or below",
+          "template": "You count as on Low Mana while at 35 % of maximum Life or below",
+          "rolls": [],
+          "family": "LowManaThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique you count as on low mana while at % of maximum health or below"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_you_count_as_on_low_mana_while_at_%_of_maximum_health_or_below"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Tonal_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "The Eternal Spark",
+      "display_name": "The Eternal Spark Crystal Focus",
+      "base_name": "Crystal Focus",
+      "href": "https://poe2db.tw/us/The_Eternal_Spark",
+      "requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "(50—70)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+5 % to Maximum Lightning Resistance",
+          "template": "+5 % to Maximum Lightning Resistance",
+          "rolls": [],
+          "family": "MaximumLightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_maximum_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "40 % increased Mana Regeneration Rate",
+          "template": "40 % increased Mana Regeneration Rate",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "40 % increased Mana Regeneration Rate while stationary",
+          "template": "40 % increased Mana Regeneration Rate while stationary",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +% while stationary"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%_while_stationary"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Crystal_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    },
+    {
+      "name": "Threaded Light",
+      "display_name": "Threaded Light Woven Focus",
+      "base_name": "Woven Focus",
+      "href": "https://poe2db.tw/us/Threaded_Light",
+      "requirements": {
+        "level": 6,
+        "str": null,
+        "dex": null,
+        "int": 11
+      },
+      "base_requirements": {
+        "level": 6,
+        "str": null,
+        "dex": null,
+        "int": 11
+      },
+      "stats": [
+        {
+          "text": "(50—70)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "20 % increased Light Radius",
+          "template": "20 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "(8—12)% increased Spell Damage per 10 Spirit",
+          "template": "#% increased Spell Damage per 10 Spirit",
+          "rolls": [
+            {
+              "raw": "(8—12)",
+              "min": 8,
+              "max": 12
+            }
+          ],
+          "family": "SpellDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +% per 10 spirit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "spell_damage_+%_per_10_spirit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Foci",
+      "base_href": "https://poe2db.tw/Woven_Focus",
+      "item_class": "Foci",
+      "class_slug": "Foci"
+    }
+  ]
+}

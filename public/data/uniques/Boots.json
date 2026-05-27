@@ -1,0 +1,2959 @@
+{
+  "class": "Boots",
+  "slug": "Boots",
+  "uniques": [
+    {
+      "name": "Ab Aeterno",
+      "display_name": "Ab Aeterno Grand Cuisses",
+      "base_name": "Grand Cuisses",
+      "href": "https://poe2db.tw/us/Ab_Aeterno",
+      "base_href": "https://poe2db.tw/Grand_Cuisses",
+      "requirements": {
+        "level": 65,
+        "str": 34,
+        "dex": 34,
+        "int": 34
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(15—30)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "Speed"
+          ],
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Armour , Evasion and Energy Shield",
+          "template": "#% increased Armour , Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "stat_ids": [
+            "local armour and evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_armour_and_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "Dodge Roll avoids all Hits",
+          "template": "Dodge Roll avoids all Hits",
+          "rolls": [],
+          "family": "DodgeRoll",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "dodge roll can avoid all damage"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "dodge_roll_can_avoid_all_damage"
+          ]
+        },
+        {
+          "text": "10 % less Movement and Skill Speed per Dodge Roll in the past 20 seconds",
+          "template": "10 % less Movement and Skill Speed per Dodge Roll in the past 20 seconds",
+          "rolls": [],
+          "family": "IncreasedSpeed",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "Speed"
+          ],
+          "stat_ids": [
+            "unique movement speed and skill speed -% final per number of times dodge rolled in past 20 seconds"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_movement_speed_and_skill_speed_-%_final_per_number_of_times_dodge_rolled_in_past_20_seconds"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Boots",
+      "class_slug": "Boots",
+      "source_categories": [
+        "ArmourUnique"
+      ]
+    },
+    {
+      "name": "Atziri's Step",
+      "display_name": "Atziri's Step Cinched Boots",
+      "base_name": "Cinched Boots",
+      "href": "https://poe2db.tw/us/Atziris_Step",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 86,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 86,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "30 % increased Movement Speed",
+          "template": "30 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(80—120)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(70—100) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(70—100)",
+              "min": 70,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "Gain Deflection Rating equal to (40—60)% of Evasion Rating",
+          "template": "Gain Deflection Rating equal to #% of Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "EvasionAppliesToDeflection",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base deflection rating % of evasion rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_deflection_rating_%_of_evasion_rating"
+          ]
+        },
+        {
+          "text": "(-12—-6)% to amount of Damage Prevented by Deflection",
+          "template": "#% to amount of Damage Prevented by Deflection",
+          "rolls": [
+            {
+              "raw": "(-12—-6)",
+              "min": -12,
+              "max": -6
+            }
+          ],
+          "family": "DeflectDamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base damage % deflected"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_damage_%_deflected"
+          ]
+        },
+        {
+          "text": "Cannot be Light Stunned by Deflected Hits",
+          "template": "Cannot be Light Stunned by Deflected Hits",
+          "rolls": [],
+          "family": "CannotBeStunned",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot be light stunned by deflected hits"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_be_light_stunned_by_deflected_hits"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Boots_dex",
+      "base_href": "https://poe2db.tw/Cinched_Boots",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Beetlebite",
+      "display_name": "Beetlebite Velour Shoes",
+      "base_name": "Velour Shoes",
+      "href": "https://poe2db.tw/us/Beetlebite",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 38,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 38,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "(20—30)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(60—120)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—120)",
+              "min": 60,
+              "max": 120
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "Aggravate Bleeding on Enemies when they Enter your Presence",
+          "template": "Aggravate Bleeding on Enemies when they Enter your Presence",
+          "rolls": [],
+          "family": "AggravateBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "aggravate bleeding on enemies when they enter your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "aggravate_bleeding_on_enemies_when_they_enter_your_presence"
+          ]
+        },
+        {
+          "text": "100 % increased Thorns damage",
+          "template": "100 % increased Thorns damage",
+          "rolls": [],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "thorns_damage_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_dex_int",
+      "base_href": "https://poe2db.tw/Velour_Shoes",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Birth of Fury",
+      "display_name": "Birth of Fury Stone Greaves",
+      "base_name": "Stone Greaves",
+      "href": "https://poe2db.tw/us/Birth_of_Fury",
+      "requirements": {
+        "level": 33,
+        "str": 45,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 45,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "20 % increased Movement Speed",
+          "template": "20 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Drop Ignited Ground while moving, which lasts 8 seconds and Ignites as though dealing Fire Damage equal to 10 % of your maximum Life",
+          "template": "Drop Ignited Ground while moving, which lasts 8 seconds and Ignites as though dealing Fire Damage equal to 10 % of your maximum Life",
+          "rolls": [],
+          "family": "BootsGroundEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique boots secondary ground ignite while moving base fire damage % of life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "unique_boots_secondary_ground_ignite_while_moving_base_fire_damage_%_of_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str",
+      "base_href": "https://poe2db.tw/Stone_Greaves",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Bones of Ullr",
+      "display_name": "Bones of Ullr Lattice Sandals",
+      "base_name": "Lattice Sandals",
+      "href": "https://poe2db.tw/us/Bones_of_Ullr",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 23
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 23
+      },
+      "stats": [
+        {
+          "text": "(5—15)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(40—60)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(20—40) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(20—40) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Reservation Efficiency of Skills which create Undead Minions",
+          "template": "#% increased Reservation Efficiency of Skills which create Undead Minions",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "MinionReservation",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "reservation efficiency +% of undead minion skills"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "reservation_efficiency_+%_of_undead_minion_skills"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_int",
+      "base_href": "https://poe2db.tw/Lattice_Sandals",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Briarpatch",
+      "display_name": "Briarpatch Laced Boots",
+      "base_name": "Laced Boots",
+      "href": "https://poe2db.tw/us/Briarpatch",
+      "requirements": {
+        "level": 11,
+        "str": null,
+        "dex": 17,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": null,
+        "dex": 17,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(10—20)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(60—80) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "+25 % to Thorns Critical Hit Chance",
+          "template": "+25 % to Thorns Critical Hit Chance",
+          "rolls": [],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base thorns critical strike chance"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_thorns_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "(10—15) to (20—25) Physical Thorns damage",
+          "template": "# to # Physical Thorns damage",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            },
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns minimum base physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "thorns_minimum_base_physical_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_dex",
+      "base_href": "https://poe2db.tw/Laced_Boots",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Bushwhack",
+      "display_name": "Bushwhack Lizardscale Boots",
+      "base_name": "Lizardscale Boots",
+      "href": "https://poe2db.tw/us/Bushwhack",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 45,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 45,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(15—25)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(50—80)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Physical Damage is Pinning",
+          "template": "Physical Damage is Pinning",
+          "rolls": [],
+          "family": "PhysicalDamagePin",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base physical damage can pin"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical"
+          ],
+          "affix_ids": [
+            "base_physical_damage_can_pin"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_dex",
+      "base_href": "https://poe2db.tw/Lizardscale_Boots",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Corpsewade",
+      "display_name": "Corpsewade Iron Greaves",
+      "base_name": "Iron Greaves",
+      "href": "https://poe2db.tw/us/Corpsewade",
+      "requirements": {
+        "level": 11,
+        "str": 17,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": 17,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 4 Decompose",
+          "template": "Grants Skill: Level 4 Decompose",
+          "rolls": []
+        },
+        {
+          "text": "10 % increased Movement Speed",
+          "template": "10 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(5—10) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Trigger Decompose every 1.2 metres travelled",
+          "template": "Trigger Decompose every 1.2 metres travelled",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local display triggers corpse cloud on 12 units travelled"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_display_triggers_corpse_cloud_on_12_units_travelled"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str",
+      "base_href": "https://poe2db.tw/Iron_Greaves",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Darkray Vectors",
+      "display_name": "Darkray Vectors Braced Sabatons",
+      "base_name": "Braced Sabatons",
+      "href": "https://poe2db.tw/us/Darkray_Vectors",
+      "requirements": {
+        "level": 16,
+        "str": 14,
+        "dex": 14,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 14,
+        "dex": 14,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—100)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "25 % reduced Light Radius",
+          "template": "25 % reduced Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "5 % increased Movement Speed per Frenzy Charge",
+          "template": "5 % increased Movement Speed per Frenzy Charge",
+          "rolls": [],
+          "family": "MovementVelocityPerFrenzyCharge",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "movement velocity +% per frenzy charge"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "movement_velocity_+%_per_frenzy_charge"
+          ]
+        },
+        {
+          "text": "+1 to Maximum Frenzy Charges",
+          "template": "+1 to Maximum Frenzy Charges",
+          "rolls": [],
+          "family": "MaximumFrenzyCharges",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "max frenzy charges"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "frenzy_charge"
+          ],
+          "affix_ids": [
+            "max_frenzy_charges"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str_dex",
+      "base_href": "https://poe2db.tw/Braced_Sabatons",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Gamblesprint",
+      "display_name": "Gamblesprint Embossed Boots",
+      "base_name": "Embossed Boots",
+      "href": "https://poe2db.tw/us/Gamblesprint",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 23,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 23,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(100—140)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(100—140)",
+              "min": 100,
+              "max": 140
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(10—15) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Gain 0% to 40 % increased Movement Speed at random when Hit , until Hit again",
+          "template": "Gain 0% to 40 % increased Movement Speed at random when Hit , until Hit again",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum random movement velocity +% when hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "maximum_random_movement_velocity_+%_when_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_dex",
+      "base_href": "https://poe2db.tw/Embossed_Boots",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Ghostmarch",
+      "display_name": "Ghostmarch Threaded Shoes",
+      "base_name": "Threaded Shoes",
+      "href": "https://poe2db.tw/us/Ghostmarch",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 14,
+        "int": 14
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 14,
+        "int": 14
+      },
+      "stats": [
+        {
+          "text": "15 % increased Movement Speed",
+          "template": "15 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Dodge Roll passes through Enemies",
+          "template": "Dodge Roll passes through Enemies",
+          "rolls": [],
+          "family": "DodgeRoll",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "dodge roll phasing without visual"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "dodge_roll_phasing_without_visual"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_dex_int",
+      "base_href": "https://poe2db.tw/Threaded_Shoes",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Legionstride",
+      "display_name": "Legionstride Rough Greaves",
+      "base_name": "Rough Greaves",
+      "href": "https://poe2db.tw/us/Legionstride",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(50—70) to Armour",
+          "template": "+# to Armour",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base physical damage reduction rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "+(50—70) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "-10 Physical damage taken from Projectile Attacks",
+          "template": "-10 Physical damage taken from Projectile Attacks",
+          "rolls": [],
+          "family": "RangedAttackDamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "physical ranged attack damage taken +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "physical_ranged_attack_damage_taken_+"
+          ]
+        },
+        {
+          "text": "+10 % to Block chance",
+          "template": "+10 % to Block chance",
+          "rolls": [],
+          "family": "BlockPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional block %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "additional_block_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str",
+      "base_href": "https://poe2db.tw/Rough_Greaves",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Luminous Pace",
+      "display_name": "Luminous Pace Straw Sandals",
+      "base_name": "Straw Sandals",
+      "href": "https://poe2db.tw/us/Luminous_Pace",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "10 % increased Movement Speed",
+          "template": "10 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+(5—10) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(20—30)% reduced Energy Shield Recharge Rate",
+          "template": "#% reduced Energy Shield Recharge Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "EnergyShieldRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy shield recharge rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "energy_shield_recharge_rate_+%"
+          ]
+        },
+        {
+          "text": "100 % faster start of Energy Shield Recharge",
+          "template": "100 % faster start of Energy Shield Recharge",
+          "rolls": [],
+          "family": "EnergyShieldDelay",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy shield delay -%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "energy_shield_delay_-%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_int",
+      "base_href": "https://poe2db.tw/Straw_Sandals",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Obern's Bastion",
+      "display_name": "Obern's Bastion Stacked Sabatons",
+      "base_name": "Stacked Sabatons",
+      "href": "https://poe2db.tw/us/Oberns_Bastion",
+      "requirements": {
+        "level": 33,
+        "str": 26,
+        "dex": 26,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 26,
+        "dex": 26,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(150—200)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(20—25) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "200 % increased Stun Recovery",
+          "template": "200 % increased Stun Recovery",
+          "rolls": [],
+          "family": "StunRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base stun recovery +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_stun_recovery_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% reduced Chill Duration on you",
+          "template": "#% reduced Chill Duration on you",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ReducedAilmentDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base self chill duration -%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_self_chill_duration_-%"
+          ]
+        },
+        {
+          "text": "(30—50)% reduced Freeze Duration on you",
+          "template": "#% reduced Freeze Duration on you",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ReducedAilmentDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base self freeze duration -%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_self_freeze_duration_-%"
+          ]
+        },
+        {
+          "text": "(30—50)% reduced Shock duration on you",
+          "template": "#% reduced Shock duration on you",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ReducedAilmentDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base self shock duration -%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_self_shock_duration_-%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str_dex",
+      "base_href": "https://poe2db.tw/Stacked_Sabatons",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Powertread",
+      "display_name": "Powertread Hunting Shoes",
+      "base_name": "Hunting Shoes",
+      "href": "https://poe2db.tw/us/Powertread",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 26,
+        "int": 26
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 26,
+        "int": 26
+      },
+      "stats": [
+        {
+          "text": "(15—20)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(60—80)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+1 to Maximum Power Charges",
+          "template": "+1 to Maximum Power Charges",
+          "rolls": [],
+          "family": "IncreasedMaximumPowerCharges",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "max power charges"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "power_charge"
+          ],
+          "affix_ids": [
+            "max_power_charges"
+          ]
+        },
+        {
+          "text": "12 % increased Critical Damage Bonus per Power Charge",
+          "template": "12 % increased Critical Damage Bonus per Power Charge",
+          "rolls": [],
+          "family": "CriticalMultiplierPerPowerCharge",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike multiplier + per power charge"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_multiplier_+_per_power_charge"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Boots_dex_int",
+      "base_href": "https://poe2db.tw/Hunting_Shoes",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Shankgonne",
+      "display_name": "Shankgonne Covered Sabatons",
+      "base_name": "Covered Sabatons",
+      "href": "https://poe2db.tw/us/Shankgonne",
+      "requirements": {
+        "level": 45,
+        "str": 34,
+        "dex": 34,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 34,
+        "dex": 34,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 11 Black Powder Blitz",
+          "template": "Grants Skill: Level 11 Black Powder Blitz",
+          "rolls": []
+        },
+        {
+          "text": "(80—100)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Gain Deflection Rating equal to 20 % of Armour",
+          "template": "Gain Deflection Rating equal to 20 % of Armour",
+          "rolls": [],
+          "family": "ArmourAppliesToDeflection",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base deflection rating % of armour"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_deflection_rating_%_of_armour"
+          ]
+        },
+        {
+          "text": "+(200—300) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(200—300)",
+              "min": 200,
+              "max": 300
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "You cannot Sprint",
+          "template": "You cannot Sprint",
+          "rolls": [],
+          "family": "CannotSprint",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot sprint"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_sprint"
+          ]
+        },
+        {
+          "text": "cannon ball footsteps [1]",
+          "template": "cannon ball footsteps [1]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannon ball footsteps"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannon_ball_footsteps"
+          ]
+        },
+        {
+          "text": "footstep effect variation [119]",
+          "template": "footstep effect variation [119]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "footstep effect variation"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "footstep_effect_variation"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str_dex",
+      "base_href": "https://poe2db.tw/Covered_Sabatons",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "The Infinite Pursuit",
+      "display_name": "The Infinite Pursuit Bronze Greaves",
+      "base_name": "Bronze Greaves",
+      "href": "https://poe2db.tw/us/The_Infinite_Pursuit",
+      "requirements": {
+        "level": 16,
+        "str": 23,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 23,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "10 % increased Movement Speed",
+          "template": "10 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(80—100) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(80—100)% increased Chance to be afflicted by Ailments when Hit",
+          "template": "#% increased Chance to be afflicted by Ailments when Hit",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "AilmentChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to be inflicted with an ailment +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "chance_to_be_inflicted_with_an_ailment_+%"
+          ]
+        },
+        {
+          "text": "25 % increased Movement Speed while affected by an Ailment",
+          "template": "25 % increased Movement Speed while affected by an Ailment",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "movement speed +% while affected by ailment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "movement_speed_+%_while_affected_by_ailment"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str",
+      "base_href": "https://poe2db.tw/Bronze_Greaves",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "The Knight-errant",
+      "display_name": "The Knight-errant Mail Sabatons",
+      "base_name": "Mail Sabatons",
+      "href": "https://poe2db.tw/us/The_Knight-errant",
+      "requirements": {
+        "level": 6,
+        "str": 7,
+        "dex": 7,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 6,
+        "str": 7,
+        "dex": 7,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "10 % increased Movement Speed",
+          "template": "10 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "+(30—50) to Ailment Threshold",
+          "template": "+# to Ailment Threshold",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "BaseAilmentThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ailment threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ailment_threshold_+"
+          ]
+        },
+        {
+          "text": "Iron Reflexes",
+          "template": "Iron Reflexes",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone iron reflexes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "keystone_iron_reflexes"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str_dex",
+      "base_href": "https://poe2db.tw/Mail_Sabatons",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Trampletoe",
+      "display_name": "Trampletoe Trimmed Greaves",
+      "base_name": "Trimmed Greaves",
+      "href": "https://poe2db.tw/us/Trampletoe",
+      "requirements": {
+        "level": 27,
+        "str": 57,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 27,
+        "str": 38,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "15 % increased Movement Speed",
+          "template": "15 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(50—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "50 % increased Attribute Requirements",
+          "template": "50 % increased Attribute Requirements",
+          "rolls": [],
+          "family": "LocalAttributeRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attribute requirements +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_attribute_requirements_+%"
+          ]
+        },
+        {
+          "text": "Deal 30 % of Overkill damage to enemies within 2 metres of the enemy killed",
+          "template": "Deal 30 % of Overkill damage to enemies within 2 metres of the enemy killed",
+          "rolls": [],
+          "family": "OverkillDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "overkill damage % as physical to nearby enemies"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "overkill_damage_%_as_physical_to_nearby_enemies"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str",
+      "base_href": "https://poe2db.tw/Trimmed_Greaves",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Wake of Destruction",
+      "display_name": "Wake of Destruction Secured Leggings",
+      "base_name": "Secured Leggings",
+      "href": "https://poe2db.tw/us/Wake_of_Destruction",
+      "requirements": {
+        "level": 16,
+        "str": 14,
+        "dex": null,
+        "int": 14
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 14,
+        "dex": null,
+        "int": 14
+      },
+      "stats": [
+        {
+          "text": "10 % increased Movement Speed",
+          "template": "10 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(30—60)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "Adds 1 to (30—50) Lightning damage to Attacks",
+          "template": "Adds 1 to # Lightning damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added lightning damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "Drop Shocked Ground while moving, lasting 8 seconds",
+          "template": "Drop Shocked Ground while moving, lasting 8 seconds",
+          "rolls": [],
+          "family": "BootsGroundEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique boots secondary ground shock while moving"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "unique_boots_secondary_ground_shock_while_moving"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_str_int",
+      "base_href": "https://poe2db.tw/Secured_Leggings",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Wanderlust",
+      "display_name": "Wanderlust Wrapped Sandals",
+      "base_name": "Wrapped Sandals",
+      "href": "https://poe2db.tw/us/Wanderlust",
+      "requirements": {
+        "level": 11,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "stats": [
+        {
+          "text": "20 % increased Movement Speed",
+          "template": "20 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+5 to Dexterity",
+          "template": "+5 to Dexterity",
+          "rolls": [],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Your speed is unaffected by Slows",
+          "template": "Your speed is unaffected by Slows",
+          "rolls": [],
+          "family": "SlowPotency",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "slows have no potency on you"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "slows_have_no_potency_on_you"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_int",
+      "base_href": "https://poe2db.tw/Wrapped_Sandals",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Windscream",
+      "display_name": "Windscream Feathered Sandals",
+      "base_name": "Feathered Sandals",
+      "href": "https://poe2db.tw/us/Windscream",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 45
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 45
+      },
+      "stats": [
+        {
+          "text": "(10—20)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "(50—100)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Curse Skills have (10—20)% increased Cast Speed",
+          "template": "Curse Skills have #% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "curse cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed",
+            "Curse"
+          ],
+          "affix_ids": [
+            "curse_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Curses have no Activation Delay",
+          "template": "Curses have no Activation Delay",
+          "rolls": [],
+          "family": "CurseActivationDelay",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique no curse delay"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_no_curse_delay"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_int",
+      "base_href": "https://poe2db.tw/Feathered_Sandals",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    },
+    {
+      "name": "Wondertrap",
+      "display_name": "Wondertrap Silk Slippers",
+      "base_name": "Silk Slippers",
+      "href": "https://poe2db.tw/us/Wondertrap",
+      "requirements": {
+        "level": 27,
+        "str": null,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 27,
+        "str": null,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "(10—20)% increased Movement Speed",
+          "template": "#% increased Movement Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+(10—20) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "50 % increased Rarity of Items found when on Low Life",
+          "template": "50 % increased Rarity of Items found when on Low Life",
+          "rolls": [],
+          "family": "ItemRarityOnLowLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "item found rarity +% when on low life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "item_found_rarity_+%_when_on_low_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Boots_int",
+      "base_href": "https://poe2db.tw/Silk_Slippers",
+      "item_class": "Boots",
+      "class_slug": "Boots"
+    }
+  ]
+}

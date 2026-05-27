@@ -5,67 +5,145 @@
     {
       "name": "Rattling Sceptre",
       "href": "https://poe2db.tw/Rattling_Sceptre",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": 4,
+        "dex": null,
+        "int": 5
+      }
     },
     {
       "name": "Stoic Sceptre",
       "href": "https://poe2db.tw/Stoic_Sceptre",
-      "required_level": 6
+      "required_level": 6,
+      "requirements": {
+        "level": 6,
+        "str": 7,
+        "dex": null,
+        "int": 12
+      }
     },
     {
       "name": "Lupine Sceptre",
       "href": "https://poe2db.tw/Lupine_Sceptre",
-      "required_level": 12
+      "required_level": 12,
+      "requirements": {
+        "level": 12,
+        "str": 10,
+        "dex": null,
+        "int": 20
+      }
     },
     {
       "name": "Omen Sceptre",
       "href": "https://poe2db.tw/Omen_Sceptre",
-      "required_level": 16
+      "required_level": 16,
+      "requirements": {
+        "level": 16,
+        "str": 12,
+        "dex": null,
+        "int": 25
+      }
     },
     {
       "name": "Ochre Sceptre",
       "href": "https://poe2db.tw/Ochre_Sceptre",
-      "required_level": 21
+      "required_level": 21,
+      "requirements": {
+        "level": 21,
+        "str": 14,
+        "dex": null,
+        "int": 31
+      }
     },
     {
       "name": "Shrine Sceptre",
       "href": "https://poe2db.tw/Shrine_Sceptre",
-      "required_level": 26
+      "required_level": 26,
+      "requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      }
     },
     {
       "name": "Devouring Sceptre",
       "href": "https://poe2db.tw/Devouring_Sceptre",
-      "required_level": 33
+      "required_level": 33,
+      "requirements": {
+        "level": 33,
+        "str": 20,
+        "dex": null,
+        "int": 47
+      }
     },
     {
       "name": "Clasped Sceptre",
       "href": "https://poe2db.tw/Clasped_Sceptre",
-      "required_level": 36
+      "required_level": 36,
+      "requirements": {
+        "level": 36,
+        "str": 22,
+        "dex": null,
+        "int": 51
+      }
     },
     {
       "name": "Devotional Sceptre",
       "href": "https://poe2db.tw/Devotional_Sceptre",
-      "required_level": 45
+      "required_level": 45,
+      "requirements": {
+        "level": 45,
+        "str": 26,
+        "dex": null,
+        "int": 63
+      }
     },
     {
       "name": "Wrath Sceptre",
       "href": "https://poe2db.tw/Wrath_Sceptre",
-      "required_level": 49
+      "required_level": 49,
+      "requirements": {
+        "level": 49,
+        "str": 28,
+        "dex": null,
+        "int": 68
+      }
     },
     {
       "name": "Aromatic Sceptre",
       "href": "https://poe2db.tw/Aromatic_Sceptre",
-      "required_level": 52
+      "required_level": 52,
+      "requirements": {
+        "level": 52,
+        "str": 29,
+        "dex": null,
+        "int": 72
+      }
     },
     {
       "name": "Pious Sceptre",
       "href": "https://poe2db.tw/Pious_Sceptre",
-      "required_level": 58
+      "required_level": 58,
+      "requirements": {
+        "level": 58,
+        "str": 32,
+        "dex": null,
+        "int": 80
+      }
     },
     {
       "name": "Hallowed Sceptre",
       "href": "https://poe2db.tw/Hallowed_Sceptre",
-      "required_level": 65
+      "required_level": 65,
+      "requirements": {
+        "level": 65,
+        "str": 36,
+        "dex": null,
+        "int": 89
+      }
     }
   ],
   "modifier_sections": {
@@ -73,132 +151,132 @@
       {
         "family_key": "BearIdol",
         "kind": "gen0",
-        "template": "# increased Attack Damage while Shapeshifted",
+        "template": "# % increased Attack Damage while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanBear\" href=\"Bear_Idol\">Bear Idol</a>",
-            "text": "40% increased Attack Damage while Shapeshifted"
+            "text": "40 % increased Attack Damage while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "BoarIdol",
         "kind": "gen0",
-        "template": "# increased Life Regeneration rate while Shapeshifted",
+        "template": "# % increased Life Regeneration rate while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanBoar\" href=\"Boar_Idol\">Boar Idol</a>",
-            "text": "25% increased Life Regeneration rate while Shapeshifted"
+            "text": "25 % increased Life Regeneration rate while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "CatIdol",
         "kind": "gen0",
-        "template": "# increased Critical Hit Chance while Shapeshifted",
+        "template": "# % increased Critical Hit Chance while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanCat\" href=\"Cat_Idol\">Cat Idol</a>",
-            "text": "25% increased Critical Hit Chance while Shapeshifted"
+            "text": "25 % increased Critical Hit Chance while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "FoxIdol",
         "kind": "gen0",
-        "template": "Minions have # increased Area of Effect",
+        "template": "Minions have # % increased Area of Effect",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanFox\" href=\"Fox_Idol\">Fox Idol</a>",
-            "text": "Minions have 20% increased Area of Effect"
+            "text": "Minions have 20 % increased Area of Effect"
           }
         ]
       },
       {
         "family_key": "OwlIdol",
         "kind": "gen0",
-        "template": "# increased Skill Speed while Shapeshifted",
+        "template": "# % increased Skill Speed while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanOwl\" href=\"Owl_Idol\">Owl Idol</a>",
-            "text": "10% increased Skill Speed while Shapeshifted"
+            "text": "10 % increased Skill Speed while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "OxIdol",
         "kind": "gen0",
-        "template": "# of Armour also applies to Elemental Damage while Shapeshifted",
+        "template": "# % of Armour also applies to Elemental Damage while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanOx\" href=\"Ox_Idol\">Ox Idol</a>",
-            "text": "+20% of Armour also applies to Elemental Damage while Shapeshifted"
+            "text": "+20 % of Armour also applies to Elemental Damage while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "PrimateIdol",
         "kind": "gen0",
-        "template": "# increased Damage while Shapeshifted",
+        "template": "# % increased Damage while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanMonkey\" href=\"Primate_Idol\">Primate Idol</a>",
-            "text": "40% increased Damage while Shapeshifted"
+            "text": "40 % increased Damage while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "RabbitIdol",
         "kind": "gen0",
-        "template": "Minions have # increased Cooldown Recovery Rate for Command Skills",
+        "template": "Minions have # % increased Cooldown Recovery Rate for Command Skills",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanRabbit\" href=\"Rabbit_Idol\">Rabbit Idol</a>",
-            "text": "Minions have 30% increased Cooldown Recovery Rate for Command Skills"
+            "text": "Minions have 30 % increased Cooldown Recovery Rate for Command Skills"
           }
         ]
       },
       {
         "family_key": "SnakeIdol",
         "kind": "gen0",
-        "template": "# increased Skill Speed while Shapeshifted",
+        "template": "# % increased Skill Speed while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanSnake\" href=\"Snake_Idol\">Snake Idol</a>",
-            "text": "10% increased Skill Speed while Shapeshifted"
+            "text": "10 % increased Skill Speed while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "StagIdol",
         "kind": "gen0",
-        "template": "# increased Attack Damage while Shapeshifted",
+        "template": "# % increased Attack Damage while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanStag\" href=\"Stag_Idol\">Stag Idol</a>",
-            "text": "40% increased Attack Damage while Shapeshifted"
+            "text": "40 % increased Attack Damage while Shapeshifted"
           }
         ]
       },
       {
         "family_key": "WolfIdol",
         "kind": "gen0",
-        "template": "# increased Critical Hit Chance while Shapeshifted",
+        "template": "# % increased Critical Hit Chance while Shapeshifted",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanWolf\" href=\"Wolf_Idol\">Wolf Idol</a>",
-            "text": "25% increased Critical Hit Chance while Shapeshifted"
+            "text": "25 % increased Critical Hit Chance while Shapeshifted"
           }
         ]
       }
@@ -2788,72 +2866,72 @@
       {
         "family_key": "CatIdol",
         "kind": "gen0",
-        "template": "Allies in your Presence have # increased Critical Hit Chance",
+        "template": "Allies in your Presence have # % increased Critical Hit Chance",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanCat\" href=\"Cat_Idol\">Cat Idol</a>",
-            "text": "Allies in your Presence have 14% increased Critical Hit Chance"
+            "text": "Allies in your Presence have 14 % increased Critical Hit Chance"
           }
         ]
       },
       {
         "family_key": "FoxIdol",
         "kind": "gen0",
-        "template": "# increased Presence Area of Effect",
+        "template": "# % increased Presence Area of Effect",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanFox\" href=\"Fox_Idol\">Fox Idol</a>",
-            "text": "30% increased Presence Area of Effect"
+            "text": "30 % increased Presence Area of Effect"
           }
         ]
       },
       {
         "family_key": "OwlIdol",
         "kind": "gen0",
-        "template": "Allies in your Presence have # increased Cast Speed",
+        "template": "Allies in your Presence have # % increased Cast Speed",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanOwl\" href=\"Owl_Idol\">Owl Idol</a>",
-            "text": "Allies in your Presence have 8% increased Cast Speed"
+            "text": "Allies in your Presence have 8 % increased Cast Speed"
           }
         ]
       },
       {
         "family_key": "OxIdol",
         "kind": "gen0",
-        "template": "Allies in your Presence have # to all Elemental Resistances",
+        "template": "Allies in your Presence have # % to all Elemental Resistances",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanOx\" href=\"Ox_Idol\">Ox Idol</a>",
-            "text": "Allies in your Presence have +8% to all Elemental Resistances"
+            "text": "Allies in your Presence have +8 % to all Elemental Resistances"
           }
         ]
       },
       {
         "family_key": "PrimateIdol",
         "kind": "gen0",
-        "template": "Allies in your Presence deal # increased Damage",
+        "template": "Allies in your Presence deal # % increased Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanMonkey\" href=\"Primate_Idol\">Primate Idol</a>",
-            "text": "Allies in your Presence deal 30% increased Damage"
+            "text": "Allies in your Presence deal 30 % increased Damage"
           }
         ]
       },
       {
         "family_key": "RabbitIdol",
         "kind": "gen0",
-        "template": "# increased Spirit",
+        "template": "# % increased Spirit",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanRabbit\" href=\"Rabbit_Idol\">Rabbit Idol</a>",
-            "text": "10% increased Spirit"
+            "text": "10 % increased Spirit"
           }
         ]
       },
@@ -2904,12 +2982,12 @@
       {
         "family_key": "SnakeIdol",
         "kind": "gen0",
-        "template": "Allies in your Presence have # increased Attack Speed",
+        "template": "Allies in your Presence have # % increased Attack Speed",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanSnake\" href=\"Snake_Idol\">Snake Idol</a>",
-            "text": "Allies in your Presence have 8% increased Attack Speed"
+            "text": "Allies in your Presence have 8 % increased Attack Speed"
           }
         ]
       },
@@ -2928,24 +3006,24 @@
       {
         "family_key": "WolfIdol",
         "kind": "gen0",
-        "template": "Allies in your Presence have # increased Critical Damage Bonus",
+        "template": "Allies in your Presence have # % increased Critical Damage Bonus",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTalismanWolf\" href=\"Wolf_Idol\">Wolf Idol</a>",
-            "text": "Allies in your Presence have 14% increased Critical Damage Bonus"
+            "text": "Allies in your Presence have 14 % increased Critical Damage Bonus"
           }
         ]
       },
       {
         "family_key": "XipocadosSoulCoreofDominion",
         "kind": "gen0",
-        "template": "Minions deal # increased Damage with Command Skills",
+        "template": "Minions deal # % increased Damage with Command Skills",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial15\" href=\"Xipocados_Soul_Core_of_Dominion\">Xipocado's Soul Core of Dominion</a>",
-            "text": "Minions deal 40% increased Damage with Command Skills"
+            "text": "Minions deal 40 % increased Damage with Command Skills"
           }
         ]
       }

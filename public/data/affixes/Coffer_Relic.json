@@ -169,14 +169,7 @@
                 "min": -5
               }
             ]
-          }
-        ]
-      },
-      {
-        "family_key": "SanctumMonsterSpeed",
-        "kind": "prefix",
-        "template": "Monsters have #% reduced [Attack], Cast and Movement Speed",
-        "tiers": [
+          },
           {
             "level": 78,
             "name": "Temporal",
@@ -250,14 +243,7 @@
                 "min": -6
               }
             ]
-          }
-        ]
-      },
-      {
-        "family_key": "SanctumMonstersReducedDamage",
-        "kind": "prefix",
-        "template": "Monsters deal #% reduced Damage",
-        "tiers": [
+          },
           {
             "level": 56,
             "name": "Fortified",

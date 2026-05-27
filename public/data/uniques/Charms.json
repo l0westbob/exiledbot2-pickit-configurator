@@ -1,0 +1,1082 @@
+{
+  "class": "Charms",
+  "slug": "Charms",
+  "uniques": [
+    {
+      "name": "Arakaali's Gift",
+      "display_name": "Arakaali's Gift Antidote Charm",
+      "base_name": "Antidote Charm",
+      "href": "https://poe2db.tw/us/Arakaalis_Gift",
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Immunity to Poison",
+          "template": "Grants Immunity to Poison",
+          "rolls": [],
+          "affix_ids": [
+            "local_flask_poison_immunity_if_poisoned"
+          ]
+        },
+        {
+          "text": "Used when you become Poisoned",
+          "template": "Used when you become Poisoned",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on affected by poison"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_affected_by_poison"
+          ]
+        },
+        {
+          "text": "Recover Life equal to (15—20)% of Mana Flask's Recovery Amount when used",
+          "template": "Recover Life equal to #% of Mana Flask's Recovery Amount when used",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm recover life equal to x% of mana flask recovery amount"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "charm_recover_life_equal_to_x%_of_mana_flask_recovery_amount"
+          ]
+        },
+        {
+          "text": "Recover Mana equal to (15—20)% of Life Flask's Recovery Amount when used",
+          "template": "Recover Mana equal to #% of Life Flask's Recovery Amount when used",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm recover mana equal to x% of life flask recovery amount"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "charm_recover_mana_equal_to_x%_of_life_flask_recovery_amount"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Antidote_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Beira's Anguish",
+      "display_name": "Beira's Anguish Dousing Charm",
+      "base_name": "Dousing Charm",
+      "href": "https://poe2db.tw/us/Beiras_Anguish",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Immunity to Ignite",
+          "template": "Grants Immunity to Ignite",
+          "rolls": [],
+          "affix_ids": [
+            "local_flask_ignite_immunity_if_ignited_and_remove_burning"
+          ]
+        },
+        {
+          "text": "Used when you become Ignited",
+          "template": "Used when you become Ignited",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on affected by ignite"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_affected_by_ignite"
+          ]
+        },
+        {
+          "text": "(20—25)% Chance to gain a Charge when you kill an enemy",
+          "template": "#% Chance to gain a Charge when you kill an enemy",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "FlaskRechargeRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local % chance to gain flask charge on kill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_%_chance_to_gain_flask_charge_on_kill"
+          ]
+        },
+        {
+          "text": "Creates Ignited Ground for 4 seconds when used, Igniting enemies as though dealing Fire damage equal to 500 % of your maximum Life",
+          "template": "Creates Ignited Ground for 4 seconds when used, Igniting enemies as though dealing Fire damage equal to 500 % of your maximum Life",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm ignite ground as though dealing fire damage equal to x% of your maximum life when used"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Ailment"
+          ],
+          "affix_ids": [
+            "charm_ignite_ground_as_though_dealing_fire_damage_equal_to_x%_of_your_maximum_life_when_used"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Dousing_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Breath of the Mountains",
+      "display_name": "Breath of the Mountains Sapphire Charm",
+      "base_name": "Sapphire Charm",
+      "href": "https://poe2db.tw/us/Breath_of_the_Mountains",
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+25 % to Cold Resistance",
+          "template": "+25 % to Cold Resistance",
+          "rolls": [],
+          "affix_ids": [
+            "intermediary_cold_resistance_only_additions"
+          ]
+        },
+        {
+          "text": "Used when you take Cold damage from a Hit",
+          "template": "Used when you take Cold damage from a Hit",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on cold damage taken"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_cold_damage_taken"
+          ]
+        },
+        {
+          "text": "(10—15)% reduced Charges per use",
+          "template": "#% reduced Charges per use",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "FlaskChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local charges used +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_charges_used_+%"
+          ]
+        },
+        {
+          "text": "Grants a Power Charge on use",
+          "template": "Grants a Power Charge on use",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm grants power charge when used"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "power_charge"
+          ],
+          "affix_ids": [
+            "charm_grants_power_charge_when_used"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Sapphire_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "For Utopia",
+      "display_name": "For Utopia Stone Charm",
+      "base_name": "Stone Charm",
+      "href": "https://poe2db.tw/us/For_Utopia",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Cannot be Stunned",
+          "template": "Cannot be Stunned",
+          "rolls": [],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "CannotBeStunned",
+                "kind": "unique",
+                "template": "Cannot be [Stun|Stunned]",
+                "stat_ids": [
+                  "base_cannot_be_stunned"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "CannotBeStunned",
+                  "CannotBeStunnedUnique__1_"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "Used when you become Stunned",
+          "template": "Used when you become Stunned",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on stunned"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_stunned"
+          ]
+        },
+        {
+          "text": "Defend with 200% of Armour during effect",
+          "template": "Defend with 200% of Armour during effect",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm defend with double armour during effect"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Defences"
+          ],
+          "affix_ids": [
+            "charm_defend_with_double_armour_during_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Stone_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Forsaken Bangle",
+      "display_name": "Forsaken Bangle Amethyst Charm",
+      "base_name": "Amethyst Charm",
+      "href": "https://poe2db.tw/us/Forsaken_Bangle",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+18 % to Chaos Resistance",
+          "template": "+18 % to Chaos Resistance",
+          "rolls": [],
+          "affix_ids": [
+            "intermediary_chaos_resistance_only_additions"
+          ]
+        },
+        {
+          "text": "Used when you take Chaos damage from a Hit",
+          "template": "Used when you take Chaos damage from a Hit",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on chaos damage taken"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_chaos_damage_taken"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Duration",
+          "template": "#% increased Duration",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "FlaskRecoverySpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local charm duration +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_charm_duration_+%"
+          ]
+        },
+        {
+          "text": "50 % of Chaos damage you prevent when Hit Recouped as Life and Mana during effect",
+          "template": "50 % of Chaos damage you prevent when Hit Recouped as Life and Mana during effect",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm x% of chaos damage from hits prevented recouped as life and mana during effect"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Mana",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "charm_x%_of_chaos_damage_from_hits_prevented_recouped_as_life_and_mana_during_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Amethyst_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Nascent Hope",
+      "display_name": "Nascent Hope Thawing Charm",
+      "base_name": "Thawing Charm",
+      "href": "https://poe2db.tw/us/Nascent_Hope",
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Immunity to Freeze",
+          "template": "Grants Immunity to Freeze",
+          "rolls": [],
+          "affix_ids": [
+            "local_flask_chill_or_freeze_immunity_if_chilled_or_frozen"
+          ]
+        },
+        {
+          "text": "Used when you become Frozen",
+          "template": "Used when you become Frozen",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on affected by freeze"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_affected_by_freeze"
+          ]
+        },
+        {
+          "text": "(20—25)% Chance to gain a Charge when you kill an enemy",
+          "template": "#% Chance to gain a Charge when you kill an enemy",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "FlaskRechargeRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local % chance to gain flask charge on kill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_%_chance_to_gain_flask_charge_on_kill"
+          ]
+        },
+        {
+          "text": "Energy Shield Recharge starts on use",
+          "template": "Energy Shield Recharge starts on use",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm energy shield recharge starts when used"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Charm"
+          ],
+          "affix_ids": [
+            "charm_energy_shield_recharge_starts_when_used"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Thawing_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Ngamahu's Chosen",
+      "display_name": "Ngamahu's Chosen Ruby Charm",
+      "base_name": "Ruby Charm",
+      "href": "https://poe2db.tw/us/Ngamahus_Chosen",
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+25 % to Fire Resistance",
+          "template": "+25 % to Fire Resistance",
+          "rolls": [],
+          "affix_ids": [
+            "intermediary_fire_resistance_only_additions"
+          ]
+        },
+        {
+          "text": "Used when you take Fire damage from a Hit",
+          "template": "Used when you take Fire damage from a Hit",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on fire damage taken"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_fire_damage_taken"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Charges",
+          "template": "#% increased Charges",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "FlaskNumCharges",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local max charges +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_max_charges_+%"
+          ]
+        },
+        {
+          "text": "Grants up to your maximum Rage on use",
+          "template": "Grants up to your maximum Rage on use",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm grants up to your maximum rage when used"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "charm_grants_up_to_your_maximum_rage_when_used"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Ruby_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Rite of Passage",
+      "display_name": "Rite of Passage Golden Charm",
+      "base_name": "Golden Charm",
+      "href": "https://poe2db.tw/us/Rite_of_Passage",
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "15 % increased Rarity of Items found",
+          "template": "15 % increased Rarity of Items found",
+          "rolls": [],
+          "affix_ids": [
+            "local_flask_item_found_rarity_+%_during_flask_effect"
+          ]
+        },
+        {
+          "text": "Used when you kill a Rare or Unique enemy",
+          "template": "Used when you kill a Rare or Unique enemy",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on killing rare or unique enemy"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_killing_rare_or_unique_enemy"
+          ]
+        },
+        {
+          "text": "Possessed by Spirit Of The [Azmeri Spirit] for (10—20) seconds on use",
+          "template": "Possessed by Spirit Of The [Azmeri Spirit] for # seconds on use",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Golden_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Sanguis Heroum",
+      "display_name": "Sanguis Heroum Staunching Charm",
+      "base_name": "Staunching Charm",
+      "href": "https://poe2db.tw/us/Sanguis_Heroum",
+      "requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Immunity to Bleeding",
+          "template": "Grants Immunity to Bleeding",
+          "rolls": [],
+          "affix_ids": [
+            "local_flask_bleeding_immunity_if_bleeding_and_remove_corrupted_blood"
+          ]
+        },
+        {
+          "text": "Used when you start Bleeding",
+          "template": "Used when you start Bleeding",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on affected by bleed"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_affected_by_bleed"
+          ]
+        },
+        {
+          "text": "Gains (0.15—0.2) Charges per Second",
+          "template": "Gains # Charges per Second",
+          "rolls": [
+            {
+              "raw": "(0.15—0.2)",
+              "min": 0.15,
+              "max": 0.2
+            }
+          ],
+          "family": "FlaskGainCharge",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask gain X charges every minute"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_gain_X_charges_every_minute"
+          ]
+        },
+        {
+          "text": "Creates Consecrated Ground on use",
+          "template": "Creates Consecrated Ground on use",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm create consecrated ground when used"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Charm"
+          ],
+          "affix_ids": [
+            "charm_create_consecrated_ground_when_used"
+          ]
+        },
+        {
+          "text": "charm create consecrated ground when used duration ms [4000]",
+          "template": "charm create consecrated ground when used duration ms [4000]",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm create consecrated ground when used duration ms"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Charm"
+          ],
+          "affix_ids": [
+            "charm_create_consecrated_ground_when_used_duration_ms"
+          ]
+        },
+        {
+          "text": "charm create consecrated ground when used radius [14]",
+          "template": "charm create consecrated ground when used radius [14]",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm create consecrated ground when used radius"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Charm"
+          ],
+          "affix_ids": [
+            "charm_create_consecrated_ground_when_used_radius"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Staunching_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "The Black Cat",
+      "display_name": "The Black Cat Grounding Charm",
+      "base_name": "Grounding Charm",
+      "href": "https://poe2db.tw/us/The_Black_Cat",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Immunity to Shock",
+          "template": "Grants Immunity to Shock",
+          "rolls": [],
+          "affix_ids": [
+            "local_flask_shock_immunity_if_shocked"
+          ]
+        },
+        {
+          "text": "Used when you become Shocked",
+          "template": "Used when you become Shocked",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on affected by shock"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_affected_by_shock"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Duration",
+          "template": "#% increased Duration",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "FlaskRecoverySpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local charm duration +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_charm_duration_+%"
+          ]
+        },
+        {
+          "text": "Lightning Damage of Enemies Hitting you is Unlucky during effect",
+          "template": "Lightning Damage of Enemies Hitting you is Unlucky during effect",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm enemies extra damage rolls with lightning damage during effect"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Elemental",
+            "Lightning"
+          ],
+          "affix_ids": [
+            "charm_enemies_extra_damage_rolls_with_lightning_damage_during_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Grounding_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "The Fall of the Axe",
+      "display_name": "The Fall of the Axe Silver Charm",
+      "base_name": "Silver Charm",
+      "href": "https://poe2db.tw/us/The_Fall_of_the_Axe",
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Your speed is unaffected by Slows",
+          "template": "Your speed is unaffected by Slows",
+          "rolls": [],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "SlowPotency",
+                "kind": "unique",
+                "template": "Your speed is unaffected by [Slow|Slows]",
+                "stat_ids": [
+                  "slows_have_no_potency_on_you"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "UniqueNoSlowPotency1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "Used when you are affected by a Slow",
+          "template": "Used when you are affected by a Slow",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on affected by slow"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_affected_by_slow"
+          ]
+        },
+        {
+          "text": "Grants Onslaught during effect",
+          "template": "Grants Onslaught during effect",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm gain onslaught during effect"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "charm_gain_onslaught_during_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Silver_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    },
+    {
+      "name": "Valako's Roar",
+      "display_name": "Valako's Roar Topaz Charm",
+      "base_name": "Topaz Charm",
+      "href": "https://poe2db.tw/us/Valakos_Roar",
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+25 % to Lightning Resistance",
+          "template": "+25 % to Lightning Resistance",
+          "rolls": [],
+          "affix_ids": [
+            "intermediary_lightning_resistance_only_additions"
+          ]
+        },
+        {
+          "text": "Used when you take Lightning damage from a Hit",
+          "template": "Used when you take Lightning damage from a Hit",
+          "rolls": [],
+          "family": "FlaskEnchantment",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask use on lightning damage taken"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_use_on_lightning_damage_taken"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Charges gained",
+          "template": "#% increased Charges gained",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "FlaskRechargeRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local charges added +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_charges_added_+%"
+          ]
+        },
+        {
+          "text": "Grants a Frenzy Charge on use",
+          "template": "Grants a Frenzy Charge on use",
+          "rolls": [],
+          "family": "CharmUniqueBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm grants frenzy charge when used"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "frenzy_charge"
+          ],
+          "affix_ids": [
+            "charm_grants_frenzy_charge_when_used"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Charms",
+      "base_href": "https://poe2db.tw/Topaz_Charm",
+      "item_class": "Charms",
+      "class_slug": "Charms"
+    }
+  ]
+}

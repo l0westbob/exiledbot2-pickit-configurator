@@ -5,57 +5,123 @@
     {
       "name": "Broadhead Quiver",
       "href": "https://poe2db.tw/Broadhead_Quiver",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Fire Quiver",
       "href": "https://poe2db.tw/Fire_Quiver",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Sacral Quiver",
       "href": "https://poe2db.tw/Sacral_Quiver",
-      "required_level": 16
+      "required_level": 16,
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Two-Point Quiver",
       "href": "https://poe2db.tw/Two-Point_Quiver",
-      "required_level": 24
+      "required_level": 24,
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Blunt Quiver",
       "href": "https://poe2db.tw/Blunt_Quiver",
-      "required_level": 33
+      "required_level": 33,
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Toxic Quiver",
       "href": "https://poe2db.tw/Toxic_Quiver",
-      "required_level": 39
+      "required_level": 39,
+      "requirements": {
+        "level": 39,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Serrated Quiver",
       "href": "https://poe2db.tw/Serrated_Quiver",
-      "required_level": 44
+      "required_level": 44,
+      "requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Primed Quiver",
       "href": "https://poe2db.tw/Primed_Quiver",
-      "required_level": 51
+      "required_level": 51,
+      "requirements": {
+        "level": 51,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Penetrating Quiver",
       "href": "https://poe2db.tw/Penetrating_Quiver",
-      "required_level": 55
+      "required_level": 55,
+      "requirements": {
+        "level": 55,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Volant Quiver",
       "href": "https://poe2db.tw/Volant_Quiver",
-      "required_level": 61
+      "required_level": 61,
+      "requirements": {
+        "level": 61,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Visceral Quiver",
       "href": "https://poe2db.tw/Visceral_Quiver",
-      "required_level": 65
+      "required_level": 65,
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     }
   ],
   "modifier_sections": {
@@ -68,12 +134,12 @@
           {
             "level": 1,
             "name": "CorruptionAllDamage1",
-            "text": "(20-30)% increased Damage",
+            "text": "(50-75)% increased Damage",
             "stats": [
               {
                 "id": "damage_+%",
-                "max": 30,
-                "min": 20
+                "max": 75,
+                "min": 50
               }
             ]
           }
@@ -163,12 +229,12 @@
           {
             "level": 1,
             "name": "CorruptionIncreasedMana1",
-            "text": "+(20-25) to maximum Mana",
+            "text": "+(80-100) to maximum Mana",
             "stats": [
               {
                 "id": "base_maximum_mana",
-                "max": 25,
-                "min": 20
+                "max": 100,
+                "min": 80
               }
             ]
           }
@@ -201,12 +267,12 @@
           {
             "level": 1,
             "name": "CorruptionLifeGainedFromEnemyDeath1",
-            "text": "Gain (20-25) Life per enemy killed",
+            "text": "Gain (4-6) Life per enemy killed",
             "stats": [
               {
                 "id": "base_life_gained_on_enemy_death",
-                "max": 25,
-                "min": 20
+                "max": 6,
+                "min": 4
               }
             ]
           }
@@ -220,12 +286,12 @@
           {
             "level": 1,
             "name": "CorruptionManaGainedFromEnemyDeath1",
-            "text": "Gain (10-15) Mana per enemy killed",
+            "text": "Gain (2-3) Mana per enemy killed",
             "stats": [
               {
                 "id": "base_mana_gained_on_enemy_death",
-                "max": 15,
-                "min": 10
+                "max": 3,
+                "min": 2
               }
             ]
           }

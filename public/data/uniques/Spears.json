@@ -1,0 +1,1444 @@
+{
+  "class": "Spears",
+  "slug": "Spears",
+  "uniques": [
+    {
+      "name": "Atziri's Contempt",
+      "display_name": "Atziri's Contempt Pronged Spear",
+      "base_name": "Pronged Spear",
+      "href": "https://poe2db.tw/us/Atziris_Contempt",
+      "requirements": {
+        "level": 72,
+        "str": 46,
+        "dex": 115,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 72,
+        "str": 46,
+        "dex": 115,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 17 Shattering Spite",
+          "template": "Grants Skill: Level 17 Shattering Spite",
+          "rolls": []
+        },
+        {
+          "text": "(100—120)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(100—120)",
+              "min": 100,
+              "max": 120
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "Adds (83—97) to (123—153) Fire Damage",
+          "template": "Adds # to # Fire Damage",
+          "rolls": [
+            {
+              "raw": "(83—97)",
+              "min": 83,
+              "max": 97
+            },
+            {
+              "raw": "(123—153)",
+              "min": 123,
+              "max": 153
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added fire damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "Adds 1 to (193—207) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(193—207)",
+              "min": 193,
+              "max": 207
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "(10—16)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—16)",
+              "min": 10,
+              "max": 16
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(60—80)% increased Presence Area of Effect",
+          "template": "#% increased Presence Area of Effect",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "presence area +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "presence_area_+%"
+          ]
+        },
+        {
+          "text": "Spear Skills inflict a Bloodstone Lance on Hit , up to a maximum of 30 on each target",
+          "template": "Spear Skills inflict a Bloodstone Lance on Hit , up to a maximum of 30 on each target",
+          "rolls": [],
+          "family": "BloodstoneLance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spear skills inflict bloodstone lance on hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "spear_skills_inflict_bloodstone_lance_on_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Pronged_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Chainsting",
+      "display_name": "Chainsting Hunting Spear",
+      "base_name": "Hunting Spear",
+      "href": "https://poe2db.tw/us/Chainsting",
+      "requirements": {
+        "level": 10,
+        "str": 9,
+        "dex": 17,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": 9,
+        "dex": 17,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "(15—25)% chance to Maim on Hit",
+          "template": "#% chance to Maim on Hit",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LocalMaimOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local maim on hit %"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_maim_on_hit_%"
+          ]
+        },
+        {
+          "text": "Adds (13—17) to (22—28) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(13—17)",
+              "min": 13,
+              "max": 17
+            },
+            {
+              "raw": "(22—28)",
+              "min": 22,
+              "max": 28
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(100—150) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "10 % increased Attack Speed",
+          "template": "10 % increased Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "All Damage from Hits with this Weapon Contributes to Pin Buildup",
+          "template": "All Damage from Hits with this Weapon Contributes to Pin Buildup",
+          "rolls": [],
+          "family": "AllDamageCanPin",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local all damage can pin"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_all_damage_can_pin"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Projectile Speed with this Weapon",
+          "template": "#% increased Projectile Speed with this Weapon",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ProjectileSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local projectile speed +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_projectile_speed_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Hunting_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Daevata's Wind",
+      "display_name": "Daevata's Wind War Spear",
+      "base_name": "War Spear",
+      "href": "https://poe2db.tw/us/Daevatas_Wind",
+      "requirements": {
+        "level": 21,
+        "str": 14,
+        "dex": 31,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 21,
+        "str": 14,
+        "dex": 31,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "(25—35)% increased Projectile Speed with this Weapon",
+          "template": "#% increased Projectile Speed with this Weapon",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "ProjectileSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local projectile speed +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_projectile_speed_+%"
+          ]
+        },
+        {
+          "text": "Adds (10—15) to (21—26) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            },
+            {
+              "raw": "(21—26)",
+              "min": 21,
+              "max": 26
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+100 to Evasion Rating",
+          "template": "+100 to Evasion Rating",
+          "rolls": [],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base evasion rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_evasion_rating"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(30—60)% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds",
+          "template": "#% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "MeleeDamageIfProjectileHitRecently",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "melee damage +% if youve dealt projectile attack hit recently"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Attack"
+          ],
+          "affix_ids": [
+            "melee_damage_+%_if_youve_dealt_projectile_attack_hit_recently"
+          ]
+        },
+        {
+          "text": "(30—60)% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds",
+          "template": "#% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "ProjectileDamageIfMeleeHitRecently",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectile damage +% if youve dealt melee hit recently"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Attack"
+          ],
+          "affix_ids": [
+            "projectile_damage_+%_if_youve_dealt_melee_hit_recently"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/War_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Saitha's Spear",
+      "display_name": "Saitha's Spear Barbed Spear",
+      "base_name": "Barbed Spear",
+      "href": "https://poe2db.tw/us/Saithas_Spear",
+      "requirements": {
+        "level": 33,
+        "str": 20,
+        "dex": 47,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 20,
+        "dex": 47,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "Bleeding you inflict deals Damage (10—20)% faster",
+          "template": "Bleeding you inflict deals Damage #% faster",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "FasterDamageAilments",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "faster bleed %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "bleed",
+            "Damage",
+            "Physical",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "faster_bleed_%"
+          ]
+        },
+        {
+          "text": "Adds (14—26) to (27—32) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(14—26)",
+              "min": 14,
+              "max": 26
+            },
+            {
+              "raw": "(27—32)",
+              "min": 27,
+              "max": 32
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds (33—41) to (47—53) Fire Damage",
+          "template": "Adds # to # Fire Damage",
+          "rolls": [
+            {
+              "raw": "(33—41)",
+              "min": 33,
+              "max": 41
+            },
+            {
+              "raw": "(47—53)",
+              "min": 47,
+              "max": 53
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added fire damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "(15—25)% chance to cause Bleeding on Hit",
+          "template": "#% chance to cause Bleeding on Hit",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LocalChanceToBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local chance to bleed on hit %"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "bleed",
+            "Physical",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_chance_to_bleed_on_hit_%"
+          ]
+        },
+        {
+          "text": "Aggravating any Bleeding with this Weapon also Aggravates all Ignites on the target",
+          "template": "Aggravating any Bleeding with this Weapon also Aggravates all Ignites on the target",
+          "rolls": [],
+          "family": "AggravateBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local aggravating bleeds also causes you to aggravate ignites"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_aggravating_bleeds_also_causes_you_to_aggravate_ignites"
+          ]
+        },
+        {
+          "text": "(25—40)% chance to Aggravate Bleeding on Hit",
+          "template": "#% chance to Aggravate Bleeding on Hit",
+          "rolls": [
+            {
+              "raw": "(25—40)",
+              "min": 25,
+              "max": 40
+            }
+          ],
+          "family": "AggravateBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local aggravate bleeding on hit chance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "bleed",
+            "Physical",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_aggravate_bleeding_on_hit_chance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Barbed_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Skysliver",
+      "display_name": "Skysliver Winged Spear",
+      "base_name": "Winged Spear",
+      "href": "https://poe2db.tw/us/Skysliver",
+      "requirements": {
+        "level": 16,
+        "str": 12,
+        "dex": 25,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 12,
+        "dex": 25,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "No Physical Damage",
+          "template": "No Physical Damage",
+          "rolls": [],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon no physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_weapon_no_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds 1 to (80—120) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "(15—30)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(50—100)% increased chance to Shock",
+          "template": "#% increased chance to Shock",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "ShockChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "shock chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "shock_chance_+%"
+          ]
+        },
+        {
+          "text": "Rolls only the minimum or maximum Damage value for each Damage Type",
+          "template": "Rolls only the minimum or maximum Damage value for each Damage Type",
+          "rolls": [],
+          "family": "DamageRange",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local damage roll always min or max"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "local_damage_roll_always_min_or_max"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Winged_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Spire of Ire",
+      "display_name": "Spire of Ire Helix Spear",
+      "base_name": "Helix Spear",
+      "href": "https://poe2db.tw/us/Spire_of_Ire",
+      "requirements": {
+        "level": 65,
+        "str": 36,
+        "dex": 89,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 36,
+        "dex": 89,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 15 Chaotic Surge",
+          "template": "Grants Skill: Level 15 Chaotic Surge",
+          "rolls": []
+        },
+        {
+          "text": "(15—20)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Leeches (10—20)% of Physical Damage as Life",
+          "template": "Leeches #% of Physical Damage as Life",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local life leech from physical damage permyriad"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_life_leech_from_physical_damage_permyriad"
+          ]
+        },
+        {
+          "text": "Adds (167—201) to (267—333) Chaos damage",
+          "template": "Adds # to # Chaos damage",
+          "rolls": [
+            {
+              "raw": "(167—201)",
+              "min": 167,
+              "max": 201
+            },
+            {
+              "raw": "(267—333)",
+              "min": 267,
+              "max": 333
+            }
+          ],
+          "family": "LocalChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added chaos damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_chaos_damage"
+          ]
+        },
+        {
+          "text": "When you Consume a Charge Trigger Chaotic Surge to gain 2 Chaos Surges",
+          "template": "When you Consume a Charge Trigger Chaotic Surge to gain 2 Chaos Surges",
+          "rolls": [],
+          "family": "ElementalInfusion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain X instilling chaos when any charge is consumed"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_X_instilling_chaos_when_any_charge_is_consumed"
+          ]
+        },
+        {
+          "text": "Life Leech recovers based on your Chaos damage instead of Physical damage",
+          "template": "Life Leech recovers based on your Chaos damage instead of Physical damage",
+          "rolls": [],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life leech recovers based on your chaos damage instead of physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "life_leech_recovers_based_on_your_chaos_damage_instead_of_physical_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Helix_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Splinter of Lorrata",
+      "display_name": "Splinter of Lorrata Hardwood Spear",
+      "base_name": "Hardwood Spear",
+      "href": "https://poe2db.tw/us/Splinter_of_Lorrata",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "Adds (2—3) to (6—8) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(2—3)",
+              "min": 2,
+              "max": 3
+            },
+            {
+              "raw": "(6—8)",
+              "min": 6,
+              "max": 8
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Deal no Elemental Damage",
+          "template": "Deal no Elemental Damage",
+          "rolls": [],
+          "family": "DealNoElementalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "deal no elemental damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental"
+          ],
+          "affix_ids": [
+            "deal_no_elemental_damage"
+          ]
+        },
+        {
+          "text": "20 % increased Melee Strike Range with this weapon",
+          "template": "20 % increased Melee Strike Range with this weapon",
+          "rolls": [],
+          "family": "MeleeWeaponAndUnarmedRange",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local +% weapon range"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_+%_weapon_range"
+          ]
+        },
+        {
+          "text": "Any number of Poisons from this Weapon can affect a target at the same time",
+          "template": "Any number of Poisons from this Weapon can affect a target at the same time",
+          "rolls": [],
+          "family": "PoisonDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local hits with this weapon ignore poison limit"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_hits_with_this_weapon_ignore_poison_limit"
+          ]
+        },
+        {
+          "text": "Always Poison on Hit with this weapon",
+          "template": "Always Poison on Hit with this weapon",
+          "rolls": [],
+          "family": "LocalChanceToPoisonOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local poison on hit %"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_poison_on_hit_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Hardwood_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Tangletongue",
+      "display_name": "Tangletongue Forked Spear",
+      "base_name": "Forked Spear",
+      "href": "https://poe2db.tw/us/Tangletongue",
+      "requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": 38,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": 38,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "Adds (14—18) to (30—36) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(14—18)",
+              "min": 14,
+              "max": 18
+            },
+            {
+              "raw": "(30—36)",
+              "min": 30,
+              "max": 36
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(5—8)% to Critical Hit Chance",
+          "template": "+#% to Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(5—8)",
+              "min": 5,
+              "max": 8
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "+(15—25) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Bifurcates Critical Hits",
+          "template": "Bifurcates Critical Hits",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon roll crits twice"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_weapon_roll_crits_twice"
+          ]
+        },
+        {
+          "text": "10 % of Skill Mana Costs Converted to Life Costs",
+          "template": "10 % of Skill Mana Costs Converted to Life Costs",
+          "rolls": [],
+          "family": "LifeCost",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base skill cost life instead of mana %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_skill_cost_life_instead_of_mana_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Forked_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    },
+    {
+      "name": "Tyranny's Grip",
+      "display_name": "Tyranny's Grip Ironhead Spear",
+      "base_name": "Ironhead Spear",
+      "href": "https://poe2db.tw/us/Tyrannys_Grip",
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 10,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 10,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Spear Throw",
+          "template": "Grants Skill: Spear Throw",
+          "rolls": []
+        },
+        {
+          "text": "(150—200)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—15)% reduced Attack Speed",
+          "template": "#% reduced Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(15—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Strikes deal Splash Damage",
+          "template": "Strikes deal Splash Damage",
+          "rolls": [],
+          "family": "MeleeSplash",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "melee splash"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "melee_splash"
+          ]
+        },
+        {
+          "text": "Knocks Back Enemies on Hit",
+          "template": "Knocks Back Enemies on Hit",
+          "rolls": [],
+          "family": "Knockback",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local knockback"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_knockback"
+          ]
+        },
+        {
+          "text": "Cannot use Projectile Attacks",
+          "template": "Cannot use Projectile Attacks",
+          "rolls": [],
+          "family": "CannotBeThrown",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local cannot be thrown"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_cannot_be_thrown"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Spears",
+      "base_href": "https://poe2db.tw/Ironhead_Spear",
+      "item_class": "Spears",
+      "class_slug": "Spears"
+    }
+  ]
+}

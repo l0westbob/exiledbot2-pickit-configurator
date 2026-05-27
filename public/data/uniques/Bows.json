@@ -1,0 +1,1196 @@
+{
+  "class": "Bows",
+  "slug": "Bows",
+  "uniques": [
+    {
+      "name": "Death's Harp",
+      "display_name": "Death's Harp Dualstring Bow",
+      "base_name": "Dualstring Bow",
+      "href": "https://poe2db.tw/us/Deaths_Harp",
+      "requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 52,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 52,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+50 % Surpassing chance to fire an additional Arrow",
+          "template": "+50 % Surpassing chance to fire an additional Arrow",
+          "rolls": [],
+          "family": "AdditionalArrows",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to fire 1 additional projectile % with rollover with bow attacks"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "chance_to_fire_1_additional_projectile_%_with_rollover_with_bow_attacks"
+          ]
+        },
+        {
+          "text": "+(20—25)% to Critical Damage Bonus",
+          "template": "+#% to Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike multiplier +"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Damage",
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Bow Attacks fire 3 additional Arrows",
+          "template": "Bow Attacks fire 3 additional Arrows",
+          "rolls": [],
+          "family": "AdditionalArrows",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "number of additional arrows"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "number_of_additional_arrows"
+          ]
+        },
+        {
+          "text": "Gain (20—30) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Gain (12—18) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(12—18)",
+              "min": 12,
+              "max": 18
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Dualstring_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Doomfletch",
+      "display_name": "Doomfletch Composite Bow",
+      "base_name": "Composite Bow",
+      "href": "https://poe2db.tw/us/Doomfletch",
+      "requirements": {
+        "level": 22,
+        "str": null,
+        "dex": 41,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 22,
+        "str": null,
+        "dex": 41,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (5—7) to (10—12) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            },
+            {
+              "raw": "(10—12)",
+              "min": 10,
+              "max": 12
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+10 to Dexterity",
+          "template": "+10 to Dexterity",
+          "rolls": [],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Attacks with this Weapon gain 100 % of Physical damage as Extra damage of each Element",
+          "template": "Attacks with this Weapon gain 100 % of Physical damage as Extra damage of each Element",
+          "rolls": [],
+          "family": "LocalPhysicalDamageAddedAsEachElement",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local non skill physical damage % to gain as each element with attacks while have this two handed hand weapon"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "elemental_damage",
+            "Damage",
+            "Physical",
+            "Elemental",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_non_skill_physical_damage_%_to_gain_as_each_element_with_attacks_while_have_this_two_handed_hand_weapon"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Composite_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Fairgraves' Curse",
+      "display_name": "Fairgraves' Curse Artillery Bow",
+      "base_name": "Artillery Bow",
+      "href": "https://poe2db.tw/us/Fairgraves_Curse",
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 80,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 80,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 11 Phantasmal Arrow",
+          "template": "Grants Skill: Level 11 Phantasmal Arrow",
+          "rolls": []
+        },
+        {
+          "text": "50 % reduced Projectile Range",
+          "template": "50 % reduced Projectile Range",
+          "rolls": [],
+          "family": "ProjectileRange",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectile attack range +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "projectile_attack_range_+%"
+          ]
+        },
+        {
+          "text": "Adds (76—98) to (126—193) Fire Damage",
+          "template": "Adds # to # Fire Damage",
+          "rolls": [
+            {
+              "raw": "(76—98)",
+              "min": 76,
+              "max": 98
+            },
+            {
+              "raw": "(126—193)",
+              "min": 126,
+              "max": 193
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added fire damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Flammability Magnitude",
+          "template": "#% increased Flammability Magnitude",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IgniteChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_chance_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Ignite Magnitude",
+          "template": "#% increased Ignite Magnitude",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IgniteEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base ignite effect +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_ignite_effect_+%"
+          ]
+        },
+        {
+          "text": "30 % reduced Life Recovery rate",
+          "template": "30 % reduced Life Recovery rate",
+          "rolls": [],
+          "family": "LifeRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "-30 Physical Damage taken from Hits",
+          "template": "-30 Physical Damage taken from Hits",
+          "rolls": [],
+          "family": "FlatPhysicalDamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "physical damage taken +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical"
+          ],
+          "affix_ids": [
+            "physical_damage_taken_+"
+          ]
+        },
+        {
+          "text": "Attack Hits inflict Spectral Fire for 8 seconds",
+          "template": "Attack Hits inflict Spectral Fire for 8 seconds",
+          "rolls": [],
+          "family": "GhostflameOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ghostflame on hit duration ms"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ghostflame_on_hit_duration_ms"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Artillery_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Lioneye's Glare",
+      "display_name": "Lioneye's Glare Heavy Bow",
+      "base_name": "Heavy Bow",
+      "href": "https://poe2db.tw/us/Lioneyes_Glare",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 114,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 114,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(150—240)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(150—240)",
+              "min": 150,
+              "max": 240
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "+(300—500) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(300—500)",
+              "min": 300,
+              "max": 500
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "10 % increased Attack Speed",
+          "template": "10 % increased Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+2 metres to Dodge Roll distance if you haven't Dodge Rolled Recently",
+          "template": "+2 metres to Dodge Roll distance if you haven't Dodge Rolled Recently",
+          "rolls": [],
+          "family": "DodgeRoll",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "dodge roll travel distance + if dodge rolled recently"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "dodge_roll_travel_distance_+_if_dodge_rolled_recently"
+          ]
+        },
+        {
+          "text": "-1 metre to Dodge Roll distance if you've Dodge Rolled Recently",
+          "template": "-1 metre to Dodge Roll distance if you've Dodge Rolled Recently",
+          "rolls": [],
+          "family": "DodgeRoll",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "dodge roll travel distance + if not dodge rolled recently"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "dodge_roll_travel_distance_+_if_not_dodge_rolled_recently"
+          ]
+        },
+        {
+          "text": "Barrageable Attacks with this Bow Repeat +2 times if no enemies are in your Presence",
+          "template": "Barrageable Attacks with this Bow Repeat +2 times if no enemies are in your Presence",
+          "rolls": [],
+          "family": "RepeatAttack",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique bow attacks repeat x times when no enemies in your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_bow_attacks_repeat_x_times_when_no_enemies_in_your_presence"
+          ]
+        },
+        {
+          "text": "enable lioneyes glow task [1]",
+          "template": "enable lioneyes glow task [1]",
+          "rolls": [],
+          "family": "RepeatAttack",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enable lioneyes glow task"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enable_lioneyes_glow_task"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Heavy_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Quill Rain",
+      "display_name": "Quill Rain Shortbow",
+      "base_name": "Shortbow",
+      "href": "https://poe2db.tw/us/Quill_Rain",
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 12,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 12,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "100 % increased Attack Speed",
+          "template": "100 % increased Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(50—100)% increased Arrow Speed",
+          "template": "#% increased Arrow Speed",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "ArrowSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base arrow speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_arrow_speed_+%"
+          ]
+        },
+        {
+          "text": "40 % less Attack Damage",
+          "template": "40 % less Attack Damage",
+          "rolls": [],
+          "family": "QuillRainWeaponDamageFinalPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique quill rain damage +% final"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "unique_quill_rain_damage_+%_final"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Shortbow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Slivertongue",
+      "display_name": "Slivertongue Zealot Bow",
+      "base_name": "Zealot Bow",
+      "href": "https://poe2db.tw/us/Slivertongue",
+      "requirements": {
+        "level": 39,
+        "str": null,
+        "dex": 70,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 39,
+        "str": null,
+        "dex": 70,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (40—48) to (65—72) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(40—48)",
+              "min": 40,
+              "max": 48
+            },
+            {
+              "raw": "(65—72)",
+              "min": 65,
+              "max": 72
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(4—6)% to Critical Hit Chance",
+          "template": "+#% to Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(4—6)",
+              "min": 4,
+              "max": 6
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "Leeches (5—8)% of Physical Damage as Life",
+          "template": "Leeches #% of Physical Damage as Life",
+          "rolls": [
+            {
+              "raw": "(5—8)",
+              "min": 5,
+              "max": 8
+            }
+          ],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local life leech from physical damage permyriad"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_life_leech_from_physical_damage_permyriad"
+          ]
+        },
+        {
+          "text": "Leeches (4—7)% of Physical Damage as Mana",
+          "template": "Leeches #% of Physical Damage as Mana",
+          "rolls": [
+            {
+              "raw": "(4—7)",
+              "min": 4,
+              "max": 7
+            }
+          ],
+          "family": "ManaLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local mana leech from physical damage permyriad"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Mana",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_mana_leech_from_physical_damage_permyriad"
+          ]
+        },
+        {
+          "text": "Arrows Fork",
+          "template": "Arrows Fork",
+          "rolls": [],
+          "family": "ProjectilesFork",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "arrows fork"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "arrows_fork"
+          ]
+        },
+        {
+          "text": "Arrows Pierce all targets after Forking",
+          "template": "Arrows Pierce all targets after Forking",
+          "rolls": [],
+          "family": "ArrowPierce",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "arrows always pierce after forking"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "arrows_always_pierce_after_forking"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Zealot_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Splinterheart",
+      "display_name": "Splinterheart Recurve Bow",
+      "base_name": "Recurve Bow",
+      "href": "https://poe2db.tw/us/Splinterheart",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 31,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 31,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(120—160)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(120—160)",
+              "min": 120,
+              "max": 160
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "+(50—70) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Projectile Speed",
+          "template": "#% increased Projectile Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ProjectileSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base projectile speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_projectile_speed_+%"
+          ]
+        },
+        {
+          "text": "Projectiles Split towards +2 targets",
+          "template": "Projectiles Split towards +2 targets",
+          "rolls": [],
+          "family": "ProjectilesSplitCount",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectile number to split"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "projectile_number_to_split"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Recurve_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Voltaxic Rift",
+      "display_name": "Voltaxic Rift Fanatic Bow",
+      "base_name": "Fanatic Bow",
+      "href": "https://poe2db.tw/us/Voltaxic_Rift",
+      "requirements": {
+        "level": 79,
+        "str": null,
+        "dex": 163,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 79,
+        "str": null,
+        "dex": 163,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "local weapon implicit hidden added maximum chaos damage [64]",
+          "template": "local weapon implicit hidden added maximum chaos damage [64]",
+          "rolls": [],
+          "family": "WeaponImplicitDamageType",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon implicit hidden added maximum chaos damage"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_weapon_implicit_hidden_added_maximum_chaos_damage"
+          ]
+        },
+        {
+          "text": "local weapon implicit hidden added minimum chaos damage [28]",
+          "template": "local weapon implicit hidden added minimum chaos damage [28]",
+          "rolls": [],
+          "family": "WeaponImplicitDamageType",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon implicit hidden added minimum chaos damage"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_weapon_implicit_hidden_added_minimum_chaos_damage"
+          ]
+        },
+        {
+          "text": "Adds 1 to (300—500) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(300—500)",
+              "min": 300,
+              "max": 500
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "100 % of Lightning Damage Converted to Chaos Damage",
+          "template": "100 % of Lightning Damage Converted to Chaos Damage",
+          "rolls": [],
+          "family": "ConvertLightningDamageToChaos",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base lightning damage % to convert to chaos"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "chaos_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "non_skill_base_lightning_damage_%_to_convert_to_chaos"
+          ]
+        },
+        {
+          "text": "Chaos Damage from Hits also Contributes to Shock Chance",
+          "template": "Chaos Damage from Hits also Contributes to Shock Chance",
+          "rolls": [],
+          "family": "ChaosDamageCanShock",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chaos damage can shock"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Elemental",
+            "Lightning",
+            "Chaos",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chaos_damage_can_shock"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Fanatic_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    },
+    {
+      "name": "Widowhail",
+      "display_name": "Widowhail Crude Bow",
+      "base_name": "Crude Bow",
+      "href": "https://poe2db.tw/us/Widowhail",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(150—250)% increased bonuses gained from Equipped Quiver",
+          "template": "#% increased bonuses gained from Equipped Quiver",
+          "rolls": [
+            {
+              "raw": "(150—250)",
+              "min": 150,
+              "max": 250
+            }
+          ],
+          "family": "EquipmentModifierEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "quiver mod effect +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "quiver_mod_effect_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Bows",
+      "base_href": "https://poe2db.tw/Crude_Bow",
+      "item_class": "Bows",
+      "class_slug": "Bows"
+    }
+  ]
+}

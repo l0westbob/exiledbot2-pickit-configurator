@@ -1,0 +1,2305 @@
+{
+  "class": "Shields",
+  "slug": "Shields",
+  "uniques": [
+    {
+      "name": "Alkem Eira",
+      "display_name": "Alkem Eira Blazon Crest Shield",
+      "base_name": "Blazon Crest Shield",
+      "href": "https://poe2db.tw/us/Alkem_Eira",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(10—15)% increased Block chance",
+          "template": "#% increased Block chance",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedShieldBlockPercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local block chance +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "local_block_chance_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(50—70) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "Damage Blocked is Recouped as Mana",
+          "template": "Damage Blocked is Recouped as Mana",
+          "rolls": [],
+          "family": "PercentDamageGoesToMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "damage blocked % recouped as mana"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "damage_blocked_%_recouped_as_mana"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Blazon_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Arvil's Wheel",
+      "display_name": "Arvil's Wheel Hardwood Targe",
+      "base_name": "Hardwood Targe",
+      "href": "https://poe2db.tw/us/Arvils_Wheel",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(60—100)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "Lose 1 % of maximum Life on Kill",
+          "template": "Lose 1 % of maximum Life on Kill",
+          "rolls": [],
+          "family": "MaximumLifeOnKillPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "recover % maximum life on kill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "recover_%_maximum_life_on_kill"
+          ]
+        },
+        {
+          "text": "Lose 1 % of maximum Mana on Kill",
+          "template": "Lose 1 % of maximum Mana on Kill",
+          "rolls": [],
+          "family": "MaximumManaOnKillPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "recover % maximum mana on kill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "recover_%_maximum_mana_on_kill"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Skill Effect Duration",
+          "template": "#% increased Skill Effect Duration",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "SkillEffectDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill effect duration +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "skill_effect_duration_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_dex",
+      "base_href": "https://poe2db.tw/Hardwood_Targe",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Chernobog's Pillar",
+      "display_name": "Chernobog's Pillar Blacksteel Tower Shield",
+      "base_name": "Blacksteel Tower Shield",
+      "href": "https://poe2db.tw/us/Chernobogs_Pillar",
+      "requirements": {
+        "level": 65,
+        "str": 91,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 91,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(100—150)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(30—40)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(23—29)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(23—29)",
+              "min": 23,
+              "max": 29
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(150—200) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "Gain 1 % of damage as Fire damage per 1% Chance to Block",
+          "template": "Gain 1 % of damage as Fire damage per 1% Chance to Block",
+          "rolls": [],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill all damage % to gain as fire + per 1% attack block chance"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_all_damage_%_to_gain_as_fire_+_per_1%_attack_block_chance"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Blacksteel_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Crest of Ardura",
+      "display_name": "Crest of Ardura Jingling Crest Shield",
+      "base_name": "Jingling Crest Shield",
+      "href": "https://poe2db.tw/us/Crest_of_Ardura",
+      "requirements": {
+        "level": 28,
+        "str": 23,
+        "dex": null,
+        "int": 23
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": 23,
+        "dex": null,
+        "int": 23
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(60—100)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Cooldown Recovery Rate",
+          "template": "#% increased Cooldown Recovery Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CooldownRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cooldown speed +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_cooldown_speed_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Jingling_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Dionadair",
+      "display_name": "Dionadair Splintered Tower Shield",
+      "base_name": "Splintered Tower Shield",
+      "href": "https://poe2db.tw/us/Dionadair",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(60—80)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "(3—5) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "20 % reduced Stun Threshold",
+          "template": "20 % reduced Stun Threshold",
+          "rolls": [],
+          "family": "IncreasedStunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+%"
+          ]
+        },
+        {
+          "text": "Double Stun Threshold while Shield is Raised",
+          "template": "Double Stun Threshold while Shield is Raised",
+          "rolls": [],
+          "family": "IncreasedStunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local shield double stun threshold while active blocking"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "local_shield_double_stun_threshold_while_active_blocking"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Splintered_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Doomgate",
+      "display_name": "Doomgate Braced Tower Shield",
+      "base_name": "Braced Tower Shield",
+      "href": "https://poe2db.tw/us/Doomgate",
+      "requirements": {
+        "level": 12,
+        "str": 19,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": 19,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(80—100)% increased Block chance",
+          "template": "#% increased Block chance",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedShieldBlockPercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local block chance +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "local_block_chance_+%"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(13—17)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(13—17)",
+              "min": 13,
+              "max": 17
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "You take (25—40)% of damage from Blocked Hits",
+          "template": "You take #% of damage from Blocked Hits",
+          "rolls": [
+            {
+              "raw": "(25—40)",
+              "min": 25,
+              "max": 40
+            }
+          ],
+          "family": "AdditionalBlock",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base block % damage taken"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_block_%_damage_taken"
+          ]
+        },
+        {
+          "text": "Enemies are Culled on Block",
+          "template": "Enemies are Culled on Block",
+          "rolls": [],
+          "family": "CullingStrike",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "culling strike enemies on block"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "culling_strike_enemies_on_block"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Braced_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Feathered Fortress",
+      "display_name": "Feathered Fortress Crescent Targe",
+      "base_name": "Crescent Targe",
+      "href": "https://poe2db.tw/us/Feathered_Fortress",
+      "requirements": {
+        "level": 26,
+        "str": 22,
+        "dex": 22,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 22,
+        "dex": 22,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "No Movement Speed Penalty while Shield is Raised",
+          "template": "No Movement Speed Penalty while Shield is Raised",
+          "rolls": [],
+          "family": "MovementVelocityPenalty",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "no movement penalty while shield is raised"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "no_movement_penalty_while_shield_is_raised"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_dex",
+      "base_href": "https://poe2db.tw/Crescent_Targe",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Lycosidae",
+      "display_name": "Lycosidae Rampart Tower Shield",
+      "base_name": "Rampart Tower Shield",
+      "href": "https://poe2db.tw/us/Lycosidae",
+      "requirements": {
+        "level": 28,
+        "str": 42,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": 42,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(15—20)% increased Block chance",
+          "template": "#% increased Block chance",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedShieldBlockPercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local block chance +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "local_block_chance_+%"
+          ]
+        },
+        {
+          "text": "(60—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "Accuracy Rating is Doubled",
+          "template": "Accuracy Rating is Doubled",
+          "rolls": [],
+          "family": "AccuracyRatingIsDoubled",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating is doubled"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating_is_doubled"
+          ]
+        },
+        {
+          "text": "Blocking Damage Poisons the Enemy as though dealing 200 Base Chaos Damage",
+          "template": "Blocking Damage Poisons the Enemy as though dealing 200 Base Chaos Damage",
+          "rolls": [],
+          "family": "PoisonDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "poison as though dealing X damage on block"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "poison_as_though_dealing_X_damage_on_block"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Rampart_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Mahuxotl's Machination",
+      "display_name": "Mahuxotl's Machination Omen Crest Shield",
+      "base_name": "Omen Crest Shield",
+      "href": "https://poe2db.tw/us/Mahuxotls_Machination",
+      "requirements": {
+        "level": 48,
+        "str": 30,
+        "dex": null,
+        "int": 30
+      },
+      "base_requirements": {
+        "level": 36,
+        "str": 30,
+        "dex": null,
+        "int": 30
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(333—666)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(333—666)",
+              "min": 333,
+              "max": 666
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(66—333)% increased effect of Socketed Soul Cores",
+          "template": "#% increased effect of Socketed Soul Cores",
+          "rolls": [
+            {
+              "raw": "(66—333)",
+              "min": 66,
+              "max": 333
+            }
+          ],
+          "family": "SoulCore",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local soul core effect +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_soul_core_effect_+%"
+          ]
+        },
+        {
+          "text": "Everlasting Sacrifice",
+          "template": "Everlasting Sacrifice",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone everlasting sacrifice"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Defences",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "keystone_everlasting_sacrifice"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Omen_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Oaksworn",
+      "display_name": "Oaksworn Sigil Crest Shield",
+      "base_name": "Sigil Crest Shield",
+      "href": "https://poe2db.tw/us/Oaksworn",
+      "requirements": {
+        "level": 7,
+        "str": 8,
+        "dex": null,
+        "int": 8
+      },
+      "base_requirements": {
+        "level": 7,
+        "str": 8,
+        "dex": null,
+        "int": 8
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(40—60)% increased Block chance",
+          "template": "#% increased Block chance",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedShieldBlockPercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local block chance +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "local_block_chance_+%"
+          ]
+        },
+        {
+          "text": "(80—120)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "50 % increased Life Regeneration rate",
+          "template": "50 % increased Life Regeneration rate",
+          "rolls": [],
+          "family": "LifeRegenerationRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "life_regeneration_rate_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Sigil_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Prism Guardian",
+      "display_name": "Prism Guardian Intricate Crest Shield",
+      "base_name": "Intricate Crest Shield",
+      "href": "https://poe2db.tw/us/Prism_Guardian",
+      "requirements": {
+        "level": 65,
+        "str": 50,
+        "dex": null,
+        "int": 50
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 50,
+        "dex": null,
+        "int": 50
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(150—200)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+50 to Spirit",
+          "template": "+50 to Spirit",
+          "rolls": [],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "mutatedunique_vaal"
+          ],
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(10—20)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "1 % increased Spirit Reservation Efficiency of Buff Skills per 100 Maximum Life",
+          "template": "1 % increased Spirit Reservation Efficiency of Buff Skills per 100 Maximum Life",
+          "rolls": [],
+          "family": "ReservationEfficiency",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "buff skills spirit reservation efficiency +% per 100 maximum life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "buff_skills_spirit_reservation_efficiency_+%_per_100_maximum_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Intricate_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Redblade Banner",
+      "display_name": "Redblade Banner Heraldric Tower Shield",
+      "base_name": "Heraldric Tower Shield",
+      "href": "https://poe2db.tw/us/Redblade_Banner",
+      "requirements": {
+        "level": 33,
+        "str": 48,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 48,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(10—15)% increased Block chance",
+          "template": "#% increased Block chance",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedShieldBlockPercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local block chance +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "local_block_chance_+%"
+          ]
+        },
+        {
+          "text": "(60—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(100—150) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence count as having double Power",
+          "template": "Enemies in your Presence count as having double Power",
+          "rolls": [],
+          "family": "MonsterPower",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique redblade banner enemies in presence monster power +% final"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Aura"
+          ],
+          "affix_ids": [
+            "unique_redblade_banner_enemies_in_presence_monster_power_+%_final"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Heraldric_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Rise of the Phoenix",
+      "display_name": "Rise of the Phoenix Omen Crest Shield",
+      "base_name": "Omen Crest Shield",
+      "href": "https://poe2db.tw/us/Rise_of_the_Phoenix",
+      "requirements": {
+        "level": 36,
+        "str": 30,
+        "dex": null,
+        "int": 30
+      },
+      "base_requirements": {
+        "level": 36,
+        "str": 30,
+        "dex": null,
+        "int": 30
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "+5 % to Maximum Fire Resistance",
+          "template": "+5 % to Maximum Fire Resistance",
+          "rolls": [],
+          "family": "MaximumFireResist",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_maximum_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(20—25)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—25)",
+              "min": 20,
+              "max": 25
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+25 % to Fire Resistance while on Low Life",
+          "template": "+25 % to Fire Resistance while on Low Life",
+          "rolls": [],
+          "family": "FireResistOnLowLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "fire damage resistance % when on low life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "fire_damage_resistance_%_when_on_low_life"
+          ]
+        },
+        {
+          "text": "Regenerate 3 % of maximum Life per second",
+          "template": "Regenerate 3 % of maximum Life per second",
+          "rolls": [],
+          "family": "LifeRegenerationRatePercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life regeneration rate per minute %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "life_regeneration_rate_per_minute_%"
+          ]
+        },
+        {
+          "text": "Regenerate 3 % of maximum Life per second while on Low Life",
+          "template": "Regenerate 3 % of maximum Life per second while on Low Life",
+          "rolls": [],
+          "family": "LifeRegenerationOnLowLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life regeneration rate per minute % when on low life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "life_regeneration_rate_per_minute_%_when_on_low_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Omen_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Saffell's Frame",
+      "display_name": "Saffell's Frame Emblem Crest Shield",
+      "base_name": "Emblem Crest Shield",
+      "href": "https://poe2db.tw/us/Saffells_Frame",
+      "requirements": {
+        "level": 16,
+        "str": 15,
+        "dex": null,
+        "int": 15
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 15,
+        "dex": null,
+        "int": 15
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "+(15—25)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Cannot Block",
+          "template": "Cannot Block",
+          "rolls": [],
+          "family": "CannotBlockAttacks",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot block"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "cannot_block"
+          ]
+        },
+        {
+          "text": "Modifiers to Maximum Block Chance instead apply to Maximum Resistances",
+          "template": "Modifiers to Maximum Block Chance instead apply to Maximum Resistances",
+          "rolls": [],
+          "family": "MaximumResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum block modifiers apply to maximum resistances instead"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "maximum_block_modifiers_apply_to_maximum_resistances_instead"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str_int",
+      "base_href": "https://poe2db.tw/Emblem_Crest_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Svalinn",
+      "display_name": "Svalinn Crucible Tower Shield",
+      "base_name": "Crucible Tower Shield",
+      "href": "https://poe2db.tw/us/Svalinn",
+      "requirements": {
+        "level": 60,
+        "str": 64,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 64,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 14 Cast on Block",
+          "template": "Grants Skill: Level 14 Cast on Block",
+          "rolls": []
+        },
+        {
+          "text": "(200—300)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(200—300)",
+              "min": 200,
+              "max": 300
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "Chance to Block Damage is Lucky",
+          "template": "Chance to Block Damage is Lucky",
+          "rolls": [],
+          "family": "IncreasedBlockChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base block chance luck"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_block_chance_luck"
+          ]
+        },
+        {
+          "text": "You take (0—20)% of damage from Blocked Hits",
+          "template": "You take #% of damage from Blocked Hits",
+          "rolls": [
+            {
+              "raw": "(0—20)",
+              "min": 0,
+              "max": 20
+            }
+          ],
+          "family": "AdditionalBlock",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base block % damage taken"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_block_%_damage_taken"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Crucible_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "The Surrender",
+      "display_name": "The Surrender Vaal Tower Shield",
+      "base_name": "Vaal Tower Shield",
+      "href": "https://poe2db.tw/us/The_Surrender",
+      "requirements": {
+        "level": 75,
+        "str": 107,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 75,
+        "str": 107,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(40—60)% increased Block chance",
+          "template": "#% increased Block chance",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedShieldBlockPercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local block chance +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "local_block_chance_+%"
+          ]
+        },
+        {
+          "text": "(150—200)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(150—200) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "Recover 4 % of maximum Life when you Block",
+          "template": "Recover 4 % of maximum Life when you Block",
+          "rolls": [],
+          "family": "RecoverLifePercentOnBlock",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "recover % of maximum life on block"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "block",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "recover_%_of_maximum_life_on_block"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Vaal_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Window to Paradise",
+      "display_name": "Window to Paradise Barricade Tower Shield",
+      "base_name": "Barricade Tower Shield",
+      "href": "https://poe2db.tw/us/Window_to_Paradise",
+      "requirements": {
+        "level": 16,
+        "str": 25,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 25,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "(60—120)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(60—120)",
+              "min": 60,
+              "max": 120
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(10—15)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "Inflict Elemental Exposure to Enemies 3 metres in front of you for 4 seconds, every 0.25 seconds while raised",
+          "template": "Inflict Elemental Exposure to Enemies 3 metres in front of you for 4 seconds, every 0.25 seconds while raised",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique shield window of paradise apply elemental exposure while raised"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental"
+          ],
+          "affix_ids": [
+            "unique_shield_window_of_paradise_apply_elemental_exposure_while_raised"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Barricade_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    },
+    {
+      "name": "Wulfsbane",
+      "display_name": "Wulfsbane Painted Tower Shield",
+      "base_name": "Painted Tower Shield",
+      "href": "https://poe2db.tw/us/Wulfsbane",
+      "requirements": {
+        "level": 6,
+        "str": 11,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 6,
+        "str": 11,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Raise Shield",
+          "template": "Grants Skill: Raise Shield",
+          "rolls": []
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(60—80) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "Permanently Intimidate enemies on Block",
+          "template": "Permanently Intimidate enemies on Block",
+          "rolls": [],
+          "family": "EnemiesBlockedAreIntimidated",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "permanently intimidate enemy on block"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "permanently_intimidate_enemy_on_block"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Shields_str",
+      "base_href": "https://poe2db.tw/Painted_Tower_Shield",
+      "item_class": "Shields",
+      "class_slug": "Shields"
+    }
+  ]
+}

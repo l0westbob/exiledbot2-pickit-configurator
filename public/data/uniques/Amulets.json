@@ -1,0 +1,3070 @@
+{
+  "class": "Amulets",
+  "slug": "Amulets",
+  "uniques": [
+    {
+      "name": "Astramentis",
+      "display_name": "Astramentis Stellar Amulet",
+      "base_name": "Stellar Amulet",
+      "href": "https://poe2db.tw/us/Astramentis",
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(5—7) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "+(50—100) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "-4 Physical Damage taken from Attack Hits",
+          "template": "-4 Physical Damage taken from Attack Hits",
+          "rolls": [],
+          "family": "PhysicalAttackDamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "physical attack damage taken +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "physical_attack_damage_taken_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Stellar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Beacon of Azis",
+      "display_name": "Beacon of Azis Solar Amulet",
+      "base_name": "Solar Amulet",
+      "href": "https://poe2db.tw/us/Beacon_of_Azis",
+      "requirements": {
+        "level": 30,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 30,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Spirit",
+          "template": "+# to Spirit",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+30 to Spirit",
+          "template": "+30 to Spirit",
+          "rolls": [],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "30 % increased Light Radius",
+          "template": "30 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Critical Hits ignore Enemy Monster Elemental Resistances",
+          "template": "Critical Hits ignore Enemy Monster Elemental Resistances",
+          "rolls": [],
+          "family": "ElementalPenetration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strikes ignore elemental resistances"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "critical_strikes_ignore_elemental_resistances"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Solar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Carnage Heart",
+      "display_name": "Carnage Heart Amber Amulet",
+      "base_name": "Amber Amulet",
+      "href": "https://poe2db.tw/us/Carnage_Heart",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "20 % reduced maximum Life",
+          "template": "20 % reduced maximum Life",
+          "rolls": [],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "+(10—20)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "(100—200)% increased amount of Life Leeched",
+          "template": "#% increased amount of Life Leeched",
+          "rolls": [
+            {
+              "raw": "(100—200)",
+              "min": 100,
+              "max": 200
+            }
+          ],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life leech amount +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_life_leech_amount_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Amber_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Choir of the Storm",
+      "display_name": "Choir of the Storm Jade Amulet",
+      "base_name": "Jade Amulet",
+      "href": "https://poe2db.tw/us/Choir_of_the_Storm",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 13 Lightning Bolt",
+          "template": "Grants Skill: Level 13 Lightning Bolt",
+          "rolls": []
+        },
+        {
+          "text": "+(10—15) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(50—100)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Critical Hits Ignore Enemy Monster Lightning Resistance",
+          "template": "Critical Hits Ignore Enemy Monster Lightning Resistance",
+          "rolls": [],
+          "family": "LightningResistancePenetration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strikes ignore lightning resistance"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strikes_ignore_lightning_resistance"
+          ]
+        },
+        {
+          "text": "Trigger Lightning Bolt Skill on Critical Hit",
+          "template": "Trigger Lightning Bolt Skill on Critical Hit",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local display triggers level x lightning bolt on critical strike"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "skill"
+          ],
+          "affix_ids": [
+            "local_display_triggers_level_x_lightning_bolt_on_critical_strike"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Jade_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Defiance of Destiny",
+      "display_name": "Defiance of Destiny Jade Amulet",
+      "base_name": "Jade Amulet",
+      "href": "https://poe2db.tw/us/Defiance_of_Destiny",
+      "requirements": {
+        "level": 56,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(6—10)% increased maximum Life",
+          "template": "#% increased maximum Life",
+          "rolls": [
+            {
+              "raw": "(6—10)",
+              "min": 6,
+              "max": 10
+            }
+          ],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "(25—40)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(25—40)",
+              "min": 25,
+              "max": 40
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Recover (20—30)% of Missing Life before being Hit by an Enemy",
+          "template": "Recover #% of Missing Life before being Hit by an Enemy",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "missing life % gained as life before hit"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "missing_life_%_gained_as_life_before_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Jade_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Eye of Chayula",
+      "display_name": "Eye of Chayula Gold Amulet",
+      "base_name": "Gold Amulet",
+      "href": "https://poe2db.tw/us/Eye_of_Chayula",
+      "requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(12—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(12—20)",
+              "min": 12,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% reduced maximum Life",
+          "template": "#% reduced maximum Life",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "+(10—15) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "Cannot be Light Stunned",
+          "template": "Cannot be Light Stunned",
+          "rolls": [],
+          "family": "CannotBeStunned",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot be light stunned"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_be_light_stunned"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Gold_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Fireflower",
+      "display_name": "Fireflower Solar Amulet",
+      "base_name": "Solar Amulet",
+      "href": "https://poe2db.tw/us/Fireflower",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 30,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Spirit",
+          "template": "+# to Spirit",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Take 100 Fire Damage when you Ignite an Enemy",
+          "template": "Take 100 Fire Damage when you Ignite an Enemy",
+          "rolls": [],
+          "family": "TakeFireDamageOnIgnite",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "fire damage taken when enemy ignited"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "fire_damage_taken_when_enemy_ignited"
+          ]
+        },
+        {
+          "text": "+(1—4) to Level of all Fire Skills",
+          "template": "+# to Level of all Fire Skills",
+          "rolls": [
+            {
+              "raw": "(1—4)",
+              "min": 1,
+              "max": 4
+            }
+          ],
+          "family": "GlobalDamageTypeGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "fire skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Gem"
+          ],
+          "affix_ids": [
+            "fire_skill_gem_level_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Solar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Fixation of Yix",
+      "display_name": "Fixation of Yix Stellar Amulet",
+      "base_name": "Stellar Amulet",
+      "href": "https://poe2db.tw/us/Fixation_of_Yix",
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(5—7) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "+100 to maximum Life",
+          "template": "+100 to maximum Life",
+          "rolls": [],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "Allies in your Presence have (30—50)% increased Critical Hit Chance",
+          "template": "Allies in your Presence have #% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "allies_in_presence_critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "Allies in your Presence have (30—50)% increased Critical Damage Bonus",
+          "template": "Allies in your Presence have #% increased Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence critical strike multiplier +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "allies_in_presence_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Allies in your Presence have (10—20)% increased Attack Speed",
+          "template": "Allies in your Presence have #% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "allies_in_presence_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Allies in your Presence have (10—20)% increased Cast Speed",
+          "template": "Allies in your Presence have #% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "allies_in_presence_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "50 % reduced Presence Area of Effect",
+          "template": "50 % reduced Presence Area of Effect",
+          "rolls": [],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "presence area +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "presence_area_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Stellar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Hinekora's Sight",
+      "display_name": "Hinekora's Sight Stellar Amulet",
+      "base_name": "Stellar Amulet",
+      "href": "https://poe2db.tw/us/Hinekoras_Sight",
+      "requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 11 Future-Past",
+          "template": "Grants Skill: Level 11 Future-Past",
+          "rolls": []
+        },
+        {
+          "text": "+(5—7) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "+(300—600) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(300—600)",
+              "min": 300,
+              "max": 600
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(300—600) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(300—600)",
+              "min": 300,
+              "max": 600
+            }
+          ],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base evasion rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_evasion_rating"
+          ]
+        },
+        {
+          "text": "Cannot be Blinded",
+          "template": "Cannot be Blinded",
+          "rolls": [],
+          "family": "ImmunityToBlind",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot be blinded"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_be_blinded"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Stellar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Idol of Uldurn",
+      "display_name": "Idol of Uldurn Crimson Amulet",
+      "base_name": "Crimson Amulet",
+      "href": "https://poe2db.tw/us/Idol_of_Uldurn",
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(2—4) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(2—4)",
+              "min": 2,
+              "max": 4
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "+(60—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Skills have + 1 to Limit",
+          "template": "Skills have + 1 to Limit",
+          "rolls": [],
+          "family": "Limit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base limit +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_limit_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Crimson_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Igniferis",
+      "display_name": "Igniferis Crimson Amulet",
+      "base_name": "Crimson Amulet",
+      "href": "https://poe2db.tw/us/Igniferis",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(2—4) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(2—4)",
+              "min": 2,
+              "max": 4
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "+(10—20)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "25 % increased Light Radius",
+          "template": "25 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Life Recovery from Regeneration is not applied",
+          "template": "Life Recovery from Regeneration is not applied",
+          "rolls": [],
+          "family": "LifeRegenerationNotApplied",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life recovery from regeneration is not applied"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_recovery_from_regeneration_is_not_applied"
+          ]
+        },
+        {
+          "text": "Every 4 seconds, Recover 1 Life for every 0.2 Life Recovery per second from Regeneration",
+          "template": "Every 4 seconds, Recover 1 Life for every 0.2 Life Recovery per second from Regeneration",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "recover 1 life per x life regeneration per minute every 4 seconds"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "recover_1_life_per_x_life_regeneration_per_minute_every_4_seconds"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Crimson_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Ligurium Talisman",
+      "display_name": "Ligurium Talisman Lapis Amulet",
+      "base_name": "Lapis Amulet",
+      "href": "https://poe2db.tw/us/Ligurium_Talisman",
+      "requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(30—40) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "IncreasedEnergyShield",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum energy shield"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_maximum_energy_shield"
+          ]
+        },
+        {
+          "text": "+(25—35) to Spirit",
+          "template": "+# to Spirit",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Life Regeneration is applied to Energy Shield instead",
+          "template": "Life Regeneration is applied to Energy Shield instead",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "regenerate energy shield instead of life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "regenerate_energy_shield_instead_of_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Lapis_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Revered Resin",
+      "display_name": "Revered Resin Amber Amulet",
+      "base_name": "Amber Amulet",
+      "href": "https://poe2db.tw/us/Revered_Resin",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Life Recovery rate",
+          "template": "#% increased Flask Life Recovery rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "Life Flasks gain (0.17—0.25) charges per Second",
+          "template": "Life Flasks gain # charges per Second",
+          "rolls": [
+            {
+              "raw": "(0.17—0.25)",
+              "min": 0.17,
+              "max": 0.25
+            }
+          ],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for life flasks per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_life_flasks_per_minute"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Amber_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Rondel of Fragility",
+      "display_name": "Rondel of Fragility Lunar Amulet",
+      "base_name": "Lunar Amulet",
+      "href": "https://poe2db.tw/us/Rondel_of_Fragility",
+      "requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedEnergyShield",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum energy shield"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_maximum_energy_shield"
+          ]
+        },
+        {
+          "text": "(15—30)% increased Skill Speed",
+          "template": "#% increased Skill Speed",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "skill_speed_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "-30 % to all Elemental Resistances",
+          "template": "-30 % to all Elemental Resistances",
+          "rolls": [],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Damage",
+          "template": "#% increased Damage",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "damage_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Lunar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Serpent's Egg",
+      "display_name": "Serpent's Egg Gold Amulet",
+      "base_name": "Gold Amulet",
+      "href": "https://poe2db.tw/us/Serpents_Egg",
+      "requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(12—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(12—20)",
+              "min": 12,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Gain an additional Charge when you gain a Charge",
+          "template": "Gain an additional Charge when you gain a Charge",
+          "rolls": [],
+          "family": "ChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to gain 1 more charge %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "chance_to_gain_1_more_charge_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Gold_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Stone of Lazhwar",
+      "display_name": "Stone of Lazhwar Lapis Amulet",
+      "base_name": "Lapis Amulet",
+      "href": "https://poe2db.tw/us/Stone_of_Lazhwar",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(50—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Block Chance while holding a Focus",
+          "template": "+#% to Block Chance while holding a Focus",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "BlockPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional block chance % while holding focus"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "additional_block_chance_%_while_holding_focus"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Lapis_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Strugglescream",
+      "display_name": "Strugglescream Stellar Amulet",
+      "base_name": "Stellar Amulet",
+      "href": "https://poe2db.tw/us/Strugglescream",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(5—7) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "Can have 3 additional Instilled Modifiers",
+          "template": "Can have 3 additional Instilled Modifiers",
+          "rolls": [],
+          "family": "MultipleEnchantmentsAllowed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local item can have x additional enchantments"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_item_can_have_x_additional_enchantments"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Stellar_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Surefooted Sigil",
+      "display_name": "Surefooted Sigil Jade Amulet",
+      "base_name": "Jade Amulet",
+      "href": "https://poe2db.tw/us/Surefooted_Sigil",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(5—15) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+1 metre to Dodge Roll distance",
+          "template": "+1 metre to Dodge Roll distance",
+          "rolls": [],
+          "family": "DodgeRoll",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "dodge roll base travel distance"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "dodge_roll_base_travel_distance"
+          ]
+        },
+        {
+          "text": "50 % increased Evasion Rating if you've Dodge Rolled Recently",
+          "template": "50 % increased Evasion Rating if you've Dodge Rolled Recently",
+          "rolls": [],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "evasion rating +% if you dodge rolled recently"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "evasion_rating_+%_if_you_dodge_rolled_recently"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Jade_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "The Anvil",
+      "display_name": "The Anvil Bloodstone Amulet",
+      "base_name": "Bloodstone Amulet",
+      "href": "https://poe2db.tw/us/The_Anvil",
+      "requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(30—40) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "10 % reduced Movement Speed",
+          "template": "10 % reduced Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "10 % reduced Skill Speed",
+          "template": "10 % reduced Skill Speed",
+          "rolls": [],
+          "family": "IncreasedSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "skill_speed_+%"
+          ]
+        },
+        {
+          "text": "(25—50)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(25—50)",
+              "min": 25,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedPhysicalDamageReductionRatingPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "physical damage reduction rating +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "25 % increased Block chance",
+          "template": "25 % increased Block chance",
+          "rolls": [],
+          "family": "GlobalShieldBlockChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "block chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "block_chance_+%"
+          ]
+        },
+        {
+          "text": "+(5—10)% to maximum Block chance",
+          "template": "+#% to maximum Block chance",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "MaximumBlockChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional maximum block %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "additional_maximum_block_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Bloodstone_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "The Everlasting Gaze",
+      "display_name": "The Everlasting Gaze Azure Amulet",
+      "base_name": "Azure Amulet",
+      "href": "https://poe2db.tw/us/The_Everlasting_Gaze",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(40—60)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Gain (4—6)% of maximum Mana as Extra maximum Energy Shield",
+          "template": "Gain #% of maximum Mana as Extra maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(4—6)",
+              "min": 4,
+              "max": 6
+            }
+          ],
+          "family": "GainManaAsExtraEnergyShield",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana % to gain as energy shield"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "mana_%_to_gain_as_energy_shield"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Azure_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "The Pandemonius",
+      "display_name": "The Pandemonius Lapis Amulet",
+      "base_name": "Lapis Amulet",
+      "href": "https://poe2db.tw/us/The_Pandemonius",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(50—100)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Damage Penetrates 75 % Cold Resistance",
+          "template": "Damage Penetrates 75 % Cold Resistance",
+          "rolls": [],
+          "family": "ColdResistancePenetration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base reduce enemy cold resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold"
+          ],
+          "affix_ids": [
+            "base_reduce_enemy_cold_resistance_%"
+          ]
+        },
+        {
+          "text": "Blind Chilled enemies on Hit",
+          "template": "Blind Chilled enemies on Hit",
+          "rolls": [],
+          "family": "OnHitBlindChilledEnemies",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "blind chilled enemies on hit %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "blind_chilled_enemies_on_hit_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Lapis_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Ungil's Harmony",
+      "display_name": "Ungil's Harmony Azure Amulet",
+      "base_name": "Azure Amulet",
+      "href": "https://poe2db.tw/us/Ungils_Harmony",
+      "requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(100—200)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(100—200)",
+              "min": 100,
+              "max": 200
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to Stun Threshold",
+          "template": "+# to Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "StunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+"
+          ]
+        },
+        {
+          "text": "Your Critical Hits do not deal extra Damage",
+          "template": "Your Critical Hits do not deal extra Damage",
+          "rolls": [],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "no critical strike multiplier"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "no_critical_strike_multiplier"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Azure_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Xoph's Blood",
+      "display_name": "Xoph's Blood Amber Amulet",
+      "base_name": "Amber Amulet",
+      "href": "https://poe2db.tw/us/Xophs_Blood",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "(10—20)% increased maximum Life",
+          "template": "#% increased maximum Life",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "+(50—100)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence have -25 % to Fire Resistance",
+          "template": "Enemies in your Presence have -25 % to Fire Resistance",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence have fire resistance %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemies_in_presence_have_fire_resistance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Amber_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    },
+    {
+      "name": "Yoke of Suffering",
+      "display_name": "Yoke of Suffering Bloodstone Amulet",
+      "base_name": "Bloodstone Amulet",
+      "href": "https://poe2db.tw/us/Yoke_of_Suffering",
+      "requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(30—40) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(10—15)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "(15—30)% increased Elemental Damage",
+          "template": "#% increased Elemental Damage",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "ElementalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "elemental damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental"
+          ],
+          "affix_ids": [
+            "elemental_damage_+%"
+          ]
+        },
+        {
+          "text": "Enemies take (15—20)% increased Damage for each Elemental Ailment type among your Ailments on them",
+          "template": "Enemies take #% increased Damage for each Elemental Ailment type among your Ailments on them",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "EnemiesTakeIncreasedDamagePerAilmentType",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "elemental ailment types apply damage taken +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "elemental_ailment_types_apply_damage_taken_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% reduced Duration of Ignite , Shock and Chill on Enemies",
+          "template": "#% reduced Duration of Ignite , Shock and Chill on Enemies",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "ElementalAilmentDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite shock chill duration +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "ignite_shock_chill_duration_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Amulets",
+      "base_href": "https://poe2db.tw/Bloodstone_Amulet",
+      "item_class": "Amulets",
+      "class_slug": "Amulets"
+    }
+  ]
+}

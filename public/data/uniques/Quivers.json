@@ -1,0 +1,1215 @@
+{
+  "class": "Quivers",
+  "slug": "Quivers",
+  "uniques": [
+    {
+      "name": "Asphyxia's Wrath",
+      "display_name": "Asphyxia's Wrath Broadhead Quiver",
+      "base_name": "Broadhead Quiver",
+      "href": "https://poe2db.tw/us/Asphyxias_Wrath",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 1 to 3 Physical Damage to Attacks",
+          "template": "Adds 1 to 3 Physical Damage to Attacks",
+          "rolls": [],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds (3—4) to (5—8) Cold damage to Attacks",
+          "template": "Adds # to # Cold damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(3—4)",
+              "min": 3,
+              "max": 4
+            },
+            {
+              "raw": "(5—8)",
+              "min": 5,
+              "max": 8
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added cold damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(5—10)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Enemies Chilled by your Hits increase damage taken by Chill Magnitude",
+          "template": "Enemies Chilled by your Hits increase damage taken by Chill Magnitude",
+          "rolls": [],
+          "family": "EnemiesChilledIncreasedDamageTaken",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies chilled by hits take damage increased by chill effect"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemies_chilled_by_hits_take_damage_increased_by_chill_effect"
+          ]
+        },
+        {
+          "text": "Attacks Gain (5—10)% of Damage as Extra Cold Damage",
+          "template": "Attacks Gain #% of Damage as Extra Cold Damage",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "PhysicalAddedAsCold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as cold with attacks"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_cold_with_attacks"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Broadhead_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "Beyond Reach",
+      "display_name": "Beyond Reach Visceral Quiver",
+      "base_name": "Visceral Quiver",
+      "href": "https://poe2db.tw/us/Beyond_Reach",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(20—30)% increased Critical Hit Chance for Attacks",
+          "template": "#% increased Critical Hit Chance for Attacks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "attack_critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "(10—15)% reduced Attack Speed",
+          "template": "#% reduced Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Chaos Damage from Hits also Contributes to Freeze Buildup",
+          "template": "Chaos Damage from Hits also Contributes to Freeze Buildup",
+          "rolls": [],
+          "family": "ChanceToFreeze",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chaos damage can freeze"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Elemental",
+            "Cold",
+            "Chaos",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chaos_damage_can_freeze"
+          ]
+        },
+        {
+          "text": "Chaos Damage from Hits also Contributes to Electrocute Buildup",
+          "template": "Chaos Damage from Hits also Contributes to Electrocute Buildup",
+          "rolls": [],
+          "family": "AllDamageCanElectrocute",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage can electrocute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Elemental",
+            "Lightning",
+            "Chaos",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_can_electrocute"
+          ]
+        },
+        {
+          "text": "Attacks Gain (10—20)% of Physical Damage as extra Chaos Damage",
+          "template": "Attacks Gain #% of Physical Damage as extra Chaos Damage",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "PhysicalDamageAddedAsChaos",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base physical damage % to gain as chaos with attacks"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical",
+            "Chaos",
+            "Attack"
+          ],
+          "affix_ids": [
+            "non_skill_base_physical_damage_%_to_gain_as_chaos_with_attacks"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Visceral_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "Blackgleam",
+      "display_name": "Blackgleam Fire Quiver",
+      "base_name": "Fire Quiver",
+      "href": "https://poe2db.tw/us/Blackgleam",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 3 to 5 Fire damage to Attacks",
+          "template": "Adds 3 to 5 Fire damage to Attacks",
+          "rolls": [],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added fire damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "Adds (3—5) to (6—9) Fire damage to Attacks",
+          "template": "Adds # to # Fire damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            },
+            {
+              "raw": "(6—9)",
+              "min": 6,
+              "max": 9
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added fire damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "50 % increased Flammability Magnitude",
+          "template": "50 % increased Flammability Magnitude",
+          "rolls": [],
+          "family": "IgniteChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_chance_+%"
+          ]
+        },
+        {
+          "text": "Projectiles Pierce all Ignited enemies",
+          "template": "Projectiles Pierce all Ignited enemies",
+          "rolls": [],
+          "family": "ArrowPierce",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "always pierce burning enemies"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "always_pierce_burning_enemies"
+          ]
+        },
+        {
+          "text": "Attacks Gain (5—10)% of Damage as Extra Fire Damage",
+          "template": "Attacks Gain #% of Damage as Extra Fire Damage",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "PhysicalAddedAsFire",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as fire with attacks"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_fire_with_attacks"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Fire_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "Cadiro's Gambit",
+      "display_name": "Cadiro's Gambit Primed Quiver",
+      "base_name": "Primed Quiver",
+      "href": "https://poe2db.tw/us/Cadiros_Gambit",
+      "requirements": {
+        "level": 66,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 51,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(7—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(7—10)",
+              "min": 7,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Each Arrow fired is a Crescendo , Splinter , Reversing , Diamond , Covetous , or Blunt Arrow",
+          "template": "Each Arrow fired is a Crescendo , Splinter , Reversing , Diamond , Covetous , or Blunt Arrow",
+          "rolls": [],
+          "family": "PerandusArrows",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "each arrow fired gains random perdandus prefix"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "each_arrow_fired_gains_random_perdandus_prefix"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Primed_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "Drillneck",
+      "display_name": "Drillneck Penetrating Quiver",
+      "base_name": "Penetrating Quiver",
+      "href": "https://poe2db.tw/us/Drillneck",
+      "requirements": {
+        "level": 55,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 55,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "100 % chance to Pierce an Enemy",
+          "template": "100 % chance to Pierce an Enemy",
+          "rolls": [],
+          "family": "ChanceToPierce",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to pierce %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_pierce_%"
+          ]
+        },
+        {
+          "text": "+(60—90) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(60—90)",
+              "min": 60,
+              "max": 90
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(8—12)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(8—12)",
+              "min": 8,
+              "max": 12
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Gain Deflection Rating equal to (24—32)% of Evasion Rating",
+          "template": "Gain Deflection Rating equal to #% of Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(24—32)",
+              "min": 24,
+              "max": 32
+            }
+          ],
+          "family": "EvasionAppliesToDeflection",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base deflection rating % of evasion rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_deflection_rating_%_of_evasion_rating"
+          ]
+        },
+        {
+          "text": "Attack Projectiles Return if they Pierced at least (2—4) times",
+          "template": "Attack Projectiles Return if they Pierced at least # times",
+          "rolls": [
+            {
+              "raw": "(2—4)",
+              "min": 2,
+              "max": 4
+            }
+          ],
+          "family": "ArrowPierce",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack projectiles return after piercing X times"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_projectiles_return_after_piercing_X_times"
+          ]
+        },
+        {
+          "text": "Projectiles deal (42—64)% increased Damage with Hits for each time they have Pierced",
+          "template": "Projectiles deal #% increased Damage with Hits for each time they have Pierced",
+          "rolls": [
+            {
+              "raw": "(42—64)",
+              "min": 42,
+              "max": 64
+            }
+          ],
+          "family": "ProjectileDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectile damage +% per pierced enemy"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "projectile_damage_+%_per_pierced_enemy"
+          ]
+        },
+        {
+          "text": "Projectiles have (42—64)% increased Critical Hit chance for each time they have Pierced",
+          "template": "Projectiles have #% increased Critical Hit chance for each time they have Pierced",
+          "rolls": [
+            {
+              "raw": "(42—64)",
+              "min": 42,
+              "max": 64
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectiles crit chance +% for each time they have pierced"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "projectiles_crit_chance_+%_for_each_time_they_have_pierced"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Penetrating_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "Murkshaft",
+      "display_name": "Murkshaft Toxic Quiver",
+      "base_name": "Toxic Quiver",
+      "href": "https://poe2db.tw/us/Murkshaft",
+      "requirements": {
+        "level": 39,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 39,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 10 Bursting Fen Toad",
+          "template": "Grants Skill: Level 10 Bursting Fen Toad",
+          "rolls": []
+        },
+        {
+          "text": "(20—30)% chance to Poison on Hit with Attacks",
+          "template": "#% chance to Poison on Hit with Attacks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ChanceToPoisonWithAttacks",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to poison on hit with attacks %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chance_to_poison_on_hit_with_attacks_%"
+          ]
+        },
+        {
+          "text": "Adds (6—10) to (13—17) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(6—10)",
+              "min": 6,
+              "max": 10
+            },
+            {
+              "raw": "(13—17)",
+              "min": 13,
+              "max": 17
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Gain (10—15) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Poison Duration",
+          "template": "#% increased Poison Duration",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "PoisonDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base poison duration +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_poison_duration_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% chance to Poison on Hit with Attacks",
+          "template": "#% chance to Poison on Hit with Attacks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ChanceToPoisonWithAttacks",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to poison on hit with attacks %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chance_to_poison_on_hit_with_attacks_%"
+          ]
+        },
+        {
+          "text": "Blind Targets when you Poison them",
+          "template": "Blind Targets when you Poison them",
+          "rolls": [],
+          "family": "GlobalChanceToBlindOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "blind on poison inflicted"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "blind_on_poison_inflicted"
+          ]
+        },
+        {
+          "text": "local display triggers level x toad on kill [1]",
+          "template": "local display triggers level x toad on kill [1]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local display triggers level x toad on kill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "poison",
+            "Chaos",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_display_triggers_level_x_toad_on_kill"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Toxic_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "Rearguard",
+      "display_name": "Rearguard Blunt Quiver",
+      "base_name": "Blunt Quiver",
+      "href": "https://poe2db.tw/us/Rearguard",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(25—40)% increased Stun Buildup",
+          "template": "#% increased Stun Buildup",
+          "rolls": [
+            {
+              "raw": "(25—40)",
+              "min": 25,
+              "max": 40
+            }
+          ],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "hit damage stun multiplier +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "hit_damage_stun_multiplier_+%"
+          ]
+        },
+        {
+          "text": "Adds (7—11) to (14—20) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(7—11)",
+              "min": 7,
+              "max": 11
+            },
+            {
+              "raw": "(14—20)",
+              "min": 14,
+              "max": 20
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(150—200) to Armour",
+          "template": "+# to Armour",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "IncreasedPhysicalDamageReductionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base physical damage reduction rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Projectile Speed",
+          "template": "#% increased Projectile Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ProjectileSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base projectile speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_projectile_speed_+%"
+          ]
+        },
+        {
+          "text": "+(15—25)% to Block chance",
+          "template": "+#% to Block chance",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "BlockPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional block %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "block"
+          ],
+          "affix_ids": [
+            "additional_block_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Blunt_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    },
+    {
+      "name": "The Lethal Draw",
+      "display_name": "The Lethal Draw Sacral Quiver",
+      "base_name": "Sacral Quiver",
+      "href": "https://poe2db.tw/us/The_Lethal_Draw",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Gain (2—3) Life per Enemy Hit with Attacks",
+          "template": "Gain # Life per Enemy Hit with Attacks",
+          "rolls": [
+            {
+              "raw": "(2—3)",
+              "min": 2,
+              "max": 3
+            }
+          ],
+          "family": "LifeGainPerTarget",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gain per target"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Attack"
+          ],
+          "affix_ids": [
+            "base_life_gain_per_target"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Gain 5 Life per Enemy Hit with Attacks",
+          "template": "Gain 5 Life per Enemy Hit with Attacks",
+          "rolls": [],
+          "family": "LifeGainPerTarget",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gain per target"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Attack"
+          ],
+          "affix_ids": [
+            "base_life_gain_per_target"
+          ]
+        },
+        {
+          "text": "(15—25)% chance to Pierce an Enemy",
+          "template": "#% chance to Pierce an Enemy",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "ChanceToPierce",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to pierce %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_pierce_%"
+          ]
+        },
+        {
+          "text": "Bow Attacks consume 10 % of your maximum Life Flask Charges if possible to deal added Physical damage equal to (5—10)% of Flask 's Life Recovery amount",
+          "template": "Bow Attacks consume 10 % of your maximum Life Flask Charges if possible to deal added Physical damage equal to #% of Flask 's Life Recovery amount",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "FlaskChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "bow attacks deal added physical damage equal to x% of life flask recovery amount"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "bow_attacks_deal_added_physical_damage_equal_to_x%_of_life_flask_recovery_amount"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Quivers",
+      "base_href": "https://poe2db.tw/Sacral_Quiver",
+      "item_class": "Quivers",
+      "class_slug": "Quivers"
+    }
+  ]
+}

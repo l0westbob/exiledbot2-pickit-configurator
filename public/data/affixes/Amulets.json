@@ -5,82 +5,178 @@
     {
       "name": "Crimson Amulet",
       "href": "https://poe2db.tw/Crimson_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Azure Amulet",
       "href": "https://poe2db.tw/Azure_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Amber Amulet",
       "href": "https://poe2db.tw/Amber_Amulet",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Jade Amulet",
       "href": "https://poe2db.tw/Jade_Amulet",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Lapis Amulet",
       "href": "https://poe2db.tw/Lapis_Amulet",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Lunar Amulet",
       "href": "https://poe2db.tw/Lunar_Amulet",
-      "required_level": 14
+      "required_level": 14,
+      "requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Bloodstone Amulet",
       "href": "https://poe2db.tw/Bloodstone_Amulet",
-      "required_level": 18
+      "required_level": 18,
+      "requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Stellar Amulet",
       "href": "https://poe2db.tw/Stellar_Amulet",
-      "required_level": 25
+      "required_level": 25,
+      "requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Solar Amulet",
       "href": "https://poe2db.tw/Solar_Amulet",
-      "required_level": 30
+      "required_level": 30,
+      "requirements": {
+        "level": 30,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Gold Amulet",
       "href": "https://poe2db.tw/Gold_Amulet",
-      "required_level": 35
+      "required_level": 35,
+      "requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Pearlescent Amulet",
       "href": "https://poe2db.tw/Pearlescent_Amulet",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Dusk Amulet",
       "href": "https://poe2db.tw/Dusk_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Gloam Amulet",
       "href": "https://poe2db.tw/Gloam_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Penumbra Amulet",
       "href": "https://poe2db.tw/Penumbra_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Tenebrous Amulet",
       "href": "https://poe2db.tw/Tenebrous_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Distorted Amulet",
       "href": "https://poe2db.tw/Distorted_Amulet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     }
   ],
   "modifier_sections": {

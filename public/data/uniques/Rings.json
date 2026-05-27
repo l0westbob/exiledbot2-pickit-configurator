@@ -1,0 +1,4614 @@
+{
+  "class": "Rings",
+  "slug": "Rings",
+  "uniques": [
+    {
+      "name": "Andvarius",
+      "display_name": "Andvarius Gold Ring",
+      "base_name": "Gold Ring",
+      "href": "https://poe2db.tw/us/Andvarius",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(6—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(6—15)",
+              "min": 6,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(50—70)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+10 to Dexterity",
+          "template": "+10 to Dexterity",
+          "rolls": [],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "-20 % to all Elemental Resistances",
+          "template": "-20 % to all Elemental Resistances",
+          "rolls": [],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Gold_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Blackflame",
+      "display_name": "Blackflame Amethyst Ring",
+      "base_name": "Amethyst Ring",
+      "href": "https://poe2db.tw/us/Blackflame",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(7—13)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(15—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "50 % increased Ignite Magnitude",
+          "template": "50 % increased Ignite Magnitude",
+          "rolls": [],
+          "family": "IgniteEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base ignite effect +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_ignite_effect_+%"
+          ]
+        },
+        {
+          "text": "50 % reduced Ignite Duration on Enemies",
+          "template": "50 % reduced Ignite Duration on Enemies",
+          "rolls": [],
+          "family": "BurnDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite duration +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "ignite_duration_+%"
+          ]
+        },
+        {
+          "text": "Enemies Ignited by you take Chaos Damage instead of Fire Damage from Ignite",
+          "template": "Enemies Ignited by you take Chaos Damage instead of Fire Damage from Ignite",
+          "rolls": [],
+          "family": "EnemiesIgniteChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies you ignite take chaos damage from ignite instead"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "enemies_you_ignite_take_chaos_damage_from_ignite_instead"
+          ]
+        },
+        {
+          "text": "use unique blackflame ignite effect [1]",
+          "template": "use unique blackflame ignite effect [1]",
+          "rolls": [],
+          "family": "EnemiesIgniteChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "use unique blackflame ignite effect"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "use_unique_blackflame_ignite_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Amethyst_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Blackheart",
+      "display_name": "Blackheart Iron Ring",
+      "base_name": "Iron Ring",
+      "href": "https://poe2db.tw/us/Blackheart",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 1 to 4 Physical Damage to Attacks",
+          "template": "Adds 1 to 4 Physical Damage to Attacks",
+          "rolls": [],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "(3—6) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(3—6)",
+              "min": 3,
+              "max": 6
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Adds (4—6) to (8—10) Chaos Damage to Attacks",
+          "template": "Adds # to # Chaos Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(4—6)",
+              "min": 4,
+              "max": 6
+            },
+            {
+              "raw": "(8—10)",
+              "min": 8,
+              "max": 10
+            }
+          ],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added chaos damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_chaos_damage"
+          ]
+        },
+        {
+          "text": "25 % chance to Intimidate Enemies for 4 seconds on Hit",
+          "template": "25 % chance to Intimidate Enemies for 4 seconds on Hit",
+          "rolls": [],
+          "family": "ChanceToIntimidateOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to intimidate on hit %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "chance_to_intimidate_on_hit_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Iron_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Blistering Bond",
+      "display_name": "Blistering Bond Ruby Ring",
+      "base_name": "Ruby Ring",
+      "href": "https://poe2db.tw/us/Blistering_Bond",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(-15—-10)% to Cold Resistance",
+          "template": "#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(-15—-10)",
+              "min": -15,
+              "max": -10
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "You take Fire Damage instead of Physical Damage from Bleeding",
+          "template": "You take Fire Damage instead of Physical Damage from Bleeding",
+          "rolls": [],
+          "family": "BleedOnSelfDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "bleeding damage on self taken as fire instead"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "bleeding_damage_on_self_taken_as_fire_instead"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Ruby_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Bursting Decay",
+      "display_name": "Bursting Decay Unset Ring",
+      "base_name": "Unset Ring",
+      "href": "https://poe2db.tw/us/Bursting_Decay",
+      "requirements": {
+        "level": 60,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants 1 additional Skill Slot",
+          "template": "Grants 1 additional Skill Slot",
+          "rolls": [],
+          "family": "AdditionalSkillSlots",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local item additional skill slots"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_item_additional_skill_slots"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Lose 5 % of maximum Life per second",
+          "template": "Lose 5 % of maximum Life per second",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life degeneration % per minute not in grace"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_degeneration_%_per_minute_not_in_grace"
+          ]
+        },
+        {
+          "text": "Attacks have added Physical damage equal to 3 % of maximum Life",
+          "template": "Attacks have added Physical damage equal to 3 % of maximum Life",
+          "rolls": [],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack added physical damage % of maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical"
+          ],
+          "affix_ids": [
+            "attack_added_physical_damage_%_of_maximum_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Unset_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Call of the Brotherhood",
+      "display_name": "Call of the Brotherhood Topaz Ring",
+      "base_name": "Topaz Ring",
+      "href": "https://poe2db.tw/us/Call_of_the_Brotherhood",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(25—35)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Freeze Buildup",
+          "template": "#% increased Freeze Buildup",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FreezeDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "hit damage freeze multiplier +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "hit_damage_freeze_multiplier_+%"
+          ]
+        },
+        {
+          "text": "100 % of Lightning Damage Converted to Cold Damage",
+          "template": "100 % of Lightning Damage Converted to Cold Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base lightning damage % to convert to cold"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_lightning_damage_%_to_convert_to_cold"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Topaz_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Cracklecreep",
+      "display_name": "Cracklecreep Ruby Ring",
+      "base_name": "Ruby Ring",
+      "href": "https://poe2db.tw/us/Cracklecreep",
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Fire Damage",
+          "template": "#% increased Fire Damage",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireDamagePercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "fire damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "fire_damage_+%"
+          ]
+        },
+        {
+          "text": "(3.1—6) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(3.1—6)",
+              "min": 3.1,
+              "max": 6
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Ignites you inflict spread to other Enemies that stay within 1.5 metres for 1 second",
+          "template": "Ignites you inflict spread to other Enemies that stay within 1.5 metres for 1 second",
+          "rolls": [],
+          "family": "GlobalIgniteProlif",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite proliferation radius 15"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_proliferation_radius_15"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Ruby_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Death Rush",
+      "display_name": "Death Rush Emerald Ring",
+      "base_name": "Emerald Ring",
+      "href": "https://poe2db.tw/us/Death_Rush",
+      "requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(120—160) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(120—160)",
+              "min": 120,
+              "max": 160
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(75—125) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(75—125)",
+              "min": 75,
+              "max": 125
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(75—125) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(75—125)",
+              "min": 75,
+              "max": 125
+            }
+          ],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base evasion rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_evasion_rating"
+          ]
+        },
+        {
+          "text": "Leech 5 % of Physical Attack Damage as Life",
+          "template": "Leech 5 % of Physical Attack Damage as Life",
+          "rolls": [],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life leech from physical attack damage permyriad"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "base_life_leech_from_physical_attack_damage_permyriad"
+          ]
+        },
+        {
+          "text": "You gain Onslaught for 4 seconds on Kill",
+          "template": "You gain Onslaught for 4 seconds on Kill",
+          "rolls": [],
+          "family": "OnslaughtBuffOnKill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "onslaught buff duration on kill ms"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "onslaught_buff_duration_on_kill_ms"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Emerald_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Doedre's Damning",
+      "display_name": "Doedre's Damning Lazuli Ring",
+      "base_name": "Lazuli Ring",
+      "href": "https://poe2db.tw/us/Doedres_Damning",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(5—15)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "Gain (1—10) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(1—10)",
+              "min": 1,
+              "max": 10
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "You can apply an additional Curse",
+          "template": "You can apply an additional Curse",
+          "rolls": [],
+          "family": "AdditionalCurseOnEnemies",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "number of additional curses allowed"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Curse"
+          ],
+          "affix_ids": [
+            "number_of_additional_curses_allowed"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Lazuli_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Dream Fragments",
+      "display_name": "Dream Fragments Sapphire Ring",
+      "base_name": "Sapphire Ring",
+      "href": "https://poe2db.tw/us/Dream_Fragments",
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(10—15)% increased maximum Mana",
+          "template": "#% increased maximum Mana",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "MaximumManaIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum mana +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "maximum_mana_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "You cannot be Chilled or Frozen",
+          "template": "You cannot be Chilled or Frozen",
+          "rolls": [],
+          "family": "CannotBeChilledOrFrozen",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cannot be chilled or frozen"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_cannot_be_chilled_or_frozen"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Sapphire_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Evergrasping Ring",
+      "display_name": "Evergrasping Ring Pearl Ring",
+      "base_name": "Pearl Ring",
+      "href": "https://poe2db.tw/us/Evergrasping_Ring",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(7—10)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(7—10)",
+              "min": 7,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "Allies in your Presence Gain (15—25)% of Damage as Extra Chaos Damage",
+          "template": "Allies in your Presence Gain #% of Damage as Extra Chaos Damage",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence non skill base all damage % to gain as chaos"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "allies_in_presence_non_skill_base_all_damage_%_to_gain_as_chaos"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence Gain (6—12)% of Damage as Extra Chaos Damage",
+          "template": "Enemies in your Presence Gain #% of Damage as Extra Chaos Damage",
+          "rolls": [
+            {
+              "raw": "(6—12)",
+              "min": 6,
+              "max": 12
+            }
+          ],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence non skill base all damage % to gain as chaos"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "enemies_in_presence_non_skill_base_all_damage_%_to_gain_as_chaos"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Pearl_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Gifts from Above",
+      "display_name": "Gifts from Above Prismatic Ring",
+      "base_name": "Prismatic Ring",
+      "href": "https://poe2db.tw/us/Gifts_from_Above",
+      "requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(7—10)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(7—10)",
+              "min": 7,
+              "max": 10
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Light Radius",
+          "template": "#% increased Light Radius",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Rarity of Items Dropped by Enemies killed with a Critical Hit",
+          "template": "#% increased Rarity of Items Dropped by Enemies killed with a Critical Hit",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "KilledMonsterItemRarityOnCrit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "killed monster dropped item rarity +% on crit"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "killed_monster_dropped_item_rarity_+%_on_crit"
+          ]
+        },
+        {
+          "text": "You have Consecrated Ground around you while stationary",
+          "template": "You have Consecrated Ground around you while stationary",
+          "rolls": [],
+          "family": "ConsecratedGroundStationary",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gifts from above consecrated ground while stationary"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gifts_from_above_consecrated_ground_while_stationary"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Prismatic_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Glowswarm",
+      "display_name": "Glowswarm Lazuli Ring",
+      "base_name": "Lazuli Ring",
+      "href": "https://poe2db.tw/us/Glowswarm",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Mana Recovery rate",
+          "template": "#% increased Flask Mana Recovery rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask mana recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "flask_mana_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "Mana Flasks gain (0.17—0.25) charges per Second",
+          "template": "Mana Flasks gain # charges per Second",
+          "rolls": [
+            {
+              "raw": "(0.17—0.25)",
+              "min": 0.17,
+              "max": 0.25
+            }
+          ],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for mana flasks per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_mana_flasks_per_minute"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Lazuli_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Grip of Kulemak",
+      "display_name": "Grip of Kulemak Abyssal Signet",
+      "base_name": "Abyssal Signet",
+      "href": "https://poe2db.tw/us/Grip_of_Kulemak",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Inflict Abyssal Wasting on Hit",
+          "template": "Inflict Abyssal Wasting on Hit",
+          "rolls": [],
+          "family": "AbyssalWasting",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "abyssal wasting on hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "abyssal_wasting_on_hit"
+          ]
+        },
+        {
+          "text": "(20—30)% reduced Presence Area of Effect",
+          "template": "#% reduced Presence Area of Effect",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "presence area +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "presence_area_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% reduced Light Radius",
+          "template": "#% reduced Light Radius",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "[Can gain 0-4 custom Desecrated Modifiers]",
+          "template": "[Can gain 0-4 custom Desecrated Modifiers]",
+          "rolls": [],
+          "affix_ids": [
+            "abyssal_wasting_effect_+%",
+            "abyssal_wasting_infinite_duration",
+            "abyssal_wasting_fire_resistance_%",
+            "armour_%_applies_to_fire_cold_lightning_damage",
+            "non_skill_base_all_damage_%_to_gain_as_fire",
+            "curse_delay_+%",
+            "spirit_+_if_at_least_200_strength",
+            "base_ignite_effect_+%",
+            "physical_damage_reduction_rating_+%",
+            "curse_area_of_effect_+%",
+            "base_debuff_slow_magnitude_+%",
+            "spirit_+%",
+            "strength_+%",
+            "max_endurance_charges",
+            "base_self_critical_strike_multiplier_-%",
+            "base_slow_potency_+%",
+            "movement_speed_penalty_+%_while_performing_action",
+            "skill_effect_duration_+%",
+            "base_spirit_reservation_efficiency_+%",
+            "thorns_damage_+%_if_consumed_endurance_charge_recently",
+            "you_and_allies_in_presence_chaos_damage_resistance_%",
+            "you_and_allies_in_presence_cooldown_speed_+%",
+            "accuracy_rating_+%_vs_abyssal_wasting_afflicted",
+            "abyssal_wasting_instant_mana_leech_%",
+            "abyssal_wasting_cold_resistance_%",
+            "chill_effect_+%",
+            "critical_strike_chance_+%",
+            "non_skill_base_all_damage_%_to_gain_as_cold",
+            "base_damage_removed_from_mana_before_life_%",
+            "recover_mana_%_on_enemy_death_in_presence",
+            "energy_shield_delay_-%",
+            "spirit_+_if_at_least_200_intelligence",
+            "gain_arcane_surge_for_4_seconds_on_minion_death",
+            "maximum_energy_shield_+%",
+            "intelligence_+%",
+            "spell_area_of_effect_+%",
+            "mana_regeneration_rate_+%_while_surrounded",
+            "maximum_mana_+%",
+            "max_power_charges",
+            "energy_generated_+%",
+            "cast_speed_+%_per_20_spirit",
+            "skill_cost_efficiency_+%_if_consumed_power_charge_recently",
+            "triggered_spell_spell_damage_+%",
+            "you_and_allies_in_presence_cast_speed_+%",
+            "ailment_chance_+%_vs_abyssal_wasting_afflicted",
+            "abyssal_wasting_instant_life_leech_%",
+            "abyssal_wasting_lightning_resistance_%",
+            "chance_to_fork_extra_projectile_%",
+            "base_critical_strike_multiplier_+",
+            "non_skill_base_all_damage_%_to_gain_as_lightning",
+            "recover_life_%_on_enemy_death_in_presence",
+            "base_deflection_rating_%_of_evasion_rating",
+            "spirit_+_if_at_least_200_dexterity",
+            "gain_onslaught_for_4_seconds_on_minion_death",
+            "attack_area_of_effect_+%",
+            "dexterity_+%",
+            "evasion_rating_+%",
+            "life_leech_amount_+%_if_consumed_frenzy_charge_recently",
+            "life_regeneration_rate_+%_while_surrounded",
+            "max_frenzy_charges",
+            "maximum_life_+%",
+            "attack_speed_+%_per_20_spirit",
+            "projectile_chance_to_chain_1_extra_time_from_terrain_%",
+            "shock_effect_+%",
+            "you_and_allies_in_presence_accuracy_rating_+%",
+            "you_and_allies_in_presence_attack_speed_+%"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "abyssal_wasting_effect_+%",
+              "text": "(60-100)% increased Magnitude of Abyssal Wasting you inflict"
+            },
+            {
+              "affix_id": "abyssal_wasting_infinite_duration",
+              "text": "Abyssal Wasting you inflict has Infinite Duration"
+            },
+            {
+              "affix_id": "abyssal_wasting_fire_resistance_%",
+              "text": "Abyssal Wasting also applies (-8--6)% to Fire Resistance"
+            },
+            {
+              "affix_id": "armour_%_applies_to_fire_cold_lightning_damage",
+              "text": "+(20-30)% of Armour also applies to Elemental Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "text": "Gain (8-12)% of Damage as Extra Fire Damage"
+            },
+            {
+              "affix_id": "curse_delay_+%",
+              "text": "(10-20)% faster Curse Activation"
+            },
+            {
+              "affix_id": "spirit_+_if_at_least_200_strength",
+              "text": "+(20-25) to Spirit while you have at least 200 Strength"
+            },
+            {
+              "affix_id": "base_ignite_effect_+%",
+              "text": "(20-30)% increased Ignite Magnitude"
+            },
+            {
+              "affix_id": "physical_damage_reduction_rating_+%",
+              "text": "(30-40)% increased Armour"
+            },
+            {
+              "affix_id": "curse_area_of_effect_+%",
+              "text": "(15-25)% increased Area of Effect of Curses"
+            },
+            {
+              "affix_id": "base_debuff_slow_magnitude_+%",
+              "text": "Debuffs you inflict have (12-20)% increased Slow Magnitude"
+            },
+            {
+              "affix_id": "spirit_+%",
+              "text": "(6-10)% increased Spirit"
+            },
+            {
+              "affix_id": "strength_+%",
+              "text": "(4-6)% increased Strength"
+            },
+            {
+              "affix_id": "max_endurance_charges",
+              "text": "+1 to Maximum Endurance Charges"
+            },
+            {
+              "affix_id": "base_self_critical_strike_multiplier_-%",
+              "text": "Hits against you have (20-30)% reduced Critical Damage Bonus"
+            },
+            {
+              "affix_id": "base_slow_potency_+%",
+              "text": "(10-20)% reduced Slowing Potency of Debuffs on You"
+            },
+            {
+              "affix_id": "movement_speed_penalty_+%_while_performing_action",
+              "text": "(5-8)% reduced Movement Speed Penalty from using Skills while moving"
+            },
+            {
+              "affix_id": "skill_effect_duration_+%",
+              "text": "(10-16)% increased Skill Effect Duration"
+            },
+            {
+              "affix_id": "base_spirit_reservation_efficiency_+%",
+              "text": "(6-10)% increased Spirit Reservation Efficiency of Skills"
+            },
+            {
+              "affix_id": "thorns_damage_+%_if_consumed_endurance_charge_recently",
+              "text": "(30-50)% increased Thorns damage if you've consumed an Endurance Charge Recently"
+            },
+            {
+              "affix_id": "you_and_allies_in_presence_chaos_damage_resistance_%",
+              "text": "You and Allies in your Presence have +(17-23)% to Chaos Resistance"
+            },
+            {
+              "affix_id": "you_and_allies_in_presence_cooldown_speed_+%",
+              "text": "You and Allies in your Presence have (10-14)% increased Cooldown Recovery Rate"
+            },
+            {
+              "affix_id": "accuracy_rating_+%_vs_abyssal_wasting_afflicted",
+              "text": "(30-40)% increased Accuracy Rating against Enemies affected by Abyssal Wasting"
+            },
+            {
+              "affix_id": "abyssal_wasting_instant_mana_leech_%",
+              "text": "(20-30)% of Mana Leeched from targets affected by Abyssal Wasting is Instant"
+            },
+            {
+              "affix_id": "abyssal_wasting_cold_resistance_%",
+              "text": "Abyssal Wasting also applies (-8--6)% to Cold Resistance"
+            },
+            {
+              "affix_id": "chill_effect_+%",
+              "text": "(20-30)% increased Magnitude of Chill you inflict"
+            },
+            {
+              "affix_id": "critical_strike_chance_+%",
+              "text": "(25-40)% increased Critical Hit Chance"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "text": "Gain (8-12)% of Damage as Extra Cold Damage"
+            },
+            {
+              "affix_id": "base_damage_removed_from_mana_before_life_%",
+              "text": "(10-14)% of Damage is taken from Mana before Life"
+            },
+            {
+              "affix_id": "recover_mana_%_on_enemy_death_in_presence",
+              "text": "Recover (3-5)% of your maximum Mana when an Enemy dies in your Presence"
+            },
+            {
+              "affix_id": "energy_shield_delay_-%",
+              "text": "(15-25)% faster start of Energy Shield Recharge"
+            },
+            {
+              "affix_id": "spirit_+_if_at_least_200_intelligence",
+              "text": "+(20-25) to Spirit while you have at least 200 Intelligence"
+            },
+            {
+              "affix_id": "gain_arcane_surge_for_4_seconds_on_minion_death",
+              "text": "Gain Arcane Surge when a Minion Dies"
+            },
+            {
+              "affix_id": "maximum_energy_shield_+%",
+              "text": "(30-40)% increased maximum Energy Shield"
+            },
+            {
+              "affix_id": "intelligence_+%",
+              "text": "(4-6)% increased Intelligence"
+            },
+            {
+              "affix_id": "spell_area_of_effect_+%",
+              "text": "Spell Skills have (9-18)% increased Area of Effect"
+            },
+            {
+              "affix_id": "mana_regeneration_rate_+%_while_surrounded",
+              "text": "(40-60)% increased Mana Regeneration Rate while Surrounded"
+            },
+            {
+              "affix_id": "maximum_mana_+%",
+              "text": "(5-10)% increased maximum Mana"
+            },
+            {
+              "affix_id": "max_power_charges",
+              "text": "+1 to Maximum Power Charges"
+            },
+            {
+              "affix_id": "energy_generated_+%",
+              "text": "Meta Skills gain (10-16)% increased Energy"
+            },
+            {
+              "affix_id": "cast_speed_+%_per_20_spirit",
+              "text": "2% increased Cast Speed per 20 Spirit"
+            },
+            {
+              "affix_id": "skill_cost_efficiency_+%_if_consumed_power_charge_recently",
+              "text": "(10-20)% increased Cost Efficiency of Skills if you've consumed a Power Charge Recently"
+            },
+            {
+              "affix_id": "triggered_spell_spell_damage_+%",
+              "text": "Triggered Spells deal (25-40)% increased Spell Damage"
+            },
+            {
+              "affix_id": "you_and_allies_in_presence_cast_speed_+%",
+              "text": "You and Allies in your Presence have (11-16)% increased Cast Speed"
+            },
+            {
+              "affix_id": "ailment_chance_+%_vs_abyssal_wasting_afflicted",
+              "text": "(30-40)% increased chance to inflict Ailments against Enemies affected by Abyssal Wasting"
+            },
+            {
+              "affix_id": "abyssal_wasting_instant_life_leech_%",
+              "text": "(20-30)% of Life Leeched from targets affected by Abyssal Wasting is Instant"
+            },
+            {
+              "affix_id": "abyssal_wasting_lightning_resistance_%",
+              "text": "Abyssal Wasting also applies (-8--6)% to Lightning Resistance"
+            },
+            {
+              "affix_id": "chance_to_fork_extra_projectile_%",
+              "text": "Projectiles have (40-50)% chance for an additional Projectile when Forking"
+            },
+            {
+              "affix_id": "base_critical_strike_multiplier_+",
+              "text": "(15-25)% increased Critical Damage Bonus"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "text": "Gain (8-12)% of Damage as Extra Lightning Damage"
+            },
+            {
+              "affix_id": "recover_life_%_on_enemy_death_in_presence",
+              "text": "Recover (2-3)% of your maximum Life when an Enemy dies in your Presence"
+            },
+            {
+              "affix_id": "base_deflection_rating_%_of_evasion_rating",
+              "text": "Gain Deflection Rating equal to (10-20)% of Evasion Rating"
+            },
+            {
+              "affix_id": "spirit_+_if_at_least_200_dexterity",
+              "text": "+(20-25) to Spirit while you have at least 200 Dexterity"
+            },
+            {
+              "affix_id": "gain_onslaught_for_4_seconds_on_minion_death",
+              "text": "Gain Onslaught for 4 seconds when a Minion Dies"
+            },
+            {
+              "affix_id": "attack_area_of_effect_+%",
+              "text": "(9-18)% increased Area of Effect for Attacks"
+            },
+            {
+              "affix_id": "dexterity_+%",
+              "text": "(4-6)% increased Dexterity"
+            },
+            {
+              "affix_id": "evasion_rating_+%",
+              "text": "(30-40)% increased Evasion Rating"
+            },
+            {
+              "affix_id": "life_leech_amount_+%_if_consumed_frenzy_charge_recently",
+              "text": "(20-30)% increased amount of Life Leeched if you've consumed a Frenzy Charge Recently"
+            },
+            {
+              "affix_id": "life_regeneration_rate_+%_while_surrounded",
+              "text": "(30-40)% increased Life Regeneration rate while Surrounded"
+            },
+            {
+              "affix_id": "max_frenzy_charges",
+              "text": "+1 to Maximum Frenzy Charges"
+            },
+            {
+              "affix_id": "maximum_life_+%",
+              "text": "(5-10)% increased maximum Life"
+            },
+            {
+              "affix_id": "attack_speed_+%_per_20_spirit",
+              "text": "1% increased Attack Speed per 20 Spirit"
+            },
+            {
+              "affix_id": "projectile_chance_to_chain_1_extra_time_from_terrain_%",
+              "text": "Projectiles have (10-16)% chance to Chain an additional time from terrain"
+            },
+            {
+              "affix_id": "shock_effect_+%",
+              "text": "(15-25)% increased Magnitude of Shock you inflict"
+            },
+            {
+              "affix_id": "you_and_allies_in_presence_accuracy_rating_+%",
+              "text": "You and Allies in your Presence have (20-28)% increased Accuracy Rating"
+            },
+            {
+              "affix_id": "you_and_allies_in_presence_attack_speed_+%",
+              "text": "You and Allies in your Presence have (7-12)% increased Attack Speed"
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Abyssal_Signet",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Heartbound Loop",
+      "display_name": "Heartbound Loop Pearl Ring",
+      "base_name": "Pearl Ring",
+      "href": "https://poe2db.tw/us/Heartbound_Loop",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(7—10)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(7—10)",
+              "min": 7,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Minions have (10—15)% increased maximum Life",
+          "template": "Minions have #% increased maximum Life",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "MinionLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Minion"
+          ],
+          "affix_ids": [
+            "minion_maximum_life_+%"
+          ]
+        },
+        {
+          "text": "(10—15) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "(20—40)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "300 Physical Damage taken on Minion Death",
+          "template": "300 Physical Damage taken on Minion Death",
+          "rolls": [],
+          "family": "SelfPhysicalDamageOnMinionDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "physical damage taken on minion death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "physical_damage_taken_on_minion_death"
+          ]
+        },
+        {
+          "text": "Minions Revive (10—15)% faster",
+          "template": "Minions Revive #% faster",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "MinionReviveSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion resummon speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Minion"
+          ],
+          "affix_ids": [
+            "minion_resummon_speed_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Pearl_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Icefang Orbit",
+      "display_name": "Icefang Orbit Iron Ring",
+      "base_name": "Iron Ring",
+      "href": "https://poe2db.tw/us/Icefang_Orbit",
+      "requirements": {
+        "level": 36,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 1 to 4 Physical Damage to Attacks",
+          "template": "Adds 1 to 4 Physical Damage to Attacks",
+          "rolls": [],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds (5—7) to (9—13) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            },
+            {
+              "raw": "(9—13)",
+              "min": 9,
+              "max": 13
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(10—20)% chance to Poison on Hit",
+          "template": "#% chance to Poison on Hit",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "PoisonChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to poison on hit %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_poison_on_hit_%"
+          ]
+        },
+        {
+          "text": "All Damage taken from Hits while Poisoned Contributes to Magnitude of Chill on you",
+          "template": "All Damage taken from Hits while Poisoned Contributes to Magnitude of Chill on you",
+          "rolls": [],
+          "family": "ChilledWhilePoisoned",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all damage taken chills you while poisoned"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "all_damage_taken_chills_you_while_poisoned"
+          ]
+        },
+        {
+          "text": "All Damage from Hits against Poisoned targets Contributes to Chill Magnitude",
+          "template": "All Damage from Hits against Poisoned targets Contributes to Chill Magnitude",
+          "rolls": [],
+          "family": "NonChilledEnemiesPoisonAndChill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all damage to poisoned enemies contributes to chill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "all_damage_to_poisoned_enemies_contributes_to_chill"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Magnitude of Poison you inflict",
+          "template": "#% increased Magnitude of Poison you inflict",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "PoisonEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base poison effect +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_poison_effect_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Iron_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Kalandra's Touch",
+      "display_name": "Kalandra's Touch Ring",
+      "base_name": "Ring",
+      "href": "https://poe2db.tw/us/Kalandras_Touch",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Reflects opposite Ring",
+          "template": "Reflects opposite Ring",
+          "rolls": [],
+          "family": "DuplicatesRingStats",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local ring duplicate other ring"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_ring_duplicate_other_ring"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Levinstone",
+      "display_name": "Levinstone Topaz Ring",
+      "base_name": "Topaz Ring",
+      "href": "https://poe2db.tw/us/Levinstone",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(10—20)% increased chance to Shock",
+          "template": "#% increased chance to Shock",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ShockChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "shock chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "shock_chance_+%"
+          ]
+        },
+        {
+          "text": "+1 to Level of all Lightning Skills",
+          "template": "+1 to Level of all Lightning Skills",
+          "rolls": [],
+          "family": "GlobalDamageTypeGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lightning skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Gem"
+          ],
+          "affix_ids": [
+            "lightning_skill_gem_level_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Topaz_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Ming's Heart",
+      "display_name": "Ming's Heart Amethyst Ring",
+      "base_name": "Amethyst Ring",
+      "href": "https://poe2db.tw/us/Mings_Heart",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(7—13)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "20 % reduced maximum Life",
+          "template": "20 % reduced maximum Life",
+          "rolls": [],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "Gain (30—40)% of Damage as Extra Chaos Damage",
+          "template": "Gain #% of Damage as Extra Chaos Damage",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "PhysicalDamageAddedAsChaos",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as chaos"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_chaos"
+          ]
+        },
+        {
+          "text": "30 % reduced Global Defences",
+          "template": "30 % reduced Global Defences",
+          "rolls": [],
+          "family": "AllDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "global defences +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Defences"
+          ],
+          "affix_ids": [
+            "global_defences_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Amethyst_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Original Sin",
+      "display_name": "Original Sin Amethyst Ring",
+      "base_name": "Amethyst Ring",
+      "href": "https://poe2db.tw/us/Original_Sin",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(7—13)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "100 % of Elemental Damage Converted to Chaos Damage",
+          "template": "100 % of Elemental Damage Converted to Chaos Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to convert to chaos"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_convert_to_chaos"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Amethyst_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Perandus Seal",
+      "display_name": "Perandus Seal Gold Ring",
+      "base_name": "Gold Ring",
+      "href": "https://poe2db.tw/us/Perandus_Seal",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(6—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(6—15)",
+              "min": 6,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(5—10) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Quantity of Gold Dropped by Slain Enemies",
+          "template": "#% increased Quantity of Gold Dropped by Slain Enemies",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gold +% from enemies"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "gold_+%_from_enemies"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Gold_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Polcirkeln",
+      "display_name": "Polcirkeln Sapphire Ring",
+      "base_name": "Sapphire Ring",
+      "href": "https://poe2db.tw/us/Polcirkeln",
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Cold Damage",
+          "template": "#% increased Cold Damage",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdDamagePercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cold damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold"
+          ],
+          "affix_ids": [
+            "cold_damage_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Enemies Chilled by your Hits can be Shattered as though Frozen",
+          "template": "Enemies Chilled by your Hits can be Shattered as though Frozen",
+          "rolls": [],
+          "family": "ChillHitsCauseShattering",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chills from your hits cause shattering"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "chills_from_your_hits_cause_shattering"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Sapphire_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Prized Pain",
+      "display_name": "Prized Pain Iron Ring",
+      "base_name": "Iron Ring",
+      "href": "https://poe2db.tw/us/Prized_Pain",
+      "requirements": {
+        "level": 48,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 1 to 4 Physical Damage to Attacks",
+          "template": "Adds 1 to 4 Physical Damage to Attacks",
+          "rolls": [],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Skills gain a Base Life Cost equal to 10 % of Base Mana Cost",
+          "template": "Skills gain a Base Life Cost equal to 10 % of Base Mana Cost",
+          "rolls": [],
+          "family": "LifeCostAsManaCost",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base skill gain life cost % of mana cost"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_skill_gain_life_cost_%_of_mana_cost"
+          ]
+        },
+        {
+          "text": "Deal your Thorns Damage to Enemies you Stun with Melee Attacks",
+          "template": "Deal your Thorns Damage to Enemies you Stun with Melee Attacks",
+          "rolls": [],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "deal thorns damage on stun"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "deal_thorns_damage_on_stun"
+          ]
+        },
+        {
+          "text": "(24—35) to (35—53) Physical Thorns damage",
+          "template": "# to # Physical Thorns damage",
+          "rolls": [
+            {
+              "raw": "(24—35)",
+              "min": 24,
+              "max": 35
+            },
+            {
+              "raw": "(35—53)",
+              "min": 35,
+              "max": 53
+            }
+          ],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns minimum base physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "thorns_minimum_base_physical_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Iron_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Seed of Cataclysm",
+      "display_name": "Seed of Cataclysm Lazuli Ring",
+      "base_name": "Lazuli Ring",
+      "href": "https://poe2db.tw/us/Seed_of_Cataclysm",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Critical Hit Chance for Spells",
+          "template": "#% increased Critical Hit Chance for Spells",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "SpellCriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Critical"
+          ],
+          "affix_ids": [
+            "spell_critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Critical Spell Damage Bonus",
+          "template": "#% increased Critical Spell Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spell critical strike multiplier +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Critical"
+          ],
+          "affix_ids": [
+            "base_spell_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "+(13—17)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(13—17)",
+              "min": 13,
+              "max": 17
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "10 % increased Mana Cost of Skills",
+          "template": "10 % increased Mana Cost of Skills",
+          "rolls": [],
+          "family": "ManaCostReduction",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana cost -%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_cost_-%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Lazuli_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Sekhema's Resolve",
+      "display_name": "Sekhema's Resolve Ring",
+      "base_name": "Ring",
+      "href": "https://poe2db.tw/us/Sekhemas_Resolve",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(10—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "Lightning Resistance is unaffected by Area Penalties",
+          "template": "Lightning Resistance is unaffected by Area Penalties",
+          "rolls": [],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lightning resist unaffected by area penalties"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "lightning_resist_unaffected_by_area_penalties"
+          ]
+        },
+        {
+          "text": "You can only Socket Emerald Jewels in this item",
+          "template": "You can only Socket Emerald Jewels in this item",
+          "rolls": [],
+          "family": "OnlySocketSpecificJewel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local can only socket emerald gems"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Gem"
+          ],
+          "affix_ids": [
+            "local_can_only_socket_emerald_gems"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Snakepit",
+      "display_name": "Snakepit Pearl Ring",
+      "base_name": "Pearl Ring",
+      "href": "https://poe2db.tw/us/Snakepit",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(7—10)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(7—10)",
+              "min": 7,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "SpellDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Left ring slot: Projectiles from Spells cannot Chain",
+          "template": "Left ring slot: Projectiles from Spells cannot Chain",
+          "rolls": [],
+          "family": "LeftRingSpellProjectilesCannotChain",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local left ring slot projectiles from spells cannot chain"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_left_ring_slot_projectiles_from_spells_cannot_chain"
+          ]
+        },
+        {
+          "text": "Left ring slot: Projectiles from Spells Fork",
+          "template": "Left ring slot: Projectiles from Spells Fork",
+          "rolls": [],
+          "family": "LeftRingSpellProjectilesFork",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local left ring slot projectiles from spells fork"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_left_ring_slot_projectiles_from_spells_fork"
+          ]
+        },
+        {
+          "text": "Right ring slot: Projectiles from Spells Chain + 1 times",
+          "template": "Right ring slot: Projectiles from Spells Chain + 1 times",
+          "rolls": [],
+          "family": "RightRingSpellProjectilesChain",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local right ring slot number of additional chains for spell projectiles"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_right_ring_slot_number_of_additional_chains_for_spell_projectiles"
+          ]
+        },
+        {
+          "text": "Right ring slot: Projectiles from Spells cannot Fork",
+          "template": "Right ring slot: Projectiles from Spells cannot Fork",
+          "rolls": [],
+          "family": "RightRingSpellProjectilesCannotFork",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local right ring slot projectiles from spells cannot fork"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_right_ring_slot_projectiles_from_spells_cannot_fork"
+          ]
+        },
+        {
+          "text": "Projectiles from Spells cannot Pierce",
+          "template": "Projectiles from Spells cannot Pierce",
+          "rolls": [],
+          "family": "SpellsCannotPierce",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectiles from spells cannot pierce"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "projectiles_from_spells_cannot_pierce"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Pearl_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "The Burrower",
+      "display_name": "The Burrower Topaz Ring",
+      "base_name": "Topaz Ring",
+      "href": "https://poe2db.tw/us/The_Burrower",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "-10 % to Cold Resistance",
+          "template": "-10 % to Cold Resistance",
+          "rolls": [],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Lightning Damage of Enemies Hitting you is Unlucky",
+          "template": "Lightning Damage of Enemies Hitting you is Unlucky",
+          "rolls": [],
+          "family": "EnemyExtraDamageRolls",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies extra damage rolls with lightning damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning"
+          ],
+          "affix_ids": [
+            "enemies_extra_damage_rolls_with_lightning_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Topaz_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Thief's Torment",
+      "display_name": "Thief's Torment Emerald Ring",
+      "base_name": "Emerald Ring",
+      "href": "https://poe2db.tw/us/Thiefs_Torment",
+      "requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(120—160) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(120—160)",
+              "min": 120,
+              "max": 160
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(10—15)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "Gain 25 Life per Enemy Hit with Attacks",
+          "template": "Gain 25 Life per Enemy Hit with Attacks",
+          "rolls": [],
+          "family": "LifeGainPerTarget",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gain per target"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Attack"
+          ],
+          "affix_ids": [
+            "base_life_gain_per_target"
+          ]
+        },
+        {
+          "text": "Can't use other Rings",
+          "template": "Can't use other Rings",
+          "rolls": [],
+          "family": "DisablesOtherRingSlot",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local ring disable other ring"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_ring_disable_other_ring"
+          ]
+        },
+        {
+          "text": "Gain 15 Mana per Enemy Hit with Attacks",
+          "template": "Gain 15 Mana per Enemy Hit with Attacks",
+          "rolls": [],
+          "family": "ManaGainPerTarget",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana gain per target"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana",
+            "Attack"
+          ],
+          "affix_ids": [
+            "mana_gain_per_target"
+          ]
+        },
+        {
+          "text": "50 % reduced Duration of Curses on you",
+          "template": "50 % reduced Duration of Curses on you",
+          "rolls": [],
+          "family": "SelfCurseDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "self curse duration +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Curse"
+          ],
+          "affix_ids": [
+            "self_curse_duration_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Emerald_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Venopuncture",
+      "display_name": "Venopuncture Iron Ring",
+      "base_name": "Iron Ring",
+      "href": "https://poe2db.tw/us/Venopuncture",
+      "requirements": {
+        "level": 36,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 1 to 4 Physical Damage to Attacks",
+          "template": "Adds 1 to 4 Physical Damage to Attacks",
+          "rolls": [],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds (5—7) to (9—13) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            },
+            {
+              "raw": "(9—13)",
+              "min": 9,
+              "max": 13
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "All Damage taken from Hits while Bleeding Contributes to Magnitude of Chill on you",
+          "template": "All Damage taken from Hits while Bleeding Contributes to Magnitude of Chill on you",
+          "rolls": [],
+          "family": "ChilledWhileBleeding",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all damage taken chills you while bleeding"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "all_damage_taken_chills_you_while_bleeding"
+          ]
+        },
+        {
+          "text": "All Damage from Hits against Bleeding targets Contributes to Chill Magnitude",
+          "template": "All Damage from Hits against Bleeding targets Contributes to Chill Magnitude",
+          "rolls": [],
+          "family": "NonChilledEnemiesBleedAndChill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all damage to bleeding enemies contributes to chill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "all_damage_to_bleeding_enemies_contributes_to_chill"
+          ]
+        },
+        {
+          "text": "(10—20)% chance to inflict Bleeding on Hit",
+          "template": "#% chance to inflict Bleeding on Hit",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ChanceToBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to inflict bleeding %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_inflict_bleeding_%"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Magnitude of Bleeding you inflict",
+          "template": "#% increased Magnitude of Bleeding you inflict",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "BleedingDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base bleeding effect +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "bleed",
+            "Damage",
+            "Physical",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "base_bleeding_effect_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Iron_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Ventor's Gamble",
+      "display_name": "Ventor's Gamble Gold Ring",
+      "base_name": "Gold Ring",
+      "href": "https://poe2db.tw/us/Ventors_Gamble",
+      "requirements": {
+        "level": 64,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(6—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(6—15)",
+              "min": 6,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(0—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(0—80)",
+              "min": 0,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(0—20) to Spirit",
+          "template": "+# to Spirit",
+          "rolls": [
+            {
+              "raw": "(0—20)",
+              "min": 0,
+              "max": 20
+            }
+          ],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "(-25—25)% reduced Rarity of Items found",
+          "template": "#% reduced Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(-25—25)",
+              "min": -25,
+              "max": 25
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "(-40—40)% to Fire Resistance",
+          "template": "#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(-40—40)",
+              "min": -40,
+              "max": 40
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(-40—40)% to Cold Resistance",
+          "template": "#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(-40—40)",
+              "min": -40,
+              "max": 40
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(-40—40)% to Lightning Resistance",
+          "template": "#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(-40—40)",
+              "min": -40,
+              "max": 40
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Gold_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Vigilant View",
+      "display_name": "Vigilant View Emerald Ring",
+      "base_name": "Emerald Ring",
+      "href": "https://poe2db.tw/us/Vigilant_View",
+      "requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(120—160) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(120—160)",
+              "min": 120,
+              "max": 160
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(100—150) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(100—150) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base evasion rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_evasion_rating"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Enemies have an Accuracy Penalty against you based on Distance",
+          "template": "Enemies have an Accuracy Penalty against you based on Distance",
+          "rolls": [],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemy hits against you have distance based accuracy falloff"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemy_hits_against_you_have_distance_based_accuracy_falloff"
+          ]
+        },
+        {
+          "text": "Maximum Chance to Evade is 50%",
+          "template": "Maximum Chance to Evade is 50%",
+          "rolls": [],
+          "family": "IncreasedEvasionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum chance to evade is 50%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "maximum_chance_to_evade_is_50%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Emerald_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    },
+    {
+      "name": "Whisper of the Brotherhood",
+      "display_name": "Whisper of the Brotherhood Sapphire Ring",
+      "base_name": "Sapphire Ring",
+      "href": "https://poe2db.tw/us/Whisper_of_the_Brotherhood",
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Skill Speed",
+          "template": "#% increased Skill Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "skill_speed_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(25—35)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "100 % of Cold Damage Converted to Lightning Damage",
+          "template": "100 % of Cold Damage Converted to Lightning Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base cold damage % to convert to lightning"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_cold_damage_%_to_convert_to_lightning"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Rings",
+      "base_href": "https://poe2db.tw/Sapphire_Ring",
+      "item_class": "Rings",
+      "class_slug": "Rings"
+    }
+  ]
+}

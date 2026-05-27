@@ -83,14 +83,7 @@
                 "min": -5
               }
             ]
-          }
-        ]
-      },
-      {
-        "family_key": "SanctumBossReducedDamage",
-        "kind": "prefix",
-        "template": "Bosses deal #% reduced Damage",
-        "tiers": [
+          },
           {
             "level": 60,
             "name": "Vanguard",
@@ -176,14 +169,7 @@
                 "min": -5
               }
             ]
-          }
-        ]
-      },
-      {
-        "family_key": "SanctumGuardsReducedDamage",
-        "kind": "prefix",
-        "template": "[Rarity|Rare] Monsters deal #% reduced Damage",
-        "tiers": [
+          },
           {
             "level": 60,
             "name": "Bastion",

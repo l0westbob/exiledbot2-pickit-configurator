@@ -1,0 +1,803 @@
+{
+  "class": "Quarterstaves",
+  "slug": "Quarterstaves",
+  "uniques": [
+    {
+      "name": "Collapsing Horizon",
+      "display_name": "Collapsing Horizon Wyrm Quarterstaff",
+      "base_name": "Wyrm Quarterstaff",
+      "href": "https://poe2db.tw/us/Collapsing_Horizon",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 89,
+        "int": 36
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 89,
+        "int": 36
+      },
+      "stats": [
+        {
+          "text": "100 % increased Elemental Damage with Attacks",
+          "template": "100 % increased Elemental Damage with Attacks",
+          "rolls": [],
+          "family": "IncreasedWeaponElementalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "elemental damage with attack skills +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Attack"
+          ],
+          "affix_ids": [
+            "elemental_damage_with_attack_skills_+%"
+          ]
+        },
+        {
+          "text": "+(5—10)% to Critical Hit Chance",
+          "template": "+#% to Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "+(2—4) to Level of all Elemental Skills",
+          "template": "+# to Level of all Elemental Skills",
+          "rolls": [
+            {
+              "raw": "(2—4)",
+              "min": 2,
+              "max": 4
+            }
+          ],
+          "family": "GlobalDamageTypeGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "elemental skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Gem"
+          ],
+          "affix_ids": [
+            "elemental_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "Trigger skills refund half of Energy spent",
+          "template": "Trigger skills refund half of Energy spent",
+          "rolls": [],
+          "family": "EnergyGain",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "trigger skills refund half energy spent chance %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "trigger_skills_refund_half_energy_spent_chance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Quarterstaves",
+      "base_href": "https://poe2db.tw/Wyrm_Quarterstaff",
+      "item_class": "Quarterstaves",
+      "class_slug": "Quarterstaves"
+    },
+    {
+      "name": "Matsya",
+      "display_name": "Matsya Crescent Quarterstaff",
+      "base_name": "Crescent Quarterstaff",
+      "href": "https://poe2db.tw/us/Matsya",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": 30,
+        "int": 14
+      },
+      "base_requirements": {
+        "level": 20,
+        "str": null,
+        "dex": 30,
+        "int": 14
+      },
+      "stats": [
+        {
+          "text": "Adds (6—9) to (10—15) Cold Damage",
+          "template": "Adds # to # Cold Damage",
+          "rolls": [
+            {
+              "raw": "(6—9)",
+              "min": 6,
+              "max": 9
+            },
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added cold damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "Adds 1 to (19—29) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(19—29)",
+              "min": 19,
+              "max": 29
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "+(3—5)% to Critical Hit Chance",
+          "template": "+#% to Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "(15—20)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(25—40)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(25—40)",
+              "min": 25,
+              "max": 40
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Skills reserve 50% less Spirit",
+          "template": "Skills reserve 50% less Spirit",
+          "rolls": [],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique spirit reservations are halved"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_spirit_reservations_are_halved"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Quarterstaves",
+      "base_href": "https://poe2db.tw/Crescent_Quarterstaff",
+      "item_class": "Quarterstaves",
+      "class_slug": "Quarterstaves"
+    },
+    {
+      "name": "Nazir's Judgement",
+      "display_name": "Nazir's Judgement Steelpoint Quarterstaff",
+      "base_name": "Steelpoint Quarterstaff",
+      "href": "https://poe2db.tw/us/Nazirs_Judgement",
+      "requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 41,
+        "int": 18
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 41,
+        "int": 18
+      },
+      "stats": [
+        {
+          "text": "Adds (30—36) to (75—81) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(30—36)",
+              "min": 30,
+              "max": 36
+            },
+            {
+              "raw": "(75—81)",
+              "min": 75,
+              "max": 81
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(50—100) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Stun Duration",
+          "template": "#% increased Stun Duration",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "StunDurationIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base stun duration +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_base_stun_duration_+%"
+          ]
+        },
+        {
+          "text": "Dazes on Hit",
+          "template": "Dazes on Hit",
+          "rolls": [],
+          "family": "DazeBuildup",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon daze chance %"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_weapon_daze_chance_%"
+          ]
+        },
+        {
+          "text": "(35—50)% increased Melee Damage against Heavy Stunned enemies",
+          "template": "#% increased Melee Damage against Heavy Stunned enemies",
+          "rolls": [
+            {
+              "raw": "(35—50)",
+              "min": 35,
+              "max": 50
+            }
+          ],
+          "family": "DamageAgainstStunnedEnemies",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "melee damage +% vs heavy stunned enemies"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "melee_damage_+%_vs_heavy_stunned_enemies"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Quarterstaves",
+      "base_href": "https://poe2db.tw/Steelpoint_Quarterstaff",
+      "item_class": "Quarterstaves",
+      "class_slug": "Quarterstaves"
+    },
+    {
+      "name": "Pillar of the Caged God",
+      "display_name": "Pillar of the Caged God Long Quarterstaff",
+      "base_name": "Long Quarterstaff",
+      "href": "https://poe2db.tw/us/Pillar_of_the_Caged_God",
+      "requirements": {
+        "level": 4,
+        "str": null,
+        "dex": 9,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 4,
+        "str": null,
+        "dex": 9,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "16 % increased Melee Strike Range with this weapon",
+          "template": "16 % increased Melee Strike Range with this weapon",
+          "rolls": [],
+          "family": "MeleeWeaponAndUnarmedRange",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local +% weapon range"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_+%_weapon_range"
+          ]
+        },
+        {
+          "text": "1 % increased Area of Effect for Attacks per 10 Intelligence",
+          "template": "1 % increased Area of Effect for Attacks per 10 Intelligence",
+          "rolls": [],
+          "family": "AreaOfEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack area of effect +% per 10 int"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_area_of_effect_+%_per_10_int"
+          ]
+        },
+        {
+          "text": "1 % increased Attack Speed per 10 Dexterity",
+          "template": "1 % increased Attack Speed per 10 Dexterity",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +% per 10 dex"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%_per_10_dex"
+          ]
+        },
+        {
+          "text": "10 % increased Weapon Damage per 10 Strength",
+          "template": "10 % increased Weapon Damage per 10 Strength",
+          "rolls": [],
+          "family": "AttackDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "weapon damage +% per 10 str"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "weapon_damage_+%_per_10_str"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Quarterstaves",
+      "base_href": "https://poe2db.tw/Long_Quarterstaff",
+      "item_class": "Quarterstaves",
+      "class_slug": "Quarterstaves"
+    },
+    {
+      "name": "The Blood Thorn",
+      "display_name": "The Blood Thorn Wrapped Quarterstaff",
+      "base_name": "Wrapped Quarterstaff",
+      "href": "https://poe2db.tw/us/The_Blood_Thorn",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (8—12) to (16—18) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(8—12)",
+              "min": 8,
+              "max": 12
+            },
+            {
+              "raw": "(16—18)",
+              "min": 16,
+              "max": 18
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Causes Bleeding on Hit",
+          "template": "Causes Bleeding on Hit",
+          "rolls": [],
+          "family": "CausesBleeding",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local bleed on hit"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "bleed",
+            "Physical",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_bleed_on_hit"
+          ]
+        },
+        {
+          "text": "(4—5) to (8—10) Physical Thorns damage",
+          "template": "# to # Physical Thorns damage",
+          "rolls": [
+            {
+              "raw": "(4—5)",
+              "min": 4,
+              "max": 5
+            },
+            {
+              "raw": "(8—10)",
+              "min": 8,
+              "max": 10
+            }
+          ],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns minimum base physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "thorns_minimum_base_physical_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Quarterstaves",
+      "base_href": "https://poe2db.tw/Wrapped_Quarterstaff",
+      "item_class": "Quarterstaves",
+      "class_slug": "Quarterstaves"
+    },
+    {
+      "name": "The Sentry",
+      "display_name": "The Sentry Gothic Quarterstaff",
+      "base_name": "Gothic Quarterstaff",
+      "href": "https://poe2db.tw/us/The_Sentry",
+      "requirements": {
+        "level": 11,
+        "str": null,
+        "dex": 18,
+        "int": 9
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": null,
+        "dex": 18,
+        "int": 9
+      },
+      "stats": [
+        {
+          "text": "No Physical Damage",
+          "template": "No Physical Damage",
+          "rolls": [],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon no physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_weapon_no_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds (25—32) to (40—50) Fire Damage",
+          "template": "Adds # to # Fire Damage",
+          "rolls": [
+            {
+              "raw": "(25—32)",
+              "min": 25,
+              "max": 32
+            },
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added fire damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "+(30—50) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "+20 % to Fire Resistance",
+          "template": "+20 % to Fire Resistance",
+          "rolls": [],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "100 % increased Flammability Magnitude",
+          "template": "100 % increased Flammability Magnitude",
+          "rolls": [],
+          "family": "IgniteChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_chance_+%"
+          ]
+        },
+        {
+          "text": "30 % increased Light Radius",
+          "template": "30 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Quarterstaves",
+      "base_href": "https://poe2db.tw/Gothic_Quarterstaff",
+      "item_class": "Quarterstaves",
+      "class_slug": "Quarterstaves"
+    }
+  ]
+}

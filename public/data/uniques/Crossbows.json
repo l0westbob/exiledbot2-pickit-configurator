@@ -1,0 +1,623 @@
+{
+  "class": "Crossbows",
+  "slug": "Crossbows",
+  "uniques": [
+    {
+      "name": "Double Vision",
+      "display_name": "Double Vision Dyad Crossbow",
+      "base_name": "Dyad Crossbow",
+      "href": "https://poe2db.tw/us/Double_Vision",
+      "requirements": {
+        "level": 20,
+        "str": 22,
+        "dex": 22,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 20,
+        "str": 22,
+        "dex": 22,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 6 Gemini Surge",
+          "template": "Grants Skill: Level 6 Gemini Surge",
+          "rolls": []
+        },
+        {
+          "text": "Loads an additional bolt",
+          "template": "Loads an additional bolt",
+          "rolls": [],
+          "family": "AdditionalAmmo",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base number of crossbow bolts"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "base_number_of_crossbow_bolts"
+          ]
+        },
+        {
+          "text": "Adds (14—21) to (25—37) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(14—21)",
+              "min": 14,
+              "max": 21
+            },
+            {
+              "raw": "(25—37)",
+              "min": 25,
+              "max": 37
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+5 % to Critical Hit Chance",
+          "template": "+5 % to Critical Hit Chance",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Reload Speed",
+          "template": "#% increased Reload Speed",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "CrossbowReloadSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local reload speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_reload_speed_+%"
+          ]
+        },
+        {
+          "text": "When you reload, triggers Gemini Surge to alternately",
+          "template": "When you reload, triggers Gemini Surge to alternately",
+          "rolls": []
+        },
+        {
+          "text": "gain (2—6) Cold Surges or (2—6) Fire Surges",
+          "template": "gain # Cold Surges or # Fire Surges",
+          "rolls": [
+            {
+              "raw": "(2—6)",
+              "min": 2,
+              "max": 6
+            },
+            {
+              "raw": "(2—6)",
+              "min": 2,
+              "max": 6
+            }
+          ],
+          "family": "ElementalInfusion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain X instilling fire on reload"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold"
+          ],
+          "affix_ids": [
+            "gain_X_instilling_fire_on_reload"
+          ]
+        },
+        {
+          "text": "trigger reload infusion on reload [1]",
+          "template": "trigger reload infusion on reload [1]",
+          "rolls": [],
+          "family": "ElementalInfusion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "trigger reload infusion on reload"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "trigger_reload_infusion_on_reload"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Crossbows",
+      "base_href": "https://poe2db.tw/Dyad_Crossbow",
+      "item_class": "Crossbows",
+      "class_slug": "Crossbows"
+    },
+    {
+      "name": "Mist Whisper",
+      "display_name": "Mist Whisper Makeshift Crossbow",
+      "base_name": "Makeshift Crossbow",
+      "href": "https://poe2db.tw/us/Mist_Whisper",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (8—10) to (13—15) Cold Damage",
+          "template": "Adds # to # Cold Damage",
+          "rolls": [
+            {
+              "raw": "(8—10)",
+              "min": 8,
+              "max": 10
+            },
+            {
+              "raw": "(13—15)",
+              "min": 13,
+              "max": 15
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added cold damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "Gain 5 Mana per enemy killed",
+          "template": "Gain 5 Mana per enemy killed",
+          "rolls": [],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Freeze Buildup",
+          "template": "#% increased Freeze Buildup",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "FreezeDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "hit damage freeze multiplier +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "hit_damage_freeze_multiplier_+%"
+          ]
+        },
+        {
+          "text": "30 % increased Chill Duration on Enemies",
+          "template": "30 % increased Chill Duration on Enemies",
+          "rolls": [],
+          "family": "IncreasedChillDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chill duration +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chill_duration_+%"
+          ]
+        },
+        {
+          "text": "Attacks Chain 2 additional times",
+          "template": "Attacks Chain 2 additional times",
+          "rolls": [],
+          "family": "Chain",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attacks num of additional chains"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "attacks_num_of_additional_chains"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Crossbows",
+      "base_href": "https://poe2db.tw/Makeshift_Crossbow",
+      "item_class": "Crossbows",
+      "class_slug": "Crossbows"
+    },
+    {
+      "name": "Rampart Raptor",
+      "display_name": "Rampart Raptor Tense Crossbow",
+      "base_name": "Tense Crossbow",
+      "href": "https://poe2db.tw/us/Rampart_Raptor",
+      "requirements": {
+        "level": 4,
+        "str": 8,
+        "dex": 8,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 4,
+        "str": 8,
+        "dex": 8,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(20—30)% increased Bolt Speed",
+          "template": "#% increased Bolt Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ProjectileSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "projectile speed +% with crossbow skills"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "projectile_speed_+%_with_crossbow_skills"
+          ]
+        },
+        {
+          "text": "(40—60)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "30 % reduced Reload Speed",
+          "template": "30 % reduced Reload Speed",
+          "rolls": [],
+          "family": "CrossbowReloadSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local reload speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_reload_speed_+%"
+          ]
+        },
+        {
+          "text": "Bolts fired by Crossbow Attacks have 100 % chance to not expend Ammunition if you've Reloaded Recently",
+          "template": "Bolts fired by Crossbow Attacks have 100 % chance to not expend Ammunition if you've Reloaded Recently",
+          "rolls": [],
+          "family": "CrossbowReloadSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "crossbow attack % chance to not consume ammo if reloaded recently"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "crossbow_attack_%_chance_to_not_consume_ammo_if_reloaded_recently"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Crossbows",
+      "base_href": "https://poe2db.tw/Tense_Crossbow",
+      "item_class": "Crossbows",
+      "class_slug": "Crossbows"
+    },
+    {
+      "name": "The Last Lament",
+      "display_name": "The Last Lament Desolate Crossbow",
+      "base_name": "Desolate Crossbow",
+      "href": "https://poe2db.tw/us/The_Last_Lament",
+      "requirements": {
+        "level": 77,
+        "str": 89,
+        "dex": 89,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 77,
+        "str": 89,
+        "dex": 89,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 17 Requiem",
+          "template": "Grants Skill: Level 17 Requiem",
+          "rolls": []
+        },
+        {
+          "text": "(250—300)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(250—300)",
+              "min": 250,
+              "max": 300
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(40—60)% reduced Reload Speed",
+          "template": "#% reduced Reload Speed",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "CrossbowReloadSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local reload speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_reload_speed_+%"
+          ]
+        },
+        {
+          "text": "Leeches (5—10)% of Physical Damage as Life",
+          "template": "Leeches #% of Physical Damage as Life",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local life leech from physical damage permyriad"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_life_leech_from_physical_damage_permyriad"
+          ]
+        },
+        {
+          "text": "(10—20)% chance to load a bolt into all Crossbow skills on Kill",
+          "template": "#% chance to load a bolt into all Crossbow skills on Kill",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "LoadCrossbowBolt",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to load a bolt on killing an enemy %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "chance_to_load_a_bolt_on_killing_an_enemy_%"
+          ]
+        },
+        {
+          "text": "Sacrifice 300 Life to not consume the last bolt when firing",
+          "template": "Sacrifice 300 Life to not consume the last bolt when firing",
+          "rolls": [],
+          "family": "SacrificeLifeForBolts",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "consume X life instead of last crossbow bolt"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "consume_X_life_instead_of_last_crossbow_bolt"
+          ]
+        },
+        {
+          "text": "enable grand design clip handling [1]",
+          "template": "enable grand design clip handling [1]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enable grand design clip handling"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "skill"
+          ],
+          "affix_ids": [
+            "enable_grand_design_clip_handling"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Crossbows",
+      "base_href": "https://poe2db.tw/Desolate_Crossbow",
+      "item_class": "Crossbows",
+      "class_slug": "Crossbows"
+    }
+  ]
+}

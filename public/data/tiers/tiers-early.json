@@ -1,0 +1,669 @@
+{
+  "source": "poe2scout",
+  "league": "Fate of the Vaal",
+  "snapshot": "week-1",
+  "date": "2025-12-19",
+  "value_currency": "Exalted Orb",
+  "rules": {
+    "unpriced_items": "S",
+    "dynamic_max": "max priced item excluding week-4 top outliers, capped at 5 Divine Orbs converted to Exalted Orbs for the snapshot",
+    "thresholds": {
+      "S": 1,
+      "A": 0.33,
+      "B": 0.1,
+      "C": 0.02,
+      "D": 0.005,
+      "E": 0.0025
+    },
+    "week_4_top_outliers_excluded_from_max": [
+      "Azmeri Reliquary Key",
+      "Mirror of Kalandra",
+      "Uhtred's Augury"
+    ],
+    "divine_cap": 5,
+    "effective_max_exalted": 728.0955
+  },
+  "counts": {
+    "S": 17,
+    "A": 20,
+    "B": 27,
+    "C": 46,
+    "D": 88,
+    "E": 87,
+    "F": 152
+  },
+  "tiers": {
+    "S": {
+      "Currency": [
+        "Hinekora's Lock",
+        "Mirror of Kalandra"
+      ],
+      "Fragments": [
+        "Azmeri Reliquary Key"
+      ],
+      "Runes": [
+        "Countess Seske's Rune of Archery"
+      ],
+      "Essences": [],
+      "Soul Cores": [],
+      "Expedition Coinage & Artifacts": [],
+      "Ritual Omens": [
+        "Omen of Chance"
+      ],
+      "Reliquary Keys": [
+        "The Trialmaster's Reliquary Key"
+      ],
+      "Breach": [],
+      "Abyssal Bones": [],
+      "Uncut Gems": [],
+      "Lineage Support Gems": [
+        "Dialla's Desire",
+        "Garukhan's Resolve",
+        "Rakiata's Flow",
+        "Tul's Stillness",
+        "Uhtred's Augury",
+        "Uhtred's Omen",
+        "Uul-Netol's Embrace",
+        "Xoph's Pyre"
+      ],
+      "Delirium": [],
+      "Incursion": [
+        "Guatelitzi's Thesis",
+        "Jiquani's Thesis",
+        "Quipolatl's Thesis"
+      ],
+      "Idols": []
+    },
+    "A": {
+      "Currency": [],
+      "Fragments": [],
+      "Runes": [
+        "Hedgewitch Assandra's Rune of Wisdom"
+      ],
+      "Essences": [],
+      "Soul Cores": [],
+      "Expedition Coinage & Artifacts": [],
+      "Ritual Omens": [
+        "Omen of Dextral Annulment",
+        "Omen of Dextral Erasure",
+        "Omen of Light",
+        "Omen of Sinistral Annulment",
+        "Omen of Sinistral Erasure",
+        "Omen of Whittling"
+      ],
+      "Reliquary Keys": [
+        "Olroth's Reliquary Key",
+        "Tangmazu's Reliquary Key",
+        "The Arbiter's Reliquary Key",
+        "Zarokh's Reliquary Key: Against the Darkness"
+      ],
+      "Breach": [],
+      "Abyssal Bones": [
+        "Ancient Collarbone",
+        "Ancient Jawbone"
+      ],
+      "Uncut Gems": [
+        "Uncut Skill Gem (Level 20)",
+        "Uncut Spirit Gem (Level 20)"
+      ],
+      "Lineage Support Gems": [
+        "Esh's Radiance",
+        "Ixchel's Torment",
+        "Rigwald's Ferocity",
+        "Uhtred's Exodus"
+      ],
+      "Delirium": [
+        "Concentrated Liquid Isolation"
+      ],
+      "Incursion": [],
+      "Idols": []
+    },
+    "B": {
+      "Currency": [
+        "Divine Orb",
+        "Perfect Chaos Orb",
+        "Perfect Exalted Orb"
+      ],
+      "Fragments": [
+        "Ancient Crisis Fragment",
+        "Primary Calamity Fragment"
+      ],
+      "Runes": [
+        "Courtesan Mannan's Rune of Cruelty",
+        "Farrul's Rune of the Chase"
+      ],
+      "Essences": [
+        "Essence of Hysteria",
+        "Perfect Essence of Battle"
+      ],
+      "Soul Cores": [
+        "Soul Core of Jiquani",
+        "Tzamoto's Soul Core of Ferocity"
+      ],
+      "Expedition Coinage & Artifacts": [],
+      "Ritual Omens": [
+        "Omen of Abyssal Echoes",
+        "Omen of Dextral Crystallisation",
+        "Omen of Sanctification",
+        "Omen of Sinistral Crystallisation"
+      ],
+      "Reliquary Keys": [
+        "Xesht's Reliquary Key"
+      ],
+      "Breach": [],
+      "Abyssal Bones": [
+        "Amanamu's Gaze",
+        "Ancient Rib",
+        "Tecrod's Gaze"
+      ],
+      "Uncut Gems": [],
+      "Lineage Support Gems": [
+        "Amanamu's Tithe",
+        "Atalui's Bloodletting",
+        "Atziri's Impatience",
+        "Brutus' Brain"
+      ],
+      "Delirium": [
+        "Concentrated Liquid Suffering"
+      ],
+      "Incursion": [
+        "Citaqualotl's Thesis",
+        "Vaal Cultivation Orb"
+      ],
+      "Idols": [
+        "Idol of Sirrius"
+      ]
+    },
+    "C": {
+      "Currency": [
+        "Fracturing Orb",
+        "Orb of Annulment",
+        "Perfect Jeweller's Orb"
+      ],
+      "Fragments": [
+        "Cowardly Fate",
+        "Deadly Fate",
+        "Faded Crisis Fragment",
+        "Secondary Calamity Fragment",
+        "Tertiary Calamity Fragment",
+        "Victorious Fate",
+        "Weathered Crisis Fragment"
+      ],
+      "Runes": [
+        "Saqawal's Rune of Memory",
+        "Saqawal's Rune of the Sky"
+      ],
+      "Essences": [
+        "Essence of Horror",
+        "Essence of Opulence",
+        "Greater Essence of Opulence",
+        "Perfect Essence of Haste"
+      ],
+      "Soul Cores": [
+        "Soul Core of Azcapa",
+        "Soul Core of Quipolatl",
+        "Soul Core of Tacati",
+        "Xopec's Soul Core of Power"
+      ],
+      "Expedition Coinage & Artifacts": [],
+      "Ritual Omens": [
+        "Omen of Amelioration",
+        "Omen of Catalysing Exaltation",
+        "Omen of Chaotic Rarity",
+        "Omen of Corruption",
+        "Omen of Recombination"
+      ],
+      "Reliquary Keys": [
+        "Ritualistic Reliquary Key"
+      ],
+      "Breach": [],
+      "Abyssal Bones": [
+        "Kurgal's Gaze",
+        "Preserved Collarbone",
+        "Preserved Cranium"
+      ],
+      "Uncut Gems": [
+        "Uncut Spirit Gem (Level 19)",
+        "Uncut Spirit Gem (Level 8)",
+        "Uncut Spirit Gem (Level 9)"
+      ],
+      "Lineage Support Gems": [
+        "Arbiter's Ignition",
+        "Doedre's Undoing",
+        "Khatal's Rejuvenation",
+        "Sione's Temper",
+        "Tecrod's Revenge",
+        "Zerphi's Infamy"
+      ],
+      "Delirium": [
+        "Concentrated Liquid Fear"
+      ],
+      "Incursion": [
+        "Architect's Orb",
+        "Core Destabiliser",
+        "Crystallised Corruption",
+        "Vaal Infuser"
+      ],
+      "Idols": [
+        "Idol of Eeshta",
+        "Idol of Ralakesh",
+        "Rabbit Idol"
+      ]
+    },
+    "D": {
+      "Currency": [
+        "Greater Chaos Orb",
+        "Greater Exalted Orb",
+        "Orb of Chance",
+        "Perfect Regal Orb"
+      ],
+      "Fragments": [],
+      "Runes": [
+        "Craiceann's Rune of Recovery",
+        "Farrul's Rune of the Hunt",
+        "Fenumus' Rune of Agony",
+        "Fenumus' Rune of Spinning",
+        "Greater Rune of Alacrity",
+        "Greater Rune of Tithing",
+        "Iron Rune",
+        "Resolve Rune",
+        "Storm Rune",
+        "Thane Grannell's Rune of Mastery",
+        "Thane Leld's Rune of Spring",
+        "The Greatwolf's Rune of Claws",
+        "The Greatwolf's Rune of Willpower"
+      ],
+      "Essences": [
+        "Essence of Abrasion",
+        "Essence of Delirium",
+        "Essence of Insanity",
+        "Greater Essence of Abrasion",
+        "Greater Essence of Ruin",
+        "Lesser Essence of Opulence",
+        "Perfect Essence of Abrasion",
+        "Perfect Essence of Electricity",
+        "Perfect Essence of Sorcery"
+      ],
+      "Soul Cores": [
+        "Atmohua's Soul Core of Retreat",
+        "Estazunti's Soul Core of Convalescence",
+        "Guatelitzi's Soul Core of Endurance",
+        "Quipolatl's Soul Core of Flow",
+        "Soul Core of Citaqualotl",
+        "Soul Core of Ticaba",
+        "Soul Core of Zalatl",
+        "Topotante's Soul Core of Dampening",
+        "Xipocado's Soul Core of Dominion"
+      ],
+      "Expedition Coinage & Artifacts": [],
+      "Ritual Omens": [
+        "Omen of Chaotic Monsters",
+        "Omen of Chaotic Quantity",
+        "Omen of Greater Exaltation",
+        "Omen of Putrefaction",
+        "Omen of Reinforcements",
+        "Omen of Secret Compartments",
+        "Omen of Sinistral Exaltation",
+        "Omen of Sinistral Necromancy",
+        "Omen of the Ancients",
+        "Omen of the Blessed"
+      ],
+      "Reliquary Keys": [
+        "Twilight Reliquary Key"
+      ],
+      "Breach": [
+        "Esh's Catalyst",
+        "Reaver Catalyst",
+        "Tul's Catalyst",
+        "Xoph's Catalyst"
+      ],
+      "Abyssal Bones": [
+        "Kulemak's Invitation",
+        "Preserved Rib",
+        "Ulaman's Gaze"
+      ],
+      "Uncut Gems": [
+        "Uncut Skill Gem (Level 1)",
+        "Uncut Skill Gem (Level 19)",
+        "Uncut Spirit Gem (Level 10)",
+        "Uncut Spirit Gem (Level 14)",
+        "Uncut Spirit Gem (Level 15)",
+        "Uncut Spirit Gem (Level 16)",
+        "Uncut Spirit Gem (Level 17)",
+        "Uncut Spirit Gem (Level 18)",
+        "Uncut Spirit Gem (Level 4)",
+        "Uncut Spirit Gem (Level 5)",
+        "Uncut Spirit Gem (Level 7)"
+      ],
+      "Lineage Support Gems": [
+        "Ahn's Citadel",
+        "Ailith's Chimes",
+        "Arjun's Medal",
+        "Atziri's Allure",
+        "Bhatair's Vengeance",
+        "Dominus' Grasp",
+        "Hayoxi's Fulmination",
+        "Kalisa's Crescendo",
+        "Kaom's Madness",
+        "Kulemak's Dominion",
+        "Kurgal's Leash",
+        "Oisín's Oath",
+        "Ratha's Assault",
+        "Xibaqua's Rending",
+        "Zarokh's Revolt"
+      ],
+      "Delirium": [
+        "Liquid Despair",
+        "Liquid Disgust"
+      ],
+      "Incursion": [
+        "Ancient Infuser",
+        "Orb of Extraction"
+      ],
+      "Idols": [
+        "Fox Idol",
+        "Idol of Egrin",
+        "Idol of Maxarius",
+        "Idol of Thruldana",
+        "Primate Idol"
+      ]
+    },
+    "E": {
+      "Currency": [
+        "Chaos Orb",
+        "Perfect Orb of Augmentation"
+      ],
+      "Fragments": [
+        "Simulacrum Splinter"
+      ],
+      "Runes": [
+        "Adept Rune",
+        "Body Rune",
+        "Craiceann's Rune of Warding",
+        "Fenumus' Rune of Draining",
+        "Greater Rune of Leadership",
+        "Lady Hestra's Rune of Winter",
+        "Lesser Adept Rune",
+        "Lesser Iron Rune",
+        "Lesser Storm Rune",
+        "Robust Rune",
+        "Saqawal's Rune of Erosion",
+        "Thane Girt's Rune of Wildness",
+        "Thane Myrk's Rune of Summer"
+      ],
+      "Essences": [
+        "Essence of Command",
+        "Essence of Electricity",
+        "Essence of Grounding",
+        "Essence of Haste",
+        "Essence of Insulation",
+        "Essence of Ruin",
+        "Essence of Seeking",
+        "Essence of the Abyss",
+        "Essence of the Body",
+        "Greater Essence of Grounding",
+        "Greater Essence of Haste",
+        "Greater Essence of Insulation",
+        "Greater Essence of Seeking",
+        "Greater Essence of Thawing",
+        "Lesser Essence of Abrasion",
+        "Lesser Essence of Alacrity",
+        "Lesser Essence of Electricity",
+        "Lesser Essence of Haste",
+        "Lesser Essence of Ruin",
+        "Lesser Essence of Seeking",
+        "Lesser Essence of Sorcery",
+        "Perfect Essence of Alacrity",
+        "Perfect Essence of Enhancement",
+        "Perfect Essence of Ice",
+        "Perfect Essence of the Mind"
+      ],
+      "Soul Cores": [
+        "Cholotl's Soul Core of War",
+        "Hayoxi's Soul Core of Heatproofing",
+        "Opiloti's Soul Core of Assault",
+        "Soul Core of Atmohua",
+        "Soul Core of Cholotl",
+        "Soul Core of Opiloti",
+        "Soul Core of Puhuarte",
+        "Soul Core of Topotante",
+        "Soul Core of Tzamoto",
+        "Soul Core of Xopec",
+        "Soul Core of Zantipi",
+        "Tacati's Soul Core of Affliction",
+        "Uromoti's Soul Core of Attenuation",
+        "Zalatl's Soul Core of Insulation"
+      ],
+      "Expedition Coinage & Artifacts": [],
+      "Ritual Omens": [
+        "Omen of Answered Prayers",
+        "Omen of Bartering",
+        "Omen of Dextral Exaltation",
+        "Omen of Dextral Necromancy",
+        "Omen of Resurgence",
+        "Omen of the Hunt",
+        "Omen of the Sovereign"
+      ],
+      "Reliquary Keys": [],
+      "Breach": [
+        "Carapace Catalyst",
+        "Chayula's Catalyst",
+        "Sibilant Catalyst",
+        "Uul-Netol's Catalyst"
+      ],
+      "Abyssal Bones": [],
+      "Uncut Gems": [
+        "Uncut Skill Gem (Level 11)",
+        "Uncut Skill Gem (Level 7)",
+        "Uncut Skill Gem (Level 8)",
+        "Uncut Spirit Gem (Level 11)",
+        "Uncut Spirit Gem (Level 13)",
+        "Uncut Spirit Gem (Level 6)",
+        "Uncut Support Gem (Level 3)",
+        "Uncut Support Gem (Level 4)"
+      ],
+      "Lineage Support Gems": [
+        "Arakaali's Lust",
+        "Einhar's Beastrite",
+        "Morgana's Tempest",
+        "Romira's Requital",
+        "Uruk's Smelting",
+        "Vilenta's Propulsion",
+        "Zarokh's Refrain"
+      ],
+      "Delirium": [],
+      "Incursion": [],
+      "Idols": [
+        "Boar Idol",
+        "Idol of Grold",
+        "Owl Idol",
+        "Snake Idol",
+        "Stag Idol",
+        "Wolf Idol"
+      ]
+    },
+    "F": {
+      "Currency": [
+        "Arcanist's Etcher",
+        "Armourer's Scrap",
+        "Artificer's Orb",
+        "Artificer's Shard",
+        "Blacksmith's Whetstone",
+        "Chance Shard",
+        "Exalted Orb",
+        "Gemcutter's Prism",
+        "Glassblower's Bauble",
+        "Greater Jeweller's Orb",
+        "Greater Orb of Augmentation",
+        "Greater Orb of Transmutation",
+        "Greater Regal Orb",
+        "Lesser Jeweller's Orb",
+        "Orb of Alchemy",
+        "Orb of Augmentation",
+        "Orb of Transmutation",
+        "Perfect Orb of Transmutation",
+        "Regal Orb",
+        "Regal Shard",
+        "Scroll of Wisdom",
+        "Transmutation Shard",
+        "Vaal Orb"
+      ],
+      "Fragments": [
+        "Breach Splinter",
+        "Runic Splinter"
+      ],
+      "Runes": [
+        "Desert Rune",
+        "Farrul's Rune of Grace",
+        "Glacial Rune",
+        "Greater Adept Rune",
+        "Greater Body Rune",
+        "Greater Desert Rune",
+        "Greater Glacial Rune",
+        "Greater Inspiration Rune",
+        "Greater Iron Rune",
+        "Greater Mind Rune",
+        "Greater Rebirth Rune",
+        "Greater Resolve Rune",
+        "Greater Robust Rune",
+        "Greater Rune of Nobility",
+        "Greater Stone Rune",
+        "Greater Storm Rune",
+        "Greater Vision Rune",
+        "Inspiration Rune",
+        "Lesser Body Rune",
+        "Lesser Desert Rune",
+        "Lesser Glacial Rune",
+        "Lesser Inspiration Rune",
+        "Lesser Mind Rune",
+        "Lesser Rebirth Rune",
+        "Lesser Resolve Rune",
+        "Lesser Robust Rune",
+        "Lesser Stone Rune",
+        "Lesser Vision Rune",
+        "Mind Rune",
+        "Rebirth Rune",
+        "Stone Rune",
+        "Vision Rune"
+      ],
+      "Essences": [
+        "Essence of Alacrity",
+        "Essence of Battle",
+        "Essence of Enhancement",
+        "Essence of Flames",
+        "Essence of Ice",
+        "Essence of Sorcery",
+        "Essence of Thawing",
+        "Essence of the Infinite",
+        "Essence of the Mind",
+        "Greater Essence of Alacrity",
+        "Greater Essence of Battle",
+        "Greater Essence of Command",
+        "Greater Essence of Electricity",
+        "Greater Essence of Enhancement",
+        "Greater Essence of Flames",
+        "Greater Essence of Ice",
+        "Greater Essence of Sorcery",
+        "Greater Essence of the Body",
+        "Greater Essence of the Infinite",
+        "Greater Essence of the Mind",
+        "Lesser Essence of Battle",
+        "Lesser Essence of Command",
+        "Lesser Essence of Enhancement",
+        "Lesser Essence of Flames",
+        "Lesser Essence of Grounding",
+        "Lesser Essence of Ice",
+        "Lesser Essence of Insulation",
+        "Lesser Essence of Thawing",
+        "Lesser Essence of the Body",
+        "Lesser Essence of the Infinite",
+        "Lesser Essence of the Mind",
+        "Perfect Essence of Command",
+        "Perfect Essence of Flames",
+        "Perfect Essence of Grounding",
+        "Perfect Essence of Insulation",
+        "Perfect Essence of Opulence",
+        "Perfect Essence of Ruin",
+        "Perfect Essence of Seeking",
+        "Perfect Essence of Thawing",
+        "Perfect Essence of the Body",
+        "Perfect Essence of the Infinite"
+      ],
+      "Soul Cores": [
+        "Citaqualotl's Soul Core of Foulness"
+      ],
+      "Expedition Coinage & Artifacts": [
+        "Black Scythe Artifact",
+        "Broken Circle Artifact",
+        "Exotic Coinage",
+        "Order Artifact",
+        "Sun Artifact"
+      ],
+      "Ritual Omens": [
+        "Omen of Gambling",
+        "Omen of Refreshment",
+        "Omen of the Blackblooded",
+        "Omen of the Liege",
+        "Petition Splinter"
+      ],
+      "Reliquary Keys": [],
+      "Breach": [
+        "Adaptive Catalyst",
+        "Flesh Catalyst",
+        "Neural Catalyst",
+        "Skittering Catalyst"
+      ],
+      "Abyssal Bones": [
+        "Gnawed Collarbone",
+        "Gnawed Jawbone",
+        "Gnawed Rib",
+        "Preserved Jawbone"
+      ],
+      "Uncut Gems": [
+        "Uncut Skill Gem (Level 10)",
+        "Uncut Skill Gem (Level 12)",
+        "Uncut Skill Gem (Level 13)",
+        "Uncut Skill Gem (Level 14)",
+        "Uncut Skill Gem (Level 15)",
+        "Uncut Skill Gem (Level 16)",
+        "Uncut Skill Gem (Level 17)",
+        "Uncut Skill Gem (Level 18)",
+        "Uncut Skill Gem (Level 2)",
+        "Uncut Skill Gem (Level 3)",
+        "Uncut Skill Gem (Level 4)",
+        "Uncut Skill Gem (Level 5)",
+        "Uncut Skill Gem (Level 6)",
+        "Uncut Skill Gem (Level 9)",
+        "Uncut Spirit Gem (Level 12)",
+        "Uncut Support Gem (Level 1)",
+        "Uncut Support Gem (Level 2)",
+        "Uncut Support Gem (Level 5)"
+      ],
+      "Lineage Support Gems": [
+        "Cirel's Cultivation",
+        "Daresso's Passion",
+        "Guatelitzi's Ablation",
+        "Paquate's Pact",
+        "Tacati's Ire",
+        "Tasalio's Rhythm",
+        "Tawhoa's Tending",
+        "Varashta's Blessing"
+      ],
+      "Delirium": [
+        "Diluted Liquid Greed",
+        "Diluted Liquid Guilt",
+        "Diluted Liquid Ire",
+        "Liquid Envy",
+        "Liquid Paranoia"
+      ],
+      "Incursion": [
+        "Vaal Siphoner"
+      ],
+      "Idols": [
+        "Bear Idol",
+        "Cat Idol",
+        "Ox Idol"
+      ]
+    }
+  }
+}

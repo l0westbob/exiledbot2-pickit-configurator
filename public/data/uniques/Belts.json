@@ -1,0 +1,3017 @@
+{
+  "class": "Belts",
+  "slug": "Belts",
+  "uniques": [
+    {
+      "name": "Bijouborne",
+      "display_name": "Bijouborne Double Belt",
+      "base_name": "Double Belt",
+      "href": "https://poe2db.tw/us/Bijouborne",
+      "requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 11 Cast on Charm Use",
+          "template": "Grants Skill: Level 11 Cast on Charm Use",
+          "rolls": []
+        },
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Charm Charges gained",
+          "template": "#% increased Charm Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltCharmChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges gained +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "+(50—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(10—50)% reduced Charm Effect Duration",
+          "template": "#% reduced Charm Effect Duration",
+          "rolls": [
+            {
+              "raw": "(10—50)",
+              "min": 10,
+              "max": 50
+            }
+          ],
+          "family": "CharmDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm duration +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_duration_+%"
+          ]
+        },
+        {
+          "text": "+2 Charm Slots",
+          "template": "+2 Charm Slots",
+          "rolls": [],
+          "family": "AdditionalCharm",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local additional charm slots"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_additional_charm_slots"
+          ]
+        },
+        {
+          "text": "+(15—25) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Charm Charges gained",
+          "template": "#% increased Charm Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltCharmChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges gained +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_gained_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Double_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Birthright Buckle",
+      "display_name": "Birthright Buckle Wide Belt",
+      "base_name": "Wide Belt",
+      "href": "https://poe2db.tw/us/Birthright_Buckle",
+      "requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Flask Charges gained",
+          "template": "#% increased Flask Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "+(100—150) to Armour",
+          "template": "+# to Armour",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedPhysicalDamageReductionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base physical damage reduction rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "(10—15)% reduced Flask Charges used",
+          "template": "#% reduced Flask Charges used",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "BeltFlaskChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges used +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_used_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Charges gained",
+          "template": "#% increased Flask Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "Life Flasks used while on Low Life apply Recovery Instantly",
+          "template": "Life Flasks used while on Low Life apply Recovery Instantly",
+          "rolls": [],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life flask recovery is instant while on low life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_flask_recovery_is_instant_while_on_low_life"
+          ]
+        },
+        {
+          "text": "Mana Flasks used while on Low Mana apply Recovery Instantly",
+          "template": "Mana Flasks used while on Low Mana apply Recovery Instantly",
+          "rolls": [],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana flask recovery is instant while on low mana"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "mana_flask_recovery_is_instant_while_on_low_mana"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Wide_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Byrnabas",
+      "display_name": "Byrnabas Wide Belt",
+      "base_name": "Wide Belt",
+      "href": "https://poe2db.tw/us/Byrnabas",
+      "requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Flask Charges gained",
+          "template": "#% increased Flask Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(30—40)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(7—12) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(7—12)",
+              "min": 7,
+              "max": 12
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Cannot be Shocked",
+          "template": "Cannot be Shocked",
+          "rolls": [],
+          "family": "CannotBeShocked",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cannot be shocked"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_cannot_be_shocked"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Wide_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Coward's Legacy",
+      "display_name": "Coward's Legacy Mail Belt",
+      "base_name": "Mail Belt",
+      "href": "https://poe2db.tw/us/Cowards_Legacy",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(10—15)% reduced Flask Charges used",
+          "template": "#% reduced Flask Charges used",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "BeltFlaskChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges used +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_used_+%"
+          ]
+        },
+        {
+          "text": "(-20—-10) to Strength",
+          "template": "# to Strength",
+          "rolls": [
+            {
+              "raw": "(-20—-10)",
+              "min": -20,
+              "max": -10
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(30—40)% increased Life and Mana Recovery from Flasks",
+          "template": "#% increased Life and Mana Recovery from Flasks",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "BeltFlaskRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life and mana to recover +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life",
+            "Mana"
+          ],
+          "affix_ids": [
+            "flask_life_and_mana_to_recover_+%"
+          ]
+        },
+        {
+          "text": "You are considered on Low Life while at 75 % of maximum Life or below instead",
+          "template": "You are considered on Low Life while at 75 % of maximum Life or below instead",
+          "rolls": [],
+          "family": "LowLifeThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "low life threshold % override"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "low_life_threshold_%_override"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Mail_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Darkness Enthroned",
+      "display_name": "Darkness Enthroned Fine Belt",
+      "base_name": "Fine Belt",
+      "href": "https://poe2db.tw/us/Darkness_Enthroned",
+      "requirements": {
+        "level": 62,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 62,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "Flasks gain 0.17 charges per Second",
+          "template": "Flasks gain 0.17 charges per Second",
+          "rolls": [],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for any flask per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_any_flask_per_minute"
+          ]
+        },
+        {
+          "text": "This item gains bonuses from Socketed Items as though it was a Body Armour",
+          "template": "This item gains bonuses from Socketed Items as though it was a Body Armour",
+          "rolls": [],
+          "family": "LocalItemBenefitSocketableAsIf",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local item benefit socketable as if body armour"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_item_benefit_socketable_as_if_body_armour"
+          ]
+        },
+        {
+          "text": "(50—100)% increased effect of Socketed Items",
+          "template": "#% increased effect of Socketed Items",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "SoulCore",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local socketed items effect +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_socketed_items_effect_+%"
+          ]
+        },
+        {
+          "text": "Has 2 Augment Sockets (Hidden)",
+          "template": "Has 2 Augment Sockets (Hidden)",
+          "rolls": []
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Fine_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Goregirdle",
+      "display_name": "Goregirdle Plate Belt",
+      "base_name": "Plate Belt",
+      "href": "https://poe2db.tw/us/Goregirdle",
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "+(100—140) to Armour",
+          "template": "+# to Armour",
+          "rolls": [
+            {
+              "raw": "(100—140)",
+              "min": 100,
+              "max": 140
+            }
+          ],
+          "family": "IncreasedPhysicalDamageReductionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base physical damage reduction rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "(10—20) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Defend with 200% of Armour",
+          "template": "Defend with 200% of Armour",
+          "rolls": [],
+          "family": "IncreasedPhysicalDamageReductionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "double armour effect"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Defences"
+          ],
+          "affix_ids": [
+            "double_armour_effect"
+          ]
+        },
+        {
+          "text": "Maximum Physical Damage Reduction is 50%",
+          "template": "Maximum Physical Damage Reduction is 50%",
+          "rolls": [],
+          "family": "IncreasedPhysicalDamageReductionRating",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum physical damage reduction is 50%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical"
+          ],
+          "affix_ids": [
+            "maximum_physical_damage_reduction_is_50%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Plate_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Headhunter",
+      "display_name": "Headhunter Heavy Belt",
+      "base_name": "Heavy Belt",
+      "href": "https://poe2db.tw/us/Headhunter",
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Stun Threshold",
+          "template": "#% increased Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedStunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(20—40) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(20—40) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "When you kill a Rare monster, you gain its Modifiers for 60 seconds",
+          "template": "When you kill a Rare monster, you gain its Modifiers for 60 seconds",
+          "rolls": [],
+          "family": "GainRareMonsterModsOnKill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain rare monster mods on kill ms"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_rare_monster_mods_on_kill_ms"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Heavy_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Ingenuity",
+      "display_name": "Ingenuity Utility Belt",
+      "base_name": "Utility Belt",
+      "href": "https://poe2db.tw/us/Ingenuity",
+      "requirements": {
+        "level": 55,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 55,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "20 % of Flask Recovery applied Instantly",
+          "template": "20 % of Flask Recovery applied Instantly",
+          "rolls": [],
+          "family": "InstantFlaskRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask recovery amount % to recover instantly"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "flask_recovery_amount_%_to_recover_instantly"
+          ]
+        },
+        {
+          "text": "(-20—20)% reduced Charm Charges gained",
+          "template": "#% reduced Charm Charges gained",
+          "rolls": [
+            {
+              "raw": "(-20—20)",
+              "min": -20,
+              "max": 20
+            }
+          ],
+          "family": "BeltCharmChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges gained +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "(-10—10)% reduced Charm Charges used",
+          "template": "#% reduced Charm Charges used",
+          "rolls": [
+            {
+              "raw": "(-10—10)",
+              "min": -10,
+              "max": 10
+            }
+          ],
+          "family": "BeltCharmChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges used +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_used_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased bonuses gained from left Equipped Ring",
+          "template": "#% increased bonuses gained from left Equipped Ring",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "RingBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "equipped ring1 effect of bonuses +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "equipped_ring1_effect_of_bonuses_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased bonuses gained from right Equipped Ring",
+          "template": "#% increased bonuses gained from right Equipped Ring",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "RingBonuses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "equipped ring2 effect of bonuses +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "equipped_ring2_effect_of_bonuses_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Utility_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Keelhaul",
+      "display_name": "Keelhaul Linen Belt",
+      "base_name": "Linen Belt",
+      "href": "https://poe2db.tw/us/Keelhaul",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Mana Recovery from Flasks",
+          "template": "#% increased Mana Recovery from Flasks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask mana to recover +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "flask_mana_to_recover_+%"
+          ]
+        },
+        {
+          "text": "(-25—25)% reduced Flask Life Recovery rate",
+          "template": "#% reduced Flask Life Recovery rate",
+          "rolls": [
+            {
+              "raw": "(-25—25)",
+              "min": -25,
+              "max": 25
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "(-25—25)% reduced Flask Mana Recovery rate",
+          "template": "#% reduced Flask Mana Recovery rate",
+          "rolls": [
+            {
+              "raw": "(-25—25)",
+              "min": -25,
+              "max": 25
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask mana recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "flask_mana_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "Life Flasks gain 0.25 charges per Second",
+          "template": "Life Flasks gain 0.25 charges per Second",
+          "rolls": [],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for life flasks per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_life_flasks_per_minute"
+          ]
+        },
+        {
+          "text": "Mana Flasks gain 0.25 charges per Second",
+          "template": "Mana Flasks gain 0.25 charges per Second",
+          "rolls": [],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for mana flasks per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_mana_flasks_per_minute"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Linen_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Meginord's Girdle",
+      "display_name": "Meginord's Girdle Rawhide Belt",
+      "base_name": "Rawhide Belt",
+      "href": "https://poe2db.tw/us/Meginords_Girdle",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Life Recovery from Flasks",
+          "template": "#% increased Life Recovery from Flasks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life to recover +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_to_recover_+%"
+          ]
+        },
+        {
+          "text": "+(40—50) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(10—15)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "50 % increased Flask Charges used",
+          "template": "50 % increased Flask Charges used",
+          "rolls": [],
+          "family": "BeltFlaskChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges used +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_used_+%"
+          ]
+        },
+        {
+          "text": "100 % increased Flask Charges gained",
+          "template": "100 % increased Flask Charges gained",
+          "rolls": [],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Rawhide_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Midnight Braid",
+      "display_name": "Midnight Braid Rawhide Belt",
+      "base_name": "Rawhide Belt",
+      "href": "https://poe2db.tw/us/Midnight_Braid",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Life Recovery from Flasks",
+          "template": "#% increased Life Recovery from Flasks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life to recover +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_to_recover_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(5—10)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "50 % of Damage taken Recouped as Mana",
+          "template": "50 % of Damage taken Recouped as Mana",
+          "rolls": [],
+          "family": "PercentDamageGoesToMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "damage taken goes to mana %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Mana"
+          ],
+          "affix_ids": [
+            "damage_taken_goes_to_mana_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Rawhide_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Ryslatha's Coil",
+      "display_name": "Ryslatha's Coil Ornate Belt",
+      "base_name": "Ornate Belt",
+      "href": "https://poe2db.tw/us/Ryslathas_Coil",
+      "requirements": {
+        "level": 31,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 31,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(10—15)% reduced Charm Charges used",
+          "template": "#% reduced Charm Charges used",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "BeltCharmChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges used +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_used_+%"
+          ]
+        },
+        {
+          "text": "+(80—100) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Flask Life Recovery rate",
+          "template": "#% increased Flask Life Recovery rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% more maximum Physical Attack Damage",
+          "template": "#% more maximum Physical Attack Damage",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "RyuslathaMaximumDamageModifier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique ryslathas coil maximum physical attack damage +% final"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "unique_ryslathas_coil_maximum_physical_attack_damage_+%_final"
+          ]
+        },
+        {
+          "text": "(30—40)% less minimum Physical Attack Damage",
+          "template": "#% less minimum Physical Attack Damage",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "RyuslathaMinimumDamageModifier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique ryslathas coil minimum physical attack damage +% final"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "unique_ryslathas_coil_minimum_physical_attack_damage_+%_final"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Ornate_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Shavronne's Satchel",
+      "display_name": "Shavronne's Satchel Fine Belt",
+      "base_name": "Fine Belt",
+      "href": "https://poe2db.tw/us/Shavronnes_Satchel",
+      "requirements": {
+        "level": 62,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 62,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "Flasks gain 0.17 charges per Second",
+          "template": "Flasks gain 0.17 charges per Second",
+          "rolls": [],
+          "family": "FlaskChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "generate x charges for any flask per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "generate_x_charges_for_any_flask_per_minute"
+          ]
+        },
+        {
+          "text": "(20—30)% reduced Flask Life Recovery rate",
+          "template": "#% reduced Flask Life Recovery rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Charges gained",
+          "template": "#% increased Flask Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "Life Recovery from Flasks also applies to Energy Shield",
+          "template": "Life Recovery from Flasks also applies to Energy Shield",
+          "rolls": [],
+          "family": "FlaskLifeRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life recovery from flasks also recovers energy shield"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_recovery_from_flasks_also_recovers_energy_shield"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Fine_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Soul Tether",
+      "display_name": "Soul Tether Long Belt",
+      "base_name": "Long Belt",
+      "href": "https://poe2db.tw/us/Soul_Tether",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(15—20)% increased Charm Effect Duration",
+          "template": "#% increased Charm Effect Duration",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "BeltCharmDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm duration +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_duration_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedEnergyShield",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum energy shield"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "base_maximum_energy_shield"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "You lose 5 % of maximum Energy Shield per second",
+          "template": "You lose 5 % of maximum Energy Shield per second",
+          "rolls": [],
+          "family": "EnergyShieldRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy shield lost per minute %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "energy_shield_lost_per_minute_%"
+          ]
+        },
+        {
+          "text": "Excess Life Recovery from Leech is applied to Energy Shield",
+          "template": "Excess Life Recovery from Leech is applied to Energy Shield",
+          "rolls": [],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life leech excess goes to energy shield"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_leech_excess_goes_to_energy_shield"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Long_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "The Gnashing Sash",
+      "display_name": "The Gnashing Sash Wide Belt",
+      "base_name": "Wide Belt",
+      "href": "https://poe2db.tw/us/The_Gnashing_Sash",
+      "requirements": {
+        "level": 60,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 14,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Flask Charges gained",
+          "template": "#% increased Flask Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        },
+        {
+          "text": "(15—35)% increased Flask Life Recovery rate",
+          "template": "#% increased Flask Life Recovery rate",
+          "rolls": [
+            {
+              "raw": "(15—35)",
+              "min": 15,
+              "max": 35
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Lose 5 % of maximum Life per second",
+          "template": "Lose 5 % of maximum Life per second",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life degeneration % per minute not in grace"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_degeneration_%_per_minute_not_in_grace"
+          ]
+        },
+        {
+          "text": "Life Recovery from Flasks can Overflow Maximum Life",
+          "template": "Life Recovery from Flasks can Overflow Maximum Life",
+          "rolls": [],
+          "family": "FlaskRecoveryAmount",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life flask recovery can overcap life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_flask_recovery_can_overcap_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Wide_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Umbilicus Immortalis",
+      "display_name": "Umbilicus Immortalis Linen Belt",
+      "base_name": "Linen Belt",
+      "href": "https://poe2db.tw/us/Umbilicus_Immortalis",
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Mana Recovery from Flasks",
+          "template": "#% increased Mana Recovery from Flasks",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask mana to recover +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "flask_mana_to_recover_+%"
+          ]
+        },
+        {
+          "text": "(30—40)% reduced Flask Effect Duration",
+          "template": "#% reduced Flask Effect Duration",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "BeltFlaskDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask duration +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_duration_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Minions have (20—30)% increased maximum Life",
+          "template": "Minions have #% increased maximum Life",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "MinionLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Minion"
+          ],
+          "affix_ids": [
+            "minion_maximum_life_+%"
+          ]
+        },
+        {
+          "text": "Your Life Flask also applies to your Minions",
+          "template": "Your Life Flask also applies to your Minions",
+          "rolls": [],
+          "family": "FlasksApplyToMinions",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "your life flasks also apply to your minions"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "your_life_flasks_also_apply_to_your_minions"
+          ]
+        },
+        {
+          "text": "Minions cannot Die while affected by a Life Flask",
+          "template": "Minions cannot Die while affected by a Life Flask",
+          "rolls": [],
+          "family": "MinionsCannotDie",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minions cannot die while affected by life flask"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "minions_cannot_die_while_affected_by_life_flask"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Charges gained",
+          "template": "#% increased Flask Charges gained",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask charges gained +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "flask_charges_gained_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Linen_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Waistgate",
+      "display_name": "Waistgate Heavy Belt",
+      "base_name": "Heavy Belt",
+      "href": "https://poe2db.tw/us/Waistgate",
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Stun Threshold",
+          "template": "#% increased Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedStunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+%"
+          ]
+        },
+        {
+          "text": "+(50—80) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "+(50—80) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Life Recovery rate",
+          "template": "#% increased Flask Life Recovery rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask life recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "flask_life_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Flask Mana Recovery rate",
+          "template": "#% increased Flask Mana Recovery rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BeltFlaskRecoveryRate",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "flask mana recovery rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "flask_mana_recovery_rate_+%"
+          ]
+        },
+        {
+          "text": "Life and Mana Flasks can be equipped in either slot",
+          "template": "Life and Mana Flasks can be equipped in either slot",
+          "rolls": [],
+          "family": "FlaskRecoveryAmount",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life and mana flasks can be equipped in either slot"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "life_and_mana_flasks_can_be_equipped_in_either_slot"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Heavy_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    },
+    {
+      "name": "Zerphi's Genesis",
+      "display_name": "Zerphi's Genesis Heavy Belt",
+      "base_name": "Heavy Belt",
+      "href": "https://poe2db.tw/us/Zerphis_Genesis",
+      "requirements": {
+        "level": 56,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Has (1—3) Charm Slot",
+          "template": "Has # Charm Slot",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "affix_mapping": {
+            "match_method": "template",
+            "matches": [
+              {
+                "source": "mods_json",
+                "family_key": "AdditionalCharm",
+                "kind": "unique",
+                "template": "Has # [Charm] Slot",
+                "stat_ids": [
+                  "local_charm_slots"
+                ],
+                "match_method": "template",
+                "mod_keys": [
+                  "BeltImplicitCharmSlots1"
+                ],
+                "domains": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": "(20—30)% increased Stun Threshold",
+          "template": "#% increased Stun Threshold",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedStunThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "stun threshold +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "stun_threshold_+%"
+          ]
+        },
+        {
+          "text": "+(10—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—30)",
+              "min": 10,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Corrupted Blood cannot be inflicted on you",
+          "template": "Corrupted Blood cannot be inflicted on you",
+          "rolls": [],
+          "family": "CorruptedBlood",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot be inflicted by corrupted blood"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "bleed",
+            "Physical",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "cannot_be_inflicted_by_corrupted_blood"
+          ]
+        },
+        {
+          "text": "50 % of charges used by Charms granted to your Life Flasks",
+          "template": "50 % of charges used by Charms granted to your Life Flasks",
+          "rolls": [],
+          "family": "FlaskChargesGained",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges used % granted to life flasks"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_used_%_granted_to_life_flasks"
+          ]
+        },
+        {
+          "text": "(10—30)% increased Charm Charges used",
+          "template": "#% increased Charm Charges used",
+          "rolls": [
+            {
+              "raw": "(10—30)",
+              "min": 10,
+              "max": 30
+            }
+          ],
+          "family": "BeltCharmChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "charm charges used +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "charm_charges_used_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Belts",
+      "base_href": "https://poe2db.tw/Heavy_Belt",
+      "item_class": "Belts",
+      "class_slug": "Belts"
+    }
+  ]
+}

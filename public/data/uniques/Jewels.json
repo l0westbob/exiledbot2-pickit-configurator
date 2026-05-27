@@ -1,0 +1,1556 @@
+{
+  "class": "Jewels",
+  "slug": "Jewels",
+  "uniques": [
+    {
+      "name": "Against the Darkness",
+      "display_name": "Against the Darkness Time-Lost Diamond",
+      "base_name": "Time-Lost Diamond",
+      "href": "https://poe2db.tw/us/Against_the_Darkness",
+      "base_href": "https://poe2db.tw/Time-Lost_Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "local jewel effect base radius [1000]",
+          "template": "local jewel effect base radius [1000]",
+          "rolls": [],
+          "family": "JewelEffectBaseRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local jewel effect base radius"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_jewel_effect_base_radius"
+          ]
+        },
+        {
+          "text": "[2 Random Jewel Modifiers]",
+          "template": "[2 Random Jewel Modifiers]",
+          "rolls": [],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%",
+            "base_cold_damage_resistance_%",
+            "non_skill_base_all_damage_%_to_gain_as_chaos",
+            "non_skill_base_all_damage_%_to_gain_as_cold",
+            "non_skill_base_all_damage_%_to_gain_as_fire",
+            "non_skill_base_all_damage_%_to_gain_as_lightning",
+            "base_fire_damage_resistance_%",
+            "base_self_freeze_duration_-%",
+            "base_self_ignite_duration_-%",
+            "base_maximum_life",
+            "base_maximum_mana",
+            "maximum_life_+%",
+            "base_lightning_damage_resistance_%",
+            "maximum_mana_+%",
+            "base_maximum_chaos_damage_resistance_%",
+            "base_maximum_cold_damage_resistance_%",
+            "base_maximum_fire_damage_resistance_%",
+            "base_maximum_lightning_damage_resistance_%",
+            "dexterity_+%",
+            "intelligence_+%",
+            "strength_+%",
+            "base_self_shock_duration_-%",
+            "base_spirit"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "base_chaos_damage_resistance_%",
+              "text": "Small Passive Skills in Radius also grant +(2-3)% to Chaos Resistance"
+            },
+            {
+              "affix_id": "base_cold_damage_resistance_%",
+              "text": "Small Passive Skills in Radius also grant +(2-4)% to Cold Resistance"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_chaos",
+              "text": "Notable Passive Skills in Radius also grant Gain (2-4)% of Damage as Extra Chaos Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "text": "Notable Passive Skills in Radius also grant Gain (2-4)% of Damage as Extra Cold Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "text": "Notable Passive Skills in Radius also grant Gain (2-4)% of Damage as Extra Fire Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "text": "Notable Passive Skills in Radius also grant Gain (2-4)% of Damage as Extra Lightning Damage"
+            },
+            {
+              "affix_id": "base_fire_damage_resistance_%",
+              "text": "Small Passive Skills in Radius also grant +(2-4)% to Fire Resistance"
+            },
+            {
+              "affix_id": "base_self_freeze_duration_-%",
+              "text": "Small Passive Skills in Radius also grant (4-6)% reduced Freeze Duration on you"
+            },
+            {
+              "affix_id": "base_self_ignite_duration_-%",
+              "text": "Small Passive Skills in Radius also grant (4-6)% reduced Ignite Duration on you"
+            },
+            {
+              "affix_id": "base_maximum_life",
+              "text": "Small Passive Skills in Radius also grant +8 to maximum Life"
+            },
+            {
+              "affix_id": "base_maximum_mana",
+              "text": "Small Passive Skills in Radius also grant +8 to maximum Mana"
+            },
+            {
+              "affix_id": "maximum_life_+%",
+              "text": "Small Passive Skills in Radius also grant 1% increased maximum Life"
+            },
+            {
+              "affix_id": "base_lightning_damage_resistance_%",
+              "text": "Small Passive Skills in Radius also grant +(2-4)% to Lightning Resistance"
+            },
+            {
+              "affix_id": "maximum_mana_+%",
+              "text": "Small Passive Skills in Radius also grant 1% increased maximum Mana"
+            },
+            {
+              "affix_id": "base_maximum_chaos_damage_resistance_%",
+              "text": "Notable Passive Skills in Radius also grant +1% to Maximum Chaos Resistance"
+            },
+            {
+              "affix_id": "base_maximum_cold_damage_resistance_%",
+              "text": "Notable Passive Skills in Radius also grant +1% to Maximum Cold Resistance"
+            },
+            {
+              "affix_id": "base_maximum_fire_damage_resistance_%",
+              "text": "Notable Passive Skills in Radius also grant +1% to Maximum Fire Resistance"
+            },
+            {
+              "affix_id": "base_maximum_lightning_damage_resistance_%",
+              "text": "Notable Passive Skills in Radius also grant +1% to Maximum Lightning Resistance"
+            },
+            {
+              "affix_id": "dexterity_+%",
+              "text": "Notable Passive Skills in Radius also grant (2-3)% increased Dexterity"
+            },
+            {
+              "affix_id": "intelligence_+%",
+              "text": "Notable Passive Skills in Radius also grant (2-3)% increased Intelligence"
+            },
+            {
+              "affix_id": "strength_+%",
+              "text": "Notable Passive Skills in Radius also grant (2-3)% increased Strength"
+            },
+            {
+              "affix_id": "base_self_shock_duration_-%",
+              "text": "Small Passive Skills in Radius also grant (4-6)% reduced Shock duration on you"
+            },
+            {
+              "affix_id": "base_spirit",
+              "text": "Notable Passive Skills in Radius also grant +(8-12) to Spirit"
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Controlled Metamorphosis",
+      "display_name": "Controlled Metamorphosis Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/Controlled_Metamorphosis",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Only affects Passives in Medium-Large Ring",
+          "template": "Only affects Passives in Medium-Large Ring",
+          "rolls": [],
+          "family": "JewelRingRadiusValues",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local jewel variable ring radius value"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_jewel_variable_ring_radius_value"
+          ]
+        },
+        {
+          "text": "Passives in Radius can be Allocated without being connected to your tree",
+          "template": "Passives in Radius can be Allocated without being connected to your tree",
+          "rolls": [],
+          "family": "PassiveJewelGrantsRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique jewel nearby disconnected passives can be allocated"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_jewel_nearby_disconnected_passives_can_be_allocated"
+          ]
+        },
+        {
+          "text": "(-20—-5)% to all Elemental Resistances",
+          "template": "#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(-20—-5)",
+              "min": -20,
+              "max": -5
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Flesh Crucible",
+      "display_name": "Flesh Crucible Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/Flesh_Crucible",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Random 1 Keystone Passive Skill [1,33]",
+          "template": "Random 1 Keystone Passive Skill [1,33]",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local vivisection random keystone index"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_vivisection_random_keystone_index"
+          ]
+        },
+        {
+          "text": "(20—10)% less [random stat]",
+          "template": "#% less [random stat]",
+          "rolls": [
+            {
+              "raw": "(20—10)",
+              "min": 20,
+              "max": 10
+            }
+          ],
+          "affix_ids": [
+            "vivisection_damage_+%_final",
+            "vivisection_defences_+%_final",
+            "vivisection_maximum_life_+%_final",
+            "vivisection_maximum_mana_+%_final",
+            "vivisection_movement_speed_+%_final",
+            "vivisection_spirit_+%_final"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "vivisection_damage_+%_final",
+              "text": "(10-20)% less Damage"
+            },
+            {
+              "affix_id": "vivisection_defences_+%_final",
+              "text": "(10-20)% less Defences"
+            },
+            {
+              "affix_id": "vivisection_maximum_life_+%_final",
+              "text": "(10-20)% less maximum Life"
+            },
+            {
+              "affix_id": "vivisection_maximum_mana_+%_final",
+              "text": "(10-20)% less maximum Mana"
+            },
+            {
+              "affix_id": "vivisection_movement_speed_+%_final",
+              "text": "(10-20)% less Movement Speed"
+            },
+            {
+              "affix_id": "vivisection_spirit_+%_final",
+              "text": "(10-20)% less Spirit"
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ]
+    },
+    {
+      "name": "From Nothing",
+      "display_name": "From Nothing Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/From_Nothing",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Passives in Radius of Passive Skill can be Allocated",
+          "template": "Passives in Radius of Passive Skill can be Allocated",
+          "rolls": [],
+          "family": "PassiveJewelGrantsRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique jewel disconnected passives can be allocated around keystone hash"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_jewel_disconnected_passives_can_be_allocated_around_keystone_hash"
+          ]
+        },
+        {
+          "text": "without being connected to your tree",
+          "template": "without being connected to your tree",
+          "rolls": [],
+          "affix_ids": [
+            "local_unique_jewel_disconnected_passives_can_be_allocated_around_keystone_hash"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Grand Spectrum",
+      "display_name": "Grand Spectrum Ruby",
+      "base_name": "Ruby",
+      "href": "https://poe2db.tw/us/Grand_Spectrum",
+      "base_href": "https://poe2db.tw/Ruby",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "2 % increased Maximum Life per socketed Grand Spectrum",
+          "template": "2 % increased Maximum Life per socketed Grand Spectrum",
+          "rolls": [],
+          "family": "StackableJewelBonuses",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "stat_ids": [
+            "maximum life +% per stackable unique jewel"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "maximum_life_+%_per_stackable_unique_jewel"
+          ]
+        },
+        {
+          "text": "number of stackable unique jewels [1]",
+          "template": "number of stackable unique jewels [1]",
+          "rolls": [],
+          "family": "StackableJewelBonuses",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "stat_ids": [
+            "number of stackable unique jewels"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "number_of_stackable_unique_jewels"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Heart of the Well",
+      "display_name": "Heart of the Well Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/Heart_of_the_Well",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "[Custom Desecrated prefix]",
+          "template": "[Custom Desecrated prefix]",
+          "rolls": [],
+          "affix_ids": [
+            "base_aggravate_bleeding_on_attack_hit_chance_%",
+            "attack_speed_+%_if_rare_or_unique_enemy_nearby",
+            "body_armour_+%",
+            "base_chance_to_pierce_%",
+            "charms_%_chance_on_use_to_use_another_charm_without_consuming_charges",
+            "charm_effect_+%",
+            "recover_%_maximum_mana_on_charm_use",
+            "culling_strike_threshold_+%",
+            "non_skill_base_all_damage_%_to_gain_as_lightning",
+            "non_skill_base_all_damage_%_to_gain_as_chaos",
+            "non_skill_base_all_damage_%_to_gain_as_fire",
+            "non_skill_base_all_damage_%_to_gain_as_cold",
+            "damage_+%_while_in_presence_of_companion",
+            "exposure_effect_+%",
+            "body_armour_evasion_rating_+%",
+            "life_regeneration_rate_per_minute_%_if_used_life_flask_in_past_10_seconds",
+            "base_cooldown_speed_+%",
+            "ice_crystal_maximum_life_+%",
+            "skill_speed_+%",
+            "chance_for_extra_damage_roll_with_lightning_damage_%",
+            "base_mana_cost_efficiency_+%",
+            "mana_regeneration_rate_+%_while_moving",
+            "additional_maximum_all_elemental_resistances_%",
+            "maximum_energy_shield_from_body_armour_+%",
+            "minion_maximum_life_%_to_gain_as_maximum_energy_shield",
+            "minion_life_regeneration_rate_per_minute_%",
+            "minion_resummon_speed_+%",
+            "leech_%_is_instant",
+            "physical_damage_prevented_recouped_as_life_%",
+            "recoup_speed_+%",
+            "recover_%_maximum_life_on_killing_poisoned_enemy",
+            "skill_effect_duration_+%",
+            "base_thorns_critical_strike_chance",
+            "base_body_armour_permyriad_to_gain_as_physical_thorns_damage",
+            "trigger_skills_refund_half_energy_spent_chance_%"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "base_aggravate_bleeding_on_attack_hit_chance_%",
+              "text": "(5-10)% chance to Aggravate Bleeding on targets you Hit with Attacks"
+            },
+            {
+              "affix_id": "attack_speed_+%_if_rare_or_unique_enemy_nearby",
+              "text": "(5-8)% increased Attack Speed while a Rare or Unique Enemy is in your Presence"
+            },
+            {
+              "affix_id": "body_armour_+%",
+              "text": "(40-60)% increased Armour from Equipped Body Armour"
+            },
+            {
+              "affix_id": "base_chance_to_pierce_%",
+              "text": "(30-50)% chance to Pierce an Enemy"
+            },
+            {
+              "affix_id": "charms_%_chance_on_use_to_use_another_charm_without_consuming_charges",
+              "text": "(10-15)% chance when a Charm is used to use another Charm without consuming Charges"
+            },
+            {
+              "affix_id": "charm_effect_+%",
+              "text": "Charms applied to you have (15-25)% increased Effect"
+            },
+            {
+              "affix_id": "recover_%_maximum_mana_on_charm_use",
+              "text": "Recover (5-10)% of maximum Mana when a Charm is used"
+            },
+            {
+              "affix_id": "culling_strike_threshold_+%",
+              "text": "(15-25)% increased Culling Strike Threshold"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "text": "Gain (9-15)% of Damage as Extra Lightning Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_chaos",
+              "text": "Gain (7-13)% of Damage as Extra Chaos Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "text": "Gain (9-15)% of Damage as Extra Fire Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "text": "Gain (9-15)% of Damage as Extra Cold Damage"
+            },
+            {
+              "affix_id": "damage_+%_while_in_presence_of_companion",
+              "text": "(15-25)% increased Damage while your Companion is in your Presence"
+            },
+            {
+              "affix_id": "exposure_effect_+%",
+              "text": "(15-25)% increased Exposure Effect"
+            },
+            {
+              "affix_id": "body_armour_evasion_rating_+%",
+              "text": "(40-60)% increased Evasion Rating from Equipped Body Armour"
+            },
+            {
+              "affix_id": "life_regeneration_rate_per_minute_%_if_used_life_flask_in_past_10_seconds",
+              "text": "Regenerate (1-1.5)% of maximum Life per Second if you've used a Life Flask in the past 10 seconds"
+            },
+            {
+              "affix_id": "base_cooldown_speed_+%",
+              "text": "(10-18)% increased Cooldown Recovery Rate"
+            },
+            {
+              "affix_id": "ice_crystal_maximum_life_+%",
+              "text": "(40-60)% increased Ice Crystal Life"
+            },
+            {
+              "affix_id": "skill_speed_+%",
+              "text": "(4-8)% increased Skill Speed"
+            },
+            {
+              "affix_id": "chance_for_extra_damage_roll_with_lightning_damage_%",
+              "text": "(15-25)% chance for Lightning Damage with Hits to be Lucky"
+            },
+            {
+              "affix_id": "base_mana_cost_efficiency_+%",
+              "text": "(8-16)% increased Mana Cost Efficiency"
+            },
+            {
+              "affix_id": "mana_regeneration_rate_+%_while_moving",
+              "text": "(20-30)% increased Mana Regeneration Rate while moving"
+            },
+            {
+              "affix_id": "additional_maximum_all_elemental_resistances_%",
+              "text": "+1% to all Maximum Elemental Resistances"
+            },
+            {
+              "affix_id": "maximum_energy_shield_from_body_armour_+%",
+              "text": "(40-60)% increased Energy Shield from Equipped Body Armour"
+            },
+            {
+              "affix_id": "minion_maximum_life_%_to_gain_as_maximum_energy_shield",
+              "text": "Minions gain (10-15)% of their maximum Life as Extra maximum Energy Shield"
+            },
+            {
+              "affix_id": "minion_life_regeneration_rate_per_minute_%",
+              "text": "Minions Regenerate (1-3)% of maximum Life per second"
+            },
+            {
+              "affix_id": "minion_resummon_speed_+%",
+              "text": "Minions Revive (5-10)% faster"
+            },
+            {
+              "affix_id": "leech_%_is_instant",
+              "text": "(8-15)% of Leech is Instant"
+            },
+            {
+              "affix_id": "physical_damage_prevented_recouped_as_life_%",
+              "text": "(5-10)% of Physical Damage prevented Recouped as Life"
+            },
+            {
+              "affix_id": "recoup_speed_+%",
+              "text": "(8-14)% increased speed of Recoup Effects"
+            },
+            {
+              "affix_id": "recover_%_maximum_life_on_killing_poisoned_enemy",
+              "text": "Recover (2-4)% of maximum Life on Killing a Poisoned Enemy"
+            },
+            {
+              "affix_id": "skill_effect_duration_+%",
+              "text": "(10-15)% increased Skill Effect Duration"
+            },
+            {
+              "affix_id": "base_thorns_critical_strike_chance",
+              "text": "+(2-4)% to Thorns Critical Hit Chance"
+            },
+            {
+              "affix_id": "base_body_armour_permyriad_to_gain_as_physical_thorns_damage",
+              "text": "Gain Physical Thorns damage equal to (4-6)% of Item Armour on Equipped Body Armour"
+            },
+            {
+              "affix_id": "trigger_skills_refund_half_energy_spent_chance_%",
+              "text": "(6-12)% chance for Trigger skills to refund half of Energy Spent"
+            }
+          ]
+        },
+        {
+          "text": "[Custom Desecrated prefix]",
+          "template": "[Custom Desecrated prefix]",
+          "rolls": [],
+          "affix_ids": [
+            "base_aggravate_bleeding_on_attack_hit_chance_%",
+            "attack_speed_+%_if_rare_or_unique_enemy_nearby",
+            "body_armour_+%",
+            "base_chance_to_pierce_%",
+            "charms_%_chance_on_use_to_use_another_charm_without_consuming_charges",
+            "charm_effect_+%",
+            "recover_%_maximum_mana_on_charm_use",
+            "culling_strike_threshold_+%",
+            "non_skill_base_all_damage_%_to_gain_as_lightning",
+            "non_skill_base_all_damage_%_to_gain_as_chaos",
+            "non_skill_base_all_damage_%_to_gain_as_fire",
+            "non_skill_base_all_damage_%_to_gain_as_cold",
+            "damage_+%_while_in_presence_of_companion",
+            "exposure_effect_+%",
+            "body_armour_evasion_rating_+%",
+            "life_regeneration_rate_per_minute_%_if_used_life_flask_in_past_10_seconds",
+            "base_cooldown_speed_+%",
+            "ice_crystal_maximum_life_+%",
+            "skill_speed_+%",
+            "chance_for_extra_damage_roll_with_lightning_damage_%",
+            "base_mana_cost_efficiency_+%",
+            "mana_regeneration_rate_+%_while_moving",
+            "additional_maximum_all_elemental_resistances_%",
+            "maximum_energy_shield_from_body_armour_+%",
+            "minion_maximum_life_%_to_gain_as_maximum_energy_shield",
+            "minion_life_regeneration_rate_per_minute_%",
+            "minion_resummon_speed_+%",
+            "leech_%_is_instant",
+            "physical_damage_prevented_recouped_as_life_%",
+            "recoup_speed_+%",
+            "recover_%_maximum_life_on_killing_poisoned_enemy",
+            "skill_effect_duration_+%",
+            "base_thorns_critical_strike_chance",
+            "base_body_armour_permyriad_to_gain_as_physical_thorns_damage",
+            "trigger_skills_refund_half_energy_spent_chance_%"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "base_aggravate_bleeding_on_attack_hit_chance_%",
+              "text": "(5-10)% chance to Aggravate Bleeding on targets you Hit with Attacks"
+            },
+            {
+              "affix_id": "attack_speed_+%_if_rare_or_unique_enemy_nearby",
+              "text": "(5-8)% increased Attack Speed while a Rare or Unique Enemy is in your Presence"
+            },
+            {
+              "affix_id": "body_armour_+%",
+              "text": "(40-60)% increased Armour from Equipped Body Armour"
+            },
+            {
+              "affix_id": "base_chance_to_pierce_%",
+              "text": "(30-50)% chance to Pierce an Enemy"
+            },
+            {
+              "affix_id": "charms_%_chance_on_use_to_use_another_charm_without_consuming_charges",
+              "text": "(10-15)% chance when a Charm is used to use another Charm without consuming Charges"
+            },
+            {
+              "affix_id": "charm_effect_+%",
+              "text": "Charms applied to you have (15-25)% increased Effect"
+            },
+            {
+              "affix_id": "recover_%_maximum_mana_on_charm_use",
+              "text": "Recover (5-10)% of maximum Mana when a Charm is used"
+            },
+            {
+              "affix_id": "culling_strike_threshold_+%",
+              "text": "(15-25)% increased Culling Strike Threshold"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_lightning",
+              "text": "Gain (9-15)% of Damage as Extra Lightning Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_chaos",
+              "text": "Gain (7-13)% of Damage as Extra Chaos Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_fire",
+              "text": "Gain (9-15)% of Damage as Extra Fire Damage"
+            },
+            {
+              "affix_id": "non_skill_base_all_damage_%_to_gain_as_cold",
+              "text": "Gain (9-15)% of Damage as Extra Cold Damage"
+            },
+            {
+              "affix_id": "damage_+%_while_in_presence_of_companion",
+              "text": "(15-25)% increased Damage while your Companion is in your Presence"
+            },
+            {
+              "affix_id": "exposure_effect_+%",
+              "text": "(15-25)% increased Exposure Effect"
+            },
+            {
+              "affix_id": "body_armour_evasion_rating_+%",
+              "text": "(40-60)% increased Evasion Rating from Equipped Body Armour"
+            },
+            {
+              "affix_id": "life_regeneration_rate_per_minute_%_if_used_life_flask_in_past_10_seconds",
+              "text": "Regenerate (1-1.5)% of maximum Life per Second if you've used a Life Flask in the past 10 seconds"
+            },
+            {
+              "affix_id": "base_cooldown_speed_+%",
+              "text": "(10-18)% increased Cooldown Recovery Rate"
+            },
+            {
+              "affix_id": "ice_crystal_maximum_life_+%",
+              "text": "(40-60)% increased Ice Crystal Life"
+            },
+            {
+              "affix_id": "skill_speed_+%",
+              "text": "(4-8)% increased Skill Speed"
+            },
+            {
+              "affix_id": "chance_for_extra_damage_roll_with_lightning_damage_%",
+              "text": "(15-25)% chance for Lightning Damage with Hits to be Lucky"
+            },
+            {
+              "affix_id": "base_mana_cost_efficiency_+%",
+              "text": "(8-16)% increased Mana Cost Efficiency"
+            },
+            {
+              "affix_id": "mana_regeneration_rate_+%_while_moving",
+              "text": "(20-30)% increased Mana Regeneration Rate while moving"
+            },
+            {
+              "affix_id": "additional_maximum_all_elemental_resistances_%",
+              "text": "+1% to all Maximum Elemental Resistances"
+            },
+            {
+              "affix_id": "maximum_energy_shield_from_body_armour_+%",
+              "text": "(40-60)% increased Energy Shield from Equipped Body Armour"
+            },
+            {
+              "affix_id": "minion_maximum_life_%_to_gain_as_maximum_energy_shield",
+              "text": "Minions gain (10-15)% of their maximum Life as Extra maximum Energy Shield"
+            },
+            {
+              "affix_id": "minion_life_regeneration_rate_per_minute_%",
+              "text": "Minions Regenerate (1-3)% of maximum Life per second"
+            },
+            {
+              "affix_id": "minion_resummon_speed_+%",
+              "text": "Minions Revive (5-10)% faster"
+            },
+            {
+              "affix_id": "leech_%_is_instant",
+              "text": "(8-15)% of Leech is Instant"
+            },
+            {
+              "affix_id": "physical_damage_prevented_recouped_as_life_%",
+              "text": "(5-10)% of Physical Damage prevented Recouped as Life"
+            },
+            {
+              "affix_id": "recoup_speed_+%",
+              "text": "(8-14)% increased speed of Recoup Effects"
+            },
+            {
+              "affix_id": "recover_%_maximum_life_on_killing_poisoned_enemy",
+              "text": "Recover (2-4)% of maximum Life on Killing a Poisoned Enemy"
+            },
+            {
+              "affix_id": "skill_effect_duration_+%",
+              "text": "(10-15)% increased Skill Effect Duration"
+            },
+            {
+              "affix_id": "base_thorns_critical_strike_chance",
+              "text": "+(2-4)% to Thorns Critical Hit Chance"
+            },
+            {
+              "affix_id": "base_body_armour_permyriad_to_gain_as_physical_thorns_damage",
+              "text": "Gain Physical Thorns damage equal to (4-6)% of Item Armour on Equipped Body Armour"
+            },
+            {
+              "affix_id": "trigger_skills_refund_half_energy_spent_chance_%",
+              "text": "(6-12)% chance for Trigger skills to refund half of Energy Spent"
+            }
+          ]
+        },
+        {
+          "text": "[Custom Desecrated suffix]",
+          "template": "[Custom Desecrated suffix]",
+          "rolls": [],
+          "affix_ids": [
+            "ailment_chance_+%",
+            "ailment_threshold_+_from_%_maximum_energy_shield",
+            "base_chance_to_inflict_bleeding_%",
+            "base_chance_to_poison_on_hit_%",
+            "critical_strike_chance_+%",
+            "base_critical_strike_multiplier_+",
+            "base_damage_removed_from_mana_before_life_%",
+            "debuff_time_passed_+%",
+            "damaging_ailments_deal_damage_+%_faster",
+            "flask_duration_+%",
+            "gain_x_rage_when_hit",
+            "base_cooldown_speed_+%",
+            "ailment_threshold_+%",
+            "attack_speed_+%",
+            "base_cast_speed_+%",
+            "flask_charges_gained_+%",
+            "stun_threshold_+%",
+            "base_skill_cost_life_instead_of_mana_%",
+            "damage_taken_goes_to_life_over_4_seconds_%",
+            "life_regeneration_rate_+%",
+            "maximum_mana_%_gained_on_kill",
+            "mana_regeneration_rate_+%",
+            "base_maximum_cold_damage_resistance_%",
+            "base_maximum_fire_damage_resistance_%",
+            "recover_%_maximum_life_on_kill",
+            "base_maximum_lightning_damage_resistance_%",
+            "minion_attack_and_cast_speed_+%",
+            "minion_critical_strike_chance_+%",
+            "minion_elemental_resistance_%",
+            "minion_additional_physical_damage_reduction_%",
+            "base_movement_velocity_+%",
+            "gain_x_rage_on_melee_hit",
+            "skill_effect_duration_+%",
+            "base_slow_potency_+%",
+            "spell_critical_strike_chance_+%",
+            "base_spell_critical_strike_multiplier_+",
+            "hit_damage_stun_multiplier_+%",
+            "stun_threshold_+_from_%_maximum_energy_shield"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "ailment_chance_+%",
+              "text": "(4-8)% increased chance to inflict Ailments"
+            },
+            {
+              "affix_id": "ailment_threshold_+_from_%_maximum_energy_shield",
+              "text": "Gain additional Ailment Threshold equal to (4-10)% of maximum Energy Shield"
+            },
+            {
+              "affix_id": "base_chance_to_inflict_bleeding_%",
+              "text": "(5-10)% chance to inflict Bleeding on Hit"
+            },
+            {
+              "affix_id": "base_chance_to_poison_on_hit_%",
+              "text": "(5-10)% chance to Poison on Hit"
+            },
+            {
+              "affix_id": "critical_strike_chance_+%",
+              "text": "(4-8)% increased Critical Hit Chance"
+            },
+            {
+              "affix_id": "base_critical_strike_multiplier_+",
+              "text": "(6-12)% increased Critical Damage Bonus"
+            },
+            {
+              "affix_id": "base_damage_removed_from_mana_before_life_%",
+              "text": "(2-3)% of Damage is taken from Mana before Life"
+            },
+            {
+              "affix_id": "debuff_time_passed_+%",
+              "text": "Debuffs on you expire (4-8)% faster"
+            },
+            {
+              "affix_id": "damaging_ailments_deal_damage_+%_faster",
+              "text": "Damaging Ailments deal damage (2-4)% faster"
+            },
+            {
+              "affix_id": "flask_duration_+%",
+              "text": "(4-8)% increased Flask Effect Duration"
+            },
+            {
+              "affix_id": "gain_x_rage_when_hit",
+              "text": "Gain (1-2) Rage when Hit by an Enemy"
+            },
+            {
+              "affix_id": "base_cooldown_speed_+%",
+              "text": "(2-3)% increased Cooldown Recovery Rate"
+            },
+            {
+              "affix_id": "ailment_threshold_+%",
+              "text": "(6-12)% increased Elemental Ailment Threshold"
+            },
+            {
+              "affix_id": "attack_speed_+%",
+              "text": "(2-3)% increased Attack Speed"
+            },
+            {
+              "affix_id": "base_cast_speed_+%",
+              "text": "(2-3)% increased Cast Speed"
+            },
+            {
+              "affix_id": "flask_charges_gained_+%",
+              "text": "(4-8)% increased Flask Charges gained"
+            },
+            {
+              "affix_id": "stun_threshold_+%",
+              "text": "(5-10)% increased Stun Threshold"
+            },
+            {
+              "affix_id": "base_skill_cost_life_instead_of_mana_%",
+              "text": "(2-3)% of Skill Mana Costs Converted to Life Costs"
+            },
+            {
+              "affix_id": "damage_taken_goes_to_life_over_4_seconds_%",
+              "text": "(2-3)% of Damage taken Recouped as Life"
+            },
+            {
+              "affix_id": "life_regeneration_rate_+%",
+              "text": "(6-12)% increased Life Regeneration rate"
+            },
+            {
+              "affix_id": "maximum_mana_%_gained_on_kill",
+              "text": "Recover (1-2)% of maximum Mana on Kill"
+            },
+            {
+              "affix_id": "mana_regeneration_rate_+%",
+              "text": "(4-8)% increased Mana Regeneration Rate"
+            },
+            {
+              "affix_id": "base_maximum_cold_damage_resistance_%",
+              "text": "+1% to Maximum Cold Resistance"
+            },
+            {
+              "affix_id": "base_maximum_fire_damage_resistance_%",
+              "text": "+1% to Maximum Fire Resistance"
+            },
+            {
+              "affix_id": "recover_%_maximum_life_on_kill",
+              "text": "Recover (1-2)% of maximum Life on Kill"
+            },
+            {
+              "affix_id": "base_maximum_lightning_damage_resistance_%",
+              "text": "+1% to Maximum Lightning Resistance"
+            },
+            {
+              "affix_id": "minion_attack_and_cast_speed_+%",
+              "text": "Minions have (2-3)% increased Attack and Cast Speed"
+            },
+            {
+              "affix_id": "minion_critical_strike_chance_+%",
+              "text": "Minions have (6-12)% increased Critical Hit Chance"
+            },
+            {
+              "affix_id": "minion_elemental_resistance_%",
+              "text": "Minions have +(3-4)% to all Elemental Resistances"
+            },
+            {
+              "affix_id": "minion_additional_physical_damage_reduction_%",
+              "text": "Minions have (3-12)% additional Physical Damage Reduction"
+            },
+            {
+              "affix_id": "base_movement_velocity_+%",
+              "text": "(1-2)% increased Movement Speed"
+            },
+            {
+              "affix_id": "gain_x_rage_on_melee_hit",
+              "text": "Gain 1 Rage on Melee Hit"
+            },
+            {
+              "affix_id": "skill_effect_duration_+%",
+              "text": "(3-8)% increased Skill Effect Duration"
+            },
+            {
+              "affix_id": "base_slow_potency_+%",
+              "text": "(5-10)% reduced Slowing Potency of Debuffs on You"
+            },
+            {
+              "affix_id": "spell_critical_strike_chance_+%",
+              "text": "(4-8)% increased Critical Hit Chance for Spells"
+            },
+            {
+              "affix_id": "base_spell_critical_strike_multiplier_+",
+              "text": "(6-12)% increased Critical Spell Damage Bonus"
+            },
+            {
+              "affix_id": "hit_damage_stun_multiplier_+%",
+              "text": "(6-12)% increased Stun Buildup"
+            },
+            {
+              "affix_id": "stun_threshold_+_from_%_maximum_energy_shield",
+              "text": "Gain additional Stun Threshold equal to (4-10)% of maximum Energy Shield"
+            }
+          ]
+        },
+        {
+          "text": "[Custom Desecrated suffix]",
+          "template": "[Custom Desecrated suffix]",
+          "rolls": [],
+          "affix_ids": [
+            "ailment_chance_+%",
+            "ailment_threshold_+_from_%_maximum_energy_shield",
+            "base_chance_to_inflict_bleeding_%",
+            "base_chance_to_poison_on_hit_%",
+            "critical_strike_chance_+%",
+            "base_critical_strike_multiplier_+",
+            "base_damage_removed_from_mana_before_life_%",
+            "debuff_time_passed_+%",
+            "damaging_ailments_deal_damage_+%_faster",
+            "flask_duration_+%",
+            "gain_x_rage_when_hit",
+            "base_cooldown_speed_+%",
+            "ailment_threshold_+%",
+            "attack_speed_+%",
+            "base_cast_speed_+%",
+            "flask_charges_gained_+%",
+            "stun_threshold_+%",
+            "base_skill_cost_life_instead_of_mana_%",
+            "damage_taken_goes_to_life_over_4_seconds_%",
+            "life_regeneration_rate_+%",
+            "maximum_mana_%_gained_on_kill",
+            "mana_regeneration_rate_+%",
+            "base_maximum_cold_damage_resistance_%",
+            "base_maximum_fire_damage_resistance_%",
+            "recover_%_maximum_life_on_kill",
+            "base_maximum_lightning_damage_resistance_%",
+            "minion_attack_and_cast_speed_+%",
+            "minion_critical_strike_chance_+%",
+            "minion_elemental_resistance_%",
+            "minion_additional_physical_damage_reduction_%",
+            "base_movement_velocity_+%",
+            "gain_x_rage_on_melee_hit",
+            "skill_effect_duration_+%",
+            "base_slow_potency_+%",
+            "spell_critical_strike_chance_+%",
+            "base_spell_critical_strike_multiplier_+",
+            "hit_damage_stun_multiplier_+%",
+            "stun_threshold_+_from_%_maximum_energy_shield"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "ailment_chance_+%",
+              "text": "(4-8)% increased chance to inflict Ailments"
+            },
+            {
+              "affix_id": "ailment_threshold_+_from_%_maximum_energy_shield",
+              "text": "Gain additional Ailment Threshold equal to (4-10)% of maximum Energy Shield"
+            },
+            {
+              "affix_id": "base_chance_to_inflict_bleeding_%",
+              "text": "(5-10)% chance to inflict Bleeding on Hit"
+            },
+            {
+              "affix_id": "base_chance_to_poison_on_hit_%",
+              "text": "(5-10)% chance to Poison on Hit"
+            },
+            {
+              "affix_id": "critical_strike_chance_+%",
+              "text": "(4-8)% increased Critical Hit Chance"
+            },
+            {
+              "affix_id": "base_critical_strike_multiplier_+",
+              "text": "(6-12)% increased Critical Damage Bonus"
+            },
+            {
+              "affix_id": "base_damage_removed_from_mana_before_life_%",
+              "text": "(2-3)% of Damage is taken from Mana before Life"
+            },
+            {
+              "affix_id": "debuff_time_passed_+%",
+              "text": "Debuffs on you expire (4-8)% faster"
+            },
+            {
+              "affix_id": "damaging_ailments_deal_damage_+%_faster",
+              "text": "Damaging Ailments deal damage (2-4)% faster"
+            },
+            {
+              "affix_id": "flask_duration_+%",
+              "text": "(4-8)% increased Flask Effect Duration"
+            },
+            {
+              "affix_id": "gain_x_rage_when_hit",
+              "text": "Gain (1-2) Rage when Hit by an Enemy"
+            },
+            {
+              "affix_id": "base_cooldown_speed_+%",
+              "text": "(2-3)% increased Cooldown Recovery Rate"
+            },
+            {
+              "affix_id": "ailment_threshold_+%",
+              "text": "(6-12)% increased Elemental Ailment Threshold"
+            },
+            {
+              "affix_id": "attack_speed_+%",
+              "text": "(2-3)% increased Attack Speed"
+            },
+            {
+              "affix_id": "base_cast_speed_+%",
+              "text": "(2-3)% increased Cast Speed"
+            },
+            {
+              "affix_id": "flask_charges_gained_+%",
+              "text": "(4-8)% increased Flask Charges gained"
+            },
+            {
+              "affix_id": "stun_threshold_+%",
+              "text": "(5-10)% increased Stun Threshold"
+            },
+            {
+              "affix_id": "base_skill_cost_life_instead_of_mana_%",
+              "text": "(2-3)% of Skill Mana Costs Converted to Life Costs"
+            },
+            {
+              "affix_id": "damage_taken_goes_to_life_over_4_seconds_%",
+              "text": "(2-3)% of Damage taken Recouped as Life"
+            },
+            {
+              "affix_id": "life_regeneration_rate_+%",
+              "text": "(6-12)% increased Life Regeneration rate"
+            },
+            {
+              "affix_id": "maximum_mana_%_gained_on_kill",
+              "text": "Recover (1-2)% of maximum Mana on Kill"
+            },
+            {
+              "affix_id": "mana_regeneration_rate_+%",
+              "text": "(4-8)% increased Mana Regeneration Rate"
+            },
+            {
+              "affix_id": "base_maximum_cold_damage_resistance_%",
+              "text": "+1% to Maximum Cold Resistance"
+            },
+            {
+              "affix_id": "base_maximum_fire_damage_resistance_%",
+              "text": "+1% to Maximum Fire Resistance"
+            },
+            {
+              "affix_id": "recover_%_maximum_life_on_kill",
+              "text": "Recover (1-2)% of maximum Life on Kill"
+            },
+            {
+              "affix_id": "base_maximum_lightning_damage_resistance_%",
+              "text": "+1% to Maximum Lightning Resistance"
+            },
+            {
+              "affix_id": "minion_attack_and_cast_speed_+%",
+              "text": "Minions have (2-3)% increased Attack and Cast Speed"
+            },
+            {
+              "affix_id": "minion_critical_strike_chance_+%",
+              "text": "Minions have (6-12)% increased Critical Hit Chance"
+            },
+            {
+              "affix_id": "minion_elemental_resistance_%",
+              "text": "Minions have +(3-4)% to all Elemental Resistances"
+            },
+            {
+              "affix_id": "minion_additional_physical_damage_reduction_%",
+              "text": "Minions have (3-12)% additional Physical Damage Reduction"
+            },
+            {
+              "affix_id": "base_movement_velocity_+%",
+              "text": "(1-2)% increased Movement Speed"
+            },
+            {
+              "affix_id": "gain_x_rage_on_melee_hit",
+              "text": "Gain 1 Rage on Melee Hit"
+            },
+            {
+              "affix_id": "skill_effect_duration_+%",
+              "text": "(3-8)% increased Skill Effect Duration"
+            },
+            {
+              "affix_id": "base_slow_potency_+%",
+              "text": "(5-10)% reduced Slowing Potency of Debuffs on You"
+            },
+            {
+              "affix_id": "spell_critical_strike_chance_+%",
+              "text": "(4-8)% increased Critical Hit Chance for Spells"
+            },
+            {
+              "affix_id": "base_spell_critical_strike_multiplier_+",
+              "text": "(6-12)% increased Critical Spell Damage Bonus"
+            },
+            {
+              "affix_id": "hit_damage_stun_multiplier_+%",
+              "text": "(6-12)% increased Stun Buildup"
+            },
+            {
+              "affix_id": "stun_threshold_+_from_%_maximum_energy_shield",
+              "text": "Gain additional Stun Threshold equal to (4-10)% of maximum Energy Shield"
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Heroic Tragedy",
+      "display_name": "Heroic Tragedy Timeless Jewel",
+      "base_name": "Timeless Jewel",
+      "href": "https://poe2db.tw/us/Heroic_Tragedy",
+      "base_href": "https://poe2db.tw/Timeless_Jewel",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Remembrancing (100—8000) songworthy deeds by the line of Vorana",
+          "template": "Remembrancing # songworthy deeds by the line of Vorana",
+          "rolls": [
+            {
+              "raw": "(100—8000)",
+              "min": 100,
+              "max": 8000
+            }
+          ],
+          "affix_ids": [
+            "local_unique_jewel_alternate_tree_seed"
+          ]
+        },
+        {
+          "text": "Passives in radius are Conquered by the Kalguur",
+          "template": "Passives in radius are Conquered by the Kalguur",
+          "rolls": [],
+          "affix_ids": [
+            "local_unique_jewel_alternate_tree_seed"
+          ]
+        },
+        {
+          "text": "Historic",
+          "template": "Historic",
+          "rolls": []
+        },
+        {
+          "text": "local unique jewel break timeless jewel calculators [0]",
+          "template": "local unique jewel break timeless jewel calculators [0]",
+          "rolls": [],
+          "family": "PassiveJewelGrantsRadius",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "red_herring"
+          ],
+          "stat_ids": [
+            "local unique jewel break timeless jewel calculators"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_jewel_break_timeless_jewel_calculators"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Megalomaniac",
+      "display_name": "Megalomaniac Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/Megalomaniac",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Allocates Passive Skill",
+          "template": "Allocates Passive Skill",
+          "rolls": [],
+          "family": "GrantedPassive",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique jewel grants notable hash 3"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_jewel_grants_notable_hash_3"
+          ]
+        },
+        {
+          "text": "Allocates Passive Skill",
+          "template": "Allocates Passive Skill",
+          "rolls": [],
+          "family": "GrantedPassive",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique jewel grants notable hash 1"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_jewel_grants_notable_hash_1"
+          ]
+        },
+        {
+          "text": "Allocates Passive Skill",
+          "template": "Allocates Passive Skill",
+          "rolls": [],
+          "family": "GrantedPassive",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique jewel grants notable hash 1"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_jewel_grants_notable_hash_1"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "Prism of Belief",
+      "display_name": "Prism of Belief Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/Prism_of_Belief",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(1—3) to Level of all Specific Skill Skills",
+          "template": "+# to Level of all Specific Skill Skills",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "family": "UniqueJewelSpecificSkillLevelBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique jewel specific skill level + skill"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_jewel_specific_skill_level_+_skill"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Adorned",
+      "display_name": "The Adorned Diamond",
+      "base_name": "Diamond",
+      "href": "https://poe2db.tw/us/The_Adorned",
+      "base_href": "https://poe2db.tw/Diamond",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(0—150)% increased Effect of Jewel Socket Passive Skills containing Corrupted Magic Jewels",
+          "template": "#% increased Effect of Jewel Socket Passive Skills containing Corrupted Magic Jewels",
+          "rolls": [
+            {
+              "raw": "(0—150)",
+              "min": 0,
+              "max": 150
+            }
+          ],
+          "family": "CorruptedMagicJewelModEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique jewel passive jewel socket mod effect +% with corrupted magic jewel socketed"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_jewel_passive_jewel_socket_mod_effect_+%_with_corrupted_magic_jewel_socketed"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique",
+        "CultivatedUniques"
+      ]
+    },
+    {
+      "name": "Undying Hate",
+      "display_name": "Undying Hate Timeless Jewel",
+      "base_name": "Timeless Jewel",
+      "href": "https://poe2db.tw/us/Undying_Hate",
+      "base_href": "https://poe2db.tw/Timeless_Jewel",
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Glorifying the defilement of (79—30977) souls in tribute to Amanamu",
+          "template": "Glorifying the defilement of # souls in tribute to Amanamu",
+          "rolls": [
+            {
+              "raw": "(79—30977)",
+              "min": 79,
+              "max": 30977
+            }
+          ],
+          "affix_ids": [
+            "local_unique_jewel_alternate_tree_seed"
+          ]
+        },
+        {
+          "text": "Passives in radius are Conquered by the Abyssals",
+          "template": "Passives in radius are Conquered by the Abyssals",
+          "rolls": [],
+          "affix_ids": [
+            "local_unique_jewel_alternate_tree_seed"
+          ]
+        },
+        {
+          "text": "Desecration makes this item unstable",
+          "template": "Desecration makes this item unstable",
+          "rolls": []
+        },
+        {
+          "text": "Historic",
+          "template": "Historic",
+          "rolls": []
+        },
+        {
+          "text": "local unique jewel break timeless jewel calculators [0]",
+          "template": "local unique jewel break timeless jewel calculators [0]",
+          "rolls": [],
+          "family": "PassiveJewelGrantsRadius",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "red_herring"
+          ],
+          "stat_ids": [
+            "local unique jewel break timeless jewel calculators"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_jewel_break_timeless_jewel_calculators"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Jewels",
+      "class_slug": "Jewels",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    }
+  ]
+}

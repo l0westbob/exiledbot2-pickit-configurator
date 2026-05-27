@@ -45,9 +45,43 @@ describe("pickit rule generation", () => {
     })
 
     expect(lines).toEqual([
-      "// Picks up Ring of rarity Magic and StashItem if they have at least +# to [Life|Life] of tier T1",
       '[Category] == "Ring" && [Rarity] == "Magic" # base_maximum_life >= "20" && base_maximum_life <= "29" && [StashItem] == "true"',
     ])
+  })
+
+  it("includes the human explanation only when requested", () => {
+    const affixes = [
+      {
+        modifierSection: "normal",
+        family_key: "MaximumLife",
+        kind: "prefix",
+        template: "+# to [Life|Life]",
+        tiers: [
+          {
+            level: 10,
+            name: "Healthy",
+            stats: [{id: "base_maximum_life", min: 20, max: 29}],
+          },
+        ],
+      },
+    ]
+    const slots = [{selectedAffixKey: getAffixFamilyKey(affixes[0]), selectedTierLevel: 10}]
+    const {findAffixByKey, availableTiersForSlot} = createFinders(affixes)
+
+    const lines = generateRulePreviewLines({
+      actionFlag: "StashItem",
+      includeExplanation: true,
+      selectedItemSlug: "Rings",
+      selectedItem: {pickitCategory: "Ring"},
+      affixSlots: slots,
+      findAffixByKey,
+      availableTiersForSlot: (slotIndex) => availableTiersForSlot(slotIndex, slots),
+    })
+
+    expect(lines[0]).toBe(
+      "// Picks up Ring of rarity Magic and StashItem if they have at least +# to [Life|Life] of tier T1"
+    )
+    expect(lines[1]).toContain('[Category] == "Ring"')
   })
 
   it("aggregates duplicate stat ids across selected affixes", () => {
@@ -82,9 +116,9 @@ describe("pickit rule generation", () => {
       availableTiersForSlot: (slotIndex) => availableTiersForSlot(slotIndex, slots),
     })
 
-    expect(lines[1]).toContain('additional_strength >= "23"')
-    expect(lines[1]).toContain('additional_strength <= "27"')
-    expect(lines[1].match(/additional_strength/g)).toHaveLength(2)
+    expect(lines[0]).toContain('additional_strength >= "23"')
+    expect(lines[0]).toContain('additional_strength <= "27"')
+    expect(lines[0].match(/additional_strength/g)).toHaveLength(2)
   })
 
   it("marks three selected affixes as rare", () => {
@@ -144,6 +178,7 @@ describe("pickit rule generation", () => {
 
     const lines = generateRulePreviewLines({
       actionFlag: "StashItem",
+      includeExplanation: true,
       selectedItemSlug: "Rings",
       selectedItem: {pickitCategory: "Ring"},
       selectedBaseName: "Golden Hoop",

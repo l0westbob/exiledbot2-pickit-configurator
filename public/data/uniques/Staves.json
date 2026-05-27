@@ -1,0 +1,1355 @@
+{
+  "class": "Staves",
+  "slug": "Staves",
+  "uniques": [
+    {
+      "name": "Atziri's Rule",
+      "display_name": "Atziri's Rule Reflecting Staff",
+      "base_name": "Reflecting Staff",
+      "href": "https://poe2db.tw/us/Atziris_Rule",
+      "requirements": {
+        "level": 70,
+        "str": null,
+        "dex": null,
+        "int": 123
+      },
+      "base_requirements": {
+        "level": 70,
+        "str": null,
+        "dex": null,
+        "int": 123
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 16 Mirror of Refraction",
+          "template": "Grants Skill: Level 16 Mirror of Refraction",
+          "rolls": []
+        },
+        {
+          "text": "(10—20)% increased maximum Life",
+          "template": "#% increased maximum Life",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "MaximumLifeIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum life +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "maximum_life_+%"
+          ]
+        },
+        {
+          "text": "+(3—5) to Level of all Corrupted Spell Skill Gems",
+          "template": "+# to Level of all Corrupted Spell Skill Gems",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            }
+          ],
+          "family": "GlobalSkillGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "corrupted spell skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Gem"
+          ],
+          "affix_ids": [
+            "corrupted_spell_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Spells which cost Life Gain (80—120)% of Damage as Extra Physical Damage",
+          "template": "Spells which cost Life Gain #% of Damage as Extra Physical Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "DamageAsExtraDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spells gain % physical damage if they cost life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "caster_damage",
+            "Damage",
+            "Physical",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spells_gain_%_physical_damage_if_they_cost_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Reflecting_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "Dusk Vigil",
+      "display_name": "Dusk Vigil Ashen Staff",
+      "base_name": "Ashen Staff",
+      "href": "https://poe2db.tw/us/Dusk_Vigil",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": 6
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": 6
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Firebolt",
+          "template": "Grants Skill: Firebolt",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 1 Ember Fusillade",
+          "template": "Grants Skill: Level 1 Ember Fusillade",
+          "rolls": []
+        },
+        {
+          "text": "Gain (30—50)% of Damage as Extra Fire Damage",
+          "template": "Gain #% of Damage as Extra Fire Damage",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as fire"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_fire"
+          ]
+        },
+        {
+          "text": "(80—120)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "Gain (5—10) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "25 % increased Mana Regeneration Rate",
+          "template": "25 % increased Mana Regeneration Rate",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Trigger Ember Fusillade Skill on casting a Spell",
+          "template": "Trigger Ember Fusillade Skill on casting a Spell",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local display triggers level x ember fusillade on spell cast"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "skill"
+          ],
+          "affix_ids": [
+            "local_display_triggers_level_x_ember_fusillade_on_spell_cast"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Ashen_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "Earthbound",
+      "display_name": "Earthbound Voltaic Staff",
+      "base_name": "Voltaic Staff",
+      "href": "https://poe2db.tw/us/Earthbound",
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "base_requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 1 Lightning Bolt",
+          "template": "Grants Skill: Level 1 Lightning Bolt",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 1 Spark",
+          "template": "Grants Skill: Level 1 Spark",
+          "rolls": []
+        },
+        {
+          "text": "(80—120)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Trigger Spark Skill on killing a Shocked Enemy",
+          "template": "Trigger Spark Skill on killing a Shocked Enemy",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local display triggers level x spark on killing shocked enemy with enemy location as origin"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "skill"
+          ],
+          "affix_ids": [
+            "local_display_triggers_level_x_spark_on_killing_shocked_enemy_with_enemy_location_as_origin"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Voltaic_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "Sire of Shards",
+      "display_name": "Sire of Shards Chiming Staff",
+      "base_name": "Chiming Staff",
+      "href": "https://poe2db.tw/us/Sire_of_Shards",
+      "requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": 46
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": 46
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 7 Sigil of Power",
+          "template": "Grants Skill: Level 7 Sigil of Power",
+          "rolls": []
+        },
+        {
+          "text": "(80—120)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "+(5—10)% to all Elemental Resistances",
+          "template": "+#% to all Elemental Resistances",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "20 % increased Light Radius",
+          "template": "20 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Spells fire 4 additional Projectiles Spells fire Projectiles in a circle",
+          "template": "Spells fire 4 additional Projectiles Spells fire Projectiles in a circle",
+          "rolls": [],
+          "family": "AdditionalProjectiles",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell projectile skills fire X additional projectiles in a circle"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_projectile_skills_fire_X_additional_projectiles_in_a_circle"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Chiming_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "Taryn's Shiver",
+      "display_name": "Taryn's Shiver Gelid Staff",
+      "base_name": "Gelid Staff",
+      "href": "https://poe2db.tw/us/Taryns_Shiver",
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "base_requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 1 Freezing Shards",
+          "template": "Grants Skill: Level 1 Freezing Shards",
+          "rolls": []
+        },
+        {
+          "text": "(80—120)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "30 % increased Freeze Buildup",
+          "template": "30 % increased Freeze Buildup",
+          "rolls": [],
+          "family": "FreezeDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "hit damage freeze multiplier +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "hit_damage_freeze_multiplier_+%"
+          ]
+        },
+        {
+          "text": "Enemies Frozen by you take 100 % increased Damage",
+          "template": "Enemies Frozen by you take 100 % increased Damage",
+          "rolls": [],
+          "family": "FrozenMonstersTakeIncreasedDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "frozen monsters take increased damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage"
+          ],
+          "affix_ids": [
+            "frozen_monsters_take_increased_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Gelid_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "The Burden of Shadows",
+      "display_name": "The Burden of Shadows Chiming Staff",
+      "base_name": "Chiming Staff",
+      "href": "https://poe2db.tw/us/The_Burden_of_Shadows",
+      "requirements": {
+        "level": 78,
+        "str": null,
+        "dex": null,
+        "int": 46
+      },
+      "base_requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": 46
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 7 Sigil of Power",
+          "template": "Grants Skill: Level 7 Sigil of Power",
+          "rolls": []
+        },
+        {
+          "text": "(20—30)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Skill Mana Costs Converted to Life Costs",
+          "template": "Skill Mana Costs Converted to Life Costs",
+          "rolls": [],
+          "family": "LifeCost",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base skill cost life instead of mana %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_skill_cost_life_instead_of_mana_%"
+          ]
+        },
+        {
+          "text": "Skills gain 1 % of Damage as Chaos Damage per 3 Life Cost",
+          "template": "Skills gain 1 % of Damage as Chaos Damage per 3 Life Cost",
+          "rolls": [],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill all damage % to gain as chaos per 3 life cost"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_all_damage_%_to_gain_as_chaos_per_3_life_cost"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Chiming_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "The Searing Touch",
+      "display_name": "The Searing Touch Pyrophyte Staff",
+      "base_name": "Pyrophyte Staff",
+      "href": "https://poe2db.tw/us/The_Searing_Touch",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 31
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 31
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 5 Solar Orb",
+          "template": "Grants Skill: Level 5 Solar Orb",
+          "rolls": []
+        },
+        {
+          "text": "(80—120)% increased Fire Damage",
+          "template": "#% increased Fire Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "WeaponDamageTypePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "fire damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "fire_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "100 % increased Flammability Magnitude",
+          "template": "100 % increased Flammability Magnitude",
+          "rolls": [],
+          "family": "IgniteChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite chance +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_chance_+%"
+          ]
+        },
+        {
+          "text": "100 % increased Ignite Magnitude",
+          "template": "100 % increased Ignite Magnitude",
+          "rolls": [],
+          "family": "IgniteEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base ignite effect +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_ignite_effect_+%"
+          ]
+        },
+        {
+          "text": "Ignites you inflict spread to other Enemies that stay within 1.5 metres for 1 second",
+          "template": "Ignites you inflict spread to other Enemies that stay within 1.5 metres for 1 second",
+          "rolls": [],
+          "family": "GlobalIgniteProlif",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite proliferation radius 15"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "ignite_proliferation_radius_15"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Pyrophyte_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "The Unborn Lich",
+      "display_name": "The Unborn Lich Ravenous Staff",
+      "base_name": "Ravenous Staff",
+      "href": "https://poe2db.tw/us/The_Unborn_Lich",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": 114
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": 114
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 15 Feast of Flesh",
+          "template": "Grants Skill: Level 15 Feast of Flesh",
+          "rolls": []
+        },
+        {
+          "text": "(60—80)% increased Desecrated Modifier magnitudes",
+          "template": "#% increased Desecrated Modifier magnitudes",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "LocalVeiledModEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unveiled mod effect +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "unveiled_mod_effect_+%"
+          ]
+        },
+        {
+          "text": "[Custom Desecrated prefix]",
+          "template": "[Custom Desecrated prefix]",
+          "rolls": [],
+          "affix_ids": [
+            "chaos_damage_+%",
+            "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%",
+            "enemies_chaos_resistance_%_while_cursed",
+            "base_elemental_status_ailment_duration_+%",
+            "elemental_damage_+%",
+            "spell_physical_damage_+%",
+            "base_chance_to_inflict_bleeding_%",
+            "base_spirit",
+            "base_spirit_reservation_efficiency_+%",
+            "base_unholy_might_granted_magnitude_+%",
+            "have_unholy_might"
+          ],
+          "affix_options": [
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you kill have a (5-10)% chance to explode, dealing a quarter of their maximum Life as Chaos damage"
+            },
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "enemies_chaos_resistance_%_while_cursed"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you Curse have (-8--5)% to Chaos Resistance"
+            },
+            {
+              "affix_ids": [
+                "base_elemental_status_ailment_duration_+%",
+                "elemental_damage_+%"
+              ],
+              "text": "(10-20)% increased Duration of Elemental Ailments on Enemies; (100-160)% increased Elemental Damage"
+            },
+            {
+              "affix_ids": [
+                "spell_physical_damage_+%",
+                "base_chance_to_inflict_bleeding_%"
+              ],
+              "text": "(100-160)% increased Spell Physical Damage; (20-30)% chance to inflict Bleeding on Hit"
+            },
+            {
+              "affix_ids": [
+                "base_spirit",
+                "base_spirit_reservation_efficiency_+%"
+              ],
+              "text": "+(40-60) to Spirit; (6-10)% increased Spirit Reservation Efficiency of Skills"
+            },
+            {
+              "affix_ids": [
+                "base_unholy_might_granted_magnitude_+%",
+                "have_unholy_might"
+              ],
+              "text": "(28-56)% increased Magnitude of Unholy Might buffs you grant; You have Unholy Might"
+            }
+          ]
+        },
+        {
+          "text": "[Lich's Desecrated prefix]",
+          "template": "[Lich's Desecrated prefix]",
+          "rolls": [],
+          "affix_ids": [
+            "chaos_damage_+%",
+            "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%",
+            "enemies_chaos_resistance_%_while_cursed",
+            "base_elemental_status_ailment_duration_+%",
+            "elemental_damage_+%",
+            "spell_physical_damage_+%",
+            "base_chance_to_inflict_bleeding_%",
+            "base_spirit",
+            "base_spirit_reservation_efficiency_+%",
+            "base_unholy_might_granted_magnitude_+%",
+            "have_unholy_might"
+          ],
+          "affix_options": [
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you kill have a (5-10)% chance to explode, dealing a quarter of their maximum Life as Chaos damage"
+            },
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "enemies_chaos_resistance_%_while_cursed"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you Curse have (-8--5)% to Chaos Resistance"
+            },
+            {
+              "affix_ids": [
+                "base_elemental_status_ailment_duration_+%",
+                "elemental_damage_+%"
+              ],
+              "text": "(10-20)% increased Duration of Elemental Ailments on Enemies; (100-160)% increased Elemental Damage"
+            },
+            {
+              "affix_ids": [
+                "spell_physical_damage_+%",
+                "base_chance_to_inflict_bleeding_%"
+              ],
+              "text": "(100-160)% increased Spell Physical Damage; (20-30)% chance to inflict Bleeding on Hit"
+            },
+            {
+              "affix_ids": [
+                "base_spirit",
+                "base_spirit_reservation_efficiency_+%"
+              ],
+              "text": "+(40-60) to Spirit; (6-10)% increased Spirit Reservation Efficiency of Skills"
+            },
+            {
+              "affix_ids": [
+                "base_unholy_might_granted_magnitude_+%",
+                "have_unholy_might"
+              ],
+              "text": "(28-56)% increased Magnitude of Unholy Might buffs you grant; You have Unholy Might"
+            }
+          ]
+        },
+        {
+          "text": "[Lich's Desecrated suffix]",
+          "template": "[Lich's Desecrated suffix]",
+          "rolls": [],
+          "affix_ids": [
+            "chaos_damage_+%",
+            "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%",
+            "enemies_chaos_resistance_%_while_cursed",
+            "base_elemental_status_ailment_duration_+%",
+            "elemental_damage_+%",
+            "spell_physical_damage_+%",
+            "base_chance_to_inflict_bleeding_%",
+            "base_spirit",
+            "base_spirit_reservation_efficiency_+%",
+            "base_unholy_might_granted_magnitude_+%",
+            "have_unholy_might"
+          ],
+          "affix_options": [
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you kill have a (5-10)% chance to explode, dealing a quarter of their maximum Life as Chaos damage"
+            },
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "enemies_chaos_resistance_%_while_cursed"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you Curse have (-8--5)% to Chaos Resistance"
+            },
+            {
+              "affix_ids": [
+                "base_elemental_status_ailment_duration_+%",
+                "elemental_damage_+%"
+              ],
+              "text": "(10-20)% increased Duration of Elemental Ailments on Enemies; (100-160)% increased Elemental Damage"
+            },
+            {
+              "affix_ids": [
+                "spell_physical_damage_+%",
+                "base_chance_to_inflict_bleeding_%"
+              ],
+              "text": "(100-160)% increased Spell Physical Damage; (20-30)% chance to inflict Bleeding on Hit"
+            },
+            {
+              "affix_ids": [
+                "base_spirit",
+                "base_spirit_reservation_efficiency_+%"
+              ],
+              "text": "+(40-60) to Spirit; (6-10)% increased Spirit Reservation Efficiency of Skills"
+            },
+            {
+              "affix_ids": [
+                "base_unholy_might_granted_magnitude_+%",
+                "have_unholy_might"
+              ],
+              "text": "(28-56)% increased Magnitude of Unholy Might buffs you grant; You have Unholy Might"
+            }
+          ]
+        },
+        {
+          "text": "[Lich's Desecrated suffix]",
+          "template": "[Lich's Desecrated suffix]",
+          "rolls": [],
+          "affix_ids": [
+            "chaos_damage_+%",
+            "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%",
+            "enemies_chaos_resistance_%_while_cursed",
+            "base_elemental_status_ailment_duration_+%",
+            "elemental_damage_+%",
+            "spell_physical_damage_+%",
+            "base_chance_to_inflict_bleeding_%",
+            "base_spirit",
+            "base_spirit_reservation_efficiency_+%",
+            "base_unholy_might_granted_magnitude_+%",
+            "have_unholy_might"
+          ],
+          "affix_options": [
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "explode_enemies_for_25%_life_as_chaos_on_kill_chance_%"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you kill have a (5-10)% chance to explode, dealing a quarter of their maximum Life as Chaos damage"
+            },
+            {
+              "affix_ids": [
+                "chaos_damage_+%",
+                "enemies_chaos_resistance_%_while_cursed"
+              ],
+              "text": "(100-160)% increased Chaos Damage; Enemies you Curse have (-8--5)% to Chaos Resistance"
+            },
+            {
+              "affix_ids": [
+                "base_elemental_status_ailment_duration_+%",
+                "elemental_damage_+%"
+              ],
+              "text": "(10-20)% increased Duration of Elemental Ailments on Enemies; (100-160)% increased Elemental Damage"
+            },
+            {
+              "affix_ids": [
+                "spell_physical_damage_+%",
+                "base_chance_to_inflict_bleeding_%"
+              ],
+              "text": "(100-160)% increased Spell Physical Damage; (20-30)% chance to inflict Bleeding on Hit"
+            },
+            {
+              "affix_ids": [
+                "base_spirit",
+                "base_spirit_reservation_efficiency_+%"
+              ],
+              "text": "+(40-60) to Spirit; (6-10)% increased Spirit Reservation Efficiency of Skills"
+            },
+            {
+              "affix_ids": [
+                "base_unholy_might_granted_magnitude_+%",
+                "have_unholy_might"
+              ],
+              "text": "(28-56)% increased Magnitude of Unholy Might buffs you grant; You have Unholy Might"
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Ravenous_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    },
+    {
+      "name": "The Whispering Ice",
+      "display_name": "The Whispering Ice Permafrost Staff",
+      "base_name": "Permafrost Staff",
+      "href": "https://poe2db.tw/us/The_Whispering_Ice",
+      "requirements": {
+        "level": 75,
+        "str": null,
+        "dex": null,
+        "int": 131
+      },
+      "base_requirements": {
+        "level": 75,
+        "str": null,
+        "dex": null,
+        "int": 131
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 17 Heart of Ice",
+          "template": "Grants Skill: Level 17 Heart of Ice",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 17 Icestorm",
+          "template": "Grants Skill: Level 17 Icestorm",
+          "rolls": []
+        },
+        {
+          "text": "+(5—7) to Level of all Cold Spell Skills",
+          "template": "+# to Level of all Cold Spell Skills",
+          "rolls": [
+            {
+              "raw": "(5—7)",
+              "min": 5,
+              "max": 7
+            }
+          ],
+          "family": "IncreaseSocketedGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cold spell skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Caster",
+            "Gem"
+          ],
+          "affix_ids": [
+            "cold_spell_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "(10—20)% reduced Cast Speed",
+          "template": "#% reduced Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Intelligence",
+          "template": "#% increased Intelligence",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "PercentageIntelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "intelligence +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "intelligence_+%"
+          ]
+        },
+        {
+          "text": "2 % increased Spell Damage per 10 Intelligence",
+          "template": "2 % increased Spell Damage per 10 Intelligence",
+          "rolls": [],
+          "family": "SpellDamagePerIntelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +% per 10 int"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%_per_10_int"
+          ]
+        },
+        {
+          "text": "Inflict Elemental Exposure on Hit, lowering Total Elemental Resistances by (50—60)%",
+          "template": "Inflict Elemental Exposure on Hit, lowering Total Elemental Resistances by #%",
+          "rolls": [
+            {
+              "raw": "(50—60)",
+              "min": 50,
+              "max": 60
+            }
+          ],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all exposure on hit magnitude"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "all_exposure_on_hit_magnitude"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Staves",
+      "base_href": "https://poe2db.tw/Permafrost_Staff",
+      "item_class": "Staves",
+      "class_slug": "Staves"
+    }
+  ]
+}

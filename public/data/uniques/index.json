@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "classes": [
+    {
+      "slug": "Amulets",
+      "class": "Amulets",
+      "file": "Amulets.json"
+    },
+    {
+      "slug": "Belts",
+      "class": "Belts",
+      "file": "Belts.json"
+    },
+    {
+      "slug": "Body_Armours",
+      "class": "Body Armours",
+      "file": "Body_Armours.json"
+    },
+    {
+      "slug": "Boots",
+      "class": "Boots",
+      "file": "Boots.json"
+    },
+    {
+      "slug": "Bows",
+      "class": "Bows",
+      "file": "Bows.json"
+    },
+    {
+      "slug": "Bucklers",
+      "class": "Bucklers",
+      "file": "Bucklers.json"
+    },
+    {
+      "slug": "Charms",
+      "class": "Charms",
+      "file": "Charms.json"
+    },
+    {
+      "slug": "Crossbows",
+      "class": "Crossbows",
+      "file": "Crossbows.json"
+    },
+    {
+      "slug": "Foci",
+      "class": "Foci",
+      "file": "Foci.json"
+    },
+    {
+      "slug": "Gloves",
+      "class": "Gloves",
+      "file": "Gloves.json"
+    },
+    {
+      "slug": "Helmets",
+      "class": "Helmets",
+      "file": "Helmets.json"
+    },
+    {
+      "slug": "Jewels",
+      "class": "Jewels",
+      "file": "Jewels.json"
+    },
+    {
+      "slug": "Life_Flasks",
+      "class": "Life Flasks",
+      "file": "Life_Flasks.json"
+    },
+    {
+      "slug": "Mana_Flasks",
+      "class": "Mana Flasks",
+      "file": "Mana_Flasks.json"
+    },
+    {
+      "slug": "One_Hand_Maces",
+      "class": "One Hand Maces",
+      "file": "One_Hand_Maces.json"
+    },
+    {
+      "slug": "Quarterstaves",
+      "class": "Quarterstaves",
+      "file": "Quarterstaves.json"
+    },
+    {
+      "slug": "Quivers",
+      "class": "Quivers",
+      "file": "Quivers.json"
+    },
+    {
+      "slug": "Relics",
+      "class": "Relics",
+      "file": "Relics.json"
+    },
+    {
+      "slug": "Rings",
+      "class": "Rings",
+      "file": "Rings.json"
+    },
+    {
+      "slug": "Sceptres",
+      "class": "Sceptres",
+      "file": "Sceptres.json"
+    },
+    {
+      "slug": "Shields",
+      "class": "Shields",
+      "file": "Shields.json"
+    },
+    {
+      "slug": "Spears",
+      "class": "Spears",
+      "file": "Spears.json"
+    },
+    {
+      "slug": "Staves",
+      "class": "Staves",
+      "file": "Staves.json"
+    },
+    {
+      "slug": "Tablet",
+      "class": "Tablet",
+      "file": "Tablet.json"
+    },
+    {
+      "slug": "Talismans",
+      "class": "Talismans",
+      "file": "Talismans.json"
+    },
+    {
+      "slug": "Two_Hand_Maces",
+      "class": "Two Hand Maces",
+      "file": "Two_Hand_Maces.json"
+    },
+    {
+      "slug": "Wands",
+      "class": "Wands",
+      "file": "Wands.json"
+    }
+  ]
+}

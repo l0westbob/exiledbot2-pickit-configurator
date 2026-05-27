@@ -1,0 +1,820 @@
+{
+  "class": "Wands",
+  "slug": "Wands",
+  "uniques": [
+    {
+      "name": "Adonia's Ego",
+      "display_name": "Adonia's Ego Siphoning Wand",
+      "base_name": "Siphoning Wand",
+      "href": "https://poe2db.tw/us/Adonias_Ego",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": 23
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": null,
+        "dex": null,
+        "int": 23
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 4 Power Siphon",
+          "template": "Grants Skill: Level 4 Power Siphon",
+          "rolls": []
+        },
+        {
+          "text": "Grants Skill: Level 15 Pinnacle of Power",
+          "template": "Grants Skill: Level 15 Pinnacle of Power",
+          "rolls": []
+        },
+        {
+          "text": "+(100—150) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+3 to Level of all Spell Skills",
+          "template": "+3 to Level of all Spell Skills",
+          "rolls": [],
+          "family": "IncreaseSocketedGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Gem"
+          ],
+          "affix_ids": [
+            "spell_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "(15—30)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "-10 % to all Elemental Resistances per Power Charge",
+          "template": "-10 % to all Elemental Resistances per Power Charge",
+          "rolls": [],
+          "family": "ElementalResistancePerPowerCharge",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "resist all elements % per power charge"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "resist_all_elements_%_per_power_charge"
+          ]
+        },
+        {
+          "text": "(-1—1) to Maximum Power Charges",
+          "template": "# to Maximum Power Charges",
+          "rolls": [
+            {
+              "raw": "(-1—1)",
+              "min": -1,
+              "max": 1
+            }
+          ],
+          "family": "IncreasedMaximumPowerCharges",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "max power charges"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "power_charge"
+          ],
+          "affix_ids": [
+            "max_power_charges"
+          ]
+        },
+        {
+          "text": "power siphon unique elemental art variation [1]",
+          "template": "power siphon unique elemental art variation [1]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "power siphon unique elemental art variation"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "skill"
+          ],
+          "affix_ids": [
+            "power_siphon_unique_elemental_art_variation"
+          ]
+        },
+        {
+          "text": "visual use power charges elemental epk [1]",
+          "template": "visual use power charges elemental epk [1]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "visual use power charges elemental epk"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "skill"
+          ],
+          "affix_ids": [
+            "visual_use_power_charges_elemental_epk"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Wands",
+      "base_href": "https://poe2db.tw/Siphoning_Wand",
+      "item_class": "Wands",
+      "class_slug": "Wands"
+    },
+    {
+      "name": "Cursecarver",
+      "display_name": "Cursecarver Acrid Wand",
+      "base_name": "Acrid Wand",
+      "href": "https://poe2db.tw/us/Cursecarver",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 60
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 60
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 9 Decompose",
+          "template": "Grants Skill: Level 9 Decompose",
+          "rolls": []
+        },
+        {
+          "text": "(80—100)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Lose 10 Life per enemy killed",
+          "template": "Lose 10 Life per enemy killed",
+          "rolls": [],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "+4 to Level of [Random Curse] Skills",
+          "template": "+4 to Level of [Random Curse] Skills",
+          "rolls": [],
+          "affix_ids": [
+            "elemental_weakness_gem_level_+",
+            "despair_gem_level_+",
+            "enfeeble_gem_level_+",
+            "temporal_chains_gem_level_+",
+            "vulnerability_gem_level_+"
+          ],
+          "affix_options": [
+            {
+              "affix_id": "elemental_weakness_gem_level_+",
+              "text": "+4 to Level of Elemental Weakness Skills"
+            },
+            {
+              "affix_id": "despair_gem_level_+",
+              "text": "+4 to Level of Despair Skills"
+            },
+            {
+              "affix_id": "enfeeble_gem_level_+",
+              "text": "+4 to Level of Enfeeble Skills"
+            },
+            {
+              "affix_id": "temporal_chains_gem_level_+",
+              "text": "+4 to Level of Temporal Chains Skills"
+            },
+            {
+              "affix_id": "vulnerability_gem_level_+",
+              "text": "+4 to Level of Vulnerability Skills"
+            }
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Wands",
+      "base_href": "https://poe2db.tw/Acrid_Wand",
+      "item_class": "Wands",
+      "class_slug": "Wands"
+    },
+    {
+      "name": "Enezun's Charge",
+      "display_name": "Enezun's Charge Volatile Wand",
+      "base_name": "Volatile Wand",
+      "href": "https://poe2db.tw/us/Enezuns_Charge",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 31
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 31
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 5 Volatile Dead",
+          "template": "Grants Skill: Level 5 Volatile Dead",
+          "rolls": []
+        },
+        {
+          "text": "(80—100)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Critical Hit Chance for Spells",
+          "template": "#% increased Critical Hit Chance for Spells",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "SpellCriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Critical"
+          ],
+          "affix_ids": [
+            "spell_critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "Gain (10—15) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "25 % chance to not destroy Corpses when Consuming Corpses",
+          "template": "25 % chance to not destroy Corpses when Consuming Corpses",
+          "rolls": [],
+          "family": "CorpseConsumption",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to not consume corpse %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_not_consume_corpse_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Wands",
+      "base_href": "https://poe2db.tw/Volatile_Wand",
+      "item_class": "Wands",
+      "class_slug": "Wands"
+    },
+    {
+      "name": "Lifesprig",
+      "display_name": "Lifesprig Attuned Wand",
+      "base_name": "Attuned Wand",
+      "href": "https://poe2db.tw/us/Lifesprig",
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "base_requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 1 Mana Drain",
+          "template": "Grants Skill: Level 1 Mana Drain",
+          "rolls": []
+        },
+        {
+          "text": "+(10—20) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(1—3) to Level of all Spell Skills",
+          "template": "+# to Level of all Spell Skills",
+          "rolls": [
+            {
+              "raw": "(1—3)",
+              "min": 1,
+              "max": 3
+            }
+          ],
+          "family": "IncreaseSocketedGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Gem"
+          ],
+          "affix_ids": [
+            "spell_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Leeches 1 % of maximum Life when you Cast a Spell",
+          "template": "Leeches 1 % of maximum Life when you Cast a Spell",
+          "rolls": [],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life leech % maximum life on spell cast"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_leech_%_maximum_life_on_spell_cast"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Wands",
+      "base_href": "https://poe2db.tw/Attuned_Wand",
+      "item_class": "Wands",
+      "class_slug": "Wands"
+    },
+    {
+      "name": "Sanguine Diviner",
+      "display_name": "Sanguine Diviner Bone Wand",
+      "base_name": "Bone Wand",
+      "href": "https://poe2db.tw/us/Sanguine_Diviner",
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "base_requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 1 Bone Blast",
+          "template": "Grants Skill: Level 1 Bone Blast",
+          "rolls": []
+        },
+        {
+          "text": "(80—100)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "Gain (10—15) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "25 % chance to inflict Bleeding on Hit",
+          "template": "25 % chance to inflict Bleeding on Hit",
+          "rolls": [],
+          "family": "ChanceToBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to inflict bleeding %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_inflict_bleeding_%"
+          ]
+        },
+        {
+          "text": "25 % of Spell Mana Cost Converted to Life Cost",
+          "template": "25 % of Spell Mana Cost Converted to Life Cost",
+          "rolls": [],
+          "family": "SkillLifeCost",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spells cost life instead of mana %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spells_cost_life_instead_of_mana_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Wands",
+      "base_href": "https://poe2db.tw/Bone_Wand",
+      "item_class": "Wands",
+      "class_slug": "Wands"
+    },
+    {
+      "name": "The Wicked Quill",
+      "display_name": "The Wicked Quill Withered Wand",
+      "base_name": "Withered Wand",
+      "href": "https://poe2db.tw/us/The_Wicked_Quill",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": 6
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": 6
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Chaos Bolt",
+          "template": "Grants Skill: Chaos Bolt",
+          "rolls": []
+        },
+        {
+          "text": "(60—100)% increased Spell Damage",
+          "template": "#% increased Spell Damage",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "WeaponCasterDamagePrefix",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(7—13)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Spells have a 25 % chance to inflict Withered for 4 seconds on Hit",
+          "template": "Spells have a 25 % chance to inflict Withered for 4 seconds on Hit",
+          "rolls": [],
+          "family": "WitherOnHitChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spells have x% chance inflict withered on hit"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster"
+          ],
+          "affix_ids": [
+            "spells_have_x%_chance_inflict_withered_on_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Wands",
+      "base_href": "https://poe2db.tw/Withered_Wand",
+      "item_class": "Wands",
+      "class_slug": "Wands"
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "class": "Talismans",
+  "slug": "Talismans",
+  "uniques": [
+    {
+      "name": "Amor Mandragora",
+      "display_name": "Amor Mandragora Changeling Talisman",
+      "base_name": "Changeling Talisman",
+      "href": "https://poe2db.tw/us/Amor_Mandragora",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (16—20) to (23—27) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(16—20)",
+              "min": 16,
+              "max": 20
+            },
+            {
+              "raw": "(23—27)",
+              "min": 23,
+              "max": 27
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(8—15) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(8—15)",
+              "min": 8,
+              "max": 15
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Skill Effect Duration",
+          "template": "#% increased Skill Effect Duration",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "SkillEffectDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill effect duration +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "skill_effect_duration_+%"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence are Hindered",
+          "template": "Enemies in your Presence are Hindered",
+          "rolls": [],
+          "family": "HinderingPresence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base enemies in your presence are hindered"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_enemies_in_your_presence_are_hindered"
+          ]
+        },
+        {
+          "text": "Gain 1 Druidic Prowess for every 20 total Rage spent",
+          "template": "Gain 1 Druidic Prowess for every 20 total Rage spent",
+          "rolls": [],
+          "family": "DruidicProwess",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain druidic prowess per X rage spent"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_druidic_prowess_per_X_rage_spent"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Talismans",
+      "base_href": "https://poe2db.tw/Changeling_Talisman",
+      "item_class": "Talismans",
+      "class_slug": "Talismans"
+    },
+    {
+      "name": "Fury of the King",
+      "display_name": "Fury of the King Ashbark Talisman",
+      "base_name": "Ashbark Talisman",
+      "href": "https://poe2db.tw/us/Fury_of_the_King",
+      "requirements": {
+        "level": 72,
+        "str": 94,
+        "dex": null,
+        "int": 67
+      },
+      "base_requirements": {
+        "level": 72,
+        "str": 94,
+        "dex": null,
+        "int": 67
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 17 Molten Crash",
+          "template": "Grants Skill: Level 17 Molten Crash",
+          "rolls": []
+        },
+        {
+          "text": "(50—80)% increased Flammability Magnitude",
+          "template": "#% increased Flammability Magnitude",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "WeaponImplicitDamageType",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "ignite_chance_+%"
+          ]
+        },
+        {
+          "text": "local weapon implicit hidden % base damage is fire [30]",
+          "template": "local weapon implicit hidden % base damage is fire [30]",
+          "rolls": [],
+          "family": "WeaponImplicitDamageType",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon implicit hidden % base damage is fire"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_weapon_implicit_hidden_%_base_damage_is_fire"
+          ]
+        },
+        {
+          "text": "Adds (503—589) to (647—713) Fire Damage",
+          "template": "Adds # to # Fire Damage",
+          "rolls": [
+            {
+              "raw": "(503—589)",
+              "min": 503,
+              "max": 589
+            },
+            {
+              "raw": "(647—713)",
+              "min": 647,
+              "max": 713
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added fire damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "(15—20)% reduced Attack Speed",
+          "template": "#% reduced Attack Speed",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(30—40) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Bear Skills Convert 80 % of Physical Damage to Fire Damage",
+          "template": "Bear Skills Convert 80 % of Physical Damage to Fire Damage",
+          "rolls": [],
+          "family": "ShapeshiftSkillDamageConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill physical damage % to convert to fire with bear skills"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "non_skill_physical_damage_%_to_convert_to_fire_with_bear_skills"
+          ]
+        },
+        {
+          "text": "Skills which require Glory generate (2—5) Glory every 2 seconds",
+          "template": "Skills which require Glory generate # Glory every 2 seconds",
+          "rolls": [
+            {
+              "raw": "(2—5)",
+              "min": 2,
+              "max": 5
+            }
+          ],
+          "family": "GloryRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill glory gain per 2 seconds"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "skill_glory_gain_per_2_seconds"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence have Exposure",
+          "template": "Enemies in your Presence have Exposure",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence have exposure"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Aura"
+          ],
+          "affix_ids": [
+            "enemies_in_presence_have_exposure"
+          ]
+        },
+        {
+          "text": "exposure art variation [1]",
+          "template": "exposure art variation [1]",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "exposure art variation"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Aura"
+          ],
+          "affix_ids": [
+            "exposure_art_variation"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Talismans",
+      "base_href": "https://poe2db.tw/Ashbark_Talisman",
+      "item_class": "Talismans",
+      "class_slug": "Talismans"
+    },
+    {
+      "name": "Hysseg's Claw",
+      "display_name": "Hysseg's Claw Familial Talisman",
+      "base_name": "Familial Talisman",
+      "href": "https://poe2db.tw/us/Hyssegs_Claw",
+      "requirements": {
+        "level": 16,
+        "str": 21,
+        "dex": null,
+        "int": 16
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 21,
+        "dex": null,
+        "int": 16
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 5 Cackling Companions",
+          "template": "Grants Skill: Level 5 Cackling Companions",
+          "rolls": []
+        },
+        {
+          "text": "Minions deal (30—50)% increased Damage",
+          "template": "Minions deal #% increased Damage",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "WeaponImplicit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Minion"
+          ],
+          "affix_ids": [
+            "minion_damage_+%"
+          ]
+        },
+        {
+          "text": "(70—100)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(70—100)",
+              "min": 70,
+              "max": 100
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "5 % increased Movement Speed",
+          "template": "5 % increased Movement Speed",
+          "rolls": [],
+          "family": "MovementVelocity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base movement velocity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_movement_velocity_+%"
+          ]
+        },
+        {
+          "text": "+(8—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(8—15)",
+              "min": 8,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(8—15) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(8—15)",
+              "min": 8,
+              "max": 15
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(5—8)% increased Damage per Minion",
+          "template": "#% increased Damage per Minion",
+          "rolls": [
+            {
+              "raw": "(5—8)",
+              "min": 5,
+              "max": 8
+            }
+          ],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "damage +% per active minion"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Minion"
+          ],
+          "affix_ids": [
+            "damage_+%_per_active_minion"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Talismans",
+      "base_href": "https://poe2db.tw/Familial_Talisman",
+      "item_class": "Talismans",
+      "class_slug": "Talismans"
+    },
+    {
+      "name": "The Flesh Poppet",
+      "display_name": "The Flesh Poppet Vicious Talisman",
+      "base_name": "Vicious Talisman",
+      "href": "https://poe2db.tw/us/The_Flesh_Poppet",
+      "requirements": {
+        "level": 40,
+        "str": 47,
+        "dex": null,
+        "int": 34
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": 47,
+        "dex": null,
+        "int": 34
+      },
+      "stats": [
+        {
+          "text": "(90—120)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(90—120)",
+              "min": 90,
+              "max": 120
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "(7—13)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(7—13) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "(30—40)% reduced Presence Area of Effect",
+          "template": "#% reduced Presence Area of Effect",
+          "rolls": [
+            {
+              "raw": "(30—40)",
+              "min": 30,
+              "max": 40
+            }
+          ],
+          "family": "PresenceRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "presence area +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "presence_area_+%"
+          ]
+        },
+        {
+          "text": "Copy a random Modifier from each enemy in your Presence when you Shapeshift to an Animal form Modifiers gained this way are lost after 30 seconds or when you next Shapeshift",
+          "template": "Copy a random Modifier from each enemy in your Presence when you Shapeshift to an Animal form Modifiers gained this way are lost after 30 seconds or when you next Shapeshift",
+          "rolls": [],
+          "family": "GainMonsterModsOnShapeshift",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain a modifier from enemies in presence when shapeshifting ms"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_a_modifier_from_enemies_in_presence_when_shapeshifting_ms"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Talismans",
+      "base_href": "https://poe2db.tw/Vicious_Talisman",
+      "item_class": "Talismans",
+      "class_slug": "Talismans"
+    }
+  ]
+}

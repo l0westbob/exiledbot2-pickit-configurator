@@ -5,67 +5,145 @@
     {
       "name": "Frayed Shoes",
       "href": "https://poe2db.tw/Frayed_Shoes",
-      "required_level": 5
+      "required_level": 5,
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": 7,
+        "int": 7
+      }
     },
     {
       "name": "Threaded Shoes",
       "href": "https://poe2db.tw/Threaded_Shoes",
-      "required_level": 16
+      "required_level": 16,
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 14,
+        "int": 14
+      }
     },
     {
       "name": "Hunting Shoes",
       "href": "https://poe2db.tw/Hunting_Shoes",
-      "required_level": 33
+      "required_level": 33,
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 26,
+        "int": 26
+      }
     },
     {
       "name": "Steelpoint Shoes",
       "href": "https://poe2db.tw/Steelpoint_Shoes",
-      "required_level": 45
+      "required_level": 45,
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 34,
+        "int": 34
+      }
     },
     {
       "name": "Velour Shoes",
       "href": "https://poe2db.tw/Velour_Shoes",
-      "required_level": 52
+      "required_level": 52,
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 38,
+        "int": 38
+      }
     },
     {
       "name": "Bladed Shoes",
       "href": "https://poe2db.tw/Bladed_Shoes",
-      "required_level": 65
+      "required_level": 65,
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 47,
+        "int": 47
+      }
     },
     {
       "name": "Wayfarer Shoes",
       "href": "https://poe2db.tw/Wayfarer_Shoes",
-      "required_level": 45
+      "required_level": 45,
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 34,
+        "int": 34
+      }
     },
     {
       "name": "Silverbuckled Shoes",
       "href": "https://poe2db.tw/Silverbuckled_Shoes",
-      "required_level": 51
+      "required_level": 51,
+      "requirements": {
+        "level": 51,
+        "str": null,
+        "dex": 38,
+        "int": 38
+      }
     },
     {
       "name": "Treerunner Shoes",
       "href": "https://poe2db.tw/Treerunner_Shoes",
-      "required_level": 59
+      "required_level": 59,
+      "requirements": {
+        "level": 59,
+        "str": null,
+        "dex": 44,
+        "int": 44
+      }
     },
     {
       "name": "Wanderer Shoes",
       "href": "https://poe2db.tw/Wanderer_Shoes",
-      "required_level": 65
+      "required_level": 65,
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 47,
+        "int": 47
+      }
     },
     {
       "name": "Charmed Shoes",
       "href": "https://poe2db.tw/Charmed_Shoes",
-      "required_level": 70
+      "required_level": 70,
+      "requirements": {
+        "level": 70,
+        "str": null,
+        "dex": 51,
+        "int": 51
+      }
     },
     {
       "name": "Quickslip Shoes",
       "href": "https://poe2db.tw/Quickslip_Shoes",
-      "required_level": 75
+      "required_level": 75,
+      "requirements": {
+        "level": 75,
+        "str": null,
+        "dex": 56,
+        "int": 56
+      }
     },
     {
       "name": "Daggerfoot Shoes",
       "href": "https://poe2db.tw/Daggerfoot_Shoes",
-      "required_level": 80
+      "required_level": 80,
+      "requirements": {
+        "level": 80,
+        "str": null,
+        "dex": 59,
+        "int": 59
+      }
     }
   ],
   "modifier_sections": {
@@ -73,358 +151,826 @@
       {
         "family_key": "AdeptRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterity\" href=\"Adept_Rune\">Adept Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterityGreater\" href=\"Greater_Adept_Rune\">Greater Adept Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneDexterityLesser\" href=\"Lesser_Adept_Rune\">Lesser Adept Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "BodyRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLife\" href=\"Body_Rune\">Body Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeGreater\" href=\"Greater_Body_Rune\">Greater Body Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeLesser\" href=\"Lesser_Body_Rune\">Lesser Body Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "DesertRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFire\" href=\"Desert_Rune\">Desert Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireGreater\" href=\"Greater_Desert_Rune\">Greater Desert Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireLesser\" href=\"Lesser_Desert_Rune\">Lesser Desert Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "FarrulsRuneofGrace",
         "kind": "gen0",
-        "template": "Prevent # of Damage from Deflected Hits",
+        "template": "Prevent # % of Damage from Deflected Hits",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial8\" href=\"Farruls_Rune_of_Grace\">Farrul's Rune of Grace</a>",
-            "text": "Prevent +3% of Damage from Deflected Hits"
+            "text": "Prevent +3 % of Damage from Deflected Hits"
           }
         ]
       },
       {
         "family_key": "FarrulsRuneoftheChase",
         "kind": "gen0",
-        "template": "# increased Cooldown Recovery Rate",
+        "template": "# % increased Cooldown Recovery Rate",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial9\" href=\"Farruls_Rune_of_the_Chase\">Farrul's Rune of the Chase</a>",
-            "text": "10% increased Cooldown Recovery Rate"
+            "text": "10 % increased Cooldown Recovery Rate"
           }
         ]
       },
       {
         "family_key": "GlacialRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneCold\" href=\"Glacial_Rune\">Glacial Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdGreater\" href=\"Greater_Glacial_Rune\">Greater Glacial Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdLesser\" href=\"Lesser_Glacial_Rune\">Lesser Glacial Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "InspirationRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecovery\" href=\"Inspiration_Rune\">Inspiration Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryGreater\" href=\"Greater_Inspiration_Rune\">Greater Inspiration Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryLesser\" href=\"Lesser_Inspiration_Rune\">Lesser Inspiration Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "IronRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhance\" href=\"Iron_Rune\">Iron Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceGreater\" href=\"Greater_Iron_Rune\">Greater Iron Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceLesser\" href=\"Lesser_Iron_Rune\">Lesser Iron Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "MindRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneMana\" href=\"Mind_Rune\">Mind Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaGreater\" href=\"Greater_Mind_Rune\">Greater Mind Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaLesser\" href=\"Lesser_Mind_Rune\">Lesser Mind Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "RebirthRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecovery\" href=\"Rebirth_Rune\">Rebirth Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryGreater\" href=\"Greater_Rebirth_Rune\">Greater Rebirth Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryLesser\" href=\"Lesser_Rebirth_Rune\">Lesser Rebirth Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "ResolveRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligence\" href=\"Resolve_Rune\">Resolve Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligenceGreater\" href=\"Greater_Resolve_Rune\">Greater Resolve Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneIntelligenceLesser\" href=\"Lesser_Resolve_Rune\">Lesser Resolve Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "RobustRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrength\" href=\"Robust_Rune\">Robust Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrengthGreater\" href=\"Greater_Robust_Rune\">Greater Robust Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStrengthLesser\" href=\"Lesser_Robust_Rune\">Lesser Robust Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "RuneofAlacrity",
         "kind": "gen0",
-        "template": "# increased Elemental Ailment Threshold",
+        "template": "# % increased Elemental Ailment Threshold",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial3\" href=\"Greater_Rune_of_Alacrity\">Greater Rune of Alacrity</a>",
-            "text": "15% increased Elemental Ailment Threshold"
+            "text": "15 % increased Elemental Ailment Threshold"
           }
         ]
       },
       {
         "family_key": "RuneofLeadership",
         "kind": "gen0",
-        "template": "Minions have # to all Elemental Resistances",
+        "template": "Minions have # % to all Elemental Resistances",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial1\" href=\"Greater_Rune_of_Leadership\">Greater Rune of Leadership</a>",
-            "text": "Minions have +10% to all Elemental Resistances"
+            "text": "Minions have +10 % to all Elemental Resistances"
           }
         ]
       },
       {
         "family_key": "RuneofNobility",
         "kind": "gen0",
-        "template": "# reduced Shock duration on you",
+        "template": "# % reduced Shock duration on you",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial4\" href=\"Greater_Rune_of_Nobility\">Greater Rune of Nobility</a>",
-            "text": "10% reduced Shock duration on you"
+            "text": "10 % reduced Shock duration on you"
           }
         ]
       },
       {
         "family_key": "RuneofTithing",
         "kind": "gen0",
-        "template": "# increased Thorns damage",
+        "template": "# % increased Thorns damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial2\" href=\"Greater_Rune_of_Tithing\">Greater Rune of Tithing</a>",
-            "text": "15% increased Thorns damage"
+            "text": "15 % increased Thorns damage"
           }
         ]
       },
       {
         "family_key": "StoneRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStun\" href=\"Stone_Rune\">Stone Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunGreater\" href=\"Greater_Stone_Rune\">Greater Stone Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunLesser\" href=\"Lesser_Stone_Rune\">Lesser Stone Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "StormRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightning\" href=\"Storm_Rune\">Storm Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningGreater\" href=\"Greater_Storm_Rune\">Greater Storm Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningLesser\" href=\"Lesser_Storm_Rune\">Lesser Storm Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "VisionRune",
         "kind": "gen0",
-        "template": "# to maximum Life# to maximum Mana",
+        "template": "# to maximum Life # to maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracy\" href=\"Vision_Rune\">Vision Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyGreater\" href=\"Greater_Vision_Rune\">Greater Vision Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyLesser\" href=\"Lesser_Vision_Rune\">Lesser Vision Rune</a>",
-            "text": "+10 to maximum Life+10 to maximum Mana"
+            "text": "+10 to maximum Life +10 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 10,
+                "max": 10
+              },
+              {
+                "id": "base_maximum_mana",
+                "min": 10,
+                "max": 10
+              }
+            ]
           }
         ]
       }
@@ -590,12 +1136,12 @@
           {
             "level": 1,
             "name": "CorruptionMovementVelocity1",
-            "text": "(3-5)% increased Movement Speed",
+            "text": "10% increased Movement Speed",
             "stats": [
               {
                 "id": "base_movement_velocity_+%",
-                "max": 5,
-                "min": 3
+                "max": 10,
+                "min": 10
               }
             ]
           }
@@ -3539,12 +4085,12 @@
       {
         "family_key": "AmanamusGaze",
         "kind": "gen0",
-        "template": "# increased Movement Speed per # Spirit, up to a maximum of #Other Modifiers to Movement Speed except for Sprinting do not apply",
+        "template": "# % increased Movement Speed per # Spirit , up to a maximum of # Other Modifiers to Movement Speed except for Sprinting do not apply",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FAmanamusGaze\" href=\"Amanamus_Gaze\">Amanamu's Gaze</a>",
-            "text": "1% increased Movement Speed per 15 Spirit, up to a maximum of 40%Other Modifiers to Movement Speed except for Sprinting do not apply"
+            "text": "1 % increased Movement Speed per 15 Spirit , up to a maximum of 40% Other Modifiers to Movement Speed except for Sprinting do not apply"
           }
         ]
       },
@@ -3556,165 +4102,186 @@
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLife\" href=\"Body_Rune\">Body Rune</a>",
-            "text": "+30 to maximum Life"
+            "text": "+30 to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 30,
+                "max": 30
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeGreater\" href=\"Greater_Body_Rune\">Greater Body Rune</a>",
-            "text": "+40 to maximum Life"
+            "text": "+40 to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 40,
+                "max": 40
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeLesser\" href=\"Lesser_Body_Rune\">Lesser Body Rune</a>",
-            "text": "+20 to maximum Life"
+            "text": "+20 to maximum Life",
+            "stats": [
+              {
+                "id": "base_maximum_life",
+                "min": 20,
+                "max": 20
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "CitaqualotlsThesis",
         "kind": "gen0",
-        "template": "Sacrifice # of maximum Life to gain that much Guard when you Dodge Roll",
+        "template": "Sacrifice # % of maximum Life to gain that much Guard when you Dodge Roll",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FThesisOfSacrifice\" href=\"Citaqualotls_Thesis\">Citaqualotl's Thesis</a>",
-            "text": "Sacrifice 10% of maximum Life to gain that much Guard when you Dodge Roll"
+            "text": "Sacrifice 10 % of maximum Life to gain that much Guard when you Dodge Roll"
           }
         ]
       },
       {
         "family_key": "DesertRune",
         "kind": "gen0",
-        "template": "# to Fire Resistance",
+        "template": "# % to Fire Resistance",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFire\" href=\"Desert_Rune\">Desert Rune</a>",
-            "text": "+12% to Fire Resistance"
+            "text": "+12 % to Fire Resistance"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireGreater\" href=\"Greater_Desert_Rune\">Greater Desert Rune</a>",
-            "text": "+14% to Fire Resistance"
+            "text": "+14 % to Fire Resistance"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireLesser\" href=\"Lesser_Desert_Rune\">Lesser Desert Rune</a>",
-            "text": "+10% to Fire Resistance"
+            "text": "+10 % to Fire Resistance"
           }
         ]
       },
       {
         "family_key": "EstazuntisSoulCoreofConvalescence",
         "kind": "gen0",
-        "template": "# increased speed of Recoup Effects",
+        "template": "# % increased speed of Recoup Effects",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial11\" href=\"Estazuntis_Soul_Core_of_Convalescence\">Estazunti's Soul Core of Convalescence</a>",
-            "text": "12% increased speed of Recoup Effects"
+            "text": "12 % increased speed of Recoup Effects"
           }
         ]
       },
       {
         "family_key": "FarrulsRuneofGrace",
         "kind": "gen0",
-        "template": "# increased Deflection Rating while moving",
+        "template": "# % increased Deflection Rating while moving",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial8\" href=\"Farruls_Rune_of_Grace\">Farrul's Rune of Grace</a>",
-            "text": "8% increased Deflection Rating while moving"
+            "text": "8 % increased Deflection Rating while moving"
           }
         ]
       },
       {
         "family_key": "FarrulsRuneoftheChase",
         "kind": "gen0",
-        "template": "# increased Movement Speed",
+        "template": "# % increased Movement Speed",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial9\" href=\"Farruls_Rune_of_the_Chase\">Farrul's Rune of the Chase</a>",
-            "text": "5% increased Movement Speed"
+            "text": "5 % increased Movement Speed"
           }
         ]
       },
       {
         "family_key": "GlacialRune",
         "kind": "gen0",
-        "template": "# to Cold Resistance",
+        "template": "# % to Cold Resistance",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneCold\" href=\"Glacial_Rune\">Glacial Rune</a>",
-            "text": "+12% to Cold Resistance"
+            "text": "+12 % to Cold Resistance"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdGreater\" href=\"Greater_Glacial_Rune\">Greater Glacial Rune</a>",
-            "text": "+14% to Cold Resistance"
+            "text": "+14 % to Cold Resistance"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdLesser\" href=\"Lesser_Glacial_Rune\">Lesser Glacial Rune</a>",
-            "text": "+10% to Cold Resistance"
+            "text": "+10 % to Cold Resistance"
           }
         ]
       },
       {
         "family_key": "GuatelitzisThesis",
         "kind": "gen0",
-        "template": "Lose # of maximum Life per second while Sprinting# increased Movement Speed while Sprinting",
+        "template": "Lose # % of maximum Life per second while Sprinting # % increased Movement Speed while Sprinting",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FThesisOfBlood\" href=\"Guatelitzis_Thesis\">Guatelitzi's Thesis</a>",
-            "text": "Lose 5% of maximum Life per second while Sprinting25% increased Movement Speed while Sprinting"
+            "text": "Lose 5 % of maximum Life per second while Sprinting 25 % increased Movement Speed while Sprinting"
           }
         ]
       },
       {
         "family_key": "InspirationRune",
         "kind": "gen0",
-        "template": "# increased Mana Regeneration Rate",
+        "template": "# % increased Mana Regeneration Rate",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecovery\" href=\"Inspiration_Rune\">Inspiration Rune</a>",
-            "text": "15% increased Mana Regeneration Rate"
+            "text": "15 % increased Mana Regeneration Rate"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryGreater\" href=\"Greater_Inspiration_Rune\">Greater Inspiration Rune</a>",
-            "text": "18% increased Mana Regeneration Rate"
+            "text": "18 % increased Mana Regeneration Rate"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryLesser\" href=\"Lesser_Inspiration_Rune\">Lesser Inspiration Rune</a>",
-            "text": "12% increased Mana Regeneration Rate"
+            "text": "12 % increased Mana Regeneration Rate"
           }
         ]
       },
       {
         "family_key": "IronRune",
         "kind": "gen0",
-        "template": "# increased Armour, Evasion and Energy Shield",
+        "template": "# % increased Armour , Evasion and Energy Shield",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhance\" href=\"Iron_Rune\">Iron Rune</a>",
-            "text": "16% increased Armour, Evasion and Energy Shield"
+            "text": "16 % increased Armour , Evasion and Energy Shield"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceGreater\" href=\"Greater_Iron_Rune\">Greater Iron Rune</a>",
-            "text": "18% increased Armour, Evasion and Energy Shield"
+            "text": "18 % increased Armour , Evasion and Energy Shield"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceLesser\" href=\"Lesser_Iron_Rune\">Lesser Iron Rune</a>",
-            "text": "14% increased Armour, Evasion and Energy Shield"
+            "text": "14 % increased Armour , Evasion and Energy Shield"
           }
         ]
       },
@@ -3733,12 +4300,12 @@
       {
         "family_key": "KurgalsGaze",
         "kind": "gen0",
-        "template": "# increased Mana Cost Efficiency if you haven't Dodge Rolled Recently",
+        "template": "# % increased Mana Cost Efficiency if you haven't Dodge Rolled Recently",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FKurgalsGaze\" href=\"Kurgals_Gaze\">Kurgal's Gaze</a>",
-            "text": "15% increased Mana Cost Efficiency if you haven't Dodge Rolled Recently"
+            "text": "15 % increased Mana Cost Efficiency if you haven't Dodge Rolled Recently"
           }
         ]
       },
@@ -3750,39 +4317,60 @@
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneMana\" href=\"Mind_Rune\">Mind Rune</a>",
-            "text": "+25 to maximum Mana"
+            "text": "+25 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "min": 25,
+                "max": 25
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaGreater\" href=\"Greater_Mind_Rune\">Greater Mind Rune</a>",
-            "text": "+35 to maximum Mana"
+            "text": "+35 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "min": 35,
+                "max": 35
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaLesser\" href=\"Lesser_Mind_Rune\">Lesser Mind Rune</a>",
-            "text": "+15 to maximum Mana"
+            "text": "+15 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "min": 15,
+                "max": 15
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "RebirthRune",
         "kind": "gen0",
-        "template": "Regenerate # of maximum Life per second",
+        "template": "Regenerate # % of maximum Life per second",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecovery\" href=\"Rebirth_Rune\">Rebirth Rune</a>",
-            "text": "Regenerate 0.3% of maximum Life per second"
+            "text": "Regenerate 0.3 % of maximum Life per second"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryGreater\" href=\"Greater_Rebirth_Rune\">Greater Rebirth Rune</a>",
-            "text": "Regenerate 0.35% of maximum Life per second"
+            "text": "Regenerate 0.35 % of maximum Life per second"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryLesser\" href=\"Lesser_Rebirth_Rune\">Lesser Rebirth Rune</a>",
-            "text": "Regenerate 0.25% of maximum Life per second"
+            "text": "Regenerate 0.25 % of maximum Life per second"
           }
         ]
       },
@@ -3833,36 +4421,36 @@
       {
         "family_key": "RuneofAlacrity",
         "kind": "gen0",
-        "template": "Debuffs on you expire # faster",
+        "template": "Debuffs on you expire # % faster",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial3\" href=\"Greater_Rune_of_Alacrity\">Greater Rune of Alacrity</a>",
-            "text": "Debuffs on you expire 8% faster"
+            "text": "Debuffs on you expire 8 % faster"
           }
         ]
       },
       {
         "family_key": "RuneofLeadership",
         "kind": "gen0",
-        "template": "Minions take # of Physical Damage as Lightning Damage",
+        "template": "Minions take # % of Physical Damage as Lightning Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial1\" href=\"Greater_Rune_of_Leadership\">Greater Rune of Leadership</a>",
-            "text": "Minions take 10% of Physical Damage as Lightning Damage"
+            "text": "Minions take 10 % of Physical Damage as Lightning Damage"
           }
         ]
       },
       {
         "family_key": "RuneofNobility",
         "kind": "gen0",
-        "template": "# reduced effect of Shock on you",
+        "template": "# % reduced effect of Shock on you",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial4\" href=\"Greater_Rune_of_Nobility\">Greater Rune of Nobility</a>",
-            "text": "10% reduced effect of Shock on you"
+            "text": "10 % reduced effect of Shock on you"
           }
         ]
       },
@@ -3881,96 +4469,96 @@
       {
         "family_key": "SoulCoreofAtmohua",
         "kind": "gen0",
-        "template": "Convert # of Requirements to Strength",
+        "template": "Convert # % of Requirements to Strength",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreStrength\" href=\"Soul_Core_of_Atmohua\">Soul Core of Atmohua</a>",
-            "text": "Convert 20% of Requirements to Strength"
+            "text": "Convert 20 % of Requirements to Strength"
           }
         ]
       },
       {
         "family_key": "SoulCoreofCholotl",
         "kind": "gen0",
-        "template": "Convert # of Requirements to Dexterity",
+        "template": "Convert # % of Requirements to Dexterity",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreDexterity\" href=\"Soul_Core_of_Cholotl\">Soul Core of Cholotl</a>",
-            "text": "Convert 20% of Requirements to Dexterity"
+            "text": "Convert 20 % of Requirements to Dexterity"
           }
         ]
       },
       {
         "family_key": "SoulCoreofCitaqualotl",
         "kind": "gen0",
-        "template": "# to all Elemental Resistances",
+        "template": "# % to all Elemental Resistances",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreEnlighten\" href=\"Soul_Core_of_Citaqualotl\">Soul Core of Citaqualotl</a>",
-            "text": "+5% to all Elemental Resistances"
+            "text": "+5 % to all Elemental Resistances"
           }
         ]
       },
       {
         "family_key": "SoulCoreofQuipolatl",
         "kind": "gen0",
-        "template": "# reduced Slowing Potency of Debuffs on You",
+        "template": "# % reduced Slowing Potency of Debuffs on You",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpeed\" href=\"Soul_Core_of_Quipolatl\">Soul Core of Quipolatl</a>",
-            "text": "15% reduced Slowing Potency of Debuffs on You"
+            "text": "15 % reduced Slowing Potency of Debuffs on You"
           }
         ]
       },
       {
         "family_key": "SoulCoreofTacati",
         "kind": "gen0",
-        "template": "# to Chaos Resistance",
+        "template": "# % to Chaos Resistance",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreChaos\" href=\"Soul_Core_of_Tacati\">Soul Core of Tacati</a>",
-            "text": "+11% to Chaos Resistance"
+            "text": "+11 % to Chaos Resistance"
           }
         ]
       },
       {
         "family_key": "SoulCoreofTopotante",
         "kind": "gen0",
-        "template": "# increased Elemental Ailment Threshold",
+        "template": "# % increased Elemental Ailment Threshold",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreElemental\" href=\"Soul_Core_of_Topotante\">Soul Core of Topotante</a>",
-            "text": "25% increased Elemental Ailment Threshold"
+            "text": "25 % increased Elemental Ailment Threshold"
           }
         ]
       },
       {
         "family_key": "SoulCoreofXopec",
         "kind": "gen0",
-        "template": "# to Maximum Lightning Resistance",
+        "template": "# % to Maximum Lightning Resistance",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreShock\" href=\"Soul_Core_of_Xopec\">Soul Core of Xopec</a>",
-            "text": "+1% to Maximum Lightning Resistance"
+            "text": "+1 % to Maximum Lightning Resistance"
           }
         ]
       },
       {
         "family_key": "SoulCoreofZantipi",
         "kind": "gen0",
-        "template": "Convert # of Requirements to Intelligence",
+        "template": "Convert # % of Requirements to Intelligence",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreIntelligence\" href=\"Soul_Core_of_Zantipi\">Soul Core of Zantipi</a>",
-            "text": "Convert 20% of Requirements to Intelligence"
+            "text": "Convert 20 % of Requirements to Intelligence"
           }
         ]
       },
@@ -3999,34 +4587,34 @@
       {
         "family_key": "StormRune",
         "kind": "gen0",
-        "template": "# to Lightning Resistance",
+        "template": "# % to Lightning Resistance",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightning\" href=\"Storm_Rune\">Storm Rune</a>",
-            "text": "+12% to Lightning Resistance"
+            "text": "+12 % to Lightning Resistance"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningGreater\" href=\"Greater_Storm_Rune\">Greater Storm Rune</a>",
-            "text": "+14% to Lightning Resistance"
+            "text": "+14 % to Lightning Resistance"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningLesser\" href=\"Lesser_Storm_Rune\">Lesser Storm Rune</a>",
-            "text": "+10% to Lightning Resistance"
+            "text": "+10 % to Lightning Resistance"
           }
         ]
       },
       {
         "family_key": "TecrodsGaze",
         "kind": "gen0",
-        "template": "# increased Movement Speed when on Low Life",
+        "template": "# % increased Movement Speed when on Low Life",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FTecrodsGaze\" href=\"Tecrods_Gaze\">Tecrod's Gaze</a>",
-            "text": "10% increased Movement Speed when on Low Life"
+            "text": "10 % increased Movement Speed when on Low Life"
           }
         ]
       },
@@ -4055,46 +4643,46 @@
       {
         "family_key": "UromotisSoulCoreofAttenuation",
         "kind": "gen0",
-        "template": "# increased Curse Duration# increased Poison Duration",
+        "template": "# % increased Curse Duration # % increased Poison Duration",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial7\" href=\"Uromotis_Soul_Core_of_Attenuation\">Uromoti's Soul Core of Attenuation</a>",
-            "text": "15% increased Curse Duration15% increased Poison Duration"
+            "text": "15 % increased Curse Duration 15 % increased Poison Duration"
           }
         ]
       },
       {
         "family_key": "VisionRune",
         "kind": "gen0",
-        "template": "# increased Life and Mana Recovery from Flasks",
+        "template": "# % increased Life and Mana Recovery from Flasks",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracy\" href=\"Vision_Rune\">Vision Rune</a>",
-            "text": "10% increased Life and Mana Recovery from Flasks"
+            "text": "10 % increased Life and Mana Recovery from Flasks"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyGreater\" href=\"Greater_Vision_Rune\">Greater Vision Rune</a>",
-            "text": "12% increased Life and Mana Recovery from Flasks"
+            "text": "12 % increased Life and Mana Recovery from Flasks"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyLesser\" href=\"Lesser_Vision_Rune\">Lesser Vision Rune</a>",
-            "text": "8% increased Life and Mana Recovery from Flasks"
+            "text": "8 % increased Life and Mana Recovery from Flasks"
           }
         ]
       },
       {
         "family_key": "ZalatlsSoulCoreofInsulation",
         "kind": "gen0",
-        "template": "# of Armour also applies to Lightning Damage",
+        "template": "# % of Armour also applies to Lightning Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial2\" href=\"Zalatls_Soul_Core_of_Insulation\">Zalatl's Soul Core of Insulation</a>",
-            "text": "+40% of Armour also applies to Lightning Damage"
+            "text": "+40 % of Armour also applies to Lightning Damage"
           }
         ]
       }

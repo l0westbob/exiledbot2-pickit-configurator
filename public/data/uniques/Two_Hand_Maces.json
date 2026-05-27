@@ -1,0 +1,1501 @@
+{
+  "class": "Two Hand Maces",
+  "slug": "Two_Hand_Maces",
+  "uniques": [
+    {
+      "name": "Brain Rattler",
+      "display_name": "Brain Rattler Studded Greatclub",
+      "base_name": "Studded Greatclub",
+      "href": "https://poe2db.tw/us/Brain_Rattler",
+      "requirements": {
+        "level": 16,
+        "str": 31,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 31,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (18—22) to (24—28) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(18—22)",
+              "min": 18,
+              "max": 22
+            },
+            {
+              "raw": "(24—28)",
+              "min": 24,
+              "max": 28
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds 1 to (50—55) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(50—55)",
+              "min": 50,
+              "max": 55
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "All damage with this Weapon causes Electrocution buildup",
+          "template": "All damage with this Weapon causes Electrocution buildup",
+          "rolls": [],
+          "family": "AllDamageCanElectrocute",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local all damage can electrocute"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_all_damage_can_electrocute"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Studded_Greatclub",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Chober Chaber",
+      "display_name": "Chober Chaber Leaden Greathammer",
+      "base_name": "Leaden Greathammer",
+      "href": "https://poe2db.tw/us/Chober_Chaber",
+      "requirements": {
+        "level": 33,
+        "str": 60,
+        "dex": null,
+        "int": 100
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 60,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+100 Intelligence Requirement",
+          "template": "+100 Intelligence Requirement",
+          "rolls": [],
+          "family": "IntelligenceRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local intelligence requirement +"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_intelligence_requirement_+"
+          ]
+        },
+        {
+          "text": "Adds (58—65) to (102—110) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(58—65)",
+              "min": 58,
+              "max": 65
+            },
+            {
+              "raw": "(102—110)",
+              "min": 102,
+              "max": 110
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(80—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+50 to Spirit",
+          "template": "+50 to Spirit",
+          "rolls": [],
+          "family": "BaseSpirit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base spirit from equipment"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_spirit_from_equipment"
+          ]
+        },
+        {
+          "text": "Increases and Reductions to Minion Damage also affect you",
+          "template": "Increases and Reductions to Minion Damage also affect you",
+          "rolls": [],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion damage increases and reductions also affects you"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "minion_damage_increases_and_reductions_also_affects_you"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Leaden_Greathammer",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Hoghunt",
+      "display_name": "Hoghunt Felled Greatclub",
+      "base_name": "Felled Greatclub",
+      "href": "https://poe2db.tw/us/Hoghunt",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (16—20) to (23—27) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(16—20)",
+              "min": 16,
+              "max": 20
+            },
+            {
+              "raw": "(23—27)",
+              "min": 23,
+              "max": 27
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+15 % to Critical Hit Chance",
+          "template": "+15 % to Critical Hit Chance",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "10 % reduced Attack Speed",
+          "template": "10 % reduced Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+10 to Strength",
+          "template": "+10 to Strength",
+          "rolls": [],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Maim on Critical Hit",
+          "template": "Maim on Critical Hit",
+          "rolls": [],
+          "family": "LocalMaimOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local always maim on crit"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_always_maim_on_crit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Felled_Greatclub",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Hrimnor's Hymn",
+      "display_name": "Hrimnor's Hymn Oak Greathammer",
+      "base_name": "Oak Greathammer",
+      "href": "https://poe2db.tw/us/Hrimnors_Hymn",
+      "requirements": {
+        "level": 4,
+        "str": 11,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 4,
+        "str": 11,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Causes (20—40)% increased Stun Buildup",
+          "template": "Causes #% increased Stun Buildup",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local hit damage stun multiplier +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_hit_damage_stun_multiplier_+%"
+          ]
+        },
+        {
+          "text": "(80—120)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "+(10—15) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Gain (10—20) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Slam Skills you use yourself cause an additional Aftershock",
+          "template": "Slam Skills you use yourself cause an additional Aftershock",
+          "rolls": [],
+          "family": "AftershockChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "your slam aftershock chance %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "your_slam_aftershock_chance_%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Oak_Greathammer",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Marohi Erqi",
+      "display_name": "Marohi Erqi Totemic Greatclub",
+      "base_name": "Totemic Greatclub",
+      "href": "https://poe2db.tw/us/Marohi_Erqi",
+      "requirements": {
+        "level": 60,
+        "str": 239,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 50,
+        "str": 89,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Warcries Empower an additional Attack",
+          "template": "Warcries Empower an additional Attack",
+          "rolls": [],
+          "family": "WarcriesExertAnAdditionalAttack",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "warcry empowers next x melee attacks"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "warcry_empowers_next_x_melee_attacks"
+          ]
+        },
+        {
+          "text": "+150 Strength Requirement",
+          "template": "+150 Strength Requirement",
+          "rolls": [],
+          "family": "StrengthRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local strength requirement +"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_strength_requirement_+"
+          ]
+        },
+        {
+          "text": "(600—700)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(600—700)",
+              "min": 600,
+              "max": 700
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "(-300—-200) to Accuracy Rating",
+          "template": "# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(-300—-200)",
+              "min": -300,
+              "max": -200
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "35 % reduced Attack Speed",
+          "template": "35 % reduced Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Causes (40—60)% increased Stun Buildup",
+          "template": "Causes #% increased Stun Buildup",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local hit damage stun multiplier +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_hit_damage_stun_multiplier_+%"
+          ]
+        },
+        {
+          "text": "Heavy Stuns Enemies that are on Full Life",
+          "template": "Heavy Stuns Enemies that are on Full Life",
+          "rolls": [],
+          "family": "AlwaysHeavyStun",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local always heavy stun on full life"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_always_heavy_stun_on_full_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Totemic_Greatclub",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Quecholli",
+      "display_name": "Quecholli Crumbling Maul",
+      "base_name": "Crumbling Maul",
+      "href": "https://poe2db.tw/us/Quecholli",
+      "requirements": {
+        "level": 38,
+        "str": 68,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 38,
+        "str": 68,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Causes Enemies to Explode on Critical kill, for 10 % of their Life as Physical Damage",
+          "template": "Causes Enemies to Explode on Critical kill, for 10 % of their Life as Physical Damage",
+          "rolls": [],
+          "family": "EnemiesExplodeOnDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local explode on kill with crit % physical damage to deal"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_explode_on_kill_with_crit_%_physical_damage_to_deal"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "+(10—15) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "Gain 30 Life per enemy killed",
+          "template": "Gain 30 Life per enemy killed",
+          "rolls": [],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "This Weapon's Critical Hit Chance is 100 %",
+          "template": "This Weapon's Critical Hit Chance is 100 %",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local weapon base crit chance permyriad override"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_weapon_base_crit_chance_permyriad_override"
+          ]
+        },
+        {
+          "text": "Critical Hits do not deal extra Damage",
+          "template": "Critical Hits do not deal extra Damage",
+          "rolls": [],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local no critical strike multiplier"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_no_critical_strike_multiplier"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Crumbling_Maul",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Shyaba",
+      "display_name": "Shyaba Temple Maul",
+      "base_name": "Temple Maul",
+      "href": "https://poe2db.tw/us/Shyaba",
+      "requirements": {
+        "level": 28,
+        "str": 37,
+        "dex": 50,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": 52,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+50 Dexterity Requirement",
+          "template": "+50 Dexterity Requirement",
+          "rolls": [],
+          "family": "DexterityRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local dexterity requirement +"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_dexterity_requirement_+"
+          ]
+        },
+        {
+          "text": "-15 Strength Requirement",
+          "template": "-15 Strength Requirement",
+          "rolls": [],
+          "family": "StrengthRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local strength requirement +"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_strength_requirement_+"
+          ]
+        },
+        {
+          "text": "(80—120)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "50 % increased Attack Speed",
+          "template": "50 % increased Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(15—25)% increased Light Radius",
+          "template": "#% increased Light Radius",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Always Hits",
+          "template": "Always Hits",
+          "rolls": [],
+          "family": "AlwaysHits",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local always hit"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_always_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Temple_Maul",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "The Empty Roar",
+      "display_name": "The Empty Roar Cultist Greathammer",
+      "base_name": "Cultist Greathammer",
+      "href": "https://poe2db.tw/us/The_Empty_Roar",
+      "requirements": {
+        "level": 22,
+        "str": 41,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 22,
+        "str": 41,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Strikes deal Splash Damage",
+          "template": "Strikes deal Splash Damage",
+          "rolls": [],
+          "family": "MeleeSplash",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "melee splash"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "melee_splash"
+          ]
+        },
+        {
+          "text": "Adds (25—35) to (40—50) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            },
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Leeches 10 % of Physical Damage as Life",
+          "template": "Leeches 10 % of Physical Damage as Life",
+          "rolls": [],
+          "family": "LifeLeech",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local life leech from physical damage permyriad"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_life_leech_from_physical_damage_permyriad"
+          ]
+        },
+        {
+          "text": "(10—20)% chance to cause Bleeding on Hit",
+          "template": "#% chance to cause Bleeding on Hit",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "LocalChanceToBleed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local chance to bleed on hit %"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "bleed",
+            "Physical",
+            "Attack",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "local_chance_to_bleed_on_hit_%"
+          ]
+        },
+        {
+          "text": "All Attacks count as Empowered Attacks",
+          "template": "All Attacks count as Empowered Attacks",
+          "rolls": [],
+          "family": "ExertedAttackDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all attacks count as exerted"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "all_attacks_count_as_exerted"
+          ]
+        },
+        {
+          "text": "Cannot use Warcries",
+          "template": "Cannot use Warcries",
+          "rolls": [],
+          "family": "WarcryBonus",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot use warcries"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_use_warcries"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Cultist_Greathammer",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "The Hammer of Faith",
+      "display_name": "The Hammer of Faith Giant Maul",
+      "base_name": "Giant Maul",
+      "href": "https://poe2db.tw/us/The_Hammer_of_Faith",
+      "requirements": {
+        "level": 65,
+        "str": 114,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 114,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(300—350)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(300—350)",
+              "min": 300,
+              "max": 350
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "10 % reduced Attack Speed",
+          "template": "10 % reduced Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+10 % to all Elemental Resistances",
+          "template": "+10 % to all Elemental Resistances",
+          "rolls": [],
+          "family": "AllResistances",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base resist all elements %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Cold",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_resist_all_elements_%"
+          ]
+        },
+        {
+          "text": "50 % increased Mana Regeneration Rate",
+          "template": "50 % increased Mana Regeneration Rate",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Every 10 seconds, gain a random non-damaging Shrine buff for 20 seconds",
+          "template": "Every 10 seconds, gain a random non-damaging Shrine buff for 20 seconds",
+          "rolls": [],
+          "family": "AllowShrines",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local gain shrine buff every 10 seconds"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_gain_shrine_buff_every_10_seconds"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Giant_Maul",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Tidebreaker",
+      "display_name": "Tidebreaker Pointed Maul",
+      "base_name": "Pointed Maul",
+      "href": "https://poe2db.tw/us/Tidebreaker",
+      "requirements": {
+        "level": 45,
+        "str": 80,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 80,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(120—150)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(120—150)",
+              "min": 120,
+              "max": 150
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "+(2—3) to Level of all Melee Skills",
+          "template": "+# to Level of all Melee Skills",
+          "rolls": [
+            {
+              "raw": "(2—3)",
+              "min": 2,
+              "max": 3
+            }
+          ],
+          "family": "IncreaseSocketedGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "melee skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "melee_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Causes (150—200)% increased Stun Buildup",
+          "template": "Causes #% increased Stun Buildup",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local hit damage stun multiplier +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_hit_damage_stun_multiplier_+%"
+          ]
+        },
+        {
+          "text": "All Damage from Hits with this Weapon Contributes to Chill Magnitude",
+          "template": "All Damage from Hits with this Weapon Contributes to Chill Magnitude",
+          "rolls": [],
+          "family": "AllDamageCanChill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local all damage can chill"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_all_damage_can_chill"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Pointed_Maul",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    },
+    {
+      "name": "Trephina",
+      "display_name": "Trephina Forge Maul",
+      "base_name": "Forge Maul",
+      "href": "https://poe2db.tw/us/Trephina",
+      "requirements": {
+        "level": 11,
+        "str": 23,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": 23,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Crushes Enemies on Hit",
+          "template": "Crushes Enemies on Hit",
+          "rolls": [],
+          "family": "CrushOnHitChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local crush on hit"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Physical"
+          ],
+          "affix_ids": [
+            "local_crush_on_hit"
+          ]
+        },
+        {
+          "text": "Adds (12—15) to (22—25) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(12—15)",
+              "min": 12,
+              "max": 15
+            },
+            {
+              "raw": "(22—25)",
+              "min": 22,
+              "max": 25
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Causes (30—50)% increased Stun Buildup",
+          "template": "Causes #% increased Stun Buildup",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local hit damage stun multiplier +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_hit_damage_stun_multiplier_+%"
+          ]
+        },
+        {
+          "text": "Always deals Critical Hits against Heavy Stunned Enemies",
+          "template": "Always deals Critical Hits against Heavy Stunned Enemies",
+          "rolls": [],
+          "family": "AlwaysCrit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local always crit heavy stunned enemies"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_always_crit_heavy_stunned_enemies"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Two_Hand_Maces",
+      "base_href": "https://poe2db.tw/Forge_Maul",
+      "item_class": "Two Hand Maces",
+      "class_slug": "Two_Hand_Maces"
+    }
+  ]
+}

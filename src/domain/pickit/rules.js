@@ -2,7 +2,9 @@ import {resolvePickitActionFlag} from "./actions.js"
 import {formatAffixDisplayLabel} from "./affixes.js"
 import {resolvePickitCategoryFromItem} from "./catalog.js"
 
-function countSelectedAffixes(affixSlots) {
+export const ITEM_RARITY_OPTIONS = ["Normal", "Magic", "Rare", "Unique"]
+
+export function countSelectedAffixes(affixSlots) {
   if (!Array.isArray(affixSlots)) return 0
 
   let selectedAffixCount = 0
@@ -16,6 +18,10 @@ export function rarityFromSelectedAffixCount(selectedAffixCount) {
   if (selectedAffixCount === 0) return "Normal"
   if (selectedAffixCount <= 2) return "Magic"
   return "Rare"
+}
+
+export function normalizeItemRarity(rarity) {
+  return ITEM_RARITY_OPTIONS.includes(rarity) ? rarity : "Normal"
 }
 
 /**
@@ -165,7 +171,9 @@ export function generateRulePreviewLines(params) {
   const selectedBaseName =
     typeof params?.selectedBaseName === "string" ? params.selectedBaseName.trim() : ""
   const selectedAffixCount = countSelectedAffixes(affixSlots)
-  const inferredRarity = rarityFromSelectedAffixCount(selectedAffixCount)
+  const inferredRarity = normalizeItemRarity(
+    params?.selectedRarity || rarityFromSelectedAffixCount(selectedAffixCount)
+  )
   const actionFlag = resolvePickitActionFlag(params?.actionFlag)
 
   const findAffixByKey = typeof params?.findAffixByKey === "function" ? params.findAffixByKey : () => null
@@ -190,6 +198,9 @@ export function generateRulePreviewLines(params) {
   const beforeIdentify = beforeIdentifyConditions.join(" && ")
   const afterIdentify = afterConditions.join(" && ")
 
+  const ruleLine = `${beforeIdentify} # ${afterIdentify}`
+  if (!params?.includeExplanation) return [ruleLine]
+
   const commentLine = buildHumanCommentLine({
     ...params,
     selectedItem,
@@ -197,5 +208,5 @@ export function generateRulePreviewLines(params) {
     actionFlag,
   })
 
-  return [commentLine, `${beforeIdentify} # ${afterIdentify}`]
+  return [commentLine, ruleLine]
 }

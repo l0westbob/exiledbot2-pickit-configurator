@@ -1,0 +1,1070 @@
+{
+  "class": "One Hand Maces",
+  "slug": "One_Hand_Maces",
+  "uniques": [
+    {
+      "name": "Brynhand's Mark",
+      "display_name": "Brynhand's Mark Wooden Club",
+      "base_name": "Wooden Club",
+      "href": "https://poe2db.tw/us/Brynhands_Mark",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (10—14) to (16—20) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(10—14)",
+              "min": 10,
+              "max": 14
+            },
+            {
+              "raw": "(16—20)",
+              "min": 16,
+              "max": 20
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(30—50) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "20 % reduced Attack Speed",
+          "template": "20 % reduced Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Causes Double Stun Buildup",
+          "template": "Causes Double Stun Buildup",
+          "rolls": [],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local double hit damage stun build up"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "local_double_hit_damage_stun_build_up"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Wooden_Club",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Frostbreath",
+      "display_name": "Frostbreath Slim Mace",
+      "base_name": "Slim Mace",
+      "href": "https://poe2db.tw/us/Frostbreath",
+      "requirements": {
+        "level": 10,
+        "str": 21,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 10,
+        "str": 21,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (8—12) to (16—20) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(8—12)",
+              "min": 8,
+              "max": 12
+            },
+            {
+              "raw": "(16—20)",
+              "min": 16,
+              "max": 20
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "Adds (8—12) to (16—20) Cold Damage",
+          "template": "Adds # to # Cold Damage",
+          "rolls": [
+            {
+              "raw": "(8—12)",
+              "min": 8,
+              "max": 12
+            },
+            {
+              "raw": "(16—20)",
+              "min": 16,
+              "max": 20
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added cold damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "+5 % to Critical Hit Chance",
+          "template": "+5 % to Critical Hit Chance",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike chance"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_chance"
+          ]
+        },
+        {
+          "text": "All Damage from Hits with this Weapon Contributes to Freeze Buildup",
+          "template": "All Damage from Hits with this Weapon Contributes to Freeze Buildup",
+          "rolls": [],
+          "family": "AllDamageCanFreeze",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local all damage can freeze"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_all_damage_can_freeze"
+          ]
+        },
+        {
+          "text": "Culling Strike against Frozen Enemies",
+          "template": "Culling Strike against Frozen Enemies",
+          "rolls": [],
+          "family": "CullingStrike",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local cull frozen enemies on hit"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_cull_frozen_enemies_on_hit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Slim_Mace",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Mjölner",
+      "display_name": "Mjölner Torment Club",
+      "base_name": "Torment Club",
+      "href": "https://poe2db.tw/us/Mj%C3%B6lner",
+      "requirements": {
+        "level": 65,
+        "str": 214,
+        "dex": null,
+        "int": 200
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 114,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 15 Thundergod's Wrath",
+          "template": "Grants Skill: Level 15 Thundergod's Wrath",
+          "rolls": []
+        },
+        {
+          "text": "+200 Intelligence Requirement",
+          "template": "+200 Intelligence Requirement",
+          "rolls": [],
+          "family": "IntelligenceRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local intelligence requirement +"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_intelligence_requirement_+"
+          ]
+        },
+        {
+          "text": "+100 Strength Requirement",
+          "template": "+100 Strength Requirement",
+          "rolls": [],
+          "family": "StrengthRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local strength requirement +"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_strength_requirement_+"
+          ]
+        },
+        {
+          "text": "(250—350)% increased Physical Damage",
+          "template": "#% increased Physical Damage",
+          "rolls": [
+            {
+              "raw": "(250—350)",
+              "min": 250,
+              "max": 350
+            }
+          ],
+          "family": "LocalPhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_physical_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(2—4) to Level of all Lightning Skills",
+          "template": "+# to Level of all Lightning Skills",
+          "rolls": [
+            {
+              "raw": "(2—4)",
+              "min": 2,
+              "max": 4
+            }
+          ],
+          "family": "GlobalDamageTypeGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lightning skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Gem"
+          ],
+          "affix_ids": [
+            "lightning_skill_gem_level_+"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Torment_Club",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Nebuloch",
+      "display_name": "Nebuloch Execratus Hammer",
+      "base_name": "Execratus Hammer",
+      "href": "https://poe2db.tw/us/Nebuloch",
+      "requirements": {
+        "level": 55,
+        "str": 97,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 55,
+        "str": 97,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (39—48) to (69—79) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(39—48)",
+              "min": 39,
+              "max": 48
+            },
+            {
+              "raw": "(69—79)",
+              "min": 69,
+              "max": 79
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Critical Damage Bonus",
+          "template": "+#% to Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike multiplier +"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Damage",
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Adds (25—36) to (44—55) Chaos damage",
+          "template": "Adds # to # Chaos damage",
+          "rolls": [
+            {
+              "raw": "(25—36)",
+              "min": 25,
+              "max": 36
+            },
+            {
+              "raw": "(44—55)",
+              "min": 44,
+              "max": 55
+            }
+          ],
+          "family": "LocalChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added chaos damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_chaos_damage"
+          ]
+        },
+        {
+          "text": "Attacks consume an Endurance Charge to Critically Hit",
+          "template": "Attacks consume an Endurance Charge to Critically Hit",
+          "rolls": [],
+          "family": "AlwaysCrit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack consume endurance charge to always crit"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "attack_consume_endurance_charge_to_always_crit"
+          ]
+        },
+        {
+          "text": "Take 100 Chaos damage per second per Endurance Charge",
+          "template": "Take 100 Chaos damage per second per Endurance Charge",
+          "rolls": [],
+          "family": "MaximumEnduranceCharges",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "self chaos damage taken per minute per endurance charge"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos"
+          ],
+          "affix_ids": [
+            "self_chaos_damage_taken_per_minute_per_endurance_charge"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Execratus_Hammer",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Olrovasara",
+      "display_name": "Olrovasara Torment Club",
+      "base_name": "Torment Club",
+      "href": "https://poe2db.tw/us/Olrovasara",
+      "requirements": {
+        "level": 65,
+        "str": 114,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 114,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds 1 to (60—80) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "+(300—400) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(300—400)",
+              "min": 300,
+              "max": 400
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local accuracy rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_accuracy_rating"
+          ]
+        },
+        {
+          "text": "(5—30)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—30)",
+              "min": 5,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "On Hitting an enemy, gains maximum added Lightning damage equal to the enemy's Power for 20 seconds, up to a total of 500",
+          "template": "On Hitting an enemy, gains maximum added Lightning damage equal to the enemy's Power for 20 seconds, up to a total of 500",
+          "rolls": [],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local maximum added lightning damage equal to total monster power of enemies hit in past 20 seconds up to X"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_maximum_added_lightning_damage_equal_to_total_monster_power_of_enemies_hit_in_past_20_seconds_up_to_X"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Torment_Club",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Sculpted Suffering",
+      "display_name": "Sculpted Suffering Warpick",
+      "base_name": "Warpick",
+      "href": "https://poe2db.tw/us/Sculpted_Suffering",
+      "requirements": {
+        "level": 22,
+        "str": 41,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 22,
+        "str": 41,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(5—10)% to Critical Damage Bonus",
+          "template": "+#% to Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local critical strike multiplier +"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Damage",
+            "Attack",
+            "Critical"
+          ],
+          "affix_ids": [
+            "local_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Adds (21—26) to (25—31) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(21—26)",
+              "min": 21,
+              "max": 26
+            },
+            {
+              "raw": "(25—31)",
+              "min": 25,
+              "max": 31
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Breaks Armour equal to 40 % of damage from Hits with this weapon",
+          "template": "Breaks Armour equal to 40 % of damage from Hits with this weapon",
+          "rolls": [],
+          "family": "ArmourBreak",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour break damage % dealt as armour break"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_armour_break_damage_%_dealt_as_armour_break"
+          ]
+        },
+        {
+          "text": "Fully Armour Broken enemies you kill with Hits Shatter",
+          "template": "Fully Armour Broken enemies you kill with Hits Shatter",
+          "rolls": [],
+          "family": "ShatterOnKill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "shatter on kill if fully broken armour"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "shatter_on_kill_if_fully_broken_armour"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Warpick",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Seeing Stars",
+      "display_name": "Seeing Stars Marching Mace",
+      "base_name": "Marching Mace",
+      "href": "https://poe2db.tw/us/Seeing_Stars",
+      "requirements": {
+        "level": 54,
+        "str": 96,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 54,
+        "str": 96,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (12—16) to (22—25) Cold Damage",
+          "template": "Adds # to # Cold Damage",
+          "rolls": [
+            {
+              "raw": "(12—16)",
+              "min": 12,
+              "max": 16
+            },
+            {
+              "raw": "(22—25)",
+              "min": 22,
+              "max": 25
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added cold damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "Adds 1 to (40—45) Lightning Damage",
+          "template": "Adds 1 to # Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(40—45)",
+              "min": 40,
+              "max": 45
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added lightning damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Energy Generation is doubled",
+          "template": "Energy Generation is doubled",
+          "rolls": [],
+          "family": "EnergyGain",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "energy generation is doubled"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "energy_generation_is_doubled"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Marching_Mace",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    },
+    {
+      "name": "Trenchtimbre",
+      "display_name": "Trenchtimbre Spiked Club",
+      "base_name": "Spiked Club",
+      "href": "https://poe2db.tw/us/Trenchtimbre",
+      "requirements": {
+        "level": 16,
+        "str": 31,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 31,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Adds (13—15) to (22—25) Physical Damage",
+          "template": "Adds # to # Physical Damage",
+          "rolls": [
+            {
+              "raw": "(13—15)",
+              "min": 13,
+              "max": 15
+            },
+            {
+              "raw": "(22—25)",
+              "min": 22,
+              "max": 25
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local minimum added physical damage"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "local_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attack speed +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "local_attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(1—2) to Level of all Minion Skills",
+          "template": "+# to Level of all Minion Skills",
+          "rolls": [
+            {
+              "raw": "(1—2)",
+              "min": 1,
+              "max": 2
+            }
+          ],
+          "family": "IncreaseSocketedGemLevel",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minion skill gem level +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Minion",
+            "Gem"
+          ],
+          "affix_ids": [
+            "minion_skill_gem_level_+"
+          ]
+        },
+        {
+          "text": "Increases and Reductions to Minion Attack Speed also affect you",
+          "template": "Increases and Reductions to Minion Attack Speed also affect you",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additive modifiers to minion attack speed also affect you"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "additive_modifiers_to_minion_attack_speed_also_affect_you"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "One_Hand_Maces",
+      "base_href": "https://poe2db.tw/Spiked_Club",
+      "item_class": "One Hand Maces",
+      "class_slug": "One_Hand_Maces"
+    }
+  ]
+}

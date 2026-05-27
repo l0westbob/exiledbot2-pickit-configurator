@@ -5,97 +5,211 @@
     {
       "name": "Golden Hoop",
       "href": "https://poe2db.tw/Golden_Hoop",
-      "required_level": 12
+      "required_level": 12,
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Iron Ring",
       "href": "https://poe2db.tw/Iron_Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Lazuli Ring",
       "href": "https://poe2db.tw/Lazuli_Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Ruby Ring",
       "href": "https://poe2db.tw/Ruby_Ring",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Sapphire Ring",
       "href": "https://poe2db.tw/Sapphire_Ring",
-      "required_level": 12
+      "required_level": 12,
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Topaz Ring",
       "href": "https://poe2db.tw/Topaz_Ring",
-      "required_level": 16
+      "required_level": 16,
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Amethyst Ring",
       "href": "https://poe2db.tw/Amethyst_Ring",
-      "required_level": 20
+      "required_level": 20,
+      "requirements": {
+        "level": 20,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Emerald Ring",
       "href": "https://poe2db.tw/Emerald_Ring",
-      "required_level": 26
+      "required_level": 26,
+      "requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Pearl Ring",
       "href": "https://poe2db.tw/Pearl_Ring",
-      "required_level": 32
+      "required_level": 32,
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Prismatic Ring",
       "href": "https://poe2db.tw/Prismatic_Ring",
-      "required_level": 35
+      "required_level": 35,
+      "requirements": {
+        "level": 35,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Gold Ring",
       "href": "https://poe2db.tw/Gold_Ring",
-      "required_level": 40
+      "required_level": 40,
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Unset Ring",
       "href": "https://poe2db.tw/Unset_Ring",
-      "required_level": 44
+      "required_level": 44,
+      "requirements": {
+        "level": 44,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Abyssal Signet",
       "href": "https://poe2db.tw/Abyssal_Signet",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Ring",
       "href": "https://poe2db.tw/Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Dusk Ring",
       "href": "https://poe2db.tw/Dusk_Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Gloam Ring",
       "href": "https://poe2db.tw/Gloam_Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Penumbra Ring",
       "href": "https://poe2db.tw/Penumbra_Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Tenebrous Ring",
       "href": "https://poe2db.tw/Tenebrous_Ring",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Breach Ring",
       "href": "https://poe2db.tw/Breach_Ring",
-      "required_level": 40
+      "required_level": 40,
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     }
   ],
   "modifier_sections": {
@@ -108,12 +222,12 @@
           {
             "level": 1,
             "name": "CorruptionAllDamage1",
-            "text": "(20-30)% increased Damage",
+            "text": "(50-75)% increased Damage",
             "stats": [
               {
                 "id": "damage_+%",
-                "max": 30,
-                "min": 20
+                "max": 75,
+                "min": 50
               }
             ]
           }
@@ -203,12 +317,12 @@
           {
             "level": 1,
             "name": "CorruptionIncreasedMana1",
-            "text": "+(20-25) to maximum Mana",
+            "text": "+(10-14) to maximum Mana",
             "stats": [
               {
                 "id": "base_maximum_mana",
-                "max": 25,
-                "min": 20
+                "max": 14,
+                "min": 10
               }
             ]
           }
@@ -279,12 +393,12 @@
           {
             "level": 1,
             "name": "CorruptionLifeRegenerationRate1",
-            "text": "(15-25)% increased Life Regeneration rate",
+            "text": "(35-50)% increased Life Regeneration rate",
             "stats": [
               {
                 "id": "life_regeneration_rate_+%",
-                "max": 25,
-                "min": 15
+                "max": 50,
+                "min": 35
               }
             ]
           }
@@ -298,12 +412,12 @@
           {
             "level": 1,
             "name": "CorruptionManaRegeneration1",
-            "text": "(20-30)% increased Mana Regeneration Rate",
+            "text": "(10-19)% increased Mana Regeneration Rate",
             "stats": [
               {
                 "id": "mana_regeneration_rate_+%",
-                "max": 30,
-                "min": 20
+                "max": 19,
+                "min": 10
               }
             ]
           }

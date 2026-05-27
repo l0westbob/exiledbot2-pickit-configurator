@@ -1,0 +1,4783 @@
+{
+  "class": "Gloves",
+  "slug": "Gloves",
+  "uniques": [
+    {
+      "name": "Aerisvane's Wings",
+      "display_name": "Aerisvane's Wings Burnished Gauntlets",
+      "base_name": "Burnished Gauntlets",
+      "href": "https://poe2db.tw/us/Aerisvanes_Wings",
+      "requirements": {
+        "level": 52,
+        "str": 36,
+        "dex": 36,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": 36,
+        "dex": 36,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—70)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Decimating Strike",
+          "template": "Decimating Strike",
+          "rolls": [],
+          "family": "DecimatingStrike",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "decimating strike"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "decimating_strike"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_dex",
+      "base_href": "https://poe2db.tw/Burnished_Gauntlets",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Atziri's Acuity",
+      "display_name": "Atziri's Acuity Moulded Mitts",
+      "base_name": "Moulded Mitts",
+      "href": "https://poe2db.tw/us/Atziris_Acuity",
+      "requirements": {
+        "level": 33,
+        "str": 42,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 42,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(80—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(80—100)",
+              "min": 80,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "Leech from Critical Hits is instant",
+          "template": "Leech from Critical Hits is instant",
+          "rolls": [],
+          "family": "CriticalStrikesLeechIsInstant",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base leech is instant on critical"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "base_leech_is_instant_on_critical"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_str",
+      "base_href": "https://poe2db.tw/Moulded_Mitts",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Aurseize",
+      "display_name": "Aurseize Layered Gauntlets",
+      "base_name": "Layered Gauntlets",
+      "href": "https://poe2db.tw/us/Aurseize",
+      "requirements": {
+        "level": 16,
+        "str": 13,
+        "dex": 13,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 13,
+        "dex": 13,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(40—60)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(40—50)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "Lose 2 % of maximum Life on Kill",
+          "template": "Lose 2 % of maximum Life on Kill",
+          "rolls": [],
+          "family": "MaximumLifeOnKillPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "recover % maximum life on kill"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "recover_%_maximum_life_on_kill"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_dex",
+      "base_href": "https://poe2db.tw/Layered_Gauntlets",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Blessed Bonds",
+      "display_name": "Blessed Bonds Linen Wraps",
+      "base_name": "Linen Wraps",
+      "href": "https://poe2db.tw/us/Blessed_Bonds",
+      "requirements": {
+        "level": 56,
+        "str": null,
+        "dex": 13,
+        "int": 13
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 13,
+        "int": 13
+      },
+      "stats": [
+        {
+          "text": "+(60—100) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base evasion rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_evasion_rating"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "Gain (25—35) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Inflict Cold Exposure on Igniting an Enemy",
+          "template": "Inflict Cold Exposure on Igniting an Enemy",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "inflict cold exposure on ignite"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "inflict_cold_exposure_on_ignite"
+          ]
+        },
+        {
+          "text": "Inflict Fire Exposure on Shocking an Enemy",
+          "template": "Inflict Fire Exposure on Shocking an Enemy",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "inflict fire exposure on shock"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "inflict_fire_exposure_on_shock"
+          ]
+        },
+        {
+          "text": "Inflict Lightning Exposure on Critical Hit",
+          "template": "Inflict Lightning Exposure on Critical Hit",
+          "rolls": [],
+          "family": "ExposureOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "inflict lightning exposure on crit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "inflict_lightning_exposure_on_crit"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex_int",
+      "base_href": "https://poe2db.tw/Linen_Wraps",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Blueflame Bracers",
+      "display_name": "Blueflame Bracers Goldcast Cuffs",
+      "base_name": "Goldcast Cuffs",
+      "href": "https://poe2db.tw/us/Blueflame_Bracers",
+      "requirements": {
+        "level": 33,
+        "str": 24,
+        "dex": null,
+        "int": 24
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 24,
+        "dex": null,
+        "int": 24
+      },
+      "stats": [
+        {
+          "text": "+20 to maximum Energy Shield",
+          "template": "+20 to maximum Energy Shield",
+          "rolls": [],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(5—15)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "+(5—15)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "100 % of Fire Damage Converted to Cold Damage",
+          "template": "100 % of Fire Damage Converted to Cold Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base fire damage % to convert to cold"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_fire_damage_%_to_convert_to_cold"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_int",
+      "base_href": "https://poe2db.tw/Goldcast_Cuffs",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Candlemaker",
+      "display_name": "Candlemaker Sombre Gloves",
+      "base_name": "Sombre Gloves",
+      "href": "https://poe2db.tw/us/Candlemaker",
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "base_requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": 17
+      },
+      "stats": [
+        {
+          "text": "(50—80)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—80)",
+              "min": 50,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(20—40)% increased Fire Damage",
+          "template": "#% increased Fire Damage",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "FireDamagePercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "fire damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "fire_damage_+%"
+          ]
+        },
+        {
+          "text": "(10—20)% reduced Cold Damage",
+          "template": "#% reduced Cold Damage",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "ColdDamagePercentage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cold damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold"
+          ],
+          "affix_ids": [
+            "cold_damage_+%"
+          ]
+        },
+        {
+          "text": "+(20—40)% to Fire Resistance",
+          "template": "+#% to Fire Resistance",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "FireResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base fire damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_fire_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(-20—-10)% to Cold Resistance",
+          "template": "#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(-20—-10)",
+              "min": -20,
+              "max": -10
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Flammability Magnitude is doubled",
+          "template": "Flammability Magnitude is doubled",
+          "rolls": [],
+          "family": "IgniteChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chance to ignite is doubled"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "chance_to_ignite_is_doubled"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Sombre_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Death Articulated",
+      "display_name": "Death Articulated Ornate Gauntlets",
+      "base_name": "Ornate Gauntlets",
+      "href": "https://poe2db.tw/us/Death_Articulated",
+      "requirements": {
+        "level": 65,
+        "str": 44,
+        "dex": 44,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": 44,
+        "dex": 44,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(100—150)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(17—23)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(17—23)",
+              "min": 17,
+              "max": 23
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Lose 5 % of maximum Life per second",
+          "template": "Lose 5 % of maximum Life per second",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "life degeneration % per minute not in grace"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "life_degeneration_%_per_minute_not_in_grace"
+          ]
+        },
+        {
+          "text": "Regenerate 5 Rage per second",
+          "template": "Regenerate 5 Rage per second",
+          "rolls": [],
+          "family": "RageOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base rage regeneration per minute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_rage_regeneration_per_minute"
+          ]
+        },
+        {
+          "text": "No Inherent loss of Rage",
+          "template": "No Inherent loss of Rage",
+          "rolls": [],
+          "family": "NoInherentRageLoss",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "no inherent rage loss"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "no_inherent_rage_loss"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_dex",
+      "base_href": "https://poe2db.tw/Ornate_Gauntlets",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Deathblow",
+      "display_name": "Deathblow Doubled Gauntlets",
+      "base_name": "Doubled Gauntlets",
+      "href": "https://poe2db.tw/us/Deathblow",
+      "requirements": {
+        "level": 33,
+        "str": 24,
+        "dex": 24,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 24,
+        "dex": 24,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(100—150)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Gain (20—30) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Gain (20—30) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Culling Strike",
+          "template": "Culling Strike",
+          "rolls": [],
+          "family": "CullingStrike",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "kill enemy on hit if under 10% life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "kill_enemy_on_hit_if_under_10%_life"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_dex",
+      "base_href": "https://poe2db.tw/Doubled_Gauntlets",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Demon Stitcher",
+      "display_name": "Demon Stitcher Intricate Gloves",
+      "base_name": "Intricate Gloves",
+      "href": "https://poe2db.tw/us/Demon_Stitcher",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 42
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 42
+      },
+      "stats": [
+        {
+          "text": "+(40—60) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "+(80—120) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(80—120)",
+              "min": 80,
+              "max": 120
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(6—12)% increased Cast Speed",
+          "template": "#% increased Cast Speed",
+          "rolls": [
+            {
+              "raw": "(6—12)",
+              "min": 6,
+              "max": 12
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Sacrifice (5—15)% of Life to gain that much Energy Shield when you Cast a Spell",
+          "template": "Sacrifice #% of Life to gain that much Energy Shield when you Cast a Spell",
+          "rolls": [
+            {
+              "raw": "(5—15)",
+              "min": 5,
+              "max": 15
+            }
+          ],
+          "family": "SacrificeLifeToGainES",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "sacrifice % maximum life to gain as es on spell cast"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "resource",
+            "Life",
+            "Defences"
+          ],
+          "affix_ids": [
+            "sacrifice_%_maximum_life_to_gain_as_es_on_spell_cast"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Intricate_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Doedre's Tenure",
+      "display_name": "Doedre's Tenure Stitched Gloves",
+      "base_name": "Stitched Gloves",
+      "href": "https://poe2db.tw/us/Doedres_Tenure",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 22
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 22
+      },
+      "stats": [
+        {
+          "text": "+(20—30) to maximum Energy Shield",
+          "template": "+# to maximum Energy Shield",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield"
+          ]
+        },
+        {
+          "text": "100 % increased Spell Damage",
+          "template": "100 % increased Spell Damage",
+          "rolls": [],
+          "family": "SpellDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "spell damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "caster_damage",
+            "Damage",
+            "Caster"
+          ],
+          "affix_ids": [
+            "spell_damage_+%"
+          ]
+        },
+        {
+          "text": "(15—25)% reduced Cast Speed",
+          "template": "#% reduced Cast Speed",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "IncreasedCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "base_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "+(10—15) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Stitched_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Dreadfist",
+      "display_name": "Dreadfist Bolstered Mitts",
+      "base_name": "Bolstered Mitts",
+      "href": "https://poe2db.tw/us/Dreadfist",
+      "requirements": {
+        "level": 27,
+        "str": 35,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 27,
+        "str": 35,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Damage Bonus",
+          "template": "#% increased Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base critical strike multiplier +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "base_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Critical Hits inflict Impale",
+          "template": "Critical Hits inflict Impale",
+          "rolls": [],
+          "family": "ImpaleOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical hits always apply impale"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "critical_hits_always_apply_impale"
+          ]
+        },
+        {
+          "text": "Critical Hits cannot Extract Impale",
+          "template": "Critical Hits cannot Extract Impale",
+          "rolls": [],
+          "family": "CannotImpale",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical hits cannot consume impale"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_hits_cannot_consume_impale"
+          ]
+        },
+        {
+          "text": "(20—31) to (31—49) Physical Thorns damage",
+          "template": "# to # Physical Thorns damage",
+          "rolls": [
+            {
+              "raw": "(20—31)",
+              "min": 20,
+              "max": 31
+            },
+            {
+              "raw": "(31—49)",
+              "min": 31,
+              "max": 49
+            }
+          ],
+          "family": "Thorns",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "thorns minimum base physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "thorns_minimum_base_physical_damage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str",
+      "base_href": "https://poe2db.tw/Bolstered_Mitts",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Empire's Grasp",
+      "display_name": "Empire's Grasp Titan Mitts",
+      "base_name": "Titan Mitts",
+      "href": "https://poe2db.tw/us/Empires_Grasp",
+      "requirements": {
+        "level": 52,
+        "str": 64,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": 64,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(150—200)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(150—200)",
+              "min": 150,
+              "max": 200
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "Gain (30—50) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "(10—20)% increased Global Physical Damage",
+          "template": "#% increased Global Physical Damage",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "PhysicalDamagePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "physical damage +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical"
+          ],
+          "affix_ids": [
+            "physical_damage_+%"
+          ]
+        },
+        {
+          "text": "Knockback direction is reversed",
+          "template": "Knockback direction is reversed",
+          "rolls": [],
+          "family": "EnemyKnockbackDirectionReversed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemy knockback direction is reversed"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "enemy_knockback_direction_is_reversed"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str",
+      "base_href": "https://poe2db.tw/Titan_Mitts",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Essentia Sanguis",
+      "display_name": "Essentia Sanguis Furtive Wraps",
+      "base_name": "Furtive Wraps",
+      "href": "https://poe2db.tw/us/Essentia_Sanguis",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 36,
+        "int": 36
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": null,
+        "dex": 36,
+        "int": 36
+      },
+      "stats": [
+        {
+          "text": "(50—70)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(50—70)",
+              "min": 50,
+              "max": 70
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "Adds 1 to (30—50) Lightning damage to Attacks",
+          "template": "Adds 1 to # Lightning damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added lightning damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "+(15—25) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(25—35)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(25—35)",
+              "min": 25,
+              "max": 35
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Life Leech is Converted to Energy Shield Leech",
+          "template": "Life Leech is Converted to Energy Shield Leech",
+          "rolls": [],
+          "family": "LeechEnergyShieldInsteadofLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "convert all life leech to energy shield leech"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "energy_shield",
+            "resource",
+            "Life",
+            "Defences"
+          ],
+          "affix_ids": [
+            "convert_all_life_leech_to_energy_shield_leech"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex_int",
+      "base_href": "https://poe2db.tw/Furtive_Wraps",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Gravebind",
+      "display_name": "Gravebind Rope Cuffs",
+      "base_name": "Rope Cuffs",
+      "href": "https://poe2db.tw/us/Gravebind",
+      "requirements": {
+        "level": 5,
+        "str": 6,
+        "dex": null,
+        "int": 6
+      },
+      "base_requirements": {
+        "level": 5,
+        "str": 6,
+        "dex": null,
+        "int": 6
+      },
+      "stats": [
+        {
+          "text": "(40—60)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(10—15)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Gain (7—10) Life per enemy killed",
+          "template": "Gain # Life per enemy killed",
+          "rolls": [
+            {
+              "raw": "(7—10)",
+              "min": 7,
+              "max": 10
+            }
+          ],
+          "family": "LifeGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Gain (4—6) Mana per enemy killed",
+          "template": "Gain # Mana per enemy killed",
+          "rolls": [
+            {
+              "raw": "(4—6)",
+              "min": 4,
+              "max": 6
+            }
+          ],
+          "family": "ManaGainedFromEnemyDeath",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base mana gained on enemy death"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_mana_gained_on_enemy_death"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence killed by anyone count as being killed by you instead",
+          "template": "Enemies in your Presence killed by anyone count as being killed by you instead",
+          "rolls": [],
+          "family": "EnemiesKilledCountAsYours",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "deathgrip presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "deathgrip_presence"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_int",
+      "base_href": "https://poe2db.tw/Rope_Cuffs",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Grip of Winter",
+      "display_name": "Grip of Winter Firm Bracers",
+      "base_name": "Firm Bracers",
+      "href": "https://poe2db.tw/us/Grip_of_Winter",
+      "requirements": {
+        "level": 11,
+        "str": null,
+        "dex": 16,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": null,
+        "dex": 16,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(30—50)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "Adds (3—5) to (6—8) Cold damage to Attacks",
+          "template": "Adds # to # Cold damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            },
+            {
+              "raw": "(6—8)",
+              "min": 6,
+              "max": 8
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added cold damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(40—50)% increased Freeze Buildup",
+          "template": "#% increased Freeze Buildup",
+          "rolls": [
+            {
+              "raw": "(40—50)",
+              "min": 40,
+              "max": 50
+            }
+          ],
+          "family": "FreezeDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "hit damage freeze multiplier +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "hit_damage_freeze_multiplier_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Magnitude of Chill you inflict",
+          "template": "#% increased Magnitude of Chill you inflict",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ChillEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chill effect +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chill_effect_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex",
+      "base_href": "https://poe2db.tw/Firm_Bracers",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Hand of Wisdom and Action",
+      "display_name": "Hand of Wisdom and Action Spiral Wraps",
+      "base_name": "Spiral Wraps",
+      "href": "https://poe2db.tw/us/Hand_of_Wisdom_and_Action",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 24,
+        "int": 24
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 24,
+        "int": 24
+      },
+      "stats": [
+        {
+          "text": "+(15—25) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(15—25) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "1 % increased Attack Speed per 20 Dexterity",
+          "template": "1 % increased Attack Speed per 20 Dexterity",
+          "rolls": [],
+          "family": "IncreasedAttackSpeedPerDexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +% per 20 dex"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%_per_20_dex"
+          ]
+        },
+        {
+          "text": "Adds 1 to 10 Lightning Damage to Attacks per 20 Intelligence",
+          "template": "Adds 1 to 10 Lightning Damage to Attacks per 20 Intelligence",
+          "rolls": [],
+          "family": "GlobalAddedDamagePerAttribute",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "minimum added lightning damage to attacks per 20 intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "minimum_added_lightning_damage_to_attacks_per_20_intelligence"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex_int",
+      "base_href": "https://poe2db.tw/Spiral_Wraps",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Hateforge",
+      "display_name": "Hateforge Moulded Mitts",
+      "base_name": "Moulded Mitts",
+      "href": "https://poe2db.tw/us/Hateforge",
+      "requirements": {
+        "level": 60,
+        "str": 42,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": 42,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(300—400)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(300—400)",
+              "min": 300,
+              "max": 400
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "Gain (3—6) Rage on Hit",
+          "template": "Gain # Rage on Hit",
+          "rolls": [
+            {
+              "raw": "(3—6)",
+              "min": 3,
+              "max": 6
+            }
+          ],
+          "family": "RageOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base gain x rage on hit"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_gain_x_rage_on_hit"
+          ]
+        },
+        {
+          "text": "Gain a random Charge on reaching Maximum Rage , no more than once every (3—6) seconds",
+          "template": "Gain a random Charge on reaching Maximum Rage , no more than once every # seconds",
+          "rolls": [
+            {
+              "raw": "(3—6)",
+              "min": 3,
+              "max": 6
+            }
+          ],
+          "family": "ChargeGeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "gain 1 random charge on reaching maximum rage no more than once every X ms"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "gain_1_random_charge_on_reaching_maximum_rage_no_more_than_once_every_X_ms"
+          ]
+        },
+        {
+          "text": "Lose all Rage on reaching Maximum Rage",
+          "template": "Lose all Rage on reaching Maximum Rage",
+          "rolls": [],
+          "family": "RageOnHit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "lose all rage on reaching maximum rage"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "lose_all_rage_on_reaching_maximum_rage"
+          ]
+        },
+        {
+          "text": "(-10—10) to Maximum Rage",
+          "template": "# to Maximum Rage",
+          "rolls": [
+            {
+              "raw": "(-10—10)",
+              "min": -10,
+              "max": 10
+            }
+          ],
+          "family": "MaximumRage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum rage"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "maximum_rage"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_str",
+      "base_href": "https://poe2db.tw/Moulded_Mitts",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Idle Hands",
+      "display_name": "Idle Hands Sectioned Bracers",
+      "base_name": "Sectioned Bracers",
+      "href": "https://poe2db.tw/us/Idle_Hands",
+      "requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 36,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 28,
+        "str": null,
+        "dex": 36,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(40—60)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to Accuracy Rating",
+          "template": "+# to Accuracy Rating",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedAccuracy",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "accuracy rating"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack"
+          ],
+          "affix_ids": [
+            "accuracy_rating"
+          ]
+        },
+        {
+          "text": "+(5—10) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "25 % increased Attack Speed while on Full Mana",
+          "template": "25 % increased Attack Speed while on Full Mana",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +% while on full mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%_while_on_full_mana"
+          ]
+        },
+        {
+          "text": "You count as on Full Mana while at 90 % of maximum Mana or above",
+          "template": "You count as on Full Mana while at 90 % of maximum Mana or above",
+          "rolls": [],
+          "family": "FullManaThreshold",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "full mana threshold % override"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "full_mana_threshold_%_override"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_dex",
+      "base_href": "https://poe2db.tw/Sectioned_Bracers",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Jarngreipr",
+      "display_name": "Jarngreipr Ringmail Gauntlets",
+      "base_name": "Ringmail Gauntlets",
+      "href": "https://poe2db.tw/us/Jarngreipr",
+      "requirements": {
+        "level": 6,
+        "str": 6,
+        "dex": 6,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 6,
+        "str": 6,
+        "dex": 6,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "50 % increased Armour and Evasion",
+          "template": "50 % increased Armour and Evasion",
+          "rolls": [],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "Adds (2—3) to (5—6) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(2—3)",
+              "min": 2,
+              "max": 3
+            },
+            {
+              "raw": "(5—6)",
+              "min": 5,
+              "max": 6
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(4—8)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(4—8)",
+              "min": 4,
+              "max": 8
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "Strength can satisfy other Attribute Requirements of Melee Weapons and Melee Skills",
+          "template": "Strength can satisfy other Attribute Requirements of Melee Weapons and Melee Skills",
+          "rolls": [],
+          "family": "StrengthRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "strength can satisfy dexterity and intelligence requirements of melee weapons and skills"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "strength_can_satisfy_dexterity_and_intelligence_requirements_of_melee_weapons_and_skills"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_dex",
+      "base_href": "https://poe2db.tw/Ringmail_Gauntlets",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Killjoy",
+      "display_name": "Killjoy Linen Wraps",
+      "base_name": "Linen Wraps",
+      "href": "https://poe2db.tw/us/Killjoy",
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 13,
+        "int": 13
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": null,
+        "dex": 13,
+        "int": 13
+      },
+      "stats": [
+        {
+          "text": "(30—60)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(30—50) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Damage Bonus",
+          "template": "#% increased Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base critical strike multiplier +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "base_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Life Flasks do not recover Life",
+          "template": "Life Flasks do not recover Life",
+          "rolls": [],
+          "family": "FlaskLifeRecovery",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life flasks do not recover life"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_life_flasks_do_not_recover_life"
+          ]
+        },
+        {
+          "text": "On-Kill Effects happen twice",
+          "template": "On-Kill Effects happen twice",
+          "rolls": [],
+          "family": "DoubleOnKillEffects",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "on kill effects occur twice"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "on_kill_effects_occur_twice"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex_int",
+      "base_href": "https://poe2db.tw/Linen_Wraps",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Kitoko's Current",
+      "display_name": "Kitoko's Current Jewelled Gloves",
+      "base_name": "Jewelled Gloves",
+      "href": "https://poe2db.tw/us/Kitokos_Current",
+      "requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": 34
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": null,
+        "dex": null,
+        "int": 34
+      },
+      "stats": [
+        {
+          "text": "(30—50)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "(10—15)% reduced Attack and Cast Speed",
+          "template": "#% reduced Attack and Cast Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "AttackCastSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack and cast speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Caster",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_and_cast_speed_+%"
+          ]
+        },
+        {
+          "text": "Lightning damage from Hits Contributes to Electrocution Buildup",
+          "template": "Lightning damage from Hits Contributes to Electrocution Buildup",
+          "rolls": [],
+          "family": "LightningDamageElectrocute",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage can electrocute"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_lightning_damage_can_electrocute"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Jewelled_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Leopold's Applause",
+      "display_name": "Leopold's Applause Embroidered Gloves",
+      "base_name": "Embroidered Gloves",
+      "href": "https://poe2db.tw/us/Leopolds_Applause",
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": 64
+      },
+      "base_requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": 64
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+(60—100) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Rarity of Items found",
+          "template": "#% increased Rarity of Items found",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "ItemFoundRarityIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base item found rarity +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "drop"
+          ],
+          "affix_ids": [
+            "base_item_found_rarity_+%"
+          ]
+        },
+        {
+          "text": "Damage Penetrates 10 % Elemental Resistances",
+          "template": "Damage Penetrates 10 % Elemental Resistances",
+          "rolls": [],
+          "family": "ElementalPenetration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "reduce enemy elemental resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental"
+          ],
+          "affix_ids": [
+            "reduce_enemy_elemental_resistance_%"
+          ]
+        },
+        {
+          "text": "Your Hits can Penetrate Elemental Resistances down to a minimum of -50%",
+          "template": "Your Hits can Penetrate Elemental Resistances down to a minimum of -50%",
+          "rolls": [],
+          "family": "ElementalPenetration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "elemental penetration can go down to override"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental"
+          ],
+          "affix_ids": [
+            "elemental_penetration_can_go_down_to_override"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Embroidered_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Lochtonial Caress",
+      "display_name": "Lochtonial Caress Tempered Mitts",
+      "base_name": "Tempered Mitts",
+      "href": "https://poe2db.tw/us/Lochtonial_Caress",
+      "requirements": {
+        "level": 16,
+        "str": 22,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 22,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(10—15)% increased Skill Speed",
+          "template": "#% increased Skill Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Speed"
+          ],
+          "affix_ids": [
+            "skill_speed_+%"
+          ]
+        },
+        {
+          "text": "+(15—25) to Armour",
+          "template": "+# to Armour",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base physical damage reduction rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_physical_damage_reduction_rating"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Life",
+          "template": "+# to maximum Life",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "(10—15)% reduced maximum Mana",
+          "template": "#% reduced maximum Mana",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "MaximumManaIncreasePercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "maximum mana +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "maximum_mana_+%"
+          ]
+        },
+        {
+          "text": "Share Charges with Allies in your Presence",
+          "template": "Share Charges with Allies in your Presence",
+          "rolls": [],
+          "family": "ShareChargesWithAllies",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "share charges with allies in your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "share_charges_with_allies_in_your_presence"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str",
+      "base_href": "https://poe2db.tw/Tempered_Mitts",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Maligaro's Virtuosity",
+      "display_name": "Maligaro's Virtuosity Fine Bracers",
+      "base_name": "Fine Bracers",
+      "href": "https://poe2db.tw/us/Maligaros_Virtuosity",
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 56,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": null,
+        "dex": 56,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(60—80)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(60—80)",
+              "min": 60,
+              "max": 80
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "5 % increased Attack Speed",
+          "template": "5 % increased Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "Your Critical Hit Chance cannot be Rerolled",
+          "template": "Your Critical Hit Chance cannot be Rerolled",
+          "rolls": [],
+          "family": "CriticalStrikesCannotReroll",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance cannot be rerolled"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_cannot_be_rerolled"
+          ]
+        },
+        {
+          "text": "Your Critical Damage Bonus is 250%",
+          "template": "Your Critical Damage Bonus is 250%",
+          "rolls": [],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike multiplier is 250"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_multiplier_is_250"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex",
+      "base_href": "https://poe2db.tw/Fine_Bracers",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Nightscale",
+      "display_name": "Nightscale Pauascale Gloves",
+      "base_name": "Pauascale Gloves",
+      "href": "https://poe2db.tw/us/Nightscale",
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": null,
+        "int": 56
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": null,
+        "dex": null,
+        "int": 56
+      },
+      "stats": [
+        {
+          "text": "(60—100)% increased Energy Shield",
+          "template": "#% increased Energy Shield",
+          "rolls": [
+            {
+              "raw": "(60—100)",
+              "min": 60,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(30—50)% increased Critical Hit Chance",
+          "template": "#% increased Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "critical strike chance +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "critical_strike_chance_+%"
+          ]
+        },
+        {
+          "text": "+(10—20) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(10—20)",
+              "min": 10,
+              "max": 20
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "+(20—30)% to Cold Resistance",
+          "template": "+#% to Cold Resistance",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ColdResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base cold damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_cold_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "150 % increased Mana Regeneration Rate if you've dealt a Critical Hit Recently",
+          "template": "150 % increased Mana Regeneration Rate if you've dealt a Critical Hit Recently",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +% if crit recently"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana",
+            "Critical"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%_if_crit_recently"
+          ]
+        },
+        {
+          "text": "Cannot Regenerate Mana if you haven't dealt a Critical Hit Recently",
+          "template": "Cannot Regenerate Mana if you haven't dealt a Critical Hit Recently",
+          "rolls": [],
+          "family": "NoManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "no mana regeneration if not crit recently"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "no_mana_regeneration_if_not_crit_recently"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Pauascale_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Northpaw",
+      "display_name": "Northpaw Suede Bracers",
+      "base_name": "Suede Bracers",
+      "href": "https://poe2db.tw/us/Northpaw",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "+(15—25) to Evasion Rating",
+          "template": "+# to Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(15—25)",
+              "min": 15,
+              "max": 25
+            }
+          ],
+          "family": "BaseLocalDefences",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local base evasion rating"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_base_evasion_rating"
+          ]
+        },
+        {
+          "text": "Adds (3—5) to (8—10) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            },
+            {
+              "raw": "(8—10)",
+              "min": 8,
+              "max": 10
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "(10—15)% increased Critical Damage Bonus",
+          "template": "#% increased Critical Damage Bonus",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "CriticalStrikeMultiplier",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base critical strike multiplier +"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Damage",
+            "Critical"
+          ],
+          "affix_ids": [
+            "base_critical_strike_multiplier_+"
+          ]
+        },
+        {
+          "text": "Base Critical Hit Chance for Attacks with Weapons is 7 %",
+          "template": "Base Critical Hit Chance for Attacks with Weapons is 7 %",
+          "rolls": [],
+          "family": "CriticalStrikeChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "override weapon base critical strike chance"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "override_weapon_base_critical_strike_chance"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex",
+      "base_href": "https://poe2db.tw/Suede_Bracers",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Painter's Servant",
+      "display_name": "Painter's Servant Torn Gloves",
+      "base_name": "Torn Gloves",
+      "href": "https://poe2db.tw/us/Painters_Servant",
+      "requirements": {
+        "level": 1,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Gain (5—10)% of Elemental Damage as Extra Cold Damage",
+          "template": "Gain #% of Elemental Damage as Extra Cold Damage",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to gain as cold"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold"
+          ],
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_gain_as_cold"
+          ]
+        },
+        {
+          "text": "Gain (5—10)% of Elemental Damage as Extra Fire Damage",
+          "template": "Gain #% of Elemental Damage as Extra Fire Damage",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to gain as fire"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_gain_as_fire"
+          ]
+        },
+        {
+          "text": "Gain (5—10)% of Elemental Damage as Extra Lightning Damage",
+          "template": "Gain #% of Elemental Damage as Extra Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to gain as lightning"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning"
+          ],
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_gain_as_lightning"
+          ]
+        },
+        {
+          "text": "33 % of Elemental Damage Converted to Cold Damage",
+          "template": "33 % of Elemental Damage Converted to Cold Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to convert to cold"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_convert_to_cold"
+          ]
+        },
+        {
+          "text": "33 % of Elemental Damage Converted to Fire Damage",
+          "template": "33 % of Elemental Damage Converted to Fire Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to convert to fire"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_convert_to_fire"
+          ]
+        },
+        {
+          "text": "33 % of Elemental Damage Converted to Lightning Damage",
+          "template": "33 % of Elemental Damage Converted to Lightning Damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base elemental damage % to convert to lightning"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_elemental_damage_%_to_convert_to_lightning"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_int",
+      "base_href": "https://poe2db.tw/Torn_Gloves",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Plaguefinger",
+      "display_name": "Plaguefinger Gauze Wraps",
+      "base_name": "Gauze Wraps",
+      "href": "https://poe2db.tw/us/Plaguefinger",
+      "requirements": {
+        "level": 4,
+        "str": null,
+        "dex": 6,
+        "int": 6
+      },
+      "base_requirements": {
+        "level": 4,
+        "str": null,
+        "dex": 6,
+        "int": 6
+      },
+      "stats": [
+        {
+          "text": "(30—50)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(4—6)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(4—6)",
+              "min": 4,
+              "max": 6
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "(20—30)% chance to Poison on Hit",
+          "template": "#% chance to Poison on Hit",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "PoisonChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to poison on hit %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_poison_on_hit_%"
+          ]
+        },
+        {
+          "text": "All Damage from Hits Contributes to Poison Magnitude",
+          "template": "All Damage from Hits Contributes to Poison Magnitude",
+          "rolls": [],
+          "family": "AllDamageCanPoison",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "all damage can poison"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "all_damage_can_poison"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_dex_int",
+      "base_href": "https://poe2db.tw/Gauze_Wraps",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Shackles of the Wretched",
+      "display_name": "Shackles of the Wretched Aged Cuffs",
+      "base_name": "Aged Cuffs",
+      "href": "https://poe2db.tw/us/Shackles_of_the_Wretched",
+      "requirements": {
+        "level": 16,
+        "str": 13,
+        "dex": null,
+        "int": 13
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 13,
+        "dex": null,
+        "int": 13
+      },
+      "stats": [
+        {
+          "text": "(30—50)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "You cannot be Chilled for 6 seconds after being Chilled",
+          "template": "You cannot be Chilled for 6 seconds after being Chilled",
+          "rolls": [],
+          "family": "TriggeredStatusImmunity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "chill prevention ms when chilled"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "chill_prevention_ms_when_chilled"
+          ]
+        },
+        {
+          "text": "You cannot be Frozen for 6 seconds after being Frozen",
+          "template": "You cannot be Frozen for 6 seconds after being Frozen",
+          "rolls": [],
+          "family": "TriggeredStatusImmunity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "freeze prevention ms when frozen"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Cold",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "freeze_prevention_ms_when_frozen"
+          ]
+        },
+        {
+          "text": "You cannot be Ignited for 6 seconds after being Ignited",
+          "template": "You cannot be Ignited for 6 seconds after being Ignited",
+          "rolls": [],
+          "family": "TriggeredStatusImmunity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "ignite prevention ms when ignited"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "ignite_prevention_ms_when_ignited"
+          ]
+        },
+        {
+          "text": "You cannot be Shocked for 6 seconds after being Shocked",
+          "template": "You cannot be Shocked for 6 seconds after being Shocked",
+          "rolls": [],
+          "family": "TriggeredStatusImmunity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "shock prevention ms when shocked"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Ailment"
+          ],
+          "affix_ids": [
+            "shock_prevention_ms_when_shocked"
+          ]
+        },
+        {
+          "text": "Curses you inflict are reflected back to you",
+          "template": "Curses you inflict are reflected back to you",
+          "rolls": [],
+          "family": "ReflectCurses",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "curses reflected to self"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "curses_reflected_to_self"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_str_int",
+      "base_href": "https://poe2db.tw/Aged_Cuffs",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Sine Aequo",
+      "display_name": "Sine Aequo Grand Manchettes",
+      "base_name": "Grand Manchettes",
+      "href": "https://poe2db.tw/us/Sine_Aequo",
+      "base_href": "https://poe2db.tw/Grand_Manchettes",
+      "requirements": {
+        "level": 65,
+        "str": 32,
+        "dex": 32,
+        "int": 32
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(10—15)% increased Skill Speed",
+          "template": "#% increased Skill Speed",
+          "rolls": [
+            {
+              "raw": "(10—15)",
+              "min": 10,
+              "max": 15
+            }
+          ],
+          "family": "IncreasedSpeed",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "Speed"
+          ],
+          "stat_ids": [
+            "skill speed +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "skill_speed_+%"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Armour , Evasion and Energy Shield",
+          "template": "#% increased Armour , Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "stat_ids": [
+            "local armour and evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_armour_and_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "Immobilise enemies at 50 % buildup instead of 100%",
+          "template": "Immobilise enemies at 50 % buildup instead of 100%",
+          "rolls": [],
+          "family": "Limit",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "crowd control effects are triggered at % poise threshold instead"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "crowd_control_effects_are_triggered_at_%_poise_threshold_instead"
+          ]
+        },
+        {
+          "text": "Enemies Immobilised by you take 20 % more Damage",
+          "template": "Enemies Immobilised by you take 20 % more Damage",
+          "rolls": [],
+          "family": "AllDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique crowd controlled enemy damage taken -% final"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_crowd_controlled_enemy_damage_taken_-%_final"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Gloves",
+      "class_slug": "Gloves",
+      "source_categories": [
+        "ArmourUnique"
+      ]
+    },
+    {
+      "name": "Snakebite",
+      "display_name": "Snakebite Spined Bracers",
+      "base_name": "Spined Bracers",
+      "href": "https://poe2db.tw/us/Snakebite",
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 42,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 33,
+        "str": null,
+        "dex": 42,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(40—60)% increased Evasion Rating",
+          "template": "#% increased Evasion Rating",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_rating_+%"
+          ]
+        },
+        {
+          "text": "+(7—17)% to Chaos Resistance",
+          "template": "+#% to Chaos Resistance",
+          "rolls": [
+            {
+              "raw": "(7—17)",
+              "min": 7,
+              "max": 17
+            }
+          ],
+          "family": "ChaosResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chaos damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Chaos",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_chaos_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(6—10) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(6—10)",
+              "min": 6,
+              "max": 10
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "(20—30)% chance to Poison on Hit",
+          "template": "#% chance to Poison on Hit",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "PoisonChanceIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base chance to poison on hit %"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_chance_to_poison_on_hit_%"
+          ]
+        },
+        {
+          "text": "Targets can be affected by +1 of your Poisons at the same time",
+          "template": "Targets can be affected by +1 of your Poisons at the same time",
+          "rolls": [],
+          "family": "PoisonDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "number of additional poison stacks"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "number_of_additional_poison_stacks"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique",
+        "CultivatedUniques"
+      ],
+      "itemtype_slug": "Gloves_dex",
+      "base_href": "https://poe2db.tw/Spined_Bracers",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "The Prisoner's Manacles",
+      "display_name": "The Prisoner's Manacles Verisium Cuffs",
+      "base_name": "Verisium Cuffs",
+      "href": "https://poe2db.tw/us/The_Prisoners_Manacles",
+      "requirements": {
+        "level": 45,
+        "str": 64,
+        "dex": null,
+        "int": 64
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 32,
+        "dex": null,
+        "int": 32
+      },
+      "stats": [
+        {
+          "text": "(200—300)% increased Armour and Energy Shield",
+          "template": "#% increased Armour and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(200—300)",
+              "min": 200,
+              "max": 300
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "energy_shield",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "+100 to maximum Life",
+          "template": "+100 to maximum Life",
+          "rolls": [],
+          "family": "IncreasedLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum life"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_maximum_life"
+          ]
+        },
+        {
+          "text": "100 % increased Attribute Requirements",
+          "template": "100 % increased Attribute Requirements",
+          "rolls": [],
+          "family": "LocalAttributeRequirements",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local attribute requirements +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_attribute_requirements_+%"
+          ]
+        },
+        {
+          "text": "+(20—40)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(20—40)",
+              "min": 20,
+              "max": 40
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "(15—30) Life Regeneration per second",
+          "template": "# Life Regeneration per second",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base life regeneration rate per minute"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "flat_life_regen",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "base_life_regeneration_rate_per_minute"
+          ]
+        },
+        {
+          "text": "Debuffs you inflict have (20—30)% increased Slow Magnitude",
+          "template": "Debuffs you inflict have #% increased Slow Magnitude",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "SlowEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base debuff slow magnitude +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "base_debuff_slow_magnitude_+%"
+          ]
+        },
+        {
+          "text": "Cannot Immobilise enemies",
+          "template": "Cannot Immobilise enemies",
+          "rolls": [],
+          "family": "Immobilise",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "cannot immobilise enemies"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "cannot_immobilise_enemies"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_int",
+      "base_href": "https://poe2db.tw/Verisium_Cuffs",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Thunderfist",
+      "display_name": "Thunderfist Utility Wraps",
+      "base_name": "Utility Wraps",
+      "href": "https://poe2db.tw/us/Thunderfist",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 44,
+        "int": 44
+      },
+      "base_requirements": {
+        "level": 65,
+        "str": null,
+        "dex": 44,
+        "int": 44
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 15 Crackling Palm",
+          "template": "Grants Skill: Level 15 Crackling Palm",
+          "rolls": []
+        },
+        {
+          "text": "(1—111)% increased Evasion and Energy Shield",
+          "template": "#% increased Evasion and Energy Shield",
+          "rolls": [
+            {
+              "raw": "(1—111)",
+              "min": 1,
+              "max": 111
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local evasion and energy shield +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "energy_shield",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_evasion_and_energy_shield_+%"
+          ]
+        },
+        {
+          "text": "(1—11)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(1—11)",
+              "min": 1,
+              "max": 11
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(1—33)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(1—33)",
+              "min": 1,
+              "max": 33
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "Adds 1 to (77—111) Lightning Damage to Unarmed Melee Hits",
+          "template": "Adds 1 to # Lightning Damage to Unarmed Melee Hits",
+          "rolls": [
+            {
+              "raw": "(77—111)",
+              "min": 77,
+              "max": 111
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added melee lightning damage while unarmed"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_melee_lightning_damage_while_unarmed"
+          ]
+        },
+        {
+          "text": "+(0.1—1.1)% to Unarmed Melee Attack Critical Hit Chance",
+          "template": "+#% to Unarmed Melee Attack Critical Hit Chance",
+          "rolls": [
+            {
+              "raw": "(0.1—1.1)",
+              "min": 0.1,
+              "max": 1.1
+            }
+          ],
+          "family": "BaseUnarmedCriticalStrikeChance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base melee critical strike chance while unarmed %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Critical"
+          ],
+          "affix_ids": [
+            "base_melee_critical_strike_chance_while_unarmed_%"
+          ]
+        },
+        {
+          "text": "use thunderfist art variation [1]",
+          "template": "use thunderfist art variation [1]",
+          "rolls": [],
+          "family": "GrantedSkill",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "use thunderfist art variation"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "use_thunderfist_art_variation"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_dex_int",
+      "base_href": "https://poe2db.tw/Utility_Wraps",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Treefingers",
+      "display_name": "Treefingers Riveted Mitts",
+      "base_name": "Riveted Mitts",
+      "href": "https://poe2db.tw/us/Treefingers",
+      "requirements": {
+        "level": 11,
+        "str": 16,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 11,
+        "str": 16,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(30—60)% increased Armour",
+          "template": "#% increased Armour",
+          "rolls": [
+            {
+              "raw": "(30—60)",
+              "min": 30,
+              "max": 60
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local physical damage reduction rating +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_physical_damage_reduction_rating_+%"
+          ]
+        },
+        {
+          "text": "Adds (6—10) to (12—16) Physical Damage to Attacks",
+          "template": "Adds # to # Physical Damage to Attacks",
+          "rolls": [
+            {
+              "raw": "(6—10)",
+              "min": 6,
+              "max": 10
+            },
+            {
+              "raw": "(12—16)",
+              "min": 12,
+              "max": 16
+            }
+          ],
+          "family": "PhysicalDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack minimum added physical damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "physical_damage",
+            "Damage",
+            "Physical",
+            "Attack"
+          ],
+          "affix_ids": [
+            "attack_minimum_added_physical_damage"
+          ]
+        },
+        {
+          "text": "5 % reduced Attack Speed",
+          "template": "5 % reduced Attack Speed",
+          "rolls": [],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(15—20) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(15—20)",
+              "min": 15,
+              "max": 20
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Stun Buildup",
+          "template": "#% increased Stun Buildup",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "StunDamageIncrease",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "hit damage stun multiplier +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "hit_damage_stun_multiplier_+%"
+          ]
+        },
+        {
+          "text": "Giant's Blood",
+          "template": "Giant's Blood",
+          "rolls": [],
+          "family": "Keystone",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "keystone giants blood"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "keystone_giants_blood"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str",
+      "base_href": "https://poe2db.tw/Riveted_Mitts",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    },
+    {
+      "name": "Valako's Vice",
+      "display_name": "Valako's Vice Plate Gauntlets",
+      "base_name": "Plate Gauntlets",
+      "href": "https://poe2db.tw/us/Valakos_Vice",
+      "requirements": {
+        "level": 45,
+        "str": 32,
+        "dex": 32,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 45,
+        "str": 32,
+        "dex": 32,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "(50—100)% increased Armour and Evasion",
+          "template": "#% increased Armour and Evasion",
+          "rolls": [
+            {
+              "raw": "(50—100)",
+              "min": 50,
+              "max": 100
+            }
+          ],
+          "family": "DefencesPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local armour and evasion +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "armour",
+            "evasion",
+            "Defences"
+          ],
+          "affix_ids": [
+            "local_armour_and_evasion_+%"
+          ]
+        },
+        {
+          "text": "(5—10)% increased Attack Speed",
+          "template": "#% increased Attack Speed",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "IncreasedAttackSpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "attack speed +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attack",
+            "Speed"
+          ],
+          "affix_ids": [
+            "attack_speed_+%"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "+(30—50)% to Lightning Resistance",
+          "template": "+#% to Lightning Resistance",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "LightningResistance",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base lightning damage resistance %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Lightning",
+            "Resistance"
+          ],
+          "affix_ids": [
+            "base_lightning_damage_resistance_%"
+          ]
+        },
+        {
+          "text": "100 % of Fire damage Converted to Lightning damage",
+          "template": "100 % of Fire damage Converted to Lightning damage",
+          "rolls": [],
+          "family": "BaseElementalConversion",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base fire damage % to convert to lightning"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_fire_damage_%_to_convert_to_lightning"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "ArmourUnique"
+      ],
+      "itemtype_slug": "Gloves_str_dex",
+      "base_href": "https://poe2db.tw/Plate_Gauntlets",
+      "item_class": "Gloves",
+      "class_slug": "Gloves"
+    }
+  ]
+}

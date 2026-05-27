@@ -1,7 +1,11 @@
 import {computed, ref, watch} from "vue"
 import {filterVisibleAffixes} from "../domain/pickit/affixes.js"
 import {DEFAULT_ACTION_FLAG} from "../domain/pickit/actions.js"
-import {generateRulePreviewLines} from "../domain/pickit/rules.js"
+import {
+  countSelectedAffixes,
+  generateRulePreviewLines,
+  rarityFromSelectedAffixCount,
+} from "../domain/pickit/rules.js"
 import {getItemDataForSlug} from "../services/catalogService.js"
 import {useAffixSlots} from "./useAffixSlots.js"
 
@@ -9,7 +13,9 @@ export function useItemRuleRow(options) {
   const availableItemsRef = options.availableItemsRef
 
   const selectedActionFlag = ref(DEFAULT_ACTION_FLAG)
+  const shouldIncludeExplanation = ref(false)
   const selectedItemSlug = ref("")
+  const selectedRarity = ref("Normal")
   const selectedBaseName = ref("")
   const loadedItemData = ref(null)
   const loadedAffixFamilies = ref([])
@@ -31,6 +37,7 @@ export function useItemRuleRow(options) {
     maxPrefixes: 3,
     maxSuffixes: 3,
   })
+  const selectedAffixCount = computed(() => countSelectedAffixes(affixSlotsApi.slots.value))
 
   async function loadAffixesForSelectedItem(slug) {
     if (!slug) {
@@ -72,15 +79,25 @@ export function useItemRuleRow(options) {
     {immediate: true}
   )
 
-  watch(selectedItemSlug, (slug) => {
-    loadAffixesForSelectedItem(slug)
+  watch(
+    selectedItemSlug,
+    (slug) => {
+      loadAffixesForSelectedItem(slug)
+    },
+    {immediate: true}
+  )
+
+  watch(selectedAffixCount, (affixCount) => {
+    selectedRarity.value = rarityFromSelectedAffixCount(affixCount)
   })
 
   const currentLines = computed(() => {
     return generateRulePreviewLines({
       actionFlag: selectedActionFlag.value,
+      includeExplanation: shouldIncludeExplanation.value,
       selectedItemSlug: selectedItemSlug.value,
       selectedItem: selectedItem.value,
+      selectedRarity: selectedRarity.value,
       selectedBaseName: selectedBaseName.value,
       affixSlots: affixSlotsApi.slots.value,
       findAffixByKey: affixSlotsApi.findAffixByKey,
@@ -90,7 +107,9 @@ export function useItemRuleRow(options) {
 
   return {
     selectedActionFlag,
+    shouldIncludeExplanation,
     selectedItemSlug,
+    selectedRarity,
     selectedItem,
     selectedBaseName,
     availableBases,

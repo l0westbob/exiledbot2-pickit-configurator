@@ -1,0 +1,459 @@
+{
+  "class": "Relics",
+  "slug": "Relics",
+  "uniques": [
+    {
+      "name": "The Burden of Leadership",
+      "display_name": "The Burden of Leadership Tapestry Relic",
+      "base_name": "Tapestry Relic",
+      "href": "https://poe2db.tw/us/The_Burden_of_Leadership",
+      "base_href": "https://poe2db.tw/Tapestry_Relic",
+      "requirements": {
+        "level": 64,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Zarokh, the Temporal drops Sekhema's Resolve",
+          "template": "Zarokh, the Temporal drops Sekhema's Resolve",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map sanctum boss drop unique 3"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_sanctum_boss_drop_unique_3"
+          ]
+        },
+        {
+          "text": "Rooms are unknown on the Trial Map",
+          "template": "Rooms are unknown on the Trial Map",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "sanctum hide room all"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "sanctum_hide_room_all"
+          ]
+        },
+        {
+          "text": "This item is destroyed when applied to a Trial",
+          "template": "This item is destroyed when applied to a Trial",
+          "rolls": [],
+          "family": "SanctumRelicDestroyedOnRunEnd",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic destroyed on sanctum start"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_relic_destroyed_on_sanctum_start"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Relics",
+      "class_slug": "Relics",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Changing Seasons",
+      "display_name": "The Changing Seasons Seal Relic",
+      "base_name": "Seal Relic",
+      "href": "https://poe2db.tw/us/The_Changing_Seasons",
+      "base_href": "https://poe2db.tw/Seal_Relic",
+      "requirements": {
+        "level": 64,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Zarokh, the Temporal drops Sandstorm Visage",
+          "template": "Zarokh, the Temporal drops Sandstorm Visage",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map sanctum boss drop unique 4"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_sanctum_boss_drop_unique_4"
+          ]
+        },
+        {
+          "text": "Cannot restore Honour",
+          "template": "Cannot restore Honour",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "sanctum cannot restore honour"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "sanctum_cannot_restore_honour"
+          ]
+        },
+        {
+          "text": "This item is destroyed when applied to a Trial",
+          "template": "This item is destroyed when applied to a Trial",
+          "rolls": [],
+          "family": "SanctumRelicDestroyedOnRunEnd",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic destroyed on sanctum start"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_relic_destroyed_on_sanctum_start"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Relics",
+      "class_slug": "Relics",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Desperate Alliance",
+      "display_name": "The Desperate Alliance Vase Relic",
+      "base_name": "Vase Relic",
+      "href": "https://poe2db.tw/us/The_Desperate_Alliance",
+      "base_href": "https://poe2db.tw/Vase_Relic",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Zarokh, the Temporal drops Against the Darkness",
+          "template": "Zarokh, the Temporal drops Against the Darkness",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map sanctum boss drop unique 5"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_sanctum_boss_drop_unique_5"
+          ]
+        },
+        {
+          "text": "Zarokh, the Temporal deals 100 % more Damage",
+          "template": "Zarokh, the Temporal deals 100 % more Damage",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map lycia2 damage +% final"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_lycia2_damage_+%_final"
+          ]
+        },
+        {
+          "text": "Zarokh, the Temporal takes 75 % less Damage",
+          "template": "Zarokh, the Temporal takes 75 % less Damage",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map lycia2 damage taken +% final"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_lycia2_damage_taken_+%_final"
+          ]
+        },
+        {
+          "text": "This item is destroyed when applied to a Trial",
+          "template": "This item is destroyed when applied to a Trial",
+          "rolls": [],
+          "family": "SanctumRelicDestroyedOnRunEnd",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic destroyed on sanctum start"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_relic_destroyed_on_sanctum_start"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Relics",
+      "class_slug": "Relics",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Last Flame",
+      "display_name": "The Last Flame Incense Relic",
+      "base_name": "Incense Relic",
+      "href": "https://poe2db.tw/us/The_Last_Flame",
+      "base_href": "https://poe2db.tw/Incense_Relic",
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Zarokh, the Temporal drops Temporalis",
+          "template": "Zarokh, the Temporal drops Temporalis",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map sanctum boss drop unique 2"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_sanctum_boss_drop_unique_2"
+          ]
+        },
+        {
+          "text": "Damage taken cannot be Absorbed",
+          "template": "Damage taken cannot be Absorbed",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "sanctum incoming damage bypasses damage absorption"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "sanctum_incoming_damage_bypasses_damage_absorption"
+          ]
+        },
+        {
+          "text": "Maximum Honour is 1",
+          "template": "Maximum Honour is 1",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "sanctum maximum honour is 1"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "sanctum_maximum_honour_is_1"
+          ]
+        },
+        {
+          "text": "Cannot be used with Trials below level 80",
+          "template": "Cannot be used with Trials below level 80",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic sanctum level restriction"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "local_unique_relic_sanctum_level_restriction"
+          ]
+        },
+        {
+          "text": "This item is destroyed when applied to a Trial",
+          "template": "This item is destroyed when applied to a Trial",
+          "rolls": [],
+          "family": "SanctumRelicDestroyedOnRunEnd",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic destroyed on sanctum start"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_relic_destroyed_on_sanctum_start"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Relics",
+      "class_slug": "Relics",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Peacemaker's Draught",
+      "display_name": "The Peacemaker's Draught Amphora Relic",
+      "base_name": "Amphora Relic",
+      "href": "https://poe2db.tw/us/The_Peacemakers_Draught",
+      "base_href": "https://poe2db.tw/Amphora_Relic",
+      "requirements": {
+        "level": 64,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Zarokh, the Temporal drops an additional Barya",
+          "template": "Zarokh, the Temporal drops an additional Barya",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map lycia2 drop additional sanctum key"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_lycia2_drop_additional_sanctum_key"
+          ]
+        },
+        {
+          "text": "Your Defences are zero",
+          "template": "Your Defences are zero",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map player defences are zero"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_player_defences_are_zero"
+          ]
+        },
+        {
+          "text": "This item is destroyed when applied to a Trial",
+          "template": "This item is destroyed when applied to a Trial",
+          "rolls": [],
+          "family": "SanctumRelicDestroyedOnRunEnd",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic destroyed on sanctum start"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_relic_destroyed_on_sanctum_start"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "item_class": "Relics",
+      "class_slug": "Relics",
+      "source_categories": [
+        "OtherUnique"
+      ]
+    },
+    {
+      "name": "The Remembered Tales",
+      "display_name": "The Remembered Tales Coffer Relic",
+      "base_name": "Coffer Relic",
+      "href": "https://poe2db.tw/us/The_Remembered_Tales",
+      "base_href": "https://poe2db.tw/Coffer_Relic",
+      "requirements": {
+        "level": 78,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Zarokh, the Temporal drops Blessed Bonds",
+          "template": "Zarokh, the Temporal drops Blessed Bonds",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "map sanctum boss drop unique 1"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "map_sanctum_boss_drop_unique_1"
+          ]
+        },
+        {
+          "text": "Cannot have Boons",
+          "template": "Cannot have Boons",
+          "rolls": [],
+          "family": "SanctumUniqueRelic",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "sanctum prevent boons"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "sanctum_prevent_boons"
+          ]
+        },
+        {
+          "text": "This item is destroyed when applied to a Trial",
+          "template": "This item is destroyed when applied to a Trial",
+          "rolls": [],
+          "family": "SanctumRelicDestroyedOnRunEnd",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique relic destroyed on sanctum start"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_relic_destroyed_on_sanctum_start"
+          ]
+        }
+      ],
+      "source": "extra_unique_detail",
+      "item_class": "Relics",
+      "class_slug": "Relics"
+    }
+  ]
+}

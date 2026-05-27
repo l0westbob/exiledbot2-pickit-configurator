@@ -4,7 +4,9 @@
       <div>
         <h2 class="cfg-title">Exiledbot2 Pickit Configurator</h2>
         <h3 class="cfg-subtitle">
-          The current app focuses on imported affix catalogs and the item-rule flow that already works well.
+          The current app focuses on imported affix catalogs and the item, currency, and unique rule flows.
+          Some imported affixes are not mapped yet, so unmapped modifiers may not appear in selectors or
+          generated rules.
         </h3>
       </div>
 

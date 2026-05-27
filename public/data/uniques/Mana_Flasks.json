@@ -1,0 +1,181 @@
+{
+  "class": "Mana Flasks",
+  "slug": "Mana_Flasks",
+  "uniques": [
+    {
+      "name": "Lavianga's Spirits",
+      "display_name": "Lavianga's Spirits Gargantuan Mana Flask",
+      "base_name": "Gargantuan Mana Flask",
+      "href": "https://poe2db.tw/us/Laviangas_Spirits",
+      "requirements": {
+        "level": 49,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "This Flask cannot be Used but applies its Effect constantly",
+          "template": "This Flask cannot be Used but applies its Effect constantly",
+          "rolls": [],
+          "family": "AlwaysActiveFlask",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask always drinking"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_flask_always_drinking"
+          ]
+        },
+        {
+          "text": "(70—80)% reduced Amount Recovered",
+          "template": "#% reduced Amount Recovered",
+          "rolls": [
+            {
+              "raw": "(70—80)",
+              "min": 70,
+              "max": 80
+            }
+          ],
+          "family": "FlaskRecoveryAmount",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask amount to recover +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_flask_amount_to_recover_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Mana_Flasks",
+      "base_href": "https://poe2db.tw/Gargantuan_Mana_Flask",
+      "item_class": "Mana Flasks",
+      "class_slug": "Mana_Flasks"
+    },
+    {
+      "name": "Melting Maelstrom",
+      "display_name": "Melting Maelstrom Ultimate Mana Flask",
+      "base_name": "Ultimate Mana Flask",
+      "href": "https://poe2db.tw/us/Melting_Maelstrom",
+      "requirements": {
+        "level": 60,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 60,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Effect is not removed when Unreserved Mana is Filled",
+          "template": "Effect is not removed when Unreserved Mana is Filled",
+          "rolls": [],
+          "family": "FlaskEffectNotRemovedOnFullMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask effect not removed at full mana"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "local_flask_effect_not_removed_at_full_mana"
+          ]
+        },
+        {
+          "text": "(200—250)% increased Duration",
+          "template": "#% increased Duration",
+          "rolls": [
+            {
+              "raw": "(200—250)",
+              "min": 200,
+              "max": 250
+            }
+          ],
+          "family": "FlaskEffectNotRemovedOnFullMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask duration +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "local_flask_duration_+%"
+          ]
+        },
+        {
+          "text": "Every 3 seconds during Effect, deal 100 % of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres",
+          "template": "Every 3 seconds during Effect, deal 100 % of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres",
+          "rolls": [],
+          "family": "FlaskEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique flask nova with chaos damage equal to % mana spent during flask effect"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "local_unique_flask_nova_with_chaos_damage_equal_to_%_mana_spent_during_flask_effect"
+          ]
+        },
+        {
+          "text": "Deals 25 % of current Mana as Chaos Damage to you when Effect ends",
+          "template": "Deals 25 % of current Mana as Chaos Damage to you when Effect ends",
+          "rolls": [],
+          "family": "FlaskEffect",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique flask take chaos damage equal to current mana % when flask effect ends"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_unique_flask_take_chaos_damage_equal_to_current_mana_%_when_flask_effect_ends"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Mana_Flasks",
+      "base_href": "https://poe2db.tw/Ultimate_Mana_Flask",
+      "item_class": "Mana Flasks",
+      "class_slug": "Mana_Flasks"
+    }
+  ]
+}

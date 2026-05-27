@@ -5,67 +5,145 @@
     {
       "name": "Withered Wand",
       "href": "https://poe2db.tw/Withered_Wand",
-      "required_level": null
+      "required_level": null,
+      "requirements": {
+        "level": null,
+        "str": null,
+        "dex": null,
+        "int": 6
+      }
     },
     {
       "name": "Bone Wand",
       "href": "https://poe2db.tw/Bone_Wand",
-      "required_level": 2
+      "required_level": 2,
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      }
     },
     {
       "name": "Attuned Wand",
       "href": "https://poe2db.tw/Attuned_Wand",
-      "required_level": 2
+      "required_level": 2,
+      "requirements": {
+        "level": 2,
+        "str": null,
+        "dex": null,
+        "int": 7
+      }
     },
     {
       "name": "Siphoning Wand",
       "href": "https://poe2db.tw/Siphoning_Wand",
-      "required_level": 11
+      "required_level": 11,
+      "requirements": {
+        "level": 11,
+        "str": null,
+        "dex": null,
+        "int": 23
+      }
     },
     {
       "name": "Volatile Wand",
       "href": "https://poe2db.tw/Volatile_Wand",
-      "required_level": 16
+      "required_level": 16,
+      "requirements": {
+        "level": 16,
+        "str": null,
+        "dex": null,
+        "int": 31
+      }
     },
     {
       "name": "Galvanic Wand",
       "href": "https://poe2db.tw/Galvanic_Wand",
-      "required_level": 25
+      "required_level": 25,
+      "requirements": {
+        "level": 25,
+        "str": null,
+        "dex": null,
+        "int": 46
+      }
     },
     {
       "name": "Acrid Wand",
       "href": "https://poe2db.tw/Acrid_Wand",
-      "required_level": 33
+      "required_level": 33,
+      "requirements": {
+        "level": 33,
+        "str": null,
+        "dex": null,
+        "int": 60
+      }
     },
     {
       "name": "Offering Wand",
       "href": "https://poe2db.tw/Offering_Wand",
-      "required_level": 38
+      "required_level": 38,
+      "requirements": {
+        "level": 38,
+        "str": null,
+        "dex": null,
+        "int": 69
+      }
     },
     {
       "name": "Frigid Wand",
       "href": "https://poe2db.tw/Frigid_Wand",
-      "required_level": 45
+      "required_level": 45,
+      "requirements": {
+        "level": 45,
+        "str": null,
+        "dex": null,
+        "int": 80
+      }
     },
     {
       "name": "Torture Wand",
       "href": "https://poe2db.tw/Torture_Wand",
-      "required_level": 49
+      "required_level": 49,
+      "requirements": {
+        "level": 49,
+        "str": null,
+        "dex": null,
+        "int": 87
+      }
     },
     {
       "name": "Critical Wand",
       "href": "https://poe2db.tw/Critical_Wand",
-      "required_level": 52
+      "required_level": 52,
+      "requirements": {
+        "level": 52,
+        "str": null,
+        "dex": null,
+        "int": 92
+      }
     },
     {
       "name": "Primordial Wand",
       "href": "https://poe2db.tw/Primordial_Wand",
-      "required_level": 56
+      "required_level": 56,
+      "requirements": {
+        "level": 56,
+        "str": null,
+        "dex": null,
+        "int": 99
+      }
     },
     {
       "name": "Dueling Wand",
       "href": "https://poe2db.tw/Dueling_Wand",
-      "required_level": 65
+      "required_level": 65,
+      "requirements": {
+        "level": 65,
+        "str": null,
+        "dex": null,
+        "int": 114
+      }
     }
   ],
   "modifier_sections": {
@@ -95,178 +173,178 @@
       {
         "family_key": "BodyRune",
         "kind": "gen0",
-        "template": "# increased maximum Life",
+        "template": "# % increased maximum Life",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLife\" href=\"Body_Rune\">Body Rune</a>",
-            "text": "5% increased maximum Life"
+            "text": "5 % increased maximum Life"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeGreater\" href=\"Greater_Body_Rune\">Greater Body Rune</a>",
-            "text": "5% increased maximum Life"
+            "text": "5 % increased maximum Life"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeLesser\" href=\"Lesser_Body_Rune\">Lesser Body Rune</a>",
-            "text": "5% increased maximum Life"
+            "text": "5 % increased maximum Life"
           }
         ]
       },
       {
         "family_key": "DesertRune",
         "kind": "gen0",
-        "template": "# increased Ignite Magnitude",
+        "template": "# % increased Ignite Magnitude",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFire\" href=\"Desert_Rune\">Desert Rune</a>",
-            "text": "25% increased Ignite Magnitude"
+            "text": "25 % increased Ignite Magnitude"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireGreater\" href=\"Greater_Desert_Rune\">Greater Desert Rune</a>",
-            "text": "25% increased Ignite Magnitude"
+            "text": "25 % increased Ignite Magnitude"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireLesser\" href=\"Lesser_Desert_Rune\">Lesser Desert Rune</a>",
-            "text": "25% increased Ignite Magnitude"
+            "text": "25 % increased Ignite Magnitude"
           }
         ]
       },
       {
         "family_key": "FenumusRuneofAgony",
         "kind": "gen0",
-        "template": "Gain # of Damage as Extra Physical Damage",
+        "template": "Gain # % of Damage as Extra Physical Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial7\" href=\"Fenumus_Rune_of_Agony\">Fenumus' Rune of Agony</a>",
-            "text": "Gain 8% of Damage as Extra Physical Damage"
+            "text": "Gain 8 % of Damage as Extra Physical Damage"
           }
         ]
       },
       {
         "family_key": "GlacialRune",
         "kind": "gen0",
-        "template": "# increased Freeze Buildup",
+        "template": "# % increased Freeze Buildup",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneCold\" href=\"Glacial_Rune\">Glacial Rune</a>",
-            "text": "30% increased Freeze Buildup"
+            "text": "30 % increased Freeze Buildup"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdGreater\" href=\"Greater_Glacial_Rune\">Greater Glacial Rune</a>",
-            "text": "30% increased Freeze Buildup"
+            "text": "30 % increased Freeze Buildup"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdLesser\" href=\"Lesser_Glacial_Rune\">Lesser Glacial Rune</a>",
-            "text": "30% increased Freeze Buildup"
+            "text": "30 % increased Freeze Buildup"
           }
         ]
       },
       {
         "family_key": "HedgewitchAssandrasRuneofWisdom",
         "kind": "gen0",
-        "template": "Archon recovery period expires # faster",
+        "template": "Archon recovery period expires # % faster",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial5\" href=\"Hedgewitch_Assandras_Rune_of_Wisdom\">Hedgewitch Assandra's Rune of Wisdom</a>",
-            "text": "Archon recovery period expires 30% faster"
+            "text": "Archon recovery period expires 30 % faster"
           }
         ]
       },
       {
         "family_key": "InspirationRune",
         "kind": "gen0",
-        "template": "# increased Mana Cost Efficiency",
+        "template": "# % increased Mana Cost Efficiency",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecovery\" href=\"Inspiration_Rune\">Inspiration Rune</a>",
-            "text": "16% increased Mana Cost Efficiency"
+            "text": "16 % increased Mana Cost Efficiency"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryGreater\" href=\"Greater_Inspiration_Rune\">Greater Inspiration Rune</a>",
-            "text": "16% increased Mana Cost Efficiency"
+            "text": "16 % increased Mana Cost Efficiency"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryLesser\" href=\"Lesser_Inspiration_Rune\">Lesser Inspiration Rune</a>",
-            "text": "16% increased Mana Cost Efficiency"
+            "text": "16 % increased Mana Cost Efficiency"
           }
         ]
       },
       {
         "family_key": "IronRune",
         "kind": "gen0",
-        "template": "Break Armour on Critical Hit with Spells equal to # of Physical Damage dealt",
+        "template": "Break Armour on Critical Hit with Spells equal to # % of Physical Damage dealt",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhance\" href=\"Iron_Rune\">Iron Rune</a>",
-            "text": "Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+            "text": "Break Armour on Critical Hit with Spells equal to 12 % of Physical Damage dealt"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceGreater\" href=\"Greater_Iron_Rune\">Greater Iron Rune</a>",
-            "text": "Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+            "text": "Break Armour on Critical Hit with Spells equal to 12 % of Physical Damage dealt"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceLesser\" href=\"Lesser_Iron_Rune\">Lesser Iron Rune</a>",
-            "text": "Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+            "text": "Break Armour on Critical Hit with Spells equal to 12 % of Physical Damage dealt"
           }
         ]
       },
       {
         "family_key": "MindRune",
         "kind": "gen0",
-        "template": "# increased maximum Mana",
+        "template": "# % increased maximum Mana",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneMana\" href=\"Mind_Rune\">Mind Rune</a>",
-            "text": "5% increased maximum Mana"
+            "text": "5 % increased maximum Mana"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaGreater\" href=\"Greater_Mind_Rune\">Greater Mind Rune</a>",
-            "text": "5% increased maximum Mana"
+            "text": "5 % increased maximum Mana"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaLesser\" href=\"Lesser_Mind_Rune\">Lesser Mind Rune</a>",
-            "text": "5% increased maximum Mana"
+            "text": "5 % increased maximum Mana"
           }
         ]
       },
       {
         "family_key": "RebirthRune",
         "kind": "gen0",
-        "template": "# of Damage taken Recouped as Life",
+        "template": "# % of Damage taken Recouped as Life",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecovery\" href=\"Rebirth_Rune\">Rebirth Rune</a>",
-            "text": "8% of Damage taken Recouped as Life"
+            "text": "8 % of Damage taken Recouped as Life"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryGreater\" href=\"Greater_Rebirth_Rune\">Greater Rebirth Rune</a>",
-            "text": "8% of Damage taken Recouped as Life"
+            "text": "8 % of Damage taken Recouped as Life"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryLesser\" href=\"Lesser_Rebirth_Rune\">Lesser Rebirth Rune</a>",
-            "text": "8% of Damage taken Recouped as Life"
+            "text": "8 % of Damage taken Recouped as Life"
           }
         ]
       },
@@ -317,90 +395,90 @@
       {
         "family_key": "SaqawalsRuneoftheSky",
         "kind": "gen0",
-        "template": "# chance when collecting an Elemental Infusion to gain anadditional Elemental Infusion of the same type",
+        "template": "# % chance when collecting an Elemental Infusion to gain an additional Elemental Infusion of the same type",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial6\" href=\"Saqawals_Rune_of_the_Sky\">Saqawal's Rune of the Sky</a>",
-            "text": "12% chance when collecting an Elemental Infusion to gain anadditional Elemental Infusion of the same type"
+            "text": "12 % chance when collecting an Elemental Infusion to gain an additional Elemental Infusion of the same type"
           }
         ]
       },
       {
         "family_key": "StoneRune",
         "kind": "gen0",
-        "template": "# increased Immobilisation buildup",
+        "template": "# % increased Immobilisation buildup",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStun\" href=\"Stone_Rune\">Stone Rune</a>",
-            "text": "30% increased Immobilisation buildup"
+            "text": "30 % increased Immobilisation buildup"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunGreater\" href=\"Greater_Stone_Rune\">Greater Stone Rune</a>",
-            "text": "30% increased Immobilisation buildup"
+            "text": "30 % increased Immobilisation buildup"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunLesser\" href=\"Lesser_Stone_Rune\">Lesser Stone Rune</a>",
-            "text": "30% increased Immobilisation buildup"
+            "text": "30 % increased Immobilisation buildup"
           }
         ]
       },
       {
         "family_key": "StormRune",
         "kind": "gen0",
-        "template": "# increased Magnitude of Shock you inflict",
+        "template": "# % increased Magnitude of Shock you inflict",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightning\" href=\"Storm_Rune\">Storm Rune</a>",
-            "text": "30% increased Magnitude of Shock you inflict"
+            "text": "30 % increased Magnitude of Shock you inflict"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningGreater\" href=\"Greater_Storm_Rune\">Greater Storm Rune</a>",
-            "text": "30% increased Magnitude of Shock you inflict"
+            "text": "30 % increased Magnitude of Shock you inflict"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningLesser\" href=\"Lesser_Storm_Rune\">Lesser Storm Rune</a>",
-            "text": "30% increased Magnitude of Shock you inflict"
+            "text": "30 % increased Magnitude of Shock you inflict"
           }
         ]
       },
       {
         "family_key": "ThaneGirtsRuneofWildness",
         "kind": "gen0",
-        "template": "Every Rage also grants # increased Spell Damage",
+        "template": "Every Rage also grants # % increased Spell Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial19\" href=\"Thane_Girts_Rune_of_Wildness\">Thane Girt's Rune of Wildness</a>",
-            "text": "Every Rage also grants 1% increased Spell Damage"
+            "text": "Every Rage also grants 1 % increased Spell Damage"
           }
         ]
       },
       {
         "family_key": "VisionRune",
         "kind": "gen0",
-        "template": "# increased Critical Damage Bonus",
+        "template": "# % increased Critical Damage Bonus",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracy\" href=\"Vision_Rune\">Vision Rune</a>",
-            "text": "25% increased Critical Damage Bonus"
+            "text": "25 % increased Critical Damage Bonus"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyGreater\" href=\"Greater_Vision_Rune\">Greater Vision Rune</a>",
-            "text": "25% increased Critical Damage Bonus"
+            "text": "25 % increased Critical Damage Bonus"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyLesser\" href=\"Lesser_Vision_Rune\">Lesser Vision Rune</a>",
-            "text": "25% increased Critical Damage Bonus"
+            "text": "25 % increased Critical Damage Bonus"
           }
         ]
       }
@@ -547,12 +625,12 @@
           {
             "level": 1,
             "name": "CorruptionIncreasedCastSpeed1",
-            "text": "(10-15)% increased Cast Speed",
+            "text": "(9-12)% increased Cast Speed",
             "stats": [
               {
                 "id": "base_cast_speed_+%",
-                "max": 15,
-                "min": 10
+                "max": 12,
+                "min": 9
               }
             ]
           }
@@ -566,12 +644,12 @@
           {
             "level": 1,
             "name": "CorruptionLifeGainedFromEnemyDeath1",
-            "text": "Gain (20-25) Life per enemy killed",
+            "text": "Gain (4-6) Life per enemy killed",
             "stats": [
               {
                 "id": "base_life_gained_on_enemy_death",
-                "max": 25,
-                "min": 20
+                "max": 6,
+                "min": 4
               }
             ]
           }
@@ -604,12 +682,12 @@
           {
             "level": 1,
             "name": "CorruptionManaGainedFromEnemyDeath1",
-            "text": "Gain (10-15) Mana per enemy killed",
+            "text": "Gain (2-3) Mana per enemy killed",
             "stats": [
               {
                 "id": "base_mana_gained_on_enemy_death",
-                "max": 15,
-                "min": 10
+                "max": 3,
+                "min": 2
               }
             ]
           }
@@ -910,17 +988,17 @@
       {
         "family_key": "IncreasedCastSpeed",
         "kind": "suffix",
-        "template": "#% increased Cast Speed while on Full Mana",
+        "template": "#% increased Cast Speed for each different Non-Instant [Spell] you've Cast [Recently]",
         "tiers": [
           {
             "level": 65,
             "name": "of Kurgal",
-            "text": "(26-36)% increased Cast Speed while on Full Mana",
+            "text": "(3-5)% increased Cast Speed for each different Non-Instant [Spell] you've Cast [Recently]",
             "stats": [
               {
-                "id": "cast_speed_+%_while_on_full_mana",
-                "max": 36,
-                "min": 26
+                "id": "cast_speed_+%_per_num_unique_spells_cast_recently",
+                "max": 5,
+                "min": 3
               }
             ]
           }
@@ -3831,68 +3909,68 @@
       {
         "family_key": "DesertRune",
         "kind": "gen0",
-        "template": "Gain # of Damage as Extra Fire Damage",
+        "template": "Gain # % of Damage as Extra Fire Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFire\" href=\"Desert_Rune\">Desert Rune</a>",
-            "text": "Gain 8% of Damage as Extra Fire Damage"
+            "text": "Gain 8 % of Damage as Extra Fire Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireGreater\" href=\"Greater_Desert_Rune\">Greater Desert Rune</a>",
-            "text": "Gain 10% of Damage as Extra Fire Damage"
+            "text": "Gain 10 % of Damage as Extra Fire Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneFireLesser\" href=\"Lesser_Desert_Rune\">Lesser Desert Rune</a>",
-            "text": "Gain 6% of Damage as Extra Fire Damage"
+            "text": "Gain 6 % of Damage as Extra Fire Damage"
           }
         ]
       },
       {
         "family_key": "FenumusRuneofAgony",
         "kind": "gen0",
-        "template": "Gain # of Damage as Extra Chaos Damage",
+        "template": "Gain # % of Damage as Extra Chaos Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial7\" href=\"Fenumus_Rune_of_Agony\">Fenumus' Rune of Agony</a>",
-            "text": "Gain 13% of Damage as Extra Chaos Damage"
+            "text": "Gain 13 % of Damage as Extra Chaos Damage"
           }
         ]
       },
       {
         "family_key": "GlacialRune",
         "kind": "gen0",
-        "template": "Gain # of Damage as Extra Cold Damage",
+        "template": "Gain # % of Damage as Extra Cold Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneCold\" href=\"Glacial_Rune\">Glacial Rune</a>",
-            "text": "Gain 8% of Damage as Extra Cold Damage"
+            "text": "Gain 8 % of Damage as Extra Cold Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdGreater\" href=\"Greater_Glacial_Rune\">Greater Glacial Rune</a>",
-            "text": "Gain 10% of Damage as Extra Cold Damage"
+            "text": "Gain 10 % of Damage as Extra Cold Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneColdLesser\" href=\"Lesser_Glacial_Rune\">Lesser Glacial Rune</a>",
-            "text": "Gain 6% of Damage as Extra Cold Damage"
+            "text": "Gain 6 % of Damage as Extra Cold Damage"
           }
         ]
       },
       {
         "family_key": "GuatelitzisSoulCoreofEndurance",
         "kind": "gen0",
-        "template": "# chance when you gain an Endurance Charge to gain an additional Endurance Charge",
+        "template": "# % chance when you gain an Endurance Charge to gain an additional Endurance Charge",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial9\" href=\"Guatelitzis_Soul_Core_of_Endurance\">Guatelitzi's Soul Core of Endurance</a>",
-            "text": "50% chance when you gain an Endurance Charge to gain an additional Endurance Charge"
+            "text": "50 % chance when you gain an Endurance Charge to gain an additional Endurance Charge"
           }
         ]
       },
@@ -3911,44 +3989,44 @@
       {
         "family_key": "InspirationRune",
         "kind": "gen0",
-        "template": "# increased Mana Regeneration Rate",
+        "template": "# % increased Mana Regeneration Rate",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecovery\" href=\"Inspiration_Rune\">Inspiration Rune</a>",
-            "text": "20% increased Mana Regeneration Rate"
+            "text": "20 % increased Mana Regeneration Rate"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryGreater\" href=\"Greater_Inspiration_Rune\">Greater Inspiration Rune</a>",
-            "text": "24% increased Mana Regeneration Rate"
+            "text": "24 % increased Mana Regeneration Rate"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaRecoveryLesser\" href=\"Lesser_Inspiration_Rune\">Lesser Inspiration Rune</a>",
-            "text": "16% increased Mana Regeneration Rate"
+            "text": "16 % increased Mana Regeneration Rate"
           }
         ]
       },
       {
         "family_key": "IronRune",
         "kind": "gen0",
-        "template": "# increased Spell Damage",
+        "template": "# % increased Spell Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhance\" href=\"Iron_Rune\">Iron Rune</a>",
-            "text": "25% increased Spell Damage"
+            "text": "25 % increased Spell Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceGreater\" href=\"Greater_Iron_Rune\">Greater Iron Rune</a>",
-            "text": "30% increased Spell Damage"
+            "text": "30 % increased Spell Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneEnhanceLesser\" href=\"Lesser_Iron_Rune\">Lesser Iron Rune</a>",
-            "text": "20% increased Spell Damage"
+            "text": "20 % increased Spell Damage"
           }
         ]
       },
@@ -3960,51 +4038,72 @@
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneMana\" href=\"Mind_Rune\">Mind Rune</a>",
-            "text": "+40 to maximum Mana"
+            "text": "+40 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "min": 40,
+                "max": 40
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaGreater\" href=\"Greater_Mind_Rune\">Greater Mind Rune</a>",
-            "text": "+50 to maximum Mana"
+            "text": "+50 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "min": 50,
+                "max": 50
+              }
+            ]
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneManaLesser\" href=\"Lesser_Mind_Rune\">Lesser Mind Rune</a>",
-            "text": "+30 to maximum Mana"
+            "text": "+30 to maximum Mana",
+            "stats": [
+              {
+                "id": "base_maximum_mana",
+                "min": 30,
+                "max": 30
+              }
+            ]
           }
         ]
       },
       {
         "family_key": "OpilotisSoulCoreofAssault",
         "kind": "gen0",
-        "template": "# chance when you gain a Frenzy Charge to gain an additional Frenzy Charge",
+        "template": "# % chance when you gain a Frenzy Charge to gain an additional Frenzy Charge",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial8\" href=\"Opilotis_Soul_Core_of_Assault\">Opiloti's Soul Core of Assault</a>",
-            "text": "50% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
+            "text": "50 % chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
           }
         ]
       },
       {
         "family_key": "RebirthRune",
         "kind": "gen0",
-        "template": "# increased Energy Shield Recharge Rate",
+        "template": "# % increased Energy Shield Recharge Rate",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecovery\" href=\"Rebirth_Rune\">Rebirth Rune</a>",
-            "text": "15% increased Energy Shield Recharge Rate"
+            "text": "15 % increased Energy Shield Recharge Rate"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryGreater\" href=\"Greater_Rebirth_Rune\">Greater Rebirth Rune</a>",
-            "text": "18% increased Energy Shield Recharge Rate"
+            "text": "18 % increased Energy Shield Recharge Rate"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLifeRecoveryLesser\" href=\"Lesser_Rebirth_Rune\">Lesser Rebirth Rune</a>",
-            "text": "12% increased Energy Shield Recharge Rate"
+            "text": "12 % increased Energy Shield Recharge Rate"
           }
         ]
       },
@@ -4055,114 +4154,114 @@
       {
         "family_key": "SaqawalsRuneoftheSky",
         "kind": "gen0",
-        "template": "Gain # of Damage as Extra Damage of all Elements",
+        "template": "Gain # % of Damage as Extra Damage of all Elements",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial6\" href=\"Saqawals_Rune_of_the_Sky\">Saqawal's Rune of the Sky</a>",
-            "text": "Gain 5% of Damage as Extra Damage of all Elements"
+            "text": "Gain 5 % of Damage as Extra Damage of all Elements"
           }
         ]
       },
       {
         "family_key": "StoneRune",
         "kind": "gen0",
-        "template": "Gain additional Stun Threshold equal to # of maximum Energy Shield",
+        "template": "Gain additional Stun Threshold equal to # % of maximum Energy Shield",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStun\" href=\"Stone_Rune\">Stone Rune</a>",
-            "text": "Gain additional Stun Threshold equal to 12% of maximum Energy Shield"
+            "text": "Gain additional Stun Threshold equal to 12 % of maximum Energy Shield"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunGreater\" href=\"Greater_Stone_Rune\">Greater Stone Rune</a>",
-            "text": "Gain additional Stun Threshold equal to 14% of maximum Energy Shield"
+            "text": "Gain additional Stun Threshold equal to 14 % of maximum Energy Shield"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneStunLesser\" href=\"Lesser_Stone_Rune\">Lesser Stone Rune</a>",
-            "text": "Gain additional Stun Threshold equal to 10% of maximum Energy Shield"
+            "text": "Gain additional Stun Threshold equal to 10 % of maximum Energy Shield"
           }
         ]
       },
       {
         "family_key": "StormRune",
         "kind": "gen0",
-        "template": "Gain # of Damage as Extra Lightning Damage",
+        "template": "Gain # % of Damage as Extra Lightning Damage",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightning\" href=\"Storm_Rune\">Storm Rune</a>",
-            "text": "Gain 8% of Damage as Extra Lightning Damage"
+            "text": "Gain 8 % of Damage as Extra Lightning Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningGreater\" href=\"Greater_Storm_Rune\">Greater Storm Rune</a>",
-            "text": "Gain 10% of Damage as Extra Lightning Damage"
+            "text": "Gain 10 % of Damage as Extra Lightning Damage"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneLightningLesser\" href=\"Lesser_Storm_Rune\">Lesser Storm Rune</a>",
-            "text": "Gain 6% of Damage as Extra Lightning Damage"
+            "text": "Gain 6 % of Damage as Extra Lightning Damage"
           }
         ]
       },
       {
         "family_key": "ThaneGirtsRuneofWildness",
         "kind": "gen0",
-        "template": "# chance for Spell Skills to fire # additional Projectiles",
+        "template": "# % chance for Spell Skills to fire # additional Projectiles",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneSpecial19\" href=\"Thane_Girts_Rune_of_Wildness\">Thane Girt's Rune of Wildness</a>",
-            "text": "25% chance for Spell Skills to fire 2 additional Projectiles"
+            "text": "25 % chance for Spell Skills to fire 2 additional Projectiles"
           }
         ]
       },
       {
         "family_key": "VisionRune",
         "kind": "gen0",
-        "template": "# increased Critical Hit Chance for Spells",
+        "template": "# % increased Critical Hit Chance for Spells",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracy\" href=\"Vision_Rune\">Vision Rune</a>",
-            "text": "20% increased Critical Hit Chance for Spells"
+            "text": "20 % increased Critical Hit Chance for Spells"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyGreater\" href=\"Greater_Vision_Rune\">Greater Vision Rune</a>",
-            "text": "24% increased Critical Hit Chance for Spells"
+            "text": "24 % increased Critical Hit Chance for Spells"
           },
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FRuneAccuracyLesser\" href=\"Lesser_Vision_Rune\">Lesser Vision Rune</a>",
-            "text": "16% increased Critical Hit Chance for Spells"
+            "text": "16 % increased Critical Hit Chance for Spells"
           }
         ]
       },
       {
         "family_key": "XipocadosSoulCoreofDominion",
         "kind": "gen0",
-        "template": "Minions deal # increased Damage with Command Skills",
+        "template": "Minions deal # % increased Damage with Command Skills",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial15\" href=\"Xipocados_Soul_Core_of_Dominion\">Xipocado's Soul Core of Dominion</a>",
-            "text": "Minions deal 40% increased Damage with Command Skills"
+            "text": "Minions deal 40 % increased Damage with Command Skills"
           }
         ]
       },
       {
         "family_key": "XopecsSoulCoreofPower",
         "kind": "gen0",
-        "template": "# chance when you gain a Power Charge to gain an additional Power Charge",
+        "template": "# % chance when you gain a Power Charge to gain an additional Power Charge",
         "tiers": [
           {
             "level": 1,
             "name": "<a class=\"whiteitem SoulCore\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FSoulCores%2FSoulCoreSpecial10\" href=\"Xopecs_Soul_Core_of_Power\">Xopec's Soul Core of Power</a>",
-            "text": "50% chance when you gain a Power Charge to gain an additional Power Charge"
+            "text": "50 % chance when you gain a Power Charge to gain an additional Power Charge"
           }
         ]
       }

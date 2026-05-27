@@ -5,67 +5,145 @@
     {
       "name": "Thawing Charm",
       "href": "https://poe2db.tw/Thawing_Charm",
-      "required_level": 12
+      "required_level": 12,
+      "requirements": {
+        "level": 12,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Staunching Charm",
       "href": "https://poe2db.tw/Staunching_Charm",
-      "required_level": 18
+      "required_level": 18,
+      "requirements": {
+        "level": 18,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Antidote Charm",
       "href": "https://poe2db.tw/Antidote_Charm",
-      "required_level": 24
+      "required_level": 24,
+      "requirements": {
+        "level": 24,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Dousing Charm",
       "href": "https://poe2db.tw/Dousing_Charm",
-      "required_level": 32
+      "required_level": 32,
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Grounding Charm",
       "href": "https://poe2db.tw/Grounding_Charm",
-      "required_level": 32
+      "required_level": 32,
+      "requirements": {
+        "level": 32,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Stone Charm",
       "href": "https://poe2db.tw/Stone_Charm",
-      "required_level": 8
+      "required_level": 8,
+      "requirements": {
+        "level": 8,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Silver Charm",
       "href": "https://poe2db.tw/Silver_Charm",
-      "required_level": 10
+      "required_level": 10,
+      "requirements": {
+        "level": 10,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Ruby Charm",
       "href": "https://poe2db.tw/Ruby_Charm",
-      "required_level": 5
+      "required_level": 5,
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Sapphire Charm",
       "href": "https://poe2db.tw/Sapphire_Charm",
-      "required_level": 5
+      "required_level": 5,
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Topaz Charm",
       "href": "https://poe2db.tw/Topaz_Charm",
-      "required_level": 5
+      "required_level": 5,
+      "requirements": {
+        "level": 5,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Amethyst Charm",
       "href": "https://poe2db.tw/Amethyst_Charm",
-      "required_level": 40
+      "required_level": 40,
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Golden Charm",
       "href": "https://poe2db.tw/Golden_Charm",
-      "required_level": 50
+      "required_level": 50,
+      "requirements": {
+        "level": 50,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     },
     {
       "name": "Cleansing Charm",
       "href": "https://poe2db.tw/Cleansing_Charm",
-      "required_level": 40
+      "required_level": 40,
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      }
     }
   ],
   "modifier_sections": {

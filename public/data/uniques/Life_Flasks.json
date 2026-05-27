@@ -1,0 +1,233 @@
+{
+  "class": "Life Flasks",
+  "slug": "Life_Flasks",
+  "uniques": [
+    {
+      "name": "Blood of the Warrior",
+      "display_name": "Blood of the Warrior Gargantuan Life Flask",
+      "base_name": "Gargantuan Life Flask",
+      "href": "https://poe2db.tw/us/Blood_of_the_Warrior",
+      "requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 40,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "90 % less Life Recovered",
+          "template": "90 % less Life Recovered",
+          "rolls": [],
+          "family": "FlaskRecoveryAmount",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask life to recover +% final"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "local_flask_life_to_recover_+%_final"
+          ]
+        },
+        {
+          "text": "Effect is not removed when Unreserved Life is Filled",
+          "template": "Effect is not removed when Unreserved Life is Filled",
+          "rolls": [],
+          "family": "FlaskEffectNotRemovedOnFullLife",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask effect not removed at full life"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask",
+            "resource",
+            "Life"
+          ],
+          "affix_ids": [
+            "local_flask_effect_not_removed_at_full_life"
+          ]
+        },
+        {
+          "text": "(15—30)% of Damage taken during effect Recouped as Life",
+          "template": "#% of Damage taken during effect Recouped as Life",
+          "rolls": [
+            {
+              "raw": "(15—30)",
+              "min": 15,
+              "max": 30
+            }
+          ],
+          "family": "DoubleMaximumRageFlask",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask damage taken goes to life over 4 seconds % during effect"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_damage_taken_goes_to_life_over_4_seconds_%_during_effect"
+          ]
+        },
+        {
+          "text": "Gain (3—5) Rage when Hit by an Enemy during effect",
+          "template": "Gain # Rage when Hit by an Enemy during effect",
+          "rolls": [
+            {
+              "raw": "(3—5)",
+              "min": 3,
+              "max": 5
+            }
+          ],
+          "family": "DoubleMaximumRageFlask",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask gain x rage when hit during effect"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_gain_x_rage_when_hit_during_effect"
+          ]
+        },
+        {
+          "text": "No Inherent loss of Rage during effect",
+          "template": "No Inherent loss of Rage during effect",
+          "rolls": [],
+          "family": "DoubleMaximumRageFlask",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask no inherent rage loss during effect"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_flask_no_inherent_rage_loss_during_effect"
+          ]
+        },
+        {
+          "text": "(25—50)% increased Duration",
+          "template": "#% increased Duration",
+          "rolls": [
+            {
+              "raw": "(25—50)",
+              "min": 25,
+              "max": 50
+            }
+          ],
+          "family": "FlaskRecoverySpeed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask duration +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_flask_duration_+%"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Life_Flasks",
+      "base_href": "https://poe2db.tw/Gargantuan_Life_Flask",
+      "item_class": "Life Flasks",
+      "class_slug": "Life_Flasks"
+    },
+    {
+      "name": "Olroth's Resolve",
+      "display_name": "Olroth's Resolve Ultimate Life Flask",
+      "base_name": "Ultimate Life Flask",
+      "href": "https://poe2db.tw/us/Olroths_Resolve",
+      "requirements": {
+        "level": 60,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "base_requirements": {
+        "level": 60,
+        "str": null,
+        "dex": null,
+        "int": null
+      },
+      "stats": [
+        {
+          "text": "Instant Recovery",
+          "template": "Instant Recovery",
+          "rolls": [],
+          "family": "FlaskBuffWhileHealing",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local flask recovers instantly",
+            "local flask amount to recover +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_flask_recovers_instantly",
+            "local_flask_amount_to_recover_+%"
+          ]
+        },
+        {
+          "text": "(100—150)% increased Charges per use",
+          "template": "#% increased Charges per use",
+          "rolls": [
+            {
+              "raw": "(100—150)",
+              "min": 100,
+              "max": 150
+            }
+          ],
+          "family": "FlaskChargesUsed",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local charges used +%"
+          ],
+          "scope": "Local",
+          "craft_tags": [
+            "flask"
+          ],
+          "affix_ids": [
+            "local_charges_used_+%"
+          ]
+        },
+        {
+          "text": "Excess Life Recovery added as Guard for 20 seconds",
+          "template": "Excess Life Recovery added as Guard for 20 seconds",
+          "rolls": [],
+          "family": "FlaskRecoveryAmount",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local unique flask life recovered above effective life is instead added as guard for X seconds"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_unique_flask_life_recovered_above_effective_life_is_instead_added_as_guard_for_X_seconds"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "OtherUnique"
+      ],
+      "itemtype_slug": "Life_Flasks",
+      "base_href": "https://poe2db.tw/Ultimate_Life_Flask",
+      "item_class": "Life Flasks",
+      "class_slug": "Life_Flasks"
+    }
+  ]
+}

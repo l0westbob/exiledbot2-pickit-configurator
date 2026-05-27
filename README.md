@@ -38,6 +38,8 @@ Each imported per-item JSON payload now contains:
 - additional modifier sections such as corrupted, essence, desecrated, bonded, or socketable when available
 - `bases` for the concrete item bases in that family when available
 
+The app currently exposes only normal prefixes and suffixes in the picker. The other imported modifier sections are kept in the payloads for future rule families, but are intentionally hidden from the active item-rule flow for now.
+
 ### Refreshing imported catalog data
 
 Import a folder of exported affix files into this frontend repo:
@@ -236,10 +238,10 @@ Currently, the app exposes the imported item-rule flow only.
 
 The current rule editor is centered around imported
 item modifiers and tier thresholds. With the newer
-catalog format, it can now surface normal modifiers
-plus the extra imported modifier sections when they
-exist, and it can narrow a rule to a concrete base
-when the payload provides base data.
+catalog format, it reads sectioned modifier payloads
+but currently surfaces only normal prefixes and
+suffixes in the picker. It can also narrow a rule to a
+concrete base when the payload provides base data.
 
 ---
 

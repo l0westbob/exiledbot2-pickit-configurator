@@ -1,0 +1,965 @@
+{
+  "class": "Sceptres",
+  "slug": "Sceptres",
+  "uniques": [
+    {
+      "name": "Font of Power",
+      "display_name": "Font of Power Omen Sceptre",
+      "base_name": "Omen Sceptre",
+      "href": "https://poe2db.tw/us/Font_of_Power",
+      "requirements": {
+        "level": 16,
+        "str": 12,
+        "dex": null,
+        "int": 25
+      },
+      "base_requirements": {
+        "level": 16,
+        "str": 12,
+        "dex": null,
+        "int": 25
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 5 Malice",
+          "template": "Grants Skill: Level 5 Malice",
+          "rolls": []
+        },
+        {
+          "text": "(30—50)% increased Spirit",
+          "template": "#% increased Spirit",
+          "rolls": [
+            {
+              "raw": "(30—50)",
+              "min": 30,
+              "max": 50
+            }
+          ],
+          "family": "LocalIncreasedSpiritPercent",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "local spirit +%"
+          ],
+          "scope": "Local",
+          "affix_ids": [
+            "local_spirit_+%"
+          ]
+        },
+        {
+          "text": "+(40—60) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "(20—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "When a Party Member in your Presence Casts a Spell , you Sacrifice 20 % of Mana and they Leech that Mana",
+          "template": "When a Party Member in your Presence Casts a Spell , you Sacrifice 20 % of Mana and they Leech that Mana",
+          "rolls": [],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "unique % maximum mana to sacrifice to party members in your presence when they cast a spell"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "unique_%_maximum_mana_to_sacrifice_to_party_members_in_your_presence_when_they_cast_a_spell"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Omen_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    },
+    {
+      "name": "Guiding Palm of the Eye",
+      "display_name": "Guiding Palm of the Eye Shrine Sceptre",
+      "base_name": "Shrine Sceptre",
+      "href": "https://poe2db.tw/us/Guiding_Palm_of_the_Eye",
+      "requirements": {
+        "level": 65,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 8 Purity of Ice",
+          "template": "Grants Skill: Level 8 Purity of Ice",
+          "rolls": []
+        },
+        {
+          "text": "Gain 25 % of Damage as Extra Cold Damage",
+          "template": "Gain 25 % of Damage as Extra Cold Damage",
+          "rolls": [],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as cold"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_cold"
+          ]
+        },
+        {
+          "text": "Allies in your Presence deal (15—23) to (28—35) added Attack Cold Damage",
+          "template": "Allies in your Presence deal # to # added Attack Cold Damage",
+          "rolls": [
+            {
+              "raw": "(15—23)",
+              "min": 15,
+              "max": 23
+            },
+            {
+              "raw": "(28—35)",
+              "min": 28,
+              "max": 35
+            }
+          ],
+          "family": "ColdDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence attack minimum added cold damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Cold",
+            "Attack"
+          ],
+          "affix_ids": [
+            "allies_in_presence_attack_minimum_added_cold_damage"
+          ]
+        },
+        {
+          "text": "50 % of your Base Life Regeneration is granted to Allies in your Presence",
+          "template": "50 % of your Base Life Regeneration is granted to Allies in your Presence",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "total base life regeneration rate per minute % granted to allies in your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "total_base_life_regeneration_rate_per_minute_%_granted_to_allies_in_your_presence"
+          ]
+        },
+        {
+          "text": "+(20—30) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "25 % increased Light Radius",
+          "template": "25 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Grants effect of Guided Freezing Shrine",
+          "template": "Grants effect of Guided Freezing Shrine",
+          "rolls": [],
+          "family": "UniqueColdShrine",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "has unique cold shrine effect"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "has_unique_cold_shrine_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Shrine_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    },
+    {
+      "name": "Guiding Palm of the Heart",
+      "display_name": "Guiding Palm of the Heart Shrine Sceptre",
+      "base_name": "Shrine Sceptre",
+      "href": "https://poe2db.tw/us/Guiding_Palm_of_the_Heart",
+      "requirements": {
+        "level": 65,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 8 Purity of Fire",
+          "template": "Grants Skill: Level 8 Purity of Fire",
+          "rolls": []
+        },
+        {
+          "text": "Gain 25 % of Damage as Extra Fire Damage",
+          "template": "Gain 25 % of Damage as Extra Fire Damage",
+          "rolls": [],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as fire"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_fire"
+          ]
+        },
+        {
+          "text": "Allies in your Presence deal (15—23) to (28—35) added Attack Fire Damage",
+          "template": "Allies in your Presence deal # to # added Attack Fire Damage",
+          "rolls": [
+            {
+              "raw": "(15—23)",
+              "min": 15,
+              "max": 23
+            },
+            {
+              "raw": "(28—35)",
+              "min": 28,
+              "max": 35
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence attack minimum added fire damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire",
+            "Attack"
+          ],
+          "affix_ids": [
+            "allies_in_presence_attack_minimum_added_fire_damage"
+          ]
+        },
+        {
+          "text": "50 % of your Base Life Regeneration is granted to Allies in your Presence",
+          "template": "50 % of your Base Life Regeneration is granted to Allies in your Presence",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "total base life regeneration rate per minute % granted to allies in your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "total_base_life_regeneration_rate_per_minute_%_granted_to_allies_in_your_presence"
+          ]
+        },
+        {
+          "text": "+(20—30) to Strength",
+          "template": "+# to Strength",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Strength",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional strength"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_strength"
+          ]
+        },
+        {
+          "text": "25 % increased Light Radius",
+          "template": "25 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Grants effect of Guided Meteoric Shrine",
+          "template": "Grants effect of Guided Meteoric Shrine",
+          "rolls": [],
+          "family": "UniqueFireShrine",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "has unique fire shrine effect"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "has_unique_fire_shrine_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Shrine_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    },
+    {
+      "name": "Guiding Palm of the Mind",
+      "display_name": "Guiding Palm of the Mind Shrine Sceptre",
+      "base_name": "Shrine Sceptre",
+      "href": "https://poe2db.tw/us/Guiding_Palm_of_the_Mind",
+      "requirements": {
+        "level": 65,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 8 Purity of Lightning",
+          "template": "Grants Skill: Level 8 Purity of Lightning",
+          "rolls": []
+        },
+        {
+          "text": "Gain 25 % of Damage as Extra Lightning Damage",
+          "template": "Gain 25 % of Damage as Extra Lightning Damage",
+          "rolls": [],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as lightning"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_lightning"
+          ]
+        },
+        {
+          "text": "Allies in your Presence deal 1 to (56—70) added Attack Lightning Damage",
+          "template": "Allies in your Presence deal 1 to # added Attack Lightning Damage",
+          "rolls": [
+            {
+              "raw": "(56—70)",
+              "min": 56,
+              "max": 70
+            }
+          ],
+          "family": "LightningDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence attack minimum added lightning damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Lightning",
+            "Attack"
+          ],
+          "affix_ids": [
+            "allies_in_presence_attack_minimum_added_lightning_damage"
+          ]
+        },
+        {
+          "text": "50 % of your Base Life Regeneration is granted to Allies in your Presence",
+          "template": "50 % of your Base Life Regeneration is granted to Allies in your Presence",
+          "rolls": [],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "total base life regeneration rate per minute % granted to allies in your presence"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "total_base_life_regeneration_rate_per_minute_%_granted_to_allies_in_your_presence"
+          ]
+        },
+        {
+          "text": "+(20—30) to Dexterity",
+          "template": "+# to Dexterity",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "Dexterity",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional dexterity"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_dexterity"
+          ]
+        },
+        {
+          "text": "25 % increased Light Radius",
+          "template": "25 % increased Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "Grants effect of Guided Tempest Shrine",
+          "template": "Grants effect of Guided Tempest Shrine",
+          "rolls": [],
+          "family": "UniqueLightningShrine",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "has unique lightning shrine effect"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "has_unique_lightning_shrine_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Shrine_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    },
+    {
+      "name": "Palm of the Dreamer",
+      "display_name": "Palm of the Dreamer Shrine Sceptre",
+      "base_name": "Shrine Sceptre",
+      "href": "https://poe2db.tw/us/Palm_of_the_Dreamer",
+      "requirements": {
+        "level": 65,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 8 Impurity",
+          "template": "Grants Skill: Level 8 Impurity",
+          "rolls": []
+        },
+        {
+          "text": "Allies in your Presence deal (13—17) to (25—37) added Attack Chaos Damage",
+          "template": "Allies in your Presence deal # to # added Attack Chaos Damage",
+          "rolls": [
+            {
+              "raw": "(13—17)",
+              "min": 13,
+              "max": 17
+            },
+            {
+              "raw": "(25—37)",
+              "min": 25,
+              "max": 37
+            }
+          ],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence attack minimum added chaos damage"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos",
+            "Attack"
+          ],
+          "affix_ids": [
+            "allies_in_presence_attack_minimum_added_chaos_damage"
+          ]
+        },
+        {
+          "text": "+(7—13) to all Attributes",
+          "template": "+# to all Attributes",
+          "rolls": [
+            {
+              "raw": "(7—13)",
+              "min": 7,
+              "max": 13
+            }
+          ],
+          "family": "AllAttributes",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional all attributes"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_all_attributes"
+          ]
+        },
+        {
+          "text": "23 % reduced Light Radius",
+          "template": "23 % reduced Light Radius",
+          "rolls": [],
+          "family": "LightRadius",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "light radius +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "light_radius_+%"
+          ]
+        },
+        {
+          "text": "(-13—13)% reduced Skill Effect Duration",
+          "template": "#% reduced Skill Effect Duration",
+          "rolls": [
+            {
+              "raw": "(-13—13)",
+              "min": -13,
+              "max": 13
+            }
+          ],
+          "family": "SkillEffectDuration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "skill effect duration +%"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "skill_effect_duration_+%"
+          ]
+        },
+        {
+          "text": "Gain 27 % of Damage as Extra Chaos Damage",
+          "template": "Gain 27 % of Damage as Extra Chaos Damage",
+          "rolls": [],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as chaos"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "chaos_damage",
+            "Damage",
+            "Chaos"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_chaos"
+          ]
+        },
+        {
+          "text": "Grants effect of Dreaming Gloom Shrine",
+          "template": "Grants effect of Dreaming Gloom Shrine",
+          "rolls": [],
+          "family": "UniqueChaosShrine",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "has unique chaos shrine effect"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "has_unique_chaos_shrine_effect"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Shrine_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    },
+    {
+      "name": "Sacred Flame",
+      "display_name": "Sacred Flame Shrine Sceptre",
+      "base_name": "Shrine Sceptre",
+      "href": "https://poe2db.tw/us/Sacred_Flame",
+      "requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "base_requirements": {
+        "level": 26,
+        "str": 17,
+        "dex": null,
+        "int": 38
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Level 8 Purity of Fire",
+          "template": "Grants Skill: Level 8 Purity of Fire",
+          "rolls": []
+        },
+        {
+          "text": "Gain (40—60)% of Damage as Extra Fire Damage",
+          "template": "Gain #% of Damage as Extra Fire Damage",
+          "rolls": [
+            {
+              "raw": "(40—60)",
+              "min": 40,
+              "max": 60
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as fire"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "elemental_damage",
+            "Damage",
+            "Elemental",
+            "Fire"
+          ],
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_fire"
+          ]
+        },
+        {
+          "text": "Allies in your Presence Regenerate (2—3)% of their Maximum Life per second",
+          "template": "Allies in your Presence Regenerate #% of their Maximum Life per second",
+          "rolls": [
+            {
+              "raw": "(2—3)",
+              "min": 2,
+              "max": 3
+            }
+          ],
+          "family": "LifeRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence life regeneration rate per minute equal to their maximum life %"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Life",
+            "Aura"
+          ],
+          "affix_ids": [
+            "allies_in_presence_life_regeneration_rate_per_minute_equal_to_their_maximum_life_%"
+          ]
+        },
+        {
+          "text": "Allies in your Presence Gain (20—30)% of Damage as Extra Fire Damage",
+          "template": "Allies in your Presence Gain #% of Damage as Extra Fire Damage",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "FireDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "allies in presence damage % to gain as fire"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Fire",
+            "Aura"
+          ],
+          "affix_ids": [
+            "allies_in_presence_damage_%_to_gain_as_fire"
+          ]
+        },
+        {
+          "text": "Enemies in your Presence Resist Elemental Damage based on their Lowest Resistance",
+          "template": "Enemies in your Presence Resist Elemental Damage based on their Lowest Resistance",
+          "rolls": [],
+          "family": "ElementalPenetration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "enemies in presence elemental damage resisted by lowest elemental resistance"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Elemental",
+            "Aura"
+          ],
+          "affix_ids": [
+            "enemies_in_presence_elemental_damage_resisted_by_lowest_elemental_resistance"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Shrine_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    },
+    {
+      "name": "The Dark Defiler",
+      "display_name": "The Dark Defiler Rattling Sceptre",
+      "base_name": "Rattling Sceptre",
+      "href": "https://poe2db.tw/us/The_Dark_Defiler",
+      "requirements": {
+        "level": 1,
+        "str": 4,
+        "dex": null,
+        "int": 5
+      },
+      "base_requirements": {
+        "level": null,
+        "str": 4,
+        "dex": null,
+        "int": 5
+      },
+      "stats": [
+        {
+          "text": "Grants Skill: Skeletal Warrior",
+          "template": "Grants Skill: Skeletal Warrior",
+          "rolls": []
+        },
+        {
+          "text": "+(20—30) to maximum Mana",
+          "template": "+# to maximum Mana",
+          "rolls": [
+            {
+              "raw": "(20—30)",
+              "min": 20,
+              "max": 30
+            }
+          ],
+          "family": "IncreasedMana",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "base maximum mana"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "base_maximum_mana"
+          ]
+        },
+        {
+          "text": "+(5—10) to Intelligence",
+          "template": "+# to Intelligence",
+          "rolls": [
+            {
+              "raw": "(5—10)",
+              "min": 5,
+              "max": 10
+            }
+          ],
+          "family": "Intelligence",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "additional intelligence"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "Attribute"
+          ],
+          "affix_ids": [
+            "additional_intelligence"
+          ]
+        },
+        {
+          "text": "(10—30)% increased Mana Regeneration Rate",
+          "template": "#% increased Mana Regeneration Rate",
+          "rolls": [
+            {
+              "raw": "(10—30)",
+              "min": 10,
+              "max": 30
+            }
+          ],
+          "family": "ManaRegeneration",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "mana regeneration rate +%"
+          ],
+          "scope": "Global",
+          "craft_tags": [
+            "resource",
+            "Mana"
+          ],
+          "affix_ids": [
+            "mana_regeneration_rate_+%"
+          ]
+        },
+        {
+          "text": "Gain 5 % of Damage as Chaos Damage per Undead Minion",
+          "template": "Gain 5 % of Damage as Chaos Damage per Undead Minion",
+          "rolls": [],
+          "family": "ChaosDamage",
+          "generation_type": "Unique (3)",
+          "stat_ids": [
+            "non skill base all damage % to gain as chaos per active undead minion"
+          ],
+          "scope": "Global",
+          "affix_ids": [
+            "non_skill_base_all_damage_%_to_gain_as_chaos_per_active_undead_minion"
+          ]
+        }
+      ],
+      "source": "unique_item_detail",
+      "source_categories": [
+        "WeaponUnique"
+      ],
+      "itemtype_slug": "Sceptres",
+      "base_href": "https://poe2db.tw/Rattling_Sceptre",
+      "item_class": "Sceptres",
+      "class_slug": "Sceptres"
+    }
+  ]
+}
